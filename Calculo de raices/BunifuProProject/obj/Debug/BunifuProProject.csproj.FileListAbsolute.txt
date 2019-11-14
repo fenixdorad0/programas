@@ -1,0 +1,43 @@
+c:\users\jsqg gaming\documents\visual studio 2017\Projects\BunifuProProject\BunifuProProject\bin\Debug\BunifuProProject.exe.config
+c:\users\jsqg gaming\documents\visual studio 2017\Projects\BunifuProProject\BunifuProProject\bin\Debug\BunifuProProject.exe
+c:\users\jsqg gaming\documents\visual studio 2017\Projects\BunifuProProject\BunifuProProject\bin\Debug\BunifuProProject.pdb
+c:\users\jsqg gaming\documents\visual studio 2017\Projects\BunifuProProject\BunifuProProject\bin\Debug\Bunifu_UI_v1.52.dll
+c:\users\jsqg gaming\documents\visual studio 2017\Projects\BunifuProProject\BunifuProProject\obj\Debug\BunifuProProject.csprojResolveAssemblyReference.cache
+c:\users\jsqg gaming\documents\visual studio 2017\Projects\BunifuProProject\BunifuProProject\obj\Debug\BunifuProProject.Form1.resources
+c:\users\jsqg gaming\documents\visual studio 2017\Projects\BunifuProProject\BunifuProProject\obj\Debug\BunifuProProject.Properties.Resources.resources
+c:\users\jsqg gaming\documents\visual studio 2017\Projects\BunifuProProject\BunifuProProject\obj\Debug\BunifuProProject.csproj.GenerateResource.Cache
+c:\users\jsqg gaming\documents\visual studio 2017\Projects\BunifuProProject\BunifuProProject\obj\Debug\BunifuProProject.exe
+c:\users\jsqg gaming\documents\visual studio 2017\Projects\BunifuProProject\BunifuProProject\obj\Debug\BunifuProProject.pdb
+D:\Disco 1\memorias usb\yeferson\programacion\Visual estudio\BunifuProProject\BunifuProProject\bin\Debug\BunifuProProject.exe.config
+D:\Disco 1\memorias usb\yeferson\programacion\Visual estudio\BunifuProProject\BunifuProProject\bin\Debug\BunifuProProject.exe
+D:\Disco 1\memorias usb\yeferson\programacion\Visual estudio\BunifuProProject\BunifuProProject\bin\Debug\BunifuProProject.pdb
+D:\Disco 1\memorias usb\yeferson\programacion\Visual estudio\BunifuProProject\BunifuProProject\obj\Debug\BunifuProProject.csprojAssemblyReference.cache
+D:\Disco 1\memorias usb\yeferson\programacion\Visual estudio\BunifuProProject\BunifuProProject\obj\Debug\BunifuProProject.Form1.resources
+D:\Disco 1\memorias usb\yeferson\programacion\Visual estudio\BunifuProProject\BunifuProProject\obj\Debug\BunifuProProject.Properties.Resources.resources
+D:\Disco 1\memorias usb\yeferson\programacion\Visual estudio\BunifuProProject\BunifuProProject\obj\Debug\BunifuProProject.csproj.GenerateResource.cache
+D:\Disco 1\memorias usb\yeferson\programacion\Visual estudio\BunifuProProject\BunifuProProject\obj\Debug\BunifuProProject.csproj.CoreCompileInputs.cache
+D:\Disco 1\memorias usb\yeferson\programacion\Visual estudio\BunifuProProject\BunifuProProject\obj\Debug\BunifuProProject.csproj.CopyComplete
+D:\Disco 1\memorias usb\yeferson\programacion\Visual estudio\BunifuProProject\BunifuProProject\obj\Debug\BunifuProProject.exe
+D:\Disco 1\memorias usb\yeferson\programacion\Visual estudio\BunifuProProject\BunifuProProject\obj\Debug\BunifuProProject.pdb
+\\AMD\universidad\Extras\Programas\Calculo de raices\BunifuProProject\bin\Debug\BunifuProProject.exe.config
+\\AMD\universidad\Extras\Programas\Calculo de raices\BunifuProProject\bin\Debug\BunifuProProject.exe
+\\AMD\universidad\Extras\Programas\Calculo de raices\BunifuProProject\bin\Debug\BunifuProProject.pdb
+\\AMD\universidad\Extras\Programas\Calculo de raices\BunifuProProject\obj\Debug\BunifuProProject.csprojAssemblyReference.cache
+\\AMD\universidad\Extras\Programas\Calculo de raices\BunifuProProject\obj\Debug\BunifuProProject.Form1.resources
+\\AMD\universidad\Extras\Programas\Calculo de raices\BunifuProProject\obj\Debug\BunifuProProject.Properties.Resources.resources
+\\AMD\universidad\Extras\Programas\Calculo de raices\BunifuProProject\obj\Debug\BunifuProProject.csproj.GenerateResource.cache
+\\AMD\universidad\Extras\Programas\Calculo de raices\BunifuProProject\obj\Debug\BunifuProProject.csproj.CoreCompileInputs.cache
+\\AMD\universidad\Extras\Programas\Calculo de raices\BunifuProProject\obj\Debug\BunifuProProject.csproj.CopyComplete
+\\AMD\universidad\Extras\Programas\Calculo de raices\BunifuProProject\obj\Debug\BunifuProProject.exe
+\\AMD\universidad\Extras\Programas\Calculo de raices\BunifuProProject\obj\Debug\BunifuProProject.pdb
+C:\universidad\Extras\Programas\Calculo de raices\BunifuProProject\obj\Debug\BunifuProProject.csprojAssemblyReference.cache
+C:\universidad\Extras\Programas\Calculo de raices\BunifuProProject\obj\Debug\BunifuProProject.Form1.resources
+C:\universidad\Extras\Programas\Calculo de raices\BunifuProProject\obj\Debug\BunifuProProject.Properties.Resources.resources
+C:\universidad\Extras\Programas\Calculo de raices\BunifuProProject\obj\Debug\BunifuProProject.csproj.GenerateResource.cache
+C:\universidad\Extras\Programas\Calculo de raices\BunifuProProject\obj\Debug\BunifuProProject.csproj.CoreCompileInputs.cache
+C:\universidad\Extras\Programas\Calculo de raices\BunifuProProject\obj\Debug\BunifuProProject.exe
+C:\universidad\Extras\Programas\Calculo de raices\BunifuProProject\obj\Debug\BunifuProProject.pdb
+C:\universidad\Extras\Programas\Calculo de raices\BunifuProProject\bin\Debug\BunifuProProject.exe.config
+C:\universidad\Extras\Programas\Calculo de raices\BunifuProProject\bin\Debug\BunifuProProject.exe
+C:\universidad\Extras\Programas\Calculo de raices\BunifuProProject\bin\Debug\BunifuProProject.pdb
+C:\universidad\Extras\Programas\Calculo de raices\BunifuProProject\obj\Debug\BunifuProProject.csproj.CopyComplete

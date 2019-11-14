@@ -1,0 +1,24 @@
+C:\Users\yefer\source\repos\Picas y fijas\Picas y fijas\obj\Debug\Picas y fijas.csprojAssemblyReference.cache
+C:\Users\yefer\source\repos\Picas y fijas\Picas y fijas\obj\Debug\Picas_y_fijas.Form1.resources
+C:\Users\yefer\source\repos\Picas y fijas\Picas y fijas\obj\Debug\Picas_y_fijas.Properties.Resources.resources
+C:\Users\yefer\source\repos\Picas y fijas\Picas y fijas\obj\Debug\Picas y fijas.csproj.GenerateResource.cache
+C:\Users\yefer\source\repos\Picas y fijas\Picas y fijas\obj\Debug\Picas y fijas.csproj.CoreCompileInputs.cache
+C:\Users\yefer\source\repos\Picas y fijas\Picas y fijas\bin\Debug\Picas y fijas.exe.config
+C:\Users\yefer\source\repos\Picas y fijas\Picas y fijas\bin\Debug\Picas y fijas.exe
+C:\Users\yefer\source\repos\Picas y fijas\Picas y fijas\bin\Debug\Picas y fijas.pdb
+C:\Users\yefer\source\repos\Picas y fijas\Picas y fijas\obj\Debug\Picas y fijas.exe
+C:\Users\yefer\source\repos\Picas y fijas\Picas y fijas\obj\Debug\Picas y fijas.pdb
+C:\Users\yefer\source\repos\Picas y fijas\Picas y fijas\bin\Debug\BibliotecaDeClases.dll
+C:\Users\yefer\source\repos\Picas y fijas\Picas y fijas\bin\Debug\MySql.Data.dll
+C:\Users\yefer\source\repos\Picas y fijas\Picas y fijas\obj\Debug\Picas y fijas.csproj.CopyComplete
+D:\Disco 1\programacion\repos\Picas y fijas\Picas y fijas\bin\Debug\Picas y fijas.exe.config
+D:\Disco 1\programacion\repos\Picas y fijas\Picas y fijas\bin\Debug\Picas y fijas.exe
+D:\Disco 1\programacion\repos\Picas y fijas\Picas y fijas\bin\Debug\Picas y fijas.pdb
+D:\Disco 1\programacion\repos\Picas y fijas\Picas y fijas\obj\Debug\Picas y fijas.csprojAssemblyReference.cache
+D:\Disco 1\programacion\repos\Picas y fijas\Picas y fijas\obj\Debug\Picas_y_fijas.Form1.resources
+D:\Disco 1\programacion\repos\Picas y fijas\Picas y fijas\obj\Debug\Picas_y_fijas.Properties.Resources.resources
+D:\Disco 1\programacion\repos\Picas y fijas\Picas y fijas\obj\Debug\Picas y fijas.csproj.GenerateResource.cache
+D:\Disco 1\programacion\repos\Picas y fijas\Picas y fijas\obj\Debug\Picas y fijas.csproj.CoreCompileInputs.cache
+D:\Disco 1\programacion\repos\Picas y fijas\Picas y fijas\obj\Debug\Picas y fijas.csproj.CopyComplete
+D:\Disco 1\programacion\repos\Picas y fijas\Picas y fijas\obj\Debug\Picas y fijas.exe
+D:\Disco 1\programacion\repos\Picas y fijas\Picas y fijas\obj\Debug\Picas y fijas.pdb

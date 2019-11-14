@@ -1,0 +1,21 @@
+c:\users\jsqg gaming\documents\visual studio 2017\Projects\BunifuProProject\BunifuProProject\bin\Debug\BunifuProProject.exe.config
+c:\users\jsqg gaming\documents\visual studio 2017\Projects\BunifuProProject\BunifuProProject\bin\Debug\BunifuProProject.exe
+c:\users\jsqg gaming\documents\visual studio 2017\Projects\BunifuProProject\BunifuProProject\bin\Debug\BunifuProProject.pdb
+c:\users\jsqg gaming\documents\visual studio 2017\Projects\BunifuProProject\BunifuProProject\bin\Debug\Bunifu_UI_v1.52.dll
+c:\users\jsqg gaming\documents\visual studio 2017\Projects\BunifuProProject\BunifuProProject\obj\Debug\BunifuProProject.csprojResolveAssemblyReference.cache
+c:\users\jsqg gaming\documents\visual studio 2017\Projects\BunifuProProject\BunifuProProject\obj\Debug\BunifuProProject.Form1.resources
+c:\users\jsqg gaming\documents\visual studio 2017\Projects\BunifuProProject\BunifuProProject\obj\Debug\BunifuProProject.Properties.Resources.resources
+c:\users\jsqg gaming\documents\visual studio 2017\Projects\BunifuProProject\BunifuProProject\obj\Debug\BunifuProProject.csproj.GenerateResource.Cache
+c:\users\jsqg gaming\documents\visual studio 2017\Projects\BunifuProProject\BunifuProProject\obj\Debug\BunifuProProject.exe
+c:\users\jsqg gaming\documents\visual studio 2017\Projects\BunifuProProject\BunifuProProject\obj\Debug\BunifuProProject.pdb
+C:\universidad\Extras\Programas\visual estudio\BunifuProProject\BunifuProProject\bin\Debug\BunifuProProject.exe.config
+C:\universidad\Extras\Programas\visual estudio\BunifuProProject\BunifuProProject\bin\Debug\BunifuProProject.exe
+C:\universidad\Extras\Programas\visual estudio\BunifuProProject\BunifuProProject\bin\Debug\BunifuProProject.pdb
+C:\universidad\Extras\Programas\visual estudio\BunifuProProject\BunifuProProject\obj\Debug\BunifuProProject.csprojAssemblyReference.cache
+C:\universidad\Extras\Programas\visual estudio\BunifuProProject\BunifuProProject\obj\Debug\BunifuProProject.Form1.resources
+C:\universidad\Extras\Programas\visual estudio\BunifuProProject\BunifuProProject\obj\Debug\BunifuProProject.Properties.Resources.resources
+C:\universidad\Extras\Programas\visual estudio\BunifuProProject\BunifuProProject\obj\Debug\BunifuProProject.csproj.GenerateResource.cache
+C:\universidad\Extras\Programas\visual estudio\BunifuProProject\BunifuProProject\obj\Debug\BunifuProProject.csproj.CoreCompileInputs.cache
+C:\universidad\Extras\Programas\visual estudio\BunifuProProject\BunifuProProject\obj\Debug\BunifuProProject.csproj.CopyComplete
+C:\universidad\Extras\Programas\visual estudio\BunifuProProject\BunifuProProject\obj\Debug\BunifuProProject.exe
+C:\universidad\Extras\Programas\visual estudio\BunifuProProject\BunifuProProject\obj\Debug\BunifuProProject.pdb

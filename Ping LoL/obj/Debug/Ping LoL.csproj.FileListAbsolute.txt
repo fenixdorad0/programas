@@ -1,0 +1,35 @@
+C:\Users\yefer\source\repos\Ping LoL\Ping LoL\obj\Debug\Ping LoL.csprojAssemblyReference.cache
+C:\Users\yefer\source\repos\Ping LoL\Ping LoL\obj\Debug\Ping_LoL.Form1.resources
+C:\Users\yefer\source\repos\Ping LoL\Ping LoL\obj\Debug\Ping_LoL.Properties.Resources.resources
+C:\Users\yefer\source\repos\Ping LoL\Ping LoL\obj\Debug\Ping LoL.csproj.GenerateResource.cache
+C:\Users\yefer\source\repos\Ping LoL\Ping LoL\obj\Debug\Ping LoL.csproj.CoreCompileInputs.cache
+C:\Users\yefer\source\repos\Ping LoL\Ping LoL\bin\Debug\Ping LoL.exe.config
+C:\Users\yefer\source\repos\Ping LoL\Ping LoL\bin\Debug\Ping LoL.exe
+C:\Users\yefer\source\repos\Ping LoL\Ping LoL\bin\Debug\Ping LoL.pdb
+C:\Users\yefer\source\repos\Ping LoL\Ping LoL\bin\Debug\Bunifu_UI_v1.5.3.dll
+C:\Users\yefer\source\repos\Ping LoL\Ping LoL\obj\Debug\Ping LoL.csproj.CopyComplete
+C:\Users\yefer\source\repos\Ping LoL\Ping LoL\obj\Debug\Ping LoL.exe
+C:\Users\yefer\source\repos\Ping LoL\Ping LoL\obj\Debug\Ping LoL.pdb
+C:\Users\yefer\source\repos\programa de redes cisco\Ping LoL\bin\Debug\Ping LoL.exe.config
+C:\Users\yefer\source\repos\programa de redes cisco\Ping LoL\bin\Debug\Ping LoL.exe
+C:\Users\yefer\source\repos\programa de redes cisco\Ping LoL\bin\Debug\Ping LoL.pdb
+C:\Users\yefer\source\repos\programa de redes cisco\Ping LoL\bin\Debug\Bunifu_UI_v1.5.3.dll
+C:\Users\yefer\source\repos\programa de redes cisco\Ping LoL\obj\Debug\Ping LoL.csprojAssemblyReference.cache
+C:\Users\yefer\source\repos\programa de redes cisco\Ping LoL\obj\Debug\Ping_LoL.Form1.resources
+C:\Users\yefer\source\repos\programa de redes cisco\Ping LoL\obj\Debug\Ping_LoL.Properties.Resources.resources
+C:\Users\yefer\source\repos\programa de redes cisco\Ping LoL\obj\Debug\Ping LoL.csproj.GenerateResource.cache
+C:\Users\yefer\source\repos\programa de redes cisco\Ping LoL\obj\Debug\Ping LoL.csproj.CoreCompileInputs.cache
+C:\Users\yefer\source\repos\programa de redes cisco\Ping LoL\obj\Debug\Ping LoL.csproj.CopyComplete
+C:\Users\yefer\source\repos\programa de redes cisco\Ping LoL\obj\Debug\Ping LoL.exe
+C:\Users\yefer\source\repos\programa de redes cisco\Ping LoL\obj\Debug\Ping LoL.pdb
+D:\Disco 1\memorias usb\celular\archivos\Ping LoL\bin\Debug\Ping LoL.exe.config
+D:\Disco 1\memorias usb\celular\archivos\Ping LoL\bin\Debug\Ping LoL.exe
+D:\Disco 1\memorias usb\celular\archivos\Ping LoL\bin\Debug\Ping LoL.pdb
+D:\Disco 1\memorias usb\celular\archivos\Ping LoL\obj\Debug\Ping LoL.csprojAssemblyReference.cache
+D:\Disco 1\memorias usb\celular\archivos\Ping LoL\obj\Debug\Ping_LoL.Form1.resources
+D:\Disco 1\memorias usb\celular\archivos\Ping LoL\obj\Debug\Ping_LoL.Properties.Resources.resources
+D:\Disco 1\memorias usb\celular\archivos\Ping LoL\obj\Debug\Ping LoL.csproj.GenerateResource.cache
+D:\Disco 1\memorias usb\celular\archivos\Ping LoL\obj\Debug\Ping LoL.csproj.CoreCompileInputs.cache
+D:\Disco 1\memorias usb\celular\archivos\Ping LoL\obj\Debug\Ping LoL.csproj.CopyComplete
+D:\Disco 1\memorias usb\celular\archivos\Ping LoL\obj\Debug\Ping LoL.exe
+D:\Disco 1\memorias usb\celular\archivos\Ping LoL\obj\Debug\Ping LoL.pdb
