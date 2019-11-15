@@ -86,6 +86,7 @@
             resources.ApplyResources(this.textFactura, "textFactura");
             this.textFactura.Name = "textFactura";
             this.textFactura.ReadOnly = true;
+            this.textFactura.TextChanged += new System.EventHandler(this.textFactura_TextChanged);
             // 
             // labelFactura
             // 

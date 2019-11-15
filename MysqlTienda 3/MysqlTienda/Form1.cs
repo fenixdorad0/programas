@@ -87,7 +87,8 @@ namespace MysqlTienda
         {
             try
             {
-                string selectQuery = "select * FROM tienda.ventas where factura="+textFactura.Text+" and ciudad='"+label9.Text+"'" ;
+                //string selectQuery = "select * FROM easyerp.detalle_facturacov where factura_movimiento_nf="+textFactura.Text;
+                string selectQuery = "select * FROM easyerp.detalle_facturacov where factura_movimiento_nf=1";
                 DataTable table = new DataTable();
                 MySqlDataAdapter adpter = new MySqlDataAdapter(selectQuery, conectar);
                 adpter.Fill(table);
@@ -128,11 +129,11 @@ namespace MysqlTienda
 
                 if (command.ExecuteNonQuery() == 1)
                 {
-                    //MessageBox.Show("Dato insertado");
+                    MessageBox.Show("Dato insertado");
                 }
                 else
                 {
-                    //MessageBox.Show("Dato NO insertado");
+                    MessageBox.Show("Dato NO insertado");
                 }
                 iniciar("");
             }
@@ -163,11 +164,12 @@ namespace MysqlTienda
 
         private void sumaTotal()
         {
+            // acá optenemos el total de la factura
             try
             {
                 MySqlCommand cmd = new MySqlCommand();
                 //cmd.CommandText = "select sum(cantidad) from tienda.ventas where factura=" + textFactura.Text;
-                cmd.CommandText = "select sum(cantidad) from tienda.ventas where factura=" + textFactura.Text + " and ciudad ='" + label9.Text + "'";
+                cmd.CommandText = "select sum(total) from easyerp.detalle_facturacov where factura_movimiento_nf=" + textFactura.Text +"";
                 cmd.CommandType = System.Data.CommandType.Text;
                 cmd.Connection = conectar;
                 conectar.Open();
@@ -185,6 +187,7 @@ namespace MysqlTienda
 
         private void buscarFactura (int numero, String select)
         {
+            //CON ESTE CODIGO CAPTURO EL NUMERO DE FACTURA
             try
             {
                 MySqlDataReader mdr;
@@ -194,7 +197,7 @@ namespace MysqlTienda
 
                 if (mdr.Read())
                 {
-                    textFactura.Text = Convert.ToString(Convert.ToInt16(mdr.GetString("factura")) + numero);
+                    textFactura.Text = Convert.ToString(Convert.ToInt16(mdr.GetString("factura_movimiento_nf")) + numero);
                 }
                 else
                 {
@@ -216,7 +219,7 @@ namespace MysqlTienda
 
         private void finalizar_Click_1(object sender, EventArgs e)
         {
-            buscarFactura(1, "SELECT * FROM tienda.ventas order by factura desc limit 1");
+            buscarFactura(1, "SELECT * FROM easyerp.detalle_facturacov order by factura_movimiento_nf desc limit 1");
             iniciar("");
             sumaTotal();
         }
@@ -302,7 +305,8 @@ namespace MysqlTienda
             try
             {
                 MySqlDataReader mdr;
-                string select = "SELECT * FROM tienda.usuarios where usuario='"+buniTextUsuario.text + "' and pass ='"+buniTextPass.text+"'" ;
+                string select = "SELECT* FROM easyerp.usuario WHERE `usuario`.`id` ='" + buniTextUsuario.text + "' and contrasna ='" + buniTextPass.text+"'" ;
+                
                 command = new MySqlCommand(select, conectar);
                 abrirConeccion();
                 mdr = command.ExecuteReader();
@@ -314,7 +318,10 @@ namespace MysqlTienda
                     this.Size = new Size(1339, 637);
                     textInsertarCodigo.Enabled = true;
                     buniMaxMin.Enabled = true;
-                    buscarFactura(0, "SELECT * FROM tienda.ventas order by factura desc limit 1");
+                    // "WHERE id = LAST_INSERT_ID""
+                    cerrarConeccion();
+                    buscarFactura(0, "SELECT * FROM easyerp.detalle_facturacov order by factura_movimiento_nf limit 1");
+                    //buscarFactura(0, "SELECT * FROM easyerp.detalle_facturacov order by factura_movimiento_nf where id = LAST_INSERT_ID");
                     iniciar("");
                     sumaTotal();
                 }
@@ -328,9 +335,12 @@ namespace MysqlTienda
             {
                  MessageBox.Show(ex.Message + "o no hay conección con el servidor");
             }
-            buscarFactura(0, "SELECT * FROM tienda.ventas order by factura desc limit 1");
+            /*
+            buscarFactura(0, "SELECT * easyerp.detalle_facturacov order by factura_movimiento_nf limit 1");
+           
             iniciar("");
             codigoCambia();
+             */
         }
 
 
@@ -348,10 +358,12 @@ namespace MysqlTienda
 
         private void bunifuEliminar_Click(object sender, EventArgs e)
         {
+            /*
             foreach (Control ctrl in panel1.Controls)
             {
                 ctrl.Enabled = false;
             }
+            */
         }
 
         private void buniActualizar_Click(object sender, EventArgs e)
@@ -410,6 +422,11 @@ namespace MysqlTienda
         }
 
         private void insertar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textFactura_TextChanged(object sender, EventArgs e)
         {
 
         }
