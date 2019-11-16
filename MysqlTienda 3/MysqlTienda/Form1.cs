@@ -88,7 +88,8 @@ namespace MysqlTienda
             try
             {
                 //string selectQuery = "select * FROM easyerp.detalle_facturacov where factura_movimiento_nf="+textFactura.Text;
-                string selectQuery = "select * FROM easyerp.detalle_facturacov where factura_movimiento_nf=1";
+                string selectQuery = "select factura, codigo,referencia,producto,tamano, cantidad, precio, total FROM easyerp.detalle_facturacov where factura =" + textFactura.Text;
+                 
                 DataTable table = new DataTable();
                 MySqlDataAdapter adpter = new MySqlDataAdapter(selectQuery, conectar);
                 adpter.Fill(table);
@@ -169,7 +170,7 @@ namespace MysqlTienda
             {
                 MySqlCommand cmd = new MySqlCommand();
                 //cmd.CommandText = "select sum(cantidad) from tienda.ventas where factura=" + textFactura.Text;
-                cmd.CommandText = "select sum(total) from easyerp.detalle_facturacov where factura_movimiento_nf=" + textFactura.Text +"";
+                cmd.CommandText = "select sum(total) from easyerp.detalle_facturacov where factura=" + textFactura.Text +"";
                 cmd.CommandType = System.Data.CommandType.Text;
                 cmd.Connection = conectar;
                 conectar.Open();
@@ -187,7 +188,7 @@ namespace MysqlTienda
 
         private void buscarFactura (int numero, String select)
         {
-            //CON ESTE CODIGO CAPTURO EL NUMERO DE FACTURA
+            //CON ESTE CODIGO CAPTURO EL NUMERO DE FACTURA y lo cambio
             try
             {
                 MySqlDataReader mdr;
@@ -197,7 +198,7 @@ namespace MysqlTienda
 
                 if (mdr.Read())
                 {
-                    textFactura.Text = Convert.ToString(Convert.ToInt16(mdr.GetString("factura_movimiento_nf")) + numero);
+                    textFactura.Text = Convert.ToString(Convert.ToInt16(mdr.GetString("factura")) + numero);
                 }
                 else
                 {
@@ -219,9 +220,11 @@ namespace MysqlTienda
 
         private void finalizar_Click_1(object sender, EventArgs e)
         {
-            buscarFactura(1, "SELECT * FROM easyerp.detalle_facturacov order by factura_movimiento_nf desc limit 1");
+            /*
+            buscarFactura(1, "SELECT MAX(factura) as factura FROM easyerp.detalle_facturacov where `almacen` ='girardot' order by factura");
             iniciar("");
             sumaTotal();
+            */
         }
 
         private void bunifuTileButton1_Click(object sender, EventArgs e)
@@ -247,7 +250,7 @@ namespace MysqlTienda
             {
 
                 MySqlDataReader mdr;
-                string select = "SELECT * FROM tienda.inventario where codigo =" + int.Parse(textInsertarCodigo.Text);
+                string select = "SELECT * FROM easyerp.producto where codigo =" + int.Parse(textInsertarCodigo.Text);
 
                 command = new MySqlCommand(select, conectar);
                 abrirConeccion();
@@ -291,6 +294,7 @@ namespace MysqlTienda
 
         private void textCodigo_TextChanged_1(object sender, EventArgs e)
         {
+            
             codigoCambia();
         }
 
@@ -320,7 +324,7 @@ namespace MysqlTienda
                     buniMaxMin.Enabled = true;
                     // "WHERE id = LAST_INSERT_ID""
                     cerrarConeccion();
-                    buscarFactura(0, "SELECT * FROM easyerp.detalle_facturacov order by factura_movimiento_nf limit 1");
+                    buscarFactura(0, "SELECT MAX(factura) as factura FROM easyerp.detalle_facturacov where `almacen` ='girardot' order by factura");
                     //buscarFactura(0, "SELECT * FROM easyerp.detalle_facturacov order by factura_movimiento_nf where id = LAST_INSERT_ID");
                     iniciar("");
                     sumaTotal();
@@ -347,6 +351,7 @@ namespace MysqlTienda
         private void bunifuCustomDataGrid1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             //falta por arrelgar
+            /*
             textId.Text = bunifuCustomDataGrid1.CurrentRow.Cells[0].Value.ToString();
             textCodigo.Text = textProducto.Text = bunifuCustomDataGrid1.CurrentRow.Cells[1].Value.ToString();
             textProducto.Text = bunifuCustomDataGrid1.CurrentRow.Cells[2].Value.ToString();
@@ -354,6 +359,7 @@ namespace MysqlTienda
             textTamano.Text = bunifuCustomDataGrid1.CurrentRow.Cells[5].Value.ToString();
             textCantidad.Text = bunifuCustomDataGrid1.CurrentRow.Cells[6].Value.ToString();
             textPrecio.Text = bunifuCustomDataGrid1.CurrentRow.Cells[7].Value.ToString();
+            */
         }
 
         private void bunifuEliminar_Click(object sender, EventArgs e)
@@ -427,6 +433,11 @@ namespace MysqlTienda
         }
 
         private void textFactura_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buniRegistro_Click(object sender, EventArgs e)
         {
 
         }

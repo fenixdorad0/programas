@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.textFactura = new System.Windows.Forms.TextBox();
             this.labelFactura = new System.Windows.Forms.Label();
             this.modificar = new System.Windows.Forms.Button();
@@ -41,7 +41,6 @@
             this.textSumaTotal = new System.Windows.Forms.TextBox();
             this.bunifuCustomDataGrid1 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.bunifuGradientPanel2 = new Bunifu.Framework.UI.BunifuGradientPanel();
-            this.buniRegistro = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuProgressBar1 = new Bunifu.Framework.UI.BunifuProgressBar();
             this.buniTextPass = new Bunifu.Framework.UI.BunifuTextbox();
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
@@ -137,20 +136,20 @@
             // 
             // bunifuCustomDataGrid1
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle1.NullValue = null;
-            this.bunifuCustomDataGrid1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle5.NullValue = null;
+            this.bunifuCustomDataGrid1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
             this.bunifuCustomDataGrid1.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.bunifuCustomDataGrid1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.bunifuCustomDataGrid1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.bunifuCustomDataGrid1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.bunifuCustomDataGrid1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.bunifuCustomDataGrid1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.bunifuCustomDataGrid1.DoubleBuffered = true;
             this.bunifuCustomDataGrid1.EnableHeadersVisualStyles = false;
@@ -167,7 +166,6 @@
             // 
             this.bunifuGradientPanel2.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.bunifuGradientPanel2, "bunifuGradientPanel2");
-            this.bunifuGradientPanel2.Controls.Add(this.buniRegistro);
             this.bunifuGradientPanel2.Controls.Add(this.bunifuProgressBar1);
             this.bunifuGradientPanel2.Controls.Add(this.buniTextPass);
             this.bunifuGradientPanel2.Controls.Add(this.bunifuCustomLabel1);
@@ -183,36 +181,6 @@
             this.bunifuGradientPanel2.Name = "bunifuGradientPanel2";
             this.bunifuGradientPanel2.Quality = 10;
             this.bunifuGradientPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.bunifuGradientPanel2_Paint);
-            // 
-            // buniRegistro
-            // 
-            this.buniRegistro.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.buniRegistro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            resources.ApplyResources(this.buniRegistro, "buniRegistro");
-            this.buniRegistro.BorderRadius = 0;
-            this.buniRegistro.ButtonText = "Registrar";
-            this.buniRegistro.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buniRegistro.DisabledColor = System.Drawing.Color.Gray;
-            this.buniRegistro.Iconcolor = System.Drawing.Color.Transparent;
-            this.buniRegistro.Iconimage = ((System.Drawing.Image)(resources.GetObject("buniRegistro.Iconimage")));
-            this.buniRegistro.Iconimage_right = null;
-            this.buniRegistro.Iconimage_right_Selected = null;
-            this.buniRegistro.Iconimage_Selected = null;
-            this.buniRegistro.IconMarginLeft = 0;
-            this.buniRegistro.IconMarginRight = 0;
-            this.buniRegistro.IconRightVisible = true;
-            this.buniRegistro.IconRightZoom = 0D;
-            this.buniRegistro.IconVisible = true;
-            this.buniRegistro.IconZoom = 90D;
-            this.buniRegistro.IsTab = false;
-            this.buniRegistro.Name = "buniRegistro";
-            this.buniRegistro.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.buniRegistro.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.buniRegistro.OnHoverTextColor = System.Drawing.Color.White;
-            this.buniRegistro.selected = false;
-            this.buniRegistro.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buniRegistro.Textcolor = System.Drawing.Color.White;
-            this.buniRegistro.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
             // bunifuProgressBar1
             // 
@@ -611,7 +579,6 @@
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
         private Bunifu.Framework.UI.BunifuImageButton buniMaxMin;
         private Bunifu.Framework.UI.BunifuImageButton buniCerrar;
-        private Bunifu.Framework.UI.BunifuFlatButton buniRegistro;
     }
 }
 
