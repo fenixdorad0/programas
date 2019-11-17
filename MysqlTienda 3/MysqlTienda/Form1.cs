@@ -111,22 +111,30 @@ namespace MysqlTienda
         {
             try
             {
-
-                string insertarCodigo = "INSERT INTO tienda.ventas(id,codigo,producto,referencia,tamano,cantidad,precio,total,fecha,hora,ciudad,factura) VALUES ('"
-                    + "" + "', '"
-                    + textInsertarCodigo.Text + "', '"
-                    + textProducto.Text + "','"
+                MessageBox.Show("se ejecuto esta mrd");
+                string insertarCodigo = "INSERT INTO easyerp.detalle_facturacov(`factura`, `almacen`, `codigo`, `referencia`, `producto`, `tamano`, `cantidad`, `precio`, `iva`, `SubtotalSinIva`, `SubtotalConIva`, `total`) VALUES ('"
+                //INSERT INTO `detalle_facturacov` (`factura`, `almacen`, `codigo`, `referencia`, `producto`, `tamano`, `cantidad`, `precio`, `iva`, `SubtotalSinIva`, `SubtotalConIva`, `total`) VALUES('3', 'girardot', '1', 'sabana', 'alteza garantizada', 'doble', '1', '2', NULL, NULL, NULL, '2');
+                    + textFactura.Text + "', '" //factura
+                    + "girardot" + "', '" //almacen falta por arreglar
+                    + textInsertarCodigo.Text + "', '" //codigo                    
                     + textReferencia.Text + "','"
+                    + textProducto.Text + "','" //
                     + textTamano.Text + "','"
                     + textCantidad.Text + "','"
                     + textPrecio.Text + "','"
-                    + Convert.ToDouble(textCantidad.Text)* Convert.ToDouble(textPrecio.Text) + "','"
+                    + "0" + "','" //iva
+                    + "0" + "','" // sub total sin iva
+                    + "0" + "','" //sub total con iva
+                    + Convert.ToDouble(textCantidad.Text) * Convert.ToDouble(textPrecio.Text) + "')";
+                    /*
                     + DateTime.Now.ToString("dd/MM/yy") + "','"
                     + DateTime.Now.ToString("hh:mm tt") + "','"
                     + label9.Text + "','"
-                    + textFactura.Text + "')";
+                    + textFactura.Text */
+                    
                 conectar.Open();
                 MySqlCommand command = new MySqlCommand(insertarCodigo, conectar);
+                
 
                 if (command.ExecuteNonQuery() == 1)
                 {
@@ -256,13 +264,18 @@ namespace MysqlTienda
                 abrirConeccion();
                 mdr = command.ExecuteReader();
 
+
+                // UPDATE `detalle_facturacov` SET `cantidad` = '2', `total` = '20000' WHERE `detalle_facturacov`.`factura` = 3 AND `detalle_facturacov`.`codigo` = 3;
+
                 if (mdr.Read())
                 {
+                    textCodigo.Text= mdr.GetString("codigo");
                     textReferencia.Text = mdr.GetString("referencia");
-                    textProducto.Text = mdr.GetString("producto");
-                    textTamano.Text = mdr.GetString("tamano");
-                    textCantidad.Text = mdr.GetString("cantidad");
-                    textPrecio.Text = "1";
+                    textProducto.Text = mdr.GetString("nombre");
+                    textTamano.Text = mdr.GetString("tamano_nombre");
+                    textCantidad.Text = "1";
+                    textPrecio.Text = mdr.GetString("precioDetal");
+                    textTotal.Text = Convert.ToString( Convert.ToDecimal(textPrecio.Text)*Convert.ToDecimal(textCantidad.Text));
                     prueba = true;
                     incementarProgeso();
 
@@ -309,7 +322,7 @@ namespace MysqlTienda
             try
             {
                 MySqlDataReader mdr;
-                string select = "SELECT* FROM easyerp.usuario WHERE `usuario`.`id` ='" + buniTextUsuario.text + "' and contrasna ='" + buniTextPass.text+"'" ;
+                string select = "SELECT* FROM easyerp.usuario WHERE `usuario`.`id` ='" + buniTextUsuario.text + "' and contrasena ='" + buniTextPass.text+"'" ;
                 
                 command = new MySqlCommand(select, conectar);
                 abrirConeccion();
@@ -351,15 +364,17 @@ namespace MysqlTienda
         private void bunifuCustomDataGrid1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             //falta por arrelgar
-            /*
+            //id,codigo,referencia,producto,tamaño,cantidad,precio,total
             textId.Text = bunifuCustomDataGrid1.CurrentRow.Cells[0].Value.ToString();
             textCodigo.Text = textProducto.Text = bunifuCustomDataGrid1.CurrentRow.Cells[1].Value.ToString();
-            textProducto.Text = bunifuCustomDataGrid1.CurrentRow.Cells[2].Value.ToString();
-            textReferencia.Text = bunifuCustomDataGrid1.CurrentRow.Cells[4].Value.ToString();
-            textTamano.Text = bunifuCustomDataGrid1.CurrentRow.Cells[5].Value.ToString();
-            textCantidad.Text = bunifuCustomDataGrid1.CurrentRow.Cells[6].Value.ToString();
-            textPrecio.Text = bunifuCustomDataGrid1.CurrentRow.Cells[7].Value.ToString();
-            */
+            textReferencia.Text = bunifuCustomDataGrid1.CurrentRow.Cells[2].Value.ToString();
+            textProducto.Text = bunifuCustomDataGrid1.CurrentRow.Cells[3].Value.ToString();
+            
+            textTamano.Text = bunifuCustomDataGrid1.CurrentRow.Cells[4].Value.ToString();
+            textCantidad.Text = bunifuCustomDataGrid1.CurrentRow.Cells[5].Value.ToString();
+            textPrecio.Text = bunifuCustomDataGrid1.CurrentRow.Cells[6].Value.ToString();
+            textTotal.Text = bunifuCustomDataGrid1.CurrentRow.Cells[7].Value.ToString();
+            
         }
 
         private void bunifuEliminar_Click(object sender, EventArgs e)

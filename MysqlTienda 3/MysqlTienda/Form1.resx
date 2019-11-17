@@ -125,7 +125,7 @@
     <value>899, 49</value>
   </data>
   <data name="textFactura.Size" type="System.Drawing.Size, System.Drawing">
-    <value>163, 47</value>
+    <value>163, 57</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="textFactura.TabIndex" type="System.Int32, mscorlib">
@@ -160,7 +160,7 @@
     <value>921, 22</value>
   </data>
   <data name="labelFactura.Size" type="System.Drawing.Size, System.Drawing">
-    <value>85, 25</value>
+    <value>105, 31</value>
   </data>
   <data name="labelFactura.TabIndex" type="System.Int32, mscorlib">
     <value>71</value>
@@ -247,7 +247,7 @@
     <value>38, 516</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>133, 20</value>
+    <value>160, 25</value>
   </data>
   <data name="label1.TabIndex" type="System.Int32, mscorlib">
     <value>58</value>
@@ -274,7 +274,7 @@
     <value>41, 541</value>
   </data>
   <data name="textInsertarCodigo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>153, 35</value>
+    <value>153, 41</value>
   </data>
   <data name="textInsertarCodigo.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -325,7 +325,7 @@
     <value>649, 525</value>
   </data>
   <data name="textSumaTotal.Size" type="System.Drawing.Size, System.Drawing">
-    <value>237, 47</value>
+    <value>237, 57</value>
   </data>
   <data name="textSumaTotal.TabIndex" type="System.Int32, mscorlib">
     <value>74</value>
@@ -344,6 +344,9 @@
   </data>
   <data name="bunifuCustomDataGrid1.Location" type="System.Drawing.Point, System.Drawing">
     <value>34, 92</value>
+  </data>
+  <data name="bunifuCustomDataGrid1.RowHeadersWidth" type="System.Int32, mscorlib">
+    <value>51</value>
   </data>
   <data name="bunifuCustomDataGrid1.Size" type="System.Drawing.Size, System.Drawing">
     <value>852, 392</value>
@@ -366,7 +369,7 @@
   <data name="bunifuGradientPanel2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABqSURBVChTfcs3DgAhDACw/P+n9N5BOSXzweDRYIxBorVm
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAABqSURBVChTfcs3DgAhDACw/P+n9N5BOSXzweDRYIxBorVm
         SikmpWRCCAbOOSTWWnaLEEJA7z17JYgxIqHwSpBzRpJSYrcItVYkpRR2i9B7x9YaeyUYYyCh8Eqw1kIy
         52S3COccJHtv9h8Hfh3xgFJkSEWoAAAAAElFTkSuQmCC
 </value>
@@ -375,7 +378,7 @@
     <value>Stretch</value>
   </data>
   <data name="bunifuProgressBar1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 160</value>
+    <value>8, 179</value>
   </data>
   <data name="bunifuProgressBar1.Size" type="System.Drawing.Size, System.Drawing">
     <value>226, 10</value>
@@ -398,7 +401,7 @@
   <data name="buniTextPass.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAwAAAAB/CAYAAABYHaUHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAATlSURBVHhe7dbLjhsJEgRBffr8+S72EAKH42qpZ/vBBMwA
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAATlSURBVHhe7dbLjhsJEgRBffr8+S72EAKH42qpZ/vBBMwA
         vySLRR7jx4f466//SJIkSfrkvlX9IUmSJElf05epH5ckSZL0PX2a+jFJkiRJr9GHqh+QJEmS9Fp9iHqx
         JEmSpNfsX6uXSZIkSbrRu9VL3hsAAPB+ta3f27vUC34XAADweWqD/64/Ul98KwAA4OvUJn+rN9UX3goA
         APgetc9/1S/VwxUAAPD9aqtXqR6sAACA11GbvfqHeug5AADg9dR2f+5v6oEKAAB4TbXfn/upPnwOAAB4
@@ -428,7 +431,7 @@
   <data name="buniTextPass.Icon" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJFSURBVHhe7dBLjtxADATROfrc3F4RIArB/k1JylTnA2Ll
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAJFSURBVHhe7dBLjtxADATROfrc3F4RIArB/k1JylTnA2Ll
         sTpZPxERERERERHv+/3996fiA/SQO4on6NGOKBb0SGf09ehRrugr0UNc2deg45W6NTr41d5F33i1W6JD
         n7ULfftZt0IHPuoo9FuPugU6bOos9NtT9ugo6my0gbJGB1FXoS2UJTqEuhptouzQEWsqaNuaFTpgTQ1t
         XLNB43uqaGvPAg3vqaPNPXk0uqeONvek0eCeC9rek0Vjey5oe08Wja3c0A2VJBrac0M39OTQyMoR3dGT
@@ -472,10 +475,10 @@
     <value>NoControl</value>
   </data>
   <data name="bunifuCustomLabel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>51, 10</value>
+    <value>53, 17</value>
   </data>
   <data name="bunifuCustomLabel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>102, 33</value>
+    <value>128, 42</value>
   </data>
   <data name="bunifuCustomLabel1.TabIndex" type="System.Int32, mscorlib">
     <value>82</value>
@@ -498,7 +501,7 @@
   <data name="buniTextUsuario.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAwAAAAB/CAYAAABYHaUHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAATlSURBVHhe7dbLjhsJEgRBffr8+S72EAKH42qpZ/vBBMwA
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAATlSURBVHhe7dbLjhsJEgRBffr8+S72EAKH42qpZ/vBBMwA
         vySLRR7jx4f466//SJIkSfrkvlX9IUmSJElf05epH5ckSZL0PX2a+jFJkiRJr9GHqh+QJEmS9Fp9iHqx
         JEmSpNfsX6uXSZIkSbrRu9VL3hsAAPB+ta3f27vUC34XAADweWqD/64/Ul98KwAA4OvUJn+rN9UX3goA
         APgetc9/1S/VwxUAAPD9aqtXqR6sAACA11GbvfqHeug5AADg9dR2f+5v6oEKAAB4TbXfn/upPnwOAAB4
@@ -528,7 +531,7 @@
   <data name="buniTextUsuario.Icon" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJFSURBVHhe7dBLjtxADATROfrc3F4RIArB/k1JylTnA2Ll
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAJFSURBVHhe7dBLjtxADATROfrc3F4RIArB/k1JylTnA2Ll
         sTpZPxERERERERHv+/3996fiA/SQO4on6NGOKBb0SGf09ehRrugr0UNc2deg45W6NTr41d5F33i1W6JD
         n7ULfftZt0IHPuoo9FuPugU6bOos9NtT9ugo6my0gbJGB1FXoS2UJTqEuhptouzQEWsqaNuaFTpgTQ1t
         XLNB43uqaGvPAg3vqaPNPXk0uqeONvek0eCeC9rek0Vjey5oe08Wja3c0A2VJBrac0M39OTQyMoR3dGT
@@ -655,7 +658,7 @@
   <data name="bunifuGauge1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAK4AAAB1CAYAAADX9doCAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAYiSURBVHhe7Z0tVBxLEIWRkUhkJDISGRkZiYxEInHgkJFI
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAYiSURBVHhe7Z0tVBxLEIWRkUhkJDISGRkZiYxEInHgkJFI
         ZCQSiURGIpGRyMi8e89r3tlMel922dmu6p7vO+c62LldXdtb/TMzBwAAAAAAAAAAAAAAAAAAAAAAAACw
         jsvLyyPp4wZ6X/4FYP8o4Q5L4p1fXV1dSw/Ss/RrB71I/pyv+tyL8vkkNrwdJdCJk0lJdS/9lGqJt089
         6PpXTuZiCeBPEiTq30Qiw78oCd47GcSuP/mt9UO6kfcPpSkwOups16pn6vjHlUToWU9qj+vjo9JEGAmP
@@ -688,7 +691,7 @@
     <value>Century Gothic, 15.75pt</value>
   </data>
   <data name="bunifuGauge1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>29, 34</value>
+    <value>24, 55</value>
   </data>
   <data name="bunifuGauge1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>6, 6, 6, 6</value>
@@ -718,7 +721,7 @@
     <value>0, 33</value>
   </data>
   <data name="bunifuGradientPanel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>246, 604</value>
+    <value>246, 645</value>
   </data>
   <data name="bunifuGradientPanel2.TabIndex" type="System.Int32, mscorlib">
     <value>81</value>
@@ -738,60 +741,12 @@
   <data name="bunifuGradientPanel1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAXSURBVChTY9DrDv9PDB5ViBdTW2H4fwB0FM3dpzmtBAAA
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAAXSURBVChTY9DrDv9PDB5ViBdTW2H4fwB0FM3dpzmtBAAA
         AABJRU5ErkJggg==
 </value>
   </data>
   <data name="bunifuGradientPanel1.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
-  </data>
-  <data name="&gt;&gt;buniCerrar.Name" xml:space="preserve">
-    <value>buniCerrar</value>
-  </data>
-  <data name="&gt;&gt;buniCerrar.Type" xml:space="preserve">
-    <value>Bunifu.Framework.UI.BunifuImageButton, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;buniCerrar.Parent" xml:space="preserve">
-    <value>bunifuGradientPanel1</value>
-  </data>
-  <data name="&gt;&gt;buniCerrar.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;buniMaxMin.Name" xml:space="preserve">
-    <value>buniMaxMin</value>
-  </data>
-  <data name="&gt;&gt;buniMaxMin.Type" xml:space="preserve">
-    <value>Bunifu.Framework.UI.BunifuImageButton, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;buniMaxMin.Parent" xml:space="preserve">
-    <value>bunifuGradientPanel1</value>
-  </data>
-  <data name="&gt;&gt;buniMaxMin.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="bunifuGradientPanel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="bunifuGradientPanel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="bunifuGradientPanel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1333, 33</value>
-  </data>
-  <data name="bunifuGradientPanel1.TabIndex" type="System.Int32, mscorlib">
-    <value>75</value>
-  </data>
-  <data name="&gt;&gt;bunifuGradientPanel1.Name" xml:space="preserve">
-    <value>bunifuGradientPanel1</value>
-  </data>
-  <data name="&gt;&gt;bunifuGradientPanel1.Type" xml:space="preserve">
-    <value>Bunifu.Framework.UI.BunifuGradientPanel, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;bunifuGradientPanel1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;bunifuGradientPanel1.ZOrder" xml:space="preserve">
-    <value>2</value>
   </data>
   <data name="buniCerrar.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -814,7 +769,7 @@
     <value>NoControl</value>
   </data>
   <data name="buniCerrar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1306, 4</value>
+    <value>1307, 4</value>
   </data>
   <data name="buniCerrar.Size" type="System.Drawing.Size, System.Drawing">
     <value>18, 25</value>
@@ -849,7 +804,7 @@
 </value>
   </data>
   <data name="buniMaxMin.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1273, 1</value>
+    <value>1274, 1</value>
   </data>
   <data name="buniMaxMin.Size" type="System.Drawing.Size, System.Drawing">
     <value>23, 29</value>
@@ -871,6 +826,30 @@
   </data>
   <data name="&gt;&gt;buniMaxMin.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="bunifuGradientPanel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="bunifuGradientPanel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="bunifuGradientPanel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1334, 33</value>
+  </data>
+  <data name="bunifuGradientPanel1.TabIndex" type="System.Int32, mscorlib">
+    <value>75</value>
+  </data>
+  <data name="&gt;&gt;bunifuGradientPanel1.Name" xml:space="preserve">
+    <value>bunifuGradientPanel1</value>
+  </data>
+  <data name="&gt;&gt;bunifuGradientPanel1.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuGradientPanel, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bunifuGradientPanel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;bunifuGradientPanel1.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="buniBnFinalizar.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 15.75pt</value>
@@ -932,7 +911,7 @@
     <value>22, 510</value>
   </data>
   <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>283, 73</value>
+    <value>348, 91</value>
   </data>
   <data name="label9.TabIndex" type="System.Int32, mscorlib">
     <value>82</value>
@@ -1067,10 +1046,10 @@
     <value>NoControl</value>
   </data>
   <data name="labelReferencia.Location" type="System.Drawing.Point, System.Drawing">
-    <value>243, 28</value>
+    <value>246, 24</value>
   </data>
   <data name="labelReferencia.Size" type="System.Drawing.Size, System.Drawing">
-    <value>90, 20</value>
+    <value>108, 25</value>
   </data>
   <data name="labelReferencia.TabIndex" type="System.Int32, mscorlib">
     <value>59</value>
@@ -1103,7 +1082,7 @@
     <value>583, 28</value>
   </data>
   <data name="labelCantidad.Size" type="System.Drawing.Size, System.Drawing">
-    <value>78, 20</value>
+    <value>94, 25</value>
   </data>
   <data name="labelCantidad.TabIndex" type="System.Int32, mscorlib">
     <value>60</value>
@@ -1136,7 +1115,7 @@
     <value>366, 28</value>
   </data>
   <data name="labelProducto.Size" type="System.Drawing.Size, System.Drawing">
-    <value>80, 20</value>
+    <value>96, 25</value>
   </data>
   <data name="labelProducto.TabIndex" type="System.Int32, mscorlib">
     <value>61</value>
@@ -1169,7 +1148,7 @@
     <value>479, 28</value>
   </data>
   <data name="labelTamaño.Size" type="System.Drawing.Size, System.Drawing">
-    <value>69, 20</value>
+    <value>83, 25</value>
   </data>
   <data name="labelTamaño.TabIndex" type="System.Int32, mscorlib">
     <value>62</value>
@@ -1202,7 +1181,7 @@
     <value>694, 28</value>
   </data>
   <data name="labelPrecio.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 20</value>
+    <value>71, 25</value>
   </data>
   <data name="labelPrecio.TabIndex" type="System.Int32, mscorlib">
     <value>63</value>
@@ -1256,7 +1235,7 @@
     <value>806, 28</value>
   </data>
   <data name="labelTotal.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 20</value>
+    <value>53, 25</value>
   </data>
   <data name="labelTotal.TabIndex" type="System.Int32, mscorlib">
     <value>70</value>
@@ -1406,7 +1385,7 @@
     <value>65, 28</value>
   </data>
   <data name="labelId.Size" type="System.Drawing.Size, System.Drawing">
-    <value>23, 20</value>
+    <value>29, 25</value>
   </data>
   <data name="labelId.TabIndex" type="System.Int32, mscorlib">
     <value>85</value>
@@ -1457,10 +1436,10 @@
     <value>NoControl</value>
   </data>
   <data name="labelCodigo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>153, 28</value>
+    <value>161, 24</value>
   </data>
   <data name="labelCodigo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>62, 20</value>
+    <value>76, 25</value>
   </data>
   <data name="labelCodigo.TabIndex" type="System.Int32, mscorlib">
     <value>87</value>
@@ -1580,7 +1559,7 @@
     <value>252, 39</value>
   </data>
   <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1066, 584</value>
+    <value>1070, 627</value>
   </data>
   <data name="panel1.TabIndex" type="System.Int32, mscorlib">
     <value>89</value>
@@ -1604,7 +1583,7 @@
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1333, 637</value>
+    <value>1334, 678</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value> </value>
