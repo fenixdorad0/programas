@@ -74,12 +74,14 @@
             this.labelId = new System.Windows.Forms.Label();
             this.textCodigo = new System.Windows.Forms.TextBox();
             this.labelCodigo = new System.Windows.Forms.Label();
-            this.bunifuEliminar = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.bunifuRestar1 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.ButtonUsuarioCargar = new Bunifu.Framework.UI.BunifuFlatButton();
             this.LabelUNombre = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.LabelUCorreo = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.LabelUContrasena = new Bunifu.Framework.UI.BunifuCustomLabel();
@@ -93,7 +95,6 @@
             this.TextboxCorreo = new Bunifu.Framework.UI.BunifuTextbox();
             this.TextboxContrasena = new Bunifu.Framework.UI.BunifuTextbox();
             this.TextboxUsuario = new Bunifu.Framework.UI.BunifuTextbox();
-            this.bunifuCustomDataGrid2 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.label6 = new System.Windows.Forms.Label();
             this.comboBox5 = new System.Windows.Forms.ComboBox();
@@ -112,7 +113,7 @@
             this.bunifuTextbox3 = new Bunifu.Framework.UI.BunifuTextbox();
             this.bunifuTextbox2 = new Bunifu.Framework.UI.BunifuTextbox();
             this.bunifuTextbox1 = new Bunifu.Framework.UI.BunifuTextbox();
-            this.ButtonUsuarioCargar = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.bunifuCustomDataGrid2 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).BeginInit();
             this.bunifuGradientPanel2.SuspendLayout();
             this.bunifuGradientPanel1.SuspendLayout();
@@ -122,8 +123,8 @@
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid2)).BeginInit();
             this.tabPage4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid2)).BeginInit();
             this.SuspendLayout();
             // 
             // textFactura
@@ -522,40 +523,41 @@
             this.labelCodigo.ForeColor = System.Drawing.Color.Black;
             this.labelCodigo.Name = "labelCodigo";
             // 
-            // bunifuEliminar
+            // bunifuRestar1
             // 
-            this.bunifuEliminar.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuEliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            resources.ApplyResources(this.bunifuEliminar, "bunifuEliminar");
-            this.bunifuEliminar.BorderRadius = 0;
-            this.bunifuEliminar.ButtonText = "Eliminar";
-            this.bunifuEliminar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuEliminar.DisabledColor = System.Drawing.Color.Gray;
-            this.bunifuEliminar.Iconcolor = System.Drawing.Color.Transparent;
-            this.bunifuEliminar.Iconimage = ((System.Drawing.Image)(resources.GetObject("bunifuEliminar.Iconimage")));
-            this.bunifuEliminar.Iconimage_right = null;
-            this.bunifuEliminar.Iconimage_right_Selected = null;
-            this.bunifuEliminar.Iconimage_Selected = null;
-            this.bunifuEliminar.IconMarginLeft = 0;
-            this.bunifuEliminar.IconMarginRight = 0;
-            this.bunifuEliminar.IconRightVisible = false;
-            this.bunifuEliminar.IconRightZoom = 0D;
-            this.bunifuEliminar.IconVisible = false;
-            this.bunifuEliminar.IconZoom = 90D;
-            this.bunifuEliminar.IsTab = false;
-            this.bunifuEliminar.Name = "bunifuEliminar";
-            this.bunifuEliminar.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuEliminar.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.bunifuEliminar.OnHoverTextColor = System.Drawing.Color.White;
-            this.bunifuEliminar.selected = false;
-            this.bunifuEliminar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bunifuEliminar.Textcolor = System.Drawing.Color.White;
-            this.bunifuEliminar.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuEliminar.Click += new System.EventHandler(this.bunifuEliminar_Click);
+            this.bunifuRestar1.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.bunifuRestar1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            resources.ApplyResources(this.bunifuRestar1, "bunifuRestar1");
+            this.bunifuRestar1.BorderRadius = 0;
+            this.bunifuRestar1.ButtonText = "Restar 1 producto";
+            this.bunifuRestar1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuRestar1.DisabledColor = System.Drawing.Color.Gray;
+            this.bunifuRestar1.Iconcolor = System.Drawing.Color.Transparent;
+            this.bunifuRestar1.Iconimage = ((System.Drawing.Image)(resources.GetObject("bunifuRestar1.Iconimage")));
+            this.bunifuRestar1.Iconimage_right = null;
+            this.bunifuRestar1.Iconimage_right_Selected = null;
+            this.bunifuRestar1.Iconimage_Selected = null;
+            this.bunifuRestar1.IconMarginLeft = 0;
+            this.bunifuRestar1.IconMarginRight = 0;
+            this.bunifuRestar1.IconRightVisible = false;
+            this.bunifuRestar1.IconRightZoom = 0D;
+            this.bunifuRestar1.IconVisible = false;
+            this.bunifuRestar1.IconZoom = 90D;
+            this.bunifuRestar1.IsTab = false;
+            this.bunifuRestar1.Name = "bunifuRestar1";
+            this.bunifuRestar1.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.bunifuRestar1.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.bunifuRestar1.OnHoverTextColor = System.Drawing.Color.White;
+            this.bunifuRestar1.selected = false;
+            this.bunifuRestar1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bunifuRestar1.Textcolor = System.Drawing.Color.White;
+            this.bunifuRestar1.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuRestar1.Click += new System.EventHandler(this.bunifuEliminar_Click);
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.bunifuEliminar);
+            this.panel1.Controls.Add(this.bunifuFlatButton1);
+            this.panel1.Controls.Add(this.bunifuRestar1);
             this.panel1.Controls.Add(this.buniActualizar);
             this.panel1.Controls.Add(this.labelCodigo);
             this.panel1.Controls.Add(this.textSumaTotal);
@@ -585,6 +587,37 @@
             resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
             // 
+            // bunifuFlatButton1
+            // 
+            this.bunifuFlatButton1.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.bunifuFlatButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            resources.ApplyResources(this.bunifuFlatButton1, "bunifuFlatButton1");
+            this.bunifuFlatButton1.BorderRadius = 0;
+            this.bunifuFlatButton1.ButtonText = "Eliminar";
+            this.bunifuFlatButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuFlatButton1.DisabledColor = System.Drawing.Color.Gray;
+            this.bunifuFlatButton1.Iconcolor = System.Drawing.Color.Transparent;
+            this.bunifuFlatButton1.Iconimage = ((System.Drawing.Image)(resources.GetObject("bunifuFlatButton1.Iconimage")));
+            this.bunifuFlatButton1.Iconimage_right = null;
+            this.bunifuFlatButton1.Iconimage_right_Selected = null;
+            this.bunifuFlatButton1.Iconimage_Selected = null;
+            this.bunifuFlatButton1.IconMarginLeft = 0;
+            this.bunifuFlatButton1.IconMarginRight = 0;
+            this.bunifuFlatButton1.IconRightVisible = false;
+            this.bunifuFlatButton1.IconRightZoom = 0D;
+            this.bunifuFlatButton1.IconVisible = false;
+            this.bunifuFlatButton1.IconZoom = 90D;
+            this.bunifuFlatButton1.IsTab = false;
+            this.bunifuFlatButton1.Name = "bunifuFlatButton1";
+            this.bunifuFlatButton1.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.bunifuFlatButton1.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.bunifuFlatButton1.OnHoverTextColor = System.Drawing.Color.White;
+            this.bunifuFlatButton1.selected = false;
+            this.bunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bunifuFlatButton1.Textcolor = System.Drawing.Color.White;
+            this.bunifuFlatButton1.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuFlatButton1.Click += new System.EventHandler(this.bunifuFlatButton1_Click_1);
+            // 
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
@@ -610,6 +643,7 @@
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.bunifuCustomDataGrid2);
             this.tabPage3.Controls.Add(this.ButtonUsuarioCargar);
             this.tabPage3.Controls.Add(this.LabelUNombre);
             this.tabPage3.Controls.Add(this.LabelUCorreo);
@@ -624,10 +658,40 @@
             this.tabPage3.Controls.Add(this.TextboxCorreo);
             this.tabPage3.Controls.Add(this.TextboxContrasena);
             this.tabPage3.Controls.Add(this.TextboxUsuario);
-            this.tabPage3.Controls.Add(this.bunifuCustomDataGrid2);
             resources.ApplyResources(this.tabPage3, "tabPage3");
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // ButtonUsuarioCargar
+            // 
+            this.ButtonUsuarioCargar.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.ButtonUsuarioCargar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            resources.ApplyResources(this.ButtonUsuarioCargar, "ButtonUsuarioCargar");
+            this.ButtonUsuarioCargar.BorderRadius = 0;
+            this.ButtonUsuarioCargar.ButtonText = "cargar";
+            this.ButtonUsuarioCargar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ButtonUsuarioCargar.DisabledColor = System.Drawing.Color.Gray;
+            this.ButtonUsuarioCargar.Iconcolor = System.Drawing.Color.Transparent;
+            this.ButtonUsuarioCargar.Iconimage = ((System.Drawing.Image)(resources.GetObject("ButtonUsuarioCargar.Iconimage")));
+            this.ButtonUsuarioCargar.Iconimage_right = null;
+            this.ButtonUsuarioCargar.Iconimage_right_Selected = null;
+            this.ButtonUsuarioCargar.Iconimage_Selected = null;
+            this.ButtonUsuarioCargar.IconMarginLeft = 0;
+            this.ButtonUsuarioCargar.IconMarginRight = 0;
+            this.ButtonUsuarioCargar.IconRightVisible = false;
+            this.ButtonUsuarioCargar.IconRightZoom = 0D;
+            this.ButtonUsuarioCargar.IconVisible = false;
+            this.ButtonUsuarioCargar.IconZoom = 90D;
+            this.ButtonUsuarioCargar.IsTab = false;
+            this.ButtonUsuarioCargar.Name = "ButtonUsuarioCargar";
+            this.ButtonUsuarioCargar.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.ButtonUsuarioCargar.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.ButtonUsuarioCargar.OnHoverTextColor = System.Drawing.Color.White;
+            this.ButtonUsuarioCargar.selected = false;
+            this.ButtonUsuarioCargar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ButtonUsuarioCargar.Textcolor = System.Drawing.Color.White;
+            this.ButtonUsuarioCargar.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonUsuarioCargar.Click += new System.EventHandler(this.ButtonUsuarioCargar_Click);
             // 
             // LabelUNombre
             // 
@@ -779,6 +843,7 @@
             this.TextboxCorreo.Icon = ((System.Drawing.Image)(resources.GetObject("TextboxCorreo.Icon")));
             this.TextboxCorreo.Name = "TextboxCorreo";
             this.TextboxCorreo.text = "";
+            this.TextboxCorreo.OnTextChange += new System.EventHandler(this.TextboxCorreo_OnTextChange);
             // 
             // TextboxContrasena
             // 
@@ -788,6 +853,7 @@
             this.TextboxContrasena.Icon = ((System.Drawing.Image)(resources.GetObject("TextboxContrasena.Icon")));
             this.TextboxContrasena.Name = "TextboxContrasena";
             this.TextboxContrasena.text = "";
+            this.TextboxContrasena.OnTextChange += new System.EventHandler(this.TextboxContrasena_OnTextChange);
             // 
             // TextboxUsuario
             // 
@@ -798,31 +864,6 @@
             this.TextboxUsuario.Name = "TextboxUsuario";
             this.TextboxUsuario.text = "";
             this.TextboxUsuario.OnTextChange += new System.EventHandler(this.bunifuTextbox5_OnTextChange);
-            // 
-            // bunifuCustomDataGrid2
-            // 
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.bunifuCustomDataGrid2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
-            this.bunifuCustomDataGrid2.BackgroundColor = System.Drawing.Color.Gainsboro;
-            this.bunifuCustomDataGrid2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.bunifuCustomDataGrid2.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.bunifuCustomDataGrid2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
-            this.bunifuCustomDataGrid2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.bunifuCustomDataGrid2.DoubleBuffered = true;
-            this.bunifuCustomDataGrid2.EnableHeadersVisualStyles = false;
-            this.bunifuCustomDataGrid2.HeaderBgColor = System.Drawing.Color.SeaGreen;
-            this.bunifuCustomDataGrid2.HeaderForeColor = System.Drawing.Color.SeaGreen;
-            resources.ApplyResources(this.bunifuCustomDataGrid2, "bunifuCustomDataGrid2");
-            this.bunifuCustomDataGrid2.Name = "bunifuCustomDataGrid2";
-            this.bunifuCustomDataGrid2.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.bunifuCustomDataGrid2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.bunifuCustomDataGrid2_CellContentClick);
             // 
             // tabPage4
             // 
@@ -977,36 +1018,32 @@
             this.bunifuTextbox1.Name = "bunifuTextbox1";
             this.bunifuTextbox1.text = "Codigo";
             // 
-            // ButtonUsuarioCargar
+            // bunifuCustomDataGrid2
             // 
-            this.ButtonUsuarioCargar.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.ButtonUsuarioCargar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            resources.ApplyResources(this.ButtonUsuarioCargar, "ButtonUsuarioCargar");
-            this.ButtonUsuarioCargar.BorderRadius = 0;
-            this.ButtonUsuarioCargar.ButtonText = "cargar";
-            this.ButtonUsuarioCargar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ButtonUsuarioCargar.DisabledColor = System.Drawing.Color.Gray;
-            this.ButtonUsuarioCargar.Iconcolor = System.Drawing.Color.Transparent;
-            this.ButtonUsuarioCargar.Iconimage = ((System.Drawing.Image)(resources.GetObject("ButtonUsuarioCargar.Iconimage")));
-            this.ButtonUsuarioCargar.Iconimage_right = null;
-            this.ButtonUsuarioCargar.Iconimage_right_Selected = null;
-            this.ButtonUsuarioCargar.Iconimage_Selected = null;
-            this.ButtonUsuarioCargar.IconMarginLeft = 0;
-            this.ButtonUsuarioCargar.IconMarginRight = 0;
-            this.ButtonUsuarioCargar.IconRightVisible = false;
-            this.ButtonUsuarioCargar.IconRightZoom = 0D;
-            this.ButtonUsuarioCargar.IconVisible = false;
-            this.ButtonUsuarioCargar.IconZoom = 90D;
-            this.ButtonUsuarioCargar.IsTab = false;
-            this.ButtonUsuarioCargar.Name = "ButtonUsuarioCargar";
-            this.ButtonUsuarioCargar.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.ButtonUsuarioCargar.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.ButtonUsuarioCargar.OnHoverTextColor = System.Drawing.Color.White;
-            this.ButtonUsuarioCargar.selected = false;
-            this.ButtonUsuarioCargar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ButtonUsuarioCargar.Textcolor = System.Drawing.Color.White;
-            this.ButtonUsuarioCargar.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ButtonUsuarioCargar.Click += new System.EventHandler(this.ButtonUsuarioCargar_Click);
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle3.NullValue = null;
+            this.bunifuCustomDataGrid2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
+            this.bunifuCustomDataGrid2.BackgroundColor = System.Drawing.Color.Gainsboro;
+            this.bunifuCustomDataGrid2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.bunifuCustomDataGrid2.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.bunifuCustomDataGrid2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.bunifuCustomDataGrid2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.bunifuCustomDataGrid2.DoubleBuffered = true;
+            this.bunifuCustomDataGrid2.EnableHeadersVisualStyles = false;
+            this.bunifuCustomDataGrid2.GridColor = System.Drawing.Color.Ivory;
+            this.bunifuCustomDataGrid2.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.bunifuCustomDataGrid2.HeaderForeColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.bunifuCustomDataGrid2, "bunifuCustomDataGrid2");
+            this.bunifuCustomDataGrid2.Name = "bunifuCustomDataGrid2";
+            this.bunifuCustomDataGrid2.ReadOnly = true;
+            this.bunifuCustomDataGrid2.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             // 
             // Form1
             // 
@@ -1032,9 +1069,9 @@
             this.tabPage1.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid2)).EndInit();
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1075,7 +1112,7 @@
         private System.Windows.Forms.Label labelId;
         private System.Windows.Forms.TextBox textCodigo;
         private System.Windows.Forms.Label labelCodigo;
-        private Bunifu.Framework.UI.BunifuFlatButton bunifuEliminar;
+        private Bunifu.Framework.UI.BunifuFlatButton bunifuRestar1;
         private System.Windows.Forms.Panel panel1;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
         private Bunifu.Framework.UI.BunifuImageButton buniMaxMin;
@@ -1113,13 +1150,14 @@
         private Bunifu.Framework.UI.BunifuTextbox TextboxCorreo;
         private Bunifu.Framework.UI.BunifuTextbox TextboxContrasena;
         private Bunifu.Framework.UI.BunifuTextbox TextboxUsuario;
-        private Bunifu.Framework.UI.BunifuCustomDataGrid bunifuCustomDataGrid2;
         private Bunifu.Framework.UI.BunifuCustomLabel LabelUCedula;
         private Bunifu.Framework.UI.BunifuCustomLabel LabelUNombre;
         private Bunifu.Framework.UI.BunifuCustomLabel LabelUCorreo;
         private Bunifu.Framework.UI.BunifuCustomLabel LabelUContrasena;
         private Bunifu.Framework.UI.BunifuCustomLabel LabelUUsuario;
         private Bunifu.Framework.UI.BunifuFlatButton ButtonUsuarioCargar;
+        private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton1;
+        private Bunifu.Framework.UI.BunifuCustomDataGrid bunifuCustomDataGrid2;
     }
 }
 
