@@ -37,25 +37,9 @@
             this.labelFactura = new System.Windows.Forms.Label();
             this.modificar = new System.Windows.Forms.Button();
             this.buscar = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textInsertarCodigo = new System.Windows.Forms.TextBox();
             this.insertar = new System.Windows.Forms.Button();
             this.textSumaTotal = new System.Windows.Forms.TextBox();
             this.bunifuCustomDataGrid1 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            this.bunifuGradientPanel2 = new Bunifu.Framework.UI.BunifuGradientPanel();
-            this.labelCedula = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.labelVendedor = new System.Windows.Forms.Label();
-            this.bunifuProgressBar1 = new Bunifu.Framework.UI.BunifuProgressBar();
-            this.buniTextPass = new Bunifu.Framework.UI.BunifuTextbox();
-            this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.buniTextUsuario = new Bunifu.Framework.UI.BunifuTextbox();
-            this.buniBtnLogin = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.bunifuGauge1 = new Bunifu.Framework.UI.BunifuGauge();
-            this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
-            this.buniCerrar = new Bunifu.Framework.UI.BunifuImageButton();
-            this.buniMaxMin = new Bunifu.Framework.UI.BunifuImageButton();
-            this.buniBnFinalizar = new Bunifu.Framework.UI.BunifuTileButton();
             this.labelAlmacen = new System.Windows.Forms.Label();
             this.textReferencia = new System.Windows.Forms.TextBox();
             this.textTamano = new System.Windows.Forms.TextBox();
@@ -69,32 +53,21 @@
             this.labelPrecio = new System.Windows.Forms.Label();
             this.textTotal = new System.Windows.Forms.TextBox();
             this.labelTotal = new System.Windows.Forms.Label();
-            this.buniActualizar = new Bunifu.Framework.UI.BunifuFlatButton();
             this.textId = new System.Windows.Forms.TextBox();
             this.labelId = new System.Windows.Forms.Label();
             this.textCodigo = new System.Windows.Forms.TextBox();
             this.labelCodigo = new System.Windows.Forms.Label();
-            this.bunifuRestar1 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.ButtonUsuarioCargar = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.bunifuCustomDataGrid2 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.LabelUNombre = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.LabelUCorreo = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.LabelUContrasena = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.LabelUUsuario = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.LabelUCedula = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.ButtonUsuarioModificar = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.ButtonUsuarioEliminar = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.ButtonUsuarioAgregar = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.TextboxCedula = new Bunifu.Framework.UI.BunifuTextbox();
-            this.TextboxNombre = new Bunifu.Framework.UI.BunifuTextbox();
-            this.TextboxCorreo = new Bunifu.Framework.UI.BunifuTextbox();
-            this.TextboxContrasena = new Bunifu.Framework.UI.BunifuTextbox();
-            this.TextboxUsuario = new Bunifu.Framework.UI.BunifuTextbox();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.label6 = new System.Windows.Forms.Label();
             this.comboBox5 = new System.Windows.Forms.ComboBox();
@@ -106,6 +79,32 @@
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.labelInsertarCodigo = new System.Windows.Forms.Label();
+            this.textInsertarCodigo = new System.Windows.Forms.TextBox();
+            this.bunifuGradientPanel2 = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.labelCedula = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.labelVendedor = new System.Windows.Forms.Label();
+            this.buniTextPass = new Bunifu.Framework.UI.BunifuTextbox();
+            this.buniTextUsuario = new Bunifu.Framework.UI.BunifuTextbox();
+            this.buniBtnLogin = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.buniCerrar = new Bunifu.Framework.UI.BunifuImageButton();
+            this.buniMaxMin = new Bunifu.Framework.UI.BunifuImageButton();
+            this.buniBnFinalizar = new Bunifu.Framework.UI.BunifuTileButton();
+            this.buniActualizar = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.bunifuRestar1 = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.ButtonUsuarioCargar = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.ButtonUsuarioModificar = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.ButtonUsuarioEliminar = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.ButtonUsuarioAgregar = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.TextboxCedula = new Bunifu.Framework.UI.BunifuTextbox();
+            this.TextboxNombre = new Bunifu.Framework.UI.BunifuTextbox();
+            this.TextboxCorreo = new Bunifu.Framework.UI.BunifuTextbox();
+            this.TextboxContrasena = new Bunifu.Framework.UI.BunifuTextbox();
+            this.TextboxUsuario = new Bunifu.Framework.UI.BunifuTextbox();
             this.bunifuTextbox6 = new Bunifu.Framework.UI.BunifuTextbox();
             this.bunifuTextbox7 = new Bunifu.Framework.UI.BunifuTextbox();
             this.bunifuTextbox8 = new Bunifu.Framework.UI.BunifuTextbox();
@@ -113,18 +112,23 @@
             this.bunifuTextbox3 = new Bunifu.Framework.UI.BunifuTextbox();
             this.bunifuTextbox2 = new Bunifu.Framework.UI.BunifuTextbox();
             this.bunifuTextbox1 = new Bunifu.Framework.UI.BunifuTextbox();
-            this.bunifuCustomDataGrid2 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.tabControl2 = new System.Windows.Forms.TabControl();
+            this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.tabPage7 = new System.Windows.Forms.TabPage();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).BeginInit();
-            this.bunifuGradientPanel2.SuspendLayout();
-            this.bunifuGradientPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.buniCerrar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.buniMaxMin)).BeginInit();
             this.panel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage3.SuspendLayout();
-            this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid2)).BeginInit();
+            this.tabPage4.SuspendLayout();
+            this.bunifuGradientPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.bunifuGradientPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.buniCerrar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.buniMaxMin)).BeginInit();
+            this.tabControl2.SuspendLayout();
             this.SuspendLayout();
             // 
             // textFactura
@@ -133,7 +137,6 @@
             resources.ApplyResources(this.textFactura, "textFactura");
             this.textFactura.Name = "textFactura";
             this.textFactura.ReadOnly = true;
-            this.textFactura.TextChanged += new System.EventHandler(this.textFactura_TextChanged);
             // 
             // labelFactura
             // 
@@ -154,26 +157,11 @@
             this.buscar.Name = "buscar";
             this.buscar.UseVisualStyleBackColor = true;
             // 
-            // label1
-            // 
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.BackColor = System.Drawing.Color.White;
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Name = "label1";
-            // 
-            // textInsertarCodigo
-            // 
-            resources.ApplyResources(this.textInsertarCodigo, "textInsertarCodigo");
-            this.textInsertarCodigo.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.textInsertarCodigo.Name = "textInsertarCodigo";
-            this.textInsertarCodigo.TextChanged += new System.EventHandler(this.textCodigo_TextChanged_1);
-            // 
             // insertar
             // 
             resources.ApplyResources(this.insertar, "insertar");
             this.insertar.Name = "insertar";
             this.insertar.UseVisualStyleBackColor = true;
-            this.insertar.Click += new System.EventHandler(this.insertar_Click);
             // 
             // textSumaTotal
             // 
@@ -181,7 +169,6 @@
             this.textSumaTotal.Name = "textSumaTotal";
             this.textSumaTotal.ReadOnly = true;
             this.textSumaTotal.TabStop = false;
-            this.textSumaTotal.TextChanged += new System.EventHandler(this.textSumaTotal_TextChanged);
             // 
             // bunifuCustomDataGrid1
             // 
@@ -211,176 +198,6 @@
             this.bunifuCustomDataGrid1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.bunifuCustomDataGrid1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.bunifuCustomDataGrid1_CellContentClick);
             this.bunifuCustomDataGrid1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.bunifuCustomDataGrid1_CellContentClick);
-            // 
-            // bunifuGradientPanel2
-            // 
-            this.bunifuGradientPanel2.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.bunifuGradientPanel2, "bunifuGradientPanel2");
-            this.bunifuGradientPanel2.Controls.Add(this.labelCedula);
-            this.bunifuGradientPanel2.Controls.Add(this.comboBox1);
-            this.bunifuGradientPanel2.Controls.Add(this.labelVendedor);
-            this.bunifuGradientPanel2.Controls.Add(this.bunifuProgressBar1);
-            this.bunifuGradientPanel2.Controls.Add(this.buniTextPass);
-            this.bunifuGradientPanel2.Controls.Add(this.bunifuCustomLabel1);
-            this.bunifuGradientPanel2.Controls.Add(this.buniTextUsuario);
-            this.bunifuGradientPanel2.Controls.Add(this.buniBtnLogin);
-            this.bunifuGradientPanel2.Controls.Add(this.bunifuGauge1);
-            this.bunifuGradientPanel2.Controls.Add(this.label1);
-            this.bunifuGradientPanel2.Controls.Add(this.textInsertarCodigo);
-            this.bunifuGradientPanel2.GradientBottomLeft = System.Drawing.Color.Gainsboro;
-            this.bunifuGradientPanel2.GradientBottomRight = System.Drawing.Color.Transparent;
-            this.bunifuGradientPanel2.GradientTopLeft = System.Drawing.Color.White;
-            this.bunifuGradientPanel2.GradientTopRight = System.Drawing.Color.WhiteSmoke;
-            this.bunifuGradientPanel2.Name = "bunifuGradientPanel2";
-            this.bunifuGradientPanel2.Quality = 10;
-            this.bunifuGradientPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.bunifuGradientPanel2_Paint);
-            // 
-            // labelCedula
-            // 
-            resources.ApplyResources(this.labelCedula, "labelCedula");
-            this.labelCedula.Name = "labelCedula";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            resources.ApplyResources(this.comboBox1, "comboBox1");
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
-            this.comboBox1.TextChanged += new System.EventHandler(this.comboBox1_TextChanged);
-            // 
-            // labelVendedor
-            // 
-            resources.ApplyResources(this.labelVendedor, "labelVendedor");
-            this.labelVendedor.Name = "labelVendedor";
-            this.labelVendedor.Click += new System.EventHandler(this.labelVendedor_Click);
-            // 
-            // bunifuProgressBar1
-            // 
-            this.bunifuProgressBar1.BackColor = System.Drawing.Color.Silver;
-            this.bunifuProgressBar1.BorderRadius = 5;
-            resources.ApplyResources(this.bunifuProgressBar1, "bunifuProgressBar1");
-            this.bunifuProgressBar1.MaximumValue = 100;
-            this.bunifuProgressBar1.Name = "bunifuProgressBar1";
-            this.bunifuProgressBar1.ProgressColor = System.Drawing.Color.Teal;
-            this.bunifuProgressBar1.Value = 0;
-            // 
-            // buniTextPass
-            // 
-            this.buniTextPass.BackColor = System.Drawing.Color.Gainsboro;
-            resources.ApplyResources(this.buniTextPass, "buniTextPass");
-            this.buniTextPass.ForeColor = System.Drawing.Color.Teal;
-            this.buniTextPass.Icon = ((System.Drawing.Image)(resources.GetObject("buniTextPass.Icon")));
-            this.buniTextPass.Name = "buniTextPass";
-            this.buniTextPass.text = "Contraseña";
-            // 
-            // bunifuCustomLabel1
-            // 
-            resources.ApplyResources(this.bunifuCustomLabel1, "bunifuCustomLabel1");
-            this.bunifuCustomLabel1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
-            // 
-            // buniTextUsuario
-            // 
-            this.buniTextUsuario.BackColor = System.Drawing.Color.Gainsboro;
-            resources.ApplyResources(this.buniTextUsuario, "buniTextUsuario");
-            this.buniTextUsuario.ForeColor = System.Drawing.Color.Teal;
-            this.buniTextUsuario.Icon = ((System.Drawing.Image)(resources.GetObject("buniTextUsuario.Icon")));
-            this.buniTextUsuario.Name = "buniTextUsuario";
-            this.buniTextUsuario.text = "Usuario";
-            // 
-            // buniBtnLogin
-            // 
-            this.buniBtnLogin.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.buniBtnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            resources.ApplyResources(this.buniBtnLogin, "buniBtnLogin");
-            this.buniBtnLogin.BorderRadius = 0;
-            this.buniBtnLogin.ButtonText = "Login";
-            this.buniBtnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buniBtnLogin.DisabledColor = System.Drawing.Color.Gray;
-            this.buniBtnLogin.Iconcolor = System.Drawing.Color.Transparent;
-            this.buniBtnLogin.Iconimage = ((System.Drawing.Image)(resources.GetObject("buniBtnLogin.Iconimage")));
-            this.buniBtnLogin.Iconimage_right = null;
-            this.buniBtnLogin.Iconimage_right_Selected = null;
-            this.buniBtnLogin.Iconimage_Selected = null;
-            this.buniBtnLogin.IconMarginLeft = 0;
-            this.buniBtnLogin.IconMarginRight = 0;
-            this.buniBtnLogin.IconRightVisible = true;
-            this.buniBtnLogin.IconRightZoom = 0D;
-            this.buniBtnLogin.IconVisible = true;
-            this.buniBtnLogin.IconZoom = 90D;
-            this.buniBtnLogin.IsTab = false;
-            this.buniBtnLogin.Name = "buniBtnLogin";
-            this.buniBtnLogin.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.buniBtnLogin.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.buniBtnLogin.OnHoverTextColor = System.Drawing.Color.White;
-            this.buniBtnLogin.selected = false;
-            this.buniBtnLogin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buniBtnLogin.Textcolor = System.Drawing.Color.White;
-            this.buniBtnLogin.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buniBtnLogin.Click += new System.EventHandler(this.buniBtnLogin_Click);
-            // 
-            // bunifuGauge1
-            // 
-            resources.ApplyResources(this.bunifuGauge1, "bunifuGauge1");
-            this.bunifuGauge1.Name = "bunifuGauge1";
-            this.bunifuGauge1.ProgressBgColor = System.Drawing.Color.Gray;
-            this.bunifuGauge1.ProgressColor1 = System.Drawing.Color.SeaGreen;
-            this.bunifuGauge1.ProgressColor2 = System.Drawing.Color.Tomato;
-            this.bunifuGauge1.Suffix = "";
-            this.bunifuGauge1.Thickness = 30;
-            this.bunifuGauge1.Value = 0;
-            // 
-            // bunifuGradientPanel1
-            // 
-            this.bunifuGradientPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(11)))), ((int)(((byte)(43)))));
-            resources.ApplyResources(this.bunifuGradientPanel1, "bunifuGradientPanel1");
-            this.bunifuGradientPanel1.Controls.Add(this.buniCerrar);
-            this.bunifuGradientPanel1.Controls.Add(this.buniMaxMin);
-            this.bunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.SeaGreen;
-            this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.SeaGreen;
-            this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.SeaGreen;
-            this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.SeaGreen;
-            this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
-            this.bunifuGradientPanel1.Quality = 10;
-            this.bunifuGradientPanel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.bunifuGradientPanel1_MouseDown);
-            this.bunifuGradientPanel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.bunifuGradientPanel1_MouseMove);
-            this.bunifuGradientPanel1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.bunifuGradientPanel1_MouseUp);
-            // 
-            // buniCerrar
-            // 
-            resources.ApplyResources(this.buniCerrar, "buniCerrar");
-            this.buniCerrar.BackColor = System.Drawing.Color.SeaGreen;
-            this.buniCerrar.ImageActive = null;
-            this.buniCerrar.Name = "buniCerrar";
-            this.buniCerrar.TabStop = false;
-            this.buniCerrar.Zoom = 10;
-            this.buniCerrar.Click += new System.EventHandler(this.bunifuImageButton2_Click);
-            // 
-            // buniMaxMin
-            // 
-            resources.ApplyResources(this.buniMaxMin, "buniMaxMin");
-            this.buniMaxMin.BackColor = System.Drawing.Color.SeaGreen;
-            this.buniMaxMin.ImageActive = null;
-            this.buniMaxMin.Name = "buniMaxMin";
-            this.buniMaxMin.TabStop = false;
-            this.buniMaxMin.Zoom = 10;
-            this.buniMaxMin.Click += new System.EventHandler(this.bunifuImageButton1_Click);
-            // 
-            // buniBnFinalizar
-            // 
-            this.buniBnFinalizar.BackColor = System.Drawing.Color.SeaGreen;
-            this.buniBnFinalizar.color = System.Drawing.Color.SeaGreen;
-            this.buniBnFinalizar.colorActive = System.Drawing.Color.MediumSeaGreen;
-            this.buniBnFinalizar.Cursor = System.Windows.Forms.Cursors.Hand;
-            resources.ApplyResources(this.buniBnFinalizar, "buniBnFinalizar");
-            this.buniBnFinalizar.ForeColor = System.Drawing.Color.White;
-            this.buniBnFinalizar.Image = ((System.Drawing.Image)(resources.GetObject("buniBnFinalizar.Image")));
-            this.buniBnFinalizar.ImagePosition = 20;
-            this.buniBnFinalizar.ImageZoom = 50;
-            this.buniBnFinalizar.LabelPosition = 41;
-            this.buniBnFinalizar.LabelText = "Finalizar";
-            this.buniBnFinalizar.Name = "buniBnFinalizar";
-            this.buniBnFinalizar.Click += new System.EventHandler(this.finalizar_Click_1);
             // 
             // labelAlmacen
             // 
@@ -466,37 +283,6 @@
             this.labelTotal.ForeColor = System.Drawing.Color.Black;
             this.labelTotal.Name = "labelTotal";
             // 
-            // buniActualizar
-            // 
-            this.buniActualizar.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.buniActualizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            resources.ApplyResources(this.buniActualizar, "buniActualizar");
-            this.buniActualizar.BorderRadius = 0;
-            this.buniActualizar.ButtonText = "Modificar dato";
-            this.buniActualizar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buniActualizar.DisabledColor = System.Drawing.Color.Gray;
-            this.buniActualizar.Iconcolor = System.Drawing.Color.Transparent;
-            this.buniActualizar.Iconimage = ((System.Drawing.Image)(resources.GetObject("buniActualizar.Iconimage")));
-            this.buniActualizar.Iconimage_right = null;
-            this.buniActualizar.Iconimage_right_Selected = null;
-            this.buniActualizar.Iconimage_Selected = null;
-            this.buniActualizar.IconMarginLeft = 0;
-            this.buniActualizar.IconMarginRight = 0;
-            this.buniActualizar.IconRightVisible = false;
-            this.buniActualizar.IconRightZoom = 0D;
-            this.buniActualizar.IconVisible = false;
-            this.buniActualizar.IconZoom = 90D;
-            this.buniActualizar.IsTab = false;
-            this.buniActualizar.Name = "buniActualizar";
-            this.buniActualizar.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.buniActualizar.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.buniActualizar.OnHoverTextColor = System.Drawing.Color.White;
-            this.buniActualizar.selected = false;
-            this.buniActualizar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buniActualizar.Textcolor = System.Drawing.Color.White;
-            this.buniActualizar.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buniActualizar.Click += new System.EventHandler(this.buniActualizar_Click);
-            // 
             // textId
             // 
             resources.ApplyResources(this.textId, "textId");
@@ -522,37 +308,6 @@
             this.labelCodigo.BackColor = System.Drawing.Color.White;
             this.labelCodigo.ForeColor = System.Drawing.Color.Black;
             this.labelCodigo.Name = "labelCodigo";
-            // 
-            // bunifuRestar1
-            // 
-            this.bunifuRestar1.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuRestar1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            resources.ApplyResources(this.bunifuRestar1, "bunifuRestar1");
-            this.bunifuRestar1.BorderRadius = 0;
-            this.bunifuRestar1.ButtonText = "Restar 1 producto";
-            this.bunifuRestar1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuRestar1.DisabledColor = System.Drawing.Color.Gray;
-            this.bunifuRestar1.Iconcolor = System.Drawing.Color.Transparent;
-            this.bunifuRestar1.Iconimage = ((System.Drawing.Image)(resources.GetObject("bunifuRestar1.Iconimage")));
-            this.bunifuRestar1.Iconimage_right = null;
-            this.bunifuRestar1.Iconimage_right_Selected = null;
-            this.bunifuRestar1.Iconimage_Selected = null;
-            this.bunifuRestar1.IconMarginLeft = 0;
-            this.bunifuRestar1.IconMarginRight = 0;
-            this.bunifuRestar1.IconRightVisible = false;
-            this.bunifuRestar1.IconRightZoom = 0D;
-            this.bunifuRestar1.IconVisible = false;
-            this.bunifuRestar1.IconZoom = 90D;
-            this.bunifuRestar1.IsTab = false;
-            this.bunifuRestar1.Name = "bunifuRestar1";
-            this.bunifuRestar1.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuRestar1.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.bunifuRestar1.OnHoverTextColor = System.Drawing.Color.White;
-            this.bunifuRestar1.selected = false;
-            this.bunifuRestar1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bunifuRestar1.Textcolor = System.Drawing.Color.White;
-            this.bunifuRestar1.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuRestar1.Click += new System.EventHandler(this.bunifuEliminar_Click);
             // 
             // panel1
             // 
@@ -587,43 +342,13 @@
             resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
             // 
-            // bunifuFlatButton1
-            // 
-            this.bunifuFlatButton1.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            resources.ApplyResources(this.bunifuFlatButton1, "bunifuFlatButton1");
-            this.bunifuFlatButton1.BorderRadius = 0;
-            this.bunifuFlatButton1.ButtonText = "Eliminar";
-            this.bunifuFlatButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuFlatButton1.DisabledColor = System.Drawing.Color.Gray;
-            this.bunifuFlatButton1.Iconcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton1.Iconimage = ((System.Drawing.Image)(resources.GetObject("bunifuFlatButton1.Iconimage")));
-            this.bunifuFlatButton1.Iconimage_right = null;
-            this.bunifuFlatButton1.Iconimage_right_Selected = null;
-            this.bunifuFlatButton1.Iconimage_Selected = null;
-            this.bunifuFlatButton1.IconMarginLeft = 0;
-            this.bunifuFlatButton1.IconMarginRight = 0;
-            this.bunifuFlatButton1.IconRightVisible = false;
-            this.bunifuFlatButton1.IconRightZoom = 0D;
-            this.bunifuFlatButton1.IconVisible = false;
-            this.bunifuFlatButton1.IconZoom = 90D;
-            this.bunifuFlatButton1.IsTab = false;
-            this.bunifuFlatButton1.Name = "bunifuFlatButton1";
-            this.bunifuFlatButton1.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton1.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.bunifuFlatButton1.OnHoverTextColor = System.Drawing.Color.White;
-            this.bunifuFlatButton1.selected = false;
-            this.bunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bunifuFlatButton1.Textcolor = System.Drawing.Color.White;
-            this.bunifuFlatButton1.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuFlatButton1.Click += new System.EventHandler(this.bunifuFlatButton1_Click_1);
-            // 
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.tabPage4);
+            this.tabControl1.Controls.Add(this.tabPage5);
             resources.ApplyResources(this.tabControl1, "tabControl1");
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -643,13 +368,14 @@
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.tabControl2);
             this.tabPage3.Controls.Add(this.bunifuCustomDataGrid2);
-            this.tabPage3.Controls.Add(this.ButtonUsuarioCargar);
             this.tabPage3.Controls.Add(this.LabelUNombre);
             this.tabPage3.Controls.Add(this.LabelUCorreo);
             this.tabPage3.Controls.Add(this.LabelUContrasena);
             this.tabPage3.Controls.Add(this.LabelUUsuario);
             this.tabPage3.Controls.Add(this.LabelUCedula);
+            this.tabPage3.Controls.Add(this.ButtonUsuarioCargar);
             this.tabPage3.Controls.Add(this.ButtonUsuarioModificar);
             this.tabPage3.Controls.Add(this.ButtonUsuarioEliminar);
             this.tabPage3.Controls.Add(this.ButtonUsuarioAgregar);
@@ -662,36 +388,34 @@
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
-            // ButtonUsuarioCargar
+            // bunifuCustomDataGrid2
             // 
-            this.ButtonUsuarioCargar.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.ButtonUsuarioCargar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            resources.ApplyResources(this.ButtonUsuarioCargar, "ButtonUsuarioCargar");
-            this.ButtonUsuarioCargar.BorderRadius = 0;
-            this.ButtonUsuarioCargar.ButtonText = "cargar";
-            this.ButtonUsuarioCargar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ButtonUsuarioCargar.DisabledColor = System.Drawing.Color.Gray;
-            this.ButtonUsuarioCargar.Iconcolor = System.Drawing.Color.Transparent;
-            this.ButtonUsuarioCargar.Iconimage = ((System.Drawing.Image)(resources.GetObject("ButtonUsuarioCargar.Iconimage")));
-            this.ButtonUsuarioCargar.Iconimage_right = null;
-            this.ButtonUsuarioCargar.Iconimage_right_Selected = null;
-            this.ButtonUsuarioCargar.Iconimage_Selected = null;
-            this.ButtonUsuarioCargar.IconMarginLeft = 0;
-            this.ButtonUsuarioCargar.IconMarginRight = 0;
-            this.ButtonUsuarioCargar.IconRightVisible = false;
-            this.ButtonUsuarioCargar.IconRightZoom = 0D;
-            this.ButtonUsuarioCargar.IconVisible = false;
-            this.ButtonUsuarioCargar.IconZoom = 90D;
-            this.ButtonUsuarioCargar.IsTab = false;
-            this.ButtonUsuarioCargar.Name = "ButtonUsuarioCargar";
-            this.ButtonUsuarioCargar.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.ButtonUsuarioCargar.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.ButtonUsuarioCargar.OnHoverTextColor = System.Drawing.Color.White;
-            this.ButtonUsuarioCargar.selected = false;
-            this.ButtonUsuarioCargar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ButtonUsuarioCargar.Textcolor = System.Drawing.Color.White;
-            this.ButtonUsuarioCargar.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ButtonUsuarioCargar.Click += new System.EventHandler(this.ButtonUsuarioCargar_Click);
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle3.NullValue = null;
+            this.bunifuCustomDataGrid2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
+            this.bunifuCustomDataGrid2.BackgroundColor = System.Drawing.Color.Gainsboro;
+            this.bunifuCustomDataGrid2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.bunifuCustomDataGrid2.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.bunifuCustomDataGrid2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.bunifuCustomDataGrid2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.bunifuCustomDataGrid2.DoubleBuffered = true;
+            this.bunifuCustomDataGrid2.EnableHeadersVisualStyles = false;
+            this.bunifuCustomDataGrid2.GridColor = System.Drawing.Color.Ivory;
+            this.bunifuCustomDataGrid2.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.bunifuCustomDataGrid2.HeaderForeColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.bunifuCustomDataGrid2, "bunifuCustomDataGrid2");
+            this.bunifuCustomDataGrid2.Name = "bunifuCustomDataGrid2";
+            this.bunifuCustomDataGrid2.ReadOnly = true;
+            this.bunifuCustomDataGrid2.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.bunifuCustomDataGrid2.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.bunifuCustomDataGrid2_CellClick);
+            this.bunifuCustomDataGrid2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.bunifuCustomDataGrid2_CellContentClick_1);
             // 
             // LabelUNombre
             // 
@@ -722,148 +446,6 @@
             resources.ApplyResources(this.LabelUCedula, "LabelUCedula");
             this.LabelUCedula.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.LabelUCedula.Name = "LabelUCedula";
-            this.LabelUCedula.Click += new System.EventHandler(this.bunifuCustomLabel2_Click);
-            // 
-            // ButtonUsuarioModificar
-            // 
-            this.ButtonUsuarioModificar.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.ButtonUsuarioModificar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            resources.ApplyResources(this.ButtonUsuarioModificar, "ButtonUsuarioModificar");
-            this.ButtonUsuarioModificar.BorderRadius = 0;
-            this.ButtonUsuarioModificar.ButtonText = "Modificar";
-            this.ButtonUsuarioModificar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ButtonUsuarioModificar.DisabledColor = System.Drawing.Color.Gray;
-            this.ButtonUsuarioModificar.Iconcolor = System.Drawing.Color.Transparent;
-            this.ButtonUsuarioModificar.Iconimage = ((System.Drawing.Image)(resources.GetObject("ButtonUsuarioModificar.Iconimage")));
-            this.ButtonUsuarioModificar.Iconimage_right = null;
-            this.ButtonUsuarioModificar.Iconimage_right_Selected = null;
-            this.ButtonUsuarioModificar.Iconimage_Selected = null;
-            this.ButtonUsuarioModificar.IconMarginLeft = 0;
-            this.ButtonUsuarioModificar.IconMarginRight = 0;
-            this.ButtonUsuarioModificar.IconRightVisible = false;
-            this.ButtonUsuarioModificar.IconRightZoom = 0D;
-            this.ButtonUsuarioModificar.IconVisible = false;
-            this.ButtonUsuarioModificar.IconZoom = 90D;
-            this.ButtonUsuarioModificar.IsTab = false;
-            this.ButtonUsuarioModificar.Name = "ButtonUsuarioModificar";
-            this.ButtonUsuarioModificar.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.ButtonUsuarioModificar.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.ButtonUsuarioModificar.OnHoverTextColor = System.Drawing.Color.White;
-            this.ButtonUsuarioModificar.selected = false;
-            this.ButtonUsuarioModificar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ButtonUsuarioModificar.Textcolor = System.Drawing.Color.White;
-            this.ButtonUsuarioModificar.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            // 
-            // ButtonUsuarioEliminar
-            // 
-            this.ButtonUsuarioEliminar.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.ButtonUsuarioEliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            resources.ApplyResources(this.ButtonUsuarioEliminar, "ButtonUsuarioEliminar");
-            this.ButtonUsuarioEliminar.BorderRadius = 0;
-            this.ButtonUsuarioEliminar.ButtonText = "Eliminar";
-            this.ButtonUsuarioEliminar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ButtonUsuarioEliminar.DisabledColor = System.Drawing.Color.Gray;
-            this.ButtonUsuarioEliminar.Iconcolor = System.Drawing.Color.Transparent;
-            this.ButtonUsuarioEliminar.Iconimage = ((System.Drawing.Image)(resources.GetObject("ButtonUsuarioEliminar.Iconimage")));
-            this.ButtonUsuarioEliminar.Iconimage_right = null;
-            this.ButtonUsuarioEliminar.Iconimage_right_Selected = null;
-            this.ButtonUsuarioEliminar.Iconimage_Selected = null;
-            this.ButtonUsuarioEliminar.IconMarginLeft = 0;
-            this.ButtonUsuarioEliminar.IconMarginRight = 0;
-            this.ButtonUsuarioEliminar.IconRightVisible = false;
-            this.ButtonUsuarioEliminar.IconRightZoom = 0D;
-            this.ButtonUsuarioEliminar.IconVisible = false;
-            this.ButtonUsuarioEliminar.IconZoom = 90D;
-            this.ButtonUsuarioEliminar.IsTab = false;
-            this.ButtonUsuarioEliminar.Name = "ButtonUsuarioEliminar";
-            this.ButtonUsuarioEliminar.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.ButtonUsuarioEliminar.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.ButtonUsuarioEliminar.OnHoverTextColor = System.Drawing.Color.White;
-            this.ButtonUsuarioEliminar.selected = false;
-            this.ButtonUsuarioEliminar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ButtonUsuarioEliminar.Textcolor = System.Drawing.Color.White;
-            this.ButtonUsuarioEliminar.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            // 
-            // ButtonUsuarioAgregar
-            // 
-            this.ButtonUsuarioAgregar.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.ButtonUsuarioAgregar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            resources.ApplyResources(this.ButtonUsuarioAgregar, "ButtonUsuarioAgregar");
-            this.ButtonUsuarioAgregar.BorderRadius = 0;
-            this.ButtonUsuarioAgregar.ButtonText = "Agregar";
-            this.ButtonUsuarioAgregar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ButtonUsuarioAgregar.DisabledColor = System.Drawing.Color.Gray;
-            this.ButtonUsuarioAgregar.Iconcolor = System.Drawing.Color.Transparent;
-            this.ButtonUsuarioAgregar.Iconimage = ((System.Drawing.Image)(resources.GetObject("ButtonUsuarioAgregar.Iconimage")));
-            this.ButtonUsuarioAgregar.Iconimage_right = null;
-            this.ButtonUsuarioAgregar.Iconimage_right_Selected = null;
-            this.ButtonUsuarioAgregar.Iconimage_Selected = null;
-            this.ButtonUsuarioAgregar.IconMarginLeft = 0;
-            this.ButtonUsuarioAgregar.IconMarginRight = 0;
-            this.ButtonUsuarioAgregar.IconRightVisible = false;
-            this.ButtonUsuarioAgregar.IconRightZoom = 0D;
-            this.ButtonUsuarioAgregar.IconVisible = false;
-            this.ButtonUsuarioAgregar.IconZoom = 90D;
-            this.ButtonUsuarioAgregar.IsTab = false;
-            this.ButtonUsuarioAgregar.Name = "ButtonUsuarioAgregar";
-            this.ButtonUsuarioAgregar.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.ButtonUsuarioAgregar.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.ButtonUsuarioAgregar.OnHoverTextColor = System.Drawing.Color.White;
-            this.ButtonUsuarioAgregar.selected = false;
-            this.ButtonUsuarioAgregar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ButtonUsuarioAgregar.Textcolor = System.Drawing.Color.White;
-            this.ButtonUsuarioAgregar.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ButtonUsuarioAgregar.Click += new System.EventHandler(this.bunifuFlatButton1_Click);
-            // 
-            // TextboxCedula
-            // 
-            this.TextboxCedula.BackColor = System.Drawing.Color.Gainsboro;
-            resources.ApplyResources(this.TextboxCedula, "TextboxCedula");
-            this.TextboxCedula.ForeColor = System.Drawing.Color.Teal;
-            this.TextboxCedula.Icon = ((System.Drawing.Image)(resources.GetObject("TextboxCedula.Icon")));
-            this.TextboxCedula.Name = "TextboxCedula";
-            this.TextboxCedula.text = "";
-            this.TextboxCedula.OnTextChange += new System.EventHandler(this.bunifuTextbox12_OnTextChange);
-            // 
-            // TextboxNombre
-            // 
-            this.TextboxNombre.BackColor = System.Drawing.Color.Gainsboro;
-            resources.ApplyResources(this.TextboxNombre, "TextboxNombre");
-            this.TextboxNombre.ForeColor = System.Drawing.Color.Teal;
-            this.TextboxNombre.Icon = ((System.Drawing.Image)(resources.GetObject("TextboxNombre.Icon")));
-            this.TextboxNombre.Name = "TextboxNombre";
-            this.TextboxNombre.text = "";
-            this.TextboxNombre.OnTextChange += new System.EventHandler(this.TextboxNombre_OnTextChange);
-            // 
-            // TextboxCorreo
-            // 
-            this.TextboxCorreo.BackColor = System.Drawing.Color.Gainsboro;
-            resources.ApplyResources(this.TextboxCorreo, "TextboxCorreo");
-            this.TextboxCorreo.ForeColor = System.Drawing.Color.Teal;
-            this.TextboxCorreo.Icon = ((System.Drawing.Image)(resources.GetObject("TextboxCorreo.Icon")));
-            this.TextboxCorreo.Name = "TextboxCorreo";
-            this.TextboxCorreo.text = "";
-            this.TextboxCorreo.OnTextChange += new System.EventHandler(this.TextboxCorreo_OnTextChange);
-            // 
-            // TextboxContrasena
-            // 
-            this.TextboxContrasena.BackColor = System.Drawing.Color.Gainsboro;
-            resources.ApplyResources(this.TextboxContrasena, "TextboxContrasena");
-            this.TextboxContrasena.ForeColor = System.Drawing.Color.Teal;
-            this.TextboxContrasena.Icon = ((System.Drawing.Image)(resources.GetObject("TextboxContrasena.Icon")));
-            this.TextboxContrasena.Name = "TextboxContrasena";
-            this.TextboxContrasena.text = "";
-            this.TextboxContrasena.OnTextChange += new System.EventHandler(this.TextboxContrasena_OnTextChange);
-            // 
-            // TextboxUsuario
-            // 
-            this.TextboxUsuario.BackColor = System.Drawing.Color.Gainsboro;
-            resources.ApplyResources(this.TextboxUsuario, "TextboxUsuario");
-            this.TextboxUsuario.ForeColor = System.Drawing.Color.Teal;
-            this.TextboxUsuario.Icon = ((System.Drawing.Image)(resources.GetObject("TextboxUsuario.Icon")));
-            this.TextboxUsuario.Name = "TextboxUsuario";
-            this.TextboxUsuario.text = "";
-            this.TextboxUsuario.OnTextChange += new System.EventHandler(this.bunifuTextbox5_OnTextChange);
             // 
             // tabPage4
             // 
@@ -953,7 +535,433 @@
             resources.GetString("comboBox2.Items"),
             resources.GetString("comboBox2.Items1")});
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
+            // 
+            // bunifuFlatButton1
+            // 
+            this.bunifuFlatButton1.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.bunifuFlatButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            resources.ApplyResources(this.bunifuFlatButton1, "bunifuFlatButton1");
+            this.bunifuFlatButton1.BorderRadius = 0;
+            this.bunifuFlatButton1.ButtonText = "Eliminar";
+            this.bunifuFlatButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuFlatButton1.DisabledColor = System.Drawing.Color.Gray;
+            this.bunifuFlatButton1.Iconcolor = System.Drawing.Color.Transparent;
+            this.bunifuFlatButton1.Iconimage = ((System.Drawing.Image)(resources.GetObject("bunifuFlatButton1.Iconimage")));
+            this.bunifuFlatButton1.Iconimage_right = null;
+            this.bunifuFlatButton1.Iconimage_right_Selected = null;
+            this.bunifuFlatButton1.Iconimage_Selected = null;
+            this.bunifuFlatButton1.IconMarginLeft = 0;
+            this.bunifuFlatButton1.IconMarginRight = 0;
+            this.bunifuFlatButton1.IconRightVisible = false;
+            this.bunifuFlatButton1.IconRightZoom = 0D;
+            this.bunifuFlatButton1.IconVisible = false;
+            this.bunifuFlatButton1.IconZoom = 90D;
+            this.bunifuFlatButton1.IsTab = false;
+            this.bunifuFlatButton1.Name = "bunifuFlatButton1";
+            this.bunifuFlatButton1.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.bunifuFlatButton1.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.bunifuFlatButton1.OnHoverTextColor = System.Drawing.Color.White;
+            this.bunifuFlatButton1.selected = false;
+            this.bunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bunifuFlatButton1.Textcolor = System.Drawing.Color.White;
+            this.bunifuFlatButton1.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuFlatButton1.Click += new System.EventHandler(this.bunifuFlatButton1_Click_1);
+            // 
+            // labelInsertarCodigo
+            // 
+            resources.ApplyResources(this.labelInsertarCodigo, "labelInsertarCodigo");
+            this.labelInsertarCodigo.BackColor = System.Drawing.Color.White;
+            this.labelInsertarCodigo.ForeColor = System.Drawing.Color.Black;
+            this.labelInsertarCodigo.Name = "labelInsertarCodigo";
+            this.labelInsertarCodigo.UseCompatibleTextRendering = true;
+            // 
+            // textInsertarCodigo
+            // 
+            resources.ApplyResources(this.textInsertarCodigo, "textInsertarCodigo");
+            this.textInsertarCodigo.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.textInsertarCodigo.Name = "textInsertarCodigo";
+            this.textInsertarCodigo.TextChanged += new System.EventHandler(this.textCodigo_TextChanged_1);
+            // 
+            // bunifuGradientPanel2
+            // 
+            this.bunifuGradientPanel2.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.bunifuGradientPanel2, "bunifuGradientPanel2");
+            this.bunifuGradientPanel2.Controls.Add(this.pictureBox1);
+            this.bunifuGradientPanel2.Controls.Add(this.labelCedula);
+            this.bunifuGradientPanel2.Controls.Add(this.comboBox1);
+            this.bunifuGradientPanel2.Controls.Add(this.labelVendedor);
+            this.bunifuGradientPanel2.Controls.Add(this.buniTextPass);
+            this.bunifuGradientPanel2.Controls.Add(this.buniTextUsuario);
+            this.bunifuGradientPanel2.Controls.Add(this.buniBtnLogin);
+            this.bunifuGradientPanel2.Controls.Add(this.labelInsertarCodigo);
+            this.bunifuGradientPanel2.Controls.Add(this.textInsertarCodigo);
+            this.bunifuGradientPanel2.GradientBottomLeft = System.Drawing.Color.Gainsboro;
+            this.bunifuGradientPanel2.GradientBottomRight = System.Drawing.Color.Transparent;
+            this.bunifuGradientPanel2.GradientTopLeft = System.Drawing.Color.White;
+            this.bunifuGradientPanel2.GradientTopRight = System.Drawing.Color.WhiteSmoke;
+            this.bunifuGradientPanel2.Name = "bunifuGradientPanel2";
+            this.bunifuGradientPanel2.Quality = 10;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::MysqlTienda.Properties.Resources.Logo_tendidos_del_Tolima;
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.TabStop = false;
+            // 
+            // labelCedula
+            // 
+            resources.ApplyResources(this.labelCedula, "labelCedula");
+            this.labelCedula.Name = "labelCedula";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            resources.ApplyResources(this.comboBox1, "comboBox1");
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.TextChanged += new System.EventHandler(this.comboBox1_TextChanged);
+            // 
+            // labelVendedor
+            // 
+            resources.ApplyResources(this.labelVendedor, "labelVendedor");
+            this.labelVendedor.Name = "labelVendedor";
+            // 
+            // buniTextPass
+            // 
+            this.buniTextPass.BackColor = System.Drawing.Color.Gainsboro;
+            resources.ApplyResources(this.buniTextPass, "buniTextPass");
+            this.buniTextPass.ForeColor = System.Drawing.Color.Teal;
+            this.buniTextPass.Icon = ((System.Drawing.Image)(resources.GetObject("buniTextPass.Icon")));
+            this.buniTextPass.Name = "buniTextPass";
+            this.buniTextPass.text = "Contraseña";
+            // 
+            // buniTextUsuario
+            // 
+            this.buniTextUsuario.BackColor = System.Drawing.Color.Gainsboro;
+            resources.ApplyResources(this.buniTextUsuario, "buniTextUsuario");
+            this.buniTextUsuario.ForeColor = System.Drawing.Color.Teal;
+            this.buniTextUsuario.Icon = ((System.Drawing.Image)(resources.GetObject("buniTextUsuario.Icon")));
+            this.buniTextUsuario.Name = "buniTextUsuario";
+            this.buniTextUsuario.text = "Usuario";
+            // 
+            // buniBtnLogin
+            // 
+            this.buniBtnLogin.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.buniBtnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            resources.ApplyResources(this.buniBtnLogin, "buniBtnLogin");
+            this.buniBtnLogin.BorderRadius = 0;
+            this.buniBtnLogin.ButtonText = "Login";
+            this.buniBtnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buniBtnLogin.DisabledColor = System.Drawing.Color.Gray;
+            this.buniBtnLogin.Iconcolor = System.Drawing.Color.Transparent;
+            this.buniBtnLogin.Iconimage = ((System.Drawing.Image)(resources.GetObject("buniBtnLogin.Iconimage")));
+            this.buniBtnLogin.Iconimage_right = null;
+            this.buniBtnLogin.Iconimage_right_Selected = null;
+            this.buniBtnLogin.Iconimage_Selected = null;
+            this.buniBtnLogin.IconMarginLeft = 0;
+            this.buniBtnLogin.IconMarginRight = 0;
+            this.buniBtnLogin.IconRightVisible = true;
+            this.buniBtnLogin.IconRightZoom = 0D;
+            this.buniBtnLogin.IconVisible = true;
+            this.buniBtnLogin.IconZoom = 90D;
+            this.buniBtnLogin.IsTab = false;
+            this.buniBtnLogin.Name = "buniBtnLogin";
+            this.buniBtnLogin.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.buniBtnLogin.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.buniBtnLogin.OnHoverTextColor = System.Drawing.Color.White;
+            this.buniBtnLogin.selected = false;
+            this.buniBtnLogin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buniBtnLogin.Textcolor = System.Drawing.Color.White;
+            this.buniBtnLogin.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buniBtnLogin.Click += new System.EventHandler(this.buniBtnLogin_Click);
+            // 
+            // bunifuGradientPanel1
+            // 
+            this.bunifuGradientPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(11)))), ((int)(((byte)(43)))));
+            resources.ApplyResources(this.bunifuGradientPanel1, "bunifuGradientPanel1");
+            this.bunifuGradientPanel1.Controls.Add(this.buniCerrar);
+            this.bunifuGradientPanel1.Controls.Add(this.buniMaxMin);
+            this.bunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.SeaGreen;
+            this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.SeaGreen;
+            this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.SeaGreen;
+            this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.SeaGreen;
+            this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
+            this.bunifuGradientPanel1.Quality = 10;
+            this.bunifuGradientPanel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.bunifuGradientPanel1_MouseDown);
+            this.bunifuGradientPanel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.bunifuGradientPanel1_MouseMove);
+            this.bunifuGradientPanel1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.bunifuGradientPanel1_MouseUp);
+            // 
+            // buniCerrar
+            // 
+            resources.ApplyResources(this.buniCerrar, "buniCerrar");
+            this.buniCerrar.BackColor = System.Drawing.Color.SeaGreen;
+            this.buniCerrar.ImageActive = null;
+            this.buniCerrar.Name = "buniCerrar";
+            this.buniCerrar.TabStop = false;
+            this.buniCerrar.Zoom = 10;
+            this.buniCerrar.Click += new System.EventHandler(this.bunifuImageButton2_Click);
+            // 
+            // buniMaxMin
+            // 
+            resources.ApplyResources(this.buniMaxMin, "buniMaxMin");
+            this.buniMaxMin.BackColor = System.Drawing.Color.SeaGreen;
+            this.buniMaxMin.ImageActive = null;
+            this.buniMaxMin.Name = "buniMaxMin";
+            this.buniMaxMin.TabStop = false;
+            this.buniMaxMin.Zoom = 10;
+            this.buniMaxMin.Click += new System.EventHandler(this.bunifuImageButton1_Click);
+            // 
+            // buniBnFinalizar
+            // 
+            this.buniBnFinalizar.BackColor = System.Drawing.Color.SeaGreen;
+            this.buniBnFinalizar.color = System.Drawing.Color.SeaGreen;
+            this.buniBnFinalizar.colorActive = System.Drawing.Color.MediumSeaGreen;
+            this.buniBnFinalizar.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.buniBnFinalizar, "buniBnFinalizar");
+            this.buniBnFinalizar.ForeColor = System.Drawing.Color.White;
+            this.buniBnFinalizar.Image = ((System.Drawing.Image)(resources.GetObject("buniBnFinalizar.Image")));
+            this.buniBnFinalizar.ImagePosition = 20;
+            this.buniBnFinalizar.ImageZoom = 50;
+            this.buniBnFinalizar.LabelPosition = 41;
+            this.buniBnFinalizar.LabelText = "Finalizar";
+            this.buniBnFinalizar.Name = "buniBnFinalizar";
+            this.buniBnFinalizar.Click += new System.EventHandler(this.finalizar_Click_1);
+            // 
+            // buniActualizar
+            // 
+            this.buniActualizar.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.buniActualizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            resources.ApplyResources(this.buniActualizar, "buniActualizar");
+            this.buniActualizar.BorderRadius = 0;
+            this.buniActualizar.ButtonText = "Modificar dato";
+            this.buniActualizar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buniActualizar.DisabledColor = System.Drawing.Color.Gray;
+            this.buniActualizar.Iconcolor = System.Drawing.Color.Transparent;
+            this.buniActualizar.Iconimage = ((System.Drawing.Image)(resources.GetObject("buniActualizar.Iconimage")));
+            this.buniActualizar.Iconimage_right = null;
+            this.buniActualizar.Iconimage_right_Selected = null;
+            this.buniActualizar.Iconimage_Selected = null;
+            this.buniActualizar.IconMarginLeft = 0;
+            this.buniActualizar.IconMarginRight = 0;
+            this.buniActualizar.IconRightVisible = false;
+            this.buniActualizar.IconRightZoom = 0D;
+            this.buniActualizar.IconVisible = false;
+            this.buniActualizar.IconZoom = 90D;
+            this.buniActualizar.IsTab = false;
+            this.buniActualizar.Name = "buniActualizar";
+            this.buniActualizar.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.buniActualizar.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.buniActualizar.OnHoverTextColor = System.Drawing.Color.White;
+            this.buniActualizar.selected = false;
+            this.buniActualizar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buniActualizar.Textcolor = System.Drawing.Color.White;
+            this.buniActualizar.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buniActualizar.Click += new System.EventHandler(this.buniActualizar_Click);
+            // 
+            // bunifuRestar1
+            // 
+            this.bunifuRestar1.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.bunifuRestar1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            resources.ApplyResources(this.bunifuRestar1, "bunifuRestar1");
+            this.bunifuRestar1.BorderRadius = 0;
+            this.bunifuRestar1.ButtonText = "Restar 1 producto";
+            this.bunifuRestar1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuRestar1.DisabledColor = System.Drawing.Color.Gray;
+            this.bunifuRestar1.Iconcolor = System.Drawing.Color.Transparent;
+            this.bunifuRestar1.Iconimage = ((System.Drawing.Image)(resources.GetObject("bunifuRestar1.Iconimage")));
+            this.bunifuRestar1.Iconimage_right = null;
+            this.bunifuRestar1.Iconimage_right_Selected = null;
+            this.bunifuRestar1.Iconimage_Selected = null;
+            this.bunifuRestar1.IconMarginLeft = 0;
+            this.bunifuRestar1.IconMarginRight = 0;
+            this.bunifuRestar1.IconRightVisible = false;
+            this.bunifuRestar1.IconRightZoom = 0D;
+            this.bunifuRestar1.IconVisible = false;
+            this.bunifuRestar1.IconZoom = 90D;
+            this.bunifuRestar1.IsTab = false;
+            this.bunifuRestar1.Name = "bunifuRestar1";
+            this.bunifuRestar1.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.bunifuRestar1.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.bunifuRestar1.OnHoverTextColor = System.Drawing.Color.White;
+            this.bunifuRestar1.selected = false;
+            this.bunifuRestar1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bunifuRestar1.Textcolor = System.Drawing.Color.White;
+            this.bunifuRestar1.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuRestar1.Click += new System.EventHandler(this.bunifuEliminar_Click);
+            // 
+            // ButtonUsuarioCargar
+            // 
+            this.ButtonUsuarioCargar.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.ButtonUsuarioCargar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            resources.ApplyResources(this.ButtonUsuarioCargar, "ButtonUsuarioCargar");
+            this.ButtonUsuarioCargar.BorderRadius = 0;
+            this.ButtonUsuarioCargar.ButtonText = "cargar";
+            this.ButtonUsuarioCargar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ButtonUsuarioCargar.DisabledColor = System.Drawing.Color.Gray;
+            this.ButtonUsuarioCargar.Iconcolor = System.Drawing.Color.Transparent;
+            this.ButtonUsuarioCargar.Iconimage = ((System.Drawing.Image)(resources.GetObject("ButtonUsuarioCargar.Iconimage")));
+            this.ButtonUsuarioCargar.Iconimage_right = null;
+            this.ButtonUsuarioCargar.Iconimage_right_Selected = null;
+            this.ButtonUsuarioCargar.Iconimage_Selected = null;
+            this.ButtonUsuarioCargar.IconMarginLeft = 0;
+            this.ButtonUsuarioCargar.IconMarginRight = 0;
+            this.ButtonUsuarioCargar.IconRightVisible = false;
+            this.ButtonUsuarioCargar.IconRightZoom = 0D;
+            this.ButtonUsuarioCargar.IconVisible = false;
+            this.ButtonUsuarioCargar.IconZoom = 90D;
+            this.ButtonUsuarioCargar.IsTab = false;
+            this.ButtonUsuarioCargar.Name = "ButtonUsuarioCargar";
+            this.ButtonUsuarioCargar.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.ButtonUsuarioCargar.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.ButtonUsuarioCargar.OnHoverTextColor = System.Drawing.Color.White;
+            this.ButtonUsuarioCargar.selected = false;
+            this.ButtonUsuarioCargar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ButtonUsuarioCargar.Textcolor = System.Drawing.Color.White;
+            this.ButtonUsuarioCargar.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonUsuarioCargar.Click += new System.EventHandler(this.ButtonUsuarioCargar_Click);
+            // 
+            // ButtonUsuarioModificar
+            // 
+            this.ButtonUsuarioModificar.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.ButtonUsuarioModificar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            resources.ApplyResources(this.ButtonUsuarioModificar, "ButtonUsuarioModificar");
+            this.ButtonUsuarioModificar.BorderRadius = 0;
+            this.ButtonUsuarioModificar.ButtonText = "Modificar";
+            this.ButtonUsuarioModificar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ButtonUsuarioModificar.DisabledColor = System.Drawing.Color.Gray;
+            this.ButtonUsuarioModificar.Iconcolor = System.Drawing.Color.Transparent;
+            this.ButtonUsuarioModificar.Iconimage = ((System.Drawing.Image)(resources.GetObject("ButtonUsuarioModificar.Iconimage")));
+            this.ButtonUsuarioModificar.Iconimage_right = null;
+            this.ButtonUsuarioModificar.Iconimage_right_Selected = null;
+            this.ButtonUsuarioModificar.Iconimage_Selected = null;
+            this.ButtonUsuarioModificar.IconMarginLeft = 0;
+            this.ButtonUsuarioModificar.IconMarginRight = 0;
+            this.ButtonUsuarioModificar.IconRightVisible = false;
+            this.ButtonUsuarioModificar.IconRightZoom = 0D;
+            this.ButtonUsuarioModificar.IconVisible = false;
+            this.ButtonUsuarioModificar.IconZoom = 90D;
+            this.ButtonUsuarioModificar.IsTab = false;
+            this.ButtonUsuarioModificar.Name = "ButtonUsuarioModificar";
+            this.ButtonUsuarioModificar.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.ButtonUsuarioModificar.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.ButtonUsuarioModificar.OnHoverTextColor = System.Drawing.Color.White;
+            this.ButtonUsuarioModificar.selected = false;
+            this.ButtonUsuarioModificar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ButtonUsuarioModificar.Textcolor = System.Drawing.Color.White;
+            this.ButtonUsuarioModificar.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonUsuarioModificar.Click += new System.EventHandler(this.ButtonUsuarioModificar_Click);
+            // 
+            // ButtonUsuarioEliminar
+            // 
+            this.ButtonUsuarioEliminar.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.ButtonUsuarioEliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            resources.ApplyResources(this.ButtonUsuarioEliminar, "ButtonUsuarioEliminar");
+            this.ButtonUsuarioEliminar.BorderRadius = 0;
+            this.ButtonUsuarioEliminar.ButtonText = "Eliminar";
+            this.ButtonUsuarioEliminar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ButtonUsuarioEliminar.DisabledColor = System.Drawing.Color.Gray;
+            this.ButtonUsuarioEliminar.Iconcolor = System.Drawing.Color.Transparent;
+            this.ButtonUsuarioEliminar.Iconimage = ((System.Drawing.Image)(resources.GetObject("ButtonUsuarioEliminar.Iconimage")));
+            this.ButtonUsuarioEliminar.Iconimage_right = null;
+            this.ButtonUsuarioEliminar.Iconimage_right_Selected = null;
+            this.ButtonUsuarioEliminar.Iconimage_Selected = null;
+            this.ButtonUsuarioEliminar.IconMarginLeft = 0;
+            this.ButtonUsuarioEliminar.IconMarginRight = 0;
+            this.ButtonUsuarioEliminar.IconRightVisible = false;
+            this.ButtonUsuarioEliminar.IconRightZoom = 0D;
+            this.ButtonUsuarioEliminar.IconVisible = false;
+            this.ButtonUsuarioEliminar.IconZoom = 90D;
+            this.ButtonUsuarioEliminar.IsTab = false;
+            this.ButtonUsuarioEliminar.Name = "ButtonUsuarioEliminar";
+            this.ButtonUsuarioEliminar.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.ButtonUsuarioEliminar.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.ButtonUsuarioEliminar.OnHoverTextColor = System.Drawing.Color.White;
+            this.ButtonUsuarioEliminar.selected = false;
+            this.ButtonUsuarioEliminar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ButtonUsuarioEliminar.Textcolor = System.Drawing.Color.White;
+            this.ButtonUsuarioEliminar.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonUsuarioEliminar.Click += new System.EventHandler(this.ButtonUsuarioEliminar_Click);
+            // 
+            // ButtonUsuarioAgregar
+            // 
+            this.ButtonUsuarioAgregar.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.ButtonUsuarioAgregar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            resources.ApplyResources(this.ButtonUsuarioAgregar, "ButtonUsuarioAgregar");
+            this.ButtonUsuarioAgregar.BorderRadius = 0;
+            this.ButtonUsuarioAgregar.ButtonText = "Agregar";
+            this.ButtonUsuarioAgregar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ButtonUsuarioAgregar.DisabledColor = System.Drawing.Color.Gray;
+            this.ButtonUsuarioAgregar.Iconcolor = System.Drawing.Color.Transparent;
+            this.ButtonUsuarioAgregar.Iconimage = ((System.Drawing.Image)(resources.GetObject("ButtonUsuarioAgregar.Iconimage")));
+            this.ButtonUsuarioAgregar.Iconimage_right = null;
+            this.ButtonUsuarioAgregar.Iconimage_right_Selected = null;
+            this.ButtonUsuarioAgregar.Iconimage_Selected = null;
+            this.ButtonUsuarioAgregar.IconMarginLeft = 0;
+            this.ButtonUsuarioAgregar.IconMarginRight = 0;
+            this.ButtonUsuarioAgregar.IconRightVisible = false;
+            this.ButtonUsuarioAgregar.IconRightZoom = 0D;
+            this.ButtonUsuarioAgregar.IconVisible = false;
+            this.ButtonUsuarioAgregar.IconZoom = 90D;
+            this.ButtonUsuarioAgregar.IsTab = false;
+            this.ButtonUsuarioAgregar.Name = "ButtonUsuarioAgregar";
+            this.ButtonUsuarioAgregar.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.ButtonUsuarioAgregar.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.ButtonUsuarioAgregar.OnHoverTextColor = System.Drawing.Color.White;
+            this.ButtonUsuarioAgregar.selected = false;
+            this.ButtonUsuarioAgregar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ButtonUsuarioAgregar.Textcolor = System.Drawing.Color.White;
+            this.ButtonUsuarioAgregar.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonUsuarioAgregar.Click += new System.EventHandler(this.bunifuFlatButton1_Click);
+            // 
+            // TextboxCedula
+            // 
+            this.TextboxCedula.BackColor = System.Drawing.Color.Gainsboro;
+            resources.ApplyResources(this.TextboxCedula, "TextboxCedula");
+            this.TextboxCedula.ForeColor = System.Drawing.Color.Teal;
+            this.TextboxCedula.Icon = ((System.Drawing.Image)(resources.GetObject("TextboxCedula.Icon")));
+            this.TextboxCedula.Name = "TextboxCedula";
+            this.TextboxCedula.text = "";
+            this.TextboxCedula.OnTextChange += new System.EventHandler(this.bunifuTextbox12_OnTextChange);
+            // 
+            // TextboxNombre
+            // 
+            this.TextboxNombre.BackColor = System.Drawing.Color.Gainsboro;
+            resources.ApplyResources(this.TextboxNombre, "TextboxNombre");
+            this.TextboxNombre.ForeColor = System.Drawing.Color.Teal;
+            this.TextboxNombre.Icon = ((System.Drawing.Image)(resources.GetObject("TextboxNombre.Icon")));
+            this.TextboxNombre.Name = "TextboxNombre";
+            this.TextboxNombre.text = "";
+            this.TextboxNombre.OnTextChange += new System.EventHandler(this.TextboxNombre_OnTextChange);
+            // 
+            // TextboxCorreo
+            // 
+            this.TextboxCorreo.BackColor = System.Drawing.Color.Gainsboro;
+            resources.ApplyResources(this.TextboxCorreo, "TextboxCorreo");
+            this.TextboxCorreo.ForeColor = System.Drawing.Color.Teal;
+            this.TextboxCorreo.Icon = ((System.Drawing.Image)(resources.GetObject("TextboxCorreo.Icon")));
+            this.TextboxCorreo.Name = "TextboxCorreo";
+            this.TextboxCorreo.text = "";
+            this.TextboxCorreo.OnTextChange += new System.EventHandler(this.TextboxCorreo_OnTextChange);
+            // 
+            // TextboxContrasena
+            // 
+            this.TextboxContrasena.BackColor = System.Drawing.Color.Gainsboro;
+            resources.ApplyResources(this.TextboxContrasena, "TextboxContrasena");
+            this.TextboxContrasena.ForeColor = System.Drawing.Color.Teal;
+            this.TextboxContrasena.Icon = ((System.Drawing.Image)(resources.GetObject("TextboxContrasena.Icon")));
+            this.TextboxContrasena.Name = "TextboxContrasena";
+            this.TextboxContrasena.text = "";
+            this.TextboxContrasena.OnTextChange += new System.EventHandler(this.TextboxContrasena_OnTextChange);
+            // 
+            // TextboxUsuario
+            // 
+            this.TextboxUsuario.BackColor = System.Drawing.Color.Gainsboro;
+            resources.ApplyResources(this.TextboxUsuario, "TextboxUsuario");
+            this.TextboxUsuario.ForeColor = System.Drawing.Color.Teal;
+            this.TextboxUsuario.Icon = ((System.Drawing.Image)(resources.GetObject("TextboxUsuario.Icon")));
+            this.TextboxUsuario.Name = "TextboxUsuario";
+            this.TextboxUsuario.text = "";
+            this.TextboxUsuario.OnTextChange += new System.EventHandler(this.bunifuTextbox5_OnTextChange);
             // 
             // bunifuTextbox6
             // 
@@ -1018,32 +1026,31 @@
             this.bunifuTextbox1.Name = "bunifuTextbox1";
             this.bunifuTextbox1.text = "Codigo";
             // 
-            // bunifuCustomDataGrid2
+            // tabPage5
             // 
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle3.NullValue = null;
-            this.bunifuCustomDataGrid2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
-            this.bunifuCustomDataGrid2.BackgroundColor = System.Drawing.Color.Gainsboro;
-            this.bunifuCustomDataGrid2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.bunifuCustomDataGrid2.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.bunifuCustomDataGrid2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
-            this.bunifuCustomDataGrid2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.bunifuCustomDataGrid2.DoubleBuffered = true;
-            this.bunifuCustomDataGrid2.EnableHeadersVisualStyles = false;
-            this.bunifuCustomDataGrid2.GridColor = System.Drawing.Color.Ivory;
-            this.bunifuCustomDataGrid2.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuCustomDataGrid2.HeaderForeColor = System.Drawing.Color.White;
-            resources.ApplyResources(this.bunifuCustomDataGrid2, "bunifuCustomDataGrid2");
-            this.bunifuCustomDataGrid2.Name = "bunifuCustomDataGrid2";
-            this.bunifuCustomDataGrid2.ReadOnly = true;
-            this.bunifuCustomDataGrid2.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            resources.ApplyResources(this.tabPage5, "tabPage5");
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // tabControl2
+            // 
+            this.tabControl2.Controls.Add(this.tabPage6);
+            this.tabControl2.Controls.Add(this.tabPage7);
+            resources.ApplyResources(this.tabControl2, "tabControl2");
+            this.tabControl2.Name = "tabControl2";
+            this.tabControl2.SelectedIndex = 0;
+            // 
+            // tabPage6
+            // 
+            resources.ApplyResources(this.tabPage6, "tabPage6");
+            this.tabPage6.Name = "tabPage6";
+            this.tabPage6.UseVisualStyleBackColor = true;
+            // 
+            // tabPage7
+            // 
+            resources.ApplyResources(this.tabPage7, "tabPage7");
+            this.tabPage7.Name = "tabPage7";
+            this.tabPage7.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -1058,20 +1065,22 @@
             this.TopMost = true;
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).EndInit();
-            this.bunifuGradientPanel2.ResumeLayout(false);
-            this.bunifuGradientPanel2.PerformLayout();
-            this.bunifuGradientPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.buniCerrar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.buniMaxMin)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid2)).EndInit();
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid2)).EndInit();
+            this.bunifuGradientPanel2.ResumeLayout(false);
+            this.bunifuGradientPanel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.bunifuGradientPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.buniCerrar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.buniMaxMin)).EndInit();
+            this.tabControl2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1081,7 +1090,7 @@
         private System.Windows.Forms.Label labelFactura;
         private System.Windows.Forms.Button modificar;
         private System.Windows.Forms.Button buscar;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label labelInsertarCodigo;
         private System.Windows.Forms.TextBox textInsertarCodigo;
         private System.Windows.Forms.Button insertar;
         private System.Windows.Forms.TextBox textSumaTotal;
@@ -1089,11 +1098,9 @@
         private Bunifu.Framework.UI.BunifuTileButton buniBnFinalizar;
         private Bunifu.Framework.UI.BunifuCustomDataGrid bunifuCustomDataGrid1;
         private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel2;
-        private Bunifu.Framework.UI.BunifuGauge bunifuGauge1;
         private Bunifu.Framework.UI.BunifuFlatButton buniBtnLogin;
         private Bunifu.Framework.UI.BunifuTextbox buniTextPass;
         private Bunifu.Framework.UI.BunifuTextbox buniTextUsuario;
-        private Bunifu.Framework.UI.BunifuProgressBar bunifuProgressBar1;
         private System.Windows.Forms.Label labelAlmacen;
         private System.Windows.Forms.TextBox textReferencia;
         private System.Windows.Forms.TextBox textTamano;
@@ -1114,7 +1121,6 @@
         private System.Windows.Forms.Label labelCodigo;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuRestar1;
         private System.Windows.Forms.Panel panel1;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
         private Bunifu.Framework.UI.BunifuImageButton buniMaxMin;
         private Bunifu.Framework.UI.BunifuImageButton buniCerrar;
         private System.Windows.Forms.ComboBox comboBox1;
@@ -1158,6 +1164,11 @@
         private Bunifu.Framework.UI.BunifuFlatButton ButtonUsuarioCargar;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton1;
         private Bunifu.Framework.UI.BunifuCustomDataGrid bunifuCustomDataGrid2;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.TabControl tabControl2;
+        private System.Windows.Forms.TabPage tabPage6;
+        private System.Windows.Forms.TabPage tabPage7;
+        private System.Windows.Forms.TabPage tabPage5;
     }
 }
 

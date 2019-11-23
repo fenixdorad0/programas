@@ -62,13 +62,6 @@ C:\informacion\Programas\MysqlTienda 3\MysqlTienda\bin\Debug\MysqlTienda.exe
 C:\informacion\Programas\MysqlTienda 3\MysqlTienda\bin\Debug\MysqlTienda.pdb
 C:\informacion\Programas\MysqlTienda 3\MysqlTienda\bin\Debug\aa\MysqlTienda.resources.dll
 C:\informacion\Programas\MysqlTienda 3\MysqlTienda\bin\Debug\es-419\MysqlTienda.resources.dll
-C:\informacion\Programas\MysqlTienda 3\MysqlTienda\bin\Debug\BouncyCastle.Crypto.dll
-C:\informacion\Programas\MysqlTienda 3\MysqlTienda\bin\Debug\MySql.Data.xml
-C:\informacion\Programas\MysqlTienda 3\MysqlTienda\bin\Debug\MySql.Data.EntityFramework.xml
-C:\informacion\Programas\MysqlTienda 3\MysqlTienda\bin\Debug\MySQL.Data.EntityFrameworkCore.xml
-C:\informacion\Programas\MysqlTienda 3\MysqlTienda\bin\Debug\MySQL.Data.EntityFrameworkCore.Design.xml
-C:\informacion\Programas\MysqlTienda 3\MysqlTienda\bin\Debug\MySql.Web.xml
-C:\informacion\Programas\MysqlTienda 3\MysqlTienda\obj\Debug\MysqlTienda.csprojAssemblyReference.cache
 C:\informacion\Programas\MysqlTienda 3\MysqlTienda\obj\Debug\MysqlTienda.exe.config
 C:\informacion\Programas\MysqlTienda 3\MysqlTienda\obj\Debug\MysqlTienda.Form1.resources
 C:\informacion\Programas\MysqlTienda 3\MysqlTienda\obj\Debug\MysqlTienda.Properties.Resources.resources
@@ -80,3 +73,4 @@ C:\informacion\Programas\MysqlTienda 3\MysqlTienda\obj\Debug\es-419\MysqlTienda.
 C:\informacion\Programas\MysqlTienda 3\MysqlTienda\obj\Debug\MysqlTienda.csproj.CopyComplete
 C:\informacion\Programas\MysqlTienda 3\MysqlTienda\obj\Debug\MysqlTienda.exe
 C:\informacion\Programas\MysqlTienda 3\MysqlTienda\obj\Debug\MysqlTienda.pdb
+C:\informacion\Programas\MysqlTienda 3\MysqlTienda\obj\Debug\MysqlTienda.csprojAssemblyReference.cache
