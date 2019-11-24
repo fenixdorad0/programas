@@ -21,11 +21,16 @@ namespace MysqlTienda
         public Form1()
         {
             InitializeComponent();
+            
         }
         public void abrirConeccion()
         {
             comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
-            
+            comboBox2.DropDownStyle = ComboBoxStyle.DropDownList; 
+            comboBox3.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBox4.DropDownStyle = ComboBoxStyle.DropDownList;   
+            comboBox5.DropDownStyle = ComboBoxStyle.DropDownList;
+
             try
             {
                 if (conectar.State == ConnectionState.Closed)
@@ -82,7 +87,7 @@ namespace MysqlTienda
         private void Form1_Load(object sender, EventArgs e)
         {
             buniMaxMin.Enabled = false;
-            this.Size = new Size(240, 637);
+            //this.Size = new Size(240, 637);
             textInsertarCodigo.Enabled = false;
         }
         private void iniciarTablaVentas(string baseDatos)
@@ -115,14 +120,19 @@ namespace MysqlTienda
             {
                 double precio = Convert.ToDouble(textTotal.Text) / Convert.ToDouble(textCantidad.Text);
                 string insertarCodigo = "UPDATE easyerp.detalle_facturacov SET cantidad = cantidad+1, total =precio*cantidad  WHERE `detalle_facturacov`.`factura` =" + textFactura.Text + " AND `detalle_facturacov`.`codigo` = " + textCodigo.Text + " and almacen='" + comboBox1.Text + "'";
+                //string insertarCodigo = "UPDATE easyerp.detalle_facturacov SET `cantidad` = '3', `total` = '30000' WHERE `detalle_facturacov`.`factura` = 3 AND `detalle_facturacov`.`codigo` = 3";
+                //MessageBox.Show("wtf");
                 conectar.Open();
                 MySqlCommand command = new MySqlCommand(insertarCodigo, conectar);
+
                 if (command.ExecuteNonQuery() == 1)
                 {
+                  
                     iniciarTablaVentas("");
                 }
                 else
                 {
+                    
                     cerrarConeccion();
                     string insertarCodigo2 = "INSERT INTO easyerp.detalle_facturacov(`factura`, `almacen`, `codigo`, `referencia`, `producto`, `tamano`, `cantidad`, `precio`, `iva`, `SubtotalSinIva`, `SubtotalConIva`, `total`) VALUES ('"                   
                     + textFactura.Text + "', '" //factura
@@ -141,6 +151,7 @@ namespace MysqlTienda
                     MySqlCommand command2 = new MySqlCommand(insertarCodigo2, conectar);
                     if (command2.ExecuteNonQuery() == 1)
                     {
+
                         iniciarTablaVentas("");
                         textInsertarCodigo.Text = "";
                         //MessageBox.Show("Dato insertado");
@@ -301,14 +312,12 @@ namespace MysqlTienda
             bool prueba = false;
 
             try
-            {
-               
+            {               
                 MySqlDataReader mdr;
                 string select = "SELECT * FROM easyerp.producto where codigo =" + int.Parse(textInsertarCodigo.Text);
                 command = new MySqlCommand(select, conectar);
                 abrirConeccion();
-                mdr = command.ExecuteReader();               
-
+                mdr = command.ExecuteReader();
                 if (mdr.Read())
                 {
                     textCodigo.Text= mdr.GetString("codigo");
@@ -359,10 +368,9 @@ namespace MysqlTienda
                 {
                     labelCedula.Text = mdr.GetString("cc");
                     labelVendedor.Text = mdr.GetString("nombre");
-                    MessageBox.Show("Login exitoso");
-                    
+                    MessageBox.Show("Login exitoso");                    
                     labelAlmacen.Text = buniTextUsuario.text;
-                    this.Size = new Size(1339, 637);
+                    //this.Size = new Size(1339, 637);
                     textInsertarCodigo.Enabled = true;
                     buniMaxMin.Enabled = true;
                     cerrarConeccion();
@@ -371,7 +379,9 @@ namespace MysqlTienda
                     //buscarFactura(0, "SELECT * FROM easyerp.detalle_facturacov order by factura_movimiento_nf where id = LAST_INSERT_ID");
                     iniciarTablaVentas("");
                     sumaTotal();
-                   
+                    cargarCiudadesPermisosAlamacen();
+                    iniciarTablaUsuarios();
+
                 }
                 else
                 {
@@ -385,7 +395,24 @@ namespace MysqlTienda
             }
             yainicio = 1;
         }
+        private void cargarPermisosPorAlmacen()
+        {
+            //carga las ciudades en un combo box importantisimo
+            using (MySqlConnection c = new MySqlConnection("datasource=localhost;port=3306;username=root;password=;SslMode=none"))
+            {
+                c.Open();
+                var sql = "SELECT cc, almacen_fabrica_nombre FROM easyerp.usuario_almacen where cc=" + labelCedula.Text + "";
+                using (MySqlCommand cmd = new MySqlCommand(sql, c))
+                {
+                    var dt = new DataTable();
+                    dt.Load(cmd.ExecuteReader());
+                    comboBoxUsPeCe.ValueMember = "cc";
+                    comboBoxUsPeCe.DisplayMember = "almacen_fabrica_nombre";
+                    comboBoxUsPeCe.DataSource = dt;
+                }
+            }
 
+        }
         private void cargarCiudades()
         {          
             //carga las ciudades en un combo box importantisimo
@@ -403,6 +430,32 @@ namespace MysqlTienda
                 }
             }
            
+        }
+        private void cargarCiudadesPermisosAlamacen()
+        {
+            try
+            {
+                //carga las ciudades en un combo box importantisimo
+                using (MySqlConnection c = new MySqlConnection("datasource=localhost;port=3306;username=root;password=;SslMode=none"))
+                {
+                    c.Open();
+                    var sql = "SELECT nombre FROM easyerp.almacen_fabrica";
+                    using (MySqlCommand cmd = new MySqlCommand(sql, c))
+                    {
+                        var dt = new DataTable();
+                        dt.Load(cmd.ExecuteReader());
+                        comboBoxUsuPerAlm.ValueMember = "nombre";
+                        comboBoxUsuPerAlm.DisplayMember = "nombre";
+                        comboBoxUsuPerAlm.DataSource = dt;
+                    }
+                }
+            }
+            catch(Exception error)
+            {
+                
+            }
+           
+
         }
 
         private void bunifuCustomDataGrid1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -482,7 +535,7 @@ namespace MysqlTienda
                     else { }
                 }
                 else{ }
-  
+                iniciarTablaVentas("");
             }
             catch (Exception error)
             {
@@ -578,6 +631,7 @@ namespace MysqlTienda
 
         private void bunifuImageButton1_Click(object sender, EventArgs e)
         {
+            /*
             if ( this.Size == new Size(240, 637))
             {
                 this.Size = new Size(1339, 637);
@@ -586,6 +640,7 @@ namespace MysqlTienda
             {
                 this.Size = new Size(240, 637);
             }
+            */
         }
 
         private void bunifuImageButton2_Click(object sender, EventArgs e)
@@ -728,6 +783,24 @@ namespace MysqlTienda
             }
         }
 
+        private void iniciarTablaPermisosAlmacen()
+        {
+            try
+            {
+                cerrarConeccion();
+                string selectQuery = "SELECT * FROM easyerp.usuario_almacen";
+                DataTable table = new DataTable();
+                MySqlDataAdapter adpter = new MySqlDataAdapter(selectQuery, conectar);
+                adpter.Fill(table);
+                bunifuCustomDataGrid4.DataSource = table;
+                cerrarConeccion();
+            }
+            catch (Exception error)
+            {
+                MessageBox.Show(error.Message + "iniciando");
+            }
+        }
+
         private void TextboxContrasena_OnTextChange(object sender, EventArgs e)
         {
             comprobarDatosUsuario();
@@ -852,6 +925,83 @@ namespace MysqlTienda
                 cerrarConeccion();
                 MessageBox.Show(Convert.ToString(error));
             }
+        }
+
+        private void bunifuFlatButton6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ButtonAgregarPeAl_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                cerrarConeccion();
+                string insertarCodigo = "INSERT INTO easyerp.usuario (`cc`, `id`, `contrasena`, `correo`, `nombre`) VALUES (" +
+                    "'" +
+                    TextboxCedula.text + "', '" +
+                    TextboxUsuario.text + "', '" +
+                    TextboxContrasena.text + "', '" +
+                    TextboxCorreo.text + "', '" +
+                    TextboxNombre.text + "')";
+                conectar.Open();
+                MySqlCommand command = new MySqlCommand(insertarCodigo, conectar);
+                if (command.ExecuteNonQuery() == 1) {     /* essageBox.Show("encontre la factura"); */ } else { /* MessageBox.Show("no encontre la factura"); */}
+                cerrarConeccion();
+                iniciarTablaUsuarios();
+            }
+            catch(Exception error)
+            { }
+            
+
+
+
+
+        }
+
+        private void ButtonCargarPeAl_Click(object sender, EventArgs e)
+        {
+            iniciarTablaPermisosAlmacen();
+        }
+
+        private void ButtonCargarPeAl_Click_1(object sender, EventArgs e)
+        {
+            //
+            try
+            {
+                cerrarConeccion();
+               
+                string selectQuery = "SELECT* FROM easyerp.usuario_almacen";
+                DataTable table = new DataTable();
+                MySqlDataAdapter adpter = new MySqlDataAdapter(selectQuery, conectar);
+                adpter.Fill(table);
+                bunifuCustomDataGrid4.DataSource = table;
+                cerrarConeccion();
+            }
+            catch (Exception error)
+            {
+                MessageBox.Show(error.Message + "iniciando persisos de usario al cargar");
+            }
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBoxUsPeCe_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBoxUsuPerAlm_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox6_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
     
