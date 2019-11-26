@@ -272,42 +272,6 @@
   <data name="&gt;&gt;bunifuGradientPanel1.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;bunifuGradientPanel3.Name" xml:space="preserve">
-    <value>bunifuGradientPanel3</value>
-  </data>
-  <data name="&gt;&gt;bunifuGradientPanel3.Type" xml:space="preserve">
-    <value>Bunifu.Framework.UI.BunifuGradientPanel, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;bunifuGradientPanel3.Parent" xml:space="preserve">
-    <value>tabPage5</value>
-  </data>
-  <data name="&gt;&gt;bunifuGradientPanel3.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="tabPage5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
-  </data>
-  <data name="tabPage5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1371, 746</value>
-  </data>
-  <data name="tabPage5.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="tabPage5.Text" xml:space="preserve">
-    <value>almacen</value>
-  </data>
-  <data name="&gt;&gt;tabPage5.Name" xml:space="preserve">
-    <value>tabPage5</value>
-  </data>
-  <data name="&gt;&gt;tabPage5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPage5.Parent" xml:space="preserve">
-    <value>tabControl1</value>
-  </data>
-  <data name="&gt;&gt;tabPage5.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="bunifuGradientPanel3.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
@@ -322,42 +286,6 @@
   </data>
   <data name="bunifuGradientPanel3.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
-  </data>
-  <data name="&gt;&gt;bunifuGradientPanel2.Name" xml:space="preserve">
-    <value>bunifuGradientPanel2</value>
-  </data>
-  <data name="&gt;&gt;bunifuGradientPanel2.Type" xml:space="preserve">
-    <value>Bunifu.Framework.UI.BunifuGradientPanel, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;bunifuGradientPanel2.Parent" xml:space="preserve">
-    <value>bunifuGradientPanel3</value>
-  </data>
-  <data name="&gt;&gt;bunifuGradientPanel2.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="bunifuGradientPanel3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="bunifuGradientPanel3.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
-    <value>Yes</value>
-  </data>
-  <data name="bunifuGradientPanel3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1376, 743</value>
-  </data>
-  <data name="bunifuGradientPanel3.TabIndex" type="System.Int32, mscorlib">
-    <value>92</value>
-  </data>
-  <data name="&gt;&gt;bunifuGradientPanel3.Name" xml:space="preserve">
-    <value>bunifuGradientPanel3</value>
-  </data>
-  <data name="&gt;&gt;bunifuGradientPanel3.Type" xml:space="preserve">
-    <value>Bunifu.Framework.UI.BunifuGradientPanel, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;bunifuGradientPanel3.Parent" xml:space="preserve">
-    <value>tabPage5</value>
-  </data>
-  <data name="&gt;&gt;bunifuGradientPanel3.ZOrder" xml:space="preserve">
-    <value>0</value>
   </data>
   <data name="bunifuGradientPanel2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
@@ -375,135 +303,6 @@
   </data>
   <data name="bunifuGradientPanel2.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
-  </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
-  </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>bunifuGradientPanel2</value>
-  </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;labelVendedor.Name" xml:space="preserve">
-    <value>labelVendedor</value>
-  </data>
-  <data name="&gt;&gt;labelVendedor.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelVendedor.Parent" xml:space="preserve">
-    <value>bunifuGradientPanel2</value>
-  </data>
-  <data name="&gt;&gt;labelVendedor.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;labelCedula.Name" xml:space="preserve">
-    <value>labelCedula</value>
-  </data>
-  <data name="&gt;&gt;labelCedula.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelCedula.Parent" xml:space="preserve">
-    <value>bunifuGradientPanel2</value>
-  </data>
-  <data name="&gt;&gt;labelCedula.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;label7.Name" xml:space="preserve">
-    <value>label7</value>
-  </data>
-  <data name="&gt;&gt;label7.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label7.Parent" xml:space="preserve">
-    <value>bunifuGradientPanel2</value>
-  </data>
-  <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
-    <value>pictureBox1</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
-    <value>bunifuGradientPanel2</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;buniTextUsuario.Name" xml:space="preserve">
-    <value>buniTextUsuario</value>
-  </data>
-  <data name="&gt;&gt;buniTextUsuario.Type" xml:space="preserve">
-    <value>Bunifu.Framework.UI.BunifuTextbox, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;buniTextUsuario.Parent" xml:space="preserve">
-    <value>bunifuGradientPanel2</value>
-  </data>
-  <data name="&gt;&gt;buniTextUsuario.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;buniTextPass.Name" xml:space="preserve">
-    <value>buniTextPass</value>
-  </data>
-  <data name="&gt;&gt;buniTextPass.Type" xml:space="preserve">
-    <value>Bunifu.Framework.UI.BunifuTextbox, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;buniTextPass.Parent" xml:space="preserve">
-    <value>bunifuGradientPanel2</value>
-  </data>
-  <data name="&gt;&gt;buniTextPass.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;buniBtnLogin.Name" xml:space="preserve">
-    <value>buniBtnLogin</value>
-  </data>
-  <data name="&gt;&gt;buniBtnLogin.Type" xml:space="preserve">
-    <value>Bunifu.Framework.UI.BunifuFlatButton, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;buniBtnLogin.Parent" xml:space="preserve">
-    <value>bunifuGradientPanel2</value>
-  </data>
-  <data name="&gt;&gt;buniBtnLogin.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;comboBox1.Name" xml:space="preserve">
-    <value>comboBox1</value>
-  </data>
-  <data name="&gt;&gt;comboBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;comboBox1.Parent" xml:space="preserve">
-    <value>bunifuGradientPanel2</value>
-  </data>
-  <data name="&gt;&gt;comboBox1.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="bunifuGradientPanel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>306, 3</value>
-  </data>
-  <data name="bunifuGradientPanel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>735, 740</value>
-  </data>
-  <data name="bunifuGradientPanel2.TabIndex" type="System.Int32, mscorlib">
-    <value>91</value>
-  </data>
-  <data name="&gt;&gt;bunifuGradientPanel2.Name" xml:space="preserve">
-    <value>bunifuGradientPanel2</value>
-  </data>
-  <data name="&gt;&gt;bunifuGradientPanel2.Type" xml:space="preserve">
-    <value>Bunifu.Framework.UI.BunifuGradientPanel, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;bunifuGradientPanel2.Parent" xml:space="preserve">
-    <value>bunifuGradientPanel3</value>
-  </data>
-  <data name="&gt;&gt;bunifuGradientPanel2.ZOrder" xml:space="preserve">
-    <value>0</value>
   </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -539,7 +338,7 @@
     <value>NoControl</value>
   </data>
   <data name="labelVendedor.Location" type="System.Drawing.Point, System.Drawing">
-    <value>316, 638</value>
+    <value>113, 727</value>
   </data>
   <data name="labelVendedor.Size" type="System.Drawing.Size, System.Drawing">
     <value>52, 13</value>
@@ -569,7 +368,7 @@
     <value>NoControl</value>
   </data>
   <data name="labelCedula.Location" type="System.Drawing.Point, System.Drawing">
-    <value>555, 649</value>
+    <value>554, 727</value>
   </data>
   <data name="labelCedula.Size" type="System.Drawing.Size, System.Drawing">
     <value>39, 13</value>
@@ -920,6 +719,75 @@
   <data name="&gt;&gt;comboBox1.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
+  <data name="bunifuGradientPanel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>306, 3</value>
+  </data>
+  <data name="bunifuGradientPanel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>735, 740</value>
+  </data>
+  <data name="bunifuGradientPanel2.TabIndex" type="System.Int32, mscorlib">
+    <value>91</value>
+  </data>
+  <data name="&gt;&gt;bunifuGradientPanel2.Name" xml:space="preserve">
+    <value>bunifuGradientPanel2</value>
+  </data>
+  <data name="&gt;&gt;bunifuGradientPanel2.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuGradientPanel, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bunifuGradientPanel2.Parent" xml:space="preserve">
+    <value>bunifuGradientPanel3</value>
+  </data>
+  <data name="&gt;&gt;bunifuGradientPanel2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="bunifuGradientPanel3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="bunifuGradientPanel3.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Yes</value>
+  </data>
+  <data name="bunifuGradientPanel3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1376, 743</value>
+  </data>
+  <data name="bunifuGradientPanel3.TabIndex" type="System.Int32, mscorlib">
+    <value>92</value>
+  </data>
+  <data name="&gt;&gt;bunifuGradientPanel3.Name" xml:space="preserve">
+    <value>bunifuGradientPanel3</value>
+  </data>
+  <data name="&gt;&gt;bunifuGradientPanel3.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuGradientPanel, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bunifuGradientPanel3.Parent" xml:space="preserve">
+    <value>tabPage5</value>
+  </data>
+  <data name="&gt;&gt;bunifuGradientPanel3.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tabPage5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="tabPage5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1371, 746</value>
+  </data>
+  <data name="tabPage5.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="tabPage5.Text" xml:space="preserve">
+    <value>almacen</value>
+  </data>
+  <data name="&gt;&gt;tabPage5.Name" xml:space="preserve">
+    <value>tabPage5</value>
+  </data>
+  <data name="&gt;&gt;tabPage5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage5.Parent" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="&gt;&gt;tabPage5.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="&gt;&gt;tabControl3.Name" xml:space="preserve">
     <value>tabControl3</value>
   </data>
@@ -932,16 +800,16 @@
   <data name="&gt;&gt;tabControl3.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;bunifuCustomDataGrid3.Name" xml:space="preserve">
-    <value>bunifuCustomDataGrid3</value>
+  <data name="&gt;&gt;DataGridProductos.Name" xml:space="preserve">
+    <value>DataGridProductos</value>
   </data>
-  <data name="&gt;&gt;bunifuCustomDataGrid3.Type" xml:space="preserve">
+  <data name="&gt;&gt;DataGridProductos.Type" xml:space="preserve">
     <value>Bunifu.Framework.UI.BunifuCustomDataGrid, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="&gt;&gt;bunifuCustomDataGrid3.Parent" xml:space="preserve">
+  <data name="&gt;&gt;DataGridProductos.Parent" xml:space="preserve">
     <value>tabPage4</value>
   </data>
-  <data name="&gt;&gt;bunifuCustomDataGrid3.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;DataGridProductos.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
   <data name="&gt;&gt;bunifuFlatButton2.Name" xml:space="preserve">
@@ -1319,28 +1187,28 @@
   <data name="&gt;&gt;tabPage9.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="bunifuCustomDataGrid3.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="DataGridProductos.Location" type="System.Drawing.Point, System.Drawing">
     <value>246, 3</value>
   </data>
-  <data name="bunifuCustomDataGrid3.RowHeadersWidth" type="System.Int32, mscorlib">
+  <data name="DataGridProductos.RowHeadersWidth" type="System.Int32, mscorlib">
     <value>51</value>
   </data>
-  <data name="bunifuCustomDataGrid3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>856, 528</value>
+  <data name="DataGridProductos.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1115, 528</value>
   </data>
-  <data name="bunifuCustomDataGrid3.TabIndex" type="System.Int32, mscorlib">
+  <data name="DataGridProductos.TabIndex" type="System.Int32, mscorlib">
     <value>115</value>
   </data>
-  <data name="&gt;&gt;bunifuCustomDataGrid3.Name" xml:space="preserve">
-    <value>bunifuCustomDataGrid3</value>
+  <data name="&gt;&gt;DataGridProductos.Name" xml:space="preserve">
+    <value>DataGridProductos</value>
   </data>
-  <data name="&gt;&gt;bunifuCustomDataGrid3.Type" xml:space="preserve">
+  <data name="&gt;&gt;DataGridProductos.Type" xml:space="preserve">
     <value>Bunifu.Framework.UI.BunifuCustomDataGrid, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="&gt;&gt;bunifuCustomDataGrid3.Parent" xml:space="preserve">
+  <data name="&gt;&gt;DataGridProductos.Parent" xml:space="preserve">
     <value>tabPage4</value>
   </data>
-  <data name="&gt;&gt;bunifuCustomDataGrid3.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;DataGridProductos.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
   <data name="bunifuFlatButton2.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
@@ -1436,9 +1304,6 @@
   <data name="bunifuFlatButton3.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
   </data>
-  <data name="bunifuFlatButton3.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
   <data name="bunifuFlatButton3.Iconimage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAYAAACtWK6eAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
@@ -1529,9 +1394,6 @@
   <data name="bunifuFlatButton4.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
   </data>
-  <data name="bunifuFlatButton4.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
   <data name="bunifuFlatButton4.Iconimage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAYAAACtWK6eAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
@@ -1621,9 +1483,6 @@
   </data>
   <data name="bunifuFlatButton5.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
-  </data>
-  <data name="bunifuFlatButton5.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
   </data>
   <data name="bunifuFlatButton5.Iconimage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1719,7 +1578,7 @@
     <value>NoControl</value>
   </data>
   <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>25, 506</value>
+    <value>7, 494</value>
   </data>
   <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
     <value>46, 13</value>
@@ -1741,6 +1600,9 @@
   </data>
   <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
     <value>6</value>
+  </data>
+  <data name="comboBox5.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="comboBox5.ItemHeight" type="System.Int32, mscorlib">
     <value>13</value>
@@ -1805,12 +1667,6 @@
   <data name="comboBox4.ItemHeight" type="System.Int32, mscorlib">
     <value>13</value>
   </data>
-  <data name="comboBox4.Items" xml:space="preserve">
-    <value>SI</value>
-  </data>
-  <data name="comboBox4.Items1" xml:space="preserve">
-    <value>NO</value>
-  </data>
   <data name="comboBox4.Location" type="System.Drawing.Point, System.Drawing">
     <value>10, 470</value>
   </data>
@@ -1864,12 +1720,6 @@
   </data>
   <data name="comboBox3.ItemHeight" type="System.Int32, mscorlib">
     <value>13</value>
-  </data>
-  <data name="comboBox3.Items" xml:space="preserve">
-    <value>SI</value>
-  </data>
-  <data name="comboBox3.Items1" xml:space="preserve">
-    <value>NO</value>
   </data>
   <data name="comboBox3.Location" type="System.Drawing.Point, System.Drawing">
     <value>10, 430</value>
@@ -2472,6 +2322,99 @@
   <data name="&gt;&gt;bunifuTextbox1.ZOrder" xml:space="preserve">
     <value>22</value>
   </data>
+  <data name="&gt;&gt;tabControl2.Name" xml:space="preserve">
+    <value>tabControl2</value>
+  </data>
+  <data name="&gt;&gt;tabControl2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabControl2.Parent" xml:space="preserve">
+    <value>tabPage3</value>
+  </data>
+  <data name="&gt;&gt;tabControl2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tabPage3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="tabPage3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1371, 746</value>
+  </data>
+  <data name="tabPage3.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="tabPage3.Text" xml:space="preserve">
+    <value>usuario</value>
+  </data>
+  <data name="&gt;&gt;tabPage3.Name" xml:space="preserve">
+    <value>tabPage3</value>
+  </data>
+  <data name="&gt;&gt;tabPage3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage3.Parent" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="&gt;&gt;tabPage3.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;tabPage6.Name" xml:space="preserve">
+    <value>tabPage6</value>
+  </data>
+  <data name="&gt;&gt;tabPage6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage6.Parent" xml:space="preserve">
+    <value>tabControl2</value>
+  </data>
+  <data name="&gt;&gt;tabPage6.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tabPage7.Name" xml:space="preserve">
+    <value>tabPage7</value>
+  </data>
+  <data name="&gt;&gt;tabPage7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage7.Parent" xml:space="preserve">
+    <value>tabControl2</value>
+  </data>
+  <data name="&gt;&gt;tabPage7.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;tabPage10.Name" xml:space="preserve">
+    <value>tabPage10</value>
+  </data>
+  <data name="&gt;&gt;tabPage10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage10.Parent" xml:space="preserve">
+    <value>tabControl2</value>
+  </data>
+  <data name="&gt;&gt;tabPage10.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="tabControl2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 20</value>
+  </data>
+  <data name="tabControl2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1064, 503</value>
+  </data>
+  <data name="tabControl2.TabIndex" type="System.Int32, mscorlib">
+    <value>111</value>
+  </data>
+  <data name="&gt;&gt;tabControl2.Name" xml:space="preserve">
+    <value>tabControl2</value>
+  </data>
+  <data name="&gt;&gt;tabControl2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabControl2.Parent" xml:space="preserve">
+    <value>tabPage3</value>
+  </data>
+  <data name="&gt;&gt;tabControl2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="&gt;&gt;bunifuCustomDataGrid2.Name" xml:space="preserve">
     <value>bunifuCustomDataGrid2</value>
   </data>
@@ -2678,348 +2621,6 @@
   </data>
   <data name="&gt;&gt;tabPage6.ZOrder" xml:space="preserve">
     <value>0</value>
-  </data>
-  <data name="comboBox6.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
-  </data>
-  <data name="comboBox6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>19, 64</value>
-  </data>
-  <data name="comboBox6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>357, 28</value>
-  </data>
-  <data name="comboBox6.TabIndex" type="System.Int32, mscorlib">
-    <value>131</value>
-  </data>
-  <data name="&gt;&gt;comboBox6.Name" xml:space="preserve">
-    <value>comboBox6</value>
-  </data>
-  <data name="&gt;&gt;comboBox6.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;comboBox6.Parent" xml:space="preserve">
-    <value>tabPage7</value>
-  </data>
-  <data name="&gt;&gt;comboBox6.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="comboBoxUsuPerAlm.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
-  </data>
-  <data name="comboBoxUsuPerAlm.Location" type="System.Drawing.Point, System.Drawing">
-    <value>19, 118</value>
-  </data>
-  <data name="comboBoxUsuPerAlm.Size" type="System.Drawing.Size, System.Drawing">
-    <value>357, 28</value>
-  </data>
-  <data name="comboBoxUsuPerAlm.TabIndex" type="System.Int32, mscorlib">
-    <value>130</value>
-  </data>
-  <data name="&gt;&gt;comboBoxUsuPerAlm.Name" xml:space="preserve">
-    <value>comboBoxUsuPerAlm</value>
-  </data>
-  <data name="&gt;&gt;comboBoxUsuPerAlm.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;comboBoxUsuPerAlm.Parent" xml:space="preserve">
-    <value>tabPage7</value>
-  </data>
-  <data name="&gt;&gt;comboBoxUsuPerAlm.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="Button.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="Button.Location" type="System.Drawing.Point, System.Drawing">
-    <value>879, 345</value>
-  </data>
-  <data name="Button.Size" type="System.Drawing.Size, System.Drawing">
-    <value>143, 48</value>
-  </data>
-  <data name="Button.TabIndex" type="System.Int32, mscorlib">
-    <value>129</value>
-  </data>
-  <data name="Button.Text" xml:space="preserve">
-    <value>Modificar</value>
-  </data>
-  <data name="&gt;&gt;Button.Name" xml:space="preserve">
-    <value>Button</value>
-  </data>
-  <data name="&gt;&gt;Button.Type" xml:space="preserve">
-    <value>Bunifu.Framework.UI.BunifuFlatButton, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;Button.Parent" xml:space="preserve">
-    <value>tabPage7</value>
-  </data>
-  <data name="&gt;&gt;Button.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="ButtonEliminarPeAl.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="ButtonEliminarPeAl.Location" type="System.Drawing.Point, System.Drawing">
-    <value>730, 345</value>
-  </data>
-  <data name="ButtonEliminarPeAl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>143, 48</value>
-  </data>
-  <data name="ButtonEliminarPeAl.TabIndex" type="System.Int32, mscorlib">
-    <value>128</value>
-  </data>
-  <data name="ButtonEliminarPeAl.Text" xml:space="preserve">
-    <value>Eliminar</value>
-  </data>
-  <data name="&gt;&gt;ButtonEliminarPeAl.Name" xml:space="preserve">
-    <value>ButtonEliminarPeAl</value>
-  </data>
-  <data name="&gt;&gt;ButtonEliminarPeAl.Type" xml:space="preserve">
-    <value>Bunifu.Framework.UI.BunifuFlatButton, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;ButtonEliminarPeAl.Parent" xml:space="preserve">
-    <value>tabPage7</value>
-  </data>
-  <data name="&gt;&gt;ButtonEliminarPeAl.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="ButtonAgregarPeAl.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="ButtonAgregarPeAl.Location" type="System.Drawing.Point, System.Drawing">
-    <value>581, 345</value>
-  </data>
-  <data name="ButtonAgregarPeAl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>143, 48</value>
-  </data>
-  <data name="ButtonAgregarPeAl.TabIndex" type="System.Int32, mscorlib">
-    <value>127</value>
-  </data>
-  <data name="ButtonAgregarPeAl.Text" xml:space="preserve">
-    <value>Agregar</value>
-  </data>
-  <data name="&gt;&gt;ButtonAgregarPeAl.Name" xml:space="preserve">
-    <value>ButtonAgregarPeAl</value>
-  </data>
-  <data name="&gt;&gt;ButtonAgregarPeAl.Type" xml:space="preserve">
-    <value>Bunifu.Framework.UI.BunifuFlatButton, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;ButtonAgregarPeAl.Parent" xml:space="preserve">
-    <value>tabPage7</value>
-  </data>
-  <data name="&gt;&gt;ButtonAgregarPeAl.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="ButtonCargarPeAl.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="ButtonCargarPeAl.Location" type="System.Drawing.Point, System.Drawing">
-    <value>429, 345</value>
-  </data>
-  <data name="ButtonCargarPeAl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>143, 48</value>
-  </data>
-  <data name="ButtonCargarPeAl.TabIndex" type="System.Int32, mscorlib">
-    <value>126</value>
-  </data>
-  <data name="ButtonCargarPeAl.Text" xml:space="preserve">
-    <value>Cargar</value>
-  </data>
-  <data name="&gt;&gt;ButtonCargarPeAl.Name" xml:space="preserve">
-    <value>ButtonCargarPeAl</value>
-  </data>
-  <data name="&gt;&gt;ButtonCargarPeAl.Type" xml:space="preserve">
-    <value>Bunifu.Framework.UI.BunifuFlatButton, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;ButtonCargarPeAl.Parent" xml:space="preserve">
-    <value>tabPage7</value>
-  </data>
-  <data name="&gt;&gt;ButtonCargarPeAl.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="bunifuCustomDataGrid4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>393, 41</value>
-  </data>
-  <data name="bunifuCustomDataGrid4.RowHeadersWidth" type="System.Int32, mscorlib">
-    <value>51</value>
-  </data>
-  <data name="bunifuCustomDataGrid4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>629, 298</value>
-  </data>
-  <data name="bunifuCustomDataGrid4.TabIndex" type="System.Int32, mscorlib">
-    <value>125</value>
-  </data>
-  <data name="&gt;&gt;bunifuCustomDataGrid4.Name" xml:space="preserve">
-    <value>bunifuCustomDataGrid4</value>
-  </data>
-  <data name="&gt;&gt;bunifuCustomDataGrid4.Type" xml:space="preserve">
-    <value>Bunifu.Framework.UI.BunifuCustomDataGrid, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;bunifuCustomDataGrid4.Parent" xml:space="preserve">
-    <value>tabPage7</value>
-  </data>
-  <data name="&gt;&gt;bunifuCustomDataGrid4.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="bunifuCustomLabel1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="bunifuCustomLabel1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
-  </data>
-  <data name="bunifuCustomLabel1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="bunifuCustomLabel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 41</value>
-  </data>
-  <data name="bunifuCustomLabel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 20</value>
-  </data>
-  <data name="bunifuCustomLabel1.TabIndex" type="System.Int32, mscorlib">
-    <value>111</value>
-  </data>
-  <data name="bunifuCustomLabel1.Text" xml:space="preserve">
-    <value>Cédula</value>
-  </data>
-  <data name="&gt;&gt;bunifuCustomLabel1.Name" xml:space="preserve">
-    <value>bunifuCustomLabel1</value>
-  </data>
-  <data name="&gt;&gt;bunifuCustomLabel1.Type" xml:space="preserve">
-    <value>Bunifu.Framework.UI.BunifuCustomLabel, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;bunifuCustomLabel1.Parent" xml:space="preserve">
-    <value>tabPage7</value>
-  </data>
-  <data name="&gt;&gt;bunifuCustomLabel1.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="bunifuCustomLabel5.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="bunifuCustomLabel5.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
-  </data>
-  <data name="bunifuCustomLabel5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="bunifuCustomLabel5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 95</value>
-  </data>
-  <data name="bunifuCustomLabel5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 20</value>
-  </data>
-  <data name="bunifuCustomLabel5.TabIndex" type="System.Int32, mscorlib">
-    <value>120</value>
-  </data>
-  <data name="bunifuCustomLabel5.Text" xml:space="preserve">
-    <value>almacen</value>
-  </data>
-  <data name="&gt;&gt;bunifuCustomLabel5.Name" xml:space="preserve">
-    <value>bunifuCustomLabel5</value>
-  </data>
-  <data name="&gt;&gt;bunifuCustomLabel5.Type" xml:space="preserve">
-    <value>Bunifu.Framework.UI.BunifuCustomLabel, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;bunifuCustomLabel5.Parent" xml:space="preserve">
-    <value>tabPage7</value>
-  </data>
-  <data name="&gt;&gt;bunifuCustomLabel5.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="tabPage7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
-  </data>
-  <data name="tabPage7.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="tabPage7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1056, 477</value>
-  </data>
-  <data name="tabPage7.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="tabPage7.Text" xml:space="preserve">
-    <value>permisos por almacen</value>
-  </data>
-  <data name="&gt;&gt;tabPage7.Name" xml:space="preserve">
-    <value>tabPage7</value>
-  </data>
-  <data name="&gt;&gt;tabPage7.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPage7.Parent" xml:space="preserve">
-    <value>tabControl2</value>
-  </data>
-  <data name="&gt;&gt;tabPage7.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="tabPage10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
-  </data>
-  <data name="tabPage10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1056, 477</value>
-  </data>
-  <data name="tabPage10.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="tabPage10.Text" xml:space="preserve">
-    <value>permisos generales</value>
-  </data>
-  <data name="&gt;&gt;tabPage10.Name" xml:space="preserve">
-    <value>tabPage10</value>
-  </data>
-  <data name="&gt;&gt;tabPage10.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPage10.Parent" xml:space="preserve">
-    <value>tabControl2</value>
-  </data>
-  <data name="&gt;&gt;tabPage10.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="tabControl2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>18, 22</value>
-  </data>
-  <data name="tabControl2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1064, 503</value>
-  </data>
-  <data name="tabControl2.TabIndex" type="System.Int32, mscorlib">
-    <value>111</value>
-  </data>
-  <data name="&gt;&gt;tabControl2.Name" xml:space="preserve">
-    <value>tabControl2</value>
-  </data>
-  <data name="&gt;&gt;tabControl2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabControl2.Parent" xml:space="preserve">
-    <value>tabPage3</value>
-  </data>
-  <data name="&gt;&gt;tabControl2.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="tabPage3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
-  </data>
-  <data name="tabPage3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1371, 746</value>
-  </data>
-  <data name="tabPage3.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="tabPage3.Text" xml:space="preserve">
-    <value>usuario</value>
-  </data>
-  <data name="&gt;&gt;tabPage3.Name" xml:space="preserve">
-    <value>tabPage3</value>
-  </data>
-  <data name="&gt;&gt;tabPage3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPage3.Parent" xml:space="preserve">
-    <value>tabControl1</value>
-  </data>
-  <data name="&gt;&gt;tabPage3.ZOrder" xml:space="preserve">
-    <value>3</value>
   </data>
   <data name="bunifuCustomDataGrid2.Location" type="System.Drawing.Point, System.Drawing">
     <value>396, 39</value>
@@ -3913,6 +3514,411 @@
   </data>
   <data name="&gt;&gt;TextboxCedula.ZOrder" xml:space="preserve">
     <value>14</value>
+  </data>
+  <data name="&gt;&gt;comboBox6.Name" xml:space="preserve">
+    <value>comboBox6</value>
+  </data>
+  <data name="&gt;&gt;comboBox6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBox6.Parent" xml:space="preserve">
+    <value>tabPage7</value>
+  </data>
+  <data name="&gt;&gt;comboBox6.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;comboBoxUsuPerAlm.Name" xml:space="preserve">
+    <value>comboBoxUsuPerAlm</value>
+  </data>
+  <data name="&gt;&gt;comboBoxUsuPerAlm.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBoxUsuPerAlm.Parent" xml:space="preserve">
+    <value>tabPage7</value>
+  </data>
+  <data name="&gt;&gt;comboBoxUsuPerAlm.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;Button.Name" xml:space="preserve">
+    <value>Button</value>
+  </data>
+  <data name="&gt;&gt;Button.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuFlatButton, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;Button.Parent" xml:space="preserve">
+    <value>tabPage7</value>
+  </data>
+  <data name="&gt;&gt;Button.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;ButtonEliminarPeAl.Name" xml:space="preserve">
+    <value>ButtonEliminarPeAl</value>
+  </data>
+  <data name="&gt;&gt;ButtonEliminarPeAl.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuFlatButton, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;ButtonEliminarPeAl.Parent" xml:space="preserve">
+    <value>tabPage7</value>
+  </data>
+  <data name="&gt;&gt;ButtonEliminarPeAl.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;ButtonAgregarPeAl.Name" xml:space="preserve">
+    <value>ButtonAgregarPeAl</value>
+  </data>
+  <data name="&gt;&gt;ButtonAgregarPeAl.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuFlatButton, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;ButtonAgregarPeAl.Parent" xml:space="preserve">
+    <value>tabPage7</value>
+  </data>
+  <data name="&gt;&gt;ButtonAgregarPeAl.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;ButtonCargarPeAl.Name" xml:space="preserve">
+    <value>ButtonCargarPeAl</value>
+  </data>
+  <data name="&gt;&gt;ButtonCargarPeAl.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuFlatButton, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;ButtonCargarPeAl.Parent" xml:space="preserve">
+    <value>tabPage7</value>
+  </data>
+  <data name="&gt;&gt;ButtonCargarPeAl.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;bunifuCustomDataGrid4.Name" xml:space="preserve">
+    <value>bunifuCustomDataGrid4</value>
+  </data>
+  <data name="&gt;&gt;bunifuCustomDataGrid4.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuCustomDataGrid, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bunifuCustomDataGrid4.Parent" xml:space="preserve">
+    <value>tabPage7</value>
+  </data>
+  <data name="&gt;&gt;bunifuCustomDataGrid4.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;bunifuCustomLabel1.Name" xml:space="preserve">
+    <value>bunifuCustomLabel1</value>
+  </data>
+  <data name="&gt;&gt;bunifuCustomLabel1.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuCustomLabel, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bunifuCustomLabel1.Parent" xml:space="preserve">
+    <value>tabPage7</value>
+  </data>
+  <data name="&gt;&gt;bunifuCustomLabel1.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;bunifuCustomLabel5.Name" xml:space="preserve">
+    <value>bunifuCustomLabel5</value>
+  </data>
+  <data name="&gt;&gt;bunifuCustomLabel5.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuCustomLabel, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bunifuCustomLabel5.Parent" xml:space="preserve">
+    <value>tabPage7</value>
+  </data>
+  <data name="&gt;&gt;bunifuCustomLabel5.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="tabPage7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="tabPage7.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tabPage7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1056, 477</value>
+  </data>
+  <data name="tabPage7.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tabPage7.Text" xml:space="preserve">
+    <value>permisos por almacen</value>
+  </data>
+  <data name="&gt;&gt;tabPage7.Name" xml:space="preserve">
+    <value>tabPage7</value>
+  </data>
+  <data name="&gt;&gt;tabPage7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage7.Parent" xml:space="preserve">
+    <value>tabControl2</value>
+  </data>
+  <data name="&gt;&gt;tabPage7.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="comboBox6.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="comboBox6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 64</value>
+  </data>
+  <data name="comboBox6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>357, 28</value>
+  </data>
+  <data name="comboBox6.TabIndex" type="System.Int32, mscorlib">
+    <value>131</value>
+  </data>
+  <data name="&gt;&gt;comboBox6.Name" xml:space="preserve">
+    <value>comboBox6</value>
+  </data>
+  <data name="&gt;&gt;comboBox6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBox6.Parent" xml:space="preserve">
+    <value>tabPage7</value>
+  </data>
+  <data name="&gt;&gt;comboBox6.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="comboBoxUsuPerAlm.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="comboBoxUsuPerAlm.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 118</value>
+  </data>
+  <data name="comboBoxUsuPerAlm.Size" type="System.Drawing.Size, System.Drawing">
+    <value>357, 28</value>
+  </data>
+  <data name="comboBoxUsuPerAlm.TabIndex" type="System.Int32, mscorlib">
+    <value>130</value>
+  </data>
+  <data name="&gt;&gt;comboBoxUsuPerAlm.Name" xml:space="preserve">
+    <value>comboBoxUsuPerAlm</value>
+  </data>
+  <data name="&gt;&gt;comboBoxUsuPerAlm.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBoxUsuPerAlm.Parent" xml:space="preserve">
+    <value>tabPage7</value>
+  </data>
+  <data name="&gt;&gt;comboBoxUsuPerAlm.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="Button.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="Button.Location" type="System.Drawing.Point, System.Drawing">
+    <value>879, 345</value>
+  </data>
+  <data name="Button.Size" type="System.Drawing.Size, System.Drawing">
+    <value>143, 48</value>
+  </data>
+  <data name="Button.TabIndex" type="System.Int32, mscorlib">
+    <value>129</value>
+  </data>
+  <data name="Button.Text" xml:space="preserve">
+    <value>Modificar</value>
+  </data>
+  <data name="&gt;&gt;Button.Name" xml:space="preserve">
+    <value>Button</value>
+  </data>
+  <data name="&gt;&gt;Button.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuFlatButton, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;Button.Parent" xml:space="preserve">
+    <value>tabPage7</value>
+  </data>
+  <data name="&gt;&gt;Button.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="ButtonEliminarPeAl.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="ButtonEliminarPeAl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>730, 345</value>
+  </data>
+  <data name="ButtonEliminarPeAl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>143, 48</value>
+  </data>
+  <data name="ButtonEliminarPeAl.TabIndex" type="System.Int32, mscorlib">
+    <value>128</value>
+  </data>
+  <data name="ButtonEliminarPeAl.Text" xml:space="preserve">
+    <value>Eliminar</value>
+  </data>
+  <data name="&gt;&gt;ButtonEliminarPeAl.Name" xml:space="preserve">
+    <value>ButtonEliminarPeAl</value>
+  </data>
+  <data name="&gt;&gt;ButtonEliminarPeAl.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuFlatButton, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;ButtonEliminarPeAl.Parent" xml:space="preserve">
+    <value>tabPage7</value>
+  </data>
+  <data name="&gt;&gt;ButtonEliminarPeAl.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="ButtonAgregarPeAl.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="ButtonAgregarPeAl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>581, 345</value>
+  </data>
+  <data name="ButtonAgregarPeAl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>143, 48</value>
+  </data>
+  <data name="ButtonAgregarPeAl.TabIndex" type="System.Int32, mscorlib">
+    <value>127</value>
+  </data>
+  <data name="ButtonAgregarPeAl.Text" xml:space="preserve">
+    <value>Agregar</value>
+  </data>
+  <data name="&gt;&gt;ButtonAgregarPeAl.Name" xml:space="preserve">
+    <value>ButtonAgregarPeAl</value>
+  </data>
+  <data name="&gt;&gt;ButtonAgregarPeAl.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuFlatButton, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;ButtonAgregarPeAl.Parent" xml:space="preserve">
+    <value>tabPage7</value>
+  </data>
+  <data name="&gt;&gt;ButtonAgregarPeAl.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="ButtonCargarPeAl.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="ButtonCargarPeAl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>429, 345</value>
+  </data>
+  <data name="ButtonCargarPeAl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>143, 48</value>
+  </data>
+  <data name="ButtonCargarPeAl.TabIndex" type="System.Int32, mscorlib">
+    <value>126</value>
+  </data>
+  <data name="ButtonCargarPeAl.Text" xml:space="preserve">
+    <value>Cargar</value>
+  </data>
+  <data name="&gt;&gt;ButtonCargarPeAl.Name" xml:space="preserve">
+    <value>ButtonCargarPeAl</value>
+  </data>
+  <data name="&gt;&gt;ButtonCargarPeAl.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuFlatButton, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;ButtonCargarPeAl.Parent" xml:space="preserve">
+    <value>tabPage7</value>
+  </data>
+  <data name="&gt;&gt;ButtonCargarPeAl.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="bunifuCustomDataGrid4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>393, 41</value>
+  </data>
+  <data name="bunifuCustomDataGrid4.RowHeadersWidth" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
+  <data name="bunifuCustomDataGrid4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>629, 298</value>
+  </data>
+  <data name="bunifuCustomDataGrid4.TabIndex" type="System.Int32, mscorlib">
+    <value>125</value>
+  </data>
+  <data name="&gt;&gt;bunifuCustomDataGrid4.Name" xml:space="preserve">
+    <value>bunifuCustomDataGrid4</value>
+  </data>
+  <data name="&gt;&gt;bunifuCustomDataGrid4.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuCustomDataGrid, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bunifuCustomDataGrid4.Parent" xml:space="preserve">
+    <value>tabPage7</value>
+  </data>
+  <data name="&gt;&gt;bunifuCustomDataGrid4.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="bunifuCustomLabel1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="bunifuCustomLabel1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
+  </data>
+  <data name="bunifuCustomLabel1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="bunifuCustomLabel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 41</value>
+  </data>
+  <data name="bunifuCustomLabel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 20</value>
+  </data>
+  <data name="bunifuCustomLabel1.TabIndex" type="System.Int32, mscorlib">
+    <value>111</value>
+  </data>
+  <data name="bunifuCustomLabel1.Text" xml:space="preserve">
+    <value>Cédula</value>
+  </data>
+  <data name="&gt;&gt;bunifuCustomLabel1.Name" xml:space="preserve">
+    <value>bunifuCustomLabel1</value>
+  </data>
+  <data name="&gt;&gt;bunifuCustomLabel1.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuCustomLabel, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bunifuCustomLabel1.Parent" xml:space="preserve">
+    <value>tabPage7</value>
+  </data>
+  <data name="&gt;&gt;bunifuCustomLabel1.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="bunifuCustomLabel5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="bunifuCustomLabel5.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
+  </data>
+  <data name="bunifuCustomLabel5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="bunifuCustomLabel5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 95</value>
+  </data>
+  <data name="bunifuCustomLabel5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 20</value>
+  </data>
+  <data name="bunifuCustomLabel5.TabIndex" type="System.Int32, mscorlib">
+    <value>120</value>
+  </data>
+  <data name="bunifuCustomLabel5.Text" xml:space="preserve">
+    <value>almacen</value>
+  </data>
+  <data name="&gt;&gt;bunifuCustomLabel5.Name" xml:space="preserve">
+    <value>bunifuCustomLabel5</value>
+  </data>
+  <data name="&gt;&gt;bunifuCustomLabel5.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuCustomLabel, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bunifuCustomLabel5.Parent" xml:space="preserve">
+    <value>tabPage7</value>
+  </data>
+  <data name="&gt;&gt;bunifuCustomLabel5.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="tabPage10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="tabPage10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1056, 477</value>
+  </data>
+  <data name="tabPage10.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="tabPage10.Text" xml:space="preserve">
+    <value>permisos generales</value>
+  </data>
+  <data name="&gt;&gt;tabPage10.Name" xml:space="preserve">
+    <value>tabPage10</value>
+  </data>
+  <data name="&gt;&gt;tabPage10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage10.Parent" xml:space="preserve">
+    <value>tabControl2</value>
+  </data>
+  <data name="&gt;&gt;tabPage10.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="tabPage2.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 22</value>
@@ -5254,17 +5260,125 @@
   <data name="&gt;&gt;labelTotal.ZOrder" xml:space="preserve">
     <value>25</value>
   </data>
-  <data name="&gt;&gt;comboBoxUsPeCe.Name" xml:space="preserve">
-    <value>comboBoxUsPeCe</value>
+  <data name="&gt;&gt;TextboxNombreAlmacen.Name" xml:space="preserve">
+    <value>TextboxNombreAlmacen</value>
   </data>
-  <data name="&gt;&gt;comboBoxUsPeCe.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;TextboxNombreAlmacen.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuTextbox, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="&gt;&gt;comboBoxUsPeCe.Parent" xml:space="preserve">
+  <data name="&gt;&gt;TextboxNombreAlmacen.Parent" xml:space="preserve">
     <value>tabPage11</value>
   </data>
-  <data name="&gt;&gt;comboBoxUsPeCe.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;TextboxNombreAlmacen.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="&gt;&gt;bunifuCustomLabel3.Name" xml:space="preserve">
+    <value>bunifuCustomLabel3</value>
+  </data>
+  <data name="&gt;&gt;bunifuCustomLabel3.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuCustomLabel, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bunifuCustomLabel3.Parent" xml:space="preserve">
+    <value>tabPage11</value>
+  </data>
+  <data name="&gt;&gt;bunifuCustomLabel3.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;TextboxDescripcionAlmacen.Name" xml:space="preserve">
+    <value>TextboxDescripcionAlmacen</value>
+  </data>
+  <data name="&gt;&gt;TextboxDescripcionAlmacen.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuTextbox, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;TextboxDescripcionAlmacen.Parent" xml:space="preserve">
+    <value>tabPage11</value>
+  </data>
+  <data name="&gt;&gt;TextboxDescripcionAlmacen.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;bunifuFlatButton6.Name" xml:space="preserve">
+    <value>bunifuFlatButton6</value>
+  </data>
+  <data name="&gt;&gt;bunifuFlatButton6.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuFlatButton, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bunifuFlatButton6.Parent" xml:space="preserve">
+    <value>tabPage11</value>
+  </data>
+  <data name="&gt;&gt;bunifuFlatButton6.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;ButtonElimarAlmacen.Name" xml:space="preserve">
+    <value>ButtonElimarAlmacen</value>
+  </data>
+  <data name="&gt;&gt;ButtonElimarAlmacen.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuFlatButton, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;ButtonElimarAlmacen.Parent" xml:space="preserve">
+    <value>tabPage11</value>
+  </data>
+  <data name="&gt;&gt;ButtonElimarAlmacen.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;bunifuFlatButton8.Name" xml:space="preserve">
+    <value>bunifuFlatButton8</value>
+  </data>
+  <data name="&gt;&gt;bunifuFlatButton8.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuFlatButton, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bunifuFlatButton8.Parent" xml:space="preserve">
+    <value>tabPage11</value>
+  </data>
+  <data name="&gt;&gt;bunifuFlatButton8.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;bunifuFlatButton9.Name" xml:space="preserve">
+    <value>bunifuFlatButton9</value>
+  </data>
+  <data name="&gt;&gt;bunifuFlatButton9.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuFlatButton, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bunifuFlatButton9.Parent" xml:space="preserve">
+    <value>tabPage11</value>
+  </data>
+  <data name="&gt;&gt;bunifuFlatButton9.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;DataGridAlmacen.Name" xml:space="preserve">
+    <value>DataGridAlmacen</value>
+  </data>
+  <data name="&gt;&gt;DataGridAlmacen.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuCustomDataGrid, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;DataGridAlmacen.Parent" xml:space="preserve">
+    <value>tabPage11</value>
+  </data>
+  <data name="&gt;&gt;DataGridAlmacen.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;LabelDescripcion.Name" xml:space="preserve">
+    <value>LabelDescripcion</value>
+  </data>
+  <data name="&gt;&gt;LabelDescripcion.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuCustomLabel, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;LabelDescripcion.Parent" xml:space="preserve">
+    <value>tabPage11</value>
+  </data>
+  <data name="&gt;&gt;LabelDescripcion.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;comboBoxTipoAlmacen.Name" xml:space="preserve">
+    <value>comboBoxTipoAlmacen</value>
+  </data>
+  <data name="&gt;&gt;comboBoxTipoAlmacen.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBoxTipoAlmacen.Parent" xml:space="preserve">
+    <value>tabPage11</value>
+  </data>
+  <data name="&gt;&gt;comboBoxTipoAlmacen.ZOrder" xml:space="preserve">
+    <value>9</value>
   </data>
   <data name="&gt;&gt;bunifuCustomLabel2.Name" xml:space="preserve">
     <value>bunifuCustomLabel2</value>
@@ -5276,7 +5390,7 @@
     <value>tabPage11</value>
   </data>
   <data name="&gt;&gt;bunifuCustomLabel2.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>10</value>
   </data>
   <data name="tabPage11.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 22</value>
@@ -5326,6 +5440,371 @@
   <data name="&gt;&gt;tabControl1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="TextboxNombreAlmacen.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+</value>
+  </data>
+  <data name="TextboxNombreAlmacen.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="TextboxNombreAlmacen.Icon" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJFSURBVHhe7dBLjtxADATROfrc3F4RIArB/k1JylTnA2Ll
+        sTpZPxERERERERHv+/3996fiA/SQO4on6NGOKBb0SGf09ehRrugr0UNc2deg45W6NTr41d5F33i1W6JD
+        n7ULfftZt0IHPuoo9FuPugU6bOos9NtT9ugo6my0gbJGB1FXoS2UJTqEuhptouzQEWsqaNuaFTpgTQ1t
+        XLNB43uqaGvPAg3vqaPNPXk0uqeONvek0eCeC9rek0Vjey5oe08Wja3c0A2VJBrac0M39OTQyMoR3dGT
+        QyMrV3RLJYdGVq7olkoOjaxc0S2VHBpZuaJbKjk0snJFt1RyaGTlim6p5NDIyhXdUsmhkZUruqWSQyMr
+        V3RLJYdGVq7olkoOjaxc0S2VHBpZuaJbKjk0sueGbujJoZE9N3RDTxINrdzQDZUsGttzQdt7smhszwVt
+        70mjwT11tLknj0b31NHmngUa3lNFW3s2aPyaGtq4ZoUOWFNB29bs0BFrKmjbmiU6hLoKbaGs0UHU2WgD
+        ZY0OetRZ6LenbNExr3YU+q1H2aJjPmkX+vazbNExO3oXfePVbNExR1bo3z7NFh0z9e7fn5E1Omiqo3+/
+        Imt00NSE/vaM7NFRU6+g/3dEt0CHTb2LvrGj26Djpv6KvvlOt0NHTsVm9MhTsRk98lRsRo88FZvRI0/F
+        ZvTIU7EZPfJUbEaPPBWb0SNPxWb0yFOxGT3yVGxGjzwVm9EjT8VB6LHX4mD06FWcJI8vII8vII8fERER
+        ERERfn5+/gOB8IbglrXA+QAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="TextboxNombreAlmacen.Location" type="System.Drawing.Point, System.Drawing">
+    <value>31, 86</value>
+  </data>
+  <data name="TextboxNombreAlmacen.Size" type="System.Drawing.Size, System.Drawing">
+    <value>357, 42</value>
+  </data>
+  <data name="TextboxNombreAlmacen.TabIndex" type="System.Int32, mscorlib">
+    <value>148</value>
+  </data>
+  <data name="&gt;&gt;TextboxNombreAlmacen.Name" xml:space="preserve">
+    <value>TextboxNombreAlmacen</value>
+  </data>
+  <data name="&gt;&gt;TextboxNombreAlmacen.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuTextbox, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;TextboxNombreAlmacen.Parent" xml:space="preserve">
+    <value>tabPage11</value>
+  </data>
+  <data name="&gt;&gt;TextboxNombreAlmacen.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="bunifuCustomLabel3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="bunifuCustomLabel3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
+  </data>
+  <data name="bunifuCustomLabel3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="bunifuCustomLabel3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>27, 54</value>
+  </data>
+  <data name="bunifuCustomLabel3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 20</value>
+  </data>
+  <data name="bunifuCustomLabel3.TabIndex" type="System.Int32, mscorlib">
+    <value>147</value>
+  </data>
+  <data name="bunifuCustomLabel3.Text" xml:space="preserve">
+    <value>nombre</value>
+  </data>
+  <data name="&gt;&gt;bunifuCustomLabel3.Name" xml:space="preserve">
+    <value>bunifuCustomLabel3</value>
+  </data>
+  <data name="&gt;&gt;bunifuCustomLabel3.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuCustomLabel, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bunifuCustomLabel3.Parent" xml:space="preserve">
+    <value>tabPage11</value>
+  </data>
+  <data name="&gt;&gt;bunifuCustomLabel3.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="TextboxDescripcionAlmacen.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+</value>
+  </data>
+  <data name="TextboxDescripcionAlmacen.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="TextboxDescripcionAlmacen.Icon" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJFSURBVHhe7dBLjtxADATROfrc3F4RIArB/k1JylTnA2Ll
+        sTpZPxERERERERHv+/3996fiA/SQO4on6NGOKBb0SGf09ehRrugr0UNc2deg45W6NTr41d5F33i1W6JD
+        n7ULfftZt0IHPuoo9FuPugU6bOos9NtT9ugo6my0gbJGB1FXoS2UJTqEuhptouzQEWsqaNuaFTpgTQ1t
+        XLNB43uqaGvPAg3vqaPNPXk0uqeONvek0eCeC9rek0Vjey5oe08Wja3c0A2VJBrac0M39OTQyMoR3dGT
+        QyMrV3RLJYdGVq7olkoOjaxc0S2VHBpZuaJbKjk0snJFt1RyaGTlim6p5NDIyhXdUsmhkZUruqWSQyMr
+        V3RLJYdGVq7olkoOjaxc0S2VHBpZuaJbKjk0sueGbujJoZE9N3RDTxINrdzQDZUsGttzQdt7smhszwVt
+        70mjwT11tLknj0b31NHmngUa3lNFW3s2aPyaGtq4ZoUOWFNB29bs0BFrKmjbmiU6hLoKbaGs0UHU2WgD
+        ZY0OetRZ6LenbNExr3YU+q1H2aJjPmkX+vazbNExO3oXfePVbNExR1bo3z7NFh0z9e7fn5E1Omiqo3+/
+        Imt00NSE/vaM7NFRU6+g/3dEt0CHTb2LvrGj26Djpv6KvvlOt0NHTsVm9MhTsRk98lRsRo88FZvRI0/F
+        ZvTIU7EZPfJUbEaPPBWb0SNPxWb0yFOxGT3yVGxGjzwVm9EjT8VB6LHX4mD06FWcJI8vII8vII8fERER
+        ERERfn5+/gOB8IbglrXA+QAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="TextboxDescripcionAlmacen.Location" type="System.Drawing.Point, System.Drawing">
+    <value>31, 159</value>
+  </data>
+  <data name="TextboxDescripcionAlmacen.Size" type="System.Drawing.Size, System.Drawing">
+    <value>357, 42</value>
+  </data>
+  <data name="TextboxDescripcionAlmacen.TabIndex" type="System.Int32, mscorlib">
+    <value>146</value>
+  </data>
+  <data name="&gt;&gt;TextboxDescripcionAlmacen.Name" xml:space="preserve">
+    <value>TextboxDescripcionAlmacen</value>
+  </data>
+  <data name="&gt;&gt;TextboxDescripcionAlmacen.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuTextbox, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;TextboxDescripcionAlmacen.Parent" xml:space="preserve">
+    <value>tabPage11</value>
+  </data>
+  <data name="&gt;&gt;TextboxDescripcionAlmacen.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="bunifuFlatButton6.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="bunifuFlatButton6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>880, 358</value>
+  </data>
+  <data name="bunifuFlatButton6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>143, 48</value>
+  </data>
+  <data name="bunifuFlatButton6.TabIndex" type="System.Int32, mscorlib">
+    <value>144</value>
+  </data>
+  <data name="bunifuFlatButton6.Text" xml:space="preserve">
+    <value>Modificar</value>
+  </data>
+  <data name="&gt;&gt;bunifuFlatButton6.Name" xml:space="preserve">
+    <value>bunifuFlatButton6</value>
+  </data>
+  <data name="&gt;&gt;bunifuFlatButton6.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuFlatButton, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bunifuFlatButton6.Parent" xml:space="preserve">
+    <value>tabPage11</value>
+  </data>
+  <data name="&gt;&gt;bunifuFlatButton6.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="ButtonElimarAlmacen.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="ButtonElimarAlmacen.Location" type="System.Drawing.Point, System.Drawing">
+    <value>731, 358</value>
+  </data>
+  <data name="ButtonElimarAlmacen.Size" type="System.Drawing.Size, System.Drawing">
+    <value>143, 48</value>
+  </data>
+  <data name="ButtonElimarAlmacen.TabIndex" type="System.Int32, mscorlib">
+    <value>143</value>
+  </data>
+  <data name="ButtonElimarAlmacen.Text" xml:space="preserve">
+    <value>Eliminar</value>
+  </data>
+  <data name="&gt;&gt;ButtonElimarAlmacen.Name" xml:space="preserve">
+    <value>ButtonElimarAlmacen</value>
+  </data>
+  <data name="&gt;&gt;ButtonElimarAlmacen.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuFlatButton, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;ButtonElimarAlmacen.Parent" xml:space="preserve">
+    <value>tabPage11</value>
+  </data>
+  <data name="&gt;&gt;ButtonElimarAlmacen.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="bunifuFlatButton8.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="bunifuFlatButton8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>582, 358</value>
+  </data>
+  <data name="bunifuFlatButton8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>143, 48</value>
+  </data>
+  <data name="bunifuFlatButton8.TabIndex" type="System.Int32, mscorlib">
+    <value>142</value>
+  </data>
+  <data name="bunifuFlatButton8.Text" xml:space="preserve">
+    <value>Agregar</value>
+  </data>
+  <data name="&gt;&gt;bunifuFlatButton8.Name" xml:space="preserve">
+    <value>bunifuFlatButton8</value>
+  </data>
+  <data name="&gt;&gt;bunifuFlatButton8.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuFlatButton, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bunifuFlatButton8.Parent" xml:space="preserve">
+    <value>tabPage11</value>
+  </data>
+  <data name="&gt;&gt;bunifuFlatButton8.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="bunifuFlatButton9.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="bunifuFlatButton9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>430, 358</value>
+  </data>
+  <data name="bunifuFlatButton9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>143, 48</value>
+  </data>
+  <data name="bunifuFlatButton9.TabIndex" type="System.Int32, mscorlib">
+    <value>141</value>
+  </data>
+  <data name="bunifuFlatButton9.Text" xml:space="preserve">
+    <value>Cargar</value>
+  </data>
+  <data name="&gt;&gt;bunifuFlatButton9.Name" xml:space="preserve">
+    <value>bunifuFlatButton9</value>
+  </data>
+  <data name="&gt;&gt;bunifuFlatButton9.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuFlatButton, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bunifuFlatButton9.Parent" xml:space="preserve">
+    <value>tabPage11</value>
+  </data>
+  <data name="&gt;&gt;bunifuFlatButton9.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="DataGridAlmacen.Location" type="System.Drawing.Point, System.Drawing">
+    <value>394, 54</value>
+  </data>
+  <data name="DataGridAlmacen.RowHeadersWidth" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
+  <data name="DataGridAlmacen.Size" type="System.Drawing.Size, System.Drawing">
+    <value>629, 298</value>
+  </data>
+  <data name="DataGridAlmacen.TabIndex" type="System.Int32, mscorlib">
+    <value>140</value>
+  </data>
+  <data name="&gt;&gt;DataGridAlmacen.Name" xml:space="preserve">
+    <value>DataGridAlmacen</value>
+  </data>
+  <data name="&gt;&gt;DataGridAlmacen.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuCustomDataGrid, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;DataGridAlmacen.Parent" xml:space="preserve">
+    <value>tabPage11</value>
+  </data>
+  <data name="&gt;&gt;DataGridAlmacen.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="LabelDescripcion.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LabelDescripcion.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
+  </data>
+  <data name="LabelDescripcion.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="LabelDescripcion.Location" type="System.Drawing.Point, System.Drawing">
+    <value>27, 127</value>
+  </data>
+  <data name="LabelDescripcion.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="LabelDescripcion.TabIndex" type="System.Int32, mscorlib">
+    <value>138</value>
+  </data>
+  <data name="LabelDescripcion.Text" xml:space="preserve">
+    <value>descripcion</value>
+  </data>
+  <data name="&gt;&gt;LabelDescripcion.Name" xml:space="preserve">
+    <value>LabelDescripcion</value>
+  </data>
+  <data name="&gt;&gt;LabelDescripcion.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuCustomLabel, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;LabelDescripcion.Parent" xml:space="preserve">
+    <value>tabPage11</value>
+  </data>
+  <data name="&gt;&gt;LabelDescripcion.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="comboBoxTipoAlmacen.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="comboBoxTipoAlmacen.Items" xml:space="preserve">
+    <value>almacen</value>
+  </data>
+  <data name="comboBoxTipoAlmacen.Items1" xml:space="preserve">
+    <value>fabrica</value>
+  </data>
+  <data name="comboBoxTipoAlmacen.Items2" xml:space="preserve">
+    <value>satelite</value>
+  </data>
+  <data name="comboBoxTipoAlmacen.Location" type="System.Drawing.Point, System.Drawing">
+    <value>31, 243</value>
+  </data>
+  <data name="comboBoxTipoAlmacen.Size" type="System.Drawing.Size, System.Drawing">
+    <value>357, 28</value>
+  </data>
+  <data name="comboBoxTipoAlmacen.TabIndex" type="System.Int32, mscorlib">
+    <value>137</value>
+  </data>
+  <data name="&gt;&gt;comboBoxTipoAlmacen.Name" xml:space="preserve">
+    <value>comboBoxTipoAlmacen</value>
+  </data>
+  <data name="&gt;&gt;comboBoxTipoAlmacen.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBoxTipoAlmacen.Parent" xml:space="preserve">
+    <value>tabPage11</value>
+  </data>
+  <data name="&gt;&gt;comboBoxTipoAlmacen.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
   <data name="bunifuCustomLabel2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -5336,7 +5815,7 @@
     <value>NoControl</value>
   </data>
   <data name="bunifuCustomLabel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>27, 54</value>
+    <value>27, 220</value>
   </data>
   <data name="bunifuCustomLabel2.Size" type="System.Drawing.Size, System.Drawing">
     <value>43, 20</value>
@@ -5357,37 +5836,7 @@
     <value>tabPage11</value>
   </data>
   <data name="&gt;&gt;bunifuCustomLabel2.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="comboBoxUsPeCe.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
-  </data>
-  <data name="comboBoxUsPeCe.Items" xml:space="preserve">
-    <value>almacen</value>
-  </data>
-  <data name="comboBoxUsPeCe.Items1" xml:space="preserve">
-    <value>fabrica</value>
-  </data>
-  <data name="comboBoxUsPeCe.Location" type="System.Drawing.Point, System.Drawing">
-    <value>31, 88</value>
-  </data>
-  <data name="comboBoxUsPeCe.Size" type="System.Drawing.Size, System.Drawing">
-    <value>357, 28</value>
-  </data>
-  <data name="comboBoxUsPeCe.TabIndex" type="System.Int32, mscorlib">
-    <value>137</value>
-  </data>
-  <data name="&gt;&gt;comboBoxUsPeCe.Name" xml:space="preserve">
-    <value>comboBoxUsPeCe</value>
-  </data>
-  <data name="&gt;&gt;comboBoxUsPeCe.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;comboBoxUsPeCe.Parent" xml:space="preserve">
-    <value>tabPage11</value>
-  </data>
-  <data name="&gt;&gt;comboBoxUsPeCe.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>10</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
