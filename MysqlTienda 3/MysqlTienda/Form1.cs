@@ -26,11 +26,11 @@ namespace MysqlTienda
         public void abrirConeccion()
         {
             comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBox2.DropDownStyle = ComboBoxStyle.DropDownList; 
-            comboBox3.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBox4.DropDownStyle = ComboBoxStyle.DropDownList;   
-            comboBox5.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBox6.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBoxIvaProducto.DropDownStyle = ComboBoxStyle.DropDownList; 
+            comboBoxDepartamentoProducto.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBoxAlmacenProducto.DropDownStyle = ComboBoxStyle.DropDownList;   
+            comboBoxTamanoProducto.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBoxCedulaPermiAlmace.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxUsuPerAlm.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxTipoAlmacen.DropDownStyle = ComboBoxStyle.DropDownList;
 
@@ -384,6 +384,11 @@ namespace MysqlTienda
                     cargarPermisosPorAlmacen();
                     cargarCiudadesPermisosAlamacen();
                     iniciarTablaUsuarios();
+                    CargarDepartamentosTabla();
+                    cargarTablaTamano();
+                    cargarPermisosPorUsuario();
+                    cargarProductosTabla();
+
                 }
                 else
                 {
@@ -412,9 +417,9 @@ namespace MysqlTienda
                     {
                         var dt = new DataTable();
                         dt.Load(cmd.ExecuteReader());
-                        comboBox6.ValueMember = "cc";
-                        comboBox6.DisplayMember = "cc";
-                        comboBox6.DataSource = dt;
+                        comboBoxCedulaPermiAlmace.ValueMember = "cc";
+                        comboBoxCedulaPermiAlmace.DisplayMember = "cc";
+                        comboBoxCedulaPermiAlmace.DataSource = dt;
 
                         
                     }
@@ -494,7 +499,24 @@ namespace MysqlTienda
         {
             cargarDatosTablaVentajas();
 
+
         }
+        private void cargaTablaPermisosPorAlmacen()
+        {
+
+            try
+            {
+                comboBoxUsuPerAlm.Text = DataGridPermisosPorAlmacen.CurrentRow.Cells[0].Value.ToString();
+                comboBoxCedulaPermiAlmace.Text = DataGridPermisosPorAlmacen.CurrentRow.Cells[1].Value.ToString();
+
+            }
+            catch (Exception error)
+            {
+                MessageBox.Show(Convert.ToString(error));
+            }
+
+        }
+
         private void cargarDatosTablaUsuario()
         {
             
@@ -834,7 +856,7 @@ namespace MysqlTienda
                 DataTable table = new DataTable();
                 MySqlDataAdapter adpter = new MySqlDataAdapter(selectQuery, conectar);
                 adpter.Fill(table);
-                bunifuCustomDataGrid4.DataSource = table;
+                DataGridPermisosPorAlmacen.DataSource = table;
                 cerrarConeccion();
             }
             catch (Exception error)
@@ -899,7 +921,7 @@ namespace MysqlTienda
 
         private void ButtonUsuarioEliminar_Click(object sender, EventArgs e)
         {
-
+            
             DialogResult result = MessageBox.Show("¿Seguro que desea eliminar a este usuario?: '"+TextboxUsuario.text+"'?", "Eliminar usuario: '"+TextboxNombre.text+"'", MessageBoxButtons.YesNoCancel);
 
             if (result == DialogResult.Yes)
@@ -979,7 +1001,7 @@ namespace MysqlTienda
 
             try
             {                
-                string insertarCodigo = "UPDATE easyerp.usuario_almacen SET `almacen_fabrica_nombre`=almacen_fabrica_nombre WHERE almacen_fabrica_nombre='"+comboBoxUsuPerAlm.Text+"' and cc = '"+comboBox6.Text+"'";
+                string insertarCodigo = "UPDATE easyerp.usuario_almacen SET `almacen_fabrica_nombre`=almacen_fabrica_nombre WHERE almacen_fabrica_nombre='"+comboBoxUsuPerAlm.Text+"' and cc = '"+comboBoxCedulaPermiAlmace.Text+"'";
                 conectar.Open();                
                 MySqlCommand command = new MySqlCommand(insertarCodigo, conectar);               
 
@@ -990,7 +1012,7 @@ namespace MysqlTienda
                 else
                 {                 
                     cerrarConeccion();                   
-                    string insertarCodigo2 = "INSERT INTO easyerp.usuario_almacen (`almacen_fabrica_nombre`, `cc`) VALUES ('"+comboBoxUsuPerAlm.Text+"', '"+comboBox6.Text+"')";                   
+                    string insertarCodigo2 = "INSERT INTO easyerp.usuario_almacen (`almacen_fabrica_nombre`, `cc`) VALUES ('"+comboBoxUsuPerAlm.Text+"', '"+comboBoxCedulaPermiAlmace.Text+"')";                   
                     conectar.Open();
                     MySqlCommand command2 = new MySqlCommand(insertarCodigo2, conectar);
                     if (command2.ExecuteNonQuery() == 1)
@@ -1041,7 +1063,7 @@ namespace MysqlTienda
                 DataTable table = new DataTable();
                 MySqlDataAdapter adpter = new MySqlDataAdapter(selectQuery, conectar);
                 adpter.Fill(table);
-                bunifuCustomDataGrid4.DataSource = table;
+                DataGridPermisosPorAlmacen.DataSource = table;
                 cerrarConeccion();
             }
             catch (Exception error)
@@ -1077,10 +1099,15 @@ namespace MysqlTienda
 
         private void bunifuCustomDataGrid4_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            cargaTablaPermisosPorAlmacen();
         }
 
         private void bunifuFlatButton2_Click(object sender, EventArgs e)
+        {
+            cargarProductosTabla();
+        }
+
+        private void cargarProductosTabla()
         {
             try
             {
@@ -1128,7 +1155,7 @@ namespace MysqlTienda
             try
             {
 
-                string insertarCodigo = "DELETE FROM easyerp.usuario_almacen WHERE almacen_fabrica_nombre='"+comboBoxUsuPerAlm.Text+"' and cc='"+comboBox6.Text+"'";
+                string insertarCodigo = "DELETE FROM easyerp.usuario_almacen WHERE almacen_fabrica_nombre='"+comboBoxUsuPerAlm.Text+"' and cc='"+comboBoxCedulaPermiAlmace.Text+"'";
                 conectar.Open();
                 MySqlCommand command = new MySqlCommand(insertarCodigo, conectar);
                 if (command.ExecuteNonQuery() == 1)
@@ -1228,7 +1255,7 @@ namespace MysqlTienda
 
         private void DataGridAlmacen_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            cargaTablaPermisosPorAlmacen();
         }
 
         private void bunifuFlatButton6_Click_1(object sender, EventArgs e)
@@ -1236,6 +1263,253 @@ namespace MysqlTienda
             cargarPermisosPorAlmacen();
             cargarCiudadesPermisosAlamacen();
         }
+
+        private void DataGridPermisosPorAlmacen_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            cargaTablaPermisosPorAlmacen();
+        }
+
+        private void cargarTablaDepartamentos(object sender, EventArgs e)
+        {
+           
+        }
+
+       
+
+        private void bunifuFlatButton12_Click(object sender, EventArgs e)
+        {
+            cargarTablaDepartamentos();
+        }
+
+        private void cargarTablaDepartamentos()
+        {
+           
+        }
+
+        private void ButtonCargarDepartamento_Click(object sender, EventArgs e)
+        {
+            CargarDepartamentosTabla();
+        }
+
+        private void CargarDepartamentosTabla()
+        {
+            try
+            {
+                cerrarConeccion();
+                string selectQuery = "SELECT `nombre`, `descripcion` FROM easyerp.departamento";
+                DataTable table = new DataTable();
+                MySqlDataAdapter adpter = new MySqlDataAdapter(selectQuery, conectar);
+                adpter.Fill(table);
+                DataGridDepartamento.DataSource = table;
+                cerrarConeccion();
+            }
+            catch (Exception error)
+            {
+                MessageBox.Show(error.Message + "iniciando departamentos al cargar");
+            }
+        }
+
+        private void cargarTamano_Click(object sender, EventArgs e)
+        {
+            cargarTablaTamano();
+        }
+
+        private void cargarTablaTamano()
+        {
+            try
+            {
+                cerrarConeccion();
+                string selectQuery = "SELECT `nombre`, `descripcion` FROM easyerp.tamano";
+                DataTable table = new DataTable();
+                MySqlDataAdapter adpter = new MySqlDataAdapter(selectQuery, conectar);
+                adpter.Fill(table);
+                DataGridTamano.DataSource = table;
+                cerrarConeccion();
+            }
+            catch (Exception error)
+            {
+                MessageBox.Show(error.Message + "iniciando tamaños al cargar");
+            }
+        }
+
+        private void cargarDepartamenosTabla_click(object sender, EventArgs e)
+        {
+            insertarDatos("INSERT INTO easyerp.departamento (`nombre`, `descripcion`) VALUES ('" + TextboxDepartamentoNombre.text + "','" + TextboxDescripcionDepartamento.text + "')");
+            CargarDepartamentosTabla();
+        }
+
+        private void insertarDatos(String insertarCodigo)
+        {
+            try
+            {
+                cerrarConeccion();                
+                conectar.Open();
+                MySqlCommand command = new MySqlCommand(insertarCodigo, conectar);
+                if (command.ExecuteNonQuery() == 1) {     /* essageBox.Show("encontre la factura"); */ } else { /* MessageBox.Show("no encontre la factura"); */}
+                cerrarConeccion();
+            }
+            catch (Exception error)
+            {
+                String mensaje = Convert.ToString(error.Message);
+                int valor = mensaje.LastIndexOf("Duplicate");
+                if (valor >= 0) { MessageBox.Show("Ya existe un registro igual"); }
+                else
+                {
+                    MessageBox.Show(error.Message + "insertar Datos");
+                }
+            }
+            
+        }
+
+        private void bunifuFlatButton15_Click(object sender, EventArgs e)
+        {
+            insertarDatos("INSERT INTO easyerp.tamano (`nombre`, `descripcion`) VALUES ('" + TextboxTamañoNombre.text + "','" + TextboxDescripcionTamano.text + "')");
+            cargarTablaTamano();
+        }
+
+        private void bunifuFlatButton10_Click(object sender, EventArgs e)
+        {
+            eliminarDatos("DELETE FROM easyerp.departamento WHERE nombre='" + TextboxDepartamentoNombre.text + "'");
+            CargarDepartamentosTabla();
+        }
+
+        private void eliminarDatos(String insertarCodigo)
+        {
+            cerrarConeccion();
+            DialogResult result = MessageBox.Show("¿Seguro que desea eliminar esto'?", "Eliminar:'", MessageBoxButtons.YesNoCancel);
+            if (result == DialogResult.Yes)
+            {
+                try
+                {              
+                    conectar.Open();
+                    MySqlCommand command = new MySqlCommand(insertarCodigo, conectar);
+                    if (command.ExecuteNonQuery() == 1){ }else { }
+                    cerrarConeccion();
+                }
+                catch (Exception error)
+                {
+                    String mensaje = Convert.ToString(error.Message);
+                    int valor = mensaje.LastIndexOf("La cadena");
+                    if (valor >= 0)
+                    { }
+                    else
+                    {
+                        MessageBox.Show(error.Message + "en eliminando");
+                    }
+                    cerrarConeccion();
+
+                }
+            }
+           
+        }
+
+        private void DataGridDepartamento_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
+                TextboxDepartamentoNombre.text = DataGridDepartamento.CurrentRow.Cells[0].Value.ToString();
+                TextboxDescripcionDepartamento.text = DataGridDepartamento.CurrentRow.Cells[1].Value.ToString();
+                
+            }
+            catch (Exception error)
+            {
+                MessageBox.Show("El error es :" + Convert.ToString(error) + "el error se encuentra cargando los datos");
+            }
+        }
+
+        private void bunifuFlatButton14_Click(object sender, EventArgs e)
+        {
+            eliminarDatos("DELETE FROM easyerp.tamano WHERE nombre='" + TextboxTamañoNombre.text + "'");
+            cargarTablaTamano();
+        }
+
+        private void DataGridTamano_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
+                TextboxTamañoNombre.text = DataGridTamano.CurrentRow.Cells[0].Value.ToString();
+                TextboxDescripcionTamano.text = DataGridTamano.CurrentRow.Cells[1].Value.ToString();
+
+            }
+            catch (Exception error)
+            {
+                MessageBox.Show("El error es :" + Convert.ToString(error) + "el error se encuentra cargando los datos");
+            }
+        }
+
+        private void bunifuFlatButton7_Click(object sender, EventArgs e)
+        {
+
+            actualizarDatos("UPDATE easyerp.departamento SET `descripcion`= '"+ TextboxDescripcionDepartamento.text + "' WHERE nombre = '"+ TextboxDepartamentoNombre.text + "'");
+            CargarDepartamentosTabla();
+            
+        }
+
+        private void actualizarDatos(String insertarCodigo)
+        {
+            try
+            {
+                cerrarConeccion();                
+                conectar.Open();
+                MySqlCommand command = new MySqlCommand(insertarCodigo, conectar);
+                if (command.ExecuteNonQuery() == 1) { } else { }
+                cerrarConeccion();
+            }
+            catch (Exception error)
+            {
+                cerrarConeccion();
+            }
+            conectar.Close();
+        }
+
+        private void bunifuFlatButton13_Click(object sender, EventArgs e)
+        {
+            actualizarDatos("UPDATE easyerp.tamano SET `descripcion`= '" + TextboxDescripcionTamano.text + "' WHERE nombre = '" + TextboxTamañoNombre.text + "'");
+            cargarTablaTamano();
+        }
+
+        private void DataGridProductos_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            CargarProductosconClick();
+        }
+
+        private void DataGridProductos_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            CargarProductosconClick();
+        }
+
+        private void CargarProductosconClick()
+        {
+            try
+            {
+                TextboxCodigoProducto.text = DataGridProductos.CurrentRow.Cells[0].Value.ToString();
+                TextboxNombreProducto.text = DataGridProductos.CurrentRow.Cells[1].Value.ToString();
+                TextboxReferenciaProducto.text = DataGridProductos.CurrentRow.Cells[2].Value.ToString();
+                TextboxDetalProducto.text = DataGridProductos.CurrentRow.Cells[3].Value.ToString();
+                TextboxMayorProducto.text = DataGridProductos.CurrentRow.Cells[4].Value.ToString();
+                TextboxCostoProducto.text = DataGridProductos.CurrentRow.Cells[5].Value.ToString();
+                TextboxCantidadProducto.text = DataGridProductos.CurrentRow.Cells[6].Value.ToString();
+                comboBoxIvaProducto.Text = DataGridProductos.CurrentRow.Cells[7].Value.ToString();
+                comboBoxFechaProducto.Text = DataGridProductos.CurrentRow.Cells[8].Value.ToString();
+                comboBoxDepartamentoProducto.Text = DataGridProductos.CurrentRow.Cells[9].Value.ToString();
+                comboBoxAlmacenProducto.Text = DataGridProductos.CurrentRow.Cells[10].Value.ToString();
+                comboBoxTamanoProducto.Text = DataGridProductos.CurrentRow.Cells[11].Value.ToString();
+
+            }
+            catch (Exception error)
+            {
+                MessageBox.Show("El error es :" + Convert.ToString(error) + "el error se encuentra cargando los datos");
+            }
+        }
+
+        private void bunifuFlatButton5_Click(object sender, EventArgs e)
+        {
+
+            //insertarDatos("");
+            cargarProductosTabla();
+        }
     }
-    
-}
+
+    }
+ 
+
