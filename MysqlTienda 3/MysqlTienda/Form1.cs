@@ -388,6 +388,9 @@ namespace MysqlTienda
                     cargarTablaTamano();
                     cargarPermisosPorUsuario();
                     cargarProductosTabla();
+                    cargarAlmacenescombobox();
+                    cargarTamanoscombobox();
+                    cargarDepartamentosCombobox();
 
                 }
                 else
@@ -419,19 +422,88 @@ namespace MysqlTienda
                         dt.Load(cmd.ExecuteReader());
                         comboBoxCedulaPermiAlmace.ValueMember = "cc";
                         comboBoxCedulaPermiAlmace.DisplayMember = "cc";
-                        comboBoxCedulaPermiAlmace.DataSource = dt;
-
-                        
+                        comboBoxCedulaPermiAlmace.DataSource = dt;                        
                     }
                 }
             }
             catch(Exception error)
             {
                 MessageBox.Show(Convert.ToString(error));
-            }
-           
-
+            }      
         }
+        private void cargarDepartamentosCombobox()
+        {
+            try
+            {
+                //carga las ciudades en un combo box importantisimo
+                using (MySqlConnection c = new MySqlConnection("datasource=localhost;port=3306;username=root;password=;SslMode=none"))
+                {
+                    c.Open();
+                    var sql = "SELECT nombre FROM easyerp.departamento";
+                    using (MySqlCommand cmd = new MySqlCommand(sql, c))
+                    {
+                        var dt = new DataTable();
+                        dt.Load(cmd.ExecuteReader());
+                        comboBoxDepartamentoProducto.ValueMember = "nombre";
+                        comboBoxDepartamentoProducto.DisplayMember = "nombre";
+                        comboBoxDepartamentoProducto.DataSource = dt;
+                    }
+                }
+            }
+            catch (Exception error)
+            {
+                MessageBox.Show(Convert.ToString(error));
+            }
+        }
+        private void cargarTamanoscombobox()
+        {
+            try
+            {
+                //carga las ciudades en un combo box importantisimo
+                using (MySqlConnection c = new MySqlConnection("datasource=localhost;port=3306;username=root;password=;SslMode=none"))
+                {
+                    c.Open();
+                    var sql = "SELECT nombre FROM easyerp.tamano";
+                    using (MySqlCommand cmd = new MySqlCommand(sql, c))
+                    {
+                        var dt = new DataTable();
+                        dt.Load(cmd.ExecuteReader());
+                        comboBoxTamanoProducto.ValueMember = "nombre";
+                        comboBoxTamanoProducto.DisplayMember = "nombre";
+                        comboBoxTamanoProducto.DataSource = dt;
+                    }
+                }
+            }
+            catch (Exception error)
+            {
+                MessageBox.Show(Convert.ToString(error));
+            }
+        }
+        private void cargarAlmacenescombobox()
+        {
+            try
+            {
+                //carga las ciudades en un combo box importantisimo
+                using (MySqlConnection c = new MySqlConnection("datasource=localhost;port=3306;username=root;password=;SslMode=none"))
+                {
+                    c.Open();
+                    var sql = "SELECT nombre FROM easyerp.almacen_fabrica";
+                    using (MySqlCommand cmd = new MySqlCommand(sql, c))
+                    {
+                        var dt = new DataTable();
+                        dt.Load(cmd.ExecuteReader());
+                        comboBoxAlmacenProducto.ValueMember = "nombre";
+                        comboBoxAlmacenProducto.DisplayMember = "nombre";
+                        comboBoxAlmacenProducto.DataSource = dt;
+                    }
+                }
+            }
+            catch (Exception error)
+            {
+                MessageBox.Show(Convert.ToString(error));
+            }
+        }
+
         private void cargarCedulas()
         {
             //carga las ciudades en un combo box importantisimo
@@ -1504,9 +1576,75 @@ namespace MysqlTienda
 
         private void bunifuFlatButton5_Click(object sender, EventArgs e)
         {
+            try
+            {
+                cerrarConeccion();
+                string insertarCodigo = "UPDATE easyerp.producto SET codigo = codigo WHERE codigo ='"+ TextboxCodigoProducto.text + "' AND almacen_fabrica_nombre ='" + comboBoxAlmacenProducto.Text+"'";   
+                conectar.Open();
+                MySqlCommand command = new MySqlCommand(insertarCodigo, conectar);
+                if (command.ExecuteNonQuery() == 1)
+                {
+                    MessageBox.Show("ya existe un registro en esta ciudad");
+                }
+                else
+                {
+                    insertarDatos("INSERT INTO easyerp.producto (`codigo`, `nombre`, `referencia`, `precioDetal`, `percioMayor`, `costo`, `cantidad`, `tieneIva`, `inventario_fecha`, `departamento_nombre`, `almacen_fabrica_nombre`, `tamano_nombre`) VALUES(" +
+                   "'" + TextboxCodigoProducto.text + "','"
+                   + TextboxNombreProducto.text + "','"
+                   + TextboxReferenciaProducto.text + "','"
+                   + TextboxDetalProducto.text + "','"
+                   + TextboxMayorProducto.text + "','"
+                   + TextboxCostoProducto.text + "','"
+                   + TextboxCantidadProducto.text + "','"
+                   + comboBoxIvaProducto.Text + "','"
+                   + comboBoxFechaProducto.Value.ToString("yyyy-MM-dd") + "','"
+                   + comboBoxDepartamentoProducto.Text + "','"
+                   + comboBoxAlmacenProducto.Text + "','"
+                   + comboBoxTamanoProducto.Text + "')");
+                }
+                cerrarConeccion();
+                cargarProductosTabla();
 
-            //insertarDatos("");
+            }
+            catch (Exception error)
+            {
+                MessageBox.Show(Convert.ToString(error));
+            }
+            
+
+
+        }
+
+        private void bunifuFlatButton4_Click(object sender, EventArgs e)
+        {
+            eliminarDatos("DELETE from easyerp.producto WHERE codigo ='" + TextboxCodigoProducto.text + "' AND almacen_fabrica_nombre ='" + comboBoxAlmacenProducto.Text + "'");
             cargarProductosTabla();
+        }
+
+        private void bunifuFlatButton3_Click(object sender, EventArgs e)
+        {
+            modificarDatos("UPDATE easyerp.producto SET `codigo`='"+ TextboxCodigoProducto.text + "',`nombre`='"+ TextboxNombreProducto.text + "',`referencia`='"+ TextboxReferenciaProducto.text + "',`precioDetal`='"+ TextboxDetalProducto.text + "',`percioMayor`='"+ TextboxMayorProducto.text + "',`costo`='"+ TextboxCostoProducto.text + "',`cantidad`='"+ TextboxCantidadProducto.text + "',`tieneIva`='"+ comboBoxIvaProducto.Text + "',`inventario_fecha`='"+ comboBoxFechaProducto.Value.ToString("yyyy-MM-dd") + "',`departamento_nombre`='"+ comboBoxDepartamentoProducto.Text + "',`almacen_fabrica_nombre`='"+ comboBoxAlmacenProducto.Text + "',`tamano_nombre`='"+ comboBoxTamanoProducto.Text + "' WHERE almacen_fabrica_nombre='"+ comboBoxAlmacenProducto.Text + "' and codigo = '"+ TextboxCodigoProducto.text + "'");
+            cargarProductosTabla();
+        }
+
+        private void modificarDatos(string insertarCodigo)
+        {
+            try
+            {               
+                cerrarConeccion();                
+                conectar.Open();
+                MySqlCommand command = new MySqlCommand(insertarCodigo, conectar);
+                if (command.ExecuteNonQuery() == 1)
+                {
+                }
+                else { }
+                cerrarConeccion();
+            }
+            catch (Exception error)
+            {
+                cerrarConeccion();
+                MessageBox.Show(Convert.ToString(error));
+            }
         }
     }
 
