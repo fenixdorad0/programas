@@ -74,3 +74,4 @@ C:\informacion\Programas\MysqlTienda 3\MysqlTienda\obj\Debug\MysqlTienda.csproj.
 C:\informacion\Programas\MysqlTienda 3\MysqlTienda\obj\Debug\MysqlTienda.exe
 C:\informacion\Programas\MysqlTienda 3\MysqlTienda\obj\Debug\MysqlTienda.pdb
 C:\informacion\Programas\MysqlTienda 3\MysqlTienda\obj\Debug\MysqlTienda.csprojAssemblyReference.cache
+C:\informacion\Programas\MysqlTienda 3\MysqlTienda\obj\Debug\MysqlTienda.Form2.resources

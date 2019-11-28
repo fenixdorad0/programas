@@ -254,7 +254,8 @@ namespace MysqlTienda
         {            
             try
             {
-                 string insertarCodigo = "UPDATE easyerp.factura_movimiento SET deuda = deuda WHERE nf ="+ textFactura.Text + " and almacen_nombre='" + comboBox1.Text + "'";               
+                
+                string insertarCodigo = "UPDATE easyerp.factura_movimiento SET deuda = deuda WHERE nf ="+ textFactura.Text + " and almacen_nombre='" + comboBox1.Text + "'";               
                 conectar.Open();
                 MySqlCommand command = new MySqlCommand(insertarCodigo, conectar);
                 if (command.ExecuteNonQuery() == 1)
@@ -1645,6 +1646,39 @@ namespace MysqlTienda
                 cerrarConeccion();
                 MessageBox.Show(Convert.ToString(error));
             }
+        }
+
+        private void bunifuImageButton1_Click_1(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void bunifuFlatButton12_Click_1(object sender, EventArgs e)
+        {
+            
+            String fechaHoy=DateTime.Now.ToString("yyyy-MM-dd");
+                       
+            try
+            {
+
+                //
+                cerrarConeccion();
+                MySqlCommand cmd = new MySqlCommand();
+                //cmd.CommandText = "select sum(cantidad) from tienda.ventas where factura=" + textFactura.Text;
+                cmd.CommandText = "SELECT SUM(total) FROM easyerp.factura_movimiento WHERE tipo_factura_nombre ='venta' and almacen_nombre='"+comboBox1.Text+"' and fecha BETWEEN '"+fechaHoy+" 00:00:00' AND '"+fechaHoy+" 23:59:59'";
+                cmd.CommandType = System.Data.CommandType.Text;
+                cmd.Connection = conectar;
+                conectar.Open();
+                labelReporte1.Text= "las ventas del día de hoy fueron: $"+ Convert.ToString(cmd.ExecuteScalar());
+                conectar.Close();
+            }
+            catch { }
+            
+        }
+
+        private void textSumaTotal_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 
