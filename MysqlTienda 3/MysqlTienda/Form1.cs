@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Text.RegularExpressions;
 using MySql.Data.MySqlClient;
 
+
 namespace MysqlTienda
 {
 
@@ -21,19 +22,18 @@ namespace MysqlTienda
         public Form1()
         {
             InitializeComponent();
-            
-        }
-        public void abrirConeccion()
-        {
             comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBoxIvaProducto.DropDownStyle = ComboBoxStyle.DropDownList; 
+            comboBoxIvaProducto.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxDepartamentoProducto.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBoxAlmacenProducto.DropDownStyle = ComboBoxStyle.DropDownList;   
+            comboBoxAlmacenProducto.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxTamanoProducto.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxCedulaPermiAlmace.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxUsuPerAlm.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxTipoAlmacen.DropDownStyle = ComboBoxStyle.DropDownList;
-
+        }
+        
+        public void abrirConeccion()
+        {           
             try
             {
                 if (conectar.State == ConnectionState.Closed)
@@ -87,13 +87,13 @@ namespace MysqlTienda
             }
 
         }
-        private void Form1_Load(object sender, EventArgs e)
+        public void Form1_Load(object sender, EventArgs e)
         {
             buniMaxMin.Enabled = false;
             //this.Size = new Size(240, 637);
             textInsertarCodigo.Enabled = false;
         }
-        private void iniciarTablaVentas(string baseDatos)
+        public void iniciarTablaVentas(string baseDatos)
         {
             try
             {
@@ -112,12 +112,12 @@ namespace MysqlTienda
         }
 
         //insertar
-        private void button1_Click(object sender, EventArgs e)
+        public void button1_Click(object sender, EventArgs e)
         {
             insertarCodigo();
         }
 
-        private void insertarCodigo()
+        public void insertarCodigo()
         {
             try
             {
@@ -129,13 +129,11 @@ namespace MysqlTienda
                 MySqlCommand command = new MySqlCommand(insertarCodigo, conectar);
 
                 if (command.ExecuteNonQuery() == 1)
-                {
-                  
+                {                  
                     iniciarTablaVentas("");
                 }
                 else
-                {
-                    
+                {                    
                     cerrarConeccion();
                     string insertarCodigo2 = "INSERT INTO easyerp.detalle_facturacov(`factura`, `almacen`, `codigo`, `referencia`, `producto`, `tamano`, `cantidad`, `precio`, `iva`, `SubtotalSinIva`, `SubtotalConIva`, `total`) VALUES ('"                   
                     + textFactura.Text + "', '" //factura
@@ -178,7 +176,7 @@ namespace MysqlTienda
             conectar.Close();
         }
 
-        private void limpiarTextbox()
+        public void limpiarTextbox()
         {
             textInsertarCodigo.Text = null;
             textReferencia.Text = null;
@@ -189,13 +187,13 @@ namespace MysqlTienda
             textTamano.Text = null;
         }
       
-        private void modificar_Click(object sender, EventArgs e)
+        public void modificar_Click(object sender, EventArgs e)
         {
             sumaTotal();
 
         }
 
-        private void sumaTotal()
+        public void sumaTotal()
         {
             // acá optenemos el total de la factura
             try
@@ -212,7 +210,7 @@ namespace MysqlTienda
             catch{}
         }
 
-        private void buscarFactura ()
+        public void buscarFactura ()
         {
             //CON ESTE CODIGO CAPTURO EL NUMERO DE FACTURA y lo cambio
             try
@@ -250,23 +248,43 @@ namespace MysqlTienda
             }
         }
 
-        private void finalizar_Click_1(object sender, EventArgs e)
-        {            
+        public void finalizar_Click_1(object sender, EventArgs e)
+        {
+            string texto = "hola mundo";
+            Form2 formulario2 = new Form2(texto);
+            formulario2.Visible = true;
+            formulario2.Show();
+            //textfactura.text
+            //comboBox1.Text
+            //textSumaTotal.Text
+            //labelCedula.Text
+            //comboBox1.Text
+
+            finalizarFactura();
+            textInsertarCodigo.Text = "";
+            iniciarTablaVentas("");
+            textSumaTotal.Text = "";
+            buscarFactura();
+            iniciarTablaVentas("");
+        }
+
+        public void finalizarFactura()
+        {
             try
             {
-                
-                string insertarCodigo = "UPDATE easyerp.factura_movimiento SET deuda = deuda WHERE nf ="+ textFactura.Text + " and almacen_nombre='" + comboBox1.Text + "'";               
+
+                string insertarCodigo = "UPDATE easyerp.factura_movimiento SET deuda = deuda WHERE nf =" + textFactura.Text + " and almacen_nombre='" + comboBox1.Text + "'";
                 conectar.Open();
                 MySqlCommand command = new MySqlCommand(insertarCodigo, conectar);
                 if (command.ExecuteNonQuery() == 1)
                 {
-                    iniciarTablaVentas("");
+
                     //  MessageBox.Show("Dato actualiza suma");
                 }
                 else
                 {
                     cerrarConeccion();
-                    MessageBox.Show(DateTime.Now.ToString("yyyy-MM-dd"));
+                    //MessageBox.Show(DateTime.Now.ToString("yyyy-MM-dd"));
                     //MessageBox.Show("se ejecuto el ingresodel producto");
                     string insertarCodigo2 = "INSERT INTO easyerp.factura_movimiento(`nf`, `fecha`, `total`, `deuda`, `cliente_provedor_cc`, `pago_dividido_id`, `tipo_factura_nombre`, `usuario_cc`, `almacen_nombre`) VALUES ('"
                         + textFactura.Text + "', '" //factura
@@ -283,34 +301,30 @@ namespace MysqlTienda
 
                     if (command2.ExecuteNonQuery() == 1)
                     {
-                        textInsertarCodigo.Text = "";
-                        MessageBox.Show("factura guardada ");
+
+                        //MessageBox.Show("factura guardada ");
                     }
                     else
                     {
                         MessageBox.Show("factura NO guardada");
                     }
                     cerrarConeccion();
-                    iniciarTablaVentas("");
-                    
+
                 }
             }
             catch (Exception error)
             {
                 MessageBox.Show(Convert.ToString(error));
             }
-            textSumaTotal.Text = "";
-            buscarFactura();
-            iniciarTablaVentas("");            
         }
 
-        private void bunifuTileButton1_Click(object sender, EventArgs e)
+        public void bunifuTileButton1_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
 
-        private void codigoCambia()
+        public void codigoCambia()
         {
             sumaTotal();
             bool prueba = false;
@@ -351,19 +365,25 @@ namespace MysqlTienda
             }
         }
 
-        private void textCodigo_TextChanged_1(object sender, EventArgs e)
+        public void textCodigo_TextChanged_1(object sender, EventArgs e)
         {
             codigoCambia();
         }
 
-        private void buniBtnLogin_Click(object sender, EventArgs e)
+        public void buniBtnLogin_Click(object sender, EventArgs e)
+        {
+            logearse();
+
+        }
+
+        public void logearse()
         {
             try
             {
                 labelInsertarCodigo.Visible = true;
                 textInsertarCodigo.Visible = true;
                 MySqlDataReader mdr;
-                string select = "SELECT* FROM easyerp.usuario WHERE `usuario`.`id` ='" + buniTextUsuario.text + "' and contrasena ='" + buniTextPass.text+"'" ;
+                string select = "SELECT* FROM easyerp.usuario WHERE `usuario`.`id` ='" + buniTextUsuario.text + "' and contrasena ='" + buniTextPass.text + "'";
                 command = new MySqlCommand(select, conectar);
                 abrirConeccion();
                 mdr = command.ExecuteReader();
@@ -371,7 +391,7 @@ namespace MysqlTienda
                 {
                     labelCedula.Text = mdr.GetString("cc");
                     labelVendedor.Text = mdr.GetString("nombre");
-                    MessageBox.Show("Login exitoso");                    
+                    MessageBox.Show("Login exitoso");
                     labelAlmacen.Text = buniTextUsuario.text;
                     //this.Size = new Size(1339, 637);
                     textInsertarCodigo.Enabled = true;
@@ -402,13 +422,12 @@ namespace MysqlTienda
             }
             catch (Exception ex)
             {
-                 MessageBox.Show(ex.Message + "o no hay conección con el servidor");
+                MessageBox.Show(ex.Message + "o no hay conección con el servidor");
             }
             yainicio = 1;
-
-
         }
-        private void cargarPermisosPorAlmacen()
+
+        public void cargarPermisosPorAlmacen()
         {
             try
             {
@@ -432,7 +451,7 @@ namespace MysqlTienda
                 MessageBox.Show(Convert.ToString(error));
             }      
         }
-        private void cargarDepartamentosCombobox()
+        public void cargarDepartamentosCombobox()
         {
             try
             {
@@ -456,7 +475,7 @@ namespace MysqlTienda
                 MessageBox.Show(Convert.ToString(error));
             }
         }
-        private void cargarTamanoscombobox()
+        public void cargarTamanoscombobox()
         {
             try
             {
@@ -480,7 +499,7 @@ namespace MysqlTienda
                 MessageBox.Show(Convert.ToString(error));
             }
         }
-        private void cargarAlmacenescombobox()
+        public void cargarAlmacenescombobox()
         {
             try
             {
@@ -505,7 +524,7 @@ namespace MysqlTienda
             }
         }
 
-        private void cargarCedulas()
+        public void cargarCedulas()
         {
             //carga las ciudades en un combo box importantisimo
             using (MySqlConnection c = new MySqlConnection("datasource=localhost;port=3306;username=root;password=;SslMode=none"))
@@ -523,7 +542,7 @@ namespace MysqlTienda
             }
 
         }
-        private void cargarCiudades()
+        public void cargarCiudades()
         {          
             //carga las ciudades en un combo box importantisimo
             using (MySqlConnection c = new MySqlConnection("datasource=localhost;port=3306;username=root;password=;SslMode=none"))
@@ -541,7 +560,7 @@ namespace MysqlTienda
             }
            
         }
-        private void cargarCiudadesPermisosAlamacen()
+        public void cargarCiudadesPermisosAlamacen()
         {
             try
             {
@@ -568,13 +587,13 @@ namespace MysqlTienda
 
         }
 
-        private void bunifuCustomDataGrid1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        public void bunifuCustomDataGrid1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             cargarDatosTablaVentajas();
 
 
         }
-        private void cargaTablaPermisosPorAlmacen()
+        public void cargaTablaPermisosPorAlmacen()
         {
 
             try
@@ -590,7 +609,7 @@ namespace MysqlTienda
 
         }
 
-        private void cargarDatosTablaUsuario()
+        public void cargarDatosTablaUsuario()
         {
             
             try
@@ -609,7 +628,7 @@ namespace MysqlTienda
 
         }
 
-        private void cargarDatosTablaVentajas()
+        public void cargarDatosTablaVentajas()
         {
             try
             {
@@ -628,7 +647,7 @@ namespace MysqlTienda
            
         }
 
-        private void bunifuEliminar_Click(object sender, EventArgs e)
+        public void bunifuEliminar_Click(object sender, EventArgs e)
         {
             try
             {
@@ -689,9 +708,9 @@ namespace MysqlTienda
             */
         }
 
-        private void limpitarTextosVentas()
+        public void limpitarTextosVentas()
         {
-            textId.Text = "";
+            
             textCodigo.Text = "";
             textReferencia.Text = "";
             textProducto.Text = "";
@@ -701,7 +720,7 @@ namespace MysqlTienda
             textTotal.Text = "";
         }
 
-        private void buniActualizar_Click(object sender, EventArgs e)
+        public void buniActualizar_Click(object sender, EventArgs e)
         {
             
             if (textCodigo.Text == "")
@@ -736,19 +755,19 @@ namespace MysqlTienda
         Point DragCursor;
         Point DragForm;
         bool Dragging;
-        private void bunifuGradientPanel1_MouseUp(object sender, MouseEventArgs e)
+        public void bunifuGradientPanel1_MouseUp(object sender, MouseEventArgs e)
         {
             Dragging = false;
         }
 
-        private void bunifuGradientPanel1_MouseDown(object sender, MouseEventArgs e)
+        public void bunifuGradientPanel1_MouseDown(object sender, MouseEventArgs e)
         {
             Dragging = true;
             DragCursor = Cursor.Position;
             DragForm = this.Location;
         }
 
-        private void bunifuGradientPanel1_MouseMove(object sender, MouseEventArgs e)
+        public void bunifuGradientPanel1_MouseMove(object sender, MouseEventArgs e)
         {
             if (Dragging == true)
             {
@@ -757,7 +776,7 @@ namespace MysqlTienda
             }
         }
 
-        private void bunifuImageButton1_Click(object sender, EventArgs e)
+        public void bunifuImageButton1_Click(object sender, EventArgs e)
         {
             /*
             if ( this.Size == new Size(240, 637))
@@ -771,12 +790,12 @@ namespace MysqlTienda
             */
         }
 
-        private void bunifuImageButton2_Click(object sender, EventArgs e)
+        public void bunifuImageButton2_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void comboBox1_TextChanged(object sender, EventArgs e)
+        public void comboBox1_TextChanged(object sender, EventArgs e)
         {
             labelAlmacen.Text = comboBox1.Text;
             if (yainicio == 1)
@@ -788,7 +807,7 @@ namespace MysqlTienda
             
             
         }        
-        private void bunifuFlatButton1_Click(object sender, EventArgs e)
+        public void bunifuFlatButton1_Click(object sender, EventArgs e)
         {
             try
             {
@@ -831,7 +850,7 @@ namespace MysqlTienda
 
         }
 
-        private bool comprobarDatosUsuario()
+        public bool comprobarDatosUsuario()
         {
             //con el @ se quita el problema de salida desconocida
             bool verificarEmail = bien_escrito(TextboxCorreo.text, "\\w+([-+.']\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*");
@@ -859,7 +878,7 @@ namespace MysqlTienda
             }
         }
 
-        private Boolean bien_escrito(String email, string expresionRegular)
+        public Boolean bien_escrito(String email, string expresionRegular)
         {   
                         
             if (Regex.IsMatch(email, expresionRegular))
@@ -879,28 +898,28 @@ namespace MysqlTienda
             }
         }
 
-        private void bunifuTextbox12_OnTextChange(object sender, EventArgs e)
+        public void bunifuTextbox12_OnTextChange(object sender, EventArgs e)
         {
             comprobarDatosUsuario();
         }
 
-        private void bunifuTextbox5_OnTextChange(object sender, EventArgs e)
+        public void bunifuTextbox5_OnTextChange(object sender, EventArgs e)
         {
             comprobarDatosUsuario();
         }
 
-        private void TextboxNombre_OnTextChange(object sender, EventArgs e)
+        public void TextboxNombre_OnTextChange(object sender, EventArgs e)
         {
             comprobarDatosUsuario();
         }
 
         
-        private void ButtonUsuarioCargar_Click(object sender, EventArgs e)
+        public void ButtonUsuarioCargar_Click(object sender, EventArgs e)
         {
             iniciarTablaUsuarios();
         }
 
-        private void iniciarTablaUsuarios()
+        public void iniciarTablaUsuarios()
         {
             try
             {
@@ -920,7 +939,7 @@ namespace MysqlTienda
             }
         }
 
-        private void iniciarTablaPermisosAlmacen()
+        public void iniciarTablaPermisosAlmacen()
         {
             try
             {
@@ -938,17 +957,17 @@ namespace MysqlTienda
             }
         }
 
-        private void TextboxContrasena_OnTextChange(object sender, EventArgs e)
+        public void TextboxContrasena_OnTextChange(object sender, EventArgs e)
         {
             comprobarDatosUsuario();
         }
 
-        private void TextboxCorreo_OnTextChange(object sender, EventArgs e)
+        public void TextboxCorreo_OnTextChange(object sender, EventArgs e)
         {
             comprobarDatosUsuario();
         }
 
-        private void bunifuFlatButton1_Click_1(object sender, EventArgs e)
+        public void bunifuFlatButton1_Click_1(object sender, EventArgs e)
         {
             try
             {
@@ -982,17 +1001,17 @@ namespace MysqlTienda
             sumaTotal();
         }
 
-        private void bunifuCustomDataGrid2_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        public void bunifuCustomDataGrid2_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
         {
             cargarDatosTablaUsuario();
         }
 
-        private void bunifuCustomDataGrid2_CellClick(object sender, DataGridViewCellEventArgs e)
+        public void bunifuCustomDataGrid2_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             cargarDatosTablaUsuario();
         }
 
-        private void ButtonUsuarioEliminar_Click(object sender, EventArgs e)
+        public void ButtonUsuarioEliminar_Click(object sender, EventArgs e)
         {
             
             DialogResult result = MessageBox.Show("¿Seguro que desea eliminar a este usuario?: '"+TextboxUsuario.text+"'?", "Eliminar usuario: '"+TextboxNombre.text+"'", MessageBoxButtons.YesNoCancel);
@@ -1039,7 +1058,7 @@ namespace MysqlTienda
             
         }
 
-        private void ButtonUsuarioModificar_Click(object sender, EventArgs e)
+        public void ButtonUsuarioModificar_Click(object sender, EventArgs e)
         {
             try
             {
@@ -1063,12 +1082,12 @@ namespace MysqlTienda
             }
         }
 
-        private void bunifuFlatButton6_Click(object sender, EventArgs e)
+        public void bunifuFlatButton6_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void ButtonAgregarPeAl_Click(object sender, EventArgs e)
+        public void ButtonAgregarPeAl_Click(object sender, EventArgs e)
         {
             //INSERT INTO `usuario_almacen` (`almacen_fabrica_nombre`, `cc`) VALUES ('girardot', '1069178680');
 
@@ -1115,17 +1134,17 @@ namespace MysqlTienda
 
         }
 
-        private void ButtonCargarPeAl_Click(object sender, EventArgs e)
+        public void ButtonCargarPeAl_Click(object sender, EventArgs e)
         {
             iniciarTablaPermisosAlmacen();
         }
 
-        private void ButtonCargarPeAl_Click_1(object sender, EventArgs e)
+        public void ButtonCargarPeAl_Click_1(object sender, EventArgs e)
         {
             cargarPermisosPorUsuario();
         }
 
-        private void cargarPermisosPorUsuario()
+        public void cargarPermisosPorUsuario()
         {
             //
             try
@@ -1145,42 +1164,42 @@ namespace MysqlTienda
             }
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        public void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void comboBoxUsPeCe_SelectedIndexChanged(object sender, EventArgs e)
+        public void comboBoxUsPeCe_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void comboBoxUsuPerAlm_SelectedIndexChanged(object sender, EventArgs e)
+        public void comboBoxUsuPerAlm_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void comboBox6_SelectedIndexChanged(object sender, EventArgs e)
+        public void comboBox6_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void tabPage2_Click(object sender, EventArgs e)
+        public void tabPage2_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void bunifuCustomDataGrid4_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        public void bunifuCustomDataGrid4_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             cargaTablaPermisosPorAlmacen();
         }
 
-        private void bunifuFlatButton2_Click(object sender, EventArgs e)
+        public void bunifuFlatButton2_Click(object sender, EventArgs e)
         {
             cargarProductosTabla();
         }
 
-        private void cargarProductosTabla()
+        public void cargarProductosTabla()
         {
             try
             {
@@ -1199,12 +1218,12 @@ namespace MysqlTienda
             }
         }
 
-        private void bunifuFlatButton9_Click(object sender, EventArgs e)
+        public void bunifuFlatButton9_Click(object sender, EventArgs e)
         {
             cargarTablaAlmacenes();
         }
 
-        private void cargarTablaAlmacenes()
+        public void cargarTablaAlmacenes()
         {
             try
             {
@@ -1223,7 +1242,7 @@ namespace MysqlTienda
             }
         }
 
-        private void ButtonEliminarPeAl_Click(object sender, EventArgs e)
+        public void ButtonEliminarPeAl_Click(object sender, EventArgs e)
         {
             try
             {
@@ -1252,7 +1271,7 @@ namespace MysqlTienda
             conectar.Close();
         }
 
-        private void bunifuFlatButton8_Click(object sender, EventArgs e)
+        public void bunifuFlatButton8_Click(object sender, EventArgs e)
         {
             try
             {
@@ -1284,7 +1303,7 @@ namespace MysqlTienda
             
         }
 
-        private void ButtonEliminarAlmacen(object sender, EventArgs e)
+        public void ButtonEliminarAlmacen(object sender, EventArgs e)
         {
             try
             {
@@ -1311,7 +1330,7 @@ namespace MysqlTienda
             }
         }
 
-        private void DataGridAlmacen_CellClick(object sender, DataGridViewCellEventArgs e)
+        public void DataGridAlmacen_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             try
             {
@@ -1326,45 +1345,45 @@ namespace MysqlTienda
             }
         }
 
-        private void DataGridAlmacen_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        public void DataGridAlmacen_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             cargaTablaPermisosPorAlmacen();
         }
 
-        private void bunifuFlatButton6_Click_1(object sender, EventArgs e)
+        public void bunifuFlatButton6_Click_1(object sender, EventArgs e)
         {
             cargarPermisosPorAlmacen();
             cargarCiudadesPermisosAlamacen();
         }
 
-        private void DataGridPermisosPorAlmacen_CellClick(object sender, DataGridViewCellEventArgs e)
+        public void DataGridPermisosPorAlmacen_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             cargaTablaPermisosPorAlmacen();
         }
 
-        private void cargarTablaDepartamentos(object sender, EventArgs e)
+        public void cargarTablaDepartamentos(object sender, EventArgs e)
         {
            
         }
 
        
 
-        private void bunifuFlatButton12_Click(object sender, EventArgs e)
+        public void bunifuFlatButton12_Click(object sender, EventArgs e)
         {
             cargarTablaDepartamentos();
         }
 
-        private void cargarTablaDepartamentos()
+        public void cargarTablaDepartamentos()
         {
            
         }
 
-        private void ButtonCargarDepartamento_Click(object sender, EventArgs e)
+        public void ButtonCargarDepartamento_Click(object sender, EventArgs e)
         {
             CargarDepartamentosTabla();
         }
 
-        private void CargarDepartamentosTabla()
+        public void CargarDepartamentosTabla()
         {
             try
             {
@@ -1382,12 +1401,12 @@ namespace MysqlTienda
             }
         }
 
-        private void cargarTamano_Click(object sender, EventArgs e)
+        public void cargarTamano_Click(object sender, EventArgs e)
         {
             cargarTablaTamano();
         }
 
-        private void cargarTablaTamano()
+        public void cargarTablaTamano()
         {
             try
             {
@@ -1405,13 +1424,13 @@ namespace MysqlTienda
             }
         }
 
-        private void cargarDepartamenosTabla_click(object sender, EventArgs e)
+        public void cargarDepartamenosTabla_click(object sender, EventArgs e)
         {
             insertarDatos("INSERT INTO easyerp.departamento (`nombre`, `descripcion`) VALUES ('" + TextboxDepartamentoNombre.text + "','" + TextboxDescripcionDepartamento.text + "')");
             CargarDepartamentosTabla();
         }
 
-        private void insertarDatos(String insertarCodigo)
+        public void insertarDatos(String insertarCodigo)
         {
             try
             {
@@ -1434,19 +1453,19 @@ namespace MysqlTienda
             
         }
 
-        private void bunifuFlatButton15_Click(object sender, EventArgs e)
+        public void bunifuFlatButton15_Click(object sender, EventArgs e)
         {
             insertarDatos("INSERT INTO easyerp.tamano (`nombre`, `descripcion`) VALUES ('" + TextboxTamañoNombre.text + "','" + TextboxDescripcionTamano.text + "')");
             cargarTablaTamano();
         }
 
-        private void bunifuFlatButton10_Click(object sender, EventArgs e)
+        public void bunifuFlatButton10_Click(object sender, EventArgs e)
         {
             eliminarDatos("DELETE FROM easyerp.departamento WHERE nombre='" + TextboxDepartamentoNombre.text + "'");
             CargarDepartamentosTabla();
         }
 
-        private void eliminarDatos(String insertarCodigo)
+        public void eliminarDatos(String insertarCodigo)
         {
             cerrarConeccion();
             DialogResult result = MessageBox.Show("¿Seguro que desea eliminar esto'?", "Eliminar:'", MessageBoxButtons.YesNoCancel);
@@ -1476,7 +1495,7 @@ namespace MysqlTienda
            
         }
 
-        private void DataGridDepartamento_CellClick(object sender, DataGridViewCellEventArgs e)
+        public void DataGridDepartamento_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             try
             {
@@ -1490,13 +1509,13 @@ namespace MysqlTienda
             }
         }
 
-        private void bunifuFlatButton14_Click(object sender, EventArgs e)
+        public void bunifuFlatButton14_Click(object sender, EventArgs e)
         {
             eliminarDatos("DELETE FROM easyerp.tamano WHERE nombre='" + TextboxTamañoNombre.text + "'");
             cargarTablaTamano();
         }
 
-        private void DataGridTamano_CellClick(object sender, DataGridViewCellEventArgs e)
+        public void DataGridTamano_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             try
             {
@@ -1510,7 +1529,7 @@ namespace MysqlTienda
             }
         }
 
-        private void bunifuFlatButton7_Click(object sender, EventArgs e)
+        public void bunifuFlatButton7_Click(object sender, EventArgs e)
         {
 
             actualizarDatos("UPDATE easyerp.departamento SET `descripcion`= '"+ TextboxDescripcionDepartamento.text + "' WHERE nombre = '"+ TextboxDepartamentoNombre.text + "'");
@@ -1518,7 +1537,7 @@ namespace MysqlTienda
             
         }
 
-        private void actualizarDatos(String insertarCodigo)
+        public void actualizarDatos(String insertarCodigo)
         {
             try
             {
@@ -1535,23 +1554,23 @@ namespace MysqlTienda
             conectar.Close();
         }
 
-        private void bunifuFlatButton13_Click(object sender, EventArgs e)
+        public void bunifuFlatButton13_Click(object sender, EventArgs e)
         {
             actualizarDatos("UPDATE easyerp.tamano SET `descripcion`= '" + TextboxDescripcionTamano.text + "' WHERE nombre = '" + TextboxTamañoNombre.text + "'");
             cargarTablaTamano();
         }
 
-        private void DataGridProductos_CellClick(object sender, DataGridViewCellEventArgs e)
+        public void DataGridProductos_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             CargarProductosconClick();
         }
 
-        private void DataGridProductos_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        public void DataGridProductos_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             CargarProductosconClick();
         }
 
-        private void CargarProductosconClick()
+        public void CargarProductosconClick()
         {
             try
             {
@@ -1575,7 +1594,7 @@ namespace MysqlTienda
             }
         }
 
-        private void bunifuFlatButton5_Click(object sender, EventArgs e)
+        public void bunifuFlatButton5_Click(object sender, EventArgs e)
         {
             try
             {
@@ -1616,19 +1635,19 @@ namespace MysqlTienda
 
         }
 
-        private void bunifuFlatButton4_Click(object sender, EventArgs e)
+        public void bunifuFlatButton4_Click(object sender, EventArgs e)
         {
             eliminarDatos("DELETE from easyerp.producto WHERE codigo ='" + TextboxCodigoProducto.text + "' AND almacen_fabrica_nombre ='" + comboBoxAlmacenProducto.Text + "'");
             cargarProductosTabla();
         }
 
-        private void bunifuFlatButton3_Click(object sender, EventArgs e)
+        public void bunifuFlatButton3_Click(object sender, EventArgs e)
         {
             modificarDatos("UPDATE easyerp.producto SET `codigo`='"+ TextboxCodigoProducto.text + "',`nombre`='"+ TextboxNombreProducto.text + "',`referencia`='"+ TextboxReferenciaProducto.text + "',`precioDetal`='"+ TextboxDetalProducto.text + "',`percioMayor`='"+ TextboxMayorProducto.text + "',`costo`='"+ TextboxCostoProducto.text + "',`cantidad`='"+ TextboxCantidadProducto.text + "',`tieneIva`='"+ comboBoxIvaProducto.Text + "',`inventario_fecha`='"+ comboBoxFechaProducto.Value.ToString("yyyy-MM-dd") + "',`departamento_nombre`='"+ comboBoxDepartamentoProducto.Text + "',`almacen_fabrica_nombre`='"+ comboBoxAlmacenProducto.Text + "',`tamano_nombre`='"+ comboBoxTamanoProducto.Text + "' WHERE almacen_fabrica_nombre='"+ comboBoxAlmacenProducto.Text + "' and codigo = '"+ TextboxCodigoProducto.text + "'");
             cargarProductosTabla();
         }
 
-        private void modificarDatos(string insertarCodigo)
+        public void modificarDatos(string insertarCodigo)
         {
             try
             {               
@@ -1648,12 +1667,12 @@ namespace MysqlTienda
             }
         }
 
-        private void bunifuImageButton1_Click_1(object sender, EventArgs e)
+        public void bunifuImageButton1_Click_1(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
         }
 
-        private void bunifuFlatButton12_Click_1(object sender, EventArgs e)
+        public void bunifuFlatButton12_Click_1(object sender, EventArgs e)
         {
             
             String fechaHoy=DateTime.Now.ToString("yyyy-MM-dd");
@@ -1676,7 +1695,7 @@ namespace MysqlTienda
             
         }
 
-        private void textSumaTotal_TextChanged(object sender, EventArgs e)
+        public void textSumaTotal_TextChanged(object sender, EventArgs e)
         {
 
         }
