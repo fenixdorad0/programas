@@ -250,22 +250,29 @@ namespace MysqlTienda
 
         public void finalizar_Click_1(object sender, EventArgs e)
         {
-            string texto = "hola mundo";
-            Form2 formulario2 = new Form2(texto);
-            formulario2.Visible = true;
-            formulario2.Show();
-            //textfactura.text
-            //comboBox1.Text
-            //textSumaTotal.Text
-            //labelCedula.Text
-            //comboBox1.Text
+            if (textSumaTotal.Text == "")
+            {
 
-            finalizarFactura();
-            textInsertarCodigo.Text = "";
-            iniciarTablaVentas("");
-            textSumaTotal.Text = "";
-            buscarFactura();
-            iniciarTablaVentas("");
+            }
+            else
+            {
+                Form2 formulario2 = new Form2(textSumaTotal.Text);
+                formulario2.Visible = true;
+                formulario2.Show();
+                //textfactura.text
+                //comboBox1.Text
+                //textSumaTotal.Text
+                //labelCedula.Text
+                //comboBox1.Text
+
+                finalizarFactura();
+                textInsertarCodigo.Text = "";
+                iniciarTablaVentas("");
+                textSumaTotal.Text = "";
+                buscarFactura();
+                iniciarTablaVentas("");
+            }
+            
         }
 
         public void finalizarFactura()
@@ -402,16 +409,7 @@ namespace MysqlTienda
                     //buscarFactura(0, "SELECT * FROM easyerp.detalle_facturacov order by factura_movimiento_nf where id = LAST_INSERT_ID");
                     iniciarTablaVentas("");
                     sumaTotal();
-                    cargarPermisosPorAlmacen();
-                    cargarCiudadesPermisosAlamacen();
-                    iniciarTablaUsuarios();
-                    CargarDepartamentosTabla();
-                    cargarTablaTamano();
-                    cargarPermisosPorUsuario();
-                    cargarProductosTabla();
-                    cargarAlmacenescombobox();
-                    cargarTamanoscombobox();
-                    cargarDepartamentosCombobox();
+                    cargarComboboxes();
 
                 }
                 else
@@ -425,6 +423,20 @@ namespace MysqlTienda
                 MessageBox.Show(ex.Message + "o no hay conección con el servidor");
             }
             yainicio = 1;
+        }
+
+        private void cargarComboboxes()
+        {
+            cargarPermisosPorAlmacen();
+            cargarCiudadesPermisosAlamacen();
+            iniciarTablaUsuarios();
+            CargarDepartamentosTabla();
+            cargarTablaTamano();
+            cargarPermisosPorUsuario();
+            cargarProductosTabla();
+            cargarAlmacenescombobox();
+            cargarTamanoscombobox();
+            cargarDepartamentosCombobox();
         }
 
         public void cargarPermisosPorAlmacen()
@@ -1120,6 +1132,7 @@ namespace MysqlTienda
                     }                    
                     cerrarConeccion();
                     cargarPermisosPorUsuario();
+                    cargarComboboxes();
                 }
                 
             }
@@ -1267,6 +1280,7 @@ namespace MysqlTienda
                 cerrarConeccion();
                 MessageBox.Show(error.Message + "agregando permisos de usario por almacen");
             }
+            cargarComboboxes();
             textInsertarCodigo.Text = "";
             conectar.Close();
         }
@@ -1404,6 +1418,7 @@ namespace MysqlTienda
         public void cargarTamano_Click(object sender, EventArgs e)
         {
             cargarTablaTamano();
+            cargarComboboxes();
         }
 
         public void cargarTablaTamano()
@@ -1428,6 +1443,7 @@ namespace MysqlTienda
         {
             insertarDatos("INSERT INTO easyerp.departamento (`nombre`, `descripcion`) VALUES ('" + TextboxDepartamentoNombre.text + "','" + TextboxDescripcionDepartamento.text + "')");
             CargarDepartamentosTabla();
+            cargarComboboxes();
         }
 
         public void insertarDatos(String insertarCodigo)
@@ -1457,12 +1473,14 @@ namespace MysqlTienda
         {
             insertarDatos("INSERT INTO easyerp.tamano (`nombre`, `descripcion`) VALUES ('" + TextboxTamañoNombre.text + "','" + TextboxDescripcionTamano.text + "')");
             cargarTablaTamano();
+            cargarComboboxes();
         }
 
         public void bunifuFlatButton10_Click(object sender, EventArgs e)
         {
             eliminarDatos("DELETE FROM easyerp.departamento WHERE nombre='" + TextboxDepartamentoNombre.text + "'");
             CargarDepartamentosTabla();
+            cargarComboboxes();
         }
 
         public void eliminarDatos(String insertarCodigo)
@@ -1513,6 +1531,7 @@ namespace MysqlTienda
         {
             eliminarDatos("DELETE FROM easyerp.tamano WHERE nombre='" + TextboxTamañoNombre.text + "'");
             cargarTablaTamano();
+            cargarComboboxes();
         }
 
         public void DataGridTamano_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -1534,7 +1553,8 @@ namespace MysqlTienda
 
             actualizarDatos("UPDATE easyerp.departamento SET `descripcion`= '"+ TextboxDescripcionDepartamento.text + "' WHERE nombre = '"+ TextboxDepartamentoNombre.text + "'");
             CargarDepartamentosTabla();
-            
+            cargarComboboxes();
+
         }
 
         public void actualizarDatos(String insertarCodigo)
@@ -1558,6 +1578,7 @@ namespace MysqlTienda
         {
             actualizarDatos("UPDATE easyerp.tamano SET `descripcion`= '" + TextboxDescripcionTamano.text + "' WHERE nombre = '" + TextboxTamañoNombre.text + "'");
             cargarTablaTamano();
+            cargarComboboxes();
         }
 
         public void DataGridProductos_CellClick(object sender, DataGridViewCellEventArgs e)
