@@ -15,11 +15,10 @@ namespace MysqlTienda
 {
     public partial class Form2 : Form
     {
-        /*
+      
         MySqlConnection conectar = new MySqlConnection("datasource=localhost;port=3306;username=root;password=;SslMode=none");
         MySqlCommand command;
-       
-        /*
+
         public void abrirConeccion()
         {
             try
@@ -49,15 +48,48 @@ namespace MysqlTienda
                 MessageBox.Show(ex.Message + "cerrando coneccion");
             }
         }
-        */
-        public double total=0;
-        public Form2()
+        public void ejecutarQuery(String query)
         {
-            InitializeComponent();            
+            try
+            {
+                abrirConeccion();
+                command = new MySqlCommand(query, conectar);
+
+                if (command.ExecuteNonQuery() == 1)
+                {
+                    MessageBox.Show("Query ejecutada correctamente");
+                }
+                else
+                {
+                    MessageBox.Show("Query NO ejecutada correctamente");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message + "ejecutando query");
+            }
+            finally
+            {
+                cerrarConeccion();
+            }
+
+        }
+
+
+
+
+        public double total=0;
+
+        //private Form1 formulario1;
+        public Form2(/*Form1 formulario2*/)
+        {
+            InitializeComponent();
+            //formulario1 = formulario2;
             this.TopMost = true;
         }
         public Form2(string texto)
         {
+            
             try
             {
                 total = Convert.ToDouble(texto);
@@ -107,6 +139,7 @@ namespace MysqlTienda
 
         private void bunifuFlatButton5_Click(object sender, EventArgs e)
         {
+            
             labelPago.Text = "qr";
         }
         public Boolean bien_escrito(String email, string expresionRegular)

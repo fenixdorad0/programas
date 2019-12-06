@@ -121,6 +121,7 @@ namespace MysqlTienda
         {
             try
             {
+                cerrarConeccion();
                 double precio = Convert.ToDouble(textTotal.Text) / Convert.ToDouble(textCantidad.Text);
                 string insertarCodigo = "UPDATE easyerp.detalle_facturacov SET cantidad = cantidad+1, total =precio*cantidad  WHERE `detalle_facturacov`.`factura` =" + textFactura.Text + " AND `detalle_facturacov`.`codigo` = " + textCodigo.Text + " and almacen='" + comboBox1.Text + "'";
                 //string insertarCodigo = "UPDATE easyerp.detalle_facturacov SET `cantidad` = '3', `total` = '30000' WHERE `detalle_facturacov`.`factura` = 3 AND `detalle_facturacov`.`codigo` = 3";
@@ -129,7 +130,10 @@ namespace MysqlTienda
                 MySqlCommand command = new MySqlCommand(insertarCodigo, conectar);
 
                 if (command.ExecuteNonQuery() == 1)
-                {                  
+                {
+                    
+                    //labelCantidad.Text = Convert.ToString(Convert.ToInt32(labelCantidad.Text) + 1);
+                    
                     iniciarTablaVentas("");
                 }
                 else
@@ -174,6 +178,7 @@ namespace MysqlTienda
             }
             textInsertarCodigo.Text = "";
             conectar.Close();
+
         }
 
         public void limpiarTextbox()
@@ -264,7 +269,6 @@ namespace MysqlTienda
                 //textSumaTotal.Text
                 //labelCedula.Text
                 //comboBox1.Text
-
                 finalizarFactura();
                 textInsertarCodigo.Text = "";
                 iniciarTablaVentas("");
@@ -337,9 +341,10 @@ namespace MysqlTienda
             bool prueba = false;
 
             try
-            {               
+            {
+                cerrarConeccion();
                 MySqlDataReader mdr;
-                string select = "SELECT * FROM easyerp.producto where codigo =" + int.Parse(textInsertarCodigo.Text);
+                string select = "SELECT * FROM easyerp.producto where codigo =" + int.Parse(textInsertarCodigo.Text)+" and almacen_fabrica_nombre='"+comboBox1.Text+"'";
                 command = new MySqlCommand(select, conectar);
                 abrirConeccion();
                 mdr = command.ExecuteReader();
@@ -352,7 +357,12 @@ namespace MysqlTienda
                     textCantidad.Text = "1";
                     textPrecio.Text = mdr.GetString("precioDetal");
                     textTotal.Text = Convert.ToString( Convert.ToDecimal(textPrecio.Text)*Convert.ToDecimal(textCantidad.Text));
+                    labelCosto.Text= mdr.GetString("costo");
+                    labelMayor.Text = mdr.GetString("percioMayor");
+                    labelDetal.Text= mdr.GetString("precioDetal");
+                    labelCostoTotal.Text = Convert.ToString(Convert.ToDecimal(labelCosto.Text) * Convert.ToDecimal(textCantidad.Text));
                     prueba = true;
+                   
                 }
                 else
                 {
@@ -363,7 +373,7 @@ namespace MysqlTienda
             }
             catch (Exception ex)
             {
-             
+                cerrarConeccion();
             }
 
             if (prueba == true)
@@ -1157,6 +1167,10 @@ namespace MysqlTienda
             cargarPermisosPorUsuario();
         }
 
+        public void funciona()
+        {
+            MessageBox.Show("hola");
+        }
         public void cargarPermisosPorUsuario()
         {
             //
@@ -1177,30 +1191,6 @@ namespace MysqlTienda
             }
         }
 
-        public void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        public void comboBoxUsPeCe_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        public void comboBoxUsuPerAlm_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        public void comboBox6_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        public void tabPage2_Click(object sender, EventArgs e)
-        {
-
-        }
 
         public void bunifuCustomDataGrid4_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -1719,6 +1709,16 @@ namespace MysqlTienda
         public void textSumaTotal_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void macro1ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("creando macros shulas");
+        }
+
+        private void buscarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("estoy buscandote beibi");
         }
     }
 
