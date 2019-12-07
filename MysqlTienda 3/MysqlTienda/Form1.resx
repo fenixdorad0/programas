@@ -4353,6 +4353,66 @@
   <data name="&gt;&gt;tabPage3.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <data name="labelUtilidad.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelUtilidad.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelUtilidad.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1168, 652</value>
+  </data>
+  <data name="labelUtilidad.Size" type="System.Drawing.Size, System.Drawing">
+    <value>85, 13</value>
+  </data>
+  <data name="labelUtilidad.TabIndex" type="System.Int32, mscorlib">
+    <value>96</value>
+  </data>
+  <data name="labelUtilidad.Text" xml:space="preserve">
+    <value>costo Totalizado</value>
+  </data>
+  <data name="&gt;&gt;labelUtilidad.Name" xml:space="preserve">
+    <value>labelUtilidad</value>
+  </data>
+  <data name="&gt;&gt;labelUtilidad.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelUtilidad.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;labelUtilidad.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="labelCostoTotalizado.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelCostoTotalizado.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelCostoTotalizado.Location" type="System.Drawing.Point, System.Drawing">
+    <value>819, 651</value>
+  </data>
+  <data name="labelCostoTotalizado.Size" type="System.Drawing.Size, System.Drawing">
+    <value>85, 13</value>
+  </data>
+  <data name="labelCostoTotalizado.TabIndex" type="System.Int32, mscorlib">
+    <value>95</value>
+  </data>
+  <data name="labelCostoTotalizado.Text" xml:space="preserve">
+    <value>costo Totalizado</value>
+  </data>
+  <data name="&gt;&gt;labelCostoTotalizado.Name" xml:space="preserve">
+    <value>labelCostoTotalizado</value>
+  </data>
+  <data name="&gt;&gt;labelCostoTotalizado.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelCostoTotalizado.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;labelCostoTotalizado.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="textBoxCostoTotal.Location" type="System.Drawing.Point, System.Drawing">
     <value>1019, 45</value>
   </data>
@@ -4372,7 +4432,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;textBoxCostoTotal.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>2</value>
   </data>
   <data name="labelDetal.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -4402,7 +4462,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;labelDetal.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>3</value>
   </data>
   <data name="labelMayor.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -4432,7 +4492,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;labelMayor.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>4</value>
   </data>
   <data name="labelCostoTotal.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -4462,7 +4522,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;labelCostoTotal.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>5</value>
   </data>
   <data name="labelCosto.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -4489,7 +4549,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;labelCosto.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>6</value>
   </data>
   <data name="textInsertarCodigo.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 17.9999981pt, style=Bold, Italic</value>
@@ -4516,7 +4576,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;textInsertarCodigo.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>7</value>
   </data>
   <data name="labelInsertarCodigo.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -4552,7 +4612,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;labelInsertarCodigo.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>8</value>
   </data>
   <data name="bunifuFlatButton1.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -4648,7 +4708,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;bunifuFlatButton1.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>9</value>
   </data>
   <data name="bunifuRestar1.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -4744,7 +4804,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;bunifuRestar1.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>10</value>
   </data>
   <data name="buniActualizar.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -4840,7 +4900,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;buniActualizar.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>11</value>
   </data>
   <data name="labelCodigo.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -4873,7 +4933,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;labelCodigo.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>12</value>
   </data>
   <data name="textSumaTotal.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 26.25pt</value>
@@ -4897,7 +4957,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;textSumaTotal.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>13</value>
   </data>
   <data name="buniBnFinalizar.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 15.75pt</value>
@@ -4944,7 +5004,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;buniBnFinalizar.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>14</value>
   </data>
   <data name="textCodigo.Location" type="System.Drawing.Point, System.Drawing">
     <value>10, 40</value>
@@ -4965,7 +5025,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;textCodigo.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>15</value>
   </data>
   <data name="bunifuCustomDataGrid1.Location" type="System.Drawing.Point, System.Drawing">
     <value>11, 76</value>
@@ -4989,7 +5049,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;bunifuCustomDataGrid1.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>16</value>
   </data>
   <data name="textReferencia.Location" type="System.Drawing.Point, System.Drawing">
     <value>123, 40</value>
@@ -5010,7 +5070,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;textReferencia.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>17</value>
   </data>
   <data name="textFactura.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 26.25pt</value>
@@ -5037,7 +5097,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;textFactura.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>18</value>
   </data>
   <data name="textTamano.Location" type="System.Drawing.Point, System.Drawing">
     <value>338, 40</value>
@@ -5058,7 +5118,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;textTamano.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>19</value>
   </data>
   <data name="labelFactura.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -5091,7 +5151,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;labelFactura.ZOrder" xml:space="preserve">
-    <value>18</value>
+    <value>20</value>
   </data>
   <data name="textProducto.Location" type="System.Drawing.Point, System.Drawing">
     <value>232, 40</value>
@@ -5112,7 +5172,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;textProducto.ZOrder" xml:space="preserve">
-    <value>19</value>
+    <value>21</value>
   </data>
   <data name="textCantidad.Location" type="System.Drawing.Point, System.Drawing">
     <value>444, 40</value>
@@ -5133,7 +5193,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;textCantidad.ZOrder" xml:space="preserve">
-    <value>20</value>
+    <value>22</value>
   </data>
   <data name="textPrecio.Location" type="System.Drawing.Point, System.Drawing">
     <value>550, 40</value>
@@ -5154,7 +5214,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;textPrecio.ZOrder" xml:space="preserve">
-    <value>21</value>
+    <value>23</value>
   </data>
   <data name="labelReferencia.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -5187,7 +5247,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;labelReferencia.ZOrder" xml:space="preserve">
-    <value>22</value>
+    <value>24</value>
   </data>
   <data name="labelCantidad.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -5220,7 +5280,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;labelCantidad.ZOrder" xml:space="preserve">
-    <value>23</value>
+    <value>25</value>
   </data>
   <data name="labelProducto.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -5253,7 +5313,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;labelProducto.ZOrder" xml:space="preserve">
-    <value>24</value>
+    <value>26</value>
   </data>
   <data name="labelTamaño.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -5286,7 +5346,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;labelTamaño.ZOrder" xml:space="preserve">
-    <value>25</value>
+    <value>27</value>
   </data>
   <data name="labelPrecio.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -5319,7 +5379,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;labelPrecio.ZOrder" xml:space="preserve">
-    <value>26</value>
+    <value>28</value>
   </data>
   <data name="textTotal.Location" type="System.Drawing.Point, System.Drawing">
     <value>656, 40</value>
@@ -5340,7 +5400,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;textTotal.ZOrder" xml:space="preserve">
-    <value>27</value>
+    <value>29</value>
   </data>
   <data name="labelTotal.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -5373,7 +5433,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;labelTotal.ZOrder" xml:space="preserve">
-    <value>28</value>
+    <value>30</value>
   </data>
   <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 6</value>

@@ -149,6 +149,7 @@
             this.bunifuCustomLabel5 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.textBoxCostoTotal = new System.Windows.Forms.TextBox();
             this.labelDetal = new System.Windows.Forms.Label();
             this.labelMayor = new System.Windows.Forms.Label();
             this.labelCostoTotal = new System.Windows.Forms.Label();
@@ -193,6 +194,7 @@
             this.tabPage14 = new System.Windows.Forms.TabPage();
             this.tabControl4 = new System.Windows.Forms.TabControl();
             this.tabPage15 = new System.Windows.Forms.TabPage();
+            this.labelReporteGanancias = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
@@ -208,8 +210,8 @@
             this.macro1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.buscarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.buscarfacturaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.textBoxCostoTotal = new System.Windows.Forms.TextBox();
-            this.labelReporteGanancias = new System.Windows.Forms.Label();
+            this.labelCostoTotalizado = new System.Windows.Forms.Label();
+            this.labelUtilidad = new System.Windows.Forms.Label();
             this.tabPage5.SuspendLayout();
             this.bunifuGradientPanel3.SuspendLayout();
             this.bunifuGradientPanel2.SuspendLayout();
@@ -1763,6 +1765,8 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.labelUtilidad);
+            this.panel1.Controls.Add(this.labelCostoTotalizado);
             this.panel1.Controls.Add(this.textBoxCostoTotal);
             this.panel1.Controls.Add(this.labelDetal);
             this.panel1.Controls.Add(this.labelMayor);
@@ -1794,6 +1798,12 @@
             this.panel1.Controls.Add(this.labelTotal);
             resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
+            // 
+            // textBoxCostoTotal
+            // 
+            resources.ApplyResources(this.textBoxCostoTotal, "textBoxCostoTotal");
+            this.textBoxCostoTotal.Name = "textBoxCostoTotal";
+            this.textBoxCostoTotal.ReadOnly = true;
             // 
             // labelDetal
             // 
@@ -2333,6 +2343,11 @@
             this.tabPage15.Name = "tabPage15";
             this.tabPage15.UseVisualStyleBackColor = true;
             // 
+            // labelReporteGanancias
+            // 
+            resources.ApplyResources(this.labelReporteGanancias, "labelReporteGanancias");
+            this.labelReporteGanancias.Name = "labelReporteGanancias";
+            // 
             // label17
             // 
             resources.ApplyResources(this.label17, "label17");
@@ -2471,16 +2486,15 @@
             this.buscarfacturaToolStripMenuItem.Name = "buscarfacturaToolStripMenuItem";
             resources.ApplyResources(this.buscarfacturaToolStripMenuItem, "buscarfacturaToolStripMenuItem");
             // 
-            // textBoxCostoTotal
+            // labelCostoTotalizado
             // 
-            resources.ApplyResources(this.textBoxCostoTotal, "textBoxCostoTotal");
-            this.textBoxCostoTotal.Name = "textBoxCostoTotal";
-            this.textBoxCostoTotal.ReadOnly = true;
+            resources.ApplyResources(this.labelCostoTotalizado, "labelCostoTotalizado");
+            this.labelCostoTotalizado.Name = "labelCostoTotalizado";
             // 
-            // labelReporteGanancias
+            // labelUtilidad
             // 
-            resources.ApplyResources(this.labelReporteGanancias, "labelReporteGanancias");
-            this.labelReporteGanancias.Name = "labelReporteGanancias";
+            resources.ApplyResources(this.labelUtilidad, "labelUtilidad");
+            this.labelUtilidad.Name = "labelUtilidad";
             // 
             // Form1
             // 
@@ -2712,6 +2726,8 @@
         private System.Windows.Forms.ToolStripMenuItem buscarfacturaToolStripMenuItem;
         private System.Windows.Forms.TextBox textBoxCostoTotal;
         private System.Windows.Forms.Label labelReporteGanancias;
+        private System.Windows.Forms.Label labelCostoTotalizado;
+        private System.Windows.Forms.Label labelUtilidad;
     }
 }
 

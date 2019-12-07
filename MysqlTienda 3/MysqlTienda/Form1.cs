@@ -138,8 +138,9 @@ namespace MysqlTienda
                 else
                 {                    
                     cerrarConeccion();
-                    string insertarCodigo2 = "INSERT INTO easyerp.detalle_facturacov(`factura`, `almacen`, `codigo`, `referencia`, `producto`, `tamano`, `cantidad`, `precio`,`costo`, `iva`, `SubtotalSinIva`, `SubtotalConIva`, `total`, `costoTotal`) VALUES ('"
+                    string insertarCodigo2 = "INSERT INTO easyerp.detalle_facturacov(`factura`,`fecha`, `almacen`, `codigo`, `referencia`, `producto`, `tamano`, `cantidad`, `precio`,`costo`, `iva`, `SubtotalSinIva`, `SubtotalConIva`, `total`, `costoTotal`) VALUES ('"
                     + textFactura.Text + "', '" //factura
+                    + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "', '"
                     + comboBox1.Text + "', '" //almacen falta por arreglar
                     + textInsertarCodigo.Text + "', '" //codigo                    
                     + textReferencia.Text + "','"
@@ -211,8 +212,21 @@ namespace MysqlTienda
                 conectar.Open();
                 textSumaTotal.Text = Convert.ToString(cmd.ExecuteScalar());
                 conectar.Close();
+
+                MySqlCommand cmd2 = new MySqlCommand();
+                //cmd.CommandText = "select sum(cantidad) from tienda.ventas where factura=" + textFactura.Text;
+                cmd2.CommandText = "select sum(costoTotal) from easyerp.detalle_facturacov where factura=" + textFactura.Text + " and almacen='" + comboBox1.Text + "'";
+                cmd2.CommandType = System.Data.CommandType.Text;
+                cmd2.Connection = conectar;
+                conectar.Open();
+                labelCostoTotalizado.Text = Convert.ToString(cmd2.ExecuteScalar());
+                conectar.Close();
+
+                labelUtilidad.Text = Convert.ToString(1 - (Convert.ToDouble(labelCostoTotalizado.Text) / Convert.ToDouble(textSumaTotal.Text)));
             }
-            catch{}
+            catch{
+                cerrarConeccion();
+            }
         }
 
         public void buscarFactura ()
@@ -297,10 +311,11 @@ namespace MysqlTienda
                     cerrarConeccion();
                     //MessageBox.Show(DateTime.Now.ToString("yyyy-MM-dd"));
                     //MessageBox.Show("se ejecuto el ingresodel producto");
-                    string insertarCodigo2 = "INSERT INTO easyerp.factura_movimiento(`nf`, `fecha`, `total`, `deuda`, `cliente_provedor_cc`, `pago_dividido_id`, `tipo_factura_nombre`, `usuario_cc`, `almacen_nombre`) VALUES ('"
+                    string insertarCodigo2 = "INSERT INTO easyerp.factura_movimiento(`nf`, `fecha`, `total`,`costo`, `deuda`, `cliente_provedor_cc`, `pago_dividido_id`, `tipo_factura_nombre`, `usuario_cc`, `almacen_nombre`) VALUES ('"
                         + textFactura.Text + "', '" //factura
                         + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "', '" //fecha
-                        + textSumaTotal.Text + "', '" //total                    
+                        + textSumaTotal.Text + "', '" //total    
+                        + labelCostoTotalizado.Text + "','" // costo
                         + "0" + "','" // deuda
                         + "1" + "','" // CC cliente o del provedor
                         + "1" + "','"  // tipo de pago efecturado
@@ -1699,19 +1714,21 @@ namespace MysqlTienda
                 cmd.Connection = conectar;
                 conectar.Open();
                 labelReporte1.Text= "las ventas del día de hoy fueron: $"+ Convert.ToString(cmd.ExecuteScalar());
+                double ventas = Convert.ToDouble(cmd.ExecuteScalar());
                 conectar.Close();
 
-                /*
+                
                 cerrarConeccion();
                 MySqlCommand cmd2 = new MySqlCommand();
-                cmd2.CommandText = "SELECT SUM(total) FROM easyerp.factura_movimiento WHERE tipo_factura_nombre ='venta' and almacen_nombre='" + comboBox1.Text + "' and fecha BETWEEN '" + fechaHoy + " 00:00:00' AND '" + fechaHoy + " 23:59:59'";
+                cmd2.CommandText = "SELECT SUM(costo) FROM easyerp.factura_movimiento WHERE tipo_factura_nombre ='venta' and almacen_nombre='" + comboBox1.Text + "' and fecha BETWEEN '" + fechaHoy + " 00:00:00' AND '" + fechaHoy + " 23:59:59'";
                 cmd2.CommandType = System.Data.CommandType.Text;
                 cmd2.Connection = conectar;
                 conectar.Open();
-                labelReporteGanancias.Text = "Las ganancias fueron $" + Convert.ToString(cmd2.ExecuteScalar());
+                double costo= Convert.ToDouble(cmd2.ExecuteScalar());
                 conectar.Close();
-                */
 
+                labelReporteGanancias.Text = "Las ganancias fueron: $"+(ventas-costo)+" Que representan una utilidad de: "+Convert.ToString(Math.Round((1 - (costo / ventas))*100, 2))+"%" ;
+                
 
             }
             catch {}
