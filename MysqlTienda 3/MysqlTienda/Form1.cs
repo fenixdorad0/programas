@@ -123,9 +123,8 @@ namespace MysqlTienda
             {
                 cerrarConeccion();
                 double precio = Convert.ToDouble(textTotal.Text) / Convert.ToDouble(textCantidad.Text);
-                string insertarCodigo = "UPDATE easyerp.detalle_facturacov SET cantidad = cantidad+1, total =precio*cantidad  WHERE `detalle_facturacov`.`factura` =" + textFactura.Text + " AND `detalle_facturacov`.`codigo` = " + textCodigo.Text + " and almacen='" + comboBox1.Text + "'";
-                //string insertarCodigo = "UPDATE easyerp.detalle_facturacov SET `cantidad` = '3', `total` = '30000' WHERE `detalle_facturacov`.`factura` = 3 AND `detalle_facturacov`.`codigo` = 3";
-                //MessageBox.Show("wtf");
+                string insertarCodigo = "UPDATE easyerp.detalle_facturacov SET cantidad = cantidad+1, total =precio*cantidad, costoTotal=costo*cantidad  WHERE `detalle_facturacov`.`factura` =" + textFactura.Text + " AND `detalle_facturacov`.`codigo` = " + textCodigo.Text + " and almacen='" + comboBox1.Text + "'";
+
                 conectar.Open();
                 MySqlCommand command = new MySqlCommand(insertarCodigo, conectar);
 
@@ -139,24 +138,25 @@ namespace MysqlTienda
                 else
                 {                    
                     cerrarConeccion();
-                    string insertarCodigo2 = "INSERT INTO easyerp.detalle_facturacov(`factura`, `almacen`, `codigo`, `referencia`, `producto`, `tamano`, `cantidad`, `precio`, `iva`, `SubtotalSinIva`, `SubtotalConIva`, `total`) VALUES ('"                   
+                    string insertarCodigo2 = "INSERT INTO easyerp.detalle_facturacov(`factura`, `almacen`, `codigo`, `referencia`, `producto`, `tamano`, `cantidad`, `precio`,`costo`, `iva`, `SubtotalSinIva`, `SubtotalConIva`, `total`, `costoTotal`) VALUES ('"
                     + textFactura.Text + "', '" //factura
                     + comboBox1.Text + "', '" //almacen falta por arreglar
                     + textInsertarCodigo.Text + "', '" //codigo                    
                     + textReferencia.Text + "','"
-                    + textProducto.Text + "','" //
-                    + textTamano.Text + "','"
+                    + textProducto.Text + "','" //                    
+                    + textTamano.Text + "','"                    
                     + textCantidad.Text + "','"
                     + textPrecio.Text + "','"
+                    + textBoxCostoTotal.Text + "','"
                     + "0" + "','" //iva
                     + "0" + "','" // sub total sin iva
                     + "0" + "','" //sub total con iva
-                    + textTotal.Text + "')";
+                    + textTotal.Text + "','"
+                    + labelCostoTotal.Text + "')";
                     conectar.Open();
                     MySqlCommand command2 = new MySqlCommand(insertarCodigo2, conectar);
                     if (command2.ExecuteNonQuery() == 1)
                     {
-
                         iniciarTablaVentas("");
                         textInsertarCodigo.Text = "";
                         //MessageBox.Show("Dato insertado");
@@ -360,6 +360,7 @@ namespace MysqlTienda
                     labelCosto.Text= mdr.GetString("costo");
                     labelMayor.Text = mdr.GetString("percioMayor");
                     labelDetal.Text= mdr.GetString("precioDetal");
+                    textBoxCostoTotal.Text = mdr.GetString("costo");
                     labelCostoTotal.Text = Convert.ToString(Convert.ToDecimal(labelCosto.Text) * Convert.ToDecimal(textCantidad.Text));
                     prueba = true;
                    
@@ -677,7 +678,7 @@ namespace MysqlTienda
                 if (Convert.ToInt32(textCantidad.Text) > 1)
                 {
                     double precio = Convert.ToDouble(textTotal.Text) / Convert.ToDouble(textCantidad.Text);
-                    string insertarCodigo = "UPDATE easyerp.detalle_facturacov SET cantidad = cantidad-1, total =precio*cantidad  WHERE `detalle_facturacov`.`factura` =" + textFactura.Text + " AND `detalle_facturacov`.`codigo` = " + textCodigo.Text + " and almacen='" + comboBox1.Text + "'";
+                    string insertarCodigo = "UPDATE easyerp.detalle_facturacov SET cantidad = cantidad-1, total =precio*cantidad, costoTotal =costo*cantidad  WHERE `detalle_facturacov`.`factura` =" + textFactura.Text + " AND `detalle_facturacov`.`codigo` = " + textCodigo.Text + " and almacen='" + comboBox1.Text + "'";
                     conectar.Open();
                     MySqlCommand command = new MySqlCommand(insertarCodigo, conectar);
                     if (command.ExecuteNonQuery() == 1)
@@ -752,7 +753,7 @@ namespace MysqlTienda
                 try
                 {
                     double precio = Convert.ToDouble(textTotal.Text) / Convert.ToDouble(textCantidad.Text);
-                    string insertarCodigo = "UPDATE easyerp.detalle_facturacov SET precio =" + textPrecio.Text + ", total =precio*cantidad  WHERE `detalle_facturacov`.`factura` =" + textFactura.Text + " AND `detalle_facturacov`.`codigo` = " + textCodigo.Text + " and almacen='" + comboBox1.Text + "'";
+                    string insertarCodigo = "UPDATE easyerp.detalle_facturacov SET precio =" + textPrecio.Text + ", total =precio*cantidad, costoTotal=costo*precio  WHERE `detalle_facturacov`.`factura` =" + textFactura.Text + " AND `detalle_facturacov`.`codigo` = " + textCodigo.Text + " and almacen='" + comboBox1.Text + "'";
                     conectar.Open();
                     MySqlCommand command = new MySqlCommand(insertarCodigo, conectar);
 
@@ -1690,19 +1691,30 @@ namespace MysqlTienda
                        
             try
             {
-
                 //
                 cerrarConeccion();
                 MySqlCommand cmd = new MySqlCommand();
-                //cmd.CommandText = "select sum(cantidad) from tienda.ventas where factura=" + textFactura.Text;
                 cmd.CommandText = "SELECT SUM(total) FROM easyerp.factura_movimiento WHERE tipo_factura_nombre ='venta' and almacen_nombre='"+comboBox1.Text+"' and fecha BETWEEN '"+fechaHoy+" 00:00:00' AND '"+fechaHoy+" 23:59:59'";
                 cmd.CommandType = System.Data.CommandType.Text;
                 cmd.Connection = conectar;
                 conectar.Open();
                 labelReporte1.Text= "las ventas del día de hoy fueron: $"+ Convert.ToString(cmd.ExecuteScalar());
                 conectar.Close();
+
+                /*
+                cerrarConeccion();
+                MySqlCommand cmd2 = new MySqlCommand();
+                cmd2.CommandText = "SELECT SUM(total) FROM easyerp.factura_movimiento WHERE tipo_factura_nombre ='venta' and almacen_nombre='" + comboBox1.Text + "' and fecha BETWEEN '" + fechaHoy + " 00:00:00' AND '" + fechaHoy + " 23:59:59'";
+                cmd2.CommandType = System.Data.CommandType.Text;
+                cmd2.Connection = conectar;
+                conectar.Open();
+                labelReporteGanancias.Text = "Las ganancias fueron $" + Convert.ToString(cmd2.ExecuteScalar());
+                conectar.Close();
+                */
+
+
             }
-            catch { }
+            catch {}
             
         }
 
