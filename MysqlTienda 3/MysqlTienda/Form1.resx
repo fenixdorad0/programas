@@ -5908,6 +5908,30 @@
   <data name="&gt;&gt;tabPage11.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
+  <data name="DataGridReporte.Location" type="System.Drawing.Point, System.Drawing">
+    <value>25, 226</value>
+  </data>
+  <data name="DataGridReporte.RowHeadersWidth" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
+  <data name="DataGridReporte.Size" type="System.Drawing.Size, System.Drawing">
+    <value>940, 397</value>
+  </data>
+  <data name="DataGridReporte.TabIndex" type="System.Int32, mscorlib">
+    <value>141</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporte.Name" xml:space="preserve">
+    <value>DataGridReporte</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporte.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuCustomDataGrid, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporte.Parent" xml:space="preserve">
+    <value>tabPage15</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporte.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="labelReporteGanancias.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -5918,7 +5942,7 @@
     <value>NoControl</value>
   </data>
   <data name="labelReporteGanancias.Location" type="System.Drawing.Point, System.Drawing">
-    <value>18, 125</value>
+    <value>21, 112</value>
   </data>
   <data name="labelReporteGanancias.Size" type="System.Drawing.Size, System.Drawing">
     <value>189, 24</value>
@@ -5939,7 +5963,7 @@
     <value>tabPage15</value>
   </data>
   <data name="&gt;&gt;labelReporteGanancias.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="label17.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -5951,7 +5975,7 @@
     <value>NoControl</value>
   </data>
   <data name="label17.Location" type="System.Drawing.Point, System.Drawing">
-    <value>18, 276</value>
+    <value>21, 184</value>
   </data>
   <data name="label17.Size" type="System.Drawing.Size, System.Drawing">
     <value>67, 24</value>
@@ -5972,7 +5996,7 @@
     <value>tabPage15</value>
   </data>
   <data name="&gt;&gt;label17.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="label16.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -5984,7 +6008,7 @@
     <value>NoControl</value>
   </data>
   <data name="label16.Location" type="System.Drawing.Point, System.Drawing">
-    <value>18, 229</value>
+    <value>21, 160</value>
   </data>
   <data name="label16.Size" type="System.Drawing.Size, System.Drawing">
     <value>164, 24</value>
@@ -6005,7 +6029,7 @@
     <value>tabPage15</value>
   </data>
   <data name="&gt;&gt;label16.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="label15.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -6017,7 +6041,7 @@
     <value>NoControl</value>
   </data>
   <data name="label15.Location" type="System.Drawing.Point, System.Drawing">
-    <value>18, 172</value>
+    <value>21, 136</value>
   </data>
   <data name="label15.Size" type="System.Drawing.Size, System.Drawing">
     <value>244, 24</value>
@@ -6038,7 +6062,7 @@
     <value>tabPage15</value>
   </data>
   <data name="&gt;&gt;label15.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="labelReporte1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -6050,7 +6074,7 @@
     <value>NoControl</value>
   </data>
   <data name="labelReporte1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>18, 88</value>
+    <value>21, 88</value>
   </data>
   <data name="labelReporte1.Size" type="System.Drawing.Size, System.Drawing">
     <value>275, 24</value>
@@ -6071,7 +6095,7 @@
     <value>tabPage15</value>
   </data>
   <data name="&gt;&gt;labelReporte1.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="bunifuFlatButton12.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -6140,7 +6164,7 @@
 </value>
   </data>
   <data name="bunifuFlatButton12.Location" type="System.Drawing.Point, System.Drawing">
-    <value>21, 23</value>
+    <value>25, 16</value>
   </data>
   <data name="bunifuFlatButton12.Size" type="System.Drawing.Size, System.Drawing">
     <value>241, 48</value>
@@ -6161,7 +6185,7 @@
     <value>tabPage15</value>
   </data>
   <data name="&gt;&gt;bunifuFlatButton12.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="tabPage15.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 22</value>
@@ -6170,7 +6194,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tabPage15.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1071, 580</value>
+    <value>1204, 664</value>
   </data>
   <data name="tabPage15.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -6221,7 +6245,7 @@
     <value>15, 16</value>
   </data>
   <data name="tabControl4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1079, 606</value>
+    <value>1212, 690</value>
   </data>
   <data name="tabControl4.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>

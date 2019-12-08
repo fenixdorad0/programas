@@ -45,6 +45,8 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.bunifuGradientPanel3 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.bunifuGradientPanel2 = new Bunifu.Framework.UI.BunifuGradientPanel();
@@ -149,6 +151,8 @@
             this.bunifuCustomLabel5 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.labelUtilidad = new System.Windows.Forms.Label();
+            this.labelCostoTotalizado = new System.Windows.Forms.Label();
             this.textBoxCostoTotal = new System.Windows.Forms.TextBox();
             this.labelDetal = new System.Windows.Forms.Label();
             this.labelMayor = new System.Windows.Forms.Label();
@@ -210,8 +214,7 @@
             this.macro1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.buscarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.buscarfacturaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.labelCostoTotalizado = new System.Windows.Forms.Label();
-            this.labelUtilidad = new System.Windows.Forms.Label();
+            this.DataGridReporte = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.tabPage5.SuspendLayout();
             this.bunifuGradientPanel3.SuspendLayout();
             this.bunifuGradientPanel2.SuspendLayout();
@@ -247,6 +250,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.buniCerrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.buniMaxMin)).BeginInit();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DataGridReporte)).BeginInit();
             this.SuspendLayout();
             // 
             // tabPage5
@@ -1799,6 +1803,16 @@
             resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
             // 
+            // labelUtilidad
+            // 
+            resources.ApplyResources(this.labelUtilidad, "labelUtilidad");
+            this.labelUtilidad.Name = "labelUtilidad";
+            // 
+            // labelCostoTotalizado
+            // 
+            resources.ApplyResources(this.labelCostoTotalizado, "labelCostoTotalizado");
+            this.labelCostoTotalizado.Name = "labelCostoTotalizado";
+            // 
             // textBoxCostoTotal
             // 
             resources.ApplyResources(this.textBoxCostoTotal, "textBoxCostoTotal");
@@ -2333,6 +2347,7 @@
             // 
             // tabPage15
             // 
+            this.tabPage15.Controls.Add(this.DataGridReporte);
             this.tabPage15.Controls.Add(this.labelReporteGanancias);
             this.tabPage15.Controls.Add(this.label17);
             this.tabPage15.Controls.Add(this.label16);
@@ -2486,15 +2501,32 @@
             this.buscarfacturaToolStripMenuItem.Name = "buscarfacturaToolStripMenuItem";
             resources.ApplyResources(this.buscarfacturaToolStripMenuItem, "buscarfacturaToolStripMenuItem");
             // 
-            // labelCostoTotalizado
+            // DataGridReporte
             // 
-            resources.ApplyResources(this.labelCostoTotalizado, "labelCostoTotalizado");
-            this.labelCostoTotalizado.Name = "labelCostoTotalizado";
-            // 
-            // labelUtilidad
-            // 
-            resources.ApplyResources(this.labelUtilidad, "labelUtilidad");
-            this.labelUtilidad.Name = "labelUtilidad";
+            dataGridViewCellStyle17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle17.NullValue = null;
+            this.DataGridReporte.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle17;
+            this.DataGridReporte.BackgroundColor = System.Drawing.Color.Gainsboro;
+            this.DataGridReporte.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.DataGridReporte.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle18.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DataGridReporte.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle18;
+            this.DataGridReporte.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DataGridReporte.DoubleBuffered = true;
+            this.DataGridReporte.EnableHeadersVisualStyles = false;
+            this.DataGridReporte.GridColor = System.Drawing.Color.Ivory;
+            this.DataGridReporte.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.DataGridReporte.HeaderForeColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.DataGridReporte, "DataGridReporte");
+            this.DataGridReporte.Name = "DataGridReporte";
+            this.DataGridReporte.ReadOnly = true;
+            this.DataGridReporte.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             // 
             // Form1
             // 
@@ -2555,6 +2587,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.buniMaxMin)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DataGridReporte)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2728,6 +2761,7 @@
         private System.Windows.Forms.Label labelReporteGanancias;
         private System.Windows.Forms.Label labelCostoTotalizado;
         private System.Windows.Forms.Label labelUtilidad;
+        private Bunifu.Framework.UI.BunifuCustomDataGrid DataGridReporte;
     }
 }
 

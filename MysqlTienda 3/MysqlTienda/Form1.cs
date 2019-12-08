@@ -143,6 +143,9 @@ namespace MysqlTienda
                     + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "', '"
                     + comboBox1.Text + "', '" //almacen falta por arreglar
                     + textInsertarCodigo.Text + "', '" //codigo                    
+                    + textInsertarCodigo.Text + "', '" //codigo                    
+                    + textInsertarCodigo.Text + "', '" //codigo                    
+                    + textInsertarCodigo.Text + "', '" //codigo                    
                     + textReferencia.Text + "','"
                     + textProducto.Text + "','" //                    
                     + textTamano.Text + "','"                    
@@ -1732,7 +1735,25 @@ namespace MysqlTienda
 
             }
             catch {}
-            
+
+            //aquiiiiii
+
+            //";
+            try
+            {
+                cerrarConeccion();
+                string selectQuery = "SELECT codigo,referencia,producto,tamano, sum(cantidad) as 'cantidad vendida' ,(total - costoTotal) as 'ganancia',(1-(costoTotal / total)) as 'ganancia porcentual' from easyerp.detalle_facturacov WHERE almacen = 'villavicencio' and fecha BETWEEN '" + fechaHoy + " 00:00:00' AND '" + fechaHoy + " 23:59:59' GROUP by codigo ";
+                DataTable table = new DataTable();
+                MySqlDataAdapter adpter = new MySqlDataAdapter(selectQuery, conectar);
+                adpter.Fill(table);
+                DataGridReporte.DataSource = table;
+                cerrarConeccion();
+            }
+            catch (Exception error)
+            {
+                MessageBox.Show(error.Message + "datrigreportes");
+            }
+
         }
 
         public void textSumaTotal_TextChanged(object sender, EventArgs e)
