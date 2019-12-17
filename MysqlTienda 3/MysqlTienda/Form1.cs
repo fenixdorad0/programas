@@ -142,10 +142,7 @@ namespace MysqlTienda
                     + textFactura.Text + "', '" //factura
                     + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "', '"
                     + comboBox1.Text + "', '" //almacen falta por arreglar
-                    + textInsertarCodigo.Text + "', '" //codigo                    
-                    + textInsertarCodigo.Text + "', '" //codigo                    
-                    + textInsertarCodigo.Text + "', '" //codigo                    
-                    + textInsertarCodigo.Text + "', '" //codigo                    
+                    + textInsertarCodigo.Text + "', '" //codigo 
                     + textReferencia.Text + "','"
                     + textProducto.Text + "','" //                    
                     + textTamano.Text + "','"                    
@@ -171,6 +168,7 @@ namespace MysqlTienda
                         MessageBox.Show("Dato NO insertado");
                         cerrarConeccion();
                     }
+                  
                     cerrarConeccion();
                     iniciarTablaVentas("");
                 }
@@ -178,7 +176,7 @@ namespace MysqlTienda
             catch (Exception error)
             {
                 cerrarConeccion();
-                MessageBox.Show(error.Message + "update o sumando");
+                MessageBox.Show(error.Message + "update o sumando!");
             }
             textInsertarCodigo.Text = "";
             conectar.Close();
