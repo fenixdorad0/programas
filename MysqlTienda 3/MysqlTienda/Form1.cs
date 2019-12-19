@@ -180,9 +180,7 @@ namespace MysqlTienda
             }
             textInsertarCodigo.Text = "";
             conectar.Close();
-
         }
-
         public void limpiarTextbox()
         {
             textInsertarCodigo.Text = null;
@@ -197,7 +195,6 @@ namespace MysqlTienda
         public void modificar_Click(object sender, EventArgs e)
         {
             sumaTotal();
-
         }
 
         public void sumaTotal()
@@ -276,14 +273,9 @@ namespace MysqlTienda
             }
             else
             {
-                Form2 formulario2 = new Form2(textSumaTotal.Text);
+                Form2 formulario2 = new Form2(textSumaTotal.Text, Convert.ToString(textFactura.Text));
                 formulario2.Visible = true;
                 formulario2.Show();
-                //textfactura.text
-                //comboBox1.Text
-                //textSumaTotal.Text
-                //labelCedula.Text
-                //comboBox1.Text
                 finalizarFactura();
                 textInsertarCodigo.Text = "";
                 iniciarTablaVentas("");

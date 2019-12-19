@@ -18,7 +18,9 @@ namespace MysqlTienda
       
         MySqlConnection conectar = new MySqlConnection("datasource=localhost;port=3306;username=root;password=;SslMode=none");
         MySqlCommand command;
-
+        public bool datafono = true, efectivo =true, credito=true, qr=true, apartado = true;
+        public string factura = "";
+       
         public void abrirConeccion()
         {
             try
@@ -86,13 +88,15 @@ namespace MysqlTienda
             InitializeComponent();
             //formulario1 = formulario2;
             this.TopMost = true;
-        }
-        public Form2(string texto)
-        {
+            labelFactura2.Text = factura;
             
+        }
+        public Form2(string texto, string factura1)
+        {
+            total = Convert.ToDouble(texto);
             try
             {
-                total = Convert.ToDouble(texto);
+                factura = factura1;
                 InitializeComponent();
                 this.TopMost = true;
                 labelTotal.Text = "El total es:" + texto;
@@ -112,6 +116,8 @@ namespace MysqlTienda
         private void bunifuFlatButton2_Click(object sender, EventArgs e)
         {
             labelPago.Text = "efectivo";
+            TextboxEfectivo.Visible = true;
+            TextboxEfectivo.Enabled = true;
             /*
             
             */
@@ -124,24 +130,70 @@ namespace MysqlTienda
 
         private void bunifuFlatButton1_Click(object sender, EventArgs e)
         {
+            
             labelPago.Text = "datafono";
+            TextboxDatafono.Enabled = true;
+            TextboxDatafono.Visible = true;
         }
 
         private void bunifuFlatButton3_Click(object sender, EventArgs e)
         {
             labelPago.Text = "credito";
+            TextboxCredito.Enabled = true;
+            TextboxCredito.Visible = true;
         }
 
         private void bunifuFlatButton4_Click(object sender, EventArgs e)
         {
             labelPago.Text = "apartado";
+            TextboxApartado.Enabled = true;
+            TextboxApartado.Visible = true;
         }
 
         private void bunifuFlatButton5_Click(object sender, EventArgs e)
         {
-            
             labelPago.Text = "qr";
+            TextboxQR.Enabled = true;
+            TextboxQR.Visible = true;
         }
+
+        private void TextboxDatafono_OnValueChanged(object sender, EventArgs e)
+        {
+            datafono = verificarTexto(TextboxDatafono.Text);
+            sumarTotal();
+
+        }
+
+        private void TextboxEfectivo_OnValueChanged(object sender, EventArgs e)
+        {
+            efectivo = verificarTexto(TextboxEfectivo.Text); 
+            sumarTotal();
+        }
+
+        private void Button_Click(object sender, EventArgs e)
+        {
+            labelPago.Text = "cotizacion";
+            
+        }
+
+        private void TextboxCredito_OnValueChanged(object sender, EventArgs e)
+        {
+            credito = verificarTexto(TextboxCredito.Text);
+            sumarTotal();
+        }
+
+        private void TextboxQR_OnValueChanged(object sender, EventArgs e)
+        {
+            qr = verificarTexto(TextboxQR.Text);
+            sumarTotal();
+        }
+
+        private void TextboxApartado_OnValueChanged(object sender, EventArgs e)
+        {
+            apartado = verificarTexto(TextboxApartado.Text);
+            sumarTotal();
+        }
+
         public Boolean bien_escrito(String email, string expresionRegular)
         {
 
@@ -171,11 +223,13 @@ namespace MysqlTienda
         {
             try
             {
-                bool verificarCedula = bien_escrito(TextboxPago.Text, @"[0-9]{1,30}(\.[0-9]{0,2})?$");
-                if (verificarCedula == true)
+                String texto = TextboxPago.Text;
+                bool verificarTexto = bien_escrito(texto, @"[0-9]{1,30}(\.[0-9]{0,2})?$");
+                if (verificarTexto == true)
                 {
+                    
                     labelPagoCon.Text = "pago con";
-                    TextboxCambio.Text = Convert.ToString((Convert.ToDouble(TextboxPago.Text)-total));
+                    TextboxCambio.Text = Convert.ToString((Convert.ToDouble(texto)-total));
                 }
                 else
                 {
@@ -186,9 +240,45 @@ namespace MysqlTienda
             {
                 MessageBox.Show(Convert.ToString(error));
             }
-
-
             
         }
+
+        private bool verificarTexto(String texto)
+        {
+            try
+            {
+
+                bool verificarTexto = bien_escrito(texto, @"[0-9]{1,30}(\.[0-9]{0,2})?$");
+                if (verificarTexto == true)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            catch (Exception error)
+            {
+                return false;
+                MessageBox.Show(Convert.ToString(error));
+            }
+        }
+
+        private void sumarTotal()
+        {
+           
+            if (datafono == true & efectivo == true & credito == true & qr == true & apartado == true)
+            {
+                TextboxPago.Text = Convert.ToString(
+                    Convert.ToDouble(TextboxDatafono.Text) +
+                    Convert.ToDouble(TextboxEfectivo.Text) +
+                    Convert.ToDouble(TextboxCredito.Text) +
+                    Convert.ToDouble(TextboxQR.Text) +
+                    Convert.ToDouble(TextboxApartado.Text)
+                    );
+            }
+        }
+
     }
 }
