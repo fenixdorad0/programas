@@ -1217,7 +1217,7 @@ namespace MysqlTienda
             {
                 cerrarConeccion();
 
-                string selectQuery = "SELECT `codigo`, `nombre`, `referencia`, `precioDetal` as 'precio por detal', `percioMayor` as 'precio por mayor', `costo`, `cantidad`, `tieneIva`, `inventario_fecha` as 'fecha del inventario', `departamento_nombre` as 'departamento', `almacen_fabrica_nombre` as 'almacen', `tamano_nombre` as 'tamaño' FROM easyerp.producto ";
+                string selectQuery = "SELECT `id`, `codigo`, `nombre`, `referencia`, `precioDetal` as 'precio por detal', `percioMayor` as 'precio por mayor', `costo`, `cantidad`, `tieneIva`, `inventario_fecha` as 'fecha del inventario', `departamento_nombre` as 'departamento', `almacen_fabrica_nombre` as 'almacen', `tamano_nombre` as 'tamaño' FROM easyerp.producto ";
                 DataTable table = new DataTable();
                 MySqlDataAdapter adpter = new MySqlDataAdapter(selectQuery, conectar);
                 adpter.Fill(table);
@@ -1594,18 +1594,19 @@ namespace MysqlTienda
         {
             try
             {
-                TextboxCodigoProducto.text = DataGridProductos.CurrentRow.Cells[0].Value.ToString();
-                TextboxNombreProducto.text = DataGridProductos.CurrentRow.Cells[1].Value.ToString();
-                TextboxReferenciaProducto.text = DataGridProductos.CurrentRow.Cells[2].Value.ToString();
-                TextboxDetalProducto.text = DataGridProductos.CurrentRow.Cells[3].Value.ToString();
-                TextboxMayorProducto.text = DataGridProductos.CurrentRow.Cells[4].Value.ToString();
-                TextboxCostoProducto.text = DataGridProductos.CurrentRow.Cells[5].Value.ToString();
-                TextboxCantidadProducto.text = DataGridProductos.CurrentRow.Cells[6].Value.ToString();
-                comboBoxIvaProducto.Text = DataGridProductos.CurrentRow.Cells[7].Value.ToString();
-                comboBoxFechaProducto.Text = DataGridProductos.CurrentRow.Cells[8].Value.ToString();
-                comboBoxDepartamentoProducto.Text = DataGridProductos.CurrentRow.Cells[9].Value.ToString();
-                comboBoxAlmacenProducto.Text = DataGridProductos.CurrentRow.Cells[10].Value.ToString();
-                comboBoxTamanoProducto.Text = DataGridProductos.CurrentRow.Cells[11].Value.ToString();
+                labelProductoId.Text = DataGridProductos.CurrentRow.Cells[0].Value.ToString();
+                TextboxCodigoProducto.text = DataGridProductos.CurrentRow.Cells[1].Value.ToString();
+                TextboxNombreProducto.text = DataGridProductos.CurrentRow.Cells[2].Value.ToString();
+                TextboxReferenciaProducto.text = DataGridProductos.CurrentRow.Cells[3].Value.ToString();
+                TextboxDetalProducto.text = DataGridProductos.CurrentRow.Cells[4].Value.ToString();
+                TextboxMayorProducto.text = DataGridProductos.CurrentRow.Cells[5].Value.ToString();
+                TextboxCostoProducto.text = DataGridProductos.CurrentRow.Cells[6].Value.ToString();
+                TextboxCantidadProducto.text = DataGridProductos.CurrentRow.Cells[8].Value.ToString();
+                comboBoxIvaProducto.Text = DataGridProductos.CurrentRow.Cells[8].Value.ToString();
+                comboBoxFechaProducto.Text = DataGridProductos.CurrentRow.Cells[9].Value.ToString();
+                comboBoxDepartamentoProducto.Text = DataGridProductos.CurrentRow.Cells[10].Value.ToString();
+                comboBoxAlmacenProducto.Text = DataGridProductos.CurrentRow.Cells[11].Value.ToString();
+                comboBoxTamanoProducto.Text = DataGridProductos.CurrentRow.Cells[12].Value.ToString();
 
             }
             catch (Exception error)
@@ -1657,7 +1658,7 @@ namespace MysqlTienda
 
         public void bunifuFlatButton4_Click(object sender, EventArgs e)
         {
-            eliminarDatos("DELETE from easyerp.producto WHERE codigo ='" + TextboxCodigoProducto.text + "' AND almacen_fabrica_nombre ='" + comboBoxAlmacenProducto.Text + "'");
+            eliminarDatos("DELETE from easyerp.producto WHERE ID ='" + labelProductoId.Text + "'");
             cargarProductosTabla();
         }
 
@@ -1731,12 +1732,28 @@ namespace MysqlTienda
             //";
             try
             {
+                
                 cerrarConeccion();
-                string selectQuery = "SELECT codigo,referencia,producto,tamano, sum(cantidad) as 'cantidad vendida' ,(total - costoTotal) as 'ganancia',(1-(costoTotal / total)) as 'ganancia porcentual' from easyerp.detalle_facturacov WHERE almacen = 'villavicencio' and fecha BETWEEN '" + fechaHoy + " 00:00:00' AND '" + fechaHoy + " 23:59:59' GROUP by codigo ";
+                string selectQuery = "SELECT codigo,referencia,producto,tamano, sum(cantidad) as 'cantidad vendida' ,(total - costoTotal) as 'ganancia',(1-(costoTotal / total)) as 'ganancia porcentual' from easyerp.detalle_facturacov WHERE almacen = '" + comboBox1.Text + "' and fecha BETWEEN '" + fechaHoy + " 00:00:00' AND '" + fechaHoy + " 23:59:59' GROUP by codigo ";
                 DataTable table = new DataTable();
                 MySqlDataAdapter adpter = new MySqlDataAdapter(selectQuery, conectar);
                 adpter.Fill(table);
-                DataGridReporte.DataSource = table;
+                DataGridReporteProducto.DataSource = table;
+                cerrarConeccion();
+            }
+            catch (Exception error)
+            {
+                MessageBox.Show(error.Message + "datrigreportes");
+            }
+
+            try
+            {
+                cerrarConeccion();
+                string selectQuery = "SELECT codigo,referencia,producto,tamano, sum(cantidad) as 'cantidad vendida' ,(total - costoTotal) as 'ganancia',(1-(costoTotal / total)) as 'ganancia porcentual' from easyerp.detalle_facturacov WHERE almacen = '" + comboBox1.Text + "' and fecha BETWEEN '" + fechaHoy + " 00:00:00' AND '" + fechaHoy + " 23:59:59' GROUP by producto ";
+                DataTable table = new DataTable();
+                MySqlDataAdapter adpter = new MySqlDataAdapter(selectQuery, conectar);
+                adpter.Fill(table);
+                DataGridReporteDepartamento.DataSource = table;
                 cerrarConeccion();
             }
             catch (Exception error)
@@ -1759,6 +1776,73 @@ namespace MysqlTienda
         private void buscarToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MessageBox.Show("estoy buscandote beibi");
+        }
+
+        private void bunifuFlatButton20_Click(object sender, EventArgs e)
+        {
+            String fechaHoy = DateTime.Now.ToString("yyyy-MM-dd");
+
+            try
+            {
+                //
+                cerrarConeccion();
+                MySqlCommand cmd = new MySqlCommand();
+                cmd.CommandText = "SELECT SUM(total) FROM easyerp.factura_movimiento WHERE tipo_factura_nombre ='venta' and fecha BETWEEN '" + fechaHoy + " 00:00:00' AND '" + fechaHoy + " 23:59:59'";
+                cmd.CommandType = System.Data.CommandType.Text;
+                cmd.Connection = conectar;
+                conectar.Open();
+                labelReporte2.Text = "las ventas del día de hoy fueron: $" + Convert.ToString(cmd.ExecuteScalar());
+                double ventas = Convert.ToDouble(cmd.ExecuteScalar());
+                conectar.Close();
+
+
+                cerrarConeccion();
+                MySqlCommand cmd2 = new MySqlCommand();
+                cmd2.CommandText = "SELECT SUM(costo) FROM easyerp.factura_movimiento WHERE tipo_factura_nombre ='venta' and fecha BETWEEN '" + fechaHoy + " 00:00:00' AND '" + fechaHoy + " 23:59:59'";
+                cmd2.CommandType = System.Data.CommandType.Text;
+                cmd2.Connection = conectar;
+                conectar.Open();
+                double costo = Convert.ToDouble(cmd2.ExecuteScalar());
+                conectar.Close();
+
+                labelReporteGanancias2.Text = "Las ganancias fueron: $" + (ventas - costo) + " Que representan una utilidad de: " + Convert.ToString(Math.Round((1 - (costo / ventas)) * 100, 2)) + "%";
+
+
+            }
+            catch { }
+
+            //aquiiiiii
+
+            //";
+            try
+            {
+                cerrarConeccion();
+                string selectQuery = "SELECT codigo,referencia,producto,tamano, sum(cantidad) as 'cantidad vendida' ,(total - costoTotal) as 'ganancia',(1-(costoTotal / total)) as 'ganancia porcentual' from easyerp.detalle_facturacov WHERE fecha BETWEEN '" + fechaHoy + " 00:00:00' AND '" + fechaHoy + " 23:59:59' GROUP by codigo ";
+                DataTable table = new DataTable();
+                MySqlDataAdapter adpter = new MySqlDataAdapter(selectQuery, conectar);
+                adpter.Fill(table);
+                DataGridReporteProducto2.DataSource = table;
+                cerrarConeccion();
+            }
+            catch (Exception error)
+            {
+                MessageBox.Show(error.Message + "datrigreportes");
+            }
+
+            try
+            {
+                cerrarConeccion();
+                string selectQuery = "SELECT codigo,referencia,producto,tamano, sum(cantidad) as 'cantidad vendida' ,(total - costoTotal) as 'ganancia',(1-(costoTotal / total)) as 'ganancia porcentual' from easyerp.detalle_facturacov WHERE fecha BETWEEN '" + fechaHoy + " 00:00:00' AND '" + fechaHoy + " 23:59:59' GROUP by producto ";
+                DataTable table = new DataTable();
+                MySqlDataAdapter adpter = new MySqlDataAdapter(selectQuery, conectar);
+                adpter.Fill(table);
+                DataGridReporteDepartamento2.DataSource = table;
+                cerrarConeccion();
+            }
+            catch (Exception error)
+            {
+                MessageBox.Show(error.Message + "datrigreportes");
+            }
         }
     }
 

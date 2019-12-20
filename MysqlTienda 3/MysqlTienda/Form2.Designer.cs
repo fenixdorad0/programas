@@ -204,7 +204,7 @@
             this.TextboxEfectivo.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.TextboxEfectivo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.TextboxEfectivo.isPassword = false;
-            this.TextboxEfectivo.Location = new System.Drawing.Point(178, 101);
+            this.TextboxEfectivo.Location = new System.Drawing.Point(178, 47);
             this.TextboxEfectivo.Margin = new System.Windows.Forms.Padding(4);
             this.TextboxEfectivo.Name = "TextboxEfectivo";
             this.TextboxEfectivo.Size = new System.Drawing.Size(237, 48);
@@ -225,7 +225,7 @@
             this.TextboxDatafono.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.TextboxDatafono.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.TextboxDatafono.isPassword = false;
-            this.TextboxDatafono.Location = new System.Drawing.Point(178, 47);
+            this.TextboxDatafono.Location = new System.Drawing.Point(178, 99);
             this.TextboxDatafono.Margin = new System.Windows.Forms.Padding(4);
             this.TextboxDatafono.Name = "TextboxDatafono";
             this.TextboxDatafono.Size = new System.Drawing.Size(237, 48);
@@ -331,7 +331,7 @@
             this.ButtonEfectivo.IconVisible = true;
             this.ButtonEfectivo.IconZoom = 90D;
             this.ButtonEfectivo.IsTab = false;
-            this.ButtonEfectivo.Location = new System.Drawing.Point(17, 101);
+            this.ButtonEfectivo.Location = new System.Drawing.Point(17, 47);
             this.ButtonEfectivo.Margin = new System.Windows.Forms.Padding(4);
             this.ButtonEfectivo.Name = "ButtonEfectivo";
             this.ButtonEfectivo.Normalcolor = System.Drawing.Color.DodgerBlue;
@@ -367,7 +367,7 @@
             this.ButtonDatafono.IconVisible = true;
             this.ButtonDatafono.IconZoom = 90D;
             this.ButtonDatafono.IsTab = false;
-            this.ButtonDatafono.Location = new System.Drawing.Point(17, 47);
+            this.ButtonDatafono.Location = new System.Drawing.Point(17, 99);
             this.ButtonDatafono.Margin = new System.Windows.Forms.Padding(4);
             this.ButtonDatafono.Name = "ButtonDatafono";
             this.ButtonDatafono.Normalcolor = System.Drawing.Color.DodgerBlue;

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -47,6 +48,12 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.bunifuGradientPanel3 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.bunifuGradientPanel2 = new Bunifu.Framework.UI.BunifuGradientPanel();
@@ -198,6 +205,7 @@
             this.tabPage14 = new System.Windows.Forms.TabPage();
             this.tabControl4 = new System.Windows.Forms.TabControl();
             this.tabPage15 = new System.Windows.Forms.TabPage();
+            this.DataGridReporteProducto = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.labelReporteGanancias = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
@@ -214,7 +222,23 @@
             this.macro1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.buscarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.buscarfacturaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.DataGridReporte = new Bunifu.Framework.UI.BunifuCustomDataGrid();
+            this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
+            this.tabControl5 = new System.Windows.Forms.TabControl();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.tabPage10 = new System.Windows.Forms.TabPage();
+            this.DataGridReporteDepartamento = new Bunifu.Framework.UI.BunifuCustomDataGrid();
+            this.labelProductoId = new System.Windows.Forms.Label();
+            this.bunifuFlatButton20 = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.tabControl6 = new System.Windows.Forms.TabControl();
+            this.tabPage17 = new System.Windows.Forms.TabPage();
+            this.DataGridReporteProducto2 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
+            this.tabPage18 = new System.Windows.Forms.TabPage();
+            this.DataGridReporteDepartamento2 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
+            this.labelReporteGanancias2 = new System.Windows.Forms.Label();
+            this.labelReporteGastos2 = new System.Windows.Forms.Label();
+            this.labelReporteEfectivo2 = new System.Windows.Forms.Label();
+            this.labelReporteCredito2 = new System.Windows.Forms.Label();
+            this.labelReporte2 = new System.Windows.Forms.Label();
             this.tabPage5.SuspendLayout();
             this.bunifuGradientPanel3.SuspendLayout();
             this.bunifuGradientPanel2.SuspendLayout();
@@ -245,12 +269,22 @@
             this.tabPage14.SuspendLayout();
             this.tabControl4.SuspendLayout();
             this.tabPage15.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DataGridReporteProducto)).BeginInit();
+            this.tabPage16.SuspendLayout();
             this.bunifuGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.buniCerrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.buniMaxMin)).BeginInit();
             this.menuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DataGridReporte)).BeginInit();
+            this.tabControl5.SuspendLayout();
+            this.tabPage2.SuspendLayout();
+            this.tabPage10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DataGridReporteDepartamento)).BeginInit();
+            this.tabControl6.SuspendLayout();
+            this.tabPage17.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DataGridReporteProducto2)).BeginInit();
+            this.tabPage18.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DataGridReporteDepartamento2)).BeginInit();
             this.SuspendLayout();
             // 
             // tabPage5
@@ -404,6 +438,7 @@
             // 
             // tabPage8
             // 
+            this.tabPage8.Controls.Add(this.labelProductoId);
             this.tabPage8.Controls.Add(this.label14);
             this.tabPage8.Controls.Add(this.label13);
             this.tabPage8.Controls.Add(this.label12);
@@ -2347,7 +2382,7 @@
             // 
             // tabPage15
             // 
-            this.tabPage15.Controls.Add(this.DataGridReporte);
+            this.tabPage15.Controls.Add(this.tabControl5);
             this.tabPage15.Controls.Add(this.labelReporteGanancias);
             this.tabPage15.Controls.Add(this.label17);
             this.tabPage15.Controls.Add(this.label16);
@@ -2357,6 +2392,33 @@
             resources.ApplyResources(this.tabPage15, "tabPage15");
             this.tabPage15.Name = "tabPage15";
             this.tabPage15.UseVisualStyleBackColor = true;
+            // 
+            // DataGridReporteProducto
+            // 
+            dataGridViewCellStyle17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle17.NullValue = null;
+            this.DataGridReporteProducto.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle17;
+            this.DataGridReporteProducto.BackgroundColor = System.Drawing.Color.Gainsboro;
+            this.DataGridReporteProducto.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.DataGridReporteProducto.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle18.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DataGridReporteProducto.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle18;
+            this.DataGridReporteProducto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DataGridReporteProducto.DoubleBuffered = true;
+            this.DataGridReporteProducto.EnableHeadersVisualStyles = false;
+            this.DataGridReporteProducto.GridColor = System.Drawing.Color.Ivory;
+            this.DataGridReporteProducto.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.DataGridReporteProducto.HeaderForeColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.DataGridReporteProducto, "DataGridReporteProducto");
+            this.DataGridReporteProducto.Name = "DataGridReporteProducto";
+            this.DataGridReporteProducto.ReadOnly = true;
+            this.DataGridReporteProducto.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             // 
             // labelReporteGanancias
             // 
@@ -2416,6 +2478,13 @@
             // 
             // tabPage16
             // 
+            this.tabPage16.Controls.Add(this.tabControl6);
+            this.tabPage16.Controls.Add(this.labelReporteGanancias2);
+            this.tabPage16.Controls.Add(this.labelReporteGastos2);
+            this.tabPage16.Controls.Add(this.labelReporteEfectivo2);
+            this.tabPage16.Controls.Add(this.labelReporteCredito2);
+            this.tabPage16.Controls.Add(this.labelReporte2);
+            this.tabPage16.Controls.Add(this.bunifuFlatButton20);
             resources.ApplyResources(this.tabPage16, "tabPage16");
             this.tabPage16.Name = "tabPage16";
             this.tabPage16.UseVisualStyleBackColor = true;
@@ -2501,32 +2570,195 @@
             this.buscarfacturaToolStripMenuItem.Name = "buscarfacturaToolStripMenuItem";
             resources.ApplyResources(this.buscarfacturaToolStripMenuItem, "buscarfacturaToolStripMenuItem");
             // 
-            // DataGridReporte
+            // notifyIcon1
             // 
-            dataGridViewCellStyle17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle17.NullValue = null;
-            this.DataGridReporte.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle17;
-            this.DataGridReporte.BackgroundColor = System.Drawing.Color.Gainsboro;
-            this.DataGridReporte.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.DataGridReporte.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle18.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DataGridReporte.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle18;
-            this.DataGridReporte.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DataGridReporte.DoubleBuffered = true;
-            this.DataGridReporte.EnableHeadersVisualStyles = false;
-            this.DataGridReporte.GridColor = System.Drawing.Color.Ivory;
-            this.DataGridReporte.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.DataGridReporte.HeaderForeColor = System.Drawing.Color.White;
-            resources.ApplyResources(this.DataGridReporte, "DataGridReporte");
-            this.DataGridReporte.Name = "DataGridReporte";
-            this.DataGridReporte.ReadOnly = true;
-            this.DataGridReporte.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            resources.ApplyResources(this.notifyIcon1, "notifyIcon1");
+            // 
+            // tabControl5
+            // 
+            this.tabControl5.Controls.Add(this.tabPage2);
+            this.tabControl5.Controls.Add(this.tabPage10);
+            resources.ApplyResources(this.tabControl5, "tabControl5");
+            this.tabControl5.Name = "tabControl5";
+            this.tabControl5.SelectedIndex = 0;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.DataGridReporteProducto);
+            resources.ApplyResources(this.tabPage2, "tabPage2");
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // tabPage10
+            // 
+            this.tabPage10.Controls.Add(this.DataGridReporteDepartamento);
+            resources.ApplyResources(this.tabPage10, "tabPage10");
+            this.tabPage10.Name = "tabPage10";
+            this.tabPage10.UseVisualStyleBackColor = true;
+            // 
+            // DataGridReporteDepartamento
+            // 
+            dataGridViewCellStyle19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle19.NullValue = null;
+            this.DataGridReporteDepartamento.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle19;
+            this.DataGridReporteDepartamento.BackgroundColor = System.Drawing.Color.Gainsboro;
+            this.DataGridReporteDepartamento.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.DataGridReporteDepartamento.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle20.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            dataGridViewCellStyle20.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle20.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle20.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DataGridReporteDepartamento.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle20;
+            this.DataGridReporteDepartamento.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DataGridReporteDepartamento.DoubleBuffered = true;
+            this.DataGridReporteDepartamento.EnableHeadersVisualStyles = false;
+            this.DataGridReporteDepartamento.GridColor = System.Drawing.Color.Ivory;
+            this.DataGridReporteDepartamento.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.DataGridReporteDepartamento.HeaderForeColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.DataGridReporteDepartamento, "DataGridReporteDepartamento");
+            this.DataGridReporteDepartamento.Name = "DataGridReporteDepartamento";
+            this.DataGridReporteDepartamento.ReadOnly = true;
+            this.DataGridReporteDepartamento.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            // 
+            // labelProductoId
+            // 
+            resources.ApplyResources(this.labelProductoId, "labelProductoId");
+            this.labelProductoId.Name = "labelProductoId";
+            // 
+            // bunifuFlatButton20
+            // 
+            this.bunifuFlatButton20.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.bunifuFlatButton20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            resources.ApplyResources(this.bunifuFlatButton20, "bunifuFlatButton20");
+            this.bunifuFlatButton20.BorderRadius = 0;
+            this.bunifuFlatButton20.ButtonText = "Generar reporte";
+            this.bunifuFlatButton20.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuFlatButton20.DisabledColor = System.Drawing.Color.Gray;
+            this.bunifuFlatButton20.Iconcolor = System.Drawing.Color.Transparent;
+            this.bunifuFlatButton20.Iconimage = ((System.Drawing.Image)(resources.GetObject("bunifuFlatButton20.Iconimage")));
+            this.bunifuFlatButton20.Iconimage_right = null;
+            this.bunifuFlatButton20.Iconimage_right_Selected = null;
+            this.bunifuFlatButton20.Iconimage_Selected = null;
+            this.bunifuFlatButton20.IconMarginLeft = 0;
+            this.bunifuFlatButton20.IconMarginRight = 0;
+            this.bunifuFlatButton20.IconRightVisible = false;
+            this.bunifuFlatButton20.IconRightZoom = 0D;
+            this.bunifuFlatButton20.IconVisible = false;
+            this.bunifuFlatButton20.IconZoom = 90D;
+            this.bunifuFlatButton20.IsTab = false;
+            this.bunifuFlatButton20.Name = "bunifuFlatButton20";
+            this.bunifuFlatButton20.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.bunifuFlatButton20.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.bunifuFlatButton20.OnHoverTextColor = System.Drawing.Color.White;
+            this.bunifuFlatButton20.selected = false;
+            this.bunifuFlatButton20.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bunifuFlatButton20.Textcolor = System.Drawing.Color.White;
+            this.bunifuFlatButton20.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuFlatButton20.Click += new System.EventHandler(this.bunifuFlatButton20_Click);
+            // 
+            // tabControl6
+            // 
+            this.tabControl6.Controls.Add(this.tabPage17);
+            this.tabControl6.Controls.Add(this.tabPage18);
+            resources.ApplyResources(this.tabControl6, "tabControl6");
+            this.tabControl6.Name = "tabControl6";
+            this.tabControl6.SelectedIndex = 0;
+            // 
+            // tabPage17
+            // 
+            this.tabPage17.Controls.Add(this.DataGridReporteProducto2);
+            resources.ApplyResources(this.tabPage17, "tabPage17");
+            this.tabPage17.Name = "tabPage17";
+            this.tabPage17.UseVisualStyleBackColor = true;
+            // 
+            // DataGridReporteProducto2
+            // 
+            dataGridViewCellStyle21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle21.NullValue = null;
+            this.DataGridReporteProducto2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle21;
+            this.DataGridReporteProducto2.BackgroundColor = System.Drawing.Color.Gainsboro;
+            this.DataGridReporteProducto2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.DataGridReporteProducto2.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle22.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            dataGridViewCellStyle22.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle22.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle22.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle22.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DataGridReporteProducto2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle22;
+            this.DataGridReporteProducto2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DataGridReporteProducto2.DoubleBuffered = true;
+            this.DataGridReporteProducto2.EnableHeadersVisualStyles = false;
+            this.DataGridReporteProducto2.GridColor = System.Drawing.Color.Ivory;
+            this.DataGridReporteProducto2.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.DataGridReporteProducto2.HeaderForeColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.DataGridReporteProducto2, "DataGridReporteProducto2");
+            this.DataGridReporteProducto2.Name = "DataGridReporteProducto2";
+            this.DataGridReporteProducto2.ReadOnly = true;
+            this.DataGridReporteProducto2.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            // 
+            // tabPage18
+            // 
+            this.tabPage18.Controls.Add(this.DataGridReporteDepartamento2);
+            resources.ApplyResources(this.tabPage18, "tabPage18");
+            this.tabPage18.Name = "tabPage18";
+            this.tabPage18.UseVisualStyleBackColor = true;
+            // 
+            // DataGridReporteDepartamento2
+            // 
+            dataGridViewCellStyle23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle23.NullValue = null;
+            this.DataGridReporteDepartamento2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle23;
+            this.DataGridReporteDepartamento2.BackgroundColor = System.Drawing.Color.Gainsboro;
+            this.DataGridReporteDepartamento2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.DataGridReporteDepartamento2.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle24.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            dataGridViewCellStyle24.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle24.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle24.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle24.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DataGridReporteDepartamento2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle24;
+            this.DataGridReporteDepartamento2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DataGridReporteDepartamento2.DoubleBuffered = true;
+            this.DataGridReporteDepartamento2.EnableHeadersVisualStyles = false;
+            this.DataGridReporteDepartamento2.GridColor = System.Drawing.Color.Ivory;
+            this.DataGridReporteDepartamento2.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.DataGridReporteDepartamento2.HeaderForeColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.DataGridReporteDepartamento2, "DataGridReporteDepartamento2");
+            this.DataGridReporteDepartamento2.Name = "DataGridReporteDepartamento2";
+            this.DataGridReporteDepartamento2.ReadOnly = true;
+            this.DataGridReporteDepartamento2.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            // 
+            // labelReporteGanancias2
+            // 
+            resources.ApplyResources(this.labelReporteGanancias2, "labelReporteGanancias2");
+            this.labelReporteGanancias2.Name = "labelReporteGanancias2";
+            // 
+            // labelReporteGastos2
+            // 
+            resources.ApplyResources(this.labelReporteGastos2, "labelReporteGastos2");
+            this.labelReporteGastos2.Name = "labelReporteGastos2";
+            // 
+            // labelReporteEfectivo2
+            // 
+            resources.ApplyResources(this.labelReporteEfectivo2, "labelReporteEfectivo2");
+            this.labelReporteEfectivo2.Name = "labelReporteEfectivo2";
+            // 
+            // labelReporteCredito2
+            // 
+            resources.ApplyResources(this.labelReporteCredito2, "labelReporteCredito2");
+            this.labelReporteCredito2.Name = "labelReporteCredito2";
+            // 
+            // labelReporte2
+            // 
+            resources.ApplyResources(this.labelReporte2, "labelReporte2");
+            this.labelReporte2.Name = "labelReporte2";
             // 
             // Form1
             // 
@@ -2580,6 +2812,9 @@
             this.tabControl4.ResumeLayout(false);
             this.tabPage15.ResumeLayout(false);
             this.tabPage15.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DataGridReporteProducto)).EndInit();
+            this.tabPage16.ResumeLayout(false);
+            this.tabPage16.PerformLayout();
             this.bunifuGradientPanel1.ResumeLayout(false);
             this.bunifuGradientPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
@@ -2587,7 +2822,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.buniMaxMin)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DataGridReporte)).EndInit();
+            this.tabControl5.ResumeLayout(false);
+            this.tabPage2.ResumeLayout(false);
+            this.tabPage10.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.DataGridReporteDepartamento)).EndInit();
+            this.tabControl6.ResumeLayout(false);
+            this.tabPage17.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.DataGridReporteProducto2)).EndInit();
+            this.tabPage18.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.DataGridReporteDepartamento2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2761,7 +3004,24 @@
         private System.Windows.Forms.Label labelReporteGanancias;
         private System.Windows.Forms.Label labelCostoTotalizado;
         private System.Windows.Forms.Label labelUtilidad;
-        private Bunifu.Framework.UI.BunifuCustomDataGrid DataGridReporte;
+        private Bunifu.Framework.UI.BunifuCustomDataGrid DataGridReporteProducto;
+        private System.Windows.Forms.TabControl tabControl5;
+        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.TabPage tabPage10;
+        private System.Windows.Forms.NotifyIcon notifyIcon1;
+        private Bunifu.Framework.UI.BunifuCustomDataGrid DataGridReporteDepartamento;
+        private System.Windows.Forms.Label labelProductoId;
+        private System.Windows.Forms.TabControl tabControl6;
+        private System.Windows.Forms.TabPage tabPage17;
+        private Bunifu.Framework.UI.BunifuCustomDataGrid DataGridReporteProducto2;
+        private System.Windows.Forms.TabPage tabPage18;
+        private Bunifu.Framework.UI.BunifuCustomDataGrid DataGridReporteDepartamento2;
+        private System.Windows.Forms.Label labelReporteGanancias2;
+        private System.Windows.Forms.Label labelReporteGastos2;
+        private System.Windows.Forms.Label labelReporteEfectivo2;
+        private System.Windows.Forms.Label labelReporteCredito2;
+        private System.Windows.Forms.Label labelReporte2;
+        private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton20;
     }
 }
 
