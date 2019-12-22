@@ -643,7 +643,7 @@
     <value>4, 22</value>
   </data>
   <data name="tabPage5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1371, 746</value>
+    <value>1575, 746</value>
   </data>
   <data name="tabPage5.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -2395,7 +2395,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tabPage9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1357, 717</value>
+    <value>1561, 717</value>
   </data>
   <data name="tabPage9.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -2751,7 +2751,7 @@
     <value>4, 22</value>
   </data>
   <data name="tabPage12.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1357, 717</value>
+    <value>1561, 717</value>
   </data>
   <data name="tabPage12.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -3107,7 +3107,7 @@
     <value>4, 22</value>
   </data>
   <data name="tabPage13.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1357, 717</value>
+    <value>1561, 717</value>
   </data>
   <data name="tabPage13.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -6344,7 +6344,7 @@
     <value>0</value>
   </data>
   <data name="DataGridReporteProducto2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 6</value>
+    <value>3, 3</value>
   </data>
   <data name="DataGridReporteProducto2.RowHeadersWidth" type="System.Int32, mscorlib">
     <value>51</value>
@@ -6395,7 +6395,7 @@
     <value>0</value>
   </data>
   <data name="DataGridReporteDepartamento2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 6</value>
+    <value>3, 3</value>
   </data>
   <data name="DataGridReporteDepartamento2.RowHeadersWidth" type="System.Int32, mscorlib">
     <value>51</value>
@@ -6445,6 +6445,102 @@
   <data name="&gt;&gt;tabPage18.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="DataGridReporteVentasAlmacen2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="DataGridReporteVentasAlmacen2.RowHeadersWidth" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
+  <data name="DataGridReporteVentasAlmacen2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1060, 397</value>
+  </data>
+  <data name="DataGridReporteVentasAlmacen2.TabIndex" type="System.Int32, mscorlib">
+    <value>143</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporteVentasAlmacen2.Name" xml:space="preserve">
+    <value>DataGridReporteVentasAlmacen2</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporteVentasAlmacen2.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuCustomDataGrid, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporteVentasAlmacen2.Parent" xml:space="preserve">
+    <value>tabPage19</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporteVentasAlmacen2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tabPage19.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="tabPage19.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1094, 421</value>
+  </data>
+  <data name="tabPage19.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="tabPage19.Text" xml:space="preserve">
+    <value>total de ventas almacen</value>
+  </data>
+  <data name="&gt;&gt;tabPage19.Name" xml:space="preserve">
+    <value>tabPage19</value>
+  </data>
+  <data name="&gt;&gt;tabPage19.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage19.Parent" xml:space="preserve">
+    <value>tabControl6</value>
+  </data>
+  <data name="&gt;&gt;tabPage19.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="DataGridReporteProductosAlmacen2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="DataGridReporteProductosAlmacen2.RowHeadersWidth" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
+  <data name="DataGridReporteProductosAlmacen2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1060, 397</value>
+  </data>
+  <data name="DataGridReporteProductosAlmacen2.TabIndex" type="System.Int32, mscorlib">
+    <value>143</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporteProductosAlmacen2.Name" xml:space="preserve">
+    <value>DataGridReporteProductosAlmacen2</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporteProductosAlmacen2.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuCustomDataGrid, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporteProductosAlmacen2.Parent" xml:space="preserve">
+    <value>tabPage20</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporteProductosAlmacen2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tabPage20.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="tabPage20.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1094, 421</value>
+  </data>
+  <data name="tabPage20.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="tabPage20.Text" xml:space="preserve">
+    <value>ventas de productos por almacen</value>
+  </data>
+  <data name="&gt;&gt;tabPage20.Name" xml:space="preserve">
+    <value>tabPage20</value>
+  </data>
+  <data name="&gt;&gt;tabPage20.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage20.Parent" xml:space="preserve">
+    <value>tabControl6</value>
+  </data>
+  <data name="&gt;&gt;tabPage20.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
   <data name="tabControl6.Location" type="System.Drawing.Point, System.Drawing">
     <value>10, 191</value>
   </data>
@@ -6479,13 +6575,13 @@
     <value>6, 92</value>
   </data>
   <data name="labelReporteGanancias2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>189, 24</value>
+    <value>360, 24</value>
   </data>
   <data name="labelReporteGanancias2.TabIndex" type="System.Int32, mscorlib">
     <value>147</value>
   </data>
   <data name="labelReporteGanancias2.Text" xml:space="preserve">
-    <value>Las ganancias fueron</value>
+    <value>Las ganancias de todos los locales fueron</value>
   </data>
   <data name="&gt;&gt;labelReporteGanancias2.Name" xml:space="preserve">
     <value>labelReporteGanancias2</value>
@@ -6611,13 +6707,13 @@
     <value>6, 68</value>
   </data>
   <data name="labelReporte2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>275, 24</value>
+    <value>415, 24</value>
   </data>
   <data name="labelReporte2.TabIndex" type="System.Int32, mscorlib">
     <value>143</value>
   </data>
   <data name="labelReporte2.Text" xml:space="preserve">
-    <value>las ventas del día de hoy fueron</value>
+    <value>las ventas de todos los locales día de hoy fueron</value>
   </data>
   <data name="&gt;&gt;labelReporte2.Name" xml:space="preserve">
     <value>labelReporte2</value>
