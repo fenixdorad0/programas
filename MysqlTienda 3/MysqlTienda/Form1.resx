@@ -5938,8 +5938,83 @@
   <data name="&gt;&gt;tabPage11.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
+  <data name="labelErrorReporte.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelErrorReporte.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 11.25pt</value>
+  </data>
+  <data name="labelErrorReporte.Location" type="System.Drawing.Point, System.Drawing">
+    <value>419, 66</value>
+  </data>
+  <data name="labelErrorReporte.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 18</value>
+  </data>
+  <data name="labelErrorReporte.TabIndex" type="System.Int32, mscorlib">
+    <value>159</value>
+  </data>
+  <data name="labelErrorReporte.Text" xml:space="preserve">
+    <value>mensaje de error</value>
+  </data>
+  <data name="labelErrorReporte.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;labelErrorReporte.Name" xml:space="preserve">
+    <value>labelErrorReporte</value>
+  </data>
+  <data name="&gt;&gt;labelErrorReporte.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelErrorReporte.Parent" xml:space="preserve">
+    <value>tabPage15</value>
+  </data>
+  <data name="&gt;&gt;labelErrorReporte.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="dateTimePickerReporteB.Location" type="System.Drawing.Point, System.Drawing">
+    <value>213, 60</value>
+  </data>
+  <data name="dateTimePickerReporteB.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 20</value>
+  </data>
+  <data name="dateTimePickerReporteB.TabIndex" type="System.Int32, mscorlib">
+    <value>157</value>
+  </data>
+  <data name="&gt;&gt;dateTimePickerReporteB.Name" xml:space="preserve">
+    <value>dateTimePickerReporteB</value>
+  </data>
+  <data name="&gt;&gt;dateTimePickerReporteB.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dateTimePickerReporteB.Parent" xml:space="preserve">
+    <value>tabPage15</value>
+  </data>
+  <data name="&gt;&gt;dateTimePickerReporteB.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="dateTimePickerReporteA.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 60</value>
+  </data>
+  <data name="dateTimePickerReporteA.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 20</value>
+  </data>
+  <data name="dateTimePickerReporteA.TabIndex" type="System.Int32, mscorlib">
+    <value>156</value>
+  </data>
+  <data name="&gt;&gt;dateTimePickerReporteA.Name" xml:space="preserve">
+    <value>dateTimePickerReporteA</value>
+  </data>
+  <data name="&gt;&gt;dateTimePickerReporteA.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dateTimePickerReporteA.Parent" xml:space="preserve">
+    <value>tabPage15</value>
+  </data>
+  <data name="&gt;&gt;dateTimePickerReporteA.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
   <data name="DataGridReporteProducto.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 6</value>
+    <value>3, 3</value>
   </data>
   <data name="DataGridReporteProducto.RowHeadersWidth" type="System.Int32, mscorlib">
     <value>51</value>
@@ -5990,7 +6065,7 @@
     <value>0</value>
   </data>
   <data name="DataGridReporteDepartamento.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 6</value>
+    <value>3, 3</value>
   </data>
   <data name="DataGridReporteDepartamento.RowHeadersWidth" type="System.Int32, mscorlib">
     <value>51</value>
@@ -6040,8 +6115,56 @@
   <data name="&gt;&gt;tabPage10.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="DataGridReporteVentaCajeros.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="DataGridReporteVentaCajeros.RowHeadersWidth" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
+  <data name="DataGridReporteVentaCajeros.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1060, 397</value>
+  </data>
+  <data name="DataGridReporteVentaCajeros.TabIndex" type="System.Int32, mscorlib">
+    <value>143</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporteVentaCajeros.Name" xml:space="preserve">
+    <value>DataGridReporteVentaCajeros</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporteVentaCajeros.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuCustomDataGrid, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporteVentaCajeros.Parent" xml:space="preserve">
+    <value>tabPage22</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporteVentaCajeros.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tabPage22.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="tabPage22.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1094, 421</value>
+  </data>
+  <data name="tabPage22.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="tabPage22.Text" xml:space="preserve">
+    <value>venta por cajeros</value>
+  </data>
+  <data name="&gt;&gt;tabPage22.Name" xml:space="preserve">
+    <value>tabPage22</value>
+  </data>
+  <data name="&gt;&gt;tabPage22.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage22.Parent" xml:space="preserve">
+    <value>tabControl5</value>
+  </data>
+  <data name="&gt;&gt;tabPage22.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
   <data name="tabControl5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>25, 211</value>
+    <value>7, 222</value>
   </data>
   <data name="tabControl5.Size" type="System.Drawing.Size, System.Drawing">
     <value>1102, 447</value>
@@ -6059,7 +6182,7 @@
     <value>tabPage15</value>
   </data>
   <data name="&gt;&gt;tabControl5.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>3</value>
   </data>
   <data name="labelReporteGanancias.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -6071,7 +6194,7 @@
     <value>NoControl</value>
   </data>
   <data name="labelReporteGanancias.Location" type="System.Drawing.Point, System.Drawing">
-    <value>21, 112</value>
+    <value>1, 123</value>
   </data>
   <data name="labelReporteGanancias.Size" type="System.Drawing.Size, System.Drawing">
     <value>189, 24</value>
@@ -6092,7 +6215,7 @@
     <value>tabPage15</value>
   </data>
   <data name="&gt;&gt;labelReporteGanancias.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>4</value>
   </data>
   <data name="label17.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -6104,7 +6227,7 @@
     <value>NoControl</value>
   </data>
   <data name="label17.Location" type="System.Drawing.Point, System.Drawing">
-    <value>21, 184</value>
+    <value>3, 195</value>
   </data>
   <data name="label17.Size" type="System.Drawing.Size, System.Drawing">
     <value>67, 24</value>
@@ -6125,7 +6248,7 @@
     <value>tabPage15</value>
   </data>
   <data name="&gt;&gt;label17.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>5</value>
   </data>
   <data name="label16.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -6137,7 +6260,7 @@
     <value>NoControl</value>
   </data>
   <data name="label16.Location" type="System.Drawing.Point, System.Drawing">
-    <value>21, 160</value>
+    <value>1, 171</value>
   </data>
   <data name="label16.Size" type="System.Drawing.Size, System.Drawing">
     <value>164, 24</value>
@@ -6158,7 +6281,7 @@
     <value>tabPage15</value>
   </data>
   <data name="&gt;&gt;label16.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>6</value>
   </data>
   <data name="label15.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -6170,7 +6293,7 @@
     <value>NoControl</value>
   </data>
   <data name="label15.Location" type="System.Drawing.Point, System.Drawing">
-    <value>21, 136</value>
+    <value>1, 147</value>
   </data>
   <data name="label15.Size" type="System.Drawing.Size, System.Drawing">
     <value>244, 24</value>
@@ -6191,7 +6314,7 @@
     <value>tabPage15</value>
   </data>
   <data name="&gt;&gt;label15.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>7</value>
   </data>
   <data name="labelReporte1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -6203,7 +6326,7 @@
     <value>NoControl</value>
   </data>
   <data name="labelReporte1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>21, 88</value>
+    <value>1, 99</value>
   </data>
   <data name="labelReporte1.Size" type="System.Drawing.Size, System.Drawing">
     <value>275, 24</value>
@@ -6224,12 +6347,12 @@
     <value>tabPage15</value>
   </data>
   <data name="&gt;&gt;labelReporte1.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>8</value>
   </data>
-  <data name="bunifuFlatButton12.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+  <data name="buttonGenerarReporte.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
   </data>
-  <data name="bunifuFlatButton12.Iconimage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="buttonGenerarReporte.Iconimage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAYAAACtWK6eAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         wwAADsMBx2+oZAAAABp0RVh0U29mdHdhcmUAUGFpbnQuTkVUIHYzLjUuMTAw9HKhAAANJElEQVR4Xu3d
@@ -6292,29 +6415,29 @@
         Vu+NkQAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="bunifuFlatButton12.Location" type="System.Drawing.Point, System.Drawing">
-    <value>25, 16</value>
+  <data name="buttonGenerarReporte.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 6</value>
   </data>
-  <data name="bunifuFlatButton12.Size" type="System.Drawing.Size, System.Drawing">
-    <value>241, 48</value>
+  <data name="buttonGenerarReporte.Size" type="System.Drawing.Size, System.Drawing">
+    <value>407, 48</value>
   </data>
-  <data name="bunifuFlatButton12.TabIndex" type="System.Int32, mscorlib">
+  <data name="buttonGenerarReporte.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="bunifuFlatButton12.Text" xml:space="preserve">
+  <data name="buttonGenerarReporte.Text" xml:space="preserve">
     <value>Generar reporte</value>
   </data>
-  <data name="&gt;&gt;bunifuFlatButton12.Name" xml:space="preserve">
-    <value>bunifuFlatButton12</value>
+  <data name="&gt;&gt;buttonGenerarReporte.Name" xml:space="preserve">
+    <value>buttonGenerarReporte</value>
   </data>
-  <data name="&gt;&gt;bunifuFlatButton12.Type" xml:space="preserve">
+  <data name="&gt;&gt;buttonGenerarReporte.Type" xml:space="preserve">
     <value>Bunifu.Framework.UI.BunifuFlatButton, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="&gt;&gt;bunifuFlatButton12.Parent" xml:space="preserve">
+  <data name="&gt;&gt;buttonGenerarReporte.Parent" xml:space="preserve">
     <value>tabPage15</value>
   </data>
-  <data name="&gt;&gt;bunifuFlatButton12.ZOrder" xml:space="preserve">
-    <value>6</value>
+  <data name="&gt;&gt;buttonGenerarReporte.ZOrder" xml:space="preserve">
+    <value>9</value>
   </data>
   <data name="tabPage15.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 22</value>
@@ -6342,6 +6465,84 @@
   </data>
   <data name="&gt;&gt;tabPage15.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="labelErrorReporte2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelErrorReporte2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 11.25pt</value>
+  </data>
+  <data name="labelErrorReporte2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelErrorReporte2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>421, 64</value>
+  </data>
+  <data name="labelErrorReporte2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 18</value>
+  </data>
+  <data name="labelErrorReporte2.TabIndex" type="System.Int32, mscorlib">
+    <value>160</value>
+  </data>
+  <data name="labelErrorReporte2.Text" xml:space="preserve">
+    <value>mensaje de error</value>
+  </data>
+  <data name="labelErrorReporte2.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;labelErrorReporte2.Name" xml:space="preserve">
+    <value>labelErrorReporte2</value>
+  </data>
+  <data name="&gt;&gt;labelErrorReporte2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelErrorReporte2.Parent" xml:space="preserve">
+    <value>tabPage16</value>
+  </data>
+  <data name="&gt;&gt;labelErrorReporte2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="dateTimePickerReporte2B.Location" type="System.Drawing.Point, System.Drawing">
+    <value>215, 62</value>
+  </data>
+  <data name="dateTimePickerReporte2B.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 20</value>
+  </data>
+  <data name="dateTimePickerReporte2B.TabIndex" type="System.Int32, mscorlib">
+    <value>159</value>
+  </data>
+  <data name="&gt;&gt;dateTimePickerReporte2B.Name" xml:space="preserve">
+    <value>dateTimePickerReporte2B</value>
+  </data>
+  <data name="&gt;&gt;dateTimePickerReporte2B.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dateTimePickerReporte2B.Parent" xml:space="preserve">
+    <value>tabPage16</value>
+  </data>
+  <data name="&gt;&gt;dateTimePickerReporte2B.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="dateTimePickerReporte2A.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 62</value>
+  </data>
+  <data name="dateTimePickerReporte2A.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 20</value>
+  </data>
+  <data name="dateTimePickerReporte2A.TabIndex" type="System.Int32, mscorlib">
+    <value>158</value>
+  </data>
+  <data name="&gt;&gt;dateTimePickerReporte2A.Name" xml:space="preserve">
+    <value>dateTimePickerReporte2A</value>
+  </data>
+  <data name="&gt;&gt;dateTimePickerReporte2A.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dateTimePickerReporte2A.Parent" xml:space="preserve">
+    <value>tabPage16</value>
+  </data>
+  <data name="&gt;&gt;dateTimePickerReporte2A.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="DataGridReporteProducto2.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 3</value>
@@ -6541,8 +6742,104 @@
   <data name="&gt;&gt;tabPage20.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="DataGridReporteDepartamentoAlmacen2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="DataGridReporteDepartamentoAlmacen2.RowHeadersWidth" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
+  <data name="DataGridReporteDepartamentoAlmacen2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1060, 397</value>
+  </data>
+  <data name="DataGridReporteDepartamentoAlmacen2.TabIndex" type="System.Int32, mscorlib">
+    <value>144</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporteDepartamentoAlmacen2.Name" xml:space="preserve">
+    <value>DataGridReporteDepartamentoAlmacen2</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporteDepartamentoAlmacen2.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuCustomDataGrid, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporteDepartamentoAlmacen2.Parent" xml:space="preserve">
+    <value>tabPage23</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporteDepartamentoAlmacen2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tabPage23.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="tabPage23.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1094, 421</value>
+  </data>
+  <data name="tabPage23.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="tabPage23.Text" xml:space="preserve">
+    <value>ventar por departameno de cada almacen</value>
+  </data>
+  <data name="&gt;&gt;tabPage23.Name" xml:space="preserve">
+    <value>tabPage23</value>
+  </data>
+  <data name="&gt;&gt;tabPage23.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage23.Parent" xml:space="preserve">
+    <value>tabControl6</value>
+  </data>
+  <data name="&gt;&gt;tabPage23.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="DataGridReporteVentaCajeros2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="DataGridReporteVentaCajeros2.RowHeadersWidth" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
+  <data name="DataGridReporteVentaCajeros2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1060, 397</value>
+  </data>
+  <data name="DataGridReporteVentaCajeros2.TabIndex" type="System.Int32, mscorlib">
+    <value>144</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporteVentaCajeros2.Name" xml:space="preserve">
+    <value>DataGridReporteVentaCajeros2</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporteVentaCajeros2.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuCustomDataGrid, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporteVentaCajeros2.Parent" xml:space="preserve">
+    <value>tabPage21</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporteVentaCajeros2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tabPage21.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="tabPage21.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1094, 421</value>
+  </data>
+  <data name="tabPage21.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="tabPage21.Text" xml:space="preserve">
+    <value>Venta por cajeros</value>
+  </data>
+  <data name="&gt;&gt;tabPage21.Name" xml:space="preserve">
+    <value>tabPage21</value>
+  </data>
+  <data name="&gt;&gt;tabPage21.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage21.Parent" xml:space="preserve">
+    <value>tabControl6</value>
+  </data>
+  <data name="&gt;&gt;tabPage21.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
   <data name="tabControl6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 191</value>
+    <value>9, 224</value>
   </data>
   <data name="tabControl6.Size" type="System.Drawing.Size, System.Drawing">
     <value>1102, 447</value>
@@ -6560,7 +6857,7 @@
     <value>tabPage16</value>
   </data>
   <data name="&gt;&gt;tabControl6.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>3</value>
   </data>
   <data name="labelReporteGanancias2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -6572,7 +6869,7 @@
     <value>NoControl</value>
   </data>
   <data name="labelReporteGanancias2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 92</value>
+    <value>5, 125</value>
   </data>
   <data name="labelReporteGanancias2.Size" type="System.Drawing.Size, System.Drawing">
     <value>360, 24</value>
@@ -6593,7 +6890,7 @@
     <value>tabPage16</value>
   </data>
   <data name="&gt;&gt;labelReporteGanancias2.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>4</value>
   </data>
   <data name="labelReporteGastos2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -6605,7 +6902,7 @@
     <value>NoControl</value>
   </data>
   <data name="labelReporteGastos2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 164</value>
+    <value>5, 197</value>
   </data>
   <data name="labelReporteGastos2.Size" type="System.Drawing.Size, System.Drawing">
     <value>67, 24</value>
@@ -6626,7 +6923,7 @@
     <value>tabPage16</value>
   </data>
   <data name="&gt;&gt;labelReporteGastos2.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>5</value>
   </data>
   <data name="labelReporteEfectivo2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -6638,7 +6935,7 @@
     <value>NoControl</value>
   </data>
   <data name="labelReporteEfectivo2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 140</value>
+    <value>5, 173</value>
   </data>
   <data name="labelReporteEfectivo2.Size" type="System.Drawing.Size, System.Drawing">
     <value>164, 24</value>
@@ -6659,7 +6956,7 @@
     <value>tabPage16</value>
   </data>
   <data name="&gt;&gt;labelReporteEfectivo2.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>6</value>
   </data>
   <data name="labelReporteCredito2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -6671,7 +6968,7 @@
     <value>NoControl</value>
   </data>
   <data name="labelReporteCredito2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 116</value>
+    <value>5, 149</value>
   </data>
   <data name="labelReporteCredito2.Size" type="System.Drawing.Size, System.Drawing">
     <value>244, 24</value>
@@ -6692,7 +6989,7 @@
     <value>tabPage16</value>
   </data>
   <data name="&gt;&gt;labelReporteCredito2.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>7</value>
   </data>
   <data name="labelReporte2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -6704,7 +7001,7 @@
     <value>NoControl</value>
   </data>
   <data name="labelReporte2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 68</value>
+    <value>5, 101</value>
   </data>
   <data name="labelReporte2.Size" type="System.Drawing.Size, System.Drawing">
     <value>415, 24</value>
@@ -6725,7 +7022,7 @@
     <value>tabPage16</value>
   </data>
   <data name="&gt;&gt;labelReporte2.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>8</value>
   </data>
   <data name="bunifuFlatButton20.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -6794,10 +7091,10 @@
 </value>
   </data>
   <data name="bunifuFlatButton20.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 17</value>
+    <value>6, 6</value>
   </data>
   <data name="bunifuFlatButton20.Size" type="System.Drawing.Size, System.Drawing">
-    <value>241, 48</value>
+    <value>409, 50</value>
   </data>
   <data name="bunifuFlatButton20.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -6815,7 +7112,7 @@
     <value>tabPage16</value>
   </data>
   <data name="&gt;&gt;bunifuFlatButton20.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>9</value>
   </data>
   <data name="tabPage16.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 22</value>
@@ -6845,7 +7142,7 @@
     <value>1</value>
   </data>
   <data name="tabControl4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 16</value>
+    <value>12, 29</value>
   </data>
   <data name="tabControl4.Size" type="System.Drawing.Size, System.Drawing">
     <value>1212, 690</value>
