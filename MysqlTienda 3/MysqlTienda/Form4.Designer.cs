@@ -56,13 +56,14 @@
             this.bunifuFlatButton2.IconVisible = true;
             this.bunifuFlatButton2.IconZoom = 90D;
             this.bunifuFlatButton2.IsTab = false;
-            this.bunifuFlatButton2.Location = new System.Drawing.Point(211, 73);
+            this.bunifuFlatButton2.Location = new System.Drawing.Point(281, 90);
+            this.bunifuFlatButton2.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.bunifuFlatButton2.Name = "bunifuFlatButton2";
             this.bunifuFlatButton2.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
             this.bunifuFlatButton2.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
             this.bunifuFlatButton2.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton2.selected = false;
-            this.bunifuFlatButton2.Size = new System.Drawing.Size(241, 48);
+            this.bunifuFlatButton2.Size = new System.Drawing.Size(321, 59);
             this.bunifuFlatButton2.TabIndex = 1;
             this.bunifuFlatButton2.Text = "Personalizado";
             this.bunifuFlatButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -90,13 +91,14 @@
             this.bunifuFlatButton1.IconVisible = true;
             this.bunifuFlatButton1.IconZoom = 90D;
             this.bunifuFlatButton1.IsTab = false;
-            this.bunifuFlatButton1.Location = new System.Drawing.Point(211, 19);
+            this.bunifuFlatButton1.Location = new System.Drawing.Point(281, 23);
+            this.bunifuFlatButton1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.bunifuFlatButton1.Name = "bunifuFlatButton1";
             this.bunifuFlatButton1.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
             this.bunifuFlatButton1.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
             this.bunifuFlatButton1.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton1.selected = false;
-            this.bunifuFlatButton1.Size = new System.Drawing.Size(241, 48);
+            this.bunifuFlatButton1.Size = new System.Drawing.Size(321, 59);
             this.bunifuFlatButton1.TabIndex = 0;
             this.bunifuFlatButton1.Text = "Día actual";
             this.bunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -110,9 +112,10 @@
             this.bunifuDatepicker1.ForeColor = System.Drawing.Color.White;
             this.bunifuDatepicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.bunifuDatepicker1.FormatCustom = null;
-            this.bunifuDatepicker1.Location = new System.Drawing.Point(12, 152);
+            this.bunifuDatepicker1.Location = new System.Drawing.Point(16, 187);
+            this.bunifuDatepicker1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.bunifuDatepicker1.Name = "bunifuDatepicker1";
-            this.bunifuDatepicker1.Size = new System.Drawing.Size(303, 36);
+            this.bunifuDatepicker1.Size = new System.Drawing.Size(404, 44);
             this.bunifuDatepicker1.TabIndex = 2;
             this.bunifuDatepicker1.Value = new System.DateTime(2019, 12, 22, 19, 7, 51, 52);
             // 
@@ -123,21 +126,23 @@
             this.bunifuDatepicker2.ForeColor = System.Drawing.Color.White;
             this.bunifuDatepicker2.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.bunifuDatepicker2.FormatCustom = null;
-            this.bunifuDatepicker2.Location = new System.Drawing.Point(333, 152);
+            this.bunifuDatepicker2.Location = new System.Drawing.Point(444, 187);
+            this.bunifuDatepicker2.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.bunifuDatepicker2.Name = "bunifuDatepicker2";
-            this.bunifuDatepicker2.Size = new System.Drawing.Size(303, 36);
+            this.bunifuDatepicker2.Size = new System.Drawing.Size(404, 44);
             this.bunifuDatepicker2.TabIndex = 3;
             this.bunifuDatepicker2.Value = new System.DateTime(2019, 12, 22, 19, 7, 51, 52);
             // 
             // Form4
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(663, 203);
+            this.ClientSize = new System.Drawing.Size(885, 250);
             this.Controls.Add(this.bunifuDatepicker2);
             this.Controls.Add(this.bunifuDatepicker1);
             this.Controls.Add(this.bunifuFlatButton2);
             this.Controls.Add(this.bunifuFlatButton1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form4";
             this.Text = "Form4";
             this.ResumeLayout(false);

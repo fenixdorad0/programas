@@ -638,7 +638,9 @@ namespace MysqlTienda
             }
             catch (Exception error)
             {
+                /*
                 MessageBox.Show(Convert.ToString(error));
+                */
             }
 
         }
@@ -1716,7 +1718,7 @@ namespace MysqlTienda
                     cmd.CommandType = System.Data.CommandType.Text;
                     cmd.Connection = conectar;
                     conectar.Open();
-                    labelReporte1.Text = "las ventas del día de hoy fueron: $" + Convert.ToString(cmd.ExecuteScalar());
+                    labelReporte1.Text = "las ventas del día de hoy fueron:" + (Convert.ToDouble(cmd.ExecuteScalar())).ToString("C");
                     double ventas = Convert.ToDouble(cmd.ExecuteScalar());
                     conectar.Close();
 
@@ -1730,7 +1732,7 @@ namespace MysqlTienda
                     double costo = Convert.ToDouble(cmd2.ExecuteScalar());
                     conectar.Close();
 
-                    labelReporteGanancias.Text = "Las ganancias fueron: $" + (ventas - costo) + " Que representan una utilidad de: " + Convert.ToString(Math.Round((1 - (costo / ventas)) * 100, 2)) + "%";
+                    labelReporteGanancias.Text = "Las ganancias fueron: " + (ventas - costo).ToString("C") + " Que representan una utilidad de: " + Convert.ToString(Math.Round((1 - (costo / ventas)) * 100, 2)) + "%";
 
 
                 }
@@ -1951,6 +1953,62 @@ namespace MysqlTienda
                 {
                     MessageBox.Show(error.Message + "datrid reportes venta por departamento de cada almacen");
                 }
+                // chart ventas por día
+                try
+                {
+                    int contador = 0;
+                    cerrarConeccion();
+                    abrirConeccion();
+                    MySqlCommand cmd = conectar.CreateCommand();
+                    cmd.CommandText = "SELECT fecha,SUM(total) as 'totalpordia' from easyerp.factura_movimiento GROUP BY day(fecha)";
+                    MySqlDataReader reader;
+                    reader = cmd.ExecuteReader();
+                    while (reader.Read())
+                    {
+                        contador++;
+                        //chart1.Series["ventas"].Label = (reader.GetDouble("totalpordia").ToString("C"));
+                        chart1.Series["ventas"].Points.AddXY(contador, reader.GetDouble("totalpordia"));
+                        
+                    }
+                    cerrarConeccion();
+                }
+                catch (Exception error)
+                {
+                    MessageBox.Show("error en las graficas " + Convert.ToString(error));
+                    cerrarConeccion();
+                }
+                //ventas por dia filtrado pro almacenes
+                try
+                {
+                    cerrarConeccion();
+                    //string selectQuery = "SELECT producto, sum(cantidad) as 'cantidad vendida' ,sum(total) as 'total vendido',(sum(total) - sum(costoTotal)) as 'ganancia',(1-(sum(costoTotal) / sum(total))) as 'ganancia porcentual' from easyerp.detalle_facturacov WHERE almacen_nombre = '" + comboBox1.Text + "' and fecha BETWEEN '" + fechaHoy + " 00:00:00' AND '" + fechaHoy + " 23:59:59' GROUP by producto ";
+                    string selectQuery = "SELECT fecha,SUM(total) as 'total por día',almacen_nombre from easyerp.factura_movimiento GROUP BY day(fecha),almacen_nombre";
+                    DataTable table = new DataTable();
+                    MySqlDataAdapter adpter = new MySqlDataAdapter(selectQuery, conectar);
+                    adpter.Fill(table);
+                    DataGridReporteVentaDia2.DataSource = table;
+                    cerrarConeccion();
+                }
+                catch (Exception error)
+                {
+                    MessageBox.Show(error.Message + "ventas por día reporte 2");
+                }
+                //Ventas por día 
+                try
+                {
+                    cerrarConeccion();
+                    //string selectQuery = "SELECT producto, sum(cantidad) as 'cantidad vendida' ,sum(total) as 'total vendido',(sum(total) - sum(costoTotal)) as 'ganancia',(1-(sum(costoTotal) / sum(total))) as 'ganancia porcentual' from easyerp.detalle_facturacov WHERE almacen_nombre = '" + comboBox1.Text + "' and fecha BETWEEN '" + fechaHoy + " 00:00:00' AND '" + fechaHoy + " 23:59:59' GROUP by producto ";
+                    string selectQuery = "SELECT fecha,SUM(total) as 'total por día' from easyerp.factura_movimiento GROUP BY day(fecha)";
+                    DataTable table = new DataTable();
+                    MySqlDataAdapter adpter = new MySqlDataAdapter(selectQuery, conectar);
+                    adpter.Fill(table);
+                    DataGridReporteVentaDiaR2.DataSource = table;
+                    cerrarConeccion();
+                }
+                catch (Exception error)
+                {
+                    MessageBox.Show(error.Message + "ventas por día reporte 2");
+                }
             }
             else
             {
@@ -1981,6 +2039,31 @@ namespace MysqlTienda
             {
                 MessageBox.Show(Convert.ToString(error));
             }
+        }
+
+        private void bunifuFlatButton12_Click_2(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void bunifuFlatButton12_Click_3(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void dateTimePickerReporte2A_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dateTimePickerReporte2B_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            //chart1.Series["ventas"].ChartType = ColumnStyle;
         }
     }
 

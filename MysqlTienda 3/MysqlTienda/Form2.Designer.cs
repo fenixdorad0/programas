@@ -66,10 +66,11 @@
             this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(192)))), ((int)(((byte)(206)))));
             this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(111)))), ((int)(((byte)(182)))));
             this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(60)))), ((int)(((byte)(166)))));
-            this.bunifuGradientPanel1.Location = new System.Drawing.Point(12, 12);
+            this.bunifuGradientPanel1.Location = new System.Drawing.Point(16, 15);
+            this.bunifuGradientPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
             this.bunifuGradientPanel1.Quality = 10;
-            this.bunifuGradientPanel1.Size = new System.Drawing.Size(1276, 432);
+            this.bunifuGradientPanel1.Size = new System.Drawing.Size(1701, 532);
             this.bunifuGradientPanel1.TabIndex = 8;
             // 
             // panel1
@@ -90,9 +91,10 @@
             this.panel1.Controls.Add(this.ButtonApartado);
             this.panel1.Controls.Add(this.ButtonCredito);
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(419, 432);
-            this.panel1.TabIndex = 5;
+            this.panel1.Size = new System.Drawing.Size(559, 532);
+            this.panel1.TabIndex = 0;
             // 
             // TextboxApartado
             // 
@@ -105,11 +107,11 @@
             this.TextboxApartado.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.TextboxApartado.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.TextboxApartado.isPassword = false;
-            this.TextboxApartado.Location = new System.Drawing.Point(178, 267);
-            this.TextboxApartado.Margin = new System.Windows.Forms.Padding(4);
+            this.TextboxApartado.Location = new System.Drawing.Point(237, 329);
+            this.TextboxApartado.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.TextboxApartado.Name = "TextboxApartado";
-            this.TextboxApartado.Size = new System.Drawing.Size(237, 48);
-            this.TextboxApartado.TabIndex = 14;
+            this.TextboxApartado.Size = new System.Drawing.Size(316, 59);
+            this.TextboxApartado.TabIndex = 11;
             this.TextboxApartado.Text = "0";
             this.TextboxApartado.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.TextboxApartado.Visible = false;
@@ -136,14 +138,14 @@
             this.Button.IconVisible = true;
             this.Button.IconZoom = 90D;
             this.Button.IsTab = false;
-            this.Button.Location = new System.Drawing.Point(17, 323);
-            this.Button.Margin = new System.Windows.Forms.Padding(4);
+            this.Button.Location = new System.Drawing.Point(23, 398);
+            this.Button.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.Button.Name = "Button";
             this.Button.Normalcolor = System.Drawing.Color.DodgerBlue;
             this.Button.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
             this.Button.OnHoverTextColor = System.Drawing.Color.White;
             this.Button.selected = false;
-            this.Button.Size = new System.Drawing.Size(153, 48);
+            this.Button.Size = new System.Drawing.Size(204, 59);
             this.Button.TabIndex = 13;
             this.Button.Text = "COTIZACION";
             this.Button.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -162,11 +164,11 @@
             this.TextboxQR.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.TextboxQR.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.TextboxQR.isPassword = false;
-            this.TextboxQR.Location = new System.Drawing.Point(178, 209);
-            this.TextboxQR.Margin = new System.Windows.Forms.Padding(4);
+            this.TextboxQR.Location = new System.Drawing.Point(237, 257);
+            this.TextboxQR.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.TextboxQR.Name = "TextboxQR";
-            this.TextboxQR.Size = new System.Drawing.Size(237, 48);
-            this.TextboxQR.TabIndex = 10;
+            this.TextboxQR.Size = new System.Drawing.Size(316, 59);
+            this.TextboxQR.TabIndex = 9;
             this.TextboxQR.Text = "0";
             this.TextboxQR.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.TextboxQR.Visible = false;
@@ -183,11 +185,11 @@
             this.TextboxCredito.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.TextboxCredito.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.TextboxCredito.isPassword = false;
-            this.TextboxCredito.Location = new System.Drawing.Point(178, 155);
-            this.TextboxCredito.Margin = new System.Windows.Forms.Padding(4);
+            this.TextboxCredito.Location = new System.Drawing.Point(237, 191);
+            this.TextboxCredito.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.TextboxCredito.Name = "TextboxCredito";
-            this.TextboxCredito.Size = new System.Drawing.Size(237, 48);
-            this.TextboxCredito.TabIndex = 9;
+            this.TextboxCredito.Size = new System.Drawing.Size(316, 59);
+            this.TextboxCredito.TabIndex = 7;
             this.TextboxCredito.Text = "0";
             this.TextboxCredito.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.TextboxCredito.Visible = false;
@@ -204,11 +206,11 @@
             this.TextboxEfectivo.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.TextboxEfectivo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.TextboxEfectivo.isPassword = false;
-            this.TextboxEfectivo.Location = new System.Drawing.Point(178, 47);
-            this.TextboxEfectivo.Margin = new System.Windows.Forms.Padding(4);
+            this.TextboxEfectivo.Location = new System.Drawing.Point(237, 58);
+            this.TextboxEfectivo.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.TextboxEfectivo.Name = "TextboxEfectivo";
-            this.TextboxEfectivo.Size = new System.Drawing.Size(237, 48);
-            this.TextboxEfectivo.TabIndex = 8;
+            this.TextboxEfectivo.Size = new System.Drawing.Size(316, 59);
+            this.TextboxEfectivo.TabIndex = 3;
             this.TextboxEfectivo.Text = "0";
             this.TextboxEfectivo.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.TextboxEfectivo.Visible = false;
@@ -225,11 +227,11 @@
             this.TextboxDatafono.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.TextboxDatafono.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.TextboxDatafono.isPassword = false;
-            this.TextboxDatafono.Location = new System.Drawing.Point(178, 99);
-            this.TextboxDatafono.Margin = new System.Windows.Forms.Padding(4);
+            this.TextboxDatafono.Location = new System.Drawing.Point(237, 122);
+            this.TextboxDatafono.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.TextboxDatafono.Name = "TextboxDatafono";
-            this.TextboxDatafono.Size = new System.Drawing.Size(237, 48);
-            this.TextboxDatafono.TabIndex = 7;
+            this.TextboxDatafono.Size = new System.Drawing.Size(316, 59);
+            this.TextboxDatafono.TabIndex = 5;
             this.TextboxDatafono.Text = "0";
             this.TextboxDatafono.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.TextboxDatafono.Visible = false;
@@ -256,15 +258,15 @@
             this.ButtonQR.IconVisible = true;
             this.ButtonQR.IconZoom = 90D;
             this.ButtonQR.IsTab = false;
-            this.ButtonQR.Location = new System.Drawing.Point(17, 211);
-            this.ButtonQR.Margin = new System.Windows.Forms.Padding(4);
+            this.ButtonQR.Location = new System.Drawing.Point(23, 260);
+            this.ButtonQR.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.ButtonQR.Name = "ButtonQR";
             this.ButtonQR.Normalcolor = System.Drawing.Color.DodgerBlue;
             this.ButtonQR.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
             this.ButtonQR.OnHoverTextColor = System.Drawing.Color.White;
             this.ButtonQR.selected = false;
-            this.ButtonQR.Size = new System.Drawing.Size(153, 48);
-            this.ButtonQR.TabIndex = 6;
+            this.ButtonQR.Size = new System.Drawing.Size(204, 59);
+            this.ButtonQR.TabIndex = 8;
             this.ButtonQR.Text = "QR";
             this.ButtonQR.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.ButtonQR.Textcolor = System.Drawing.Color.White;
@@ -275,7 +277,8 @@
             // 
             this.labelPagoCon.AutoSize = true;
             this.labelPagoCon.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPagoCon.Location = new System.Drawing.Point(31, 395);
+            this.labelPagoCon.Location = new System.Drawing.Point(41, 486);
+            this.labelPagoCon.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelPagoCon.Name = "labelPagoCon";
             this.labelPagoCon.Size = new System.Drawing.Size(91, 24);
             this.labelPagoCon.TabIndex = 7;
@@ -285,10 +288,11 @@
             // 
             this.labelPago.AutoSize = true;
             this.labelPago.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPago.Location = new System.Drawing.Point(21, 10);
+            this.labelPago.Location = new System.Drawing.Point(28, 12);
+            this.labelPago.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelPago.Name = "labelPago";
             this.labelPago.Size = new System.Drawing.Size(149, 24);
-            this.labelPago.TabIndex = 5;
+            this.labelPago.TabIndex = 1;
             this.labelPago.Text = "Método de pago";
             // 
             // TextboxPago
@@ -302,10 +306,10 @@
             this.TextboxPago.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TextboxPago.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.TextboxPago.isPassword = false;
-            this.TextboxPago.Location = new System.Drawing.Point(177, 379);
-            this.TextboxPago.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.TextboxPago.Location = new System.Drawing.Point(236, 466);
+            this.TextboxPago.Margin = new System.Windows.Forms.Padding(8, 6, 8, 6);
             this.TextboxPago.Name = "TextboxPago";
-            this.TextboxPago.Size = new System.Drawing.Size(236, 48);
+            this.TextboxPago.Size = new System.Drawing.Size(315, 59);
             this.TextboxPago.TabIndex = 84;
             this.TextboxPago.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.TextboxPago.OnValueChanged += new System.EventHandler(this.TextboxPago_OnValueChanged);
@@ -331,15 +335,15 @@
             this.ButtonEfectivo.IconVisible = true;
             this.ButtonEfectivo.IconZoom = 90D;
             this.ButtonEfectivo.IsTab = false;
-            this.ButtonEfectivo.Location = new System.Drawing.Point(17, 47);
-            this.ButtonEfectivo.Margin = new System.Windows.Forms.Padding(4);
+            this.ButtonEfectivo.Location = new System.Drawing.Point(23, 58);
+            this.ButtonEfectivo.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.ButtonEfectivo.Name = "ButtonEfectivo";
             this.ButtonEfectivo.Normalcolor = System.Drawing.Color.DodgerBlue;
             this.ButtonEfectivo.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
             this.ButtonEfectivo.OnHoverTextColor = System.Drawing.Color.White;
             this.ButtonEfectivo.selected = false;
-            this.ButtonEfectivo.Size = new System.Drawing.Size(153, 48);
-            this.ButtonEfectivo.TabIndex = 4;
+            this.ButtonEfectivo.Size = new System.Drawing.Size(204, 59);
+            this.ButtonEfectivo.TabIndex = 2;
             this.ButtonEfectivo.Text = "EFECTIVO";
             this.ButtonEfectivo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.ButtonEfectivo.Textcolor = System.Drawing.Color.White;
@@ -367,14 +371,14 @@
             this.ButtonDatafono.IconVisible = true;
             this.ButtonDatafono.IconZoom = 90D;
             this.ButtonDatafono.IsTab = false;
-            this.ButtonDatafono.Location = new System.Drawing.Point(17, 99);
-            this.ButtonDatafono.Margin = new System.Windows.Forms.Padding(4);
+            this.ButtonDatafono.Location = new System.Drawing.Point(23, 122);
+            this.ButtonDatafono.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.ButtonDatafono.Name = "ButtonDatafono";
             this.ButtonDatafono.Normalcolor = System.Drawing.Color.DodgerBlue;
             this.ButtonDatafono.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
             this.ButtonDatafono.OnHoverTextColor = System.Drawing.Color.White;
             this.ButtonDatafono.selected = false;
-            this.ButtonDatafono.Size = new System.Drawing.Size(153, 48);
+            this.ButtonDatafono.Size = new System.Drawing.Size(204, 59);
             this.ButtonDatafono.TabIndex = 4;
             this.ButtonDatafono.Text = "DATAFONO";
             this.ButtonDatafono.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -403,15 +407,15 @@
             this.ButtonApartado.IconVisible = true;
             this.ButtonApartado.IconZoom = 90D;
             this.ButtonApartado.IsTab = false;
-            this.ButtonApartado.Location = new System.Drawing.Point(17, 267);
-            this.ButtonApartado.Margin = new System.Windows.Forms.Padding(4);
+            this.ButtonApartado.Location = new System.Drawing.Point(23, 329);
+            this.ButtonApartado.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.ButtonApartado.Name = "ButtonApartado";
             this.ButtonApartado.Normalcolor = System.Drawing.Color.DodgerBlue;
             this.ButtonApartado.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
             this.ButtonApartado.OnHoverTextColor = System.Drawing.Color.White;
             this.ButtonApartado.selected = false;
-            this.ButtonApartado.Size = new System.Drawing.Size(153, 48);
-            this.ButtonApartado.TabIndex = 4;
+            this.ButtonApartado.Size = new System.Drawing.Size(204, 59);
+            this.ButtonApartado.TabIndex = 10;
             this.ButtonApartado.Text = "APARTADO";
             this.ButtonApartado.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.ButtonApartado.Textcolor = System.Drawing.Color.White;
@@ -439,15 +443,15 @@
             this.ButtonCredito.IconVisible = true;
             this.ButtonCredito.IconZoom = 90D;
             this.ButtonCredito.IsTab = false;
-            this.ButtonCredito.Location = new System.Drawing.Point(17, 155);
-            this.ButtonCredito.Margin = new System.Windows.Forms.Padding(4);
+            this.ButtonCredito.Location = new System.Drawing.Point(23, 191);
+            this.ButtonCredito.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.ButtonCredito.Name = "ButtonCredito";
             this.ButtonCredito.Normalcolor = System.Drawing.Color.DodgerBlue;
             this.ButtonCredito.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
             this.ButtonCredito.OnHoverTextColor = System.Drawing.Color.White;
             this.ButtonCredito.selected = false;
-            this.ButtonCredito.Size = new System.Drawing.Size(153, 48);
-            this.ButtonCredito.TabIndex = 4;
+            this.ButtonCredito.Size = new System.Drawing.Size(204, 59);
+            this.ButtonCredito.TabIndex = 6;
             this.ButtonCredito.Text = "CREDITO";
             this.ButtonCredito.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.ButtonCredito.Textcolor = System.Drawing.Color.White;
@@ -462,16 +466,18 @@
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.TextboxCambio);
             this.panel2.Controls.Add(this.labelTotal);
-            this.panel2.Location = new System.Drawing.Point(439, 20);
+            this.panel2.Location = new System.Drawing.Point(585, 25);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(787, 404);
+            this.panel2.Size = new System.Drawing.Size(1049, 497);
             this.panel2.TabIndex = 6;
             // 
             // labelFactura2
             // 
             this.labelFactura2.AutoSize = true;
             this.labelFactura2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelFactura2.Location = new System.Drawing.Point(15, 17);
+            this.labelFactura2.Location = new System.Drawing.Point(20, 21);
+            this.labelFactura2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelFactura2.Name = "labelFactura2";
             this.labelFactura2.Size = new System.Drawing.Size(93, 29);
             this.labelFactura2.TabIndex = 89;
@@ -495,10 +501,10 @@
             this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.White;
             this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton21.Location = new System.Drawing.Point(891, 358);
-            this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(5);
+            this.bunifuThinButton21.Location = new System.Drawing.Point(1188, 441);
+            this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.bunifuThinButton21.Name = "bunifuThinButton21";
-            this.bunifuThinButton21.Size = new System.Drawing.Size(106, 41);
+            this.bunifuThinButton21.Size = new System.Drawing.Size(141, 50);
             this.bunifuThinButton21.TabIndex = 31;
             this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuThinButton21.Click += new System.EventHandler(this.bunifuThinButton21_Click);
@@ -507,7 +513,8 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(337, 135);
+            this.label2.Location = new System.Drawing.Point(449, 166);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(125, 24);
             this.label2.TabIndex = 87;
@@ -524,10 +531,10 @@
             this.TextboxCambio.Font = new System.Drawing.Font("Century Gothic", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TextboxCambio.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.TextboxCambio.isPassword = false;
-            this.TextboxCambio.Location = new System.Drawing.Point(6, 172);
-            this.TextboxCambio.Margin = new System.Windows.Forms.Padding(15, 13, 15, 13);
+            this.TextboxCambio.Location = new System.Drawing.Point(8, 212);
+            this.TextboxCambio.Margin = new System.Windows.Forms.Padding(20, 16, 20, 16);
             this.TextboxCambio.Name = "TextboxCambio";
-            this.TextboxCambio.Size = new System.Drawing.Size(766, 150);
+            this.TextboxCambio.Size = new System.Drawing.Size(1021, 185);
             this.TextboxCambio.TabIndex = 86;
             this.TextboxCambio.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.TextboxCambio.OnValueChanged += new System.EventHandler(this.TextboxCambio_OnValueChanged);
@@ -536,7 +543,8 @@
             // 
             this.labelTotal.AutoSize = true;
             this.labelTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTotal.Location = new System.Drawing.Point(348, 0);
+            this.labelTotal.Location = new System.Drawing.Point(464, 0);
+            this.labelTotal.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelTotal.Name = "labelTotal";
             this.labelTotal.Size = new System.Drawing.Size(114, 55);
             this.labelTotal.TabIndex = 85;
@@ -544,10 +552,11 @@
             // 
             // Form2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1326, 456);
+            this.ClientSize = new System.Drawing.Size(1768, 561);
             this.Controls.Add(this.bunifuGradientPanel1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form2";
             this.Text = "metodo de pago";
             this.bunifuGradientPanel1.ResumeLayout(false);

@@ -157,8 +157,11 @@
   <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 2</value>
   </data>
+  <data name="pictureBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
   <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>499, 240</value>
+    <value>665, 295</value>
   </data>
   <data name="pictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>StretchImage</value>
@@ -180,10 +183,13 @@
     <value>0</value>
   </data>
   <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>95, 48</value>
+    <value>127, 59</value>
+  </data>
+  <data name="panel2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>507, 225</value>
+    <value>676, 277</value>
   </data>
   <data name="panel2.TabIndex" type="System.Int32, mscorlib">
     <value>91</value>
@@ -207,10 +213,13 @@
     <value>NoControl</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>292, 610</value>
+    <value>389, 751</value>
+  </data>
+  <data name="label1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>124, 13</value>
+    <value>156, 16</value>
   </data>
   <data name="label1.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -237,10 +246,13 @@
     <value>NoControl</value>
   </data>
   <data name="labelVendedor.Location" type="System.Drawing.Point, System.Drawing">
-    <value>107, 694</value>
+    <value>143, 854</value>
+  </data>
+  <data name="labelVendedor.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="labelVendedor.Size" type="System.Drawing.Size, System.Drawing">
-    <value>52, 13</value>
+    <value>66, 16</value>
   </data>
   <data name="labelVendedor.TabIndex" type="System.Int32, mscorlib">
     <value>86</value>
@@ -267,10 +279,13 @@
     <value>NoControl</value>
   </data>
   <data name="labelCedula.Location" type="System.Drawing.Point, System.Drawing">
-    <value>611, 707</value>
+    <value>815, 870</value>
+  </data>
+  <data name="labelCedula.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="labelCedula.Size" type="System.Drawing.Size, System.Drawing">
-    <value>39, 13</value>
+    <value>49, 16</value>
   </data>
   <data name="labelCedula.TabIndex" type="System.Int32, mscorlib">
     <value>89</value>
@@ -300,7 +315,10 @@
     <value>NoControl</value>
   </data>
   <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>316, 337</value>
+    <value>421, 415</value>
+  </data>
+  <data name="label7.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
     <value>76, 25</value>
@@ -377,13 +395,16 @@
     <value>NoControl</value>
   </data>
   <data name="buniTextUsuario.Location" type="System.Drawing.Point, System.Drawing">
-    <value>199, 382</value>
+    <value>265, 470</value>
+  </data>
+  <data name="buniTextUsuario.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="buniTextUsuario.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
     <value>No</value>
   </data>
   <data name="buniTextUsuario.Size" type="System.Drawing.Size, System.Drawing">
-    <value>315, 42</value>
+    <value>420, 52</value>
   </data>
   <data name="buniTextUsuario.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -451,13 +472,16 @@
 </value>
   </data>
   <data name="buniTextPass.Location" type="System.Drawing.Point, System.Drawing">
-    <value>199, 430</value>
+    <value>265, 529</value>
+  </data>
+  <data name="buniTextPass.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="buniTextPass.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
     <value>No</value>
   </data>
   <data name="buniTextPass.Size" type="System.Drawing.Size, System.Drawing">
-    <value>315, 42</value>
+    <value>420, 52</value>
   </data>
   <data name="buniTextPass.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -541,13 +565,16 @@
 </value>
   </data>
   <data name="buniBtnLogin.Location" type="System.Drawing.Point, System.Drawing">
-    <value>199, 478</value>
+    <value>265, 588</value>
+  </data>
+  <data name="buniBtnLogin.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="buniBtnLogin.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
     <value>No</value>
   </data>
   <data name="buniBtnLogin.Size" type="System.Drawing.Size, System.Drawing">
-    <value>315, 39</value>
+    <value>420, 48</value>
   </data>
   <data name="buniBtnLogin.TabIndex" type="System.Int32, mscorlib">
     <value>82</value>
@@ -568,16 +595,19 @@
     <value>7</value>
   </data>
   <data name="comboBox1.ItemHeight" type="System.Int32, mscorlib">
-    <value>13</value>
+    <value>16</value>
   </data>
   <data name="comboBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>199, 523</value>
+    <value>265, 644</value>
+  </data>
+  <data name="comboBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="comboBox1.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
     <value>No</value>
   </data>
   <data name="comboBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>315, 21</value>
+    <value>419, 24</value>
   </data>
   <data name="comboBox1.TabIndex" type="System.Int32, mscorlib">
     <value>84</value>
@@ -595,10 +625,13 @@
     <value>8</value>
   </data>
   <data name="bunifuGradientPanel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>306, 3</value>
+    <value>408, 4</value>
+  </data>
+  <data name="bunifuGradientPanel2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="bunifuGradientPanel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>735, 740</value>
+    <value>980, 911</value>
   </data>
   <data name="bunifuGradientPanel2.TabIndex" type="System.Int32, mscorlib">
     <value>91</value>
@@ -616,13 +649,16 @@
     <value>0</value>
   </data>
   <data name="bunifuGradientPanel3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
+    <value>4, 4</value>
+  </data>
+  <data name="bunifuGradientPanel3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="bunifuGradientPanel3.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
     <value>Yes</value>
   </data>
   <data name="bunifuGradientPanel3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1376, 743</value>
+    <value>1835, 914</value>
   </data>
   <data name="bunifuGradientPanel3.TabIndex" type="System.Int32, mscorlib">
     <value>92</value>
@@ -640,10 +676,13 @@
     <value>0</value>
   </data>
   <data name="tabPage5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
+    <value>4, 25</value>
+  </data>
+  <data name="tabPage5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="tabPage5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1575, 746</value>
+    <value>2103, 921</value>
   </data>
   <data name="tabPage5.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -670,10 +709,13 @@
     <value>NoControl</value>
   </data>
   <data name="labelProductoId.Location" type="System.Drawing.Point, System.Drawing">
-    <value>21, 646</value>
+    <value>28, 795</value>
+  </data>
+  <data name="labelProductoId.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="labelProductoId.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 13</value>
+    <value>19, 16</value>
   </data>
   <data name="labelProductoId.TabIndex" type="System.Int32, mscorlib">
     <value>123</value>
@@ -700,10 +742,13 @@
     <value>NoControl</value>
   </data>
   <data name="label14.Location" type="System.Drawing.Point, System.Drawing">
-    <value>21, 385</value>
+    <value>28, 474</value>
+  </data>
+  <data name="label14.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="label14.Size" type="System.Drawing.Size, System.Drawing">
-    <value>49, 13</value>
+    <value>62, 16</value>
   </data>
   <data name="label14.TabIndex" type="System.Int32, mscorlib">
     <value>122</value>
@@ -730,10 +775,13 @@
     <value>NoControl</value>
   </data>
   <data name="label13.Location" type="System.Drawing.Point, System.Drawing">
-    <value>21, 324</value>
+    <value>28, 399</value>
+  </data>
+  <data name="label13.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
-    <value>33, 13</value>
+    <value>41, 16</value>
   </data>
   <data name="label13.TabIndex" type="System.Int32, mscorlib">
     <value>121</value>
@@ -760,10 +808,13 @@
     <value>NoControl</value>
   </data>
   <data name="label12.Location" type="System.Drawing.Point, System.Drawing">
-    <value>21, 263</value>
+    <value>28, 324</value>
+  </data>
+  <data name="label12.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
-    <value>86, 13</value>
+    <value>111, 16</value>
   </data>
   <data name="label12.TabIndex" type="System.Int32, mscorlib">
     <value>120</value>
@@ -790,10 +841,13 @@
     <value>NoControl</value>
   </data>
   <data name="label11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>21, 200</value>
+    <value>28, 246</value>
+  </data>
+  <data name="label11.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>81, 13</value>
+    <value>103, 16</value>
   </data>
   <data name="label11.TabIndex" type="System.Int32, mscorlib">
     <value>119</value>
@@ -820,10 +874,13 @@
     <value>NoControl</value>
   </data>
   <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>21, 139</value>
+    <value>28, 171</value>
+  </data>
+  <data name="label10.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>59, 13</value>
+    <value>74, 16</value>
   </data>
   <data name="label10.TabIndex" type="System.Int32, mscorlib">
     <value>118</value>
@@ -850,10 +907,13 @@
     <value>NoControl</value>
   </data>
   <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>21, 78</value>
+    <value>28, 96</value>
+  </data>
+  <data name="label9.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 13</value>
+    <value>57, 16</value>
   </data>
   <data name="label9.TabIndex" type="System.Int32, mscorlib">
     <value>117</value>
@@ -880,10 +940,13 @@
     <value>NoControl</value>
   </data>
   <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>21, 17</value>
+    <value>28, 21</value>
+  </data>
+  <data name="label8.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>40, 13</value>
+    <value>52, 16</value>
   </data>
   <data name="label8.TabIndex" type="System.Int32, mscorlib">
     <value>116</value>
@@ -950,10 +1013,13 @@
 </value>
   </data>
   <data name="TextboxCodigoProducto.Location" type="System.Drawing.Point, System.Drawing">
-    <value>18, 33</value>
+    <value>24, 41</value>
+  </data>
+  <data name="TextboxCodigoProducto.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="TextboxCodigoProducto.Size" type="System.Drawing.Size, System.Drawing">
-    <value>230, 42</value>
+    <value>307, 52</value>
   </data>
   <data name="TextboxCodigoProducto.TabIndex" type="System.Int32, mscorlib">
     <value>90</value>
@@ -1037,10 +1103,13 @@
 </value>
   </data>
   <data name="bunifuFlatButton2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>731, 663</value>
+    <value>975, 816</value>
+  </data>
+  <data name="bunifuFlatButton2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="bunifuFlatButton2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 48</value>
+    <value>203, 59</value>
   </data>
   <data name="bunifuFlatButton2.TabIndex" type="System.Int32, mscorlib">
     <value>114</value>
@@ -1061,13 +1130,16 @@
     <value>9</value>
   </data>
   <data name="DataGridProductos.Location" type="System.Drawing.Point, System.Drawing">
-    <value>273, 17</value>
+    <value>364, 21</value>
+  </data>
+  <data name="DataGridProductos.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="DataGridProductos.RowHeadersWidth" type="System.Int32, mscorlib">
     <value>51</value>
   </data>
   <data name="DataGridProductos.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1275, 640</value>
+    <value>1700, 788</value>
   </data>
   <data name="DataGridProductos.TabIndex" type="System.Int32, mscorlib">
     <value>115</value>
@@ -1151,10 +1223,13 @@
 </value>
   </data>
   <data name="bunifuFlatButton3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1205, 663</value>
+    <value>1607, 816</value>
+  </data>
+  <data name="bunifuFlatButton3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="bunifuFlatButton3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 48</value>
+    <value>203, 59</value>
   </data>
   <data name="bunifuFlatButton3.TabIndex" type="System.Int32, mscorlib">
     <value>113</value>
@@ -1241,10 +1316,13 @@
 </value>
   </data>
   <data name="bunifuFlatButton4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1047, 663</value>
+    <value>1396, 816</value>
+  </data>
+  <data name="bunifuFlatButton4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="bunifuFlatButton4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 48</value>
+    <value>203, 59</value>
   </data>
   <data name="bunifuFlatButton4.TabIndex" type="System.Int32, mscorlib">
     <value>112</value>
@@ -1311,10 +1389,13 @@
 </value>
   </data>
   <data name="TextboxNombreProducto.Location" type="System.Drawing.Point, System.Drawing">
-    <value>18, 94</value>
+    <value>24, 116</value>
+  </data>
+  <data name="TextboxNombreProducto.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="TextboxNombreProducto.Size" type="System.Drawing.Size, System.Drawing">
-    <value>230, 42</value>
+    <value>307, 52</value>
   </data>
   <data name="TextboxNombreProducto.TabIndex" type="System.Int32, mscorlib">
     <value>91</value>
@@ -1398,10 +1479,13 @@
 </value>
   </data>
   <data name="bunifuFlatButton5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>889, 663</value>
+    <value>1185, 816</value>
+  </data>
+  <data name="bunifuFlatButton5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="bunifuFlatButton5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 48</value>
+    <value>203, 59</value>
   </data>
   <data name="bunifuFlatButton5.TabIndex" type="System.Int32, mscorlib">
     <value>111</value>
@@ -1468,10 +1552,13 @@
 </value>
   </data>
   <data name="TextboxReferenciaProducto.Location" type="System.Drawing.Point, System.Drawing">
-    <value>18, 155</value>
+    <value>24, 191</value>
+  </data>
+  <data name="TextboxReferenciaProducto.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="TextboxReferenciaProducto.Size" type="System.Drawing.Size, System.Drawing">
-    <value>230, 42</value>
+    <value>307, 52</value>
   </data>
   <data name="TextboxReferenciaProducto.TabIndex" type="System.Int32, mscorlib">
     <value>92</value>
@@ -1535,10 +1622,13 @@
 </value>
   </data>
   <data name="TextboxDetalProducto.Location" type="System.Drawing.Point, System.Drawing">
-    <value>18, 216</value>
+    <value>24, 266</value>
+  </data>
+  <data name="TextboxDetalProducto.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="TextboxDetalProducto.Size" type="System.Drawing.Size, System.Drawing">
-    <value>230, 42</value>
+    <value>307, 52</value>
   </data>
   <data name="TextboxDetalProducto.TabIndex" type="System.Int32, mscorlib">
     <value>93</value>
@@ -1602,10 +1692,13 @@
 </value>
   </data>
   <data name="TextboxMayorProducto.Location" type="System.Drawing.Point, System.Drawing">
-    <value>18, 279</value>
+    <value>24, 343</value>
+  </data>
+  <data name="TextboxMayorProducto.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="TextboxMayorProducto.Size" type="System.Drawing.Size, System.Drawing">
-    <value>230, 42</value>
+    <value>307, 52</value>
   </data>
   <data name="TextboxMayorProducto.TabIndex" type="System.Int32, mscorlib">
     <value>94</value>
@@ -1669,10 +1762,13 @@
 </value>
   </data>
   <data name="TextboxCostoProducto.Location" type="System.Drawing.Point, System.Drawing">
-    <value>18, 340</value>
+    <value>24, 418</value>
+  </data>
+  <data name="TextboxCostoProducto.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="TextboxCostoProducto.Size" type="System.Drawing.Size, System.Drawing">
-    <value>230, 42</value>
+    <value>307, 52</value>
   </data>
   <data name="TextboxCostoProducto.TabIndex" type="System.Int32, mscorlib">
     <value>95</value>
@@ -1696,10 +1792,13 @@
     <value>NoControl</value>
   </data>
   <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 606</value>
+    <value>20, 746</value>
+  </data>
+  <data name="label6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>46, 13</value>
+    <value>59, 16</value>
   </data>
   <data name="label6.TabIndex" type="System.Int32, mscorlib">
     <value>110</value>
@@ -1766,10 +1865,13 @@
 </value>
   </data>
   <data name="TextboxCantidadProducto.Location" type="System.Drawing.Point, System.Drawing">
-    <value>18, 402</value>
+    <value>24, 495</value>
+  </data>
+  <data name="TextboxCantidadProducto.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="TextboxCantidadProducto.Size" type="System.Drawing.Size, System.Drawing">
-    <value>230, 42</value>
+    <value>307, 52</value>
   </data>
   <data name="TextboxCantidadProducto.TabIndex" type="System.Int32, mscorlib">
     <value>96</value>
@@ -1787,13 +1889,16 @@
     <value>20</value>
   </data>
   <data name="comboBoxTamanoProducto.ItemHeight" type="System.Int32, mscorlib">
-    <value>13</value>
+    <value>16</value>
   </data>
   <data name="comboBoxTamanoProducto.Location" type="System.Drawing.Point, System.Drawing">
-    <value>18, 622</value>
+    <value>24, 766</value>
+  </data>
+  <data name="comboBoxTamanoProducto.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="comboBoxTamanoProducto.Size" type="System.Drawing.Size, System.Drawing">
-    <value>230, 21</value>
+    <value>305, 24</value>
   </data>
   <data name="comboBoxTamanoProducto.TabIndex" type="System.Int32, mscorlib">
     <value>109</value>
@@ -1811,7 +1916,7 @@
     <value>21</value>
   </data>
   <data name="comboBoxIvaProducto.ItemHeight" type="System.Int32, mscorlib">
-    <value>13</value>
+    <value>16</value>
   </data>
   <data name="comboBoxIvaProducto.Items" xml:space="preserve">
     <value>SI</value>
@@ -1820,10 +1925,13 @@
     <value>NO</value>
   </data>
   <data name="comboBoxIvaProducto.Location" type="System.Drawing.Point, System.Drawing">
-    <value>18, 463</value>
+    <value>24, 570</value>
+  </data>
+  <data name="comboBoxIvaProducto.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="comboBoxIvaProducto.Size" type="System.Drawing.Size, System.Drawing">
-    <value>230, 21</value>
+    <value>305, 24</value>
   </data>
   <data name="comboBoxIvaProducto.TabIndex" type="System.Int32, mscorlib">
     <value>90</value>
@@ -1847,10 +1955,13 @@
     <value>NoControl</value>
   </data>
   <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 566</value>
+    <value>20, 697</value>
+  </data>
+  <data name="label5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>104, 13</value>
+    <value>134, 16</value>
   </data>
   <data name="label5.TabIndex" type="System.Int32, mscorlib">
     <value>108</value>
@@ -1877,10 +1988,13 @@
     <value>NoControl</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 447</value>
+    <value>20, 550</value>
+  </data>
+  <data name="label2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>57, 13</value>
+    <value>71, 16</value>
   </data>
   <data name="label2.TabIndex" type="System.Int32, mscorlib">
     <value>102</value>
@@ -1901,13 +2015,16 @@
     <value>24</value>
   </data>
   <data name="comboBoxAlmacenProducto.ItemHeight" type="System.Int32, mscorlib">
-    <value>13</value>
+    <value>16</value>
   </data>
   <data name="comboBoxAlmacenProducto.Location" type="System.Drawing.Point, System.Drawing">
-    <value>18, 582</value>
+    <value>24, 716</value>
+  </data>
+  <data name="comboBoxAlmacenProducto.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="comboBoxAlmacenProducto.Size" type="System.Drawing.Size, System.Drawing">
-    <value>230, 21</value>
+    <value>305, 24</value>
   </data>
   <data name="comboBoxAlmacenProducto.TabIndex" type="System.Int32, mscorlib">
     <value>107</value>
@@ -1925,10 +2042,13 @@
     <value>25</value>
   </data>
   <data name="comboBoxFechaProducto.Location" type="System.Drawing.Point, System.Drawing">
-    <value>18, 503</value>
+    <value>24, 619</value>
+  </data>
+  <data name="comboBoxFechaProducto.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="comboBoxFechaProducto.Size" type="System.Drawing.Size, System.Drawing">
-    <value>230, 20</value>
+    <value>305, 22</value>
   </data>
   <data name="comboBoxFechaProducto.TabIndex" type="System.Int32, mscorlib">
     <value>103</value>
@@ -1952,10 +2072,13 @@
     <value>NoControl</value>
   </data>
   <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 526</value>
+    <value>20, 647</value>
+  </data>
+  <data name="label4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>74, 13</value>
+    <value>94, 16</value>
   </data>
   <data name="label4.TabIndex" type="System.Int32, mscorlib">
     <value>106</value>
@@ -1982,10 +2105,13 @@
     <value>NoControl</value>
   </data>
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 487</value>
+    <value>20, 599</value>
+  </data>
+  <data name="label3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>86, 13</value>
+    <value>107, 16</value>
   </data>
   <data name="label3.TabIndex" type="System.Int32, mscorlib">
     <value>104</value>
@@ -2006,13 +2132,16 @@
     <value>28</value>
   </data>
   <data name="comboBoxDepartamentoProducto.ItemHeight" type="System.Int32, mscorlib">
-    <value>13</value>
+    <value>16</value>
   </data>
   <data name="comboBoxDepartamentoProducto.Location" type="System.Drawing.Point, System.Drawing">
-    <value>18, 542</value>
+    <value>24, 667</value>
+  </data>
+  <data name="comboBoxDepartamentoProducto.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="comboBoxDepartamentoProducto.Size" type="System.Drawing.Size, System.Drawing">
-    <value>230, 21</value>
+    <value>305, 24</value>
   </data>
   <data name="comboBoxDepartamentoProducto.TabIndex" type="System.Int32, mscorlib">
     <value>105</value>
@@ -2030,13 +2159,16 @@
     <value>29</value>
   </data>
   <data name="tabPage8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
+    <value>4, 25</value>
+  </data>
+  <data name="tabPage8.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="tabPage8.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="tabPage8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1561, 717</value>
+    <value>2084, 885</value>
   </data>
   <data name="tabPage8.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -2060,10 +2192,13 @@
     <value>None</value>
   </data>
   <data name="ButtonCargarDepartamento.Location" type="System.Drawing.Point, System.Drawing">
-    <value>317, 322</value>
+    <value>423, 396</value>
+  </data>
+  <data name="ButtonCargarDepartamento.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="ButtonCargarDepartamento.Size" type="System.Drawing.Size, System.Drawing">
-    <value>143, 48</value>
+    <value>191, 59</value>
   </data>
   <data name="ButtonCargarDepartamento.TabIndex" type="System.Int32, mscorlib">
     <value>143</value>
@@ -2093,7 +2228,10 @@
     <value>NoControl</value>
   </data>
   <data name="bunifuCustomLabel6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 95</value>
+    <value>8, 117</value>
+  </data>
+  <data name="bunifuCustomLabel6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="bunifuCustomLabel6.Size" type="System.Drawing.Size, System.Drawing">
     <value>103, 20</value>
@@ -2126,7 +2264,10 @@
     <value>NoControl</value>
   </data>
   <data name="bunifuCustomLabel4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 18</value>
+    <value>8, 22</value>
+  </data>
+  <data name="bunifuCustomLabel4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="bunifuCustomLabel4.Size" type="System.Drawing.Size, System.Drawing">
     <value>71, 20</value>
@@ -2153,10 +2294,13 @@
     <value>Stretch</value>
   </data>
   <data name="bunifuFlatButton7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>773, 322</value>
+    <value>1031, 396</value>
+  </data>
+  <data name="bunifuFlatButton7.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="bunifuFlatButton7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>143, 48</value>
+    <value>191, 59</value>
   </data>
   <data name="bunifuFlatButton7.TabIndex" type="System.Int32, mscorlib">
     <value>136</value>
@@ -2180,10 +2324,13 @@
     <value>Stretch</value>
   </data>
   <data name="bunifuFlatButton10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>624, 322</value>
+    <value>832, 396</value>
+  </data>
+  <data name="bunifuFlatButton10.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="bunifuFlatButton10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>143, 48</value>
+    <value>191, 59</value>
   </data>
   <data name="bunifuFlatButton10.TabIndex" type="System.Int32, mscorlib">
     <value>135</value>
@@ -2207,10 +2354,13 @@
     <value>None</value>
   </data>
   <data name="bunifuFlatButton11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>475, 322</value>
+    <value>633, 396</value>
+  </data>
+  <data name="bunifuFlatButton11.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="bunifuFlatButton11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>143, 48</value>
+    <value>191, 59</value>
   </data>
   <data name="bunifuFlatButton11.TabIndex" type="System.Int32, mscorlib">
     <value>134</value>
@@ -2231,13 +2381,16 @@
     <value>5</value>
   </data>
   <data name="DataGridDepartamento.Location" type="System.Drawing.Point, System.Drawing">
-    <value>287, 18</value>
+    <value>383, 22</value>
+  </data>
+  <data name="DataGridDepartamento.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="DataGridDepartamento.RowHeadersWidth" type="System.Int32, mscorlib">
     <value>51</value>
   </data>
   <data name="DataGridDepartamento.Size" type="System.Drawing.Size, System.Drawing">
-    <value>629, 298</value>
+    <value>839, 367</value>
   </data>
   <data name="DataGridDepartamento.TabIndex" type="System.Int32, mscorlib">
     <value>132</value>
@@ -2301,10 +2454,13 @@
 </value>
   </data>
   <data name="TextboxDescripcionDepartamento.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 118</value>
+    <value>13, 145</value>
+  </data>
+  <data name="TextboxDescripcionDepartamento.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="TextboxDescripcionDepartamento.Size" type="System.Drawing.Size, System.Drawing">
-    <value>230, 42</value>
+    <value>307, 52</value>
   </data>
   <data name="TextboxDescripcionDepartamento.TabIndex" type="System.Int32, mscorlib">
     <value>142</value>
@@ -2368,10 +2524,13 @@
 </value>
   </data>
   <data name="TextboxDepartamentoNombre.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 41</value>
+    <value>13, 50</value>
+  </data>
+  <data name="TextboxDepartamentoNombre.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="TextboxDepartamentoNombre.Size" type="System.Drawing.Size, System.Drawing">
-    <value>230, 42</value>
+    <value>307, 52</value>
   </data>
   <data name="TextboxDepartamentoNombre.TabIndex" type="System.Int32, mscorlib">
     <value>141</value>
@@ -2389,13 +2548,16 @@
     <value>8</value>
   </data>
   <data name="tabPage9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
+    <value>4, 25</value>
+  </data>
+  <data name="tabPage9.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="tabPage9.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="tabPage9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1561, 717</value>
+    <value>2084, 885</value>
   </data>
   <data name="tabPage9.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -2462,10 +2624,13 @@
 </value>
   </data>
   <data name="TextboxDescripcionTamano.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 118</value>
+    <value>15, 145</value>
+  </data>
+  <data name="TextboxDescripcionTamano.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="TextboxDescripcionTamano.Size" type="System.Drawing.Size, System.Drawing">
-    <value>230, 42</value>
+    <value>307, 52</value>
   </data>
   <data name="TextboxDescripcionTamano.TabIndex" type="System.Int32, mscorlib">
     <value>151</value>
@@ -2529,10 +2694,13 @@
 </value>
   </data>
   <data name="TextboxTamañoNombre.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 41</value>
+    <value>15, 50</value>
+  </data>
+  <data name="TextboxTamañoNombre.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="TextboxTamañoNombre.Size" type="System.Drawing.Size, System.Drawing">
-    <value>230, 42</value>
+    <value>307, 52</value>
   </data>
   <data name="TextboxTamañoNombre.TabIndex" type="System.Int32, mscorlib">
     <value>150</value>
@@ -2559,7 +2727,10 @@
     <value>NoControl</value>
   </data>
   <data name="bunifuCustomLabel7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 95</value>
+    <value>9, 117</value>
+  </data>
+  <data name="bunifuCustomLabel7.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="bunifuCustomLabel7.Size" type="System.Drawing.Size, System.Drawing">
     <value>103, 20</value>
@@ -2592,7 +2763,10 @@
     <value>NoControl</value>
   </data>
   <data name="bunifuCustomLabel8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 18</value>
+    <value>9, 22</value>
+  </data>
+  <data name="bunifuCustomLabel8.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="bunifuCustomLabel8.Size" type="System.Drawing.Size, System.Drawing">
     <value>71, 20</value>
@@ -2619,10 +2793,13 @@
     <value>Stretch</value>
   </data>
   <data name="bunifuFlatButton13.Location" type="System.Drawing.Point, System.Drawing">
-    <value>774, 322</value>
+    <value>1032, 396</value>
+  </data>
+  <data name="bunifuFlatButton13.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="bunifuFlatButton13.Size" type="System.Drawing.Size, System.Drawing">
-    <value>143, 48</value>
+    <value>191, 59</value>
   </data>
   <data name="bunifuFlatButton13.TabIndex" type="System.Int32, mscorlib">
     <value>147</value>
@@ -2646,10 +2823,13 @@
     <value>Stretch</value>
   </data>
   <data name="bunifuFlatButton14.Location" type="System.Drawing.Point, System.Drawing">
-    <value>625, 322</value>
+    <value>833, 396</value>
+  </data>
+  <data name="bunifuFlatButton14.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="bunifuFlatButton14.Size" type="System.Drawing.Size, System.Drawing">
-    <value>143, 48</value>
+    <value>191, 59</value>
   </data>
   <data name="bunifuFlatButton14.TabIndex" type="System.Int32, mscorlib">
     <value>146</value>
@@ -2673,10 +2853,13 @@
     <value>None</value>
   </data>
   <data name="bunifuFlatButton15.Location" type="System.Drawing.Point, System.Drawing">
-    <value>476, 322</value>
+    <value>635, 396</value>
+  </data>
+  <data name="bunifuFlatButton15.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="bunifuFlatButton15.Size" type="System.Drawing.Size, System.Drawing">
-    <value>143, 48</value>
+    <value>191, 59</value>
   </data>
   <data name="bunifuFlatButton15.TabIndex" type="System.Int32, mscorlib">
     <value>145</value>
@@ -2700,10 +2883,13 @@
     <value>Stretch</value>
   </data>
   <data name="ButtonCargarTamano.Location" type="System.Drawing.Point, System.Drawing">
-    <value>327, 322</value>
+    <value>436, 396</value>
+  </data>
+  <data name="ButtonCargarTamano.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="ButtonCargarTamano.Size" type="System.Drawing.Size, System.Drawing">
-    <value>143, 48</value>
+    <value>191, 59</value>
   </data>
   <data name="ButtonCargarTamano.TabIndex" type="System.Int32, mscorlib">
     <value>144</value>
@@ -2724,13 +2910,16 @@
     <value>7</value>
   </data>
   <data name="DataGridTamano.Location" type="System.Drawing.Point, System.Drawing">
-    <value>288, 18</value>
+    <value>384, 22</value>
+  </data>
+  <data name="DataGridTamano.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="DataGridTamano.RowHeadersWidth" type="System.Int32, mscorlib">
     <value>51</value>
   </data>
   <data name="DataGridTamano.Size" type="System.Drawing.Size, System.Drawing">
-    <value>629, 298</value>
+    <value>839, 367</value>
   </data>
   <data name="DataGridTamano.TabIndex" type="System.Int32, mscorlib">
     <value>143</value>
@@ -2748,10 +2937,13 @@
     <value>8</value>
   </data>
   <data name="tabPage12.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
+    <value>4, 25</value>
+  </data>
+  <data name="tabPage12.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="tabPage12.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1561, 717</value>
+    <value>2084, 885</value>
   </data>
   <data name="tabPage12.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -2781,7 +2973,10 @@
     <value>NoControl</value>
   </data>
   <data name="bunifuCustomLabel10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 11</value>
+    <value>15, 14</value>
+  </data>
+  <data name="bunifuCustomLabel10.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="bunifuCustomLabel10.Size" type="System.Drawing.Size, System.Drawing">
     <value>71, 20</value>
@@ -2851,10 +3046,13 @@
 </value>
   </data>
   <data name="bunifuTextbox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 111</value>
+    <value>20, 137</value>
+  </data>
+  <data name="bunifuTextbox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="bunifuTextbox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>230, 42</value>
+    <value>307, 52</value>
   </data>
   <data name="bunifuTextbox1.TabIndex" type="System.Int32, mscorlib">
     <value>159</value>
@@ -2918,10 +3116,13 @@
 </value>
   </data>
   <data name="bunifuTextbox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 34</value>
+    <value>20, 42</value>
+  </data>
+  <data name="bunifuTextbox2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="bunifuTextbox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>230, 42</value>
+    <value>307, 52</value>
   </data>
   <data name="bunifuTextbox2.TabIndex" type="System.Int32, mscorlib">
     <value>158</value>
@@ -2948,7 +3149,10 @@
     <value>NoControl</value>
   </data>
   <data name="bunifuCustomLabel9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 88</value>
+    <value>15, 108</value>
+  </data>
+  <data name="bunifuCustomLabel9.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="bunifuCustomLabel9.Size" type="System.Drawing.Size, System.Drawing">
     <value>103, 20</value>
@@ -2975,10 +3179,13 @@
     <value>Stretch</value>
   </data>
   <data name="bunifuFlatButton16.Location" type="System.Drawing.Point, System.Drawing">
-    <value>778, 315</value>
+    <value>1037, 388</value>
+  </data>
+  <data name="bunifuFlatButton16.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="bunifuFlatButton16.Size" type="System.Drawing.Size, System.Drawing">
-    <value>143, 48</value>
+    <value>191, 59</value>
   </data>
   <data name="bunifuFlatButton16.TabIndex" type="System.Int32, mscorlib">
     <value>156</value>
@@ -3002,10 +3209,13 @@
     <value>Stretch</value>
   </data>
   <data name="bunifuFlatButton17.Location" type="System.Drawing.Point, System.Drawing">
-    <value>629, 315</value>
+    <value>839, 388</value>
+  </data>
+  <data name="bunifuFlatButton17.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="bunifuFlatButton17.Size" type="System.Drawing.Size, System.Drawing">
-    <value>143, 48</value>
+    <value>191, 59</value>
   </data>
   <data name="bunifuFlatButton17.TabIndex" type="System.Int32, mscorlib">
     <value>155</value>
@@ -3029,10 +3239,13 @@
     <value>None</value>
   </data>
   <data name="bunifuFlatButton18.Location" type="System.Drawing.Point, System.Drawing">
-    <value>480, 315</value>
+    <value>640, 388</value>
+  </data>
+  <data name="bunifuFlatButton18.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="bunifuFlatButton18.Size" type="System.Drawing.Size, System.Drawing">
-    <value>143, 48</value>
+    <value>191, 59</value>
   </data>
   <data name="bunifuFlatButton18.TabIndex" type="System.Int32, mscorlib">
     <value>154</value>
@@ -3056,10 +3269,13 @@
     <value>Stretch</value>
   </data>
   <data name="bunifuFlatButton19.Location" type="System.Drawing.Point, System.Drawing">
-    <value>331, 315</value>
+    <value>441, 388</value>
+  </data>
+  <data name="bunifuFlatButton19.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="bunifuFlatButton19.Size" type="System.Drawing.Size, System.Drawing">
-    <value>143, 48</value>
+    <value>191, 59</value>
   </data>
   <data name="bunifuFlatButton19.TabIndex" type="System.Int32, mscorlib">
     <value>153</value>
@@ -3080,13 +3296,16 @@
     <value>7</value>
   </data>
   <data name="bunifuCustomDataGrid3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>292, 11</value>
+    <value>389, 14</value>
+  </data>
+  <data name="bunifuCustomDataGrid3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="bunifuCustomDataGrid3.RowHeadersWidth" type="System.Int32, mscorlib">
     <value>51</value>
   </data>
   <data name="bunifuCustomDataGrid3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>629, 298</value>
+    <value>839, 367</value>
   </data>
   <data name="bunifuCustomDataGrid3.TabIndex" type="System.Int32, mscorlib">
     <value>152</value>
@@ -3104,10 +3323,13 @@
     <value>8</value>
   </data>
   <data name="tabPage13.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
+    <value>4, 25</value>
+  </data>
+  <data name="tabPage13.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="tabPage13.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1561, 717</value>
+    <value>2084, 885</value>
   </data>
   <data name="tabPage13.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -3128,10 +3350,13 @@
     <value>3</value>
   </data>
   <data name="tabControl3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 0</value>
+    <value>4, 0</value>
+  </data>
+  <data name="tabControl3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="tabControl3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1569, 743</value>
+    <value>2092, 914</value>
   </data>
   <data name="tabControl3.TabIndex" type="System.Int32, mscorlib">
     <value>116</value>
@@ -3149,10 +3374,13 @@
     <value>0</value>
   </data>
   <data name="tabPage4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
+    <value>4, 25</value>
+  </data>
+  <data name="tabPage4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="tabPage4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1575, 746</value>
+    <value>2103, 921</value>
   </data>
   <data name="tabPage4.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -3173,13 +3401,16 @@
     <value>3</value>
   </data>
   <data name="bunifuCustomDataGrid2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>396, 39</value>
+    <value>528, 48</value>
+  </data>
+  <data name="bunifuCustomDataGrid2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="bunifuCustomDataGrid2.RowHeadersWidth" type="System.Int32, mscorlib">
     <value>51</value>
   </data>
   <data name="bunifuCustomDataGrid2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>629, 298</value>
+    <value>839, 367</value>
   </data>
   <data name="bunifuCustomDataGrid2.TabIndex" type="System.Int32, mscorlib">
     <value>110</value>
@@ -3206,7 +3437,10 @@
     <value>NoControl</value>
   </data>
   <data name="LabelUCedula.Location" type="System.Drawing.Point, System.Drawing">
-    <value>18, 19</value>
+    <value>24, 23</value>
+  </data>
+  <data name="LabelUCedula.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="LabelUCedula.Size" type="System.Drawing.Size, System.Drawing">
     <value>65, 20</value>
@@ -3296,10 +3530,13 @@
 </value>
   </data>
   <data name="ButtonUsuarioCargar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>535, 343</value>
+    <value>713, 422</value>
+  </data>
+  <data name="ButtonUsuarioCargar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="ButtonUsuarioCargar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>118, 48</value>
+    <value>157, 59</value>
   </data>
   <data name="ButtonUsuarioCargar.TabIndex" type="System.Int32, mscorlib">
     <value>109</value>
@@ -3366,10 +3603,13 @@
 </value>
   </data>
   <data name="TextboxUsuario.Location" type="System.Drawing.Point, System.Drawing">
-    <value>22, 116</value>
+    <value>29, 143</value>
+  </data>
+  <data name="TextboxUsuario.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="TextboxUsuario.Size" type="System.Drawing.Size, System.Drawing">
-    <value>357, 42</value>
+    <value>476, 52</value>
   </data>
   <data name="TextboxUsuario.TabIndex" type="System.Int32, mscorlib">
     <value>99</value>
@@ -3456,10 +3696,13 @@
 </value>
   </data>
   <data name="ButtonUsuarioModificar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>907, 343</value>
+    <value>1209, 422</value>
+  </data>
+  <data name="ButtonUsuarioModificar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="ButtonUsuarioModificar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>118, 48</value>
+    <value>157, 59</value>
   </data>
   <data name="ButtonUsuarioModificar.TabIndex" type="System.Int32, mscorlib">
     <value>104</value>
@@ -3549,10 +3792,13 @@
 </value>
   </data>
   <data name="ButtonUsuarioEliminar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>783, 343</value>
+    <value>1044, 422</value>
+  </data>
+  <data name="ButtonUsuarioEliminar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="ButtonUsuarioEliminar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>118, 48</value>
+    <value>157, 59</value>
   </data>
   <data name="ButtonUsuarioEliminar.TabIndex" type="System.Int32, mscorlib">
     <value>103</value>
@@ -3582,7 +3828,10 @@
     <value>NoControl</value>
   </data>
   <data name="LabelUNombre.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 320</value>
+    <value>27, 394</value>
+  </data>
+  <data name="LabelUNombre.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="LabelUNombre.Size" type="System.Drawing.Size, System.Drawing">
     <value>71, 20</value>
@@ -3675,10 +3924,13 @@
 </value>
   </data>
   <data name="ButtonUsuarioAgregar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>659, 343</value>
+    <value>879, 422</value>
+  </data>
+  <data name="ButtonUsuarioAgregar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="ButtonUsuarioAgregar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>118, 48</value>
+    <value>157, 59</value>
   </data>
   <data name="ButtonUsuarioAgregar.TabIndex" type="System.Int32, mscorlib">
     <value>97</value>
@@ -3745,10 +3997,13 @@
 </value>
   </data>
   <data name="TextboxContrasena.Location" type="System.Drawing.Point, System.Drawing">
-    <value>22, 192</value>
+    <value>29, 236</value>
+  </data>
+  <data name="TextboxContrasena.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="TextboxContrasena.Size" type="System.Drawing.Size, System.Drawing">
-    <value>357, 42</value>
+    <value>476, 52</value>
   </data>
   <data name="TextboxContrasena.TabIndex" type="System.Int32, mscorlib">
     <value>98</value>
@@ -3775,7 +4030,10 @@
     <value>NoControl</value>
   </data>
   <data name="LabelUCorreo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 242</value>
+    <value>27, 298</value>
+  </data>
+  <data name="LabelUCorreo.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="LabelUCorreo.Size" type="System.Drawing.Size, System.Drawing">
     <value>63, 20</value>
@@ -3845,10 +4103,13 @@
 </value>
   </data>
   <data name="TextboxCorreo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>22, 265</value>
+    <value>29, 326</value>
+  </data>
+  <data name="TextboxCorreo.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="TextboxCorreo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>357, 42</value>
+    <value>476, 52</value>
   </data>
   <data name="TextboxCorreo.TabIndex" type="System.Int32, mscorlib">
     <value>100</value>
@@ -3875,7 +4136,10 @@
     <value>NoControl</value>
   </data>
   <data name="LabelUContrasena.Location" type="System.Drawing.Point, System.Drawing">
-    <value>18, 169</value>
+    <value>24, 208</value>
+  </data>
+  <data name="LabelUContrasena.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="LabelUContrasena.Size" type="System.Drawing.Size, System.Drawing">
     <value>102, 20</value>
@@ -3945,10 +4209,13 @@
 </value>
   </data>
   <data name="TextboxNombre.Location" type="System.Drawing.Point, System.Drawing">
-    <value>24, 343</value>
+    <value>32, 422</value>
+  </data>
+  <data name="TextboxNombre.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="TextboxNombre.Size" type="System.Drawing.Size, System.Drawing">
-    <value>357, 42</value>
+    <value>476, 52</value>
   </data>
   <data name="TextboxNombre.TabIndex" type="System.Int32, mscorlib">
     <value>101</value>
@@ -3975,7 +4242,10 @@
     <value>NoControl</value>
   </data>
   <data name="LabelUUsuario.Location" type="System.Drawing.Point, System.Drawing">
-    <value>18, 93</value>
+    <value>24, 114</value>
+  </data>
+  <data name="LabelUUsuario.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="LabelUUsuario.Size" type="System.Drawing.Size, System.Drawing">
     <value>160, 20</value>
@@ -4045,10 +4315,13 @@
 </value>
   </data>
   <data name="TextboxCedula.Location" type="System.Drawing.Point, System.Drawing">
-    <value>22, 42</value>
+    <value>29, 52</value>
+  </data>
+  <data name="TextboxCedula.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="TextboxCedula.Size" type="System.Drawing.Size, System.Drawing">
-    <value>357, 42</value>
+    <value>476, 52</value>
   </data>
   <data name="TextboxCedula.TabIndex" type="System.Int32, mscorlib">
     <value>102</value>
@@ -4066,13 +4339,16 @@
     <value>14</value>
   </data>
   <data name="tabPage6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
+    <value>4, 25</value>
+  </data>
+  <data name="tabPage6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="tabPage6.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="tabPage6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1056, 477</value>
+    <value>1411, 590</value>
   </data>
   <data name="tabPage6.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -4096,10 +4372,13 @@
     <value>Microsoft Sans Serif, 12pt</value>
   </data>
   <data name="comboBoxCedulaPermiAlmace.Location" type="System.Drawing.Point, System.Drawing">
-    <value>19, 64</value>
+    <value>25, 79</value>
+  </data>
+  <data name="comboBoxCedulaPermiAlmace.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="comboBoxCedulaPermiAlmace.Size" type="System.Drawing.Size, System.Drawing">
-    <value>357, 28</value>
+    <value>475, 28</value>
   </data>
   <data name="comboBoxCedulaPermiAlmace.TabIndex" type="System.Int32, mscorlib">
     <value>131</value>
@@ -4120,10 +4399,13 @@
     <value>Microsoft Sans Serif, 12pt</value>
   </data>
   <data name="comboBoxUsuPerAlm.Location" type="System.Drawing.Point, System.Drawing">
-    <value>19, 118</value>
+    <value>25, 145</value>
+  </data>
+  <data name="comboBoxUsuPerAlm.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="comboBoxUsuPerAlm.Size" type="System.Drawing.Size, System.Drawing">
-    <value>357, 28</value>
+    <value>475, 28</value>
   </data>
   <data name="comboBoxUsuPerAlm.TabIndex" type="System.Int32, mscorlib">
     <value>130</value>
@@ -4144,10 +4426,13 @@
     <value>Stretch</value>
   </data>
   <data name="ButtonEliminarPeAl.Location" type="System.Drawing.Point, System.Drawing">
-    <value>730, 345</value>
+    <value>973, 425</value>
+  </data>
+  <data name="ButtonEliminarPeAl.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="ButtonEliminarPeAl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>143, 48</value>
+    <value>191, 59</value>
   </data>
   <data name="ButtonEliminarPeAl.TabIndex" type="System.Int32, mscorlib">
     <value>128</value>
@@ -4171,10 +4456,13 @@
     <value>None</value>
   </data>
   <data name="ButtonAgregarPeAl.Location" type="System.Drawing.Point, System.Drawing">
-    <value>581, 345</value>
+    <value>775, 425</value>
+  </data>
+  <data name="ButtonAgregarPeAl.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="ButtonAgregarPeAl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>143, 48</value>
+    <value>191, 59</value>
   </data>
   <data name="ButtonAgregarPeAl.TabIndex" type="System.Int32, mscorlib">
     <value>127</value>
@@ -4198,10 +4486,13 @@
     <value>Stretch</value>
   </data>
   <data name="ButtonCargarPeAl.Location" type="System.Drawing.Point, System.Drawing">
-    <value>429, 345</value>
+    <value>572, 425</value>
+  </data>
+  <data name="ButtonCargarPeAl.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="ButtonCargarPeAl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>143, 48</value>
+    <value>191, 59</value>
   </data>
   <data name="ButtonCargarPeAl.TabIndex" type="System.Int32, mscorlib">
     <value>126</value>
@@ -4222,13 +4513,16 @@
     <value>4</value>
   </data>
   <data name="DataGridPermisosPorAlmacen.Location" type="System.Drawing.Point, System.Drawing">
-    <value>393, 41</value>
+    <value>524, 50</value>
+  </data>
+  <data name="DataGridPermisosPorAlmacen.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="DataGridPermisosPorAlmacen.RowHeadersWidth" type="System.Int32, mscorlib">
     <value>51</value>
   </data>
   <data name="DataGridPermisosPorAlmacen.Size" type="System.Drawing.Size, System.Drawing">
-    <value>629, 298</value>
+    <value>839, 367</value>
   </data>
   <data name="DataGridPermisosPorAlmacen.TabIndex" type="System.Int32, mscorlib">
     <value>125</value>
@@ -4255,7 +4549,10 @@
     <value>NoControl</value>
   </data>
   <data name="bunifuCustomLabel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 41</value>
+    <value>20, 50</value>
+  </data>
+  <data name="bunifuCustomLabel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="bunifuCustomLabel1.Size" type="System.Drawing.Size, System.Drawing">
     <value>65, 20</value>
@@ -4288,7 +4585,10 @@
     <value>NoControl</value>
   </data>
   <data name="bunifuCustomLabel5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 95</value>
+    <value>20, 117</value>
+  </data>
+  <data name="bunifuCustomLabel5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="bunifuCustomLabel5.Size" type="System.Drawing.Size, System.Drawing">
     <value>76, 20</value>
@@ -4312,13 +4612,16 @@
     <value>7</value>
   </data>
   <data name="tabPage7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
+    <value>4, 25</value>
+  </data>
+  <data name="tabPage7.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="tabPage7.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="tabPage7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1056, 477</value>
+    <value>1411, 590</value>
   </data>
   <data name="tabPage7.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -4339,10 +4642,13 @@
     <value>1</value>
   </data>
   <data name="tabControl2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
+    <value>4, 4</value>
+  </data>
+  <data name="tabControl2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="tabControl2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1064, 503</value>
+    <value>1419, 619</value>
   </data>
   <data name="tabControl2.TabIndex" type="System.Int32, mscorlib">
     <value>111</value>
@@ -4360,10 +4666,13 @@
     <value>0</value>
   </data>
   <data name="tabPage3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
+    <value>4, 25</value>
+  </data>
+  <data name="tabPage3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="tabPage3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1575, 746</value>
+    <value>2103, 921</value>
   </data>
   <data name="tabPage3.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -4390,7 +4699,10 @@
     <value>NoControl</value>
   </data>
   <data name="labelUtilidad.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1168, 652</value>
+    <value>1557, 802</value>
+  </data>
+  <data name="labelUtilidad.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="labelUtilidad.Size" type="System.Drawing.Size, System.Drawing">
     <value>85, 13</value>
@@ -4420,7 +4732,10 @@
     <value>NoControl</value>
   </data>
   <data name="labelCostoTotalizado.Location" type="System.Drawing.Point, System.Drawing">
-    <value>819, 651</value>
+    <value>1092, 801</value>
+  </data>
+  <data name="labelCostoTotalizado.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="labelCostoTotalizado.Size" type="System.Drawing.Size, System.Drawing">
     <value>85, 13</value>
@@ -4444,10 +4759,13 @@
     <value>1</value>
   </data>
   <data name="textBoxCostoTotal.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1019, 45</value>
+    <value>1359, 55</value>
+  </data>
+  <data name="textBoxCostoTotal.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="textBoxCostoTotal.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 20</value>
+    <value>132, 20</value>
   </data>
   <data name="textBoxCostoTotal.TabIndex" type="System.Int32, mscorlib">
     <value>94</value>
@@ -4471,7 +4789,10 @@
     <value>NoControl</value>
   </data>
   <data name="labelDetal.Location" type="System.Drawing.Point, System.Drawing">
-    <value>915, 52</value>
+    <value>1220, 64</value>
+  </data>
+  <data name="labelDetal.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="labelDetal.Size" type="System.Drawing.Size, System.Drawing">
     <value>80, 13</value>
@@ -4501,7 +4822,10 @@
     <value>NoControl</value>
   </data>
   <data name="labelMayor.Location" type="System.Drawing.Point, System.Drawing">
-    <value>915, 28</value>
+    <value>1220, 34</value>
+  </data>
+  <data name="labelMayor.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="labelMayor.Size" type="System.Drawing.Size, System.Drawing">
     <value>85, 13</value>
@@ -4531,7 +4855,10 @@
     <value>NoControl</value>
   </data>
   <data name="labelCostoTotal.Location" type="System.Drawing.Point, System.Drawing">
-    <value>829, 43</value>
+    <value>1105, 53</value>
+  </data>
+  <data name="labelCostoTotal.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="labelCostoTotal.Size" type="System.Drawing.Size, System.Drawing">
     <value>58, 13</value>
@@ -4558,7 +4885,10 @@
     <value>True</value>
   </data>
   <data name="labelCosto.Location" type="System.Drawing.Point, System.Drawing">
-    <value>780, 43</value>
+    <value>1040, 53</value>
+  </data>
+  <data name="labelCosto.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="labelCosto.Size" type="System.Drawing.Size, System.Drawing">
     <value>34, 13</value>
@@ -4585,10 +4915,13 @@
     <value>Microsoft Sans Serif, 17.9999981pt, style=Bold, Italic</value>
   </data>
   <data name="textInsertarCodigo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 636</value>
+    <value>27, 783</value>
+  </data>
+  <data name="textInsertarCodigo.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="textInsertarCodigo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>153, 35</value>
+    <value>203, 35</value>
   </data>
   <data name="textInsertarCodigo.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -4618,7 +4951,10 @@
     <value>NoControl</value>
   </data>
   <data name="labelInsertarCodigo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>35, 609</value>
+    <value>47, 750</value>
+  </data>
+  <data name="labelInsertarCodigo.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="labelInsertarCodigo.Size" type="System.Drawing.Size, System.Drawing">
     <value>123, 24</value>
@@ -4714,13 +5050,13 @@
 </value>
   </data>
   <data name="bunifuFlatButton1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1171, 151</value>
+    <value>1561, 186</value>
   </data>
   <data name="bunifuFlatButton1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="bunifuFlatButton1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>167, 62</value>
+    <value>223, 76</value>
   </data>
   <data name="bunifuFlatButton1.TabIndex" type="System.Int32, mscorlib">
     <value>89</value>
@@ -4810,13 +5146,13 @@
 </value>
   </data>
   <data name="bunifuRestar1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1171, 221</value>
+    <value>1561, 272</value>
   </data>
   <data name="bunifuRestar1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="bunifuRestar1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>167, 62</value>
+    <value>223, 76</value>
   </data>
   <data name="bunifuRestar1.TabIndex" type="System.Int32, mscorlib">
     <value>88</value>
@@ -4906,13 +5242,13 @@
 </value>
   </data>
   <data name="buniActualizar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1171, 82</value>
+    <value>1561, 101</value>
   </data>
   <data name="buniActualizar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="buniActualizar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>167, 62</value>
+    <value>223, 76</value>
   </data>
   <data name="buniActualizar.TabIndex" type="System.Int32, mscorlib">
     <value>83</value>
@@ -4942,7 +5278,10 @@
     <value>NoControl</value>
   </data>
   <data name="labelCodigo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>31, 15</value>
+    <value>41, 18</value>
+  </data>
+  <data name="labelCodigo.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="labelCodigo.Size" type="System.Drawing.Size, System.Drawing">
     <value>62, 20</value>
@@ -4969,10 +5308,13 @@
     <value>Microsoft Sans Serif, 26.25pt</value>
   </data>
   <data name="textSumaTotal.Location" type="System.Drawing.Point, System.Drawing">
-    <value>954, 628</value>
+    <value>1272, 773</value>
+  </data>
+  <data name="textSumaTotal.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="textSumaTotal.Size" type="System.Drawing.Size, System.Drawing">
-    <value>206, 47</value>
+    <value>273, 47</value>
   </data>
   <data name="textSumaTotal.TabIndex" type="System.Int32, mscorlib">
     <value>74</value>
@@ -5013,13 +5355,13 @@
 </value>
   </data>
   <data name="buniBnFinalizar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1171, 329</value>
+    <value>1561, 405</value>
   </data>
   <data name="buniBnFinalizar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>6, 6, 6, 6</value>
+    <value>8, 7, 8, 7</value>
   </data>
   <data name="buniBnFinalizar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>167, 157</value>
+    <value>223, 193</value>
   </data>
   <data name="buniBnFinalizar.TabIndex" type="System.Int32, mscorlib">
     <value>79</value>
@@ -5037,10 +5379,13 @@
     <value>14</value>
   </data>
   <data name="textCodigo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 40</value>
+    <value>13, 49</value>
+  </data>
+  <data name="textCodigo.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="textCodigo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 20</value>
+    <value>132, 20</value>
   </data>
   <data name="textCodigo.TabIndex" type="System.Int32, mscorlib">
     <value>86</value>
@@ -5058,13 +5403,16 @@
     <value>15</value>
   </data>
   <data name="bunifuCustomDataGrid1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 76</value>
+    <value>15, 94</value>
+  </data>
+  <data name="bunifuCustomDataGrid1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="bunifuCustomDataGrid1.RowHeadersWidth" type="System.Int32, mscorlib">
     <value>51</value>
   </data>
   <data name="bunifuCustomDataGrid1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1149, 530</value>
+    <value>1532, 652</value>
   </data>
   <data name="bunifuCustomDataGrid1.TabIndex" type="System.Int32, mscorlib">
     <value>80</value>
@@ -5082,10 +5430,13 @@
     <value>16</value>
   </data>
   <data name="textReferencia.Location" type="System.Drawing.Point, System.Drawing">
-    <value>123, 40</value>
+    <value>164, 49</value>
+  </data>
+  <data name="textReferencia.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="textReferencia.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 20</value>
+    <value>132, 20</value>
   </data>
   <data name="textReferencia.TabIndex" type="System.Int32, mscorlib">
     <value>53</value>
@@ -5106,10 +5457,13 @@
     <value>Microsoft Sans Serif, 26.25pt</value>
   </data>
   <data name="textFactura.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1171, 28</value>
+    <value>1561, 34</value>
+  </data>
+  <data name="textFactura.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="textFactura.Size" type="System.Drawing.Size, System.Drawing">
-    <value>167, 47</value>
+    <value>221, 47</value>
   </data>
   <data name="textFactura.TabIndex" type="System.Int32, mscorlib">
     <value>72</value>
@@ -5130,10 +5484,13 @@
     <value>18</value>
   </data>
   <data name="textTamano.Location" type="System.Drawing.Point, System.Drawing">
-    <value>338, 40</value>
+    <value>451, 49</value>
+  </data>
+  <data name="textTamano.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="textTamano.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 20</value>
+    <value>132, 20</value>
   </data>
   <data name="textTamano.TabIndex" type="System.Int32, mscorlib">
     <value>54</value>
@@ -5160,7 +5517,10 @@
     <value>NoControl</value>
   </data>
   <data name="labelFactura.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1213, 0</value>
+    <value>1617, 0</value>
+  </data>
+  <data name="labelFactura.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="labelFactura.Size" type="System.Drawing.Size, System.Drawing">
     <value>85, 25</value>
@@ -5184,10 +5544,13 @@
     <value>20</value>
   </data>
   <data name="textProducto.Location" type="System.Drawing.Point, System.Drawing">
-    <value>232, 40</value>
+    <value>309, 49</value>
+  </data>
+  <data name="textProducto.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="textProducto.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 20</value>
+    <value>132, 20</value>
   </data>
   <data name="textProducto.TabIndex" type="System.Int32, mscorlib">
     <value>55</value>
@@ -5205,10 +5568,13 @@
     <value>21</value>
   </data>
   <data name="textCantidad.Location" type="System.Drawing.Point, System.Drawing">
-    <value>444, 40</value>
+    <value>592, 49</value>
+  </data>
+  <data name="textCantidad.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="textCantidad.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 20</value>
+    <value>132, 20</value>
   </data>
   <data name="textCantidad.TabIndex" type="System.Int32, mscorlib">
     <value>56</value>
@@ -5226,10 +5592,13 @@
     <value>22</value>
   </data>
   <data name="textPrecio.Location" type="System.Drawing.Point, System.Drawing">
-    <value>550, 40</value>
+    <value>733, 49</value>
+  </data>
+  <data name="textPrecio.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="textPrecio.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 20</value>
+    <value>132, 20</value>
   </data>
   <data name="textPrecio.TabIndex" type="System.Int32, mscorlib">
     <value>57</value>
@@ -5256,7 +5625,10 @@
     <value>NoControl</value>
   </data>
   <data name="labelReferencia.Location" type="System.Drawing.Point, System.Drawing">
-    <value>116, 15</value>
+    <value>155, 18</value>
+  </data>
+  <data name="labelReferencia.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="labelReferencia.Size" type="System.Drawing.Size, System.Drawing">
     <value>90, 20</value>
@@ -5289,7 +5661,10 @@
     <value>NoControl</value>
   </data>
   <data name="labelCantidad.Location" type="System.Drawing.Point, System.Drawing">
-    <value>453, 19</value>
+    <value>604, 23</value>
+  </data>
+  <data name="labelCantidad.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="labelCantidad.Size" type="System.Drawing.Size, System.Drawing">
     <value>78, 20</value>
@@ -5322,7 +5697,10 @@
     <value>NoControl</value>
   </data>
   <data name="labelProducto.Location" type="System.Drawing.Point, System.Drawing">
-    <value>236, 19</value>
+    <value>315, 23</value>
+  </data>
+  <data name="labelProducto.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="labelProducto.Size" type="System.Drawing.Size, System.Drawing">
     <value>80, 20</value>
@@ -5355,7 +5733,10 @@
     <value>NoControl</value>
   </data>
   <data name="labelTamaño.Location" type="System.Drawing.Point, System.Drawing">
-    <value>349, 19</value>
+    <value>465, 23</value>
+  </data>
+  <data name="labelTamaño.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="labelTamaño.Size" type="System.Drawing.Size, System.Drawing">
     <value>69, 20</value>
@@ -5388,7 +5769,10 @@
     <value>NoControl</value>
   </data>
   <data name="labelPrecio.Location" type="System.Drawing.Point, System.Drawing">
-    <value>564, 19</value>
+    <value>752, 23</value>
+  </data>
+  <data name="labelPrecio.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="labelPrecio.Size" type="System.Drawing.Size, System.Drawing">
     <value>58, 20</value>
@@ -5412,10 +5796,13 @@
     <value>28</value>
   </data>
   <data name="textTotal.Location" type="System.Drawing.Point, System.Drawing">
-    <value>656, 40</value>
+    <value>875, 49</value>
+  </data>
+  <data name="textTotal.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="textTotal.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 20</value>
+    <value>132, 20</value>
   </data>
   <data name="textTotal.TabIndex" type="System.Int32, mscorlib">
     <value>69</value>
@@ -5442,7 +5829,10 @@
     <value>NoControl</value>
   </data>
   <data name="labelTotal.Location" type="System.Drawing.Point, System.Drawing">
-    <value>676, 19</value>
+    <value>901, 23</value>
+  </data>
+  <data name="labelTotal.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="labelTotal.Size" type="System.Drawing.Size, System.Drawing">
     <value>45, 20</value>
@@ -5466,10 +5856,13 @@
     <value>30</value>
   </data>
   <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 6</value>
+    <value>8, 7</value>
+  </data>
+  <data name="panel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1355, 689</value>
+    <value>1807, 848</value>
   </data>
   <data name="panel1.TabIndex" type="System.Int32, mscorlib">
     <value>89</value>
@@ -5490,13 +5883,16 @@
     <value>Microsoft Sans Serif, 8.25pt</value>
   </data>
   <data name="tabPage1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
+    <value>4, 25</value>
+  </data>
+  <data name="tabPage1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="tabPage1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="tabPage1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1575, 746</value>
+    <value>2103, 921</value>
   </data>
   <data name="tabPage1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -5563,10 +5959,13 @@
 </value>
   </data>
   <data name="TextboxNombreAlmacen.Location" type="System.Drawing.Point, System.Drawing">
-    <value>31, 86</value>
+    <value>41, 106</value>
+  </data>
+  <data name="TextboxNombreAlmacen.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="TextboxNombreAlmacen.Size" type="System.Drawing.Size, System.Drawing">
-    <value>357, 42</value>
+    <value>476, 52</value>
   </data>
   <data name="TextboxNombreAlmacen.TabIndex" type="System.Int32, mscorlib">
     <value>148</value>
@@ -5593,7 +5992,10 @@
     <value>NoControl</value>
   </data>
   <data name="bunifuCustomLabel3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>27, 54</value>
+    <value>36, 66</value>
+  </data>
+  <data name="bunifuCustomLabel3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="bunifuCustomLabel3.Size" type="System.Drawing.Size, System.Drawing">
     <value>69, 20</value>
@@ -5620,10 +6022,13 @@
     <value>Stretch</value>
   </data>
   <data name="bunifuFlatButton6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>880, 358</value>
+    <value>1173, 441</value>
+  </data>
+  <data name="bunifuFlatButton6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="bunifuFlatButton6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>143, 48</value>
+    <value>191, 59</value>
   </data>
   <data name="bunifuFlatButton6.TabIndex" type="System.Int32, mscorlib">
     <value>144</value>
@@ -5647,10 +6052,13 @@
     <value>Stretch</value>
   </data>
   <data name="ButtonElimarAlmacen.Location" type="System.Drawing.Point, System.Drawing">
-    <value>731, 358</value>
+    <value>975, 441</value>
+  </data>
+  <data name="ButtonElimarAlmacen.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="ButtonElimarAlmacen.Size" type="System.Drawing.Size, System.Drawing">
-    <value>143, 48</value>
+    <value>191, 59</value>
   </data>
   <data name="ButtonElimarAlmacen.TabIndex" type="System.Int32, mscorlib">
     <value>143</value>
@@ -5674,10 +6082,13 @@
     <value>None</value>
   </data>
   <data name="bunifuFlatButton8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>582, 358</value>
+    <value>776, 441</value>
+  </data>
+  <data name="bunifuFlatButton8.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="bunifuFlatButton8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>143, 48</value>
+    <value>191, 59</value>
   </data>
   <data name="bunifuFlatButton8.TabIndex" type="System.Int32, mscorlib">
     <value>142</value>
@@ -5701,10 +6112,13 @@
     <value>Stretch</value>
   </data>
   <data name="bunifuFlatButton9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>430, 358</value>
+    <value>573, 441</value>
+  </data>
+  <data name="bunifuFlatButton9.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="bunifuFlatButton9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>143, 48</value>
+    <value>191, 59</value>
   </data>
   <data name="bunifuFlatButton9.TabIndex" type="System.Int32, mscorlib">
     <value>141</value>
@@ -5725,13 +6139,16 @@
     <value>5</value>
   </data>
   <data name="DataGridAlmacen.Location" type="System.Drawing.Point, System.Drawing">
-    <value>394, 54</value>
+    <value>525, 66</value>
+  </data>
+  <data name="DataGridAlmacen.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="DataGridAlmacen.RowHeadersWidth" type="System.Int32, mscorlib">
     <value>51</value>
   </data>
   <data name="DataGridAlmacen.Size" type="System.Drawing.Size, System.Drawing">
-    <value>629, 298</value>
+    <value>839, 367</value>
   </data>
   <data name="DataGridAlmacen.TabIndex" type="System.Int32, mscorlib">
     <value>140</value>
@@ -5758,7 +6175,10 @@
     <value>NoControl</value>
   </data>
   <data name="LabelDescripcion.Location" type="System.Drawing.Point, System.Drawing">
-    <value>27, 127</value>
+    <value>36, 156</value>
+  </data>
+  <data name="LabelDescripcion.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="LabelDescripcion.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 20</value>
@@ -5794,10 +6214,13 @@
     <value>satelite</value>
   </data>
   <data name="comboBoxTipoAlmacen.Location" type="System.Drawing.Point, System.Drawing">
-    <value>31, 243</value>
+    <value>41, 299</value>
+  </data>
+  <data name="comboBoxTipoAlmacen.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="comboBoxTipoAlmacen.Size" type="System.Drawing.Size, System.Drawing">
-    <value>357, 28</value>
+    <value>475, 28</value>
   </data>
   <data name="comboBoxTipoAlmacen.TabIndex" type="System.Int32, mscorlib">
     <value>137</value>
@@ -5824,7 +6247,10 @@
     <value>NoControl</value>
   </data>
   <data name="bunifuCustomLabel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>27, 220</value>
+    <value>36, 271</value>
+  </data>
+  <data name="bunifuCustomLabel2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="bunifuCustomLabel2.Size" type="System.Drawing.Size, System.Drawing">
     <value>43, 20</value>
@@ -5894,10 +6320,13 @@
 </value>
   </data>
   <data name="TextboxDescripcionAlmacen.Location" type="System.Drawing.Point, System.Drawing">
-    <value>31, 159</value>
+    <value>41, 196</value>
+  </data>
+  <data name="TextboxDescripcionAlmacen.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="TextboxDescripcionAlmacen.Size" type="System.Drawing.Size, System.Drawing">
-    <value>357, 42</value>
+    <value>476, 52</value>
   </data>
   <data name="TextboxDescripcionAlmacen.TabIndex" type="System.Int32, mscorlib">
     <value>146</value>
@@ -5915,10 +6344,13 @@
     <value>10</value>
   </data>
   <data name="tabPage11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
+    <value>4, 25</value>
+  </data>
+  <data name="tabPage11.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="tabPage11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1575, 746</value>
+    <value>2103, 921</value>
   </data>
   <data name="tabPage11.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -5938,6 +6370,30 @@
   <data name="&gt;&gt;tabPage11.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
+  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1723, 151</value>
+  </data>
+  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="button1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="button1.Text" xml:space="preserve">
+    <value>button1</value>
+  </data>
+  <data name="&gt;&gt;button1.Name" xml:space="preserve">
+    <value>button1</value>
+  </data>
+  <data name="&gt;&gt;button1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
+    <value>tabPage14</value>
+  </data>
+  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="labelErrorReporte.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -5945,7 +6401,10 @@
     <value>Microsoft Sans Serif, 11.25pt</value>
   </data>
   <data name="labelErrorReporte.Location" type="System.Drawing.Point, System.Drawing">
-    <value>419, 66</value>
+    <value>4, 102</value>
+  </data>
+  <data name="labelErrorReporte.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="labelErrorReporte.Size" type="System.Drawing.Size, System.Drawing">
     <value>120, 18</value>
@@ -5966,388 +6425,10 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;labelErrorReporte.Parent" xml:space="preserve">
-    <value>tabPage15</value>
+    <value>tabPage26</value>
   </data>
   <data name="&gt;&gt;labelErrorReporte.ZOrder" xml:space="preserve">
     <value>0</value>
-  </data>
-  <data name="dateTimePickerReporteB.Location" type="System.Drawing.Point, System.Drawing">
-    <value>213, 60</value>
-  </data>
-  <data name="dateTimePickerReporteB.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 20</value>
-  </data>
-  <data name="dateTimePickerReporteB.TabIndex" type="System.Int32, mscorlib">
-    <value>157</value>
-  </data>
-  <data name="&gt;&gt;dateTimePickerReporteB.Name" xml:space="preserve">
-    <value>dateTimePickerReporteB</value>
-  </data>
-  <data name="&gt;&gt;dateTimePickerReporteB.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;dateTimePickerReporteB.Parent" xml:space="preserve">
-    <value>tabPage15</value>
-  </data>
-  <data name="&gt;&gt;dateTimePickerReporteB.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="dateTimePickerReporteA.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 60</value>
-  </data>
-  <data name="dateTimePickerReporteA.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 20</value>
-  </data>
-  <data name="dateTimePickerReporteA.TabIndex" type="System.Int32, mscorlib">
-    <value>156</value>
-  </data>
-  <data name="&gt;&gt;dateTimePickerReporteA.Name" xml:space="preserve">
-    <value>dateTimePickerReporteA</value>
-  </data>
-  <data name="&gt;&gt;dateTimePickerReporteA.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;dateTimePickerReporteA.Parent" xml:space="preserve">
-    <value>tabPage15</value>
-  </data>
-  <data name="&gt;&gt;dateTimePickerReporteA.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="DataGridReporteProducto.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="DataGridReporteProducto.RowHeadersWidth" type="System.Int32, mscorlib">
-    <value>51</value>
-  </data>
-  <data name="DataGridReporteProducto.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1060, 397</value>
-  </data>
-  <data name="DataGridReporteProducto.TabIndex" type="System.Int32, mscorlib">
-    <value>141</value>
-  </data>
-  <data name="&gt;&gt;DataGridReporteProducto.Name" xml:space="preserve">
-    <value>DataGridReporteProducto</value>
-  </data>
-  <data name="&gt;&gt;DataGridReporteProducto.Type" xml:space="preserve">
-    <value>Bunifu.Framework.UI.BunifuCustomDataGrid, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;DataGridReporteProducto.Parent" xml:space="preserve">
-    <value>tabPage2</value>
-  </data>
-  <data name="&gt;&gt;DataGridReporteProducto.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="tabPage2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
-  </data>
-  <data name="tabPage2.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="tabPage2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1094, 421</value>
-  </data>
-  <data name="tabPage2.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="tabPage2.Text" xml:space="preserve">
-    <value>Por producto</value>
-  </data>
-  <data name="&gt;&gt;tabPage2.Name" xml:space="preserve">
-    <value>tabPage2</value>
-  </data>
-  <data name="&gt;&gt;tabPage2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPage2.Parent" xml:space="preserve">
-    <value>tabControl5</value>
-  </data>
-  <data name="&gt;&gt;tabPage2.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="DataGridReporteDepartamento.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="DataGridReporteDepartamento.RowHeadersWidth" type="System.Int32, mscorlib">
-    <value>51</value>
-  </data>
-  <data name="DataGridReporteDepartamento.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1060, 397</value>
-  </data>
-  <data name="DataGridReporteDepartamento.TabIndex" type="System.Int32, mscorlib">
-    <value>142</value>
-  </data>
-  <data name="&gt;&gt;DataGridReporteDepartamento.Name" xml:space="preserve">
-    <value>DataGridReporteDepartamento</value>
-  </data>
-  <data name="&gt;&gt;DataGridReporteDepartamento.Type" xml:space="preserve">
-    <value>Bunifu.Framework.UI.BunifuCustomDataGrid, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;DataGridReporteDepartamento.Parent" xml:space="preserve">
-    <value>tabPage10</value>
-  </data>
-  <data name="&gt;&gt;DataGridReporteDepartamento.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="tabPage10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
-  </data>
-  <data name="tabPage10.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="tabPage10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1094, 421</value>
-  </data>
-  <data name="tabPage10.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="tabPage10.Text" xml:space="preserve">
-    <value>Por departamento</value>
-  </data>
-  <data name="&gt;&gt;tabPage10.Name" xml:space="preserve">
-    <value>tabPage10</value>
-  </data>
-  <data name="&gt;&gt;tabPage10.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPage10.Parent" xml:space="preserve">
-    <value>tabControl5</value>
-  </data>
-  <data name="&gt;&gt;tabPage10.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="DataGridReporteVentaCajeros.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="DataGridReporteVentaCajeros.RowHeadersWidth" type="System.Int32, mscorlib">
-    <value>51</value>
-  </data>
-  <data name="DataGridReporteVentaCajeros.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1060, 397</value>
-  </data>
-  <data name="DataGridReporteVentaCajeros.TabIndex" type="System.Int32, mscorlib">
-    <value>143</value>
-  </data>
-  <data name="&gt;&gt;DataGridReporteVentaCajeros.Name" xml:space="preserve">
-    <value>DataGridReporteVentaCajeros</value>
-  </data>
-  <data name="&gt;&gt;DataGridReporteVentaCajeros.Type" xml:space="preserve">
-    <value>Bunifu.Framework.UI.BunifuCustomDataGrid, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;DataGridReporteVentaCajeros.Parent" xml:space="preserve">
-    <value>tabPage22</value>
-  </data>
-  <data name="&gt;&gt;DataGridReporteVentaCajeros.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="tabPage22.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
-  </data>
-  <data name="tabPage22.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1094, 421</value>
-  </data>
-  <data name="tabPage22.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="tabPage22.Text" xml:space="preserve">
-    <value>venta por cajeros</value>
-  </data>
-  <data name="&gt;&gt;tabPage22.Name" xml:space="preserve">
-    <value>tabPage22</value>
-  </data>
-  <data name="&gt;&gt;tabPage22.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPage22.Parent" xml:space="preserve">
-    <value>tabControl5</value>
-  </data>
-  <data name="&gt;&gt;tabPage22.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="tabControl5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 222</value>
-  </data>
-  <data name="tabControl5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1102, 447</value>
-  </data>
-  <data name="tabControl5.TabIndex" type="System.Int32, mscorlib">
-    <value>142</value>
-  </data>
-  <data name="&gt;&gt;tabControl5.Name" xml:space="preserve">
-    <value>tabControl5</value>
-  </data>
-  <data name="&gt;&gt;tabControl5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabControl5.Parent" xml:space="preserve">
-    <value>tabPage15</value>
-  </data>
-  <data name="&gt;&gt;tabControl5.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="labelReporteGanancias.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="labelReporteGanancias.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 14.25pt</value>
-  </data>
-  <data name="labelReporteGanancias.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="labelReporteGanancias.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1, 123</value>
-  </data>
-  <data name="labelReporteGanancias.Size" type="System.Drawing.Size, System.Drawing">
-    <value>189, 24</value>
-  </data>
-  <data name="labelReporteGanancias.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="labelReporteGanancias.Text" xml:space="preserve">
-    <value>Las ganancias fueron</value>
-  </data>
-  <data name="&gt;&gt;labelReporteGanancias.Name" xml:space="preserve">
-    <value>labelReporteGanancias</value>
-  </data>
-  <data name="&gt;&gt;labelReporteGanancias.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelReporteGanancias.Parent" xml:space="preserve">
-    <value>tabPage15</value>
-  </data>
-  <data name="&gt;&gt;labelReporteGanancias.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="label17.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label17.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 14.25pt</value>
-  </data>
-  <data name="label17.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label17.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 195</value>
-  </data>
-  <data name="label17.Size" type="System.Drawing.Size, System.Drawing">
-    <value>67, 24</value>
-  </data>
-  <data name="label17.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="label17.Text" xml:space="preserve">
-    <value>Gastos</value>
-  </data>
-  <data name="&gt;&gt;label17.Name" xml:space="preserve">
-    <value>label17</value>
-  </data>
-  <data name="&gt;&gt;label17.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label17.Parent" xml:space="preserve">
-    <value>tabPage15</value>
-  </data>
-  <data name="&gt;&gt;label17.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="label16.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label16.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 14.25pt</value>
-  </data>
-  <data name="label16.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label16.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1, 171</value>
-  </data>
-  <data name="label16.Size" type="System.Drawing.Size, System.Drawing">
-    <value>164, 24</value>
-  </data>
-  <data name="label16.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="label16.Text" xml:space="preserve">
-    <value>Ventas en efectivo</value>
-  </data>
-  <data name="&gt;&gt;label16.Name" xml:space="preserve">
-    <value>label16</value>
-  </data>
-  <data name="&gt;&gt;label16.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label16.Parent" xml:space="preserve">
-    <value>tabPage15</value>
-  </data>
-  <data name="&gt;&gt;label16.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="label15.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label15.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 14.25pt</value>
-  </data>
-  <data name="label15.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label15.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1, 147</value>
-  </data>
-  <data name="label15.Size" type="System.Drawing.Size, System.Drawing">
-    <value>244, 24</value>
-  </data>
-  <data name="label15.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="label15.Text" xml:space="preserve">
-    <value>Ventas por tarjeta de credito</value>
-  </data>
-  <data name="&gt;&gt;label15.Name" xml:space="preserve">
-    <value>label15</value>
-  </data>
-  <data name="&gt;&gt;label15.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label15.Parent" xml:space="preserve">
-    <value>tabPage15</value>
-  </data>
-  <data name="&gt;&gt;label15.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="labelReporte1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="labelReporte1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 14.25pt</value>
-  </data>
-  <data name="labelReporte1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="labelReporte1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1, 99</value>
-  </data>
-  <data name="labelReporte1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>275, 24</value>
-  </data>
-  <data name="labelReporte1.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="labelReporte1.Text" xml:space="preserve">
-    <value>las ventas del día de hoy fueron</value>
-  </data>
-  <data name="&gt;&gt;labelReporte1.Name" xml:space="preserve">
-    <value>labelReporte1</value>
-  </data>
-  <data name="&gt;&gt;labelReporte1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelReporte1.Parent" xml:space="preserve">
-    <value>tabPage15</value>
-  </data>
-  <data name="&gt;&gt;labelReporte1.ZOrder" xml:space="preserve">
-    <value>8</value>
   </data>
   <data name="buttonGenerarReporte.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -6416,10 +6497,13 @@
 </value>
   </data>
   <data name="buttonGenerarReporte.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 6</value>
+    <value>5, 5</value>
+  </data>
+  <data name="buttonGenerarReporte.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="buttonGenerarReporte.Size" type="System.Drawing.Size, System.Drawing">
-    <value>407, 48</value>
+    <value>953, 59</value>
   </data>
   <data name="buttonGenerarReporte.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -6434,19 +6518,472 @@
     <value>Bunifu.Framework.UI.BunifuFlatButton, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;buttonGenerarReporte.Parent" xml:space="preserve">
-    <value>tabPage15</value>
+    <value>tabPage26</value>
   </data>
   <data name="&gt;&gt;buttonGenerarReporte.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>1</value>
+  </data>
+  <data name="dateTimePickerReporteB.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14.25pt</value>
+  </data>
+  <data name="dateTimePickerReporteB.Location" type="System.Drawing.Point, System.Drawing">
+    <value>486, 69</value>
+  </data>
+  <data name="dateTimePickerReporteB.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="dateTimePickerReporteB.Size" type="System.Drawing.Size, System.Drawing">
+    <value>469, 29</value>
+  </data>
+  <data name="dateTimePickerReporteB.TabIndex" type="System.Int32, mscorlib">
+    <value>157</value>
+  </data>
+  <data name="&gt;&gt;dateTimePickerReporteB.Name" xml:space="preserve">
+    <value>dateTimePickerReporteB</value>
+  </data>
+  <data name="&gt;&gt;dateTimePickerReporteB.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dateTimePickerReporteB.Parent" xml:space="preserve">
+    <value>tabPage26</value>
+  </data>
+  <data name="&gt;&gt;dateTimePickerReporteB.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="labelReporte1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelReporte1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14.25pt</value>
+  </data>
+  <data name="labelReporte1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelReporte1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 130</value>
+  </data>
+  <data name="labelReporte1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="labelReporte1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>275, 24</value>
+  </data>
+  <data name="labelReporte1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="labelReporte1.Text" xml:space="preserve">
+    <value>las ventas del día de hoy fueron</value>
+  </data>
+  <data name="&gt;&gt;labelReporte1.Name" xml:space="preserve">
+    <value>labelReporte1</value>
+  </data>
+  <data name="&gt;&gt;labelReporte1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelReporte1.Parent" xml:space="preserve">
+    <value>tabPage26</value>
+  </data>
+  <data name="&gt;&gt;labelReporte1.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="dateTimePickerReporteA.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14.25pt</value>
+  </data>
+  <data name="dateTimePickerReporteA.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 69</value>
+  </data>
+  <data name="dateTimePickerReporteA.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="dateTimePickerReporteA.Size" type="System.Drawing.Size, System.Drawing">
+    <value>472, 29</value>
+  </data>
+  <data name="dateTimePickerReporteA.TabIndex" type="System.Int32, mscorlib">
+    <value>156</value>
+  </data>
+  <data name="&gt;&gt;dateTimePickerReporteA.Name" xml:space="preserve">
+    <value>dateTimePickerReporteA</value>
+  </data>
+  <data name="&gt;&gt;dateTimePickerReporteA.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dateTimePickerReporteA.Parent" xml:space="preserve">
+    <value>tabPage26</value>
+  </data>
+  <data name="&gt;&gt;dateTimePickerReporteA.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="label15.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label15.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14.25pt</value>
+  </data>
+  <data name="label15.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label15.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 189</value>
+  </data>
+  <data name="label15.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label15.Size" type="System.Drawing.Size, System.Drawing">
+    <value>244, 24</value>
+  </data>
+  <data name="label15.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="label15.Text" xml:space="preserve">
+    <value>Ventas por tarjeta de credito</value>
+  </data>
+  <data name="&gt;&gt;label15.Name" xml:space="preserve">
+    <value>label15</value>
+  </data>
+  <data name="&gt;&gt;label15.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label15.Parent" xml:space="preserve">
+    <value>tabPage26</value>
+  </data>
+  <data name="&gt;&gt;label15.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="label16.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label16.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14.25pt</value>
+  </data>
+  <data name="label16.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label16.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 218</value>
+  </data>
+  <data name="label16.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label16.Size" type="System.Drawing.Size, System.Drawing">
+    <value>164, 24</value>
+  </data>
+  <data name="label16.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="label16.Text" xml:space="preserve">
+    <value>Ventas en efectivo</value>
+  </data>
+  <data name="&gt;&gt;label16.Name" xml:space="preserve">
+    <value>label16</value>
+  </data>
+  <data name="&gt;&gt;label16.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label16.Parent" xml:space="preserve">
+    <value>tabPage26</value>
+  </data>
+  <data name="&gt;&gt;label16.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="labelReporteGanancias.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelReporteGanancias.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14.25pt</value>
+  </data>
+  <data name="labelReporteGanancias.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelReporteGanancias.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 159</value>
+  </data>
+  <data name="labelReporteGanancias.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="labelReporteGanancias.Size" type="System.Drawing.Size, System.Drawing">
+    <value>189, 24</value>
+  </data>
+  <data name="labelReporteGanancias.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="labelReporteGanancias.Text" xml:space="preserve">
+    <value>Las ganancias fueron</value>
+  </data>
+  <data name="&gt;&gt;labelReporteGanancias.Name" xml:space="preserve">
+    <value>labelReporteGanancias</value>
+  </data>
+  <data name="&gt;&gt;labelReporteGanancias.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelReporteGanancias.Parent" xml:space="preserve">
+    <value>tabPage26</value>
+  </data>
+  <data name="&gt;&gt;labelReporteGanancias.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="label17.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label17.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14.25pt</value>
+  </data>
+  <data name="label17.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label17.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 248</value>
+  </data>
+  <data name="label17.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label17.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 24</value>
+  </data>
+  <data name="label17.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="label17.Text" xml:space="preserve">
+    <value>Gastos</value>
+  </data>
+  <data name="&gt;&gt;label17.Name" xml:space="preserve">
+    <value>label17</value>
+  </data>
+  <data name="&gt;&gt;label17.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label17.Parent" xml:space="preserve">
+    <value>tabPage26</value>
+  </data>
+  <data name="&gt;&gt;label17.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="tabPage26.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 25</value>
+  </data>
+  <data name="tabPage26.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1643, 775</value>
+  </data>
+  <data name="tabPage26.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="tabPage26.Text" xml:space="preserve">
+    <value>reporte general</value>
+  </data>
+  <data name="&gt;&gt;tabPage26.Name" xml:space="preserve">
+    <value>tabPage26</value>
+  </data>
+  <data name="&gt;&gt;tabPage26.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage26.Parent" xml:space="preserve">
+    <value>tabControl5</value>
+  </data>
+  <data name="&gt;&gt;tabPage26.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="DataGridReporteProducto.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 4</value>
+  </data>
+  <data name="DataGridReporteProducto.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="DataGridReporteProducto.RowHeadersWidth" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
+  <data name="DataGridReporteProducto.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1631, 763</value>
+  </data>
+  <data name="DataGridReporteProducto.TabIndex" type="System.Int32, mscorlib">
+    <value>141</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporteProducto.Name" xml:space="preserve">
+    <value>DataGridReporteProducto</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporteProducto.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuCustomDataGrid, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporteProducto.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporteProducto.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tabPage2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 25</value>
+  </data>
+  <data name="tabPage2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="tabPage2.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="tabPage2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1643, 775</value>
+  </data>
+  <data name="tabPage2.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="tabPage2.Text" xml:space="preserve">
+    <value>Por producto</value>
+  </data>
+  <data name="&gt;&gt;tabPage2.Name" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;tabPage2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage2.Parent" xml:space="preserve">
+    <value>tabControl5</value>
+  </data>
+  <data name="&gt;&gt;tabPage2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="DataGridReporteDepartamento.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 4</value>
+  </data>
+  <data name="DataGridReporteDepartamento.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="DataGridReporteDepartamento.RowHeadersWidth" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
+  <data name="DataGridReporteDepartamento.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1631, 763</value>
+  </data>
+  <data name="DataGridReporteDepartamento.TabIndex" type="System.Int32, mscorlib">
+    <value>142</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporteDepartamento.Name" xml:space="preserve">
+    <value>DataGridReporteDepartamento</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporteDepartamento.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuCustomDataGrid, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporteDepartamento.Parent" xml:space="preserve">
+    <value>tabPage10</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporteDepartamento.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tabPage10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 25</value>
+  </data>
+  <data name="tabPage10.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="tabPage10.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="tabPage10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1643, 775</value>
+  </data>
+  <data name="tabPage10.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tabPage10.Text" xml:space="preserve">
+    <value>Por departamento</value>
+  </data>
+  <data name="&gt;&gt;tabPage10.Name" xml:space="preserve">
+    <value>tabPage10</value>
+  </data>
+  <data name="&gt;&gt;tabPage10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage10.Parent" xml:space="preserve">
+    <value>tabControl5</value>
+  </data>
+  <data name="&gt;&gt;tabPage10.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="DataGridReporteVentaCajeros.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 4</value>
+  </data>
+  <data name="DataGridReporteVentaCajeros.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="DataGridReporteVentaCajeros.RowHeadersWidth" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
+  <data name="DataGridReporteVentaCajeros.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1635, 767</value>
+  </data>
+  <data name="DataGridReporteVentaCajeros.TabIndex" type="System.Int32, mscorlib">
+    <value>143</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporteVentaCajeros.Name" xml:space="preserve">
+    <value>DataGridReporteVentaCajeros</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporteVentaCajeros.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuCustomDataGrid, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporteVentaCajeros.Parent" xml:space="preserve">
+    <value>tabPage22</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporteVentaCajeros.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tabPage22.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 25</value>
+  </data>
+  <data name="tabPage22.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="tabPage22.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1643, 775</value>
+  </data>
+  <data name="tabPage22.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="tabPage22.Text" xml:space="preserve">
+    <value>venta por cajeros</value>
+  </data>
+  <data name="&gt;&gt;tabPage22.Name" xml:space="preserve">
+    <value>tabPage22</value>
+  </data>
+  <data name="&gt;&gt;tabPage22.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage22.Parent" xml:space="preserve">
+    <value>tabControl5</value>
+  </data>
+  <data name="&gt;&gt;tabPage22.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="tabControl5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 8</value>
+  </data>
+  <data name="tabControl5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="tabControl5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1651, 804</value>
+  </data>
+  <data name="tabControl5.TabIndex" type="System.Int32, mscorlib">
+    <value>142</value>
+  </data>
+  <data name="&gt;&gt;tabControl5.Name" xml:space="preserve">
+    <value>tabControl5</value>
+  </data>
+  <data name="&gt;&gt;tabControl5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabControl5.Parent" xml:space="preserve">
+    <value>tabPage15</value>
+  </data>
+  <data name="&gt;&gt;tabControl5.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="tabPage15.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
+    <value>4, 25</value>
+  </data>
+  <data name="tabPage15.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="tabPage15.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="tabPage15.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1204, 664</value>
+    <value>1667, 820</value>
   </data>
   <data name="tabPage15.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -6476,7 +7013,10 @@
     <value>NoControl</value>
   </data>
   <data name="labelErrorReporte2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>421, 64</value>
+    <value>5, 109</value>
+  </data>
+  <data name="labelErrorReporte2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="labelErrorReporte2.Size" type="System.Drawing.Size, System.Drawing">
     <value>120, 18</value>
@@ -6497,535 +7037,16 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;labelErrorReporte2.Parent" xml:space="preserve">
-    <value>tabPage16</value>
+    <value>tabPage25</value>
   </data>
   <data name="&gt;&gt;labelErrorReporte2.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="dateTimePickerReporte2B.Location" type="System.Drawing.Point, System.Drawing">
-    <value>215, 62</value>
-  </data>
-  <data name="dateTimePickerReporte2B.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 20</value>
-  </data>
-  <data name="dateTimePickerReporte2B.TabIndex" type="System.Int32, mscorlib">
-    <value>159</value>
-  </data>
-  <data name="&gt;&gt;dateTimePickerReporte2B.Name" xml:space="preserve">
-    <value>dateTimePickerReporte2B</value>
-  </data>
-  <data name="&gt;&gt;dateTimePickerReporte2B.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;dateTimePickerReporte2B.Parent" xml:space="preserve">
-    <value>tabPage16</value>
-  </data>
-  <data name="&gt;&gt;dateTimePickerReporte2B.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="dateTimePickerReporte2A.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 62</value>
-  </data>
-  <data name="dateTimePickerReporte2A.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 20</value>
-  </data>
-  <data name="dateTimePickerReporte2A.TabIndex" type="System.Int32, mscorlib">
-    <value>158</value>
-  </data>
-  <data name="&gt;&gt;dateTimePickerReporte2A.Name" xml:space="preserve">
-    <value>dateTimePickerReporte2A</value>
-  </data>
-  <data name="&gt;&gt;dateTimePickerReporte2A.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;dateTimePickerReporte2A.Parent" xml:space="preserve">
-    <value>tabPage16</value>
-  </data>
-  <data name="&gt;&gt;dateTimePickerReporte2A.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="DataGridReporteProducto2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="DataGridReporteProducto2.RowHeadersWidth" type="System.Int32, mscorlib">
-    <value>51</value>
-  </data>
-  <data name="DataGridReporteProducto2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1060, 397</value>
-  </data>
-  <data name="DataGridReporteProducto2.TabIndex" type="System.Int32, mscorlib">
-    <value>141</value>
-  </data>
-  <data name="&gt;&gt;DataGridReporteProducto2.Name" xml:space="preserve">
-    <value>DataGridReporteProducto2</value>
-  </data>
-  <data name="&gt;&gt;DataGridReporteProducto2.Type" xml:space="preserve">
-    <value>Bunifu.Framework.UI.BunifuCustomDataGrid, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;DataGridReporteProducto2.Parent" xml:space="preserve">
-    <value>tabPage17</value>
-  </data>
-  <data name="&gt;&gt;DataGridReporteProducto2.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="tabPage17.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
-  </data>
-  <data name="tabPage17.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="tabPage17.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1094, 421</value>
-  </data>
-  <data name="tabPage17.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="tabPage17.Text" xml:space="preserve">
-    <value>Por producto</value>
-  </data>
-  <data name="&gt;&gt;tabPage17.Name" xml:space="preserve">
-    <value>tabPage17</value>
-  </data>
-  <data name="&gt;&gt;tabPage17.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPage17.Parent" xml:space="preserve">
-    <value>tabControl6</value>
-  </data>
-  <data name="&gt;&gt;tabPage17.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="DataGridReporteDepartamento2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="DataGridReporteDepartamento2.RowHeadersWidth" type="System.Int32, mscorlib">
-    <value>51</value>
-  </data>
-  <data name="DataGridReporteDepartamento2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1060, 397</value>
-  </data>
-  <data name="DataGridReporteDepartamento2.TabIndex" type="System.Int32, mscorlib">
-    <value>142</value>
-  </data>
-  <data name="&gt;&gt;DataGridReporteDepartamento2.Name" xml:space="preserve">
-    <value>DataGridReporteDepartamento2</value>
-  </data>
-  <data name="&gt;&gt;DataGridReporteDepartamento2.Type" xml:space="preserve">
-    <value>Bunifu.Framework.UI.BunifuCustomDataGrid, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;DataGridReporteDepartamento2.Parent" xml:space="preserve">
-    <value>tabPage18</value>
-  </data>
-  <data name="&gt;&gt;DataGridReporteDepartamento2.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="tabPage18.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
-  </data>
-  <data name="tabPage18.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="tabPage18.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1094, 421</value>
-  </data>
-  <data name="tabPage18.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="tabPage18.Text" xml:space="preserve">
-    <value>Por departamento</value>
-  </data>
-  <data name="&gt;&gt;tabPage18.Name" xml:space="preserve">
-    <value>tabPage18</value>
-  </data>
-  <data name="&gt;&gt;tabPage18.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPage18.Parent" xml:space="preserve">
-    <value>tabControl6</value>
-  </data>
-  <data name="&gt;&gt;tabPage18.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="DataGridReporteVentasAlmacen2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="DataGridReporteVentasAlmacen2.RowHeadersWidth" type="System.Int32, mscorlib">
-    <value>51</value>
-  </data>
-  <data name="DataGridReporteVentasAlmacen2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1060, 397</value>
-  </data>
-  <data name="DataGridReporteVentasAlmacen2.TabIndex" type="System.Int32, mscorlib">
-    <value>143</value>
-  </data>
-  <data name="&gt;&gt;DataGridReporteVentasAlmacen2.Name" xml:space="preserve">
-    <value>DataGridReporteVentasAlmacen2</value>
-  </data>
-  <data name="&gt;&gt;DataGridReporteVentasAlmacen2.Type" xml:space="preserve">
-    <value>Bunifu.Framework.UI.BunifuCustomDataGrid, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;DataGridReporteVentasAlmacen2.Parent" xml:space="preserve">
-    <value>tabPage19</value>
-  </data>
-  <data name="&gt;&gt;DataGridReporteVentasAlmacen2.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="tabPage19.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
-  </data>
-  <data name="tabPage19.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1094, 421</value>
-  </data>
-  <data name="tabPage19.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="tabPage19.Text" xml:space="preserve">
-    <value>total de ventas almacen</value>
-  </data>
-  <data name="&gt;&gt;tabPage19.Name" xml:space="preserve">
-    <value>tabPage19</value>
-  </data>
-  <data name="&gt;&gt;tabPage19.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPage19.Parent" xml:space="preserve">
-    <value>tabControl6</value>
-  </data>
-  <data name="&gt;&gt;tabPage19.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="DataGridReporteProductosAlmacen2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="DataGridReporteProductosAlmacen2.RowHeadersWidth" type="System.Int32, mscorlib">
-    <value>51</value>
-  </data>
-  <data name="DataGridReporteProductosAlmacen2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1060, 397</value>
-  </data>
-  <data name="DataGridReporteProductosAlmacen2.TabIndex" type="System.Int32, mscorlib">
-    <value>143</value>
-  </data>
-  <data name="&gt;&gt;DataGridReporteProductosAlmacen2.Name" xml:space="preserve">
-    <value>DataGridReporteProductosAlmacen2</value>
-  </data>
-  <data name="&gt;&gt;DataGridReporteProductosAlmacen2.Type" xml:space="preserve">
-    <value>Bunifu.Framework.UI.BunifuCustomDataGrid, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;DataGridReporteProductosAlmacen2.Parent" xml:space="preserve">
-    <value>tabPage20</value>
-  </data>
-  <data name="&gt;&gt;DataGridReporteProductosAlmacen2.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="tabPage20.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
-  </data>
-  <data name="tabPage20.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1094, 421</value>
-  </data>
-  <data name="tabPage20.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="tabPage20.Text" xml:space="preserve">
-    <value>ventas de productos por almacen</value>
-  </data>
-  <data name="&gt;&gt;tabPage20.Name" xml:space="preserve">
-    <value>tabPage20</value>
-  </data>
-  <data name="&gt;&gt;tabPage20.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPage20.Parent" xml:space="preserve">
-    <value>tabControl6</value>
-  </data>
-  <data name="&gt;&gt;tabPage20.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="DataGridReporteDepartamentoAlmacen2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="DataGridReporteDepartamentoAlmacen2.RowHeadersWidth" type="System.Int32, mscorlib">
-    <value>51</value>
-  </data>
-  <data name="DataGridReporteDepartamentoAlmacen2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1060, 397</value>
-  </data>
-  <data name="DataGridReporteDepartamentoAlmacen2.TabIndex" type="System.Int32, mscorlib">
-    <value>144</value>
-  </data>
-  <data name="&gt;&gt;DataGridReporteDepartamentoAlmacen2.Name" xml:space="preserve">
-    <value>DataGridReporteDepartamentoAlmacen2</value>
-  </data>
-  <data name="&gt;&gt;DataGridReporteDepartamentoAlmacen2.Type" xml:space="preserve">
-    <value>Bunifu.Framework.UI.BunifuCustomDataGrid, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;DataGridReporteDepartamentoAlmacen2.Parent" xml:space="preserve">
-    <value>tabPage23</value>
-  </data>
-  <data name="&gt;&gt;DataGridReporteDepartamentoAlmacen2.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="tabPage23.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
-  </data>
-  <data name="tabPage23.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1094, 421</value>
-  </data>
-  <data name="tabPage23.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="tabPage23.Text" xml:space="preserve">
-    <value>ventar por departameno de cada almacen</value>
-  </data>
-  <data name="&gt;&gt;tabPage23.Name" xml:space="preserve">
-    <value>tabPage23</value>
-  </data>
-  <data name="&gt;&gt;tabPage23.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPage23.Parent" xml:space="preserve">
-    <value>tabControl6</value>
-  </data>
-  <data name="&gt;&gt;tabPage23.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="DataGridReporteVentaCajeros2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="DataGridReporteVentaCajeros2.RowHeadersWidth" type="System.Int32, mscorlib">
-    <value>51</value>
-  </data>
-  <data name="DataGridReporteVentaCajeros2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1060, 397</value>
-  </data>
-  <data name="DataGridReporteVentaCajeros2.TabIndex" type="System.Int32, mscorlib">
-    <value>144</value>
-  </data>
-  <data name="&gt;&gt;DataGridReporteVentaCajeros2.Name" xml:space="preserve">
-    <value>DataGridReporteVentaCajeros2</value>
-  </data>
-  <data name="&gt;&gt;DataGridReporteVentaCajeros2.Type" xml:space="preserve">
-    <value>Bunifu.Framework.UI.BunifuCustomDataGrid, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;DataGridReporteVentaCajeros2.Parent" xml:space="preserve">
-    <value>tabPage21</value>
-  </data>
-  <data name="&gt;&gt;DataGridReporteVentaCajeros2.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="tabPage21.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
-  </data>
-  <data name="tabPage21.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1094, 421</value>
-  </data>
-  <data name="tabPage21.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="tabPage21.Text" xml:space="preserve">
-    <value>Venta por cajeros</value>
-  </data>
-  <data name="&gt;&gt;tabPage21.Name" xml:space="preserve">
-    <value>tabPage21</value>
-  </data>
-  <data name="&gt;&gt;tabPage21.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPage21.Parent" xml:space="preserve">
-    <value>tabControl6</value>
-  </data>
-  <data name="&gt;&gt;tabPage21.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="tabControl6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 224</value>
-  </data>
-  <data name="tabControl6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1102, 447</value>
-  </data>
-  <data name="tabControl6.TabIndex" type="System.Int32, mscorlib">
-    <value>148</value>
-  </data>
-  <data name="&gt;&gt;tabControl6.Name" xml:space="preserve">
-    <value>tabControl6</value>
-  </data>
-  <data name="&gt;&gt;tabControl6.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabControl6.Parent" xml:space="preserve">
-    <value>tabPage16</value>
-  </data>
-  <data name="&gt;&gt;tabControl6.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="labelReporteGanancias2.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="labelReporteGanancias2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 14.25pt</value>
-  </data>
-  <data name="labelReporteGanancias2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="labelReporteGanancias2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 125</value>
-  </data>
-  <data name="labelReporteGanancias2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>360, 24</value>
-  </data>
-  <data name="labelReporteGanancias2.TabIndex" type="System.Int32, mscorlib">
-    <value>147</value>
-  </data>
-  <data name="labelReporteGanancias2.Text" xml:space="preserve">
-    <value>Las ganancias de todos los locales fueron</value>
-  </data>
-  <data name="&gt;&gt;labelReporteGanancias2.Name" xml:space="preserve">
-    <value>labelReporteGanancias2</value>
-  </data>
-  <data name="&gt;&gt;labelReporteGanancias2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelReporteGanancias2.Parent" xml:space="preserve">
-    <value>tabPage16</value>
-  </data>
-  <data name="&gt;&gt;labelReporteGanancias2.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="labelReporteGastos2.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="labelReporteGastos2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 14.25pt</value>
-  </data>
-  <data name="labelReporteGastos2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="labelReporteGastos2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 197</value>
-  </data>
-  <data name="labelReporteGastos2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>67, 24</value>
-  </data>
-  <data name="labelReporteGastos2.TabIndex" type="System.Int32, mscorlib">
-    <value>146</value>
-  </data>
-  <data name="labelReporteGastos2.Text" xml:space="preserve">
-    <value>Gastos</value>
-  </data>
-  <data name="&gt;&gt;labelReporteGastos2.Name" xml:space="preserve">
-    <value>labelReporteGastos2</value>
-  </data>
-  <data name="&gt;&gt;labelReporteGastos2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelReporteGastos2.Parent" xml:space="preserve">
-    <value>tabPage16</value>
-  </data>
-  <data name="&gt;&gt;labelReporteGastos2.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="labelReporteEfectivo2.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="labelReporteEfectivo2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 14.25pt</value>
-  </data>
-  <data name="labelReporteEfectivo2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="labelReporteEfectivo2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 173</value>
-  </data>
-  <data name="labelReporteEfectivo2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>164, 24</value>
-  </data>
-  <data name="labelReporteEfectivo2.TabIndex" type="System.Int32, mscorlib">
-    <value>145</value>
-  </data>
-  <data name="labelReporteEfectivo2.Text" xml:space="preserve">
-    <value>Ventas en efectivo</value>
-  </data>
-  <data name="&gt;&gt;labelReporteEfectivo2.Name" xml:space="preserve">
-    <value>labelReporteEfectivo2</value>
-  </data>
-  <data name="&gt;&gt;labelReporteEfectivo2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelReporteEfectivo2.Parent" xml:space="preserve">
-    <value>tabPage16</value>
-  </data>
-  <data name="&gt;&gt;labelReporteEfectivo2.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="labelReporteCredito2.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="labelReporteCredito2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 14.25pt</value>
-  </data>
-  <data name="labelReporteCredito2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="labelReporteCredito2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 149</value>
-  </data>
-  <data name="labelReporteCredito2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>244, 24</value>
-  </data>
-  <data name="labelReporteCredito2.TabIndex" type="System.Int32, mscorlib">
-    <value>144</value>
-  </data>
-  <data name="labelReporteCredito2.Text" xml:space="preserve">
-    <value>Ventas por tarjeta de credito</value>
-  </data>
-  <data name="&gt;&gt;labelReporteCredito2.Name" xml:space="preserve">
-    <value>labelReporteCredito2</value>
-  </data>
-  <data name="&gt;&gt;labelReporteCredito2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelReporteCredito2.Parent" xml:space="preserve">
-    <value>tabPage16</value>
-  </data>
-  <data name="&gt;&gt;labelReporteCredito2.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="labelReporte2.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="labelReporte2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 14.25pt</value>
-  </data>
-  <data name="labelReporte2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="labelReporte2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 101</value>
-  </data>
-  <data name="labelReporte2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>415, 24</value>
-  </data>
-  <data name="labelReporte2.TabIndex" type="System.Int32, mscorlib">
-    <value>143</value>
-  </data>
-  <data name="labelReporte2.Text" xml:space="preserve">
-    <value>las ventas de todos los locales día de hoy fueron</value>
-  </data>
-  <data name="&gt;&gt;labelReporte2.Name" xml:space="preserve">
-    <value>labelReporte2</value>
-  </data>
-  <data name="&gt;&gt;labelReporte2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelReporte2.Parent" xml:space="preserve">
-    <value>tabPage16</value>
-  </data>
-  <data name="&gt;&gt;labelReporte2.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
   <data name="bunifuFlatButton20.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
+  </data>
+  <data name="bunifuFlatButton20.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
   </data>
   <data name="bunifuFlatButton20.Iconimage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -7091,10 +7112,13 @@
 </value>
   </data>
   <data name="bunifuFlatButton20.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 6</value>
+    <value>5, 5</value>
+  </data>
+  <data name="bunifuFlatButton20.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="bunifuFlatButton20.Size" type="System.Drawing.Size, System.Drawing">
-    <value>409, 50</value>
+    <value>714, 62</value>
   </data>
   <data name="bunifuFlatButton20.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -7109,19 +7133,766 @@
     <value>Bunifu.Framework.UI.BunifuFlatButton, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;bunifuFlatButton20.Parent" xml:space="preserve">
-    <value>tabPage16</value>
+    <value>tabPage25</value>
   </data>
   <data name="&gt;&gt;bunifuFlatButton20.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>1</value>
+  </data>
+  <data name="dateTimePickerReporte2B.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14.25pt</value>
+  </data>
+  <data name="dateTimePickerReporte2B.Location" type="System.Drawing.Point, System.Drawing">
+    <value>367, 76</value>
+  </data>
+  <data name="dateTimePickerReporte2B.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="dateTimePickerReporte2B.Size" type="System.Drawing.Size, System.Drawing">
+    <value>352, 29</value>
+  </data>
+  <data name="dateTimePickerReporte2B.TabIndex" type="System.Int32, mscorlib">
+    <value>159</value>
+  </data>
+  <data name="&gt;&gt;dateTimePickerReporte2B.Name" xml:space="preserve">
+    <value>dateTimePickerReporte2B</value>
+  </data>
+  <data name="&gt;&gt;dateTimePickerReporte2B.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dateTimePickerReporte2B.Parent" xml:space="preserve">
+    <value>tabPage25</value>
+  </data>
+  <data name="&gt;&gt;dateTimePickerReporte2B.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="labelReporte2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelReporte2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14.25pt</value>
+  </data>
+  <data name="labelReporte2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelReporte2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 127</value>
+  </data>
+  <data name="labelReporte2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="labelReporte2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>415, 24</value>
+  </data>
+  <data name="labelReporte2.TabIndex" type="System.Int32, mscorlib">
+    <value>143</value>
+  </data>
+  <data name="labelReporte2.Text" xml:space="preserve">
+    <value>las ventas de todos los locales día de hoy fueron</value>
+  </data>
+  <data name="&gt;&gt;labelReporte2.Name" xml:space="preserve">
+    <value>labelReporte2</value>
+  </data>
+  <data name="&gt;&gt;labelReporte2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelReporte2.Parent" xml:space="preserve">
+    <value>tabPage25</value>
+  </data>
+  <data name="&gt;&gt;labelReporte2.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="dateTimePickerReporte2A.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14.25pt</value>
+  </data>
+  <data name="dateTimePickerReporte2A.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 76</value>
+  </data>
+  <data name="dateTimePickerReporte2A.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="dateTimePickerReporte2A.Size" type="System.Drawing.Size, System.Drawing">
+    <value>355, 29</value>
+  </data>
+  <data name="dateTimePickerReporte2A.TabIndex" type="System.Int32, mscorlib">
+    <value>158</value>
+  </data>
+  <data name="&gt;&gt;dateTimePickerReporte2A.Name" xml:space="preserve">
+    <value>dateTimePickerReporte2A</value>
+  </data>
+  <data name="&gt;&gt;dateTimePickerReporte2A.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dateTimePickerReporte2A.Parent" xml:space="preserve">
+    <value>tabPage25</value>
+  </data>
+  <data name="&gt;&gt;dateTimePickerReporte2A.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="labelReporteCredito2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelReporteCredito2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14.25pt</value>
+  </data>
+  <data name="labelReporteCredito2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelReporteCredito2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 186</value>
+  </data>
+  <data name="labelReporteCredito2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="labelReporteCredito2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>244, 24</value>
+  </data>
+  <data name="labelReporteCredito2.TabIndex" type="System.Int32, mscorlib">
+    <value>144</value>
+  </data>
+  <data name="labelReporteCredito2.Text" xml:space="preserve">
+    <value>Ventas por tarjeta de credito</value>
+  </data>
+  <data name="&gt;&gt;labelReporteCredito2.Name" xml:space="preserve">
+    <value>labelReporteCredito2</value>
+  </data>
+  <data name="&gt;&gt;labelReporteCredito2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelReporteCredito2.Parent" xml:space="preserve">
+    <value>tabPage25</value>
+  </data>
+  <data name="&gt;&gt;labelReporteCredito2.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="labelReporteEfectivo2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelReporteEfectivo2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14.25pt</value>
+  </data>
+  <data name="labelReporteEfectivo2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelReporteEfectivo2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 216</value>
+  </data>
+  <data name="labelReporteEfectivo2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="labelReporteEfectivo2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>164, 24</value>
+  </data>
+  <data name="labelReporteEfectivo2.TabIndex" type="System.Int32, mscorlib">
+    <value>145</value>
+  </data>
+  <data name="labelReporteEfectivo2.Text" xml:space="preserve">
+    <value>Ventas en efectivo</value>
+  </data>
+  <data name="&gt;&gt;labelReporteEfectivo2.Name" xml:space="preserve">
+    <value>labelReporteEfectivo2</value>
+  </data>
+  <data name="&gt;&gt;labelReporteEfectivo2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelReporteEfectivo2.Parent" xml:space="preserve">
+    <value>tabPage25</value>
+  </data>
+  <data name="&gt;&gt;labelReporteEfectivo2.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="labelReporteGanancias2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelReporteGanancias2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14.25pt</value>
+  </data>
+  <data name="labelReporteGanancias2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelReporteGanancias2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 157</value>
+  </data>
+  <data name="labelReporteGanancias2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="labelReporteGanancias2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>360, 24</value>
+  </data>
+  <data name="labelReporteGanancias2.TabIndex" type="System.Int32, mscorlib">
+    <value>147</value>
+  </data>
+  <data name="labelReporteGanancias2.Text" xml:space="preserve">
+    <value>Las ganancias de todos los locales fueron</value>
+  </data>
+  <data name="&gt;&gt;labelReporteGanancias2.Name" xml:space="preserve">
+    <value>labelReporteGanancias2</value>
+  </data>
+  <data name="&gt;&gt;labelReporteGanancias2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelReporteGanancias2.Parent" xml:space="preserve">
+    <value>tabPage25</value>
+  </data>
+  <data name="&gt;&gt;labelReporteGanancias2.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="labelReporteGastos2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelReporteGastos2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14.25pt</value>
+  </data>
+  <data name="labelReporteGastos2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelReporteGastos2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 245</value>
+  </data>
+  <data name="labelReporteGastos2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="labelReporteGastos2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 24</value>
+  </data>
+  <data name="labelReporteGastos2.TabIndex" type="System.Int32, mscorlib">
+    <value>146</value>
+  </data>
+  <data name="labelReporteGastos2.Text" xml:space="preserve">
+    <value>Gastos</value>
+  </data>
+  <data name="&gt;&gt;labelReporteGastos2.Name" xml:space="preserve">
+    <value>labelReporteGastos2</value>
+  </data>
+  <data name="&gt;&gt;labelReporteGastos2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelReporteGastos2.Parent" xml:space="preserve">
+    <value>tabPage25</value>
+  </data>
+  <data name="&gt;&gt;labelReporteGastos2.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="tabPage25.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 25</value>
+  </data>
+  <data name="tabPage25.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1643, 775</value>
+  </data>
+  <data name="tabPage25.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="tabPage25.Text" xml:space="preserve">
+    <value>Reporte general</value>
+  </data>
+  <data name="&gt;&gt;tabPage25.Name" xml:space="preserve">
+    <value>tabPage25</value>
+  </data>
+  <data name="&gt;&gt;tabPage25.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage25.Parent" xml:space="preserve">
+    <value>tabControl6</value>
+  </data>
+  <data name="&gt;&gt;tabPage25.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="DataGridReporteProducto2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 4</value>
+  </data>
+  <data name="DataGridReporteProducto2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="DataGridReporteProducto2.RowHeadersWidth" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
+  <data name="DataGridReporteProducto2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1631, 763</value>
+  </data>
+  <data name="DataGridReporteProducto2.TabIndex" type="System.Int32, mscorlib">
+    <value>141</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporteProducto2.Name" xml:space="preserve">
+    <value>DataGridReporteProducto2</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporteProducto2.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuCustomDataGrid, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporteProducto2.Parent" xml:space="preserve">
+    <value>tabPage17</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporteProducto2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tabPage17.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 25</value>
+  </data>
+  <data name="tabPage17.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="tabPage17.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="tabPage17.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1643, 775</value>
+  </data>
+  <data name="tabPage17.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="tabPage17.Text" xml:space="preserve">
+    <value>Por producto</value>
+  </data>
+  <data name="&gt;&gt;tabPage17.Name" xml:space="preserve">
+    <value>tabPage17</value>
+  </data>
+  <data name="&gt;&gt;tabPage17.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage17.Parent" xml:space="preserve">
+    <value>tabControl6</value>
+  </data>
+  <data name="&gt;&gt;tabPage17.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="DataGridReporteDepartamento2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 4</value>
+  </data>
+  <data name="DataGridReporteDepartamento2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="DataGridReporteDepartamento2.RowHeadersWidth" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
+  <data name="DataGridReporteDepartamento2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1635, 767</value>
+  </data>
+  <data name="DataGridReporteDepartamento2.TabIndex" type="System.Int32, mscorlib">
+    <value>142</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporteDepartamento2.Name" xml:space="preserve">
+    <value>DataGridReporteDepartamento2</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporteDepartamento2.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuCustomDataGrid, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporteDepartamento2.Parent" xml:space="preserve">
+    <value>tabPage18</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporteDepartamento2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tabPage18.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 25</value>
+  </data>
+  <data name="tabPage18.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="tabPage18.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="tabPage18.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1643, 775</value>
+  </data>
+  <data name="tabPage18.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tabPage18.Text" xml:space="preserve">
+    <value>Por departamento</value>
+  </data>
+  <data name="&gt;&gt;tabPage18.Name" xml:space="preserve">
+    <value>tabPage18</value>
+  </data>
+  <data name="&gt;&gt;tabPage18.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage18.Parent" xml:space="preserve">
+    <value>tabControl6</value>
+  </data>
+  <data name="&gt;&gt;tabPage18.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="DataGridReporteVentasAlmacen2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 4</value>
+  </data>
+  <data name="DataGridReporteVentasAlmacen2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="DataGridReporteVentasAlmacen2.RowHeadersWidth" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
+  <data name="DataGridReporteVentasAlmacen2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1635, 767</value>
+  </data>
+  <data name="DataGridReporteVentasAlmacen2.TabIndex" type="System.Int32, mscorlib">
+    <value>143</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporteVentasAlmacen2.Name" xml:space="preserve">
+    <value>DataGridReporteVentasAlmacen2</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporteVentasAlmacen2.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuCustomDataGrid, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporteVentasAlmacen2.Parent" xml:space="preserve">
+    <value>tabPage19</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporteVentasAlmacen2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tabPage19.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 25</value>
+  </data>
+  <data name="tabPage19.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="tabPage19.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1643, 775</value>
+  </data>
+  <data name="tabPage19.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="tabPage19.Text" xml:space="preserve">
+    <value>total de ventas almacen</value>
+  </data>
+  <data name="&gt;&gt;tabPage19.Name" xml:space="preserve">
+    <value>tabPage19</value>
+  </data>
+  <data name="&gt;&gt;tabPage19.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage19.Parent" xml:space="preserve">
+    <value>tabControl6</value>
+  </data>
+  <data name="&gt;&gt;tabPage19.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="DataGridReporteProductosAlmacen2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 4</value>
+  </data>
+  <data name="DataGridReporteProductosAlmacen2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="DataGridReporteProductosAlmacen2.RowHeadersWidth" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
+  <data name="DataGridReporteProductosAlmacen2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1639, 767</value>
+  </data>
+  <data name="DataGridReporteProductosAlmacen2.TabIndex" type="System.Int32, mscorlib">
+    <value>143</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporteProductosAlmacen2.Name" xml:space="preserve">
+    <value>DataGridReporteProductosAlmacen2</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporteProductosAlmacen2.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuCustomDataGrid, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporteProductosAlmacen2.Parent" xml:space="preserve">
+    <value>tabPage20</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporteProductosAlmacen2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tabPage20.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 25</value>
+  </data>
+  <data name="tabPage20.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="tabPage20.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1643, 775</value>
+  </data>
+  <data name="tabPage20.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="tabPage20.Text" xml:space="preserve">
+    <value>ventas de productos por almacen</value>
+  </data>
+  <data name="&gt;&gt;tabPage20.Name" xml:space="preserve">
+    <value>tabPage20</value>
+  </data>
+  <data name="&gt;&gt;tabPage20.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage20.Parent" xml:space="preserve">
+    <value>tabControl6</value>
+  </data>
+  <data name="&gt;&gt;tabPage20.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="DataGridReporteDepartamentoAlmacen2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 4</value>
+  </data>
+  <data name="DataGridReporteDepartamentoAlmacen2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="DataGridReporteDepartamentoAlmacen2.RowHeadersWidth" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
+  <data name="DataGridReporteDepartamentoAlmacen2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1635, 771</value>
+  </data>
+  <data name="DataGridReporteDepartamentoAlmacen2.TabIndex" type="System.Int32, mscorlib">
+    <value>144</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporteDepartamentoAlmacen2.Name" xml:space="preserve">
+    <value>DataGridReporteDepartamentoAlmacen2</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporteDepartamentoAlmacen2.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuCustomDataGrid, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporteDepartamentoAlmacen2.Parent" xml:space="preserve">
+    <value>tabPage23</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporteDepartamentoAlmacen2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tabPage23.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 25</value>
+  </data>
+  <data name="tabPage23.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="tabPage23.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1643, 775</value>
+  </data>
+  <data name="tabPage23.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="tabPage23.Text" xml:space="preserve">
+    <value>ventar por departameno de cada almacen</value>
+  </data>
+  <data name="&gt;&gt;tabPage23.Name" xml:space="preserve">
+    <value>tabPage23</value>
+  </data>
+  <data name="&gt;&gt;tabPage23.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage23.Parent" xml:space="preserve">
+    <value>tabControl6</value>
+  </data>
+  <data name="&gt;&gt;tabPage23.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="DataGridReporteVentaCajeros2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 4</value>
+  </data>
+  <data name="DataGridReporteVentaCajeros2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="DataGridReporteVentaCajeros2.RowHeadersWidth" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
+  <data name="DataGridReporteVentaCajeros2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1639, 767</value>
+  </data>
+  <data name="DataGridReporteVentaCajeros2.TabIndex" type="System.Int32, mscorlib">
+    <value>144</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporteVentaCajeros2.Name" xml:space="preserve">
+    <value>DataGridReporteVentaCajeros2</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporteVentaCajeros2.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuCustomDataGrid, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporteVentaCajeros2.Parent" xml:space="preserve">
+    <value>tabPage21</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporteVentaCajeros2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tabPage21.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 25</value>
+  </data>
+  <data name="tabPage21.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="tabPage21.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1643, 775</value>
+  </data>
+  <data name="tabPage21.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="tabPage21.Text" xml:space="preserve">
+    <value>Venta por cajeros</value>
+  </data>
+  <data name="&gt;&gt;tabPage21.Name" xml:space="preserve">
+    <value>tabPage21</value>
+  </data>
+  <data name="&gt;&gt;tabPage21.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage21.Parent" xml:space="preserve">
+    <value>tabControl6</value>
+  </data>
+  <data name="&gt;&gt;tabPage21.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="chart1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 22</value>
+  </data>
+  <data name="chart1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="chart1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1623, 749</value>
+  </data>
+  <data name="chart1.TabIndex" type="System.Int32, mscorlib">
+    <value>162</value>
+  </data>
+  <data name="chart1.Text" xml:space="preserve">
+    <value>chart1</value>
+  </data>
+  <data name="&gt;&gt;chart1.Name" xml:space="preserve">
+    <value>chart1</value>
+  </data>
+  <data name="&gt;&gt;chart1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataVisualization.Charting.Chart, System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</value>
+  </data>
+  <data name="&gt;&gt;chart1.Parent" xml:space="preserve">
+    <value>tabPage24</value>
+  </data>
+  <data name="&gt;&gt;chart1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tabPage24.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 25</value>
+  </data>
+  <data name="tabPage24.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="tabPage24.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1643, 775</value>
+  </data>
+  <data name="tabPage24.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="tabPage24.Text" xml:space="preserve">
+    <value>ventas por día grafica</value>
+  </data>
+  <data name="&gt;&gt;tabPage24.Name" xml:space="preserve">
+    <value>tabPage24</value>
+  </data>
+  <data name="&gt;&gt;tabPage24.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage24.Parent" xml:space="preserve">
+    <value>tabControl6</value>
+  </data>
+  <data name="&gt;&gt;tabPage24.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="DataGridReporteVentaDiaR2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>831, 4</value>
+  </data>
+  <data name="DataGridReporteVentaDiaR2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="DataGridReporteVentaDiaR2.RowHeadersWidth" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
+  <data name="DataGridReporteVentaDiaR2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>808, 767</value>
+  </data>
+  <data name="DataGridReporteVentaDiaR2.TabIndex" type="System.Int32, mscorlib">
+    <value>146</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporteVentaDiaR2.Name" xml:space="preserve">
+    <value>DataGridReporteVentaDiaR2</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporteVentaDiaR2.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuCustomDataGrid, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporteVentaDiaR2.Parent" xml:space="preserve">
+    <value>tabPage27</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporteVentaDiaR2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="DataGridReporteVentaDia2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 4</value>
+  </data>
+  <data name="DataGridReporteVentaDia2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="DataGridReporteVentaDia2.RowHeadersWidth" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
+  <data name="DataGridReporteVentaDia2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>808, 767</value>
+  </data>
+  <data name="DataGridReporteVentaDia2.TabIndex" type="System.Int32, mscorlib">
+    <value>145</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporteVentaDia2.Name" xml:space="preserve">
+    <value>DataGridReporteVentaDia2</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporteVentaDia2.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuCustomDataGrid, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporteVentaDia2.Parent" xml:space="preserve">
+    <value>tabPage27</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporteVentaDia2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tabPage27.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 25</value>
+  </data>
+  <data name="tabPage27.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1643, 775</value>
+  </data>
+  <data name="tabPage27.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="tabPage27.Text" xml:space="preserve">
+    <value>registro de ventas por día</value>
+  </data>
+  <data name="&gt;&gt;tabPage27.Name" xml:space="preserve">
+    <value>tabPage27</value>
+  </data>
+  <data name="&gt;&gt;tabPage27.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage27.Parent" xml:space="preserve">
+    <value>tabControl6</value>
+  </data>
+  <data name="&gt;&gt;tabPage27.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="tabControl6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 8</value>
+  </data>
+  <data name="tabControl6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="tabControl6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1651, 804</value>
+  </data>
+  <data name="tabControl6.TabIndex" type="System.Int32, mscorlib">
+    <value>148</value>
+  </data>
+  <data name="&gt;&gt;tabControl6.Name" xml:space="preserve">
+    <value>tabControl6</value>
+  </data>
+  <data name="&gt;&gt;tabControl6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabControl6.Parent" xml:space="preserve">
+    <value>tabPage16</value>
+  </data>
+  <data name="&gt;&gt;tabControl6.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="tabPage16.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
+    <value>4, 25</value>
+  </data>
+  <data name="tabPage16.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="tabPage16.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="tabPage16.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1204, 664</value>
+    <value>1667, 820</value>
   </data>
   <data name="tabPage16.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -7141,11 +7912,17 @@
   <data name="&gt;&gt;tabPage16.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="tabControl4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="tabControl4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 29</value>
+    <value>13, 4</value>
+  </data>
+  <data name="tabControl4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="tabControl4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1212, 690</value>
+    <value>1675, 849</value>
   </data>
   <data name="tabControl4.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -7160,13 +7937,16 @@
     <value>tabPage14</value>
   </data>
   <data name="&gt;&gt;tabControl4.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="tabPage14.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
+    <value>4, 25</value>
+  </data>
+  <data name="tabPage14.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="tabPage14.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1575, 746</value>
+    <value>2103, 921</value>
   </data>
   <data name="tabPage14.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -7187,13 +7967,16 @@
     <value>5</value>
   </data>
   <data name="tabControl1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 38</value>
+    <value>15, 47</value>
+  </data>
+  <data name="tabControl1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="tabControl1.RightToLeftLayout" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="tabControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1583, 772</value>
+    <value>2111, 950</value>
   </data>
   <data name="tabControl1.TabIndex" type="System.Int32, mscorlib">
     <value>89</value>
@@ -7463,10 +8246,13 @@
     <value>NoControl</value>
   </data>
   <data name="bunifuImageButton1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1518, 4</value>
+    <value>1807, 5</value>
+  </data>
+  <data name="bunifuImageButton1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="bunifuImageButton1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>23, 29</value>
+    <value>31, 36</value>
   </data>
   <data name="bunifuImageButton1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>Zoom</value>
@@ -7496,7 +8282,10 @@
     <value>NoControl</value>
   </data>
   <data name="labelAlmacen.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 9</value>
+    <value>17, 11</value>
+  </data>
+  <data name="labelAlmacen.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="labelAlmacen.Size" type="System.Drawing.Size, System.Drawing">
     <value>66, 16</value>
@@ -7540,10 +8329,13 @@
     <value>NoControl</value>
   </data>
   <data name="buniCerrar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1576, 5</value>
+    <value>1884, 6</value>
+  </data>
+  <data name="buniCerrar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="buniCerrar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>18, 25</value>
+    <value>24, 31</value>
   </data>
   <data name="buniCerrar.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>Zoom</value>
@@ -7578,10 +8370,13 @@
     <value>NoControl</value>
   </data>
   <data name="buniMaxMin.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1547, 5</value>
+    <value>1846, 6</value>
+  </data>
+  <data name="buniMaxMin.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="buniMaxMin.Size" type="System.Drawing.Size, System.Drawing">
-    <value>23, 29</value>
+    <value>31, 36</value>
   </data>
   <data name="buniMaxMin.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>Zoom</value>
@@ -7607,8 +8402,11 @@
   <data name="bunifuGradientPanel1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
+  <data name="bunifuGradientPanel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
   <data name="bunifuGradientPanel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1606, 33</value>
+    <value>1924, 41</value>
   </data>
   <data name="bunifuGradientPanel1.TabIndex" type="System.Int32, mscorlib">
     <value>75</value>
@@ -7644,7 +8442,7 @@
     <value>buscarfactura</value>
   </data>
   <data name="macro1ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>62, 20</value>
+    <value>62, 26</value>
   </data>
   <data name="macro1ToolStripMenuItem.Text" xml:space="preserve">
     <value>macro 1</value>
@@ -7652,8 +8450,11 @@
   <data name="menuStrip1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
+  <data name="menuStrip1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>8, 2, 0, 2</value>
+  </data>
   <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1413, 24</value>
+    <value>1884, 30</value>
   </data>
   <data name="menuStrip1.TabIndex" type="System.Int32, mscorlib">
     <value>90</value>
@@ -7688,11 +8489,17 @@
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>25</value>
+  </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
+    <value>8, 16</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1606, 823</value>
+    <value>1924, 1013</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value> </value>
