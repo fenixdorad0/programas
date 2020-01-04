@@ -25,7 +25,7 @@ namespace MysqlTienda
         {
 
             InitializeComponent();
-            comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBoxCiudad.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxIvaProducto.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxDepartamentoProducto.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxAlmacenProducto.DropDownStyle = ComboBoxStyle.DropDownList;
@@ -101,7 +101,7 @@ namespace MysqlTienda
             try
             {
                 cerrarConeccion();               
-                string selectQuery = "select codigo,referencia,producto,tamano, cantidad, precio,total FROM easyerp.detalle_facturacov where factura =" +textFactura.Text+" and almacen='"+comboBox1.Text+"'"; 
+                string selectQuery = "select codigo,referencia,producto,tamano, cantidad, precio,total FROM easyerp.detalle_facturacov where factura =" +textFactura.Text+" and almacen='"+comboBoxCiudad.Text+"'"; 
                 DataTable table = new DataTable();
                 MySqlDataAdapter adpter = new MySqlDataAdapter(selectQuery, conectar);
                 adpter.Fill(table);
@@ -126,7 +126,7 @@ namespace MysqlTienda
             {
                 cerrarConeccion();
                 double precio = Convert.ToDouble(textTotal.Text) / Convert.ToDouble(textCantidad.Text);
-                string insertarCodigo = "UPDATE easyerp.detalle_facturacov SET cantidad = cantidad+1, total =precio*cantidad, costoTotal=costo*cantidad  WHERE `detalle_facturacov`.`factura` =" + textFactura.Text + " AND `detalle_facturacov`.`codigo` = " + textCodigo.Text + " and almacen='" + comboBox1.Text + "'";
+                string insertarCodigo = "UPDATE easyerp.detalle_facturacov SET cantidad = cantidad+1, total =precio*cantidad, costoTotal=costo*cantidad  WHERE `detalle_facturacov`.`factura` =" + textFactura.Text + " AND `detalle_facturacov`.`codigo` = " + textCodigo.Text + " and almacen='" + comboBoxCiudad.Text + "'";
 
                 conectar.Open();
                 MySqlCommand command = new MySqlCommand(insertarCodigo, conectar);
@@ -144,7 +144,7 @@ namespace MysqlTienda
                     string insertarCodigo2 = "INSERT INTO easyerp.detalle_facturacov(`factura`,`fecha`, `almacen`, `codigo`, `referencia`, `producto`, `tamano`, `cantidad`, `precio`,`costo`, `iva`, `SubtotalSinIva`, `SubtotalConIva`, `total`, `costoTotal`) VALUES ('"
                     + textFactura.Text + "', '" //factura
                     + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "', '"
-                    + comboBox1.Text + "', '" //almacen falta por arreglar
+                    + comboBoxCiudad.Text + "', '" //almacen falta por arreglar
                     + textInsertarCodigo.Text + "', '" //codigo 
                     + textReferencia.Text + "','"
                     + textProducto.Text + "','" //                    
@@ -207,7 +207,7 @@ namespace MysqlTienda
             {
                 MySqlCommand cmd = new MySqlCommand();
                 //cmd.CommandText = "select sum(cantidad) from tienda.ventas where factura=" + textFactura.Text;
-                cmd.CommandText = "select sum(total) from easyerp.detalle_facturacov where factura=" + textFactura.Text +" and almacen='"+comboBox1.Text+"'";
+                cmd.CommandText = "select sum(total) from easyerp.detalle_facturacov where factura=" + textFactura.Text +" and almacen='"+comboBoxCiudad.Text+"'";
                 cmd.CommandType = System.Data.CommandType.Text;
                 cmd.Connection = conectar;
                 conectar.Open();
@@ -216,7 +216,7 @@ namespace MysqlTienda
 
                 MySqlCommand cmd2 = new MySqlCommand();
                 //cmd.CommandText = "select sum(cantidad) from tienda.ventas where factura=" + textFactura.Text;
-                cmd2.CommandText = "select sum(costoTotal) from easyerp.detalle_facturacov where factura=" + textFactura.Text + " and almacen='" + comboBox1.Text + "'";
+                cmd2.CommandText = "select sum(costoTotal) from easyerp.detalle_facturacov where factura=" + textFactura.Text + " and almacen='" + comboBoxCiudad.Text + "'";
                 cmd2.CommandType = System.Data.CommandType.Text;
                 cmd2.Connection = conectar;
                 conectar.Open();
@@ -236,7 +236,7 @@ namespace MysqlTienda
             try
             {
                 int numero = 1;
-                String select = "SELECT MAX(nf) as nf FROM easyerp.factura_movimiento where almacen_nombre ='" + comboBox1.Text + "' order by nf";
+                String select = "SELECT MAX(nf) as nf FROM easyerp.factura_movimiento where almacen_nombre ='" + comboBoxCiudad.Text + "' order by nf";
                 cerrarConeccion();
                 MySqlDataReader mdr;
                 command = new MySqlCommand(select, conectar);
@@ -276,7 +276,7 @@ namespace MysqlTienda
             }
             else
             {
-                Form2 formulario2 = new Form2(textSumaTotal.Text, Convert.ToString(textFactura.Text));
+                Form2 formulario2 = new Form2(textSumaTotal.Text, Convert.ToString(textFactura.Text), comboBoxCiudad.Text);
                 formulario2.Visible = true;
                 formulario2.Show();
                 finalizarFactura();
@@ -294,7 +294,7 @@ namespace MysqlTienda
             try
             {
 
-                string insertarCodigo = "UPDATE easyerp.factura_movimiento SET deuda = deuda WHERE nf =" + textFactura.Text + " and almacen_nombre='" + comboBox1.Text + "'";
+                string insertarCodigo = "UPDATE easyerp.factura_movimiento SET deuda = deuda WHERE nf =" + textFactura.Text + " and almacen_nombre='" + comboBoxCiudad.Text + "'";
                 conectar.Open();
                 MySqlCommand command = new MySqlCommand(insertarCodigo, conectar);
                 if (command.ExecuteNonQuery() == 1)
@@ -317,7 +317,7 @@ namespace MysqlTienda
                         + "1" + "','"  // tipo de pago efecturado
                         + "venta" + "','" //tipo de factura o movimiento
                         + labelCedula.Text + "','" //cedula del vendedor
-                        + comboBox1.Text + "')"; //almacen               
+                        + comboBoxCiudad.Text + "')"; //almacen               
                     conectar.Open();
                     MySqlCommand command2 = new MySqlCommand(insertarCodigo2, conectar);
 
@@ -355,7 +355,7 @@ namespace MysqlTienda
             {
                 cerrarConeccion();
                 MySqlDataReader mdr;
-                string select = "SELECT * FROM easyerp.producto where codigo =" + int.Parse(textInsertarCodigo.Text)+" and almacen_fabrica_nombre='"+comboBox1.Text+"'";
+                string select = "SELECT * FROM easyerp.producto where codigo =" + int.Parse(textInsertarCodigo.Text)+" and almacen_fabrica_nombre='"+comboBoxCiudad.Text+"'";
                 command = new MySqlCommand(select, conectar);
                 abrirConeccion();
                 mdr = command.ExecuteReader();
@@ -587,9 +587,9 @@ namespace MysqlTienda
                 {
                     var dt = new DataTable();
                     dt.Load(cmd.ExecuteReader());
-                    comboBox1.ValueMember = "cc";
-                    comboBox1.DisplayMember = "almacen_fabrica_nombre";
-                    comboBox1.DataSource = dt;
+                    comboBoxCiudad.ValueMember = "cc";
+                    comboBoxCiudad.DisplayMember = "almacen_fabrica_nombre";
+                    comboBoxCiudad.DataSource = dt;
                 }
             }
            
@@ -691,7 +691,7 @@ namespace MysqlTienda
                 if (Convert.ToInt32(textCantidad.Text) > 1)
                 {
                     double precio = Convert.ToDouble(textTotal.Text) / Convert.ToDouble(textCantidad.Text);
-                    string insertarCodigo = "UPDATE easyerp.detalle_facturacov SET cantidad = cantidad-1, total =precio*cantidad, costoTotal =costo*cantidad  WHERE `detalle_facturacov`.`factura` =" + textFactura.Text + " AND `detalle_facturacov`.`codigo` = " + textCodigo.Text + " and almacen='" + comboBox1.Text + "'";
+                    string insertarCodigo = "UPDATE easyerp.detalle_facturacov SET cantidad = cantidad-1, total =precio*cantidad, costoTotal =costo*cantidad  WHERE `detalle_facturacov`.`factura` =" + textFactura.Text + " AND `detalle_facturacov`.`codigo` = " + textCodigo.Text + " and almacen='" + comboBoxCiudad.Text + "'";
                     conectar.Open();
                     MySqlCommand command = new MySqlCommand(insertarCodigo, conectar);
                     if (command.ExecuteNonQuery() == 1)
@@ -705,7 +705,7 @@ namespace MysqlTienda
                 else if (Convert.ToInt32(textCantidad.Text) <= 1)
                 {                    
                     double precio = Convert.ToDouble(textTotal.Text) / Convert.ToDouble(textCantidad.Text);
-                    string insertarCodigo = "DELETE FROM easyerp.detalle_facturacov WHERE `detalle_facturacov`.`factura` =" + textFactura.Text + " AND `detalle_facturacov`.`codigo` = " + textCodigo.Text + " and almacen='" + comboBox1.Text + "'";
+                    string insertarCodigo = "DELETE FROM easyerp.detalle_facturacov WHERE `detalle_facturacov`.`factura` =" + textFactura.Text + " AND `detalle_facturacov`.`codigo` = " + textCodigo.Text + " and almacen='" + comboBoxCiudad.Text + "'";
                     conectar.Open();
                     MySqlCommand command = new MySqlCommand(insertarCodigo, conectar);
 
@@ -766,7 +766,7 @@ namespace MysqlTienda
                 try
                 {
                     double precio = Convert.ToDouble(textTotal.Text) / Convert.ToDouble(textCantidad.Text);
-                    string insertarCodigo = "UPDATE easyerp.detalle_facturacov SET precio =" + textPrecio.Text + ", total =precio*cantidad, costoTotal=costo*precio  WHERE `detalle_facturacov`.`factura` =" + textFactura.Text + " AND `detalle_facturacov`.`codigo` = " + textCodigo.Text + " and almacen='" + comboBox1.Text + "'";
+                    string insertarCodigo = "UPDATE easyerp.detalle_facturacov SET precio =" + textPrecio.Text + ", total =precio*cantidad, costoTotal=costo*precio  WHERE `detalle_facturacov`.`factura` =" + textFactura.Text + " AND `detalle_facturacov`.`codigo` = " + textCodigo.Text + " and almacen='" + comboBoxCiudad.Text + "'";
                     conectar.Open();
                     MySqlCommand command = new MySqlCommand(insertarCodigo, conectar);
 
@@ -833,7 +833,7 @@ namespace MysqlTienda
 
         public void comboBox1_TextChanged(object sender, EventArgs e)
         {
-            labelAlmacen.Text = comboBox1.Text;
+            labelAlmacen.Text = comboBoxCiudad.Text;
             if (yainicio == 1)
             {                    
                 buscarFactura();
@@ -1009,7 +1009,7 @@ namespace MysqlTienda
             {
                 cerrarConeccion();
                 double precio = Convert.ToDouble(textTotal.Text) / Convert.ToDouble(textCantidad.Text);
-                string insertarCodigo = "DELETE FROM easyerp.detalle_facturacov WHERE `detalle_facturacov`.`factura` =" + textFactura.Text + " AND `detalle_facturacov`.`codigo` = " + textCodigo.Text + " and almacen='" + comboBox1.Text + "'";
+                string insertarCodigo = "DELETE FROM easyerp.detalle_facturacov WHERE `detalle_facturacov`.`factura` =" + textFactura.Text + " AND `detalle_facturacov`.`codigo` = " + textCodigo.Text + " and almacen='" + comboBoxCiudad.Text + "'";
                 conectar.Open();
                 MySqlCommand command = new MySqlCommand(insertarCodigo, conectar);
                 if (command.ExecuteNonQuery() == 1)
@@ -1714,7 +1714,7 @@ namespace MysqlTienda
                     //
                     cerrarConeccion();
                     MySqlCommand cmd = new MySqlCommand();
-                    cmd.CommandText = "SELECT SUM(total) FROM easyerp.factura_movimiento WHERE tipo_factura_nombre ='venta' and almacen_nombre='" + comboBox1.Text + "' and fecha BETWEEN '" + fechaA + " 00:00:00' AND '" + fechaB + " 23:59:59'";
+                    cmd.CommandText = "SELECT SUM(total) FROM easyerp.factura_movimiento WHERE tipo_factura_nombre ='venta' and almacen_nombre='" + comboBoxCiudad.Text + "' and fecha BETWEEN '" + fechaA + " 00:00:00' AND '" + fechaB + " 23:59:59'";
                     cmd.CommandType = System.Data.CommandType.Text;
                     cmd.Connection = conectar;
                     conectar.Open();
@@ -1725,7 +1725,7 @@ namespace MysqlTienda
 
                     cerrarConeccion();
                     MySqlCommand cmd2 = new MySqlCommand();
-                    cmd2.CommandText = "SELECT SUM(costo) FROM easyerp.factura_movimiento WHERE tipo_factura_nombre ='venta' and almacen_nombre='" + comboBox1.Text + "' and fecha BETWEEN '" + fechaA + " 00:00:00' AND '" + fechaB + " 23:59:59'";
+                    cmd2.CommandText = "SELECT SUM(costo) FROM easyerp.factura_movimiento WHERE tipo_factura_nombre ='venta' and almacen_nombre='" + comboBoxCiudad.Text + "' and fecha BETWEEN '" + fechaA + " 00:00:00' AND '" + fechaB + " 23:59:59'";
                     cmd2.CommandType = System.Data.CommandType.Text;
                     cmd2.Connection = conectar;
                     conectar.Open();
@@ -1745,7 +1745,7 @@ namespace MysqlTienda
                 {
 
                     cerrarConeccion();
-                    string selectQuery = "SELECT codigo,referencia,producto,tamano, sum(cantidad) as 'cantidad vendida' ,sum(total) as 'total vendido',(total - costoTotal) as 'ganancia',(1-(costoTotal / total)) as 'ganancia porcentual' from easyerp.detalle_facturacov WHERE almacen = '" + comboBox1.Text + "' and fecha BETWEEN '" + fechaA + " 00:00:00' AND '" + fechaB + " 23:59:59' GROUP by codigo ";
+                    string selectQuery = "SELECT codigo,referencia,producto,tamano, sum(cantidad) as 'cantidad vendida' ,sum(total) as 'total vendido',(total - costoTotal) as 'ganancia',(1-(costoTotal / total)) as 'ganancia porcentual' from easyerp.detalle_facturacov WHERE almacen = '" + comboBoxCiudad.Text + "' and fecha BETWEEN '" + fechaA + " 00:00:00' AND '" + fechaB + " 23:59:59' GROUP by codigo ";
                     DataTable table = new DataTable();
                     MySqlDataAdapter adpter = new MySqlDataAdapter(selectQuery, conectar);
                     adpter.Fill(table);
@@ -1760,7 +1760,7 @@ namespace MysqlTienda
                 try
                 {
                     cerrarConeccion();
-                    string selectQuery = "SELECT producto, sum(cantidad) as 'cantidad vendida' ,sum(total) as 'total vendido',(sum(total) - sum(costoTotal)) as 'ganancia',(1-(sum(costoTotal) / sum(total))) as 'ganancia porcentual' from easyerp.detalle_facturacov WHERE almacen = '" + comboBox1.Text + "' and fecha BETWEEN '" + fechaA + " 00:00:00' AND '" + fechaB + " 23:59:59' GROUP by producto ";
+                    string selectQuery = "SELECT producto, sum(cantidad) as 'cantidad vendida' ,sum(total) as 'total vendido',(sum(total) - sum(costoTotal)) as 'ganancia',(1-(sum(costoTotal) / sum(total))) as 'ganancia porcentual' from easyerp.detalle_facturacov WHERE almacen = '" + comboBoxCiudad.Text + "' and fecha BETWEEN '" + fechaA + " 00:00:00' AND '" + fechaB + " 23:59:59' GROUP by producto ";
                     //string selectQuery = "SELECT codigo,referencia,producto,tamano, sum(cantidad) as 'cantidad vendida' ,(sum(total) - sum(costoTotal)) as 'ganancia',(1-(sum(costoTotal) / sum(total))) as 'ganancia porcentual' from easyerp.detalle_facturacov WHERE fecha BETWEEN '" + fechaHoy + " 00:00:00' AND '" + fechaHoy + " 23:59:59' GROUP by producto";
                     DataTable table = new DataTable();
                     MySqlDataAdapter adpter = new MySqlDataAdapter(selectQuery, conectar);
@@ -1779,7 +1779,7 @@ namespace MysqlTienda
                 {
                     cerrarConeccion();
                     //string selectQuery = "SELECT producto, sum(cantidad) as 'cantidad vendida' ,sum(total) as 'total vendido',(sum(total) - sum(costoTotal)) as 'ganancia',(1-(sum(costoTotal) / sum(total))) as 'ganancia porcentual' from easyerp.detalle_facturacov WHERE almacen_nombre = '" + comboBox1.Text + "' and fecha BETWEEN '" + fechaHoy + " 00:00:00' AND '" + fechaHoy + " 23:59:59' GROUP by producto ";
-                    string selectQuery = "SELECT usuario_cc as 'cajero',almacen_nombre as 'almacen', sum(total) as 'total vendido' ,(sum(total) - sum(costo)) as 'ganancia',(1-(sum(costo) / sum(total))) as 'ganancia porcentual' from easyerp.factura_movimiento WHERE almacen_nombre = '" + comboBox1.Text + "' and fecha BETWEEN '" + fechaA + " 00:00:00' AND '" + fechaB + " 23:59:59' GROUP by usuario_cc, almacen_nombre";
+                    string selectQuery = "SELECT usuario_cc as 'cajero',almacen_nombre as 'almacen', sum(total) as 'total vendido' ,(sum(total) - sum(costo)) as 'ganancia',(1-(sum(costo) / sum(total))) as 'ganancia porcentual' from easyerp.factura_movimiento WHERE almacen_nombre = '" + comboBoxCiudad.Text + "' and fecha BETWEEN '" + fechaA + " 00:00:00' AND '" + fechaB + " 23:59:59' GROUP by usuario_cc, almacen_nombre";
                     DataTable table = new DataTable();
                     MySqlDataAdapter adpter = new MySqlDataAdapter(selectQuery, conectar);
                     adpter.Fill(table);
@@ -2064,6 +2064,87 @@ namespace MysqlTienda
         private void button1_Click_1(object sender, EventArgs e)
         {
             //chart1.Series["ventas"].ChartType = ColumnStyle;
+        }
+
+        private void bunifuFlatButton22_Click(object sender, EventArgs e)
+        {
+            cargarTablaGastos();
+        }
+       
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TextboxGastosDescripcion_OnTextChange(object sender, EventArgs e)
+        {
+            try
+            {
+                LabelIdGastos.Text = DataGridGastos.CurrentRow.Cells[0].Value.ToString();
+                TextboxDescripcionAlmacen.text = DataGridGastos.CurrentRow.Cells[1].Value.ToString();
+                comboBoxTipoAlmacen.Text = DataGridGastos.CurrentRow.Cells[2].Value.ToString();
+                LabelFechaGastos.Text = DataGridGastos.CurrentRow.Cells[3].Value.ToString();
+
+            }
+            catch (Exception error)
+            {
+                MessageBox.Show("El error es :" + Convert.ToString(error) + "el error se encuentra cargando los datos");
+            }
+        }
+        public void cargarTablaGastos()
+        {
+            try
+            {
+                cerrarConeccion();
+
+                string selectQuery = "SELECT id,total as 'total',fecha,descripcion,usuario_cc as 'cedula',almacen_nombre as 'almacen',categoria FROM easyerp.gastoentrada WHERE gastoOentrada ='gasto' and almacen_nombre='" + comboBoxCiudad.Text + "'";
+                DataTable table = new DataTable();
+                MySqlDataAdapter adpter = new MySqlDataAdapter(selectQuery, conectar);
+                adpter.Fill(table);
+                DataGridGastos.DataSource = table;
+                cerrarConeccion();
+            }
+            catch (Exception error)
+            {
+                MessageBox.Show(error.Message + "Data grid view gastos");
+            }
+        }
+
+        private void DataGridGastos_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
+                //SELECT id
+                //,total as 'total'
+                //,fecha
+                //,descripcion
+                //,usuario_cc as 'cedula'
+                //,almacen_nombre as 'almacen',
+                //categoria
+                LabelIdGastos.Text = DataGridGastos.CurrentRow.Cells[0].Value.ToString();
+                TextboxGatosTotal.text = DataGridGastos.CurrentRow.Cells[1].Value.ToString();
+                LabelFechaGastos.Text = DataGridGastos.CurrentRow.Cells[2].Value.ToString();
+                TextboxGastosDescripcion.text = DataGridGastos.CurrentRow.Cells[3].Value.ToString();
+                comboBoxGastoCedula.Text = DataGridGastos.CurrentRow.Cells[4].Value.ToString();
+                comboBoxTipoAlmacen.Text = DataGridGastos.CurrentRow.Cells[5].Value.ToString();
+                comboBoxGastoCatagoria.Text = DataGridGastos.CurrentRow.Cells[6].Value.ToString();
+
+
+
+
+
+
+
+            }
+            catch (Exception error)
+            {
+                MessageBox.Show("El error es :" + Convert.ToString(error) + "el error se encuentra cargando los datos");
+            }
+        }
+
+        private void DataGridGastos_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 

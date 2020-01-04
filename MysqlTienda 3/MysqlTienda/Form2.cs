@@ -88,11 +88,11 @@ namespace MysqlTienda
             InitializeComponent();
             //formulario1 = formulario2;
             this.TopMost = true;
-            labelFactura2.Text = factura;
             
         }
-        public Form2(string texto, string factura1)
+        public Form2(string texto, string factura1, string ciudad)
         {
+            
             total = Convert.ToDouble(texto);
             try
             {
@@ -100,6 +100,9 @@ namespace MysqlTienda
                 InitializeComponent();
                 this.TopMost = true;
                 labelTotal.Text = "El total es:" + texto;
+                labelFactura2.Text = "Factura #" +factura;
+
+                labelCiudad.Text = "Ciudad: " + ciudad;
             }
             catch(Exception error)
             {
@@ -213,6 +216,17 @@ namespace MysqlTienda
                 return false;
             }
         }
+
+        private void bunifuFlatButton1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuFlatButton2_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
         private void TextboxCambio_OnValueChanged(object sender, EventArgs e)
         {
            

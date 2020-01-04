@@ -73,6 +73,16 @@ namespace MysqlTienda.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap gastos {
+            get {
+                object obj = ResourceManager.GetObject("gastos", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Logo_tendidos_del_Tolima {
             get {
                 object obj = ResourceManager.GetObject("Logo tendidos del Tolima", resourceCulture);
