@@ -1822,9 +1822,33 @@ namespace MysqlTienda
 
                     labelReporteGanancias.Text = "Las ganancias fueron: " + (ventas - costo).ToString("C") + " Que representan una utilidad de: " + Convert.ToString(Math.Round((1 - (costo / ventas)) * 100, 2)) + "%";
 
+                    cerrarConeccion();
+                    MySqlCommand cmd3 = new MySqlCommand();
+                    cmd3.CommandText = "SELECT SUM(total) FROM easyerp.gastoentrada WHERE gastoOentrada ='gasto' and almacen_nombre='" + comboBoxCiudad.Text + "' and fecha BETWEEN '" + fechaA + " 00:00:00' AND '" + fechaB + " 23:59:59'";
+                    cmd3.CommandType = System.Data.CommandType.Text;
+                    cmd3.Connection = conectar;
+                    conectar.Open();
+                    double gasto = Convert.ToDouble(cmd3.ExecuteScalar());
+                    labelReporteLocalGastos.Text = "El total de los gastos es: "+gasto.ToString("C");
+                    conectar.Close();
+
+                    cerrarConeccion();
+                    MySqlCommand cmd4 = new MySqlCommand();
+                    cmd4.CommandText = "SELECT SUM(total) FROM easyerp.gastoentrada WHERE gastoOentrada ='entrada' and almacen_nombre='" + comboBoxCiudad.Text + "' and fecha BETWEEN '" + fechaA + " 00:00:00' AND '" + fechaB + " 23:59:59'";
+                    cmd4.CommandType = System.Data.CommandType.Text;
+                    cmd4.Connection = conectar;
+                    conectar.Open();
+                    double entrada = Convert.ToDouble(cmd4.ExecuteScalar());
+                    labelReporteLocalEntradas.Text = "El total de las entradas de dinero fueron: "+entrada.ToString("C");
+                    conectar.Close();
+
+
 
                 }
-                catch { }
+                catch (Exception error)
+                {
+                    //MessageBox.Show(Convert.ToString(error));
+                }
 
                 //aquiiiiii
 
@@ -1941,6 +1965,25 @@ namespace MysqlTienda
 
                     labelReporteGanancias2.Text = "Las ganancias de todos los locales fueron:" + (ventas - costo).ToString("C") + " Que representan una utilidad de: " + Convert.ToString(Math.Round((1 - (costo / ventas)) * 100, 2)) + "%";
 
+                    cerrarConeccion();
+                    MySqlCommand cmd3 = new MySqlCommand();
+                    cmd3.CommandText = "SELECT SUM(total) FROM easyerp.gastoentrada WHERE gastoOentrada ='gasto' and fecha BETWEEN '" + fechaA + " 00:00:00' AND '" + fechaB + " 23:59:59'";
+                    cmd3.CommandType = System.Data.CommandType.Text;
+                    cmd3.Connection = conectar;
+                    conectar.Open();
+                    double gasto = Convert.ToDouble(cmd3.ExecuteScalar());
+                    labelReporteGeneralGastos.Text = "El total de los gastos es: " + gasto.ToString("C");
+                    conectar.Close();
+
+                    cerrarConeccion();
+                    MySqlCommand cmd4 = new MySqlCommand();
+                    cmd4.CommandText = "SELECT SUM(total) FROM easyerp.gastoentrada WHERE gastoOentrada ='entrada' and fecha BETWEEN '" + fechaA + " 00:00:00' AND '" + fechaB + " 23:59:59'";
+                    cmd4.CommandType = System.Data.CommandType.Text;
+                    cmd4.Connection = conectar;
+                    conectar.Open();
+                    double entrada = Convert.ToDouble(cmd4.ExecuteScalar());
+                    labelReporteGeneralEntradas.Text = "El total de las entradas de dinero fueron: " + entrada.ToString("C");
+                    conectar.Close();
 
                 }
                 catch { }
@@ -2055,7 +2098,7 @@ namespace MysqlTienda
                     {
                         contador++;
                         //chart1.Series["ventas"].Label = (reader.GetDouble("totalpordia").ToString("C"));
-                        chart1.Series["ventas"].Points.AddXY(contador, reader.GetDouble("totalpordia"));
+                        chartVentasPorDiaReporte.Series["ventas"].Points.AddXY(contador, reader.GetDouble("totalpordia"));
                         
                     }
                     cerrarConeccion();
