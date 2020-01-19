@@ -34,9 +34,10 @@ namespace MysqlTienda
             comboBoxCedulaPermiAlmace.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxUsuPerAlm.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxTipoAlmacen.DropDownStyle = ComboBoxStyle.DropDownList;
-            
+            comboBoxCategoriaEntrada.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxGastoAlmacen.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxGastoCatagoria.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBoxAlmacenEntrada.DropDownStyle = ComboBoxStyle.DropDownList;
         }
         
         public void abrirConeccion()
@@ -432,7 +433,9 @@ namespace MysqlTienda
                     cerrarConeccion();
                     cargarCiudades();
                     cargarCiudadesGastos();
+                    cargarCiudadesEntradas();
                     cargarGastoDescipcion();
+                    cargarCategoriaEntrada();
 
                         buscarFactura();
                     //buscarFactura(0, "SELECT * FROM easyerp.detalle_facturacov order by factura_movimiento_nf where id = LAST_INSERT_ID");
@@ -620,6 +623,24 @@ namespace MysqlTienda
             }
 
         }
+        public void cargarCategoriaEntrada()
+        {
+            //carga las ciudades en un combo box importantisimo
+            using (MySqlConnection c = new MySqlConnection("datasource=localhost;port=3306;username=root;password=;SslMode=none"))
+            {
+                c.Open();
+                var sql = "SELECT nombre,descripcion,entradaOgasto FROM easyerp.tipo_gasto_entrada WHERE entradaOgasto = 'entrada'";
+                using (MySqlCommand cmd = new MySqlCommand(sql, c))
+                {
+                    var dt = new DataTable();
+                    dt.Load(cmd.ExecuteReader());
+                    comboBoxCategoriaEntrada.ValueMember = "nombre";
+                    comboBoxCategoriaEntrada.DisplayMember = "nombre";
+                    comboBoxCategoriaEntrada.DataSource = dt;
+                }
+            }
+
+        }
         public void cargarCiudadesGastos()
         {
             //carga las ciudades en un combo box importantisimo
@@ -638,6 +659,25 @@ namespace MysqlTienda
             }
 
         }
+        public void cargarCiudadesEntradas()
+        {
+            //carga las ciudades en un combo box importantisimo
+            using (MySqlConnection c = new MySqlConnection("datasource=localhost;port=3306;username=root;password=;SslMode=none"))
+            {
+                c.Open();
+                var sql = "SELECT cc, almacen_fabrica_nombre FROM easyerp.usuario_almacen where cc=" + labelCedula.Text + "";
+                using (MySqlCommand cmd = new MySqlCommand(sql, c))
+                {
+                    var dt = new DataTable();
+                    dt.Load(cmd.ExecuteReader());
+                    comboBoxAlmacenEntrada.ValueMember = "cc";
+                    comboBoxAlmacenEntrada.DisplayMember = "almacen_fabrica_nombre";
+                    comboBoxAlmacenEntrada.DataSource = dt;
+                }
+            }
+
+        }
+       
         public void cargarCiudadesPermisosAlamacen()
         {
             try
@@ -2146,12 +2186,19 @@ namespace MysqlTienda
             try
             {
                 cerrarConeccion();
-
-                string selectQuery = "SELECT id,total as 'total',fecha,descripcion,usuario_cc as 'cedula',almacen_nombre as 'almacen',categoria FROM easyerp.gastoentrada WHERE gastoOentrada ='"+gastoEntrada+"' and almacen_nombre='" + comboBoxCiudad.Text + "'";
+                string selectQuery = "";
+                if (gastoEntrada == "gasto")
+                {
+                    selectQuery = "SELECT id,total as 'total',fecha,descripcion,usuario_cc as 'cedula',almacen_nombre as 'almacen',categoria FROM easyerp.gastoentrada WHERE gastoOentrada ='" + gastoEntrada + "' and almacen_nombre='" + comboBoxGastoAlmacen.Text + "'";
+                }
+                else
+                {
+                    selectQuery = "SELECT id,total as 'total',fecha,descripcion,usuario_cc as 'cedula',almacen_nombre as 'almacen',categoria FROM easyerp.gastoentrada WHERE gastoOentrada ='" + gastoEntrada + "' and almacen_nombre='" + comboBoxAlmacenEntrada.Text + "'";
+                }
                 DataTable table = new DataTable();
                 MySqlDataAdapter adpter = new MySqlDataAdapter(selectQuery, conectar);
                 adpter.Fill(table);
-                DataGridGastos.DataSource = table;
+                if (gastoEntrada == "gasto") { DataGridGastos.DataSource = table; } else { DataGridEntrada.DataSource = table;}                
                 cerrarConeccion();
             }
             catch (Exception error)
@@ -2164,12 +2211,12 @@ namespace MysqlTienda
             try
             {
                 cerrarConeccion();
-
                 string selectQuery = "SELECT nombre,descripcion FROM easyerp.tipo_gasto_entrada WHERE entradaOgasto ='"+entradaGasto+"'";
+
                 DataTable table = new DataTable();
                 MySqlDataAdapter adpter = new MySqlDataAdapter(selectQuery, conectar);
                 adpter.Fill(table);
-                DataGridTipoGasto.DataSource = table;
+                if (entradaGasto == "gasto") { DataGridTipoGasto.DataSource = table; }else if (entradaGasto == "entrada") { DataGridTipoEntrada.DataSource = table; }                
                 cerrarConeccion();
             }
             catch (Exception error)
@@ -2215,13 +2262,22 @@ namespace MysqlTienda
         {
             try
             {
+                string insertarCodigo = "";                    
                 cerrarConeccion();
-                string insertarCodigo = "INSERT INTO easyerp.gastoentrada (`id`, `total`, `fecha`, `descripcion`, `usuario_cc`, `almacen_nombre`, `gastoOentrada`, `categoria`) VALUES (NULL, '" + TextboxGatosTotal.text + "', '" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "', '" + TextboxGastosDescripcion.text + "', '" + labelCedula.Text + "', '" + comboBoxGastoAlmacen.Text + "', '" + gastoEntrada + "', '" + comboBoxGastoCatagoria.Text + "');";
+                if(gastoEntrada == "gasto")
+                {
+                    insertarCodigo = "INSERT INTO easyerp.gastoentrada (`id`, `total`, `fecha`, `descripcion`, `usuario_cc`, `almacen_nombre`, `gastoOentrada`, `categoria`) VALUES (NULL, '" + TextboxGatosTotal.text + "', '" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "', '" + TextboxGastosDescripcion.text + "', '" + labelCedula.Text + "', '" + comboBoxGastoAlmacen.Text + "', '" + gastoEntrada + "', '" + comboBoxGastoCatagoria.Text + "');";
+                }
+                else
+                {
+                    insertarCodigo = "INSERT INTO easyerp.gastoentrada (`id`, `total`, `fecha`, `descripcion`, `usuario_cc`, `almacen_nombre`, `gastoOentrada`, `categoria`) VALUES (NULL, '" + TextboxTotalEntrada.text + "', '" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "', '" + TextboxDescipcionEntrada.text + "', '" + labelCedula.Text + "', '" + comboBoxAlmacenEntrada.Text + "', '" + gastoEntrada + "', '" + comboBoxCategoriaEntrada.Text + "');";
+                }
+                
                 conectar.Open();
                 MySqlCommand command = new MySqlCommand(insertarCodigo, conectar);
                 if (command.ExecuteNonQuery() == 1)
                 {
-                    cargarTablaGastos("gasto");
+                    cargarTablaGastos(gastoEntrada);
                 }
                 else
                 {
@@ -2237,15 +2293,30 @@ namespace MysqlTienda
 
         private void ButtonEntradaGastoAgregar(object sender, EventArgs e)
         {
+            agregarTipoEntradaGasto("gasto");
+        }
+
+        private void agregarTipoEntradaGasto(string entradaGasto)
+        {
             try
             {
+                string insertarCodigo = "";
                 cerrarConeccion();
-                string insertarCodigo = "INSERT INTO easyerp.tipo_gasto_entrada (`nombre`, `descripcion`, `entradaOgasto`) VALUES ('"+TextboxTipoGastoNombre.text+"', '"+TextboxTipoGastoDescripcion.text+"', 'gasto');";
+                
+                if (entradaGasto == "gasto")
+                {
+                    insertarCodigo = "INSERT INTO easyerp.tipo_gasto_entrada (`nombre`, `descripcion`, `entradaOgasto`) VALUES ('" + TextboxTipoGastoNombre.text + "', '" + TextboxTipoGastoDescripcion.text + "', 'gasto');";
+                }
+                else
+                {
+                    insertarCodigo = "INSERT INTO easyerp.tipo_gasto_entrada (`nombre`, `descripcion`, `entradaOgasto`) VALUES ('" + TextboxNombreTipoEntrada.text + "', '" + TextboxDescripcionTipoEntrada.text + "', 'entrada');";
+                }
+                
                 conectar.Open();
                 MySqlCommand command = new MySqlCommand(insertarCodigo, conectar);
                 if (command.ExecuteNonQuery() == 1)
                 {
-                    cargarTablaTipoGastos("gasto");
+                    cargarTablaTipoGastos(entradaGasto);
                     cargarGastoDescipcion();
                 }
                 else
@@ -2256,7 +2327,7 @@ namespace MysqlTienda
             catch (Exception error)
             {
                 cerrarConeccion();
-                MessageBox.Show(error.Message + "tipo gasto ingresando datos");
+                //MessageBox.Show(error.Message + "tipo "+entradaGasto+" ingresando datos");
             }
         }
 
@@ -2267,15 +2338,29 @@ namespace MysqlTienda
         
         private void bunifuFlatButton12_Click_4(object sender, EventArgs e)
         {
+            eliminarEntradaGasto("gasto");
+        }
+
+        private void eliminarEntradaGasto(String entradaGasto)
+        {
             try
             {
                 cerrarConeccion();
-                string insertarCodigo = "DELETE FROM easyerp.gastoentrada WHERE `gastoentrada`.`id` = "+LabelIdGastos.Text+";";
+                string insertarCodigo = "";
+                if (entradaGasto == "gasto")
+                {                
+                    insertarCodigo = "DELETE FROM easyerp.gastoentrada WHERE `gastoentrada`.`id` = '" + LabelIdGastos.Text + "';";
+                }
+                else
+                {
+                    insertarCodigo = "DELETE FROM easyerp.gastoentrada WHERE `gastoentrada`.`id` = '" + LabelIdEntrada2.Text + "';";
+                }
                 conectar.Open();
                 MySqlCommand command = new MySqlCommand(insertarCodigo, conectar);
                 if (command.ExecuteNonQuery() == 1)
                 {
-                    cargarTablaGastos("gasto");
+                    
+                    cargarTablaGastos(entradaGasto);
                 }
                 else
                 {
@@ -2291,15 +2376,29 @@ namespace MysqlTienda
 
         private void bunifuFlatButton23_Click(object sender, EventArgs e)
         {
+            modificarEntradaGasto("gasto");
+        }
+
+        private void modificarEntradaGasto(string entradaGasto)
+        {
             try
             {
                 cerrarConeccion();
-                string insertarCodigo = "UPDATE easyerp.gastoentrada SET `total` = '"+ TextboxGatosTotal.text+ "', `descripcion` = '"+ TextboxGastosDescripcion.text+ "', `almacen_nombre` = '"+ comboBoxGastoAlmacen.Text+ "', `categoria` = '"+ comboBoxGastoCatagoria.Text + "' WHERE `gastoentrada`.`id` = "+LabelIdGastos.Text+"";
+                string insertarCodigo = "";
+                if (entradaGasto == "gasto")
+                {
+                    insertarCodigo = "UPDATE easyerp.gastoentrada SET `total` = '" + TextboxGatosTotal.text + "', `descripcion` = '" + TextboxGastosDescripcion.text + "', `almacen_nombre` = '" + comboBoxGastoAlmacen.Text + "', `categoria` = '" + comboBoxGastoCatagoria.Text + "' WHERE `gastoentrada`.`id` = " + LabelIdGastos.Text + "";
+                }
+                else
+                {
+                    insertarCodigo = "UPDATE easyerp.gastoentrada SET `total` = '" + TextboxTotalEntrada.text + "', `descripcion` = '" + TextboxDescipcionEntrada.text + "', `almacen_nombre` = '" + comboBoxAlmacenEntrada.Text + "', `categoria` = '" + comboBoxCategoriaEntrada.Text + "' WHERE `gastoentrada`.`id` = " + LabelIdEntrada2.Text + "";
+                }
+
                 conectar.Open();
                 MySqlCommand command = new MySqlCommand(insertarCodigo, conectar);
                 if (command.ExecuteNonQuery() == 1)
                 {
-                    cargarTablaGastos("gasto");
+                    cargarTablaGastos(entradaGasto);
                 }
                 else
                 {
@@ -2320,16 +2419,31 @@ namespace MysqlTienda
 
         private void bunifuFlatButton25_Click(object sender, EventArgs e)
         {
+            eliminarTipoEntradaGasto("gasto");
+
+        }
+
+        private void eliminarTipoEntradaGasto(string entradaGasto)
+        {
             try
             {
                 cerrarConeccion();
-                string insertarCodigo = "DELETE FROM easyerp.tipo_gasto_entrada WHERE `tipo_gasto_entrada`.`nombre` = '"+ LabelTipoGastoNombre.Text+ "'";
+                string insertarCodigo = "";
+                if (entradaGasto == "gasto")
+                {
+                    insertarCodigo = "DELETE FROM easyerp.tipo_gasto_entrada WHERE `tipo_gasto_entrada`.`nombre` = '" + LabelTipoGastoNombre.Text + "'";
+                }
+                else if (entradaGasto=="entrada")
+                {
+                    insertarCodigo = "DELETE FROM easyerp.tipo_gasto_entrada WHERE `tipo_gasto_entrada`.`nombre` = '" + LabelNombreTipoEntrada.Text + "'";
+                }
                 conectar.Open();
                 MySqlCommand command = new MySqlCommand(insertarCodigo, conectar);
                 if (command.ExecuteNonQuery() == 1)
                 {
-                    
-                    cargarTablaTipoGastos("gasto");
+
+                    cargarTablaTipoGastos(entradaGasto);
+                    cargarGastoDescipcion();
                 }
                 else
                 {
@@ -2341,8 +2455,6 @@ namespace MysqlTienda
                 cerrarConeccion();
                 //MessageBox.Show(error.Message + "gasto borrando datos tipo de gastos");
             }
-
-            
         }
 
         private void DataGridTipoGasto_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -2378,11 +2490,12 @@ namespace MysqlTienda
         private void bunifuFlatButton31_Click(object sender, EventArgs e)
         {
             cargarTablaGastos("entrada");
+
         }
 
         private void bunifuFlatButton30_Click(object sender, EventArgs e)
         {
-
+            agregar("entrada");
         }
 
         private void bunifuFlatButton24_Click(object sender, EventArgs e)
@@ -2417,6 +2530,92 @@ namespace MysqlTienda
                 MessageBox.Show(error.Message + "gasto modificando datos");
                 
             }
+        }
+
+        private void DataGridEntrada_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void DataGridEntrada_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
+                LabelIdEntrada2.Text = DataGridEntrada.CurrentRow.Cells[0].Value.ToString();
+                TextboxTotalEntrada.text = DataGridEntrada.CurrentRow.Cells[1].Value.ToString();
+                LabelFechaEntrada2.Text = DataGridEntrada.CurrentRow.Cells[2].Value.ToString();
+                TextboxDescipcionEntrada.text = DataGridEntrada.CurrentRow.Cells[3].Value.ToString();
+                comboBoxAlmacenEntrada.Text = DataGridGastos.CurrentRow.Cells[5].Value.ToString();
+                comboBoxCategoriaEntrada.Text = DataGridGastos.CurrentRow.Cells[6].Value.ToString();
+            }
+            catch
+            {
+
+            }
+           
+        }
+
+        private void DataGridEntrada_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void bunifuFlatButton29_Click(object sender, EventArgs e)
+        {
+            eliminarEntradaGasto("entrada");
+        }
+
+        private void bunifuFlatButton28_Click(object sender, EventArgs e)
+        {
+            modificarEntradaGasto("entrada");
+        }
+
+        private void bunifuFlatButton35_Click(object sender, EventArgs e)
+        {
+            cargarTablaTipoGastos("entrada");
+        }
+
+        private void bunifuFlatButton34_Click(object sender, EventArgs e)
+        {
+            agregarTipoEntradaGasto("entrada");
+        }
+
+        
+
+       
+
+        private void comboBoxGastoAlmacen_TextChanged(object sender, EventArgs e)
+        {
+            cargarTablaGastos("gasto");
+        }
+
+        private void comboBoxAlmacenEntrada_TextChanged(object sender, EventArgs e)
+        {
+            cargarTablaGastos("entrada");
+        }
+
+        private void bunifuFlatButton33_Click(object sender, EventArgs e)
+        {
+            eliminarTipoEntradaGasto("entrada");
+        }
+
+        private void DataGridTipoEntrada_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
+                LabelNombreTipoEntrada.Text = DataGridTipoEntrada.CurrentRow.Cells[0].Value.ToString();
+                TextboxDescripcionTipoEntrada.text = DataGridTipoEntrada.CurrentRow.Cells[1].Value.ToString();
+
+            }
+            catch (Exception error)
+            {
+                MessageBox.Show("El error es :" + Convert.ToString(error) + "el error se encuentra cargando los datos tipo de gastos");
+            }
+        }
+
+        private void bunifuFlatButton32_Click(object sender, EventArgs e)
+        {
+
         }
     }
 
