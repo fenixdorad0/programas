@@ -20,6 +20,7 @@ namespace MysqlTienda
         MySqlCommand command;
         public bool datafono = true, efectivo =true, credito=true, qr=true, apartado = true;
         public string factura = "";
+        public string ciudad = "";
        
         public void abrirConeccion()
         {
@@ -90,19 +91,20 @@ namespace MysqlTienda
             this.TopMost = true;
             
         }
-        public Form2(string texto, string factura1, string ciudad)
+        public Form2(string texto, string factura1, string ciudad1)
         {
             
             total = Convert.ToDouble(texto);
             try
             {
                 factura = factura1;
+                ciudad = ciudad1;
                 InitializeComponent();
                 this.TopMost = true;
                 labelTotal.Text = "El total es:" + texto;
                 labelFactura2.Text = "Factura #" +factura;
 
-                labelCiudad.Text = "Ciudad: " + ciudad;
+                labelCiudad.Text = "Ciudad: " + ciudad1;
             }
             catch(Exception error)
             {
@@ -113,7 +115,7 @@ namespace MysqlTienda
 
         private void btnCerrar_Click(object sender, EventArgs e)
         {
-            this.Close();
+            
         }
 
         private void bunifuFlatButton2_Click(object sender, EventArgs e)
@@ -128,7 +130,7 @@ namespace MysqlTienda
 
         private void bunifuThinButton21_Click(object sender, EventArgs e)
         {
-            this.Close();
+            
         }
 
         private void bunifuFlatButton1_Click(object sender, EventArgs e)
@@ -156,8 +158,7 @@ namespace MysqlTienda
         private void bunifuFlatButton5_Click(object sender, EventArgs e)
         {
             labelPago.Text = "qr";
-            TextboxQR.Enabled = true;
-            TextboxQR.Visible = true;
+           
         }
 
         private void TextboxDatafono_OnValueChanged(object sender, EventArgs e)
@@ -177,6 +178,7 @@ namespace MysqlTienda
         {
             labelPago.Text = "cotizacion";
             
+
         }
 
         private void TextboxCredito_OnValueChanged(object sender, EventArgs e)
@@ -187,7 +189,7 @@ namespace MysqlTienda
 
         private void TextboxQR_OnValueChanged(object sender, EventArgs e)
         {
-            qr = verificarTexto(TextboxQR.Text);
+            
             sumarTotal();
         }
 
@@ -224,6 +226,19 @@ namespace MysqlTienda
 
         private void bunifuFlatButton2_Click_1(object sender, EventArgs e)
         {
+            try
+            {
+                insertarDatos("INSERT INTO easyerp.metodo_pago_detallado (`ID`, `nf`, `efectivo`, `datafono`, `credito`, `apartado`, `cotizacion`, `ciudad`, `total`) VALUES (NULL, '" + factura + "', '" + TextboxEfectivo.Text + "', '" + TextboxDatafono.Text + "', '" + TextboxCredito.Text + "', '" + TextboxApartado.Text + "', 'true', '" + ciudad + "', '" + TextboxPago.Text + "')");
+            }
+            catch (Exception error)
+            {
+                MessageBox.Show(Convert.ToString(error));
+            }
+
+        }
+
+        private void labelTotal_Click(object sender, EventArgs e)
+        {
 
         }
 
@@ -233,6 +248,34 @@ namespace MysqlTienda
             
         }
 
+        public void insertarDatos(String insertarCodigo)
+        {
+            try
+            {
+                cerrarConeccion();
+                conectar.Open();
+                MySqlCommand command = new MySqlCommand(insertarCodigo, conectar);
+                if (command.ExecuteNonQuery() == 1) 
+                { 
+                   MessageBox.Show("Venta realizada con exito");
+                    
+                }
+                else 
+                { /* MessageBox.Show("no encontre la factura"); */}
+                cerrarConeccion();
+            }
+            catch (Exception error)
+            {
+                String mensaje = Convert.ToString(error.Message);
+                int valor = mensaje.LastIndexOf("Duplicate");
+                if (valor >= 0) { MessageBox.Show("Ya existe un registro igual"); }
+                else
+                {
+                    MessageBox.Show(error.Message + "insertar Datos");
+                }
+            }
+           
+        }
         private void TextboxPago_OnValueChanged(object sender, EventArgs e)
         {
             try
@@ -275,7 +318,7 @@ namespace MysqlTienda
             catch (Exception error)
             {
                 return false;
-                MessageBox.Show(Convert.ToString(error));
+               
             }
         }
 
@@ -288,7 +331,7 @@ namespace MysqlTienda
                     Convert.ToDouble(TextboxDatafono.Text) +
                     Convert.ToDouble(TextboxEfectivo.Text) +
                     Convert.ToDouble(TextboxCredito.Text) +
-                    Convert.ToDouble(TextboxQR.Text) +
+                    
                     Convert.ToDouble(TextboxApartado.Text)
                     );
             }

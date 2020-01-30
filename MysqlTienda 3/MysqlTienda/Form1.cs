@@ -388,7 +388,7 @@ namespace MysqlTienda
                 }
                 cerrarConeccion();
             }
-            catch (Exception ex)
+            catch 
             {
                 cerrarConeccion();
             }
@@ -697,7 +697,7 @@ namespace MysqlTienda
                     }
                 }
             }
-            catch(Exception error)
+            catch
             {
                 
             }
@@ -720,7 +720,7 @@ namespace MysqlTienda
                 comboBoxCedulaPermiAlmace.Text = DataGridPermisosPorAlmacen.CurrentRow.Cells[1].Value.ToString();
 
             }
-            catch (Exception error)
+            catch 
             {
                 /*
                 MessageBox.Show(Convert.ToString(error));
@@ -1659,7 +1659,7 @@ namespace MysqlTienda
                 if (command.ExecuteNonQuery() == 1) { } else { }
                 cerrarConeccion();
             }
-            catch (Exception error)
+            catch
             {
                 cerrarConeccion();
             }
@@ -1845,7 +1845,7 @@ namespace MysqlTienda
 
 
                 }
-                catch (Exception error)
+                catch 
                 {
                     //MessageBox.Show(Convert.ToString(error));
                 }
@@ -2493,7 +2493,7 @@ namespace MysqlTienda
                 }
                 cerrarConeccion();
             }
-            catch (Exception error)
+            catch
             {
                 cerrarConeccion();
                 //MessageBox.Show(error.Message + "gasto borrando datos tipo de gastos");

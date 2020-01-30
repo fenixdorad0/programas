@@ -33,11 +33,9 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.TextboxApartado = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.Button = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.TextboxQR = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.TextboxCredito = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.TextboxEfectivo = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.TextboxDatafono = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.ButtonQR = new Bunifu.Framework.UI.BunifuFlatButton();
             this.labelPagoCon = new System.Windows.Forms.Label();
             this.labelPago = new System.Windows.Forms.Label();
             this.TextboxPago = new Bunifu.Framework.UI.BunifuMetroTextbox();
@@ -46,14 +44,13 @@
             this.ButtonApartado = new Bunifu.Framework.UI.BunifuFlatButton();
             this.ButtonCredito = new Bunifu.Framework.UI.BunifuFlatButton();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.bunifuFlatButton2 = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.labelCiudad = new System.Windows.Forms.Label();
             this.labelFactura2 = new System.Windows.Forms.Label();
             this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.label2 = new System.Windows.Forms.Label();
             this.TextboxCambio = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.labelTotal = new System.Windows.Forms.Label();
-            this.labelCiudad = new System.Windows.Forms.Label();
-            this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.bunifuFlatButton2 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuGradientPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -72,7 +69,7 @@
             this.bunifuGradientPanel1.Location = new System.Drawing.Point(12, 12);
             this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
             this.bunifuGradientPanel1.Quality = 10;
-            this.bunifuGradientPanel1.Size = new System.Drawing.Size(1276, 432);
+            this.bunifuGradientPanel1.Size = new System.Drawing.Size(1276, 475);
             this.bunifuGradientPanel1.TabIndex = 8;
             // 
             // panel1
@@ -80,11 +77,9 @@
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.TextboxApartado);
             this.panel1.Controls.Add(this.Button);
-            this.panel1.Controls.Add(this.TextboxQR);
             this.panel1.Controls.Add(this.TextboxCredito);
             this.panel1.Controls.Add(this.TextboxEfectivo);
             this.panel1.Controls.Add(this.TextboxDatafono);
-            this.panel1.Controls.Add(this.ButtonQR);
             this.panel1.Controls.Add(this.labelPagoCon);
             this.panel1.Controls.Add(this.labelPago);
             this.panel1.Controls.Add(this.TextboxPago);
@@ -94,7 +89,7 @@
             this.panel1.Controls.Add(this.ButtonCredito);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(419, 432);
+            this.panel1.Size = new System.Drawing.Size(419, 459);
             this.panel1.TabIndex = 0;
             // 
             // TextboxApartado
@@ -108,8 +103,8 @@
             this.TextboxApartado.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.TextboxApartado.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.TextboxApartado.isPassword = false;
-            this.TextboxApartado.Location = new System.Drawing.Point(178, 267);
-            this.TextboxApartado.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TextboxApartado.Location = new System.Drawing.Point(182, 211);
+            this.TextboxApartado.Margin = new System.Windows.Forms.Padding(4);
             this.TextboxApartado.Name = "TextboxApartado";
             this.TextboxApartado.Size = new System.Drawing.Size(237, 48);
             this.TextboxApartado.TabIndex = 11;
@@ -139,8 +134,8 @@
             this.Button.IconVisible = true;
             this.Button.IconZoom = 90D;
             this.Button.IsTab = false;
-            this.Button.Location = new System.Drawing.Point(17, 323);
-            this.Button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Button.Location = new System.Drawing.Point(13, 267);
+            this.Button.Margin = new System.Windows.Forms.Padding(4);
             this.Button.Name = "Button";
             this.Button.Normalcolor = System.Drawing.Color.DodgerBlue;
             this.Button.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
@@ -154,27 +149,6 @@
             this.Button.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Button.Click += new System.EventHandler(this.Button_Click);
             // 
-            // TextboxQR
-            // 
-            this.TextboxQR.BorderColorFocused = System.Drawing.Color.Blue;
-            this.TextboxQR.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.TextboxQR.BorderColorMouseHover = System.Drawing.Color.Blue;
-            this.TextboxQR.BorderThickness = 3;
-            this.TextboxQR.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TextboxQR.Enabled = false;
-            this.TextboxQR.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.TextboxQR.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.TextboxQR.isPassword = false;
-            this.TextboxQR.Location = new System.Drawing.Point(178, 209);
-            this.TextboxQR.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.TextboxQR.Name = "TextboxQR";
-            this.TextboxQR.Size = new System.Drawing.Size(237, 48);
-            this.TextboxQR.TabIndex = 9;
-            this.TextboxQR.Text = "0";
-            this.TextboxQR.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.TextboxQR.Visible = false;
-            this.TextboxQR.OnValueChanged += new System.EventHandler(this.TextboxQR_OnValueChanged);
-            // 
             // TextboxCredito
             // 
             this.TextboxCredito.BorderColorFocused = System.Drawing.Color.Blue;
@@ -187,7 +161,7 @@
             this.TextboxCredito.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.TextboxCredito.isPassword = false;
             this.TextboxCredito.Location = new System.Drawing.Point(178, 155);
-            this.TextboxCredito.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TextboxCredito.Margin = new System.Windows.Forms.Padding(4);
             this.TextboxCredito.Name = "TextboxCredito";
             this.TextboxCredito.Size = new System.Drawing.Size(237, 48);
             this.TextboxCredito.TabIndex = 7;
@@ -208,7 +182,7 @@
             this.TextboxEfectivo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.TextboxEfectivo.isPassword = false;
             this.TextboxEfectivo.Location = new System.Drawing.Point(178, 47);
-            this.TextboxEfectivo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TextboxEfectivo.Margin = new System.Windows.Forms.Padding(4);
             this.TextboxEfectivo.Name = "TextboxEfectivo";
             this.TextboxEfectivo.Size = new System.Drawing.Size(237, 48);
             this.TextboxEfectivo.TabIndex = 3;
@@ -229,7 +203,7 @@
             this.TextboxDatafono.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.TextboxDatafono.isPassword = false;
             this.TextboxDatafono.Location = new System.Drawing.Point(178, 99);
-            this.TextboxDatafono.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TextboxDatafono.Margin = new System.Windows.Forms.Padding(4);
             this.TextboxDatafono.Name = "TextboxDatafono";
             this.TextboxDatafono.Size = new System.Drawing.Size(237, 48);
             this.TextboxDatafono.TabIndex = 5;
@@ -238,51 +212,15 @@
             this.TextboxDatafono.Visible = false;
             this.TextboxDatafono.OnValueChanged += new System.EventHandler(this.TextboxDatafono_OnValueChanged);
             // 
-            // ButtonQR
-            // 
-            this.ButtonQR.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.ButtonQR.BackColor = System.Drawing.Color.DodgerBlue;
-            this.ButtonQR.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ButtonQR.BorderRadius = 0;
-            this.ButtonQR.ButtonText = "QR";
-            this.ButtonQR.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ButtonQR.DisabledColor = System.Drawing.Color.Gray;
-            this.ButtonQR.Iconcolor = System.Drawing.Color.Transparent;
-            this.ButtonQR.Iconimage = ((System.Drawing.Image)(resources.GetObject("ButtonQR.Iconimage")));
-            this.ButtonQR.Iconimage_right = null;
-            this.ButtonQR.Iconimage_right_Selected = null;
-            this.ButtonQR.Iconimage_Selected = null;
-            this.ButtonQR.IconMarginLeft = 0;
-            this.ButtonQR.IconMarginRight = 0;
-            this.ButtonQR.IconRightVisible = true;
-            this.ButtonQR.IconRightZoom = 0D;
-            this.ButtonQR.IconVisible = true;
-            this.ButtonQR.IconZoom = 90D;
-            this.ButtonQR.IsTab = false;
-            this.ButtonQR.Location = new System.Drawing.Point(17, 211);
-            this.ButtonQR.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.ButtonQR.Name = "ButtonQR";
-            this.ButtonQR.Normalcolor = System.Drawing.Color.DodgerBlue;
-            this.ButtonQR.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.ButtonQR.OnHoverTextColor = System.Drawing.Color.White;
-            this.ButtonQR.selected = false;
-            this.ButtonQR.Size = new System.Drawing.Size(153, 48);
-            this.ButtonQR.TabIndex = 8;
-            this.ButtonQR.Text = "QR";
-            this.ButtonQR.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ButtonQR.Textcolor = System.Drawing.Color.White;
-            this.ButtonQR.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ButtonQR.Click += new System.EventHandler(this.bunifuFlatButton5_Click);
-            // 
             // labelPagoCon
             // 
             this.labelPagoCon.AutoSize = true;
             this.labelPagoCon.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPagoCon.Location = new System.Drawing.Point(31, 395);
+            this.labelPagoCon.Location = new System.Drawing.Point(21, 426);
             this.labelPagoCon.Name = "labelPagoCon";
-            this.labelPagoCon.Size = new System.Drawing.Size(91, 24);
+            this.labelPagoCon.Size = new System.Drawing.Size(72, 24);
             this.labelPagoCon.TabIndex = 7;
-            this.labelPagoCon.Text = "Pago con";
+            this.labelPagoCon.Text = "TOTAL";
             // 
             // labelPago
             // 
@@ -305,11 +243,12 @@
             this.TextboxPago.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TextboxPago.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.TextboxPago.isPassword = false;
-            this.TextboxPago.Location = new System.Drawing.Point(177, 379);
+            this.TextboxPago.Location = new System.Drawing.Point(179, 406);
             this.TextboxPago.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.TextboxPago.Name = "TextboxPago";
             this.TextboxPago.Size = new System.Drawing.Size(236, 48);
             this.TextboxPago.TabIndex = 84;
+            this.TextboxPago.Text = "0";
             this.TextboxPago.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.TextboxPago.OnValueChanged += new System.EventHandler(this.TextboxPago_OnValueChanged);
             // 
@@ -335,7 +274,7 @@
             this.ButtonEfectivo.IconZoom = 90D;
             this.ButtonEfectivo.IsTab = false;
             this.ButtonEfectivo.Location = new System.Drawing.Point(17, 47);
-            this.ButtonEfectivo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ButtonEfectivo.Margin = new System.Windows.Forms.Padding(4);
             this.ButtonEfectivo.Name = "ButtonEfectivo";
             this.ButtonEfectivo.Normalcolor = System.Drawing.Color.DodgerBlue;
             this.ButtonEfectivo.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
@@ -371,7 +310,7 @@
             this.ButtonDatafono.IconZoom = 90D;
             this.ButtonDatafono.IsTab = false;
             this.ButtonDatafono.Location = new System.Drawing.Point(17, 99);
-            this.ButtonDatafono.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ButtonDatafono.Margin = new System.Windows.Forms.Padding(4);
             this.ButtonDatafono.Name = "ButtonDatafono";
             this.ButtonDatafono.Normalcolor = System.Drawing.Color.DodgerBlue;
             this.ButtonDatafono.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
@@ -406,8 +345,8 @@
             this.ButtonApartado.IconVisible = true;
             this.ButtonApartado.IconZoom = 90D;
             this.ButtonApartado.IsTab = false;
-            this.ButtonApartado.Location = new System.Drawing.Point(17, 267);
-            this.ButtonApartado.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ButtonApartado.Location = new System.Drawing.Point(13, 211);
+            this.ButtonApartado.Margin = new System.Windows.Forms.Padding(4);
             this.ButtonApartado.Name = "ButtonApartado";
             this.ButtonApartado.Normalcolor = System.Drawing.Color.DodgerBlue;
             this.ButtonApartado.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
@@ -443,7 +382,7 @@
             this.ButtonCredito.IconZoom = 90D;
             this.ButtonCredito.IsTab = false;
             this.ButtonCredito.Location = new System.Drawing.Point(17, 155);
-            this.ButtonCredito.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ButtonCredito.Margin = new System.Windows.Forms.Padding(4);
             this.ButtonCredito.Name = "ButtonCredito";
             this.ButtonCredito.Normalcolor = System.Drawing.Color.DodgerBlue;
             this.ButtonCredito.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
@@ -461,17 +400,62 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.Controls.Add(this.bunifuFlatButton2);
-            this.panel2.Controls.Add(this.bunifuFlatButton1);
             this.panel2.Controls.Add(this.labelCiudad);
             this.panel2.Controls.Add(this.labelFactura2);
             this.panel2.Controls.Add(this.bunifuThinButton21);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.TextboxCambio);
             this.panel2.Controls.Add(this.labelTotal);
-            this.panel2.Location = new System.Drawing.Point(439, 20);
+            this.panel2.Location = new System.Drawing.Point(424, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(787, 404);
+            this.panel2.Size = new System.Drawing.Size(848, 455);
             this.panel2.TabIndex = 6;
+            // 
+            // bunifuFlatButton2
+            // 
+            this.bunifuFlatButton2.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.bunifuFlatButton2.BackColor = System.Drawing.Color.DodgerBlue;
+            this.bunifuFlatButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuFlatButton2.BorderRadius = 0;
+            this.bunifuFlatButton2.ButtonText = "ACEPTAR";
+            this.bunifuFlatButton2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuFlatButton2.DisabledColor = System.Drawing.Color.Gray;
+            this.bunifuFlatButton2.Iconcolor = System.Drawing.Color.Transparent;
+            this.bunifuFlatButton2.Iconimage = ((System.Drawing.Image)(resources.GetObject("bunifuFlatButton2.Iconimage")));
+            this.bunifuFlatButton2.Iconimage_right = null;
+            this.bunifuFlatButton2.Iconimage_right_Selected = null;
+            this.bunifuFlatButton2.Iconimage_Selected = null;
+            this.bunifuFlatButton2.IconMarginLeft = 0;
+            this.bunifuFlatButton2.IconMarginRight = 0;
+            this.bunifuFlatButton2.IconRightVisible = true;
+            this.bunifuFlatButton2.IconRightZoom = 0D;
+            this.bunifuFlatButton2.IconVisible = true;
+            this.bunifuFlatButton2.IconZoom = 90D;
+            this.bunifuFlatButton2.IsTab = false;
+            this.bunifuFlatButton2.Location = new System.Drawing.Point(691, 403);
+            this.bunifuFlatButton2.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuFlatButton2.Name = "bunifuFlatButton2";
+            this.bunifuFlatButton2.Normalcolor = System.Drawing.Color.DodgerBlue;
+            this.bunifuFlatButton2.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.bunifuFlatButton2.OnHoverTextColor = System.Drawing.Color.White;
+            this.bunifuFlatButton2.selected = false;
+            this.bunifuFlatButton2.Size = new System.Drawing.Size(153, 48);
+            this.bunifuFlatButton2.TabIndex = 91;
+            this.bunifuFlatButton2.Text = "ACEPTAR";
+            this.bunifuFlatButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bunifuFlatButton2.Textcolor = System.Drawing.Color.White;
+            this.bunifuFlatButton2.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuFlatButton2.Click += new System.EventHandler(this.bunifuFlatButton2_Click_1);
+            // 
+            // labelCiudad
+            // 
+            this.labelCiudad.AutoSize = true;
+            this.labelCiudad.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCiudad.Location = new System.Drawing.Point(6, 422);
+            this.labelCiudad.Name = "labelCiudad";
+            this.labelCiudad.Size = new System.Drawing.Size(90, 29);
+            this.labelCiudad.TabIndex = 90;
+            this.labelCiudad.Text = "Ciudad";
             // 
             // labelFactura2
             // 
@@ -502,7 +486,7 @@
             this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.SeaGreen;
             this.bunifuThinButton21.Location = new System.Drawing.Point(891, 358);
-            this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(5);
             this.bunifuThinButton21.Name = "bunifuThinButton21";
             this.bunifuThinButton21.Size = new System.Drawing.Size(106, 41);
             this.bunifuThinButton21.TabIndex = 31;
@@ -533,7 +517,7 @@
             this.TextboxCambio.Location = new System.Drawing.Point(6, 172);
             this.TextboxCambio.Margin = new System.Windows.Forms.Padding(15, 13, 15, 13);
             this.TextboxCambio.Name = "TextboxCambio";
-            this.TextboxCambio.Size = new System.Drawing.Size(766, 150);
+            this.TextboxCambio.Size = new System.Drawing.Size(838, 150);
             this.TextboxCambio.TabIndex = 86;
             this.TextboxCambio.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.TextboxCambio.OnValueChanged += new System.EventHandler(this.TextboxCambio_OnValueChanged);
@@ -547,94 +531,13 @@
             this.labelTotal.Size = new System.Drawing.Size(114, 55);
             this.labelTotal.TabIndex = 85;
             this.labelTotal.Text = "total";
-            // 
-            // labelCiudad
-            // 
-            this.labelCiudad.AutoSize = true;
-            this.labelCiudad.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCiudad.Location = new System.Drawing.Point(3, 370);
-            this.labelCiudad.Name = "labelCiudad";
-            this.labelCiudad.Size = new System.Drawing.Size(90, 29);
-            this.labelCiudad.TabIndex = 90;
-            this.labelCiudad.Text = "Ciudad";
-            // 
-            // bunifuFlatButton1
-            // 
-            this.bunifuFlatButton1.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton1.BackColor = System.Drawing.Color.Red;
-            this.bunifuFlatButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuFlatButton1.BorderRadius = 0;
-            this.bunifuFlatButton1.ButtonText = "EFECTIVO";
-            this.bunifuFlatButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuFlatButton1.DisabledColor = System.Drawing.Color.Gray;
-            this.bunifuFlatButton1.Iconcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton1.Iconimage = ((System.Drawing.Image)(resources.GetObject("bunifuFlatButton1.Iconimage")));
-            this.bunifuFlatButton1.Iconimage_right = null;
-            this.bunifuFlatButton1.Iconimage_right_Selected = null;
-            this.bunifuFlatButton1.Iconimage_Selected = null;
-            this.bunifuFlatButton1.IconMarginLeft = 0;
-            this.bunifuFlatButton1.IconMarginRight = 0;
-            this.bunifuFlatButton1.IconRightVisible = true;
-            this.bunifuFlatButton1.IconRightZoom = 0D;
-            this.bunifuFlatButton1.IconVisible = true;
-            this.bunifuFlatButton1.IconZoom = 90D;
-            this.bunifuFlatButton1.IsTab = false;
-            this.bunifuFlatButton1.Location = new System.Drawing.Point(458, 351);
-            this.bunifuFlatButton1.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuFlatButton1.Name = "bunifuFlatButton1";
-            this.bunifuFlatButton1.Normalcolor = System.Drawing.Color.DodgerBlue;
-            this.bunifuFlatButton1.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.bunifuFlatButton1.OnHoverTextColor = System.Drawing.Color.White;
-            this.bunifuFlatButton1.selected = false;
-            this.bunifuFlatButton1.Size = new System.Drawing.Size(153, 48);
-            this.bunifuFlatButton1.TabIndex = 85;
-            this.bunifuFlatButton1.Text = "EFECTIVO";
-            this.bunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bunifuFlatButton1.Textcolor = System.Drawing.Color.White;
-            this.bunifuFlatButton1.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuFlatButton1.Click += new System.EventHandler(this.bunifuFlatButton1_Click_1);
-            // 
-            // bunifuFlatButton2
-            // 
-            this.bunifuFlatButton2.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton2.BackColor = System.Drawing.Color.Green;
-            this.bunifuFlatButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuFlatButton2.BorderRadius = 0;
-            this.bunifuFlatButton2.ButtonText = "EFECTIVO";
-            this.bunifuFlatButton2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuFlatButton2.DisabledColor = System.Drawing.Color.Gray;
-            this.bunifuFlatButton2.Iconcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton2.Iconimage = ((System.Drawing.Image)(resources.GetObject("bunifuFlatButton2.Iconimage")));
-            this.bunifuFlatButton2.Iconimage_right = null;
-            this.bunifuFlatButton2.Iconimage_right_Selected = null;
-            this.bunifuFlatButton2.Iconimage_Selected = null;
-            this.bunifuFlatButton2.IconMarginLeft = 0;
-            this.bunifuFlatButton2.IconMarginRight = 0;
-            this.bunifuFlatButton2.IconRightVisible = true;
-            this.bunifuFlatButton2.IconRightZoom = 0D;
-            this.bunifuFlatButton2.IconVisible = true;
-            this.bunifuFlatButton2.IconZoom = 90D;
-            this.bunifuFlatButton2.IsTab = false;
-            this.bunifuFlatButton2.Location = new System.Drawing.Point(619, 351);
-            this.bunifuFlatButton2.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuFlatButton2.Name = "bunifuFlatButton2";
-            this.bunifuFlatButton2.Normalcolor = System.Drawing.Color.DodgerBlue;
-            this.bunifuFlatButton2.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.bunifuFlatButton2.OnHoverTextColor = System.Drawing.Color.White;
-            this.bunifuFlatButton2.selected = false;
-            this.bunifuFlatButton2.Size = new System.Drawing.Size(153, 48);
-            this.bunifuFlatButton2.TabIndex = 91;
-            this.bunifuFlatButton2.Text = "EFECTIVO";
-            this.bunifuFlatButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bunifuFlatButton2.Textcolor = System.Drawing.Color.White;
-            this.bunifuFlatButton2.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuFlatButton2.Click += new System.EventHandler(this.bunifuFlatButton2_Click_1);
+            this.labelTotal.Click += new System.EventHandler(this.labelTotal_Click);
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1326, 456);
+            this.ClientSize = new System.Drawing.Size(1326, 493);
             this.Controls.Add(this.bunifuGradientPanel1);
             this.Name = "Form2";
             this.Text = "metodo de pago";
@@ -658,13 +561,11 @@
         private System.Windows.Forms.Panel panel2;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton21;
         private System.Windows.Forms.Label labelPago;
-        private Bunifu.Framework.UI.BunifuFlatButton ButtonQR;
         private System.Windows.Forms.Label labelTotal;
         private System.Windows.Forms.Label labelPagoCon;
         private Bunifu.Framework.UI.BunifuMetroTextbox TextboxPago;
         private System.Windows.Forms.Label label2;
         private Bunifu.Framework.UI.BunifuMetroTextbox TextboxCambio;
-        private Bunifu.Framework.UI.BunifuMetroTextbox TextboxQR;
         private Bunifu.Framework.UI.BunifuMetroTextbox TextboxCredito;
         private Bunifu.Framework.UI.BunifuMetroTextbox TextboxEfectivo;
         private Bunifu.Framework.UI.BunifuMetroTextbox TextboxDatafono;
@@ -673,6 +574,5 @@
         public System.Windows.Forms.Label labelFactura2;
         public System.Windows.Forms.Label labelCiudad;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton2;
-        private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton1;
     }
 }
