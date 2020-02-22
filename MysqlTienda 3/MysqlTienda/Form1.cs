@@ -424,7 +424,7 @@ namespace MysqlTienda
                     textBoxCostoTotal.Text = mdr.GetString("costo");
                     labelCostoTotal.Text = Convert.ToString(Convert.ToDecimal(labelCosto.Text) * Convert.ToDecimal(textCantidad.Text));
                     prueba = true;
-                   
+                    restarInventario();
                 }
                 else
                 {
@@ -441,6 +441,77 @@ namespace MysqlTienda
             if (prueba == true)
             {
                 insertarCodigo();
+            }
+        }
+        public void restarInventario() 
+        {
+            
+            try
+            {
+                cerrarConeccion();
+                string insertarCodigo = "UPDATE easyerp.producto SET cantidad = cantidad-1 WHERE `producto`.`codigo` ="+textCodigo.Text + " and almacen_fabrica_nombre='" + comboBoxCiudad.Text + "'";
+                conectar.Open();
+                MySqlCommand command = new MySqlCommand(insertarCodigo, conectar);
+                if (command.ExecuteNonQuery() == 1)
+                {
+                    
+                }
+                else {}
+                cerrarConeccion();
+
+
+            }
+            catch (Exception error)
+            {
+                
+            }
+            
+
+        }
+
+        public void aumentarInventario1()
+        {
+            //al momento de restar 1 producto en la factura se suma este en 1
+            try
+            {
+                cerrarConeccion();
+                string insertarCodigo = "UPDATE easyerp.producto SET cantidad = cantidad+1 WHERE `producto`.`codigo` =" + textCodigo.Text + " and almacen_fabrica_nombre='" + comboBoxCiudad.Text + "'";
+                conectar.Open();
+                MySqlCommand command = new MySqlCommand(insertarCodigo, conectar);
+                if (command.ExecuteNonQuery() == 1)
+                {
+                    MessageBox.Show("aumente el inventario");
+                }
+                else { }
+                cerrarConeccion();
+
+
+            }
+            catch (Exception error)
+            {
+
+            }
+        }
+        public void aumentarInventarioTodo()
+        {
+            try
+            {
+                cerrarConeccion();
+                string insertarCodigo = "UPDATE easyerp.producto SET cantidad = cantidad+"+textCantidad.Text+" WHERE `producto`.`codigo` =" + textCodigo.Text + " and almacen_fabrica_nombre='" + comboBoxCiudad.Text + "'";
+                conectar.Open();
+                MySqlCommand command = new MySqlCommand(insertarCodigo, conectar);
+                if (command.ExecuteNonQuery() == 1)
+                {
+                    MessageBox.Show("aumente el inventario");
+                }
+                else { }
+                cerrarConeccion();
+
+
+            }
+            catch (Exception error)
+            {
+
             }
         }
 
@@ -616,110 +687,158 @@ namespace MysqlTienda
 
         public void cargarCedulas()
         {
-            //carga las ciudades en un combo box importantisimo
-            using (MySqlConnection c = new MySqlConnection("datasource=localhost;port=3306;username=root;password=;SslMode=none"))
+            try
             {
-                c.Open();
-                var sql = "SELECT cc, almacen_fabrica_nombre FROM easyerp.usuario_almacen where cc=" + labelCedula.Text + "";
-                using (MySqlCommand cmd = new MySqlCommand(sql, c))
+                using (MySqlConnection c = new MySqlConnection("datasource=localhost;port=3306;username=root;password=;SslMode=none"))
                 {
-                    var dt = new DataTable();
-                    dt.Load(cmd.ExecuteReader());
-                    comboBoxTipoAlmacen.ValueMember = "cc";
-                    comboBoxTipoAlmacen.DisplayMember = "almacen_fabrica_nombre";
-                    comboBoxTipoAlmacen.DataSource = dt;
+                    c.Open();
+                    var sql = "SELECT cc, almacen_fabrica_nombre FROM easyerp.usuario_almacen where cc=" + labelCedula.Text + "";
+                    using (MySqlCommand cmd = new MySqlCommand(sql, c))
+                    {
+                        var dt = new DataTable();
+                        dt.Load(cmd.ExecuteReader());
+                        comboBoxTipoAlmacen.ValueMember = "cc";
+                        comboBoxTipoAlmacen.DisplayMember = "almacen_fabrica_nombre";
+                        comboBoxTipoAlmacen.DataSource = dt;
+                    }
                 }
             }
+            catch
+            {
+
+            }
+            //carga las ciudades en un combo box importantisimo
+          
 
         }
         public void cargarCiudades()
-        {          
-            //carga las ciudades en un combo box importantisimo
-            using (MySqlConnection c = new MySqlConnection("datasource=localhost;port=3306;username=root;password=;SslMode=none"))
+        {
+            try
             {
-                c.Open();
-                var sql = "SELECT cc, almacen_fabrica_nombre FROM easyerp.usuario_almacen where cc="+labelCedula.Text+"";
-                using (MySqlCommand cmd = new MySqlCommand(sql, c))
+                using (MySqlConnection c = new MySqlConnection("datasource=localhost;port=3306;username=root;password=;SslMode=none"))
                 {
-                    var dt = new DataTable();
-                    dt.Load(cmd.ExecuteReader());
-                    comboBoxCiudad.ValueMember = "cc";
-                    comboBoxCiudad.DisplayMember = "almacen_fabrica_nombre";
-                    comboBoxCiudad.DataSource = dt;
+                    c.Open();
+                    var sql = "SELECT cc, almacen_fabrica_nombre FROM easyerp.usuario_almacen where cc=" + labelCedula.Text + "";
+                    using (MySqlCommand cmd = new MySqlCommand(sql, c))
+                    {
+                        var dt = new DataTable();
+                        dt.Load(cmd.ExecuteReader());
+                        comboBoxCiudad.ValueMember = "cc";
+                        comboBoxCiudad.DisplayMember = "almacen_fabrica_nombre";
+                        comboBoxCiudad.DataSource = dt;
+                    }
                 }
             }
+            catch
+            {
+
+            }
+            //carga las ciudades en un combo box importantisimo
+           
            
         }
         public void cargarGastoDescipcion()
         {
-            //carga las ciudades en un combo box importantisimo
-            using (MySqlConnection c = new MySqlConnection("datasource=localhost;port=3306;username=root;password=;SslMode=none"))
+            try
             {
-                c.Open();
-                var sql = "SELECT nombre,descripcion,entradaOgasto FROM easyerp.tipo_gasto_entrada WHERE entradaOgasto = 'gasto'";
-                using (MySqlCommand cmd = new MySqlCommand(sql, c))
+                using (MySqlConnection c = new MySqlConnection("datasource=localhost;port=3306;username=root;password=;SslMode=none"))
                 {
-                    var dt = new DataTable();
-                    dt.Load(cmd.ExecuteReader());
-                    comboBoxGastoCatagoria.ValueMember = "nombre";
-                    comboBoxGastoCatagoria.DisplayMember = "nombre";
-                    comboBoxGastoCatagoria.DataSource = dt;
+                    c.Open();
+                    var sql = "SELECT nombre,descripcion,entradaOgasto FROM easyerp.tipo_gasto_entrada WHERE entradaOgasto = 'gasto'";
+                    using (MySqlCommand cmd = new MySqlCommand(sql, c))
+                    {
+                        var dt = new DataTable();
+                        dt.Load(cmd.ExecuteReader());
+                        comboBoxGastoCatagoria.ValueMember = "nombre";
+                        comboBoxGastoCatagoria.DisplayMember = "nombre";
+                        comboBoxGastoCatagoria.DataSource = dt;
+                    }
                 }
             }
+            catch
+            {
+
+            }
+            //carga las ciudades en un combo box importantisimo
+            
 
         }
         public void cargarCategoriaEntrada()
         {
-            //carga las ciudades en un combo box importantisimo
-            using (MySqlConnection c = new MySqlConnection("datasource=localhost;port=3306;username=root;password=;SslMode=none"))
+            try
             {
-                c.Open();
-                var sql = "SELECT nombre,descripcion,entradaOgasto FROM easyerp.tipo_gasto_entrada WHERE entradaOgasto = 'entrada'";
-                using (MySqlCommand cmd = new MySqlCommand(sql, c))
+                using (MySqlConnection c = new MySqlConnection("datasource=localhost;port=3306;username=root;password=;SslMode=none"))
                 {
-                    var dt = new DataTable();
-                    dt.Load(cmd.ExecuteReader());
-                    comboBoxCategoriaEntrada.ValueMember = "nombre";
-                    comboBoxCategoriaEntrada.DisplayMember = "nombre";
-                    comboBoxCategoriaEntrada.DataSource = dt;
+                    c.Open();
+                    var sql = "SELECT nombre,descripcion,entradaOgasto FROM easyerp.tipo_gasto_entrada WHERE entradaOgasto = 'entrada'";
+                    using (MySqlCommand cmd = new MySqlCommand(sql, c))
+                    {
+                        var dt = new DataTable();
+                        dt.Load(cmd.ExecuteReader());
+                        comboBoxCategoriaEntrada.ValueMember = "nombre";
+                        comboBoxCategoriaEntrada.DisplayMember = "nombre";
+                        comboBoxCategoriaEntrada.DataSource = dt;
+                    }
                 }
             }
+            catch
+            {
+
+            }
+            //carga las ciudades en un combo box importantisimo
+            
 
         }
         public void cargarCiudadesGastos()
         {
-            //carga las ciudades en un combo box importantisimo
-            using (MySqlConnection c = new MySqlConnection("datasource=localhost;port=3306;username=root;password=;SslMode=none"))
+            try
             {
-                c.Open();
-                var sql = "SELECT cc, almacen_fabrica_nombre FROM easyerp.usuario_almacen where cc=" + labelCedula.Text + "";
-                using (MySqlCommand cmd = new MySqlCommand(sql, c))
+                using (MySqlConnection c = new MySqlConnection("datasource=localhost;port=3306;username=root;password=;SslMode=none"))
                 {
-                    var dt = new DataTable();
-                    dt.Load(cmd.ExecuteReader());
-                    comboBoxGastoAlmacen.ValueMember = "cc";
-                    comboBoxGastoAlmacen.DisplayMember = "almacen_fabrica_nombre";
-                    comboBoxGastoAlmacen.DataSource = dt;
+                    c.Open();
+                    var sql = "SELECT cc, almacen_fabrica_nombre FROM easyerp.usuario_almacen where cc=" + labelCedula.Text + "";
+                    using (MySqlCommand cmd = new MySqlCommand(sql, c))
+                    {
+                        var dt = new DataTable();
+                        dt.Load(cmd.ExecuteReader());
+                        comboBoxGastoAlmacen.ValueMember = "cc";
+                        comboBoxGastoAlmacen.DisplayMember = "almacen_fabrica_nombre";
+                        comboBoxGastoAlmacen.DataSource = dt;
+                    }
                 }
-            }
 
+            }
+            catch
+            {
+
+            }
+            //carga las ciudades en un combo box importantisimo
+          
         }
         public void cargarCiudadesEntradas()
         {
-            //carga las ciudades en un combo box importantisimo
-            using (MySqlConnection c = new MySqlConnection("datasource=localhost;port=3306;username=root;password=;SslMode=none"))
+            try
             {
-                c.Open();
-                var sql = "SELECT cc, almacen_fabrica_nombre FROM easyerp.usuario_almacen where cc=" + labelCedula.Text + "";
-                using (MySqlCommand cmd = new MySqlCommand(sql, c))
+                using (MySqlConnection c = new MySqlConnection("datasource=localhost;port=3306;username=root;password=;SslMode=none"))
                 {
-                    var dt = new DataTable();
-                    dt.Load(cmd.ExecuteReader());
-                    comboBoxAlmacenEntrada.ValueMember = "cc";
-                    comboBoxAlmacenEntrada.DisplayMember = "almacen_fabrica_nombre";
-                    comboBoxAlmacenEntrada.DataSource = dt;
+                    c.Open();
+                    var sql = "SELECT cc, almacen_fabrica_nombre FROM easyerp.usuario_almacen where cc=" + labelCedula.Text + "";
+                    using (MySqlCommand cmd = new MySqlCommand(sql, c))
+                    {
+                        var dt = new DataTable();
+                        dt.Load(cmd.ExecuteReader());
+                        comboBoxAlmacenEntrada.ValueMember = "cc";
+                        comboBoxAlmacenEntrada.DisplayMember = "almacen_fabrica_nombre";
+                        comboBoxAlmacenEntrada.DataSource = dt;
+                    }
                 }
             }
+            catch
+            {
+
+            }
+            //carga las ciudades en un combo box importantisimo
+            
 
         }
        
@@ -825,8 +944,10 @@ namespace MysqlTienda
                     MySqlCommand command = new MySqlCommand(insertarCodigo, conectar);
                     if (command.ExecuteNonQuery() == 1)
                     {
+                        aumentarInventario1();
                         iniciarTablaVentas("");
                         limpitarTextosVentas();
+                        
                     }
                     else {}                    
 
@@ -840,6 +961,7 @@ namespace MysqlTienda
 
                     if (command.ExecuteNonQuery() == 1)
                     {
+                        aumentarInventario1();
                         iniciarTablaVentas("");
                         limpitarTextosVentas();
                     }
@@ -1142,7 +1264,8 @@ namespace MysqlTienda
                 conectar.Open();
                 MySqlCommand command = new MySqlCommand(insertarCodigo, conectar);
                 if (command.ExecuteNonQuery() == 1)
-                {                    
+                {
+                    aumentarInventarioTodo();
                     iniciarTablaVentas("");
                 }
                 else { }
