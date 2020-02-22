@@ -7746,7 +7746,7 @@
 </value>
   </data>
   <data name="TextboxGastosDescripcion.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 155</value>
+    <value>7, 140</value>
   </data>
   <data name="TextboxGastosDescripcion.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
@@ -7779,7 +7779,7 @@
     <value>NoControl</value>
   </data>
   <data name="bunifuCustomLabel16.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 132</value>
+    <value>6, 116</value>
   </data>
   <data name="bunifuCustomLabel16.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 20</value>
@@ -7812,7 +7812,7 @@
     <value>NoControl</value>
   </data>
   <data name="LabelFechaGastos.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 107</value>
+    <value>4, 96</value>
   </data>
   <data name="LabelFechaGastos.Size" type="System.Drawing.Size, System.Drawing">
     <value>54, 20</value>
@@ -7945,7 +7945,7 @@
 </value>
   </data>
   <data name="TextboxGatosTotal.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 61</value>
+    <value>4, 50</value>
   </data>
   <data name="TextboxGatosTotal.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
@@ -7978,7 +7978,7 @@
     <value>NoControl</value>
   </data>
   <data name="LabelTotalGastos.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 37</value>
+    <value>4, 26</value>
   </data>
   <data name="LabelTotalGastos.Size" type="System.Drawing.Size, System.Drawing">
     <value>45, 20</value>

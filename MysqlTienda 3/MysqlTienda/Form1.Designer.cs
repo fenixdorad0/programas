@@ -234,6 +234,7 @@
             this.tabPage15 = new System.Windows.Forms.TabPage();
             this.tabControl5 = new System.Windows.Forms.TabControl();
             this.tabPage26 = new System.Windows.Forms.TabPage();
+            this.labelReporteLocalEntradas = new System.Windows.Forms.Label();
             this.labelErrorReporte = new System.Windows.Forms.Label();
             this.buttonGenerarReporte = new Bunifu.Framework.UI.BunifuFlatButton();
             this.dateTimePickerReporteB = new System.Windows.Forms.DateTimePicker();
@@ -252,6 +253,7 @@
             this.tabPage16 = new System.Windows.Forms.TabPage();
             this.tabControl6 = new System.Windows.Forms.TabControl();
             this.tabPage25 = new System.Windows.Forms.TabPage();
+            this.labelReporteGeneralEntradas = new System.Windows.Forms.Label();
             this.labelErrorReporte2 = new System.Windows.Forms.Label();
             this.bunifuFlatButton20 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.dateTimePickerReporte2B = new System.Windows.Forms.DateTimePicker();
@@ -346,8 +348,6 @@
             this.labelAlmacen = new System.Windows.Forms.Label();
             this.buniCerrar = new Bunifu.Framework.UI.BunifuImageButton();
             this.buniMaxMin = new Bunifu.Framework.UI.BunifuImageButton();
-            this.labelReporteLocalEntradas = new System.Windows.Forms.Label();
-            this.labelReporteGeneralEntradas = new System.Windows.Forms.Label();
             this.tabPage5.SuspendLayout();
             this.bunifuGradientPanel3.SuspendLayout();
             this.bunifuGradientPanel2.SuspendLayout();
@@ -2564,6 +2564,11 @@
             this.tabPage26.Name = "tabPage26";
             this.tabPage26.UseVisualStyleBackColor = true;
             // 
+            // labelReporteLocalEntradas
+            // 
+            resources.ApplyResources(this.labelReporteLocalEntradas, "labelReporteLocalEntradas");
+            this.labelReporteLocalEntradas.Name = "labelReporteLocalEntradas";
+            // 
             // labelErrorReporte
             // 
             resources.ApplyResources(this.labelErrorReporte, "labelErrorReporte");
@@ -2775,6 +2780,11 @@
             resources.ApplyResources(this.tabPage25, "tabPage25");
             this.tabPage25.Name = "tabPage25";
             this.tabPage25.UseVisualStyleBackColor = true;
+            // 
+            // labelReporteGeneralEntradas
+            // 
+            resources.ApplyResources(this.labelReporteGeneralEntradas, "labelReporteGeneralEntradas");
+            this.labelReporteGeneralEntradas.Name = "labelReporteGeneralEntradas";
             // 
             // labelErrorReporte2
             // 
@@ -3917,7 +3927,6 @@
             this.bunifuFlatButton32.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.bunifuFlatButton32.Textcolor = System.Drawing.Color.White;
             this.bunifuFlatButton32.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuFlatButton32.Click += new System.EventHandler(this.bunifuFlatButton32_Click);
             // 
             // TextboxNombreTipoEntrada
             // 
@@ -4146,16 +4155,6 @@
             this.buniMaxMin.Zoom = 10;
             this.buniMaxMin.Click += new System.EventHandler(this.bunifuImageButton1_Click);
             // 
-            // labelReporteLocalEntradas
-            // 
-            resources.ApplyResources(this.labelReporteLocalEntradas, "labelReporteLocalEntradas");
-            this.labelReporteLocalEntradas.Name = "labelReporteLocalEntradas";
-            // 
-            // labelReporteGeneralEntradas
-            // 
-            resources.ApplyResources(this.labelReporteGeneralEntradas, "labelReporteGeneralEntradas");
-            this.labelReporteGeneralEntradas.Name = "labelReporteGeneralEntradas";
-            // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
@@ -4318,13 +4317,13 @@
         private Bunifu.Framework.UI.BunifuTextbox TextboxCedula;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox textInsertarCodigo;
+        public System.Windows.Forms.TextBox textInsertarCodigo;
         private System.Windows.Forms.Label labelInsertarCodigo;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton1;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuRestar1;
         private Bunifu.Framework.UI.BunifuFlatButton buniActualizar;
         private System.Windows.Forms.Label labelCodigo;
-        private System.Windows.Forms.TextBox textSumaTotal;
+        public System.Windows.Forms.TextBox textSumaTotal;
         private Bunifu.Framework.UI.BunifuTileButton buniBnFinalizar;
         private System.Windows.Forms.TextBox textCodigo;
         private Bunifu.Framework.UI.BunifuCustomDataGrid bunifuCustomDataGrid1;

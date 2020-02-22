@@ -102,8 +102,7 @@ namespace MysqlTienda
                 InitializeComponent();
                 this.TopMost = true;
                 labelTotal.Text = "El total es:" + texto;
-                labelFactura2.Text = "Factura #" +factura;
-
+                labelFactura2.Text = "Factura #" + factura; 
                 labelCiudad.Text = "Ciudad: " + ciudad1;
             }
             catch(Exception error)
@@ -228,7 +227,23 @@ namespace MysqlTienda
         {
             try
             {
-                insertarDatos("INSERT INTO easyerp.metodo_pago_detallado (`ID`, `nf`, `efectivo`, `datafono`, `credito`, `apartado`, `cotizacion`, `ciudad`, `total`) VALUES (NULL, '" + factura + "', '" + TextboxEfectivo.Text + "', '" + TextboxDatafono.Text + "', '" + TextboxCredito.Text + "', '" + TextboxApartado.Text + "', 'true', '" + ciudad + "', '" + TextboxPago.Text + "')");
+                //Form1 formulario1 = new Form1();
+
+                if (labelPago.Text == "cotizacion")
+                {
+                    MessageBox.Show("cotización realizada");
+                    //formulario1.respuestaFormulario = "cotizacion";
+                }
+                else
+                {
+                    insertarDatos("INSERT INTO easyerp.metodo_pago_detallado (`ID`, `nf`, `efectivo`, `datafono`, `credito`, `apartado`, `cotizacion`, `ciudad`, `total`) VALUES (NULL, '" + factura + "', '" + TextboxEfectivo.Text + "', '" + TextboxDatafono.Text + "', '" + TextboxCredito.Text + "', '" + TextboxApartado.Text + "', 'true', '" + ciudad + "', '" + TextboxPago.Text + "')");
+                    
+                    //formulario1.respuestaFormulario = "venta";
+                   
+                }            
+
+                
+                this.Close();
             }
             catch (Exception error)
             {
@@ -315,7 +330,7 @@ namespace MysqlTienda
                     return false;
                 }
             }
-            catch (Exception error)
+            catch
             {
                 return false;
                
