@@ -2043,7 +2043,7 @@ namespace MysqlTienda
                 {
 
                     cerrarConeccion();
-                    string selectQuery = "SELECT codigo,referencia,producto,tamano, sum(cantidad) as 'cantidad vendida' ,sum(total) as 'total vendido',(total - costoTotal) as 'ganancia',(1-(costoTotal / total)) as 'ganancia porcentual' from easyerp.detalle_facturacov WHERE vendido='si' and almacen = '" + comboBoxCiudad.Text + "' and fecha BETWEEN '" + fechaA + " 00:00:00' AND '" + fechaB + " 23:59:59' GROUP by codigo ";
+                    string selectQuery = "SELECT codigo,referencia,producto,tamano, sum(cantidad) as 'cantidad vendida' ,sum(total) as 'total vendido',sum(costoTotal) as 'costo Total',(sum(total) - sum(costoTotal)) as 'ganancia',(((sum(total) - sum(costoTotal))/sum(costoTotal))) as 'ganancia porcentual' from easyerp.detalle_facturacov WHERE vendido='si' and almacen = '" + comboBoxCiudad.Text + "' and fecha BETWEEN '" + fechaA + " 00:00:00' AND '" + fechaB + " 23:59:59' GROUP by codigo ";
                     DataTable table = new DataTable();
                     MySqlDataAdapter adpter = new MySqlDataAdapter(selectQuery, conectar);
                     adpter.Fill(table);
@@ -2058,7 +2058,8 @@ namespace MysqlTienda
                 try
                 {
                     cerrarConeccion();
-                    string selectQuery = "SELECT producto, sum(cantidad) as 'cantidad vendida' ,sum(total) as 'total vendido',(sum(total) - sum(costoTotal)) as 'ganancia',(1-(sum(costoTotal) / sum(total))) as 'ganancia porcentual' from easyerp.detalle_facturacov WHERE vendido='si' and almacen = '" + comboBoxCiudad.Text + "' and fecha BETWEEN '" + fechaA + " 00:00:00' AND '" + fechaB + " 23:59:59' GROUP by producto ";
+
+                    string selectQuery = "SELECT producto, sum(cantidad) as 'cantidad vendida' ,sum(total) as 'total vendido',sum(costoTotal) as 'costoTotal',(sum(total) - sum(costoTotal)) as 'ganancia',(((sum(total) - sum(costoTotal))/sum(costoTotal))) as 'ganancia porcentual' from easyerp.detalle_facturacov WHERE vendido='si' and almacen = '" + comboBoxCiudad.Text + "' and fecha BETWEEN '" + fechaA + " 00:00:00' AND '" + fechaB + " 23:59:59' GROUP by producto ";
                     //string selectQuery = "SELECT codigo,referencia,producto,tamano, sum(cantidad) as 'cantidad vendida' ,(sum(total) - sum(costoTotal)) as 'ganancia',(1-(sum(costoTotal) / sum(total))) as 'ganancia porcentual' from easyerp.detalle_facturacov WHERE fecha BETWEEN '" + fechaHoy + " 00:00:00' AND '" + fechaHoy + " 23:59:59' GROUP by producto";
                     DataTable table = new DataTable();
                     MySqlDataAdapter adpter = new MySqlDataAdapter(selectQuery, conectar);
@@ -2077,7 +2078,7 @@ namespace MysqlTienda
                 {
                     cerrarConeccion();
                     //string selectQuery = "SELECT producto, sum(cantidad) as 'cantidad vendida' ,sum(total) as 'total vendido',(sum(total) - sum(costoTotal)) as 'ganancia',(1-(sum(costoTotal) / sum(total))) as 'ganancia porcentual' from easyerp.detalle_facturacov WHERE almacen_nombre = '" + comboBox1.Text + "' and fecha BETWEEN '" + fechaHoy + " 00:00:00' AND '" + fechaHoy + " 23:59:59' GROUP by producto ";
-                    string selectQuery = "SELECT usuario_cc as 'cajero',almacen_nombre as 'almacen', sum(total) as 'total vendido' ,(sum(total) - sum(costo)) as 'ganancia',(1-(sum(costo) / sum(total))) as 'ganancia porcentual' from easyerp.factura_movimiento WHERE almacen_nombre = '" + comboBoxCiudad.Text + "' and fecha BETWEEN '" + fechaA + " 00:00:00' AND '" + fechaB + " 23:59:59' GROUP by usuario_cc, almacen_nombre";
+                    string selectQuery = "SELECT usuario_cc as 'cajero',almacen_nombre as 'almacen', sum(total) as 'total vendido' ,sum(costo) as 'costo total',(sum(total) - sum(costo)) as 'ganancia',((sum(total)-sum(costo))/ sum(costo)) as 'ganancia porcentual' from easyerp.factura_movimiento WHERE almacen_nombre = '" + comboBoxCiudad.Text + "' and fecha BETWEEN '" + fechaA + " 00:00:00' AND '" + fechaB + " 23:59:59' GROUP by usuario_cc, almacen_nombre";
                     DataTable table = new DataTable();
                     MySqlDataAdapter adpter = new MySqlDataAdapter(selectQuery, conectar);
                     adpter.Fill(table);
@@ -2109,10 +2110,13 @@ namespace MysqlTienda
             {
                 DataGridReporteProducto.Columns[5].DefaultCellStyle.Format = "#,#";
                 DataGridReporteProducto.Columns[6].DefaultCellStyle.Format = "#,#";
+                DataGridReporteProducto.Columns[7].DefaultCellStyle.Format = "#,#";
                 DataGridReporteDepartamento.Columns[2].DefaultCellStyle.Format = "#,#";
                 DataGridReporteDepartamento.Columns[3].DefaultCellStyle.Format = "#,#";
+                DataGridReporteDepartamento.Columns[4].DefaultCellStyle.Format = "#,#";
                 DataGridReporteVentaCajeros.Columns[2].DefaultCellStyle.Format = "#,#";
                 DataGridReporteVentaCajeros.Columns[3].DefaultCellStyle.Format = "#,#";
+                DataGridReporteVentaCajeros.Columns[4].DefaultCellStyle.Format = "#,#";
             }
             catch { }
 
@@ -2198,7 +2202,7 @@ namespace MysqlTienda
                 try
                 {
                     cerrarConeccion();
-                    string selectQuery = "SELECT codigo,referencia,producto,tamano, sum(cantidad) as 'cantidad vendida' ,sum(total) as 'ventas totales',(total - costoTotal) as 'ganancia',(1-(costoTotal / total)) as 'ganancia porcentual' from easyerp.detalle_facturacov WHERE vendido='si' and fecha BETWEEN '" + fechaA + " 00:00:00' AND '" + fechaB + " 23:59:59' GROUP by codigo ";
+                    string selectQuery = "SELECT codigo,referencia,producto,tamano, sum(cantidad) as 'cantidad vendida' ,sum(total) as 'ventas totales',sum(costoTotal) as 'costo Total',(sum(total) - sum(costoTotal)) as 'ganancia',(((sum(total) - sum(costoTotal))/sum(costoTotal))) as 'ganancia porcentual' from easyerp.detalle_facturacov WHERE vendido='si' and fecha BETWEEN '" + fechaA + " 00:00:00' AND '" + fechaB + " 23:59:59' GROUP by codigo ";
                     DataTable table = new DataTable();
                     MySqlDataAdapter adpter = new MySqlDataAdapter(selectQuery, conectar);
                     adpter.Fill(table);
@@ -2213,7 +2217,7 @@ namespace MysqlTienda
                 try
                 {
                     cerrarConeccion();
-                    string selectQuery = "SELECT producto as 'departamento', sum(cantidad) as 'cantidad vendida' ,sum(total) as 'venta total',(sum(total) - sum(costoTotal)) as 'ganancia',(1-(sum(costoTotal) / sum(total))) as 'ganancia porcentual' from easyerp.detalle_facturacov WHERE vendido='si' and fecha BETWEEN '" + fechaA + " 00:00:00' AND '" + fechaB + " 23:59:59' GROUP by producto";
+                    string selectQuery = "SELECT producto as 'departamento', sum(cantidad) as 'cantidad vendida' ,sum(total) as 'venta total',sum(costoTotal) as 'costo Total',(sum(total) - sum(costoTotal)) as 'ganancia',(((sum(total) - sum(costoTotal))/sum(costoTotal))) as 'ganancia porcentual' from easyerp.detalle_facturacov WHERE vendido='si' and fecha BETWEEN '" + fechaA + " 00:00:00' AND '" + fechaB + " 23:59:59' GROUP by producto";
                     //string selectQuery = "SELECT codigo,referencia,producto,tamano, sum(cantidad) as 'cantidad vendida' ,(total - costoTotal) as 'ganancia',(1-(costoTotal / total)) as 'ganancia porcentual' from easyerp.detalle_facturacov WHERE fecha BETWEEN '" + fechaHoy + " 00:00:00' AND '" + fechaHoy + " 23:59:59' GROUP by producto ";
                     DataTable table = new DataTable();
                     MySqlDataAdapter adpter = new MySqlDataAdapter(selectQuery, conectar);
@@ -2229,7 +2233,7 @@ namespace MysqlTienda
                 try
                 {
                     cerrarConeccion();
-                    string selectQuery = "SELECT almacen,sum(total) as 'ventas totales',(sum(total) - sum(costoTotal)) as 'ganancia',(1-(sum(costoTotal) / sum(total))) as 'ganancia porcentual' from easyerp.detalle_facturacov WHERE vendido='si' and fecha BETWEEN '" + fechaA + " 00:00:00' AND '" + fechaB + " 23:59:59' GROUP by almacen ORDER BY `detalle_facturacov`.`almacen` ASC";
+                    string selectQuery = "SELECT almacen,sum(total) as 'ventas totales',sum(costoTotal) as 'costo Total',(sum(total) - sum(costoTotal)) as 'ganancia',(((sum(total) - sum(costoTotal))/sum(costoTotal))) as 'ganancia porcentual' from easyerp.detalle_facturacov WHERE vendido='si' and fecha BETWEEN '" + fechaA + " 00:00:00' AND '" + fechaB + " 23:59:59' GROUP by almacen ORDER BY `detalle_facturacov`.`almacen` ASC";
                     //string selectQuery = "SELECT codigo,referencia,producto,tamano, sum(cantidad) as 'cantidad vendida' ,(total - costoTotal) as 'ganancia',(1-(costoTotal / total)) as 'ganancia porcentual' from easyerp.detalle_facturacov WHERE fecha BETWEEN '" + fechaHoy + " 00:00:00' AND '" + fechaHoy + " 23:59:59' GROUP by producto ";
                     DataTable table = new DataTable();
                     MySqlDataAdapter adpter = new MySqlDataAdapter(selectQuery, conectar);
@@ -2245,7 +2249,7 @@ namespace MysqlTienda
                 try
                 {
                     cerrarConeccion();
-                    string selectQuery = "SELECT almacen,codigo,referencia,producto,tamano, sum(cantidad) as 'cantidad vendida' ,(sum(total) - sum(costoTotal)) as 'ganancia',(1-(sum(costoTotal) / sum(total))) as 'ganancia porcentual' from easyerp.detalle_facturacov WHERE vendido='si' and fecha BETWEEN '" + fechaA + " 00:00:00' AND '" + fechaB + " 23:59:59' GROUP by codigo, almacen ORDER BY `detalle_facturacov`.`almacen` ASC";
+                    string selectQuery = "SELECT almacen,codigo,referencia,producto,tamano, sum(cantidad) as 'cantidad vendida' ,sum(costoTotal) as 'costo Total',(sum(total) - sum(costoTotal)) as 'ganancia',(((sum(total) - sum(costoTotal))/sum(costoTotal))) as 'ganancia porcentual' from easyerp.detalle_facturacov WHERE vendido='si' and fecha BETWEEN '" + fechaA + " 00:00:00' AND '" + fechaB + " 23:59:59' GROUP by codigo, almacen ORDER BY `detalle_facturacov`.`almacen` ASC";
                     //string selectQuery = "SELECT codigo,referencia,producto,tamano, sum(cantidad) as 'cantidad vendida' ,(total - costoTotal) as 'ganancia',(1-(costoTotal / total)) as 'ganancia porcentual' from easyerp.detalle_facturacov WHERE fecha BETWEEN '" + fechaHoy + " 00:00:00' AND '" + fechaHoy + " 23:59:59' GROUP by producto ";
                     DataTable table = new DataTable();
                     MySqlDataAdapter adpter = new MySqlDataAdapter(selectQuery, conectar);
