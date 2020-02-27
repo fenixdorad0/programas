@@ -110,7 +110,7 @@ namespace MysqlTienda
                 DataTable table = new DataTable();
                 MySqlDataAdapter adpter = new MySqlDataAdapter(selectQuery, conectar);
                 adpter.Fill(table);
-                bunifuCustomDataGrid1.DataSource = table;
+                DataGridVentas.DataSource = table;
                 cerrarConeccion();                
             }
             catch (Exception error)
@@ -307,25 +307,29 @@ namespace MysqlTienda
 
         public void facturaVendida()
         {
+          
             try
             {
-                
                 cerrarConeccion();
-                string insertarCodigo = "UPDATE easyerp.detalle_facturacov SET vendido='si' WHERE `detalle_facturacov`.`factura` =" + textFactura.Text+ " and almacen='" + comboBoxCiudad.Text + "'";
-                //UPDATE `departamento` SET `nombre` = 'cortias1', `descripcion` = 'nose algo1' WHERE `departamento`.`nombre` = 'cortias';
+                string insertarCodigo = "UPDATE easyerp.detalle_facturacov SET vendido='si' WHERE `detalle_facturacov`.`factura` ='" + textFactura.Text + "' and almacen='" + comboBoxCiudad.Text + "'";
                 conectar.Open();
                 MySqlCommand command = new MySqlCommand(insertarCodigo, conectar);
+                if (command.ExecuteNonQuery() == 1)
+                {
+                     MessageBox.Show("venta realizada");
+                }
+                else
+                {
+                    MessageBox.Show("pero que ha pasado chaval");
+
+                }
                 cerrarConeccion();
-                
             }
             catch (Exception error)
             {
+                MessageBox.Show(Convert.ToString(error));
                 cerrarConeccion();
-                String mensaje = Convert.ToString(error.Message);
-                
-                    MessageBox.Show(error.Message + "update o restando");
-            }                
-            
+            }
 
         }
 
@@ -558,7 +562,7 @@ namespace MysqlTienda
                     iniciarTablaVentas("");
                     sumaTotal();
                     cargarComboboxes();
-                    
+                    colocarFormatoDecimalDataGrids();
 
                 }
                 else
@@ -574,6 +578,20 @@ namespace MysqlTienda
             yainicio = 1;
         }
 
+        private void colocarFormatoDecimalDataGrids()
+        {
+            try
+            {
+                DataGridVentas.Columns[5].DefaultCellStyle.Format = "#,#";
+                DataGridVentas.Columns[6].DefaultCellStyle.Format = "#,#";
+                DataGridProductos.Columns[4].DefaultCellStyle.Format = "#,#";
+                DataGridProductos.Columns[5].DefaultCellStyle.Format = "#,#";
+                DataGridProductos.Columns[6].DefaultCellStyle.Format = "#,#";
+            }
+            catch { }
+            
+
+        }
         private void cargarComboboxes()
         {
             cargarPermisosPorAlmacen();
@@ -916,13 +934,13 @@ namespace MysqlTienda
         {
             try
             {
-                textCodigo.Text = textProducto.Text = bunifuCustomDataGrid1.CurrentRow.Cells[0].Value.ToString();
-                textReferencia.Text = bunifuCustomDataGrid1.CurrentRow.Cells[1].Value.ToString();
-                textProducto.Text = bunifuCustomDataGrid1.CurrentRow.Cells[2].Value.ToString();
-                textTamano.Text = bunifuCustomDataGrid1.CurrentRow.Cells[3].Value.ToString();
-                textCantidad.Text = bunifuCustomDataGrid1.CurrentRow.Cells[4].Value.ToString();
-                textPrecio.Text = bunifuCustomDataGrid1.CurrentRow.Cells[5].Value.ToString();
-                textTotal.Text = bunifuCustomDataGrid1.CurrentRow.Cells[6].Value.ToString();
+                textCodigo.Text = textProducto.Text = DataGridVentas.CurrentRow.Cells[0].Value.ToString();
+                textReferencia.Text = DataGridVentas.CurrentRow.Cells[1].Value.ToString();
+                textProducto.Text = DataGridVentas.CurrentRow.Cells[2].Value.ToString();
+                textTamano.Text = DataGridVentas.CurrentRow.Cells[3].Value.ToString();
+                textCantidad.Text = DataGridVentas.CurrentRow.Cells[4].Value.ToString();
+                textPrecio.Text = DataGridVentas.CurrentRow.Cells[5].Value.ToString();
+                textTotal.Text = DataGridVentas.CurrentRow.Cells[6].Value.ToString();
             }
             catch(Exception error)
             {
@@ -1017,7 +1035,7 @@ namespace MysqlTienda
                 try
                 {
                     double precio = Convert.ToDouble(textTotal.Text) / Convert.ToDouble(textCantidad.Text);
-                    string insertarCodigo = "UPDATE easyerp.detalle_facturacov SET precio =" + textPrecio.Text + ", total =precio*cantidad, costoTotal=costo*precio  WHERE `detalle_facturacov`.`factura` =" + textFactura.Text + " AND `detalle_facturacov`.`codigo` = " + textCodigo.Text + " and almacen='" + comboBoxCiudad.Text + "'";
+                    string insertarCodigo = "UPDATE easyerp.detalle_facturacov SET precio =" + textPrecio.Text + ", total =precio*cantidad, costoTotal=costo*cantidad  WHERE `detalle_facturacov`.`factura` =" + textFactura.Text + " AND `detalle_facturacov`.`codigo` = " + textCodigo.Text + " and almacen='" + comboBoxCiudad.Text + "'";
                     conectar.Open();
                     MySqlCommand command = new MySqlCommand(insertarCodigo, conectar);
 
@@ -2025,7 +2043,7 @@ namespace MysqlTienda
                 {
 
                     cerrarConeccion();
-                    string selectQuery = "SELECT codigo,referencia,producto,tamano, sum(cantidad) as 'cantidad vendida' ,sum(total) as 'total vendido',(total - costoTotal) as 'ganancia',(1-(costoTotal / total)) as 'ganancia porcentual' from easyerp.detalle_facturacov WHERE almacen = '" + comboBoxCiudad.Text + "' and fecha BETWEEN '" + fechaA + " 00:00:00' AND '" + fechaB + " 23:59:59' GROUP by codigo ";
+                    string selectQuery = "SELECT codigo,referencia,producto,tamano, sum(cantidad) as 'cantidad vendida' ,sum(total) as 'total vendido',(total - costoTotal) as 'ganancia',(1-(costoTotal / total)) as 'ganancia porcentual' from easyerp.detalle_facturacov WHERE vendido='si' and almacen = '" + comboBoxCiudad.Text + "' and fecha BETWEEN '" + fechaA + " 00:00:00' AND '" + fechaB + " 23:59:59' GROUP by codigo ";
                     DataTable table = new DataTable();
                     MySqlDataAdapter adpter = new MySqlDataAdapter(selectQuery, conectar);
                     adpter.Fill(table);
@@ -2040,7 +2058,7 @@ namespace MysqlTienda
                 try
                 {
                     cerrarConeccion();
-                    string selectQuery = "SELECT producto, sum(cantidad) as 'cantidad vendida' ,sum(total) as 'total vendido',(sum(total) - sum(costoTotal)) as 'ganancia',(1-(sum(costoTotal) / sum(total))) as 'ganancia porcentual' from easyerp.detalle_facturacov WHERE almacen = '" + comboBoxCiudad.Text + "' and fecha BETWEEN '" + fechaA + " 00:00:00' AND '" + fechaB + " 23:59:59' GROUP by producto ";
+                    string selectQuery = "SELECT producto, sum(cantidad) as 'cantidad vendida' ,sum(total) as 'total vendido',(sum(total) - sum(costoTotal)) as 'ganancia',(1-(sum(costoTotal) / sum(total))) as 'ganancia porcentual' from easyerp.detalle_facturacov WHERE vendido='si' and almacen = '" + comboBoxCiudad.Text + "' and fecha BETWEEN '" + fechaA + " 00:00:00' AND '" + fechaB + " 23:59:59' GROUP by producto ";
                     //string selectQuery = "SELECT codigo,referencia,producto,tamano, sum(cantidad) as 'cantidad vendida' ,(sum(total) - sum(costoTotal)) as 'ganancia',(1-(sum(costoTotal) / sum(total))) as 'ganancia porcentual' from easyerp.detalle_facturacov WHERE fecha BETWEEN '" + fechaHoy + " 00:00:00' AND '" + fechaHoy + " 23:59:59' GROUP by producto";
                     DataTable table = new DataTable();
                     MySqlDataAdapter adpter = new MySqlDataAdapter(selectQuery, conectar);
@@ -2070,6 +2088,8 @@ namespace MysqlTienda
                 {
                     MessageBox.Show(error.Message + "datrigreportes");
                 }
+
+                dataGridsFormatoLocal();
             }
             else
             {
@@ -2079,6 +2099,22 @@ namespace MysqlTienda
                 
             }
 
+
+
+        }
+
+        private void dataGridsFormatoLocal()
+        {
+            try
+            {
+                DataGridReporteProducto.Columns[5].DefaultCellStyle.Format = "#,#";
+                DataGridReporteProducto.Columns[6].DefaultCellStyle.Format = "#,#";
+                DataGridReporteDepartamento.Columns[2].DefaultCellStyle.Format = "#,#";
+                DataGridReporteDepartamento.Columns[3].DefaultCellStyle.Format = "#,#";
+                DataGridReporteVentaCajeros.Columns[2].DefaultCellStyle.Format = "#,#";
+                DataGridReporteVentaCajeros.Columns[3].DefaultCellStyle.Format = "#,#";
+            }
+            catch { }
 
 
         }
@@ -2308,6 +2344,7 @@ namespace MysqlTienda
                 {
                     MessageBox.Show(error.Message + "ventas por día reporte 2");
                 }
+                formatoDataGridReport2();
             }
             else
             {
@@ -2318,6 +2355,30 @@ namespace MysqlTienda
             
         }
 
+        private void formatoDataGridReport2()
+        {
+            try
+            {
+                DataGridReporteProducto2.Columns[5].DefaultCellStyle.Format = "#,#";
+                DataGridReporteProducto2.Columns[6].DefaultCellStyle.Format = "#,#";                
+                DataGridReporteDepartamento2.Columns[2].DefaultCellStyle.Format = "#,#";
+                DataGridReporteDepartamento2.Columns[3].DefaultCellStyle.Format = "#,#";
+                DataGridReporteVentasAlmacen2.Columns[1].DefaultCellStyle.Format = "#,#";
+                DataGridReporteVentasAlmacen2.Columns[2].DefaultCellStyle.Format = "#,#";
+                DataGridReporteProductosAlmacen2.Columns[6].DefaultCellStyle.Format = "#,#";
+                DataGridReporteDepartamentoAlmacen2.Columns[3].DefaultCellStyle.Format = "#,#";
+                DataGridReporteDepartamentoAlmacen2.Columns[4].DefaultCellStyle.Format = "#,#";
+                DataGridReporteVentaCajeros2.Columns[2].DefaultCellStyle.Format = "#,#";
+                DataGridReporteVentaCajeros2.Columns[3].DefaultCellStyle.Format = "#,#";
+                DataGridReporteVentaDia2.Columns[1].DefaultCellStyle.Format = "#,#";
+                DataGridReporteVentaDiaR2.Columns[1].DefaultCellStyle.Format = "#,#";
+            }
+            catch
+            {
+
+            }
+           
+        }
         private void DataGridReporteVentasAlmacen2_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
@@ -2824,7 +2885,24 @@ namespace MysqlTienda
             }
         }
 
-       
+        private void bunifuFlatButton36_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                /*
+                for (int cont = 0; cont < DataGridVentas.RowCount-1; cont++)
+                {
+                    MessageBox.Show(DataGridVentas.Rows[cont].Cells[0].Value.ToString());
+                }
+                */
+                
+            }
+            catch(Exception error)
+            {
+                MessageBox.Show(Convert.ToString(error));
+            }
+            
+        }
     }
 
     }
