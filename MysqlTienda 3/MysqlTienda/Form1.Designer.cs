@@ -67,6 +67,9 @@
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle35 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle36 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle37 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -79,7 +82,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle44 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle45 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle46 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.tab1Inicio = new System.Windows.Forms.TabPage();
             this.bunifuGradientPanel3 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.bunifuGradientPanel2 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -92,7 +95,7 @@
             this.buniTextPass = new Bunifu.Framework.UI.BunifuTextbox();
             this.buniBtnLogin = new Bunifu.Framework.UI.BunifuFlatButton();
             this.comboBoxCiudad = new System.Windows.Forms.ComboBox();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.tab1Productos = new System.Windows.Forms.TabPage();
             this.tabControl3 = new System.Windows.Forms.TabControl();
             this.tabPage8 = new System.Windows.Forms.TabPage();
             this.labelProductoId = new System.Windows.Forms.Label();
@@ -155,7 +158,7 @@
             this.bunifuFlatButton18 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuFlatButton19 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuCustomDataGrid3 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.tab1Usuarios = new System.Windows.Forms.TabPage();
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.bunifuCustomDataGrid2 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
@@ -182,8 +185,9 @@
             this.DataGridPermisosPorAlmacen = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel5 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tab1Ventas = new System.Windows.Forms.TabPage();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.bunifuFlatButton36 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.labelUtilidad = new System.Windows.Forms.Label();
             this.labelCostoTotalizado = new System.Windows.Forms.Label();
             this.textBoxCostoTotal = new System.Windows.Forms.TextBox();
@@ -216,7 +220,7 @@
             this.textTotal = new System.Windows.Forms.TextBox();
             this.labelTotal = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage11 = new System.Windows.Forms.TabPage();
+            this.tab1Almacen = new System.Windows.Forms.TabPage();
             this.TextboxNombreAlmacen = new Bunifu.Framework.UI.BunifuTextbox();
             this.bunifuCustomLabel3 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuFlatButton6 = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -228,7 +232,7 @@
             this.comboBoxTipoAlmacen = new System.Windows.Forms.ComboBox();
             this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.TextboxDescripcionAlmacen = new Bunifu.Framework.UI.BunifuTextbox();
-            this.tabPage14 = new System.Windows.Forms.TabPage();
+            this.tab1Reportes = new System.Windows.Forms.TabPage();
             this.button1 = new System.Windows.Forms.Button();
             this.tabControl4 = new System.Windows.Forms.TabControl();
             this.tabPage15 = new System.Windows.Forms.TabPage();
@@ -240,8 +244,8 @@
             this.dateTimePickerReporteB = new System.Windows.Forms.DateTimePicker();
             this.labelReporte1 = new System.Windows.Forms.Label();
             this.dateTimePickerReporteA = new System.Windows.Forms.DateTimePicker();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
+            this.labelVentasCreditoLocal = new System.Windows.Forms.Label();
+            this.labelEfectivoLocal = new System.Windows.Forms.Label();
             this.labelReporteGanancias = new System.Windows.Forms.Label();
             this.labelReporteLocalGastos = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
@@ -276,11 +280,14 @@
             this.tabPage21 = new System.Windows.Forms.TabPage();
             this.DataGridReporteVentaCajeros2 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.tabPage24 = new System.Windows.Forms.TabPage();
+            this.tabControl8 = new System.Windows.Forms.TabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
             this.chartVentasPorDiaReporte = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tabPage27 = new System.Windows.Forms.TabPage();
             this.DataGridReporteVentaDiaR2 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.DataGridReporteVentaDia2 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            this.tabPage28 = new System.Windows.Forms.TabPage();
+            this.tab1EntradasSalidas = new System.Windows.Forms.TabPage();
             this.tabControl7 = new System.Windows.Forms.TabControl();
             this.gasto = new System.Windows.Forms.TabPage();
             this.comboBoxGastoCatagoria = new System.Windows.Forms.ComboBox();
@@ -337,7 +344,6 @@
             this.bunifuFlatButton34 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuFlatButton35 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.DataGridTipoEntrada = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            this.tabPage29 = new System.Windows.Forms.TabPage();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.macro1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.buscarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -348,13 +354,12 @@
             this.labelAlmacen = new System.Windows.Forms.Label();
             this.buniCerrar = new Bunifu.Framework.UI.BunifuImageButton();
             this.buniMaxMin = new Bunifu.Framework.UI.BunifuImageButton();
-            this.bunifuFlatButton36 = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.tabPage5.SuspendLayout();
+            this.tab1Inicio.SuspendLayout();
             this.bunifuGradientPanel3.SuspendLayout();
             this.bunifuGradientPanel2.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.tabPage4.SuspendLayout();
+            this.tab1Productos.SuspendLayout();
             this.tabControl3.SuspendLayout();
             this.tabPage8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridProductos)).BeginInit();
@@ -364,19 +369,19 @@
             ((System.ComponentModel.ISupportInitialize)(this.DataGridTamano)).BeginInit();
             this.tabPage13.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid3)).BeginInit();
-            this.tabPage3.SuspendLayout();
+            this.tab1Usuarios.SuspendLayout();
             this.tabControl2.SuspendLayout();
             this.tabPage6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid2)).BeginInit();
             this.tabPage7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridPermisosPorAlmacen)).BeginInit();
-            this.tabPage1.SuspendLayout();
+            this.tab1Ventas.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridVentas)).BeginInit();
             this.tabControl1.SuspendLayout();
-            this.tabPage11.SuspendLayout();
+            this.tab1Almacen.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridAlmacen)).BeginInit();
-            this.tabPage14.SuspendLayout();
+            this.tab1Reportes.SuspendLayout();
             this.tabControl4.SuspendLayout();
             this.tabPage15.SuspendLayout();
             this.tabControl5.SuspendLayout();
@@ -403,11 +408,13 @@
             this.tabPage21.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridReporteVentaCajeros2)).BeginInit();
             this.tabPage24.SuspendLayout();
+            this.tabControl8.SuspendLayout();
+            this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartVentasPorDiaReporte)).BeginInit();
             this.tabPage27.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridReporteVentaDiaR2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridReporteVentaDia2)).BeginInit();
-            this.tabPage28.SuspendLayout();
+            this.tab1EntradasSalidas.SuspendLayout();
             this.tabControl7.SuspendLayout();
             this.gasto.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridGastos)).BeginInit();
@@ -424,12 +431,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.buniMaxMin)).BeginInit();
             this.SuspendLayout();
             // 
-            // tabPage5
+            // tab1Inicio
             // 
-            this.tabPage5.Controls.Add(this.bunifuGradientPanel3);
-            resources.ApplyResources(this.tabPage5, "tabPage5");
-            this.tabPage5.Name = "tabPage5";
-            this.tabPage5.UseVisualStyleBackColor = true;
+            this.tab1Inicio.Controls.Add(this.bunifuGradientPanel3);
+            resources.ApplyResources(this.tab1Inicio, "tab1Inicio");
+            this.tab1Inicio.Name = "tab1Inicio";
+            this.tab1Inicio.UseVisualStyleBackColor = true;
             // 
             // bunifuGradientPanel3
             // 
@@ -556,12 +563,12 @@
             this.comboBoxCiudad.Name = "comboBoxCiudad";
             this.comboBoxCiudad.TextChanged += new System.EventHandler(this.comboBox1_TextChanged);
             // 
-            // tabPage4
+            // tab1Productos
             // 
-            this.tabPage4.Controls.Add(this.tabControl3);
-            resources.ApplyResources(this.tabPage4, "tabPage4");
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.UseVisualStyleBackColor = true;
+            this.tab1Productos.Controls.Add(this.tabControl3);
+            resources.ApplyResources(this.tab1Productos, "tab1Productos");
+            this.tab1Productos.Name = "tab1Productos";
+            this.tab1Productos.UseVisualStyleBackColor = true;
             // 
             // tabControl3
             // 
@@ -651,9 +658,10 @@
             // 
             // TextboxCodigoProducto
             // 
-            this.TextboxCodigoProducto.BackColor = System.Drawing.Color.Gainsboro;
+            this.TextboxCodigoProducto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(214)))), ((int)(((byte)(249)))));
             resources.ApplyResources(this.TextboxCodigoProducto, "TextboxCodigoProducto");
-            this.TextboxCodigoProducto.ForeColor = System.Drawing.Color.Teal;
+            this.TextboxCodigoProducto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TextboxCodigoProducto.ForeColor = System.Drawing.Color.White;
             this.TextboxCodigoProducto.Icon = ((System.Drawing.Image)(resources.GetObject("TextboxCodigoProducto.Icon")));
             this.TextboxCodigoProducto.Name = "TextboxCodigoProducto";
             this.TextboxCodigoProducto.text = "Codigo";
@@ -699,7 +707,7 @@
             this.DataGridProductos.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -782,9 +790,10 @@
             // 
             // TextboxNombreProducto
             // 
-            this.TextboxNombreProducto.BackColor = System.Drawing.Color.Gainsboro;
+            this.TextboxNombreProducto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(214)))), ((int)(((byte)(249)))));
             resources.ApplyResources(this.TextboxNombreProducto, "TextboxNombreProducto");
-            this.TextboxNombreProducto.ForeColor = System.Drawing.Color.Teal;
+            this.TextboxNombreProducto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TextboxNombreProducto.ForeColor = System.Drawing.Color.White;
             this.TextboxNombreProducto.Icon = ((System.Drawing.Image)(resources.GetObject("TextboxNombreProducto.Icon")));
             this.TextboxNombreProducto.Name = "TextboxNombreProducto";
             this.TextboxNombreProducto.text = "Nombre";
@@ -822,36 +831,41 @@
             // 
             // TextboxReferenciaProducto
             // 
-            this.TextboxReferenciaProducto.BackColor = System.Drawing.Color.Gainsboro;
+            this.TextboxReferenciaProducto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(214)))), ((int)(((byte)(249)))));
             resources.ApplyResources(this.TextboxReferenciaProducto, "TextboxReferenciaProducto");
-            this.TextboxReferenciaProducto.ForeColor = System.Drawing.Color.Teal;
+            this.TextboxReferenciaProducto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TextboxReferenciaProducto.ForeColor = System.Drawing.Color.White;
             this.TextboxReferenciaProducto.Icon = ((System.Drawing.Image)(resources.GetObject("TextboxReferenciaProducto.Icon")));
             this.TextboxReferenciaProducto.Name = "TextboxReferenciaProducto";
             this.TextboxReferenciaProducto.text = "Refencia";
             // 
             // TextboxDetalProducto
             // 
-            this.TextboxDetalProducto.BackColor = System.Drawing.Color.Gainsboro;
+            this.TextboxDetalProducto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(214)))), ((int)(((byte)(249)))));
             resources.ApplyResources(this.TextboxDetalProducto, "TextboxDetalProducto");
-            this.TextboxDetalProducto.ForeColor = System.Drawing.Color.Teal;
+            this.TextboxDetalProducto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TextboxDetalProducto.ForeColor = System.Drawing.Color.White;
             this.TextboxDetalProducto.Icon = ((System.Drawing.Image)(resources.GetObject("TextboxDetalProducto.Icon")));
             this.TextboxDetalProducto.Name = "TextboxDetalProducto";
             this.TextboxDetalProducto.text = "Precio detal";
+            this.TextboxDetalProducto.OnTextChange += new System.EventHandler(this.TextboxDetalProducto_OnTextChange);
             // 
             // TextboxMayorProducto
             // 
-            this.TextboxMayorProducto.BackColor = System.Drawing.Color.Gainsboro;
+            this.TextboxMayorProducto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(214)))), ((int)(((byte)(249)))));
             resources.ApplyResources(this.TextboxMayorProducto, "TextboxMayorProducto");
-            this.TextboxMayorProducto.ForeColor = System.Drawing.Color.Teal;
+            this.TextboxMayorProducto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TextboxMayorProducto.ForeColor = System.Drawing.Color.White;
             this.TextboxMayorProducto.Icon = ((System.Drawing.Image)(resources.GetObject("TextboxMayorProducto.Icon")));
             this.TextboxMayorProducto.Name = "TextboxMayorProducto";
             this.TextboxMayorProducto.text = "Precio mayor";
             // 
             // TextboxCostoProducto
             // 
-            this.TextboxCostoProducto.BackColor = System.Drawing.Color.Gainsboro;
+            this.TextboxCostoProducto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(214)))), ((int)(((byte)(249)))));
             resources.ApplyResources(this.TextboxCostoProducto, "TextboxCostoProducto");
-            this.TextboxCostoProducto.ForeColor = System.Drawing.Color.Teal;
+            this.TextboxCostoProducto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TextboxCostoProducto.ForeColor = System.Drawing.Color.White;
             this.TextboxCostoProducto.Icon = ((System.Drawing.Image)(resources.GetObject("TextboxCostoProducto.Icon")));
             this.TextboxCostoProducto.Name = "TextboxCostoProducto";
             this.TextboxCostoProducto.text = "Costo";
@@ -863,9 +877,10 @@
             // 
             // TextboxCantidadProducto
             // 
-            this.TextboxCantidadProducto.BackColor = System.Drawing.Color.Gainsboro;
+            this.TextboxCantidadProducto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(214)))), ((int)(((byte)(249)))));
             resources.ApplyResources(this.TextboxCantidadProducto, "TextboxCantidadProducto");
-            this.TextboxCantidadProducto.ForeColor = System.Drawing.Color.Teal;
+            this.TextboxCantidadProducto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TextboxCantidadProducto.ForeColor = System.Drawing.Color.White;
             this.TextboxCantidadProducto.Icon = ((System.Drawing.Image)(resources.GetObject("TextboxCantidadProducto.Icon")));
             this.TextboxCantidadProducto.Name = "TextboxCantidadProducto";
             this.TextboxCantidadProducto.text = "Cantidad";
@@ -1083,7 +1098,7 @@
             this.DataGridDepartamento.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
             dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -1103,18 +1118,20 @@
             // 
             // TextboxDescripcionDepartamento
             // 
-            this.TextboxDescripcionDepartamento.BackColor = System.Drawing.Color.Gainsboro;
+            this.TextboxDescripcionDepartamento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(214)))), ((int)(((byte)(249)))));
             resources.ApplyResources(this.TextboxDescripcionDepartamento, "TextboxDescripcionDepartamento");
-            this.TextboxDescripcionDepartamento.ForeColor = System.Drawing.Color.Teal;
+            this.TextboxDescripcionDepartamento.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TextboxDescripcionDepartamento.ForeColor = System.Drawing.Color.White;
             this.TextboxDescripcionDepartamento.Icon = ((System.Drawing.Image)(resources.GetObject("TextboxDescripcionDepartamento.Icon")));
             this.TextboxDescripcionDepartamento.Name = "TextboxDescripcionDepartamento";
             this.TextboxDescripcionDepartamento.text = "Descripción";
             // 
             // TextboxDepartamentoNombre
             // 
-            this.TextboxDepartamentoNombre.BackColor = System.Drawing.Color.Gainsboro;
+            this.TextboxDepartamentoNombre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(214)))), ((int)(((byte)(249)))));
             resources.ApplyResources(this.TextboxDepartamentoNombre, "TextboxDepartamentoNombre");
-            this.TextboxDepartamentoNombre.ForeColor = System.Drawing.Color.Teal;
+            this.TextboxDepartamentoNombre.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TextboxDepartamentoNombre.ForeColor = System.Drawing.Color.White;
             this.TextboxDepartamentoNombre.Icon = ((System.Drawing.Image)(resources.GetObject("TextboxDepartamentoNombre.Icon")));
             this.TextboxDepartamentoNombre.Name = "TextboxDepartamentoNombre";
             this.TextboxDepartamentoNombre.text = "Nombre";
@@ -1136,18 +1153,20 @@
             // 
             // TextboxDescripcionTamano
             // 
-            this.TextboxDescripcionTamano.BackColor = System.Drawing.Color.Gainsboro;
+            this.TextboxDescripcionTamano.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(214)))), ((int)(((byte)(249)))));
             resources.ApplyResources(this.TextboxDescripcionTamano, "TextboxDescripcionTamano");
-            this.TextboxDescripcionTamano.ForeColor = System.Drawing.Color.Teal;
+            this.TextboxDescripcionTamano.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TextboxDescripcionTamano.ForeColor = System.Drawing.Color.White;
             this.TextboxDescripcionTamano.Icon = ((System.Drawing.Image)(resources.GetObject("TextboxDescripcionTamano.Icon")));
             this.TextboxDescripcionTamano.Name = "TextboxDescripcionTamano";
             this.TextboxDescripcionTamano.text = "Nombre";
             // 
             // TextboxTamañoNombre
             // 
-            this.TextboxTamañoNombre.BackColor = System.Drawing.Color.Gainsboro;
+            this.TextboxTamañoNombre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(214)))), ((int)(((byte)(249)))));
             resources.ApplyResources(this.TextboxTamañoNombre, "TextboxTamañoNombre");
-            this.TextboxTamañoNombre.ForeColor = System.Drawing.Color.Teal;
+            this.TextboxTamañoNombre.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TextboxTamañoNombre.ForeColor = System.Drawing.Color.White;
             this.TextboxTamañoNombre.Icon = ((System.Drawing.Image)(resources.GetObject("TextboxTamañoNombre.Icon")));
             this.TextboxTamañoNombre.Name = "TextboxTamañoNombre";
             this.TextboxTamañoNombre.text = "Nombre";
@@ -1298,7 +1317,7 @@
             this.DataGridTamano.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
             dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -1327,6 +1346,7 @@
             this.tabPage13.Controls.Add(this.bunifuFlatButton18);
             this.tabPage13.Controls.Add(this.bunifuFlatButton19);
             this.tabPage13.Controls.Add(this.bunifuCustomDataGrid3);
+            this.tabPage13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             resources.ApplyResources(this.tabPage13, "tabPage13");
             this.tabPage13.Name = "tabPage13";
             this.tabPage13.UseVisualStyleBackColor = true;
@@ -1339,18 +1359,20 @@
             // 
             // bunifuTextbox1
             // 
-            this.bunifuTextbox1.BackColor = System.Drawing.Color.Gainsboro;
+            this.bunifuTextbox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(214)))), ((int)(((byte)(249)))));
             resources.ApplyResources(this.bunifuTextbox1, "bunifuTextbox1");
-            this.bunifuTextbox1.ForeColor = System.Drawing.Color.Teal;
+            this.bunifuTextbox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.bunifuTextbox1.ForeColor = System.Drawing.Color.White;
             this.bunifuTextbox1.Icon = ((System.Drawing.Image)(resources.GetObject("bunifuTextbox1.Icon")));
             this.bunifuTextbox1.Name = "bunifuTextbox1";
             this.bunifuTextbox1.text = "Nombre";
             // 
             // bunifuTextbox2
             // 
-            this.bunifuTextbox2.BackColor = System.Drawing.Color.Gainsboro;
+            this.bunifuTextbox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(214)))), ((int)(((byte)(249)))));
             resources.ApplyResources(this.bunifuTextbox2, "bunifuTextbox2");
-            this.bunifuTextbox2.ForeColor = System.Drawing.Color.Teal;
+            this.bunifuTextbox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.bunifuTextbox2.ForeColor = System.Drawing.Color.White;
             this.bunifuTextbox2.Icon = ((System.Drawing.Image)(resources.GetObject("bunifuTextbox2.Icon")));
             this.bunifuTextbox2.Name = "bunifuTextbox2";
             this.bunifuTextbox2.text = "Nombre";
@@ -1491,7 +1513,7 @@
             this.bunifuCustomDataGrid3.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
             dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -1508,12 +1530,12 @@
             this.bunifuCustomDataGrid3.ReadOnly = true;
             this.bunifuCustomDataGrid3.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             // 
-            // tabPage3
+            // tab1Usuarios
             // 
-            this.tabPage3.Controls.Add(this.tabControl2);
-            resources.ApplyResources(this.tabPage3, "tabPage3");
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.UseVisualStyleBackColor = true;
+            this.tab1Usuarios.Controls.Add(this.tabControl2);
+            resources.ApplyResources(this.tab1Usuarios, "tab1Usuarios");
+            this.tab1Usuarios.Name = "tab1Usuarios";
+            this.tab1Usuarios.UseVisualStyleBackColor = true;
             // 
             // tabControl2
             // 
@@ -1554,7 +1576,7 @@
             this.bunifuCustomDataGrid2.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
             dataGridViewCellStyle10.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -1612,9 +1634,10 @@
             // 
             // TextboxUsuario
             // 
-            this.TextboxUsuario.BackColor = System.Drawing.Color.Gainsboro;
+            this.TextboxUsuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(214)))), ((int)(((byte)(249)))));
             resources.ApplyResources(this.TextboxUsuario, "TextboxUsuario");
-            this.TextboxUsuario.ForeColor = System.Drawing.Color.Teal;
+            this.TextboxUsuario.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TextboxUsuario.ForeColor = System.Drawing.Color.GhostWhite;
             this.TextboxUsuario.Icon = ((System.Drawing.Image)(resources.GetObject("TextboxUsuario.Icon")));
             this.TextboxUsuario.Name = "TextboxUsuario";
             this.TextboxUsuario.text = "";
@@ -1721,9 +1744,9 @@
             // 
             // TextboxContrasena
             // 
-            this.TextboxContrasena.BackColor = System.Drawing.Color.Gainsboro;
+            this.TextboxContrasena.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(214)))), ((int)(((byte)(249)))));
             resources.ApplyResources(this.TextboxContrasena, "TextboxContrasena");
-            this.TextboxContrasena.ForeColor = System.Drawing.Color.Teal;
+            this.TextboxContrasena.ForeColor = System.Drawing.Color.GhostWhite;
             this.TextboxContrasena.Icon = ((System.Drawing.Image)(resources.GetObject("TextboxContrasena.Icon")));
             this.TextboxContrasena.Name = "TextboxContrasena";
             this.TextboxContrasena.text = "";
@@ -1737,9 +1760,10 @@
             // 
             // TextboxCorreo
             // 
-            this.TextboxCorreo.BackColor = System.Drawing.Color.Gainsboro;
+            this.TextboxCorreo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(214)))), ((int)(((byte)(249)))));
             resources.ApplyResources(this.TextboxCorreo, "TextboxCorreo");
-            this.TextboxCorreo.ForeColor = System.Drawing.Color.Teal;
+            this.TextboxCorreo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TextboxCorreo.ForeColor = System.Drawing.Color.GhostWhite;
             this.TextboxCorreo.Icon = ((System.Drawing.Image)(resources.GetObject("TextboxCorreo.Icon")));
             this.TextboxCorreo.Name = "TextboxCorreo";
             this.TextboxCorreo.text = "";
@@ -1753,9 +1777,10 @@
             // 
             // TextboxNombre
             // 
-            this.TextboxNombre.BackColor = System.Drawing.Color.Gainsboro;
+            this.TextboxNombre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(214)))), ((int)(((byte)(249)))));
             resources.ApplyResources(this.TextboxNombre, "TextboxNombre");
-            this.TextboxNombre.ForeColor = System.Drawing.Color.Teal;
+            this.TextboxNombre.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TextboxNombre.ForeColor = System.Drawing.Color.GhostWhite;
             this.TextboxNombre.Icon = ((System.Drawing.Image)(resources.GetObject("TextboxNombre.Icon")));
             this.TextboxNombre.Name = "TextboxNombre";
             this.TextboxNombre.text = "";
@@ -1769,9 +1794,10 @@
             // 
             // TextboxCedula
             // 
-            this.TextboxCedula.BackColor = System.Drawing.Color.Gainsboro;
+            this.TextboxCedula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(214)))), ((int)(((byte)(249)))));
             resources.ApplyResources(this.TextboxCedula, "TextboxCedula");
-            this.TextboxCedula.ForeColor = System.Drawing.Color.Teal;
+            this.TextboxCedula.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TextboxCedula.ForeColor = System.Drawing.Color.GhostWhite;
             this.TextboxCedula.Icon = ((System.Drawing.Image)(resources.GetObject("TextboxCedula.Icon")));
             this.TextboxCedula.Name = "TextboxCedula";
             this.TextboxCedula.text = "";
@@ -1906,7 +1932,7 @@
             this.DataGridPermisosPorAlmacen.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
             dataGridViewCellStyle12.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -1937,12 +1963,12 @@
             this.bunifuCustomLabel5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.bunifuCustomLabel5.Name = "bunifuCustomLabel5";
             // 
-            // tabPage1
+            // tab1Ventas
             // 
-            this.tabPage1.Controls.Add(this.panel1);
-            resources.ApplyResources(this.tabPage1, "tabPage1");
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.UseVisualStyleBackColor = true;
+            this.tab1Ventas.Controls.Add(this.panel1);
+            resources.ApplyResources(this.tab1Ventas, "tab1Ventas");
+            this.tab1Ventas.Name = "tab1Ventas";
+            this.tab1Ventas.UseVisualStyleBackColor = true;
             // 
             // panel1
             // 
@@ -1980,6 +2006,37 @@
             this.panel1.Controls.Add(this.labelTotal);
             resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
+            // 
+            // bunifuFlatButton36
+            // 
+            this.bunifuFlatButton36.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.bunifuFlatButton36.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            resources.ApplyResources(this.bunifuFlatButton36, "bunifuFlatButton36");
+            this.bunifuFlatButton36.BorderRadius = 0;
+            this.bunifuFlatButton36.ButtonText = "pruebas";
+            this.bunifuFlatButton36.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuFlatButton36.DisabledColor = System.Drawing.Color.Gray;
+            this.bunifuFlatButton36.Iconcolor = System.Drawing.Color.Transparent;
+            this.bunifuFlatButton36.Iconimage = ((System.Drawing.Image)(resources.GetObject("bunifuFlatButton36.Iconimage")));
+            this.bunifuFlatButton36.Iconimage_right = null;
+            this.bunifuFlatButton36.Iconimage_right_Selected = null;
+            this.bunifuFlatButton36.Iconimage_Selected = null;
+            this.bunifuFlatButton36.IconMarginLeft = 0;
+            this.bunifuFlatButton36.IconMarginRight = 0;
+            this.bunifuFlatButton36.IconRightVisible = false;
+            this.bunifuFlatButton36.IconRightZoom = 0D;
+            this.bunifuFlatButton36.IconVisible = false;
+            this.bunifuFlatButton36.IconZoom = 90D;
+            this.bunifuFlatButton36.IsTab = false;
+            this.bunifuFlatButton36.Name = "bunifuFlatButton36";
+            this.bunifuFlatButton36.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.bunifuFlatButton36.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.bunifuFlatButton36.OnHoverTextColor = System.Drawing.Color.White;
+            this.bunifuFlatButton36.selected = false;
+            this.bunifuFlatButton36.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bunifuFlatButton36.Textcolor = System.Drawing.Color.White;
+            this.bunifuFlatButton36.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuFlatButton36.Click += new System.EventHandler(this.bunifuFlatButton36_Click);
             // 
             // labelUtilidad
             // 
@@ -2282,40 +2339,40 @@
             // 
             // tabControl1
             // 
-            this.tabControl1.Controls.Add(this.tabPage5);
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage3);
-            this.tabControl1.Controls.Add(this.tabPage4);
-            this.tabControl1.Controls.Add(this.tabPage11);
-            this.tabControl1.Controls.Add(this.tabPage14);
-            this.tabControl1.Controls.Add(this.tabPage28);
-            this.tabControl1.Controls.Add(this.tabPage29);
+            this.tabControl1.Controls.Add(this.tab1Inicio);
+            this.tabControl1.Controls.Add(this.tab1Ventas);
+            this.tabControl1.Controls.Add(this.tab1Usuarios);
+            this.tabControl1.Controls.Add(this.tab1Productos);
+            this.tabControl1.Controls.Add(this.tab1Almacen);
+            this.tabControl1.Controls.Add(this.tab1Reportes);
+            this.tabControl1.Controls.Add(this.tab1EntradasSalidas);
             resources.ApplyResources(this.tabControl1, "tabControl1");
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             // 
-            // tabPage11
+            // tab1Almacen
             // 
-            this.tabPage11.Controls.Add(this.TextboxNombreAlmacen);
-            this.tabPage11.Controls.Add(this.bunifuCustomLabel3);
-            this.tabPage11.Controls.Add(this.bunifuFlatButton6);
-            this.tabPage11.Controls.Add(this.ButtonElimarAlmacen);
-            this.tabPage11.Controls.Add(this.bunifuFlatButton8);
-            this.tabPage11.Controls.Add(this.bunifuFlatButton9);
-            this.tabPage11.Controls.Add(this.DataGridAlmacen);
-            this.tabPage11.Controls.Add(this.LabelDescripcion);
-            this.tabPage11.Controls.Add(this.comboBoxTipoAlmacen);
-            this.tabPage11.Controls.Add(this.bunifuCustomLabel2);
-            this.tabPage11.Controls.Add(this.TextboxDescripcionAlmacen);
-            resources.ApplyResources(this.tabPage11, "tabPage11");
-            this.tabPage11.Name = "tabPage11";
-            this.tabPage11.UseVisualStyleBackColor = true;
+            this.tab1Almacen.Controls.Add(this.TextboxNombreAlmacen);
+            this.tab1Almacen.Controls.Add(this.bunifuCustomLabel3);
+            this.tab1Almacen.Controls.Add(this.bunifuFlatButton6);
+            this.tab1Almacen.Controls.Add(this.ButtonElimarAlmacen);
+            this.tab1Almacen.Controls.Add(this.bunifuFlatButton8);
+            this.tab1Almacen.Controls.Add(this.bunifuFlatButton9);
+            this.tab1Almacen.Controls.Add(this.DataGridAlmacen);
+            this.tab1Almacen.Controls.Add(this.LabelDescripcion);
+            this.tab1Almacen.Controls.Add(this.comboBoxTipoAlmacen);
+            this.tab1Almacen.Controls.Add(this.bunifuCustomLabel2);
+            this.tab1Almacen.Controls.Add(this.TextboxDescripcionAlmacen);
+            resources.ApplyResources(this.tab1Almacen, "tab1Almacen");
+            this.tab1Almacen.Name = "tab1Almacen";
+            this.tab1Almacen.UseVisualStyleBackColor = true;
             // 
             // TextboxNombreAlmacen
             // 
-            this.TextboxNombreAlmacen.BackColor = System.Drawing.Color.Gainsboro;
+            this.TextboxNombreAlmacen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(214)))), ((int)(((byte)(249)))));
             resources.ApplyResources(this.TextboxNombreAlmacen, "TextboxNombreAlmacen");
-            this.TextboxNombreAlmacen.ForeColor = System.Drawing.Color.Teal;
+            this.TextboxNombreAlmacen.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TextboxNombreAlmacen.ForeColor = System.Drawing.Color.White;
             this.TextboxNombreAlmacen.Icon = ((System.Drawing.Image)(resources.GetObject("TextboxNombreAlmacen.Icon")));
             this.TextboxNombreAlmacen.Name = "TextboxNombreAlmacen";
             this.TextboxNombreAlmacen.text = "";
@@ -2460,7 +2517,7 @@
             this.DataGridAlmacen.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle16.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            dataGridViewCellStyle16.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
             dataGridViewCellStyle16.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle16.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle16.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -2503,20 +2560,21 @@
             // 
             // TextboxDescripcionAlmacen
             // 
-            this.TextboxDescripcionAlmacen.BackColor = System.Drawing.Color.Gainsboro;
+            this.TextboxDescripcionAlmacen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(214)))), ((int)(((byte)(249)))));
             resources.ApplyResources(this.TextboxDescripcionAlmacen, "TextboxDescripcionAlmacen");
-            this.TextboxDescripcionAlmacen.ForeColor = System.Drawing.Color.Teal;
+            this.TextboxDescripcionAlmacen.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TextboxDescripcionAlmacen.ForeColor = System.Drawing.Color.White;
             this.TextboxDescripcionAlmacen.Icon = ((System.Drawing.Image)(resources.GetObject("TextboxDescripcionAlmacen.Icon")));
             this.TextboxDescripcionAlmacen.Name = "TextboxDescripcionAlmacen";
             this.TextboxDescripcionAlmacen.text = "";
             // 
-            // tabPage14
+            // tab1Reportes
             // 
-            this.tabPage14.Controls.Add(this.button1);
-            this.tabPage14.Controls.Add(this.tabControl4);
-            resources.ApplyResources(this.tabPage14, "tabPage14");
-            this.tabPage14.Name = "tabPage14";
-            this.tabPage14.UseVisualStyleBackColor = true;
+            this.tab1Reportes.Controls.Add(this.button1);
+            this.tab1Reportes.Controls.Add(this.tabControl4);
+            resources.ApplyResources(this.tab1Reportes, "tab1Reportes");
+            this.tab1Reportes.Name = "tab1Reportes";
+            this.tab1Reportes.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
@@ -2558,8 +2616,8 @@
             this.tabPage26.Controls.Add(this.dateTimePickerReporteB);
             this.tabPage26.Controls.Add(this.labelReporte1);
             this.tabPage26.Controls.Add(this.dateTimePickerReporteA);
-            this.tabPage26.Controls.Add(this.label15);
-            this.tabPage26.Controls.Add(this.label16);
+            this.tabPage26.Controls.Add(this.labelVentasCreditoLocal);
+            this.tabPage26.Controls.Add(this.labelEfectivoLocal);
             this.tabPage26.Controls.Add(this.labelReporteGanancias);
             this.tabPage26.Controls.Add(this.labelReporteLocalGastos);
             resources.ApplyResources(this.tabPage26, "tabPage26");
@@ -2623,15 +2681,15 @@
             resources.ApplyResources(this.dateTimePickerReporteA, "dateTimePickerReporteA");
             this.dateTimePickerReporteA.Name = "dateTimePickerReporteA";
             // 
-            // label15
+            // labelVentasCreditoLocal
             // 
-            resources.ApplyResources(this.label15, "label15");
-            this.label15.Name = "label15";
+            resources.ApplyResources(this.labelVentasCreditoLocal, "labelVentasCreditoLocal");
+            this.labelVentasCreditoLocal.Name = "labelVentasCreditoLocal";
             // 
-            // label16
+            // labelEfectivoLocal
             // 
-            resources.ApplyResources(this.label16, "label16");
-            this.label16.Name = "label16";
+            resources.ApplyResources(this.labelEfectivoLocal, "labelEfectivoLocal");
+            this.labelEfectivoLocal.Name = "labelEfectivoLocal";
             // 
             // labelReporteGanancias
             // 
@@ -2660,7 +2718,7 @@
             this.DataGridReporteProducto.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle18.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            dataGridViewCellStyle18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             dataGridViewCellStyle18.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle18.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle18.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -2694,7 +2752,7 @@
             this.DataGridReporteDepartamento.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle20.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            dataGridViewCellStyle20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             dataGridViewCellStyle20.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle20.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle20.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -2728,7 +2786,7 @@
             this.DataGridReporteVentaCajeros.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle22.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            dataGridViewCellStyle22.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             dataGridViewCellStyle22.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle22.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle22.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -2879,7 +2937,7 @@
             this.DataGridReporteProducto2.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle24.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            dataGridViewCellStyle24.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
             dataGridViewCellStyle24.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle24.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle24.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -2913,7 +2971,7 @@
             this.DataGridReporteDepartamento2.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle26.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle26.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            dataGridViewCellStyle26.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
             dataGridViewCellStyle26.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle26.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle26.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -2947,7 +3005,7 @@
             this.DataGridReporteVentasAlmacen2.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle28.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle28.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle28.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            dataGridViewCellStyle28.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
             dataGridViewCellStyle28.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle28.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle28.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -2982,7 +3040,7 @@
             this.DataGridReporteProductosAlmacen2.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle30.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle30.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle30.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            dataGridViewCellStyle30.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
             dataGridViewCellStyle30.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle30.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle30.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -2998,6 +3056,7 @@
             this.DataGridReporteProductosAlmacen2.Name = "DataGridReporteProductosAlmacen2";
             this.DataGridReporteProductosAlmacen2.ReadOnly = true;
             this.DataGridReporteProductosAlmacen2.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.DataGridReporteProductosAlmacen2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridReporteProductosAlmacen2_CellContentClick);
             // 
             // tabPage23
             // 
@@ -3016,7 +3075,7 @@
             this.DataGridReporteDepartamentoAlmacen2.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle32.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle32.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle32.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            dataGridViewCellStyle32.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
             dataGridViewCellStyle32.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle32.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle32.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -3050,7 +3109,7 @@
             this.DataGridReporteVentaCajeros2.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle34.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle34.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle34.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            dataGridViewCellStyle34.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
             dataGridViewCellStyle34.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle34.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle34.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -3069,10 +3128,25 @@
             // 
             // tabPage24
             // 
-            this.tabPage24.Controls.Add(this.chartVentasPorDiaReporte);
+            this.tabPage24.Controls.Add(this.tabControl8);
             resources.ApplyResources(this.tabPage24, "tabPage24");
             this.tabPage24.Name = "tabPage24";
             this.tabPage24.UseVisualStyleBackColor = true;
+            // 
+            // tabControl8
+            // 
+            this.tabControl8.Controls.Add(this.tabPage1);
+            this.tabControl8.Controls.Add(this.tabPage3);
+            resources.ApplyResources(this.tabControl8, "tabControl8");
+            this.tabControl8.Name = "tabControl8";
+            this.tabControl8.SelectedIndex = 0;
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.Controls.Add(this.chartVentasPorDiaReporte);
+            resources.ApplyResources(this.tabPage1, "tabPage1");
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // chartVentasPorDiaReporte
             // 
@@ -3085,7 +3159,25 @@
             series1.ChartArea = "ChartArea1";
             series1.Legend = "Legend1";
             series1.Name = "ventas";
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "ganancias";
+            series3.ChartArea = "ChartArea1";
+            series3.Legend = "Legend1";
+            series3.Name = "costos";
+            series4.ChartArea = "ChartArea1";
+            series4.Legend = "Legend1";
+            series4.Name = "gastos";
             this.chartVentasPorDiaReporte.Series.Add(series1);
+            this.chartVentasPorDiaReporte.Series.Add(series2);
+            this.chartVentasPorDiaReporte.Series.Add(series3);
+            this.chartVentasPorDiaReporte.Series.Add(series4);
+            // 
+            // tabPage3
+            // 
+            resources.ApplyResources(this.tabPage3, "tabPage3");
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // tabPage27
             // 
@@ -3105,7 +3197,7 @@
             this.DataGridReporteVentaDiaR2.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle36.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle36.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle36.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            dataGridViewCellStyle36.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
             dataGridViewCellStyle36.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle36.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle36.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -3132,7 +3224,7 @@
             this.DataGridReporteVentaDia2.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle38.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle38.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle38.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            dataGridViewCellStyle38.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
             dataGridViewCellStyle38.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle38.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle38.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -3149,12 +3241,12 @@
             this.DataGridReporteVentaDia2.ReadOnly = true;
             this.DataGridReporteVentaDia2.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             // 
-            // tabPage28
+            // tab1EntradasSalidas
             // 
-            this.tabPage28.Controls.Add(this.tabControl7);
-            resources.ApplyResources(this.tabPage28, "tabPage28");
-            this.tabPage28.Name = "tabPage28";
-            this.tabPage28.UseVisualStyleBackColor = true;
+            this.tab1EntradasSalidas.Controls.Add(this.tabControl7);
+            resources.ApplyResources(this.tab1EntradasSalidas, "tab1EntradasSalidas");
+            this.tab1EntradasSalidas.Name = "tab1EntradasSalidas";
+            this.tab1EntradasSalidas.UseVisualStyleBackColor = true;
             // 
             // tabControl7
             // 
@@ -3202,9 +3294,10 @@
             // 
             // TextboxGastosDescripcion
             // 
-            this.TextboxGastosDescripcion.BackColor = System.Drawing.Color.Gainsboro;
+            this.TextboxGastosDescripcion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(214)))), ((int)(((byte)(249)))));
             resources.ApplyResources(this.TextboxGastosDescripcion, "TextboxGastosDescripcion");
-            this.TextboxGastosDescripcion.ForeColor = System.Drawing.Color.Teal;
+            this.TextboxGastosDescripcion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TextboxGastosDescripcion.ForeColor = System.Drawing.Color.White;
             this.TextboxGastosDescripcion.Icon = ((System.Drawing.Image)(resources.GetObject("TextboxGastosDescripcion.Icon")));
             this.TextboxGastosDescripcion.Name = "TextboxGastosDescripcion";
             this.TextboxGastosDescripcion.text = "";
@@ -3261,9 +3354,10 @@
             // 
             // TextboxGatosTotal
             // 
-            this.TextboxGatosTotal.BackColor = System.Drawing.Color.Gainsboro;
+            this.TextboxGatosTotal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(214)))), ((int)(((byte)(249)))));
             resources.ApplyResources(this.TextboxGatosTotal, "TextboxGatosTotal");
-            this.TextboxGatosTotal.ForeColor = System.Drawing.Color.Teal;
+            this.TextboxGatosTotal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TextboxGatosTotal.ForeColor = System.Drawing.Color.White;
             this.TextboxGatosTotal.Icon = ((System.Drawing.Image)(resources.GetObject("TextboxGatosTotal.Icon")));
             this.TextboxGatosTotal.Name = "TextboxGatosTotal";
             this.TextboxGatosTotal.text = "";
@@ -3384,7 +3478,7 @@
             this.DataGridGastos.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle40.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle40.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle40.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            dataGridViewCellStyle40.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
             dataGridViewCellStyle40.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle40.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle40.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -3426,12 +3520,14 @@
             // 
             // TextboxTipoGastoDescripcion
             // 
-            this.TextboxTipoGastoDescripcion.BackColor = System.Drawing.Color.Gainsboro;
+            this.TextboxTipoGastoDescripcion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(214)))), ((int)(((byte)(249)))));
             resources.ApplyResources(this.TextboxTipoGastoDescripcion, "TextboxTipoGastoDescripcion");
-            this.TextboxTipoGastoDescripcion.ForeColor = System.Drawing.Color.Teal;
+            this.TextboxTipoGastoDescripcion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TextboxTipoGastoDescripcion.ForeColor = System.Drawing.Color.White;
             this.TextboxTipoGastoDescripcion.Icon = ((System.Drawing.Image)(resources.GetObject("TextboxTipoGastoDescripcion.Icon")));
             this.TextboxTipoGastoDescripcion.Name = "TextboxTipoGastoDescripcion";
             this.TextboxTipoGastoDescripcion.text = "";
+            this.TextboxTipoGastoDescripcion.OnTextChange += new System.EventHandler(this.TextboxTipoGastoDescripcion_OnTextChange);
             // 
             // LabelTipoGastoDescripcion
             // 
@@ -3472,12 +3568,14 @@
             // 
             // TextboxTipoGastoNombre
             // 
-            this.TextboxTipoGastoNombre.BackColor = System.Drawing.Color.Gainsboro;
+            this.TextboxTipoGastoNombre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(214)))), ((int)(((byte)(249)))));
             resources.ApplyResources(this.TextboxTipoGastoNombre, "TextboxTipoGastoNombre");
-            this.TextboxTipoGastoNombre.ForeColor = System.Drawing.Color.Teal;
+            this.TextboxTipoGastoNombre.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TextboxTipoGastoNombre.ForeColor = System.Drawing.Color.White;
             this.TextboxTipoGastoNombre.Icon = ((System.Drawing.Image)(resources.GetObject("TextboxTipoGastoNombre.Icon")));
             this.TextboxTipoGastoNombre.Name = "TextboxTipoGastoNombre";
             this.TextboxTipoGastoNombre.text = "";
+            this.TextboxTipoGastoNombre.OnTextChange += new System.EventHandler(this.TextboxTipoGastoNombre_OnTextChange);
             this.TextboxTipoGastoNombre.MouseMove += new System.Windows.Forms.MouseEventHandler(this.TextboxTipoGastoNombre_MouseMove);
             // 
             // LabelTipoGastoNombre
@@ -3589,7 +3687,7 @@
             this.DataGridTipoGasto.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle42.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle42.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle42.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            dataGridViewCellStyle42.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
             dataGridViewCellStyle42.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle42.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle42.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -3657,9 +3755,10 @@
             // 
             // TextboxDescipcionEntrada
             // 
-            this.TextboxDescipcionEntrada.BackColor = System.Drawing.Color.Gainsboro;
+            this.TextboxDescipcionEntrada.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(214)))), ((int)(((byte)(249)))));
             resources.ApplyResources(this.TextboxDescipcionEntrada, "TextboxDescipcionEntrada");
-            this.TextboxDescipcionEntrada.ForeColor = System.Drawing.Color.Teal;
+            this.TextboxDescipcionEntrada.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TextboxDescipcionEntrada.ForeColor = System.Drawing.Color.White;
             this.TextboxDescipcionEntrada.Icon = ((System.Drawing.Image)(resources.GetObject("TextboxDescipcionEntrada.Icon")));
             this.TextboxDescipcionEntrada.Name = "TextboxDescipcionEntrada";
             this.TextboxDescipcionEntrada.text = "";
@@ -3715,9 +3814,10 @@
             // 
             // TextboxTotalEntrada
             // 
-            this.TextboxTotalEntrada.BackColor = System.Drawing.Color.Gainsboro;
+            this.TextboxTotalEntrada.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(214)))), ((int)(((byte)(249)))));
             resources.ApplyResources(this.TextboxTotalEntrada, "TextboxTotalEntrada");
-            this.TextboxTotalEntrada.ForeColor = System.Drawing.Color.Teal;
+            this.TextboxTotalEntrada.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TextboxTotalEntrada.ForeColor = System.Drawing.Color.White;
             this.TextboxTotalEntrada.Icon = ((System.Drawing.Image)(resources.GetObject("TextboxTotalEntrada.Icon")));
             this.TextboxTotalEntrada.Name = "TextboxTotalEntrada";
             this.TextboxTotalEntrada.text = "";
@@ -3838,7 +3938,7 @@
             this.DataGridEntrada.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle44.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle44.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle44.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            dataGridViewCellStyle44.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
             dataGridViewCellStyle44.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle44.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle44.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -3887,9 +3987,10 @@
             // 
             // TextboxDescripcionTipoEntrada
             // 
-            this.TextboxDescripcionTipoEntrada.BackColor = System.Drawing.Color.Gainsboro;
+            this.TextboxDescripcionTipoEntrada.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(214)))), ((int)(((byte)(249)))));
             resources.ApplyResources(this.TextboxDescripcionTipoEntrada, "TextboxDescripcionTipoEntrada");
-            this.TextboxDescripcionTipoEntrada.ForeColor = System.Drawing.Color.Teal;
+            this.TextboxDescripcionTipoEntrada.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TextboxDescripcionTipoEntrada.ForeColor = System.Drawing.Color.White;
             this.TextboxDescripcionTipoEntrada.Icon = ((System.Drawing.Image)(resources.GetObject("TextboxDescripcionTipoEntrada.Icon")));
             this.TextboxDescripcionTipoEntrada.Name = "TextboxDescripcionTipoEntrada";
             this.TextboxDescripcionTipoEntrada.text = "";
@@ -3932,9 +4033,10 @@
             // 
             // TextboxNombreTipoEntrada
             // 
-            this.TextboxNombreTipoEntrada.BackColor = System.Drawing.Color.Gainsboro;
+            this.TextboxNombreTipoEntrada.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(214)))), ((int)(((byte)(249)))));
             resources.ApplyResources(this.TextboxNombreTipoEntrada, "TextboxNombreTipoEntrada");
-            this.TextboxNombreTipoEntrada.ForeColor = System.Drawing.Color.Teal;
+            this.TextboxNombreTipoEntrada.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TextboxNombreTipoEntrada.ForeColor = System.Drawing.Color.White;
             this.TextboxNombreTipoEntrada.Icon = ((System.Drawing.Image)(resources.GetObject("TextboxNombreTipoEntrada.Icon")));
             this.TextboxNombreTipoEntrada.Name = "TextboxNombreTipoEntrada";
             this.TextboxNombreTipoEntrada.text = "";
@@ -4048,7 +4150,7 @@
             this.DataGridTipoEntrada.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle46.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle46.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle46.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            dataGridViewCellStyle46.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
             dataGridViewCellStyle46.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle46.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle46.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -4065,12 +4167,6 @@
             this.DataGridTipoEntrada.ReadOnly = true;
             this.DataGridTipoEntrada.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.DataGridTipoEntrada.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridTipoEntrada_CellClick);
-            // 
-            // tabPage29
-            // 
-            resources.ApplyResources(this.tabPage29, "tabPage29");
-            this.tabPage29.Name = "tabPage29";
-            this.tabPage29.UseVisualStyleBackColor = true;
             // 
             // menuStrip1
             // 
@@ -4157,37 +4253,6 @@
             this.buniMaxMin.Zoom = 10;
             this.buniMaxMin.Click += new System.EventHandler(this.bunifuImageButton1_Click);
             // 
-            // bunifuFlatButton36
-            // 
-            this.bunifuFlatButton36.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton36.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            resources.ApplyResources(this.bunifuFlatButton36, "bunifuFlatButton36");
-            this.bunifuFlatButton36.BorderRadius = 0;
-            this.bunifuFlatButton36.ButtonText = "pruebas";
-            this.bunifuFlatButton36.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuFlatButton36.DisabledColor = System.Drawing.Color.Gray;
-            this.bunifuFlatButton36.Iconcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton36.Iconimage = ((System.Drawing.Image)(resources.GetObject("bunifuFlatButton36.Iconimage")));
-            this.bunifuFlatButton36.Iconimage_right = null;
-            this.bunifuFlatButton36.Iconimage_right_Selected = null;
-            this.bunifuFlatButton36.Iconimage_Selected = null;
-            this.bunifuFlatButton36.IconMarginLeft = 0;
-            this.bunifuFlatButton36.IconMarginRight = 0;
-            this.bunifuFlatButton36.IconRightVisible = false;
-            this.bunifuFlatButton36.IconRightZoom = 0D;
-            this.bunifuFlatButton36.IconVisible = false;
-            this.bunifuFlatButton36.IconZoom = 90D;
-            this.bunifuFlatButton36.IsTab = false;
-            this.bunifuFlatButton36.Name = "bunifuFlatButton36";
-            this.bunifuFlatButton36.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton36.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.bunifuFlatButton36.OnHoverTextColor = System.Drawing.Color.White;
-            this.bunifuFlatButton36.selected = false;
-            this.bunifuFlatButton36.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bunifuFlatButton36.Textcolor = System.Drawing.Color.White;
-            this.bunifuFlatButton36.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuFlatButton36.Click += new System.EventHandler(this.bunifuFlatButton36_Click);
-            // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
@@ -4200,13 +4265,13 @@
             this.Name = "Form1";
             this.TopMost = true;
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.tabPage5.ResumeLayout(false);
+            this.tab1Inicio.ResumeLayout(false);
             this.bunifuGradientPanel3.ResumeLayout(false);
             this.bunifuGradientPanel2.ResumeLayout(false);
             this.bunifuGradientPanel2.PerformLayout();
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.tabPage4.ResumeLayout(false);
+            this.tab1Productos.ResumeLayout(false);
             this.tabControl3.ResumeLayout(false);
             this.tabPage8.ResumeLayout(false);
             this.tabPage8.PerformLayout();
@@ -4220,7 +4285,7 @@
             this.tabPage13.ResumeLayout(false);
             this.tabPage13.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid3)).EndInit();
-            this.tabPage3.ResumeLayout(false);
+            this.tab1Usuarios.ResumeLayout(false);
             this.tabControl2.ResumeLayout(false);
             this.tabPage6.ResumeLayout(false);
             this.tabPage6.PerformLayout();
@@ -4228,15 +4293,15 @@
             this.tabPage7.ResumeLayout(false);
             this.tabPage7.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridPermisosPorAlmacen)).EndInit();
-            this.tabPage1.ResumeLayout(false);
+            this.tab1Ventas.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridVentas)).EndInit();
             this.tabControl1.ResumeLayout(false);
-            this.tabPage11.ResumeLayout(false);
-            this.tabPage11.PerformLayout();
+            this.tab1Almacen.ResumeLayout(false);
+            this.tab1Almacen.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridAlmacen)).EndInit();
-            this.tabPage14.ResumeLayout(false);
+            this.tab1Reportes.ResumeLayout(false);
             this.tabControl4.ResumeLayout(false);
             this.tabPage15.ResumeLayout(false);
             this.tabControl5.ResumeLayout(false);
@@ -4265,11 +4330,13 @@
             this.tabPage21.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.DataGridReporteVentaCajeros2)).EndInit();
             this.tabPage24.ResumeLayout(false);
+            this.tabControl8.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.chartVentasPorDiaReporte)).EndInit();
             this.tabPage27.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.DataGridReporteVentaDiaR2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridReporteVentaDia2)).EndInit();
-            this.tabPage28.ResumeLayout(false);
+            this.tab1EntradasSalidas.ResumeLayout(false);
             this.tabControl7.ResumeLayout(false);
             this.gasto.ResumeLayout(false);
             this.gasto.PerformLayout();
@@ -4299,7 +4366,7 @@
         private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel1;
         private Bunifu.Framework.UI.BunifuImageButton buniMaxMin;
         private Bunifu.Framework.UI.BunifuImageButton buniCerrar;
-        private System.Windows.Forms.TabPage tabPage5;
+        private System.Windows.Forms.TabPage tab1Inicio;
         private System.Windows.Forms.Label labelCedula;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label labelVendedor;
@@ -4307,7 +4374,7 @@
         private Bunifu.Framework.UI.BunifuFlatButton buniBtnLogin;
         private Bunifu.Framework.UI.BunifuTextbox buniTextUsuario;
         private Bunifu.Framework.UI.BunifuTextbox buniTextPass;
-        private System.Windows.Forms.TabPage tabPage4;
+        private System.Windows.Forms.TabPage tab1Productos;
         private Bunifu.Framework.UI.BunifuCustomDataGrid DataGridProductos;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton2;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton3;
@@ -4330,7 +4397,7 @@
         private Bunifu.Framework.UI.BunifuTextbox TextboxReferenciaProducto;
         private Bunifu.Framework.UI.BunifuTextbox TextboxNombreProducto;
         private Bunifu.Framework.UI.BunifuTextbox TextboxCodigoProducto;
-        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.TabPage tab1Usuarios;
         private System.Windows.Forms.TabControl tabControl2;
         private System.Windows.Forms.TabPage tabPage6;
         private Bunifu.Framework.UI.BunifuCustomDataGrid bunifuCustomDataGrid2;
@@ -4348,7 +4415,7 @@
         private Bunifu.Framework.UI.BunifuTextbox TextboxNombre;
         private Bunifu.Framework.UI.BunifuCustomLabel LabelUUsuario;
         private Bunifu.Framework.UI.BunifuTextbox TextboxCedula;
-        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabPage tab1Ventas;
         private System.Windows.Forms.Panel panel1;
         public System.Windows.Forms.TextBox textInsertarCodigo;
         private System.Windows.Forms.Label labelInsertarCodigo;
@@ -4391,11 +4458,10 @@
         private Bunifu.Framework.UI.BunifuFlatButton ButtonEliminarPeAl;
         private Bunifu.Framework.UI.BunifuFlatButton ButtonAgregarPeAl;
         private System.Windows.Forms.ComboBox comboBoxUsuPerAlm;
-        private System.Windows.Forms.TabPage tabPage11;
+        private System.Windows.Forms.TabPage tab1Almacen;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel2;
         private System.Windows.Forms.ComboBox comboBoxCedulaPermiAlmace;
         private System.Windows.Forms.ComboBox comboBoxTipoAlmacen;
-        private Bunifu.Framework.UI.BunifuTextbox TextboxNombreAlmacen;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel3;
         private Bunifu.Framework.UI.BunifuTextbox TextboxDescripcionAlmacen;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton6;
@@ -4432,15 +4498,15 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TabPage tabPage13;
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
-        private System.Windows.Forms.TabPage tabPage14;
+        private System.Windows.Forms.TabPage tab1Reportes;
         private System.Windows.Forms.TabControl tabControl4;
         private System.Windows.Forms.TabPage tabPage15;
         private System.Windows.Forms.Label labelReporte1;
         private Bunifu.Framework.UI.BunifuFlatButton buttonGenerarReporte;
         private System.Windows.Forms.TabPage tabPage16;
         private System.Windows.Forms.Label labelReporteLocalGastos;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label labelEfectivoLocal;
+        private System.Windows.Forms.Label labelVentasCreditoLocal;
         private System.Windows.Forms.Panel panel2;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel10;
         private Bunifu.Framework.UI.BunifuTextbox bunifuTextbox1;
@@ -4505,8 +4571,7 @@
         private Bunifu.Framework.UI.BunifuCustomDataGrid DataGridReporteVentaDia2;
         private Bunifu.Framework.UI.BunifuCustomDataGrid DataGridReporteVentaDiaR2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TabPage tabPage28;
-        private System.Windows.Forms.TabPage tabPage29;
+        private System.Windows.Forms.TabPage tab1EntradasSalidas;
         private System.Windows.Forms.TabControl tabControl7;
         private System.Windows.Forms.TabPage gasto;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton23;
@@ -4566,6 +4631,10 @@
         private System.Windows.Forms.Label labelReporteLocalEntradas;
         private System.Windows.Forms.Label labelReporteGeneralEntradas;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton36;
+        private Bunifu.Framework.UI.BunifuTextbox TextboxNombreAlmacen;
+        private System.Windows.Forms.TabControl tabControl8;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabPage tabPage3;
     }
 }
 

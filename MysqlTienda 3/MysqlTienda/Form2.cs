@@ -236,7 +236,8 @@ namespace MysqlTienda
                 }
                 else
                 {
-                    insertarDatos("INSERT INTO easyerp.metodo_pago_detallado (`ID`, `nf`, `efectivo`, `datafono`, `credito`, `apartado`, `cotizacion`, `ciudad`, `total`) VALUES (NULL, '" + factura + "', '" + TextboxEfectivo.Text + "', '" + TextboxDatafono.Text + "', '" + TextboxCredito.Text + "', '" + TextboxApartado.Text + "', 'true', '" + ciudad + "', '" + TextboxPago.Text + "')");
+                    //DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")
+                    insertarDatos("INSERT INTO easyerp.metodo_pago_detallado (`ID`, `nf`, `efectivo`, `datafono`, `credito`, `apartado`, `cotizacion`, `ciudad`, `total`, `fecha`) VALUES (NULL, '" + factura + "', '" + TextboxEfectivo.Text + "', '" + TextboxDatafono.Text + "', '" + TextboxCredito.Text + "', '" + TextboxApartado.Text + "', 'true', '" + ciudad + "', '" + TextboxPago.Text +"', '" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "')");
                     
                     //formulario1.respuestaFormulario = "venta";
                    
