@@ -101,7 +101,7 @@ namespace MysqlTienda
                 ciudad = ciudad1;
                 InitializeComponent();
                 this.TopMost = true;
-                labelTotal.Text = "El total es:" + texto;
+                labelTotal.Text = texto;
                 labelFactura2.Text = "Factura #" + factura; 
                 labelCiudad.Text = "Ciudad: " + ciudad1;
             }
@@ -162,6 +162,8 @@ namespace MysqlTienda
 
         private void TextboxDatafono_OnValueChanged(object sender, EventArgs e)
         {
+            bool verificarTextoMayor = verificarMayor(TextboxDatafono.Text);
+            if (verificarTextoMayor == true) { TextboxDatafono.Text = Convert.ToString(total); }
             datafono = verificarTexto(TextboxDatafono.Text);
             sumarTotal();
 
@@ -169,6 +171,7 @@ namespace MysqlTienda
 
         private void TextboxEfectivo_OnValueChanged(object sender, EventArgs e)
         {
+            
             efectivo = verificarTexto(TextboxEfectivo.Text); 
             sumarTotal();
         }
@@ -181,7 +184,10 @@ namespace MysqlTienda
         }
 
         private void TextboxCredito_OnValueChanged(object sender, EventArgs e)
+
         {
+            bool verificarTextoMayor = verificarMayor(TextboxCredito.Text);
+            if (verificarTextoMayor == true) { TextboxCredito.Text = Convert.ToString(total); }
             credito = verificarTexto(TextboxCredito.Text);
             sumarTotal();
         }
@@ -194,6 +200,8 @@ namespace MysqlTienda
 
         private void TextboxApartado_OnValueChanged(object sender, EventArgs e)
         {
+            bool verificarTextoMayor = verificarMayor(TextboxApartado.Text);
+            if (verificarTextoMayor == true){TextboxApartado.Text = Convert.ToString(total);}            
             apartado = verificarTexto(TextboxApartado.Text);
             sumarTotal();
         }
@@ -227,8 +235,13 @@ namespace MysqlTienda
         {
             try
             {
+                if (datafono==true & credito==true & apartado==true & efectivo == true)
+                {
+                    MessageBox.Show("todo esta super");
+                }
                 //Form1 formulario1 = new Form1();
 
+                
                 if (labelPago.Text == "cotizacion")
                 {
                     MessageBox.Show("cotización realizada");
@@ -242,9 +255,10 @@ namespace MysqlTienda
                     //formulario1.respuestaFormulario = "venta";
                    
                 }            
-
+                
                 
                 this.Close();
+                
             }
             catch (Exception error)
             {
@@ -298,6 +312,7 @@ namespace MysqlTienda
             {
                 String texto = TextboxPago.Text;
                 bool verificarTexto = bien_escrito(texto, @"[0-9]{1,30}(\.[0-9]{0,2})?$");
+                
                 if (verificarTexto == true)
                 {
                     
@@ -316,20 +331,56 @@ namespace MysqlTienda
             
         }
 
+        private bool verificarMayor(string texto)
+        {
+            
+            try
+            {
+                Console.WriteLine("holaaaaaaaa");
+                double verficarNumero = Convert.ToDouble(texto);
+                Console.WriteLine(verficarNumero);
+                double totalFactura = Convert.ToDouble(labelTotal.Text);
+                Console.WriteLine(totalFactura);
+                bool resultado;
+                if (verficarNumero > total)
+                {
+                    MessageBox.Show("Verifique");
+                    resultado = true;
+                }
+                else
+                {
+                    
+                    resultado = false;
+                }
+                return resultado;
+            }
+            catch
+            {
+                return false;
+            }
+           
+        }
+
         private bool verificarTexto(String texto)
         {
             try
             {
-
+                
                 bool verificarTexto = bien_escrito(texto, @"[0-9]{1,30}(\.[0-9]{0,2})?$");
                 if (verificarTexto == true)
                 {
                     return true;
+
+                    
                 }
                 else
                 {
                     return false;
                 }
+
+                
+
+
             }
             catch
             {

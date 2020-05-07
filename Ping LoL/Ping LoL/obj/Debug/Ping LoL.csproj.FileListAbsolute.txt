@@ -32,3 +32,13 @@ C:\universidad\Extras\Programas\Ping LoL\Ping LoL\obj\Debug\Ping LoL.csproj.Core
 C:\universidad\Extras\Programas\Ping LoL\Ping LoL\obj\Debug\Ping LoL.csproj.CopyComplete
 C:\universidad\Extras\Programas\Ping LoL\Ping LoL\obj\Debug\Ping LoL.exe
 C:\universidad\Extras\Programas\Ping LoL\Ping LoL\obj\Debug\Ping LoL.pdb
+C:\informacion\Programas\Ping LoL\Ping LoL\bin\Debug\Ping LoL.exe.config
+C:\informacion\Programas\Ping LoL\Ping LoL\bin\Debug\Ping LoL.exe
+C:\informacion\Programas\Ping LoL\Ping LoL\bin\Debug\Ping LoL.pdb
+C:\informacion\Programas\Ping LoL\Ping LoL\obj\Debug\Ping LoL.csprojAssemblyReference.cache
+C:\informacion\Programas\Ping LoL\Ping LoL\obj\Debug\Ping_LoL.Form1.resources
+C:\informacion\Programas\Ping LoL\Ping LoL\obj\Debug\Ping_LoL.Properties.Resources.resources
+C:\informacion\Programas\Ping LoL\Ping LoL\obj\Debug\Ping LoL.csproj.GenerateResource.cache
+C:\informacion\Programas\Ping LoL\Ping LoL\obj\Debug\Ping LoL.csproj.CopyComplete
+C:\informacion\Programas\Ping LoL\Ping LoL\obj\Debug\Ping LoL.exe
+C:\informacion\Programas\Ping LoL\Ping LoL\obj\Debug\Ping LoL.pdb

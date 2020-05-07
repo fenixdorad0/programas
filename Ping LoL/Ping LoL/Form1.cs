@@ -26,26 +26,33 @@ namespace Ping_LoL
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            using (Ping a = new Ping())
+            try
             {
-                bunifuCustomLabel1.Text="EUW: "+ (a.Send("104.160.141.3").RoundtripTime.ToString() + "ms\n");              
-            }
-            using (Ping b = new Ping())
+                 using (Ping a = new Ping())
+                {
+                    bunifuCustomLabel1.Text="EUW: "+ (a.Send("104.160.141.3").RoundtripTime.ToString() + "ms\n");              
+                }
+                using (Ping b = new Ping())
+                {
+                    bunifuCustomLabel2.Text = "NA: " + (b.Send("104.160.131.3").RoundtripTime.ToString() + "ms\n");
+                }
+                using (Ping c = new Ping())
+                {
+                    bunifuCustomLabel3.Text = "EUNE: " + (c.Send("104.160.142.3").RoundtripTime.ToString() + "ms\n");
+                }
+                using (Ping d = new Ping())
+                {
+                    bunifuCustomLabel4.Text = "OCE: " + (d.Send("104.160.156.1").RoundtripTime.ToString() + "ms\n");
+                }
+                using (Ping d = new Ping())
+                {
+                    bunifuCustomLabel5.Text = "LAN: " + (d.Send("104.160.136.3").RoundtripTime.ToString() + "ms\n") + "local" +d.Send("192.168.0.1").RoundtripTime.ToString();
+                }
+            }catch(Exception error)
             {
-                bunifuCustomLabel2.Text = "NA: " + (b.Send("104.160.131.3").RoundtripTime.ToString() + "ms\n");
+            
             }
-            using (Ping c = new Ping())
-            {
-                bunifuCustomLabel3.Text = "EUNE: " + (c.Send("104.160.142.3").RoundtripTime.ToString() + "ms\n");
-            }
-            using (Ping d = new Ping())
-            {
-                bunifuCustomLabel4.Text = "OCE: " + (d.Send("104.160.156.1").RoundtripTime.ToString() + "ms\n");
-            }
-            using (Ping d = new Ping())
-            {
-                bunifuCustomLabel5.Text = "LAN: " + (d.Send("104.160.136.3").RoundtripTime.ToString() + "ms\n");
-            }
+           
 
         }
 

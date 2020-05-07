@@ -537,16 +537,18 @@ namespace MysqlTienda
                 labelInsertarCodigo.Visible = true;
                 textInsertarCodigo.Visible = true;
                 MySqlDataReader mdr;
-                string select = "SELECT* FROM easyerp.usuario WHERE `usuario`.`id` ='" + buniTextUsuario.text + "' and contrasena ='" + buniTextPass.text + "'";
+               
+                string select = "SELECT* FROM easyerp.usuario WHERE `usuario`.`id` ='" + buniTextUsuario.Text + "' and contrasena ='" + buniTextPass.Text + "'";
                 command = new MySqlCommand(select, conectar);
                 abrirConeccion();
                 mdr = command.ExecuteReader();
                 if (mdr.Read())
                 {
+                    comboBoxCiudad.Visible = true;
                     labelCedula.Text = mdr.GetString("cc");
                     labelVendedor.Text = mdr.GetString("nombre");
                     MessageBox.Show("Login exitoso");
-                    labelAlmacen.Text = buniTextUsuario.text;
+                    labelAlmacen.Text = buniTextUsuario.Text;
                     //this.Size = new Size(1339, 637);
                     textInsertarCodigo.Enabled = true;
                     buniMaxMin.Enabled = true;
@@ -3069,6 +3071,21 @@ namespace MysqlTienda
         }
 
         private void DataGridReporteProductosAlmacen2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void tab1Inicio_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuGradientPanel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
         {
 
         }

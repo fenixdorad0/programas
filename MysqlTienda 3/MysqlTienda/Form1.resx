@@ -121,145 +121,16 @@
   <data name="bunifuGradientPanel3.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFtSURBVChTDctXT5NRAIDhQ/vt1fYfmBAS4ojKKoQRRohA
-        xFmQJbMsW8ooZTQULDRqRbnAnYCAJAKOhOH4eS/n4rl8hBruRS3vQSnpRrnVhf+GdO0JvuJOfEUdFBRG
-        KLgSQegNo2h1UbSaKGrVCGp4GKVsCOX2IP6b0vUBfFf7EUbbNHpLAr05gdY0hVYfR62LoVY/Q6mUKibx
-        l04gzEga89Eyxv0ljPZF9DapZQGtOYXWOI9an0StTSLs/hxW7wZW9zpmZxYzksV4+Bzj3hr63VX01gza
-        nQzCGd/CGX2LPSwNvsF6uinja8yuPGZHHuPxK4wHLxHu7BfcxGec+CecyY/Y41L0A9bQe6yBd5h925g9
-        24hA+hBv6Rte6gA3uY87s4+T2MOJfcWe2MUe28Ea2UEEc78Jrv8isCZlfuKlf8h4gps6xp07xpk5wpn6
-        jght/Se0+Y9gXnrxl0DuD4HsBd7qOd7KOe7yGe7iKZdArr1NBm6lVAAAAABJRU5ErkJggg==
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAB4SURBVChTXcpXEsJgCARgLqgpmkRT9Ij2FsvVcJn8DISH
+        b2fZgRYH5qU4mizIT8yUITwZ87MpEtJSXCZlsBJXPJYIKd76NlcBaanupg6aBx5rhCdj8zSbhPyhtq+5
+        FkhLO5ou6N947BCejP3HDAlpGb6TXbAXP+Y/hB0wLwuGoYsAAAAASUVORK5CYII=
 </value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="bunifuGradientPanel3.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
   </data>
-  <data name="bunifuGradientPanel2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left, Right</value>
-  </data>
-  <data name="bunifuGradientPanel2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAElSURBVChTDcxpSwJhGIXh93n+RcvkqKMz4zQzblnSx4gQ
-        iXaRsFUkbJUIs2UQEWkhon98Ot/v6zaaP4I6B5DsHiS9A7G3IakmxGpAFrcg85swcxsw6nWg7jEk14Y4
-        LUjmkIDIJloispowCw2GhUuofw5xTyH5DmOiLFGGyCZK7cNYuwzDPjS4ghR6EK9LcEFA5BBlidJtGLvF
-        MH6ARneQ5RtI0If4RB6RS5Qjcs5gMicMy0No8QkSP0LCAcE9AZFP5BHlezC5LsPqO7T8Ci2NoDFRRBQS
-        BUQFIu+W92uGtSl0ZQKtjAkS3t94H0GiIe9EAZE/YFj/gq5+QGszaJWoMoGUx5BiQkAUvhA8M1z/g9Z/
-        oWs/jL95/4RUZ4ynkBJRTBQl+Acp852SejteDgAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="bunifuGradientPanel2.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="pictureBox1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 2</value>
-  </data>
-  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>499, 240</value>
-  </data>
-  <data name="pictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>StretchImage</value>
-  </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>90</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
-    <value>pictureBox1</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>95, 48</value>
-  </data>
-  <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>507, 225</value>
-  </data>
-  <data name="panel2.TabIndex" type="System.Int32, mscorlib">
-    <value>91</value>
-  </data>
-  <data name="&gt;&gt;panel2.Name" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;panel2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel2.Parent" xml:space="preserve">
-    <value>bunifuGradientPanel2</value>
-  </data>
-  <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>292, 610</value>
-  </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>170, 18</value>
-  </data>
-  <data name="label1.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>?Olvidaste la contraseña</value>
-  </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
-  </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>bunifuGradientPanel2</value>
-  </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="labelVendedor.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="labelVendedor.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="labelVendedor.Location" type="System.Drawing.Point, System.Drawing">
-    <value>107, 694</value>
-  </data>
-  <data name="labelVendedor.Size" type="System.Drawing.Size, System.Drawing">
-    <value>69, 18</value>
-  </data>
-  <data name="labelVendedor.TabIndex" type="System.Int32, mscorlib">
-    <value>86</value>
-  </data>
-  <data name="labelVendedor.Text" xml:space="preserve">
-    <value>vendedor</value>
-  </data>
-  <data name="&gt;&gt;labelVendedor.Name" xml:space="preserve">
-    <value>labelVendedor</value>
-  </data>
-  <data name="&gt;&gt;labelVendedor.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelVendedor.Parent" xml:space="preserve">
-    <value>bunifuGradientPanel2</value>
-  </data>
-  <data name="&gt;&gt;labelVendedor.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
   <data name="labelCedula.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -267,10 +138,10 @@
     <value>NoControl</value>
   </data>
   <data name="labelCedula.Location" type="System.Drawing.Point, System.Drawing">
-    <value>611, 707</value>
+    <value>640, 809</value>
   </data>
   <data name="labelCedula.Size" type="System.Drawing.Size, System.Drawing">
-    <value>51, 18</value>
+    <value>56, 20</value>
   </data>
   <data name="labelCedula.TabIndex" type="System.Int32, mscorlib">
     <value>89</value>
@@ -285,31 +156,188 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;labelCedula.Parent" xml:space="preserve">
-    <value>bunifuGradientPanel2</value>
+    <value>panel2</value>
   </data>
   <data name="&gt;&gt;labelCedula.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>0</value>
+  </data>
+  <data name="labelVendedor.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelVendedor.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelVendedor.Location" type="System.Drawing.Point, System.Drawing">
+    <value>34, 809</value>
+  </data>
+  <data name="labelVendedor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 20</value>
+  </data>
+  <data name="labelVendedor.TabIndex" type="System.Int32, mscorlib">
+    <value>86</value>
+  </data>
+  <data name="labelVendedor.Text" xml:space="preserve">
+    <value>vendedor</value>
+  </data>
+  <data name="&gt;&gt;labelVendedor.Name" xml:space="preserve">
+    <value>labelVendedor</value>
+  </data>
+  <data name="&gt;&gt;labelVendedor.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelVendedor.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;labelVendedor.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="pictureBox1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>112, 45</value>
+  </data>
+  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>499, 240</value>
+  </data>
+  <data name="pictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>90</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
+    <value>pictureBox1</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="panel4B.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAUSURBVChTY/hPJBhViBdQW+H//wAj+46A3TfWvAAAAABJ
+        RU5ErkJggg==
+</value>
+  </data>
+  <data name="panel4B.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="buniTextPass.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 12pt</value>
+  </data>
+  <data name="buniTextPass.Location" type="System.Drawing.Point, System.Drawing">
+    <value>32, 117</value>
+  </data>
+  <data name="buniTextPass.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
+  </data>
+  <data name="buniTextPass.Size" type="System.Drawing.Size, System.Drawing">
+    <value>379, 41</value>
+  </data>
+  <data name="buniTextPass.TabIndex" type="System.Int32, mscorlib">
+    <value>95</value>
+  </data>
+  <data name="buniTextPass.Text" xml:space="preserve">
+    <value>contraseña</value>
+  </data>
+  <data name="&gt;&gt;buniTextPass.Name" xml:space="preserve">
+    <value>buniTextPass</value>
+  </data>
+  <data name="&gt;&gt;buniTextPass.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuMaterialTextbox, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;buniTextPass.Parent" xml:space="preserve">
+    <value>panel4B</value>
+  </data>
+  <data name="&gt;&gt;buniTextPass.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="buniTextUsuario.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 12pt</value>
+  </data>
+  <data name="buniTextUsuario.Location" type="System.Drawing.Point, System.Drawing">
+    <value>32, 66</value>
+  </data>
+  <data name="buniTextUsuario.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
+  </data>
+  <data name="buniTextUsuario.Size" type="System.Drawing.Size, System.Drawing">
+    <value>378, 41</value>
+  </data>
+  <data name="buniTextUsuario.TabIndex" type="System.Int32, mscorlib">
+    <value>94</value>
+  </data>
+  <data name="buniTextUsuario.Text" xml:space="preserve">
+    <value>usuario</value>
+  </data>
+  <data name="&gt;&gt;buniTextUsuario.Name" xml:space="preserve">
+    <value>buniTextUsuario</value>
+  </data>
+  <data name="&gt;&gt;buniTextUsuario.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuMaterialTextbox, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;buniTextUsuario.Parent" xml:space="preserve">
+    <value>panel4B</value>
+  </data>
+  <data name="&gt;&gt;buniTextUsuario.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>124, 287</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>192, 20</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>?Olvidaste la contraseña¿</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>panel4B</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="label7.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="label7.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 15.75pt</value>
+    <value>Microsoft Sans Serif, 20.25pt, style=Bold</value>
   </data>
   <data name="label7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>316, 337</value>
+    <value>166, 15</value>
   </data>
   <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 25</value>
+    <value>115, 31</value>
   </data>
   <data name="label7.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
   <data name="label7.Text" xml:space="preserve">
-    <value>LOGIN</value>
+    <value>Usuario</value>
   </data>
   <data name="&gt;&gt;label7.Name" xml:space="preserve">
     <value>label7</value>
@@ -318,170 +346,49 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label7.Parent" xml:space="preserve">
-    <value>bunifuGradientPanel2</value>
+    <value>panel4B</value>
   </data>
   <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="comboBoxCiudad.ItemHeight" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="comboBoxCiudad.Location" type="System.Drawing.Point, System.Drawing">
+    <value>68, 179</value>
+  </data>
+  <data name="comboBoxCiudad.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="comboBoxCiudad.Size" type="System.Drawing.Size, System.Drawing">
+    <value>315, 28</value>
+  </data>
+  <data name="comboBoxCiudad.TabIndex" type="System.Int32, mscorlib">
+    <value>84</value>
+  </data>
+  <data name="comboBoxCiudad.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;comboBoxCiudad.Name" xml:space="preserve">
+    <value>comboBoxCiudad</value>
+  </data>
+  <data name="&gt;&gt;comboBoxCiudad.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBoxCiudad.Parent" xml:space="preserve">
+    <value>panel4B</value>
+  </data>
+  <data name="&gt;&gt;comboBoxCiudad.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="buniTextUsuario.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        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
-</value>
-  </data>
-  <data name="buniTextUsuario.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="buniTextUsuario.Icon" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMJSURBVHhe7ZBRbttADAVzox4l9z9NCwRDgFBnHTteS6TD
-        AeZLj6tHfgzDMAzDMAzDMAzDw/z5/Pz7jDwzPIIdcoc8P6ywo71CfjcEdqQz5Pe/FzvKFVLnd2GHuFJq
-        vT+2fCWp+Z7YwvfKE3djb9wrT7wXtuh3Mvo09vZ3Mvoe2IK3ZGw79q9bMtYbW2wlIy/H/r2Skb7YUibx
-        07AOJvGe2EIm8dOxLibxXtgiJvHLsE4m8T7YEkeJXo51O0q0B7bAUaJlsI5HidbHymeJlcO6ZonVxopn
-        iZXFOmeJ1cVKZ4mVxTpnidXECmeJlce6Z4nVw8pmiZXHumeJ1cPKhkTaYDuERGphRbPE2mA7ZInVwUqG
-        RFphe2SJ1cFKhkTaYbuEROpgJUMi7bBdQiJ1sJIhkXbYLiGROljJkEg7bJeQSB2sZEikHbZLSKQOVjIk
-        0g7bJSRSBysZEmmH7RISqYOVDIm0w3YJidTBSoZE2mG7hETqYCVDIu2wXUIidbCSIZF22C4hkTpYyZBI
-        O2yXkEgdrGSWWBtshyyxOljJLLE22A5ZYrWwoiGRNtgOIZF6WNkssfJY9yyxeljZLLHyWPcssZpY4Syx
-        sljnLLG6WOkssbJY5yyx2ljxLLFyWNcssfpY+aNEy2AdjxLtgS1wlOjlWLejRPtgSxwlejnW7SjRXtgi
-        JvHTsS4m8Z7YQibx07AOJvGe2EK3ZOzl2L9XMtIPW+ZeeWI79q9bMtYPW+Yn8tzT2NvfyWg/bJkd8vzd
-        2Bv3yhP9sGVeKb/d+l+e7Icts/LR/Bl+LdEVW2glI1/Y9yukTk9soZWM/Idlz5Df98WWWsnITWzuFfK7
-        3thiKxm5G3tjhzzfH1tuJSM/xt58RJ55H2zJlYwMu7Ajr2Rk2IUdeSUjwy7syCsZGXZhR17JyLALO/JK
-        RoZd2JFXMjLswo68kpFhF3bklYwMu7Ajr2Rk2IUdeSUjwy7syCsZGXZhR17JyLAbO/ZRosOrsKOHRIZX
-        M8cvwBy/AHP8YRiGYRiGYRiGoSEfH/8AQpJgXzFnvzgAAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="buniTextUsuario.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="buniTextUsuario.Location" type="System.Drawing.Point, System.Drawing">
-    <value>199, 382</value>
-  </data>
-  <data name="buniTextUsuario.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="buniTextUsuario.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
-    <value>No</value>
-  </data>
-  <data name="buniTextUsuario.Size" type="System.Drawing.Size, System.Drawing">
-    <value>315, 42</value>
-  </data>
-  <data name="buniTextUsuario.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;buniTextUsuario.Name" xml:space="preserve">
-    <value>buniTextUsuario</value>
-  </data>
-  <data name="&gt;&gt;buniTextUsuario.Type" xml:space="preserve">
-    <value>Bunifu.Framework.UI.BunifuTextbox, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;buniTextUsuario.Parent" xml:space="preserve">
-    <value>bunifuGradientPanel2</value>
-  </data>
-  <data name="&gt;&gt;buniTextUsuario.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="buniTextPass.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        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
-</value>
-  </data>
-  <data name="buniTextPass.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="buniTextPass.Icon" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMJSURBVHhe7ZBRbttADAVzox4l9z9NCwRDgFBnHTteS6TD
-        AeZLj6tHfgzDMAzDMAzDMAzDw/z5/Pz7jDwzPIIdcoc8P6ywo71CfjcEdqQz5Pe/FzvKFVLnd2GHuFJq
-        vT+2fCWp+Z7YwvfKE3djb9wrT7wXtuh3Mvo09vZ3Mvoe2IK3ZGw79q9bMtYbW2wlIy/H/r2Skb7YUibx
-        07AOJvGe2EIm8dOxLibxXtgiJvHLsE4m8T7YEkeJXo51O0q0B7bAUaJlsI5HidbHymeJlcO6ZonVxopn
-        iZXFOmeJ1cVKZ4mVxTpnidXECmeJlce6Z4nVw8pmiZXHumeJ1cPKhkTaYDuERGphRbPE2mA7ZInVwUqG
-        RFphe2SJ1cFKhkTaYbuEROpgJUMi7bBdQiJ1sJIhkXbYLiGROljJkEg7bJeQSB2sZEikHbZLSKQOVjIk
-        0g7bJSRSBysZEmmH7RISqYOVDIm0w3YJidTBSoZE2mG7hETqYCVDIu2wXUIidbCSIZF22C4hkTpYyZBI
-        O2yXkEgdrGSWWBtshyyxOljJLLE22A5ZYrWwoiGRNtgOIZF6WNkssfJY9yyxeljZLLHyWPcssZpY4Syx
-        sljnLLG6WOkssbJY5yyx2ljxLLFyWNcssfpY+aNEy2AdjxLtgS1wlOjlWLejRPtgSxwlejnW7SjRXtgi
-        JvHTsS4m8Z7YQibx07AOJvGe2EK3ZOzl2L9XMtIPW+ZeeWI79q9bMtYPW+Yn8tzT2NvfyWg/bJkd8vzd
-        2Bv3yhP9sGVeKb/d+l+e7Icts/LR/Bl+LdEVW2glI1/Y9yukTk9soZWM/Idlz5Df98WWWsnITWzuFfK7
-        3thiKxm5G3tjhzzfH1tuJSM/xt58RJ55H2zJlYwMu7Ajr2Rk2IUdeSUjwy7syCsZGXZhR17JyLALO/JK
-        RoZd2JFXMjLswo68kpFhF3bklYwMu7Ajr2Rk2IUdeSUjwy7syCsZGXZhR17JyLAbO/ZRosOrsKOHRIZX
-        M8cvwBy/AHP8YRiGYRiGYRiGoSEfH/8AQpJgXzFnvzgAAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="buniTextPass.Location" type="System.Drawing.Point, System.Drawing">
-    <value>199, 430</value>
-  </data>
-  <data name="buniTextPass.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="buniTextPass.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
-    <value>No</value>
-  </data>
-  <data name="buniTextPass.Size" type="System.Drawing.Size, System.Drawing">
-    <value>315, 42</value>
-  </data>
-  <data name="buniTextPass.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;buniTextPass.Name" xml:space="preserve">
-    <value>buniTextPass</value>
-  </data>
-  <data name="&gt;&gt;buniTextPass.Type" xml:space="preserve">
-    <value>Bunifu.Framework.UI.BunifuTextbox, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;buniTextPass.Parent" xml:space="preserve">
-    <value>bunifuGradientPanel2</value>
-  </data>
-  <data name="&gt;&gt;buniTextPass.ZOrder" xml:space="preserve">
-    <value>6</value>
+  <data name="buniBtnLogin.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
   </data>
   <data name="buniBtnLogin.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
+  </data>
+  <data name="buniBtnLogin.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Stencil, 12pt, style=Bold</value>
   </data>
   <data name="buniBtnLogin.Iconimage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -547,7 +454,7 @@
 </value>
   </data>
   <data name="buniBtnLogin.Location" type="System.Drawing.Point, System.Drawing">
-    <value>199, 478</value>
+    <value>124, 221</value>
   </data>
   <data name="buniBtnLogin.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
@@ -556,13 +463,13 @@
     <value>No</value>
   </data>
   <data name="buniBtnLogin.Size" type="System.Drawing.Size, System.Drawing">
-    <value>315, 39</value>
+    <value>201, 53</value>
   </data>
   <data name="buniBtnLogin.TabIndex" type="System.Int32, mscorlib">
     <value>82</value>
   </data>
   <data name="buniBtnLogin.Text" xml:space="preserve">
-    <value>Login</value>
+    <value>Entrar</value>
   </data>
   <data name="&gt;&gt;buniBtnLogin.Name" xml:space="preserve">
     <value>buniBtnLogin</value>
@@ -571,57 +478,51 @@
     <value>Bunifu.Framework.UI.BunifuFlatButton, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;buniBtnLogin.Parent" xml:space="preserve">
-    <value>bunifuGradientPanel2</value>
+    <value>panel4B</value>
   </data>
   <data name="&gt;&gt;buniBtnLogin.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>5</value>
   </data>
-  <data name="comboBoxCiudad.ItemHeight" type="System.Int32, mscorlib">
-    <value>18</value>
+  <data name="panel4B.Location" type="System.Drawing.Point, System.Drawing">
+    <value>149, 324</value>
   </data>
-  <data name="comboBoxCiudad.Location" type="System.Drawing.Point, System.Drawing">
-    <value>199, 523</value>
+  <data name="panel4B.Size" type="System.Drawing.Size, System.Drawing">
+    <value>447, 339</value>
   </data>
-  <data name="comboBoxCiudad.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
-    <value>No</value>
+  <data name="panel4B.TabIndex" type="System.Int32, mscorlib">
+    <value>93</value>
   </data>
-  <data name="comboBoxCiudad.Size" type="System.Drawing.Size, System.Drawing">
-    <value>315, 26</value>
+  <data name="&gt;&gt;panel4B.Name" xml:space="preserve">
+    <value>panel4B</value>
   </data>
-  <data name="comboBoxCiudad.TabIndex" type="System.Int32, mscorlib">
-    <value>84</value>
-  </data>
-  <data name="&gt;&gt;comboBoxCiudad.Name" xml:space="preserve">
-    <value>comboBoxCiudad</value>
-  </data>
-  <data name="&gt;&gt;comboBoxCiudad.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;comboBoxCiudad.Parent" xml:space="preserve">
-    <value>bunifuGradientPanel2</value>
-  </data>
-  <data name="&gt;&gt;comboBoxCiudad.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="bunifuGradientPanel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>306, 3</value>
-  </data>
-  <data name="bunifuGradientPanel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>735, 740</value>
-  </data>
-  <data name="bunifuGradientPanel2.TabIndex" type="System.Int32, mscorlib">
-    <value>91</value>
-  </data>
-  <data name="&gt;&gt;bunifuGradientPanel2.Name" xml:space="preserve">
-    <value>bunifuGradientPanel2</value>
-  </data>
-  <data name="&gt;&gt;bunifuGradientPanel2.Type" xml:space="preserve">
+  <data name="&gt;&gt;panel4B.Type" xml:space="preserve">
     <value>Bunifu.Framework.UI.BunifuGradientPanel, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="&gt;&gt;bunifuGradientPanel2.Parent" xml:space="preserve">
+  <data name="&gt;&gt;panel4B.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;panel4B.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>880, -1</value>
+  </data>
+  <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>727, 837</value>
+  </data>
+  <data name="panel2.TabIndex" type="System.Int32, mscorlib">
+    <value>92</value>
+  </data>
+  <data name="&gt;&gt;panel2.Name" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel2.Parent" xml:space="preserve">
     <value>bunifuGradientPanel3</value>
   </data>
-  <data name="&gt;&gt;bunifuGradientPanel2.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="bunifuGradientPanel3.Location" type="System.Drawing.Point, System.Drawing">
@@ -631,7 +532,7 @@
     <value>Yes</value>
   </data>
   <data name="bunifuGradientPanel3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1376, 743</value>
+    <value>1604, 836</value>
   </data>
   <data name="bunifuGradientPanel3.TabIndex" type="System.Int32, mscorlib">
     <value>92</value>
@@ -648,11 +549,14 @@
   <data name="&gt;&gt;bunifuGradientPanel3.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="tab1Inicio.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
   <data name="tab1Inicio.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 27</value>
+    <value>4, 29</value>
   </data>
   <data name="tab1Inicio.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1610, 842</value>
+    <value>1610, 840</value>
   </data>
   <data name="tab1Inicio.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -682,7 +586,7 @@
     <value>21, 739</value>
   </data>
   <data name="labelProductoId.Size" type="System.Drawing.Size, System.Drawing">
-    <value>19, 18</value>
+    <value>21, 20</value>
   </data>
   <data name="labelProductoId.TabIndex" type="System.Int32, mscorlib">
     <value>123</value>
@@ -712,7 +616,7 @@
     <value>21, 400</value>
   </data>
   <data name="label14.Size" type="System.Drawing.Size, System.Drawing">
-    <value>66, 18</value>
+    <value>73, 20</value>
   </data>
   <data name="label14.TabIndex" type="System.Int32, mscorlib">
     <value>122</value>
@@ -742,7 +646,7 @@
     <value>21, 335</value>
   </data>
   <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
-    <value>46, 18</value>
+    <value>48, 20</value>
   </data>
   <data name="label13.TabIndex" type="System.Int32, mscorlib">
     <value>121</value>
@@ -772,7 +676,7 @@
     <value>21, 269</value>
   </data>
   <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
-    <value>123, 18</value>
+    <value>127, 20</value>
   </data>
   <data name="label12.TabIndex" type="System.Int32, mscorlib">
     <value>120</value>
@@ -802,7 +706,7 @@
     <value>21, 203</value>
   </data>
   <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>112, 18</value>
+    <value>119, 20</value>
   </data>
   <data name="label11.TabIndex" type="System.Int32, mscorlib">
     <value>119</value>
@@ -832,7 +736,7 @@
     <value>21, 139</value>
   </data>
   <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>79, 18</value>
+    <value>87, 20</value>
   </data>
   <data name="label10.TabIndex" type="System.Int32, mscorlib">
     <value>118</value>
@@ -862,7 +766,7 @@
     <value>21, 78</value>
   </data>
   <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>62, 18</value>
+    <value>65, 20</value>
   </data>
   <data name="label9.TabIndex" type="System.Int32, mscorlib">
     <value>117</value>
@@ -892,7 +796,7 @@
     <value>21, 11</value>
   </data>
   <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>56, 18</value>
+    <value>59, 20</value>
   </data>
   <data name="label8.TabIndex" type="System.Int32, mscorlib">
     <value>116</value>
@@ -1744,7 +1648,7 @@
     <value>15, 676</value>
   </data>
   <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>63, 18</value>
+    <value>67, 20</value>
   </data>
   <data name="label6.TabIndex" type="System.Int32, mscorlib">
     <value>110</value>
@@ -1836,13 +1740,13 @@
     <value>20</value>
   </data>
   <data name="comboBoxTamanoProducto.ItemHeight" type="System.Int32, mscorlib">
-    <value>18</value>
+    <value>20</value>
   </data>
   <data name="comboBoxTamanoProducto.Location" type="System.Drawing.Point, System.Drawing">
     <value>18, 696</value>
   </data>
   <data name="comboBoxTamanoProducto.Size" type="System.Drawing.Size, System.Drawing">
-    <value>230, 26</value>
+    <value>230, 28</value>
   </data>
   <data name="comboBoxTamanoProducto.TabIndex" type="System.Int32, mscorlib">
     <value>109</value>
@@ -1860,7 +1764,7 @@
     <value>21</value>
   </data>
   <data name="comboBoxIvaProducto.ItemHeight" type="System.Int32, mscorlib">
-    <value>18</value>
+    <value>20</value>
   </data>
   <data name="comboBoxIvaProducto.Items" xml:space="preserve">
     <value>SI</value>
@@ -1872,7 +1776,7 @@
     <value>18, 498</value>
   </data>
   <data name="comboBoxIvaProducto.Size" type="System.Drawing.Size, System.Drawing">
-    <value>230, 26</value>
+    <value>230, 28</value>
   </data>
   <data name="comboBoxIvaProducto.TabIndex" type="System.Int32, mscorlib">
     <value>90</value>
@@ -1899,7 +1803,7 @@
     <value>15, 626</value>
   </data>
   <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>145, 18</value>
+    <value>154, 20</value>
   </data>
   <data name="label5.TabIndex" type="System.Int32, mscorlib">
     <value>108</value>
@@ -1929,7 +1833,7 @@
     <value>15, 477</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>74, 18</value>
+    <value>80, 20</value>
   </data>
   <data name="label2.TabIndex" type="System.Int32, mscorlib">
     <value>102</value>
@@ -1950,13 +1854,13 @@
     <value>24</value>
   </data>
   <data name="comboBoxAlmacenProducto.ItemHeight" type="System.Int32, mscorlib">
-    <value>18</value>
+    <value>20</value>
   </data>
   <data name="comboBoxAlmacenProducto.Location" type="System.Drawing.Point, System.Drawing">
     <value>18, 649</value>
   </data>
   <data name="comboBoxAlmacenProducto.Size" type="System.Drawing.Size, System.Drawing">
-    <value>230, 26</value>
+    <value>230, 28</value>
   </data>
   <data name="comboBoxAlmacenProducto.TabIndex" type="System.Int32, mscorlib">
     <value>107</value>
@@ -1977,7 +1881,7 @@
     <value>18, 548</value>
   </data>
   <data name="comboBoxFechaProducto.Size" type="System.Drawing.Size, System.Drawing">
-    <value>230, 24</value>
+    <value>230, 26</value>
   </data>
   <data name="comboBoxFechaProducto.TabIndex" type="System.Int32, mscorlib">
     <value>103</value>
@@ -2004,7 +1908,7 @@
     <value>15, 574</value>
   </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>102, 18</value>
+    <value>112, 20</value>
   </data>
   <data name="label4.TabIndex" type="System.Int32, mscorlib">
     <value>106</value>
@@ -2034,7 +1938,7 @@
     <value>17, 527</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>116, 18</value>
+    <value>126, 20</value>
   </data>
   <data name="label3.TabIndex" type="System.Int32, mscorlib">
     <value>104</value>
@@ -2055,13 +1959,13 @@
     <value>28</value>
   </data>
   <data name="comboBoxDepartamentoProducto.ItemHeight" type="System.Int32, mscorlib">
-    <value>18</value>
+    <value>20</value>
   </data>
   <data name="comboBoxDepartamentoProducto.Location" type="System.Drawing.Point, System.Drawing">
     <value>18, 597</value>
   </data>
   <data name="comboBoxDepartamentoProducto.Size" type="System.Drawing.Size, System.Drawing">
-    <value>230, 26</value>
+    <value>230, 28</value>
   </data>
   <data name="comboBoxDepartamentoProducto.TabIndex" type="System.Int32, mscorlib">
     <value>105</value>
@@ -2079,13 +1983,13 @@
     <value>29</value>
   </data>
   <data name="tabPage8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 27</value>
+    <value>4, 29</value>
   </data>
   <data name="tabPage8.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tabPage8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1579, 797</value>
+    <value>1579, 795</value>
   </data>
   <data name="tabPage8.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -2458,13 +2362,13 @@
     <value>8</value>
   </data>
   <data name="tabPage9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 27</value>
+    <value>4, 29</value>
   </data>
   <data name="tabPage9.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tabPage9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1579, 797</value>
+    <value>1579, 795</value>
   </data>
   <data name="tabPage9.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -2837,10 +2741,10 @@
     <value>8</value>
   </data>
   <data name="tabPage12.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 27</value>
+    <value>4, 29</value>
   </data>
   <data name="tabPage12.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1579, 797</value>
+    <value>1579, 795</value>
   </data>
   <data name="tabPage12.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -3071,6 +2975,9 @@
   <data name="bunifuFlatButton16.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
   </data>
+  <data name="bunifuFlatButton16.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="bunifuFlatButton16.Location" type="System.Drawing.Point, System.Drawing">
     <value>778, 315</value>
   </data>
@@ -3100,6 +3007,9 @@
   </data>
   <data name="bunifuFlatButton17.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
+  </data>
+  <data name="bunifuFlatButton17.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="bunifuFlatButton17.Location" type="System.Drawing.Point, System.Drawing">
     <value>629, 315</value>
@@ -3131,6 +3041,9 @@
   <data name="bunifuFlatButton18.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>None</value>
   </data>
+  <data name="bunifuFlatButton18.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="bunifuFlatButton18.Location" type="System.Drawing.Point, System.Drawing">
     <value>480, 315</value>
   </data>
@@ -3160,6 +3073,9 @@
   </data>
   <data name="bunifuFlatButton19.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
+  </data>
+  <data name="bunifuFlatButton19.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="bunifuFlatButton19.Location" type="System.Drawing.Point, System.Drawing">
     <value>331, 315</value>
@@ -3213,10 +3129,10 @@
     <value>8</value>
   </data>
   <data name="tabPage13.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 27</value>
+    <value>4, 29</value>
   </data>
   <data name="tabPage13.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1579, 797</value>
+    <value>1579, 795</value>
   </data>
   <data name="tabPage13.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -3258,10 +3174,10 @@
     <value>0</value>
   </data>
   <data name="tab1Productos.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 27</value>
+    <value>4, 29</value>
   </data>
   <data name="tab1Productos.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1610, 842</value>
+    <value>1610, 840</value>
   </data>
   <data name="tab1Productos.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -4237,13 +4153,13 @@
     <value>14</value>
   </data>
   <data name="tabPage6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 27</value>
+    <value>4, 29</value>
   </data>
   <data name="tabPage6.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tabPage6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1056, 472</value>
+    <value>1056, 470</value>
   </data>
   <data name="tabPage6.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -4492,13 +4408,13 @@
     <value>7</value>
   </data>
   <data name="tabPage7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 27</value>
+    <value>4, 29</value>
   </data>
   <data name="tabPage7.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tabPage7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1056, 472</value>
+    <value>1056, 470</value>
   </data>
   <data name="tabPage7.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -4517,6 +4433,30 @@
   </data>
   <data name="&gt;&gt;tabPage7.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="tabPage4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 29</value>
+  </data>
+  <data name="tabPage4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1056, 470</value>
+  </data>
+  <data name="tabPage4.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="tabPage4.Text" xml:space="preserve">
+    <value>permisos por usuario</value>
+  </data>
+  <data name="&gt;&gt;tabPage4.Name" xml:space="preserve">
+    <value>tabPage4</value>
+  </data>
+  <data name="&gt;&gt;tabPage4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage4.Parent" xml:space="preserve">
+    <value>tabControl2</value>
+  </data>
+  <data name="&gt;&gt;tabPage4.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="tabControl2.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 3</value>
@@ -4540,10 +4480,10 @@
     <value>0</value>
   </data>
   <data name="tab1Usuarios.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 27</value>
+    <value>4, 29</value>
   </data>
   <data name="tab1Usuarios.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1610, 842</value>
+    <value>1610, 840</value>
   </data>
   <data name="tab1Usuarios.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -4633,7 +4573,7 @@
 </value>
   </data>
   <data name="bunifuFlatButton36.Location" type="System.Drawing.Point, System.Drawing">
-    <value>232, 613</value>
+    <value>212, 745</value>
   </data>
   <data name="bunifuFlatButton36.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
@@ -4666,7 +4606,7 @@
     <value>NoControl</value>
   </data>
   <data name="labelUtilidad.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1168, 652</value>
+    <value>1403, 652</value>
   </data>
   <data name="labelUtilidad.Size" type="System.Drawing.Size, System.Drawing">
     <value>85, 13</value>
@@ -4696,7 +4636,7 @@
     <value>NoControl</value>
   </data>
   <data name="labelCostoTotalizado.Location" type="System.Drawing.Point, System.Drawing">
-    <value>819, 651</value>
+    <value>1042, 783</value>
   </data>
   <data name="labelCostoTotalizado.Size" type="System.Drawing.Size, System.Drawing">
     <value>85, 13</value>
@@ -4864,7 +4804,7 @@
     <value>Microsoft Sans Serif, 17.9999981pt, style=Bold, Italic</value>
   </data>
   <data name="textInsertarCodigo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 636</value>
+    <value>22, 768</value>
   </data>
   <data name="textInsertarCodigo.Size" type="System.Drawing.Size, System.Drawing">
     <value>153, 35</value>
@@ -4897,7 +4837,7 @@
     <value>NoControl</value>
   </data>
   <data name="labelInsertarCodigo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>35, 609</value>
+    <value>37, 741</value>
   </data>
   <data name="labelInsertarCodigo.Size" type="System.Drawing.Size, System.Drawing">
     <value>123, 24</value>
@@ -4993,7 +4933,7 @@
 </value>
   </data>
   <data name="bunifuFlatButton1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1171, 151</value>
+    <value>1406, 151</value>
   </data>
   <data name="bunifuFlatButton1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
@@ -5089,7 +5029,7 @@
 </value>
   </data>
   <data name="bunifuRestar1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1171, 221</value>
+    <value>1406, 221</value>
   </data>
   <data name="bunifuRestar1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
@@ -5185,7 +5125,7 @@
 </value>
   </data>
   <data name="buniActualizar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1171, 82</value>
+    <value>1406, 82</value>
   </data>
   <data name="buniActualizar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
@@ -5248,7 +5188,7 @@
     <value>Microsoft Sans Serif, 26.25pt</value>
   </data>
   <data name="textSumaTotal.Location" type="System.Drawing.Point, System.Drawing">
-    <value>954, 628</value>
+    <value>1177, 760</value>
   </data>
   <data name="textSumaTotal.Size" type="System.Drawing.Size, System.Drawing">
     <value>206, 47</value>
@@ -5292,7 +5232,7 @@
 </value>
   </data>
   <data name="buniBnFinalizar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1169, 333</value>
+    <value>1404, 333</value>
   </data>
   <data name="buniBnFinalizar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>6, 6, 6, 6</value>
@@ -5343,7 +5283,7 @@
     <value>51</value>
   </data>
   <data name="DataGridVentas.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1149, 530</value>
+    <value>1372, 662</value>
   </data>
   <data name="DataGridVentas.TabIndex" type="System.Int32, mscorlib">
     <value>80</value>
@@ -5385,7 +5325,7 @@
     <value>Microsoft Sans Serif, 26.25pt</value>
   </data>
   <data name="textFactura.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1171, 28</value>
+    <value>1406, 28</value>
   </data>
   <data name="textFactura.Size" type="System.Drawing.Size, System.Drawing">
     <value>167, 47</value>
@@ -5439,7 +5379,7 @@
     <value>NoControl</value>
   </data>
   <data name="labelFactura.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1213, 0</value>
+    <value>1448, 0</value>
   </data>
   <data name="labelFactura.Size" type="System.Drawing.Size, System.Drawing">
     <value>85, 25</value>
@@ -5748,7 +5688,7 @@
     <value>6, 6</value>
   </data>
   <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1355, 689</value>
+    <value>1598, 828</value>
   </data>
   <data name="panel1.TabIndex" type="System.Int32, mscorlib">
     <value>89</value>
@@ -5769,13 +5709,13 @@
     <value>Microsoft Sans Serif, 8.25pt</value>
   </data>
   <data name="tab1Ventas.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 27</value>
+    <value>4, 29</value>
   </data>
   <data name="tab1Ventas.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tab1Ventas.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1610, 842</value>
+    <value>1610, 840</value>
   </data>
   <data name="tab1Ventas.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -6214,10 +6154,10 @@
     <value>10</value>
   </data>
   <data name="tab1Almacen.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 27</value>
+    <value>4, 29</value>
   </data>
   <data name="tab1Almacen.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1610, 842</value>
+    <value>1610, 840</value>
   </data>
   <data name="tab1Almacen.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -7846,10 +7786,10 @@
     <value>1</value>
   </data>
   <data name="tab1Reportes.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 27</value>
+    <value>4, 29</value>
   </data>
   <data name="tab1Reportes.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1610, 842</value>
+    <value>1610, 840</value>
   </data>
   <data name="tab1Reportes.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -8400,13 +8340,13 @@
     <value>14</value>
   </data>
   <data name="gasto.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 27</value>
+    <value>4, 29</value>
   </data>
   <data name="gasto.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 3, 3, 3</value>
   </data>
   <data name="gasto.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1405, 687</value>
+    <value>1405, 685</value>
   </data>
   <data name="gasto.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -8779,13 +8719,13 @@
     <value>8</value>
   </data>
   <data name="tabPage31.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 27</value>
+    <value>4, 29</value>
   </data>
   <data name="tabPage31.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tabPage31.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1405, 687</value>
+    <value>1405, 685</value>
   </data>
   <data name="tabPage31.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -9392,10 +9332,10 @@
     <value>16</value>
   </data>
   <data name="tabPage30.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 27</value>
+    <value>4, 29</value>
   </data>
   <data name="tabPage30.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1405, 687</value>
+    <value>1405, 685</value>
   </data>
   <data name="tabPage30.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -9789,10 +9729,10 @@
     <value>9</value>
   </data>
   <data name="tabPage32.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 27</value>
+    <value>4, 29</value>
   </data>
   <data name="tabPage32.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1405, 687</value>
+    <value>1405, 685</value>
   </data>
   <data name="tabPage32.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -9834,10 +9774,10 @@
     <value>0</value>
   </data>
   <data name="tab1EntradasSalidas.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 27</value>
+    <value>4, 29</value>
   </data>
   <data name="tab1EntradasSalidas.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1610, 842</value>
+    <value>1610, 840</value>
   </data>
   <data name="tab1EntradasSalidas.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -9858,7 +9798,7 @@
     <value>6</value>
   </data>
   <data name="tabControl1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 11.25pt</value>
+    <value>Microsoft Sans Serif, 12pt</value>
   </data>
   <data name="tabControl1.Location" type="System.Drawing.Point, System.Drawing">
     <value>11, 38</value>
@@ -10359,11 +10299,14 @@
   <data name="&gt;&gt;bunifuGradientPanel1.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <metadata name="bunifuElipse2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>364, 19</value>
+  </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>48</value>
+    <value>53</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 13</value>
@@ -10398,10 +10341,52 @@
   <data name="&gt;&gt;notifyIcon1.Type" xml:space="preserve">
     <value>System.Windows.Forms.NotifyIcon, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;bunifuElipse2.Name" xml:space="preserve">
+    <value>bunifuElipse2</value>
+  </data>
+  <data name="&gt;&gt;bunifuElipse2.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuElipse, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bunifuElipse1.Name" xml:space="preserve">
+    <value>bunifuElipse1</value>
+  </data>
+  <data name="&gt;&gt;bunifuElipse1.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuElipse, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bunifuElipse3.Name" xml:space="preserve">
+    <value>bunifuElipse3</value>
+  </data>
+  <data name="&gt;&gt;bunifuElipse3.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuElipse, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bunifuElipse4.Name" xml:space="preserve">
+    <value>bunifuElipse4</value>
+  </data>
+  <data name="&gt;&gt;bunifuElipse4.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuElipse, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bunifuElipse5.Name" xml:space="preserve">
+    <value>bunifuElipse5</value>
+  </data>
+  <data name="&gt;&gt;bunifuElipse5.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuElipse, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>Form1</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <metadata name="bunifuElipse1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>493, 17</value>
+  </metadata>
+  <metadata name="bunifuElipse3.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>617, 17</value>
+  </metadata>
+  <metadata name="bunifuElipse4.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>741, 17</value>
+  </metadata>
+  <metadata name="bunifuElipse5.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>865, 17</value>
+  </metadata>
 </root>
