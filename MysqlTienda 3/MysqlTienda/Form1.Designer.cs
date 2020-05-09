@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -82,19 +81,18 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle44 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle45 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle46 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.tab1Inicio = new System.Windows.Forms.TabPage();
-            this.bunifuGradientPanel3 = new Bunifu.Framework.UI.BunifuGradientPanel();
-            this.bunifuGradientPanel2 = new Bunifu.Framework.UI.BunifuGradientPanel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.buniBtnLogin = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.buniTextPass = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.buniTextUsuario = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.labelCedula = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.labelVendedor = new System.Windows.Forms.Label();
-            this.labelCedula = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.buniTextUsuario = new Bunifu.Framework.UI.BunifuTextbox();
-            this.buniTextPass = new Bunifu.Framework.UI.BunifuTextbox();
-            this.buniBtnLogin = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.comboBoxCiudad = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.tab1Productos = new System.Windows.Forms.TabPage();
             this.tabControl3 = new System.Windows.Forms.TabControl();
             this.tabPage8 = new System.Windows.Forms.TabPage();
@@ -354,10 +352,11 @@
             this.labelAlmacen = new System.Windows.Forms.Label();
             this.buniCerrar = new Bunifu.Framework.UI.BunifuImageButton();
             this.buniMaxMin = new Bunifu.Framework.UI.BunifuImageButton();
+            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.panel2 = new System.Windows.Forms.Panel();
             this.tab1Inicio.SuspendLayout();
-            this.bunifuGradientPanel3.SuspendLayout();
-            this.bunifuGradientPanel2.SuspendLayout();
-            this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tab1Productos.SuspendLayout();
             this.tabControl3.SuspendLayout();
@@ -433,109 +432,38 @@
             // 
             // tab1Inicio
             // 
-            this.tab1Inicio.Controls.Add(this.bunifuGradientPanel3);
+            this.tab1Inicio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
+            this.tab1Inicio.Controls.Add(this.panel2);
+            this.tab1Inicio.Controls.Add(this.panel3);
             resources.ApplyResources(this.tab1Inicio, "tab1Inicio");
             this.tab1Inicio.Name = "tab1Inicio";
-            this.tab1Inicio.UseVisualStyleBackColor = true;
             // 
-            // bunifuGradientPanel3
+            // panel3
             // 
-            resources.ApplyResources(this.bunifuGradientPanel3, "bunifuGradientPanel3");
-            this.bunifuGradientPanel3.Controls.Add(this.bunifuGradientPanel2);
-            this.bunifuGradientPanel3.GradientBottomLeft = System.Drawing.Color.Empty;
-            this.bunifuGradientPanel3.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(192)))), ((int)(((byte)(206)))));
-            this.bunifuGradientPanel3.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(111)))), ((int)(((byte)(182)))));
-            this.bunifuGradientPanel3.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(60)))), ((int)(((byte)(166)))));
-            this.bunifuGradientPanel3.Name = "bunifuGradientPanel3";
-            this.bunifuGradientPanel3.Quality = 10;
-            // 
-            // bunifuGradientPanel2
-            // 
-            resources.ApplyResources(this.bunifuGradientPanel2, "bunifuGradientPanel2");
-            this.bunifuGradientPanel2.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuGradientPanel2.Controls.Add(this.panel2);
-            this.bunifuGradientPanel2.Controls.Add(this.label1);
-            this.bunifuGradientPanel2.Controls.Add(this.labelVendedor);
-            this.bunifuGradientPanel2.Controls.Add(this.labelCedula);
-            this.bunifuGradientPanel2.Controls.Add(this.label7);
-            this.bunifuGradientPanel2.Controls.Add(this.buniTextUsuario);
-            this.bunifuGradientPanel2.Controls.Add(this.buniTextPass);
-            this.bunifuGradientPanel2.Controls.Add(this.buniBtnLogin);
-            this.bunifuGradientPanel2.Controls.Add(this.comboBoxCiudad);
-            this.bunifuGradientPanel2.GradientBottomLeft = System.Drawing.Color.Empty;
-            this.bunifuGradientPanel2.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(47)))), ((int)(((byte)(130)))));
-            this.bunifuGradientPanel2.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(76)))), ((int)(((byte)(171)))));
-            this.bunifuGradientPanel2.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(47)))), ((int)(((byte)(130)))));
-            this.bunifuGradientPanel2.Name = "bunifuGradientPanel2";
-            this.bunifuGradientPanel2.Quality = 10;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Controls.Add(this.pictureBox1);
-            resources.ApplyResources(this.panel2, "panel2");
-            this.panel2.Name = "panel2";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::MysqlTienda.Properties.Resources.Logo_tendidos_del_Tolima;
-            resources.ApplyResources(this.pictureBox1, "pictureBox1");
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.TabStop = false;
-            // 
-            // label1
-            // 
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Name = "label1";
-            // 
-            // labelVendedor
-            // 
-            resources.ApplyResources(this.labelVendedor, "labelVendedor");
-            this.labelVendedor.Name = "labelVendedor";
-            // 
-            // labelCedula
-            // 
-            resources.ApplyResources(this.labelCedula, "labelCedula");
-            this.labelCedula.Name = "labelCedula";
-            // 
-            // label7
-            // 
-            resources.ApplyResources(this.label7, "label7");
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Name = "label7";
-            // 
-            // buniTextUsuario
-            // 
-            this.buniTextUsuario.BackColor = System.Drawing.Color.Gainsboro;
-            resources.ApplyResources(this.buniTextUsuario, "buniTextUsuario");
-            this.buniTextUsuario.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.buniTextUsuario.Icon = ((System.Drawing.Image)(resources.GetObject("buniTextUsuario.Icon")));
-            this.buniTextUsuario.Name = "buniTextUsuario";
-            this.buniTextUsuario.text = "Usuario";
-            // 
-            // buniTextPass
-            // 
-            this.buniTextPass.BackColor = System.Drawing.Color.Gainsboro;
-            resources.ApplyResources(this.buniTextPass, "buniTextPass");
-            this.buniTextPass.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.buniTextPass.Icon = ((System.Drawing.Image)(resources.GetObject("buniTextPass.Icon")));
-            this.buniTextPass.Name = "buniTextPass";
-            this.buniTextPass.text = "Contraseña";
+            this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.Controls.Add(this.buniBtnLogin);
+            this.panel3.Controls.Add(this.buniTextPass);
+            this.panel3.Controls.Add(this.buniTextUsuario);
+            this.panel3.Controls.Add(this.labelCedula);
+            this.panel3.Controls.Add(this.label1);
+            this.panel3.Controls.Add(this.labelVendedor);
+            this.panel3.Controls.Add(this.pictureBox1);
+            this.panel3.Controls.Add(this.comboBoxCiudad);
+            this.panel3.Controls.Add(this.label7);
+            resources.ApplyResources(this.panel3, "panel3");
+            this.panel3.Name = "panel3";
             // 
             // buniBtnLogin
             // 
-            this.buniBtnLogin.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(185)))), ((int)(((byte)(200)))));
-            this.buniBtnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(185)))), ((int)(((byte)(204)))));
+            this.buniBtnLogin.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
+            this.buniBtnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
             resources.ApplyResources(this.buniBtnLogin, "buniBtnLogin");
             this.buniBtnLogin.BorderRadius = 0;
-            this.buniBtnLogin.ButtonText = "Login";
+            this.buniBtnLogin.ButtonText = "Entrar";
             this.buniBtnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buniBtnLogin.DisabledColor = System.Drawing.Color.Gray;
             this.buniBtnLogin.Iconcolor = System.Drawing.Color.Transparent;
-            this.buniBtnLogin.Iconimage = ((System.Drawing.Image)(resources.GetObject("buniBtnLogin.Iconimage")));
+            this.buniBtnLogin.Iconimage = null;
             this.buniBtnLogin.Iconimage_right = null;
             this.buniBtnLogin.Iconimage_right_Selected = null;
             this.buniBtnLogin.Iconimage_Selected = null;
@@ -547,14 +475,68 @@
             this.buniBtnLogin.IconZoom = 90D;
             this.buniBtnLogin.IsTab = false;
             this.buniBtnLogin.Name = "buniBtnLogin";
-            this.buniBtnLogin.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(185)))), ((int)(((byte)(204)))));
+            this.buniBtnLogin.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
             this.buniBtnLogin.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.buniBtnLogin.OnHoverTextColor = System.Drawing.Color.White;
             this.buniBtnLogin.selected = false;
-            this.buniBtnLogin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buniBtnLogin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.buniBtnLogin.Textcolor = System.Drawing.Color.White;
-            this.buniBtnLogin.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buniBtnLogin.Click += new System.EventHandler(this.buniBtnLogin_Click);
+            this.buniBtnLogin.TextFont = new System.Drawing.Font("Rockwell", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buniBtnLogin.Click += new System.EventHandler(this.buniBtnLogin_Click_1);
+            // 
+            // buniTextPass
+            // 
+            this.buniTextPass.Cursor = System.Windows.Forms.Cursors.IBeam;
+            resources.ApplyResources(this.buniTextPass, "buniTextPass");
+            this.buniTextPass.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.buniTextPass.HintForeColor = System.Drawing.Color.Empty;
+            this.buniTextPass.HintText = "";
+            this.buniTextPass.isPassword = false;
+            this.buniTextPass.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.buniTextPass.LineIdleColor = System.Drawing.Color.Gray;
+            this.buniTextPass.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.buniTextPass.LineThickness = 3;
+            this.buniTextPass.Name = "buniTextPass";
+            this.buniTextPass.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // buniTextUsuario
+            // 
+            this.buniTextUsuario.Cursor = System.Windows.Forms.Cursors.IBeam;
+            resources.ApplyResources(this.buniTextUsuario, "buniTextUsuario");
+            this.buniTextUsuario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.buniTextUsuario.HintForeColor = System.Drawing.Color.Empty;
+            this.buniTextUsuario.HintText = "";
+            this.buniTextUsuario.isPassword = false;
+            this.buniTextUsuario.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.buniTextUsuario.LineIdleColor = System.Drawing.Color.Gray;
+            this.buniTextUsuario.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.buniTextUsuario.LineThickness = 3;
+            this.buniTextUsuario.Name = "buniTextUsuario";
+            this.buniTextUsuario.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // labelCedula
+            // 
+            resources.ApplyResources(this.labelCedula, "labelCedula");
+            this.labelCedula.Name = "labelCedula";
+            // 
+            // label1
+            // 
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Name = "label1";
+            // 
+            // labelVendedor
+            // 
+            resources.ApplyResources(this.labelVendedor, "labelVendedor");
+            this.labelVendedor.Name = "labelVendedor";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::MysqlTienda.Properties.Resources.Logo_tendidos_del_Tolima;
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.TabStop = false;
             // 
             // comboBoxCiudad
             // 
@@ -562,6 +544,13 @@
             resources.ApplyResources(this.comboBoxCiudad, "comboBoxCiudad");
             this.comboBoxCiudad.Name = "comboBoxCiudad";
             this.comboBoxCiudad.TextChanged += new System.EventHandler(this.comboBox1_TextChanged);
+            // 
+            // label7
+            // 
+            resources.ApplyResources(this.label7, "label7");
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.ForeColor = System.Drawing.Color.Black;
+            this.label7.Name = "label7";
             // 
             // tab1Productos
             // 
@@ -669,7 +658,7 @@
             // bunifuFlatButton2
             // 
             this.bunifuFlatButton2.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.bunifuFlatButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
             resources.ApplyResources(this.bunifuFlatButton2, "bunifuFlatButton2");
             this.bunifuFlatButton2.BorderRadius = 0;
             this.bunifuFlatButton2.ButtonText = "cargar";
@@ -688,8 +677,8 @@
             this.bunifuFlatButton2.IconZoom = 90D;
             this.bunifuFlatButton2.IsTab = false;
             this.bunifuFlatButton2.Name = "bunifuFlatButton2";
-            this.bunifuFlatButton2.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton2.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.bunifuFlatButton2.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
+            this.bunifuFlatButton2.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.bunifuFlatButton2.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton2.selected = false;
             this.bunifuFlatButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -729,7 +718,7 @@
             // bunifuFlatButton3
             // 
             this.bunifuFlatButton3.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.bunifuFlatButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
             resources.ApplyResources(this.bunifuFlatButton3, "bunifuFlatButton3");
             this.bunifuFlatButton3.BorderRadius = 0;
             this.bunifuFlatButton3.ButtonText = "Modificar";
@@ -748,8 +737,8 @@
             this.bunifuFlatButton3.IconZoom = 90D;
             this.bunifuFlatButton3.IsTab = false;
             this.bunifuFlatButton3.Name = "bunifuFlatButton3";
-            this.bunifuFlatButton3.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton3.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.bunifuFlatButton3.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
+            this.bunifuFlatButton3.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.bunifuFlatButton3.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton3.selected = false;
             this.bunifuFlatButton3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -760,7 +749,7 @@
             // bunifuFlatButton4
             // 
             this.bunifuFlatButton4.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.bunifuFlatButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
             resources.ApplyResources(this.bunifuFlatButton4, "bunifuFlatButton4");
             this.bunifuFlatButton4.BorderRadius = 0;
             this.bunifuFlatButton4.ButtonText = "Eliminar";
@@ -779,8 +768,8 @@
             this.bunifuFlatButton4.IconZoom = 90D;
             this.bunifuFlatButton4.IsTab = false;
             this.bunifuFlatButton4.Name = "bunifuFlatButton4";
-            this.bunifuFlatButton4.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton4.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.bunifuFlatButton4.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
+            this.bunifuFlatButton4.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.bunifuFlatButton4.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton4.selected = false;
             this.bunifuFlatButton4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -801,7 +790,7 @@
             // bunifuFlatButton5
             // 
             this.bunifuFlatButton5.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.bunifuFlatButton5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
             resources.ApplyResources(this.bunifuFlatButton5, "bunifuFlatButton5");
             this.bunifuFlatButton5.BorderRadius = 0;
             this.bunifuFlatButton5.ButtonText = "Agregar";
@@ -820,8 +809,8 @@
             this.bunifuFlatButton5.IconZoom = 90D;
             this.bunifuFlatButton5.IsTab = false;
             this.bunifuFlatButton5.Name = "bunifuFlatButton5";
-            this.bunifuFlatButton5.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton5.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.bunifuFlatButton5.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
+            this.bunifuFlatButton5.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.bunifuFlatButton5.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton5.selected = false;
             this.bunifuFlatButton5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -955,7 +944,7 @@
             // ButtonCargarDepartamento
             // 
             this.ButtonCargarDepartamento.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.ButtonCargarDepartamento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.ButtonCargarDepartamento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
             resources.ApplyResources(this.ButtonCargarDepartamento, "ButtonCargarDepartamento");
             this.ButtonCargarDepartamento.BorderRadius = 0;
             this.ButtonCargarDepartamento.ButtonText = "Cargar";
@@ -974,8 +963,8 @@
             this.ButtonCargarDepartamento.IconZoom = 90D;
             this.ButtonCargarDepartamento.IsTab = false;
             this.ButtonCargarDepartamento.Name = "ButtonCargarDepartamento";
-            this.ButtonCargarDepartamento.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.ButtonCargarDepartamento.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.ButtonCargarDepartamento.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
+            this.ButtonCargarDepartamento.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.ButtonCargarDepartamento.OnHoverTextColor = System.Drawing.Color.White;
             this.ButtonCargarDepartamento.selected = false;
             this.ButtonCargarDepartamento.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -998,7 +987,7 @@
             // bunifuFlatButton7
             // 
             this.bunifuFlatButton7.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.bunifuFlatButton7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
             resources.ApplyResources(this.bunifuFlatButton7, "bunifuFlatButton7");
             this.bunifuFlatButton7.BorderRadius = 0;
             this.bunifuFlatButton7.ButtonText = "Modificar";
@@ -1017,8 +1006,8 @@
             this.bunifuFlatButton7.IconZoom = 90D;
             this.bunifuFlatButton7.IsTab = false;
             this.bunifuFlatButton7.Name = "bunifuFlatButton7";
-            this.bunifuFlatButton7.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton7.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.bunifuFlatButton7.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
+            this.bunifuFlatButton7.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.bunifuFlatButton7.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton7.selected = false;
             this.bunifuFlatButton7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1029,7 +1018,7 @@
             // bunifuFlatButton10
             // 
             this.bunifuFlatButton10.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.bunifuFlatButton10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
             resources.ApplyResources(this.bunifuFlatButton10, "bunifuFlatButton10");
             this.bunifuFlatButton10.BorderRadius = 0;
             this.bunifuFlatButton10.ButtonText = "Eliminar";
@@ -1048,8 +1037,8 @@
             this.bunifuFlatButton10.IconZoom = 90D;
             this.bunifuFlatButton10.IsTab = false;
             this.bunifuFlatButton10.Name = "bunifuFlatButton10";
-            this.bunifuFlatButton10.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton10.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.bunifuFlatButton10.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
+            this.bunifuFlatButton10.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.bunifuFlatButton10.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton10.selected = false;
             this.bunifuFlatButton10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1060,7 +1049,7 @@
             // bunifuFlatButton11
             // 
             this.bunifuFlatButton11.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.bunifuFlatButton11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
             resources.ApplyResources(this.bunifuFlatButton11, "bunifuFlatButton11");
             this.bunifuFlatButton11.BorderRadius = 0;
             this.bunifuFlatButton11.ButtonText = "Agregar";
@@ -1079,8 +1068,8 @@
             this.bunifuFlatButton11.IconZoom = 90D;
             this.bunifuFlatButton11.IsTab = false;
             this.bunifuFlatButton11.Name = "bunifuFlatButton11";
-            this.bunifuFlatButton11.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton11.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.bunifuFlatButton11.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
+            this.bunifuFlatButton11.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.bunifuFlatButton11.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton11.selected = false;
             this.bunifuFlatButton11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1186,7 +1175,7 @@
             // bunifuFlatButton13
             // 
             this.bunifuFlatButton13.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.bunifuFlatButton13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
             resources.ApplyResources(this.bunifuFlatButton13, "bunifuFlatButton13");
             this.bunifuFlatButton13.BorderRadius = 0;
             this.bunifuFlatButton13.ButtonText = "Modificar";
@@ -1205,8 +1194,8 @@
             this.bunifuFlatButton13.IconZoom = 90D;
             this.bunifuFlatButton13.IsTab = false;
             this.bunifuFlatButton13.Name = "bunifuFlatButton13";
-            this.bunifuFlatButton13.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton13.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.bunifuFlatButton13.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
+            this.bunifuFlatButton13.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.bunifuFlatButton13.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton13.selected = false;
             this.bunifuFlatButton13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1217,7 +1206,7 @@
             // bunifuFlatButton14
             // 
             this.bunifuFlatButton14.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.bunifuFlatButton14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
             resources.ApplyResources(this.bunifuFlatButton14, "bunifuFlatButton14");
             this.bunifuFlatButton14.BorderRadius = 0;
             this.bunifuFlatButton14.ButtonText = "Eliminar";
@@ -1236,8 +1225,8 @@
             this.bunifuFlatButton14.IconZoom = 90D;
             this.bunifuFlatButton14.IsTab = false;
             this.bunifuFlatButton14.Name = "bunifuFlatButton14";
-            this.bunifuFlatButton14.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton14.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.bunifuFlatButton14.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
+            this.bunifuFlatButton14.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.bunifuFlatButton14.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton14.selected = false;
             this.bunifuFlatButton14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1248,7 +1237,7 @@
             // bunifuFlatButton15
             // 
             this.bunifuFlatButton15.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.bunifuFlatButton15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
             resources.ApplyResources(this.bunifuFlatButton15, "bunifuFlatButton15");
             this.bunifuFlatButton15.BorderRadius = 0;
             this.bunifuFlatButton15.ButtonText = "Agregar";
@@ -1267,8 +1256,8 @@
             this.bunifuFlatButton15.IconZoom = 90D;
             this.bunifuFlatButton15.IsTab = false;
             this.bunifuFlatButton15.Name = "bunifuFlatButton15";
-            this.bunifuFlatButton15.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton15.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.bunifuFlatButton15.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
+            this.bunifuFlatButton15.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.bunifuFlatButton15.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton15.selected = false;
             this.bunifuFlatButton15.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1279,7 +1268,7 @@
             // ButtonCargarTamano
             // 
             this.ButtonCargarTamano.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.ButtonCargarTamano.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.ButtonCargarTamano.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
             resources.ApplyResources(this.ButtonCargarTamano, "ButtonCargarTamano");
             this.ButtonCargarTamano.BorderRadius = 0;
             this.ButtonCargarTamano.ButtonText = "Cargar";
@@ -1298,8 +1287,8 @@
             this.ButtonCargarTamano.IconZoom = 90D;
             this.ButtonCargarTamano.IsTab = false;
             this.ButtonCargarTamano.Name = "ButtonCargarTamano";
-            this.ButtonCargarTamano.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.ButtonCargarTamano.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.ButtonCargarTamano.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
+            this.ButtonCargarTamano.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.ButtonCargarTamano.OnHoverTextColor = System.Drawing.Color.White;
             this.ButtonCargarTamano.selected = false;
             this.ButtonCargarTamano.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1386,7 +1375,7 @@
             // bunifuFlatButton16
             // 
             this.bunifuFlatButton16.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.bunifuFlatButton16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
             resources.ApplyResources(this.bunifuFlatButton16, "bunifuFlatButton16");
             this.bunifuFlatButton16.BorderRadius = 0;
             this.bunifuFlatButton16.ButtonText = "Modificar";
@@ -1405,8 +1394,8 @@
             this.bunifuFlatButton16.IconZoom = 90D;
             this.bunifuFlatButton16.IsTab = false;
             this.bunifuFlatButton16.Name = "bunifuFlatButton16";
-            this.bunifuFlatButton16.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton16.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.bunifuFlatButton16.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
+            this.bunifuFlatButton16.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.bunifuFlatButton16.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton16.selected = false;
             this.bunifuFlatButton16.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1416,7 +1405,7 @@
             // bunifuFlatButton17
             // 
             this.bunifuFlatButton17.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.bunifuFlatButton17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
             resources.ApplyResources(this.bunifuFlatButton17, "bunifuFlatButton17");
             this.bunifuFlatButton17.BorderRadius = 0;
             this.bunifuFlatButton17.ButtonText = "Eliminar";
@@ -1435,8 +1424,8 @@
             this.bunifuFlatButton17.IconZoom = 90D;
             this.bunifuFlatButton17.IsTab = false;
             this.bunifuFlatButton17.Name = "bunifuFlatButton17";
-            this.bunifuFlatButton17.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton17.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.bunifuFlatButton17.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
+            this.bunifuFlatButton17.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.bunifuFlatButton17.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton17.selected = false;
             this.bunifuFlatButton17.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1446,7 +1435,7 @@
             // bunifuFlatButton18
             // 
             this.bunifuFlatButton18.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.bunifuFlatButton18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
             resources.ApplyResources(this.bunifuFlatButton18, "bunifuFlatButton18");
             this.bunifuFlatButton18.BorderRadius = 0;
             this.bunifuFlatButton18.ButtonText = "Agregar";
@@ -1465,8 +1454,8 @@
             this.bunifuFlatButton18.IconZoom = 90D;
             this.bunifuFlatButton18.IsTab = false;
             this.bunifuFlatButton18.Name = "bunifuFlatButton18";
-            this.bunifuFlatButton18.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton18.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.bunifuFlatButton18.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
+            this.bunifuFlatButton18.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.bunifuFlatButton18.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton18.selected = false;
             this.bunifuFlatButton18.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1476,7 +1465,7 @@
             // bunifuFlatButton19
             // 
             this.bunifuFlatButton19.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.bunifuFlatButton19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
             resources.ApplyResources(this.bunifuFlatButton19, "bunifuFlatButton19");
             this.bunifuFlatButton19.BorderRadius = 0;
             this.bunifuFlatButton19.ButtonText = "Cargar";
@@ -1495,8 +1484,8 @@
             this.bunifuFlatButton19.IconZoom = 90D;
             this.bunifuFlatButton19.IsTab = false;
             this.bunifuFlatButton19.Name = "bunifuFlatButton19";
-            this.bunifuFlatButton19.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton19.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.bunifuFlatButton19.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
+            this.bunifuFlatButton19.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.bunifuFlatButton19.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton19.selected = false;
             this.bunifuFlatButton19.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1604,7 +1593,7 @@
             // ButtonUsuarioCargar
             // 
             this.ButtonUsuarioCargar.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.ButtonUsuarioCargar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.ButtonUsuarioCargar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
             resources.ApplyResources(this.ButtonUsuarioCargar, "ButtonUsuarioCargar");
             this.ButtonUsuarioCargar.BorderRadius = 0;
             this.ButtonUsuarioCargar.ButtonText = "cargar";
@@ -1623,8 +1612,8 @@
             this.ButtonUsuarioCargar.IconZoom = 90D;
             this.ButtonUsuarioCargar.IsTab = false;
             this.ButtonUsuarioCargar.Name = "ButtonUsuarioCargar";
-            this.ButtonUsuarioCargar.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.ButtonUsuarioCargar.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.ButtonUsuarioCargar.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
+            this.ButtonUsuarioCargar.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.ButtonUsuarioCargar.OnHoverTextColor = System.Drawing.Color.White;
             this.ButtonUsuarioCargar.selected = false;
             this.ButtonUsuarioCargar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1646,7 +1635,7 @@
             // ButtonUsuarioModificar
             // 
             this.ButtonUsuarioModificar.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.ButtonUsuarioModificar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.ButtonUsuarioModificar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
             resources.ApplyResources(this.ButtonUsuarioModificar, "ButtonUsuarioModificar");
             this.ButtonUsuarioModificar.BorderRadius = 0;
             this.ButtonUsuarioModificar.ButtonText = "Modificar";
@@ -1665,8 +1654,8 @@
             this.ButtonUsuarioModificar.IconZoom = 90D;
             this.ButtonUsuarioModificar.IsTab = false;
             this.ButtonUsuarioModificar.Name = "ButtonUsuarioModificar";
-            this.ButtonUsuarioModificar.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.ButtonUsuarioModificar.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.ButtonUsuarioModificar.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
+            this.ButtonUsuarioModificar.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.ButtonUsuarioModificar.OnHoverTextColor = System.Drawing.Color.White;
             this.ButtonUsuarioModificar.selected = false;
             this.ButtonUsuarioModificar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1677,7 +1666,7 @@
             // ButtonUsuarioEliminar
             // 
             this.ButtonUsuarioEliminar.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.ButtonUsuarioEliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.ButtonUsuarioEliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
             resources.ApplyResources(this.ButtonUsuarioEliminar, "ButtonUsuarioEliminar");
             this.ButtonUsuarioEliminar.BorderRadius = 0;
             this.ButtonUsuarioEliminar.ButtonText = "Eliminar";
@@ -1696,8 +1685,8 @@
             this.ButtonUsuarioEliminar.IconZoom = 90D;
             this.ButtonUsuarioEliminar.IsTab = false;
             this.ButtonUsuarioEliminar.Name = "ButtonUsuarioEliminar";
-            this.ButtonUsuarioEliminar.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.ButtonUsuarioEliminar.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.ButtonUsuarioEliminar.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
+            this.ButtonUsuarioEliminar.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.ButtonUsuarioEliminar.OnHoverTextColor = System.Drawing.Color.White;
             this.ButtonUsuarioEliminar.selected = false;
             this.ButtonUsuarioEliminar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1714,7 +1703,7 @@
             // ButtonUsuarioAgregar
             // 
             this.ButtonUsuarioAgregar.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.ButtonUsuarioAgregar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.ButtonUsuarioAgregar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
             resources.ApplyResources(this.ButtonUsuarioAgregar, "ButtonUsuarioAgregar");
             this.ButtonUsuarioAgregar.BorderRadius = 0;
             this.ButtonUsuarioAgregar.ButtonText = "Agregar";
@@ -1733,8 +1722,8 @@
             this.ButtonUsuarioAgregar.IconZoom = 90D;
             this.ButtonUsuarioAgregar.IsTab = false;
             this.ButtonUsuarioAgregar.Name = "ButtonUsuarioAgregar";
-            this.ButtonUsuarioAgregar.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.ButtonUsuarioAgregar.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.ButtonUsuarioAgregar.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
+            this.ButtonUsuarioAgregar.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.ButtonUsuarioAgregar.OnHoverTextColor = System.Drawing.Color.White;
             this.ButtonUsuarioAgregar.selected = false;
             this.ButtonUsuarioAgregar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1832,7 +1821,7 @@
             // ButtonEliminarPeAl
             // 
             this.ButtonEliminarPeAl.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.ButtonEliminarPeAl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.ButtonEliminarPeAl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
             resources.ApplyResources(this.ButtonEliminarPeAl, "ButtonEliminarPeAl");
             this.ButtonEliminarPeAl.BorderRadius = 0;
             this.ButtonEliminarPeAl.ButtonText = "Eliminar";
@@ -1851,8 +1840,8 @@
             this.ButtonEliminarPeAl.IconZoom = 90D;
             this.ButtonEliminarPeAl.IsTab = false;
             this.ButtonEliminarPeAl.Name = "ButtonEliminarPeAl";
-            this.ButtonEliminarPeAl.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.ButtonEliminarPeAl.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.ButtonEliminarPeAl.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
+            this.ButtonEliminarPeAl.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.ButtonEliminarPeAl.OnHoverTextColor = System.Drawing.Color.White;
             this.ButtonEliminarPeAl.selected = false;
             this.ButtonEliminarPeAl.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1863,7 +1852,7 @@
             // ButtonAgregarPeAl
             // 
             this.ButtonAgregarPeAl.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.ButtonAgregarPeAl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.ButtonAgregarPeAl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
             resources.ApplyResources(this.ButtonAgregarPeAl, "ButtonAgregarPeAl");
             this.ButtonAgregarPeAl.BorderRadius = 0;
             this.ButtonAgregarPeAl.ButtonText = "Agregar";
@@ -1882,8 +1871,8 @@
             this.ButtonAgregarPeAl.IconZoom = 90D;
             this.ButtonAgregarPeAl.IsTab = false;
             this.ButtonAgregarPeAl.Name = "ButtonAgregarPeAl";
-            this.ButtonAgregarPeAl.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.ButtonAgregarPeAl.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.ButtonAgregarPeAl.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
+            this.ButtonAgregarPeAl.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.ButtonAgregarPeAl.OnHoverTextColor = System.Drawing.Color.White;
             this.ButtonAgregarPeAl.selected = false;
             this.ButtonAgregarPeAl.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1894,7 +1883,7 @@
             // ButtonCargarPeAl
             // 
             this.ButtonCargarPeAl.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.ButtonCargarPeAl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.ButtonCargarPeAl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
             resources.ApplyResources(this.ButtonCargarPeAl, "ButtonCargarPeAl");
             this.ButtonCargarPeAl.BorderRadius = 0;
             this.ButtonCargarPeAl.ButtonText = "Cargar";
@@ -1913,8 +1902,8 @@
             this.ButtonCargarPeAl.IconZoom = 90D;
             this.ButtonCargarPeAl.IsTab = false;
             this.ButtonCargarPeAl.Name = "ButtonCargarPeAl";
-            this.ButtonCargarPeAl.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.ButtonCargarPeAl.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.ButtonCargarPeAl.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
+            this.ButtonCargarPeAl.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.ButtonCargarPeAl.OnHoverTextColor = System.Drawing.Color.White;
             this.ButtonCargarPeAl.selected = false;
             this.ButtonCargarPeAl.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -2010,7 +1999,7 @@
             // bunifuFlatButton36
             // 
             this.bunifuFlatButton36.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton36.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.bunifuFlatButton36.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
             resources.ApplyResources(this.bunifuFlatButton36, "bunifuFlatButton36");
             this.bunifuFlatButton36.BorderRadius = 0;
             this.bunifuFlatButton36.ButtonText = "pruebas";
@@ -2029,8 +2018,8 @@
             this.bunifuFlatButton36.IconZoom = 90D;
             this.bunifuFlatButton36.IsTab = false;
             this.bunifuFlatButton36.Name = "bunifuFlatButton36";
-            this.bunifuFlatButton36.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton36.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.bunifuFlatButton36.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
+            this.bunifuFlatButton36.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.bunifuFlatButton36.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton36.selected = false;
             this.bunifuFlatButton36.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -2092,7 +2081,7 @@
             // bunifuFlatButton1
             // 
             this.bunifuFlatButton1.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.bunifuFlatButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
             resources.ApplyResources(this.bunifuFlatButton1, "bunifuFlatButton1");
             this.bunifuFlatButton1.BorderRadius = 0;
             this.bunifuFlatButton1.ButtonText = "Eliminar";
@@ -2111,8 +2100,8 @@
             this.bunifuFlatButton1.IconZoom = 90D;
             this.bunifuFlatButton1.IsTab = false;
             this.bunifuFlatButton1.Name = "bunifuFlatButton1";
-            this.bunifuFlatButton1.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton1.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.bunifuFlatButton1.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
+            this.bunifuFlatButton1.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.bunifuFlatButton1.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton1.selected = false;
             this.bunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -2123,7 +2112,7 @@
             // bunifuRestar1
             // 
             this.bunifuRestar1.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuRestar1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.bunifuRestar1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
             resources.ApplyResources(this.bunifuRestar1, "bunifuRestar1");
             this.bunifuRestar1.BorderRadius = 0;
             this.bunifuRestar1.ButtonText = "Restar 1 producto";
@@ -2142,8 +2131,8 @@
             this.bunifuRestar1.IconZoom = 90D;
             this.bunifuRestar1.IsTab = false;
             this.bunifuRestar1.Name = "bunifuRestar1";
-            this.bunifuRestar1.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuRestar1.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.bunifuRestar1.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
+            this.bunifuRestar1.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.bunifuRestar1.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuRestar1.selected = false;
             this.bunifuRestar1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -2154,7 +2143,7 @@
             // buniActualizar
             // 
             this.buniActualizar.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.buniActualizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.buniActualizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
             resources.ApplyResources(this.buniActualizar, "buniActualizar");
             this.buniActualizar.BorderRadius = 0;
             this.buniActualizar.ButtonText = "Modificar dato";
@@ -2173,8 +2162,8 @@
             this.buniActualizar.IconZoom = 90D;
             this.buniActualizar.IsTab = false;
             this.buniActualizar.Name = "buniActualizar";
-            this.buniActualizar.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.buniActualizar.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.buniActualizar.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
+            this.buniActualizar.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.buniActualizar.OnHoverTextColor = System.Drawing.Color.White;
             this.buniActualizar.selected = false;
             this.buniActualizar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -2198,7 +2187,7 @@
             // 
             // buniBnFinalizar
             // 
-            this.buniBnFinalizar.BackColor = System.Drawing.Color.SeaGreen;
+            this.buniBnFinalizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
             this.buniBnFinalizar.color = System.Drawing.Color.SeaGreen;
             this.buniBnFinalizar.colorActive = System.Drawing.Color.MediumSeaGreen;
             this.buniBnFinalizar.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -2386,7 +2375,7 @@
             // bunifuFlatButton6
             // 
             this.bunifuFlatButton6.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.bunifuFlatButton6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
             resources.ApplyResources(this.bunifuFlatButton6, "bunifuFlatButton6");
             this.bunifuFlatButton6.BorderRadius = 0;
             this.bunifuFlatButton6.ButtonText = "Modificar";
@@ -2405,8 +2394,8 @@
             this.bunifuFlatButton6.IconZoom = 90D;
             this.bunifuFlatButton6.IsTab = false;
             this.bunifuFlatButton6.Name = "bunifuFlatButton6";
-            this.bunifuFlatButton6.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton6.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.bunifuFlatButton6.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
+            this.bunifuFlatButton6.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.bunifuFlatButton6.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton6.selected = false;
             this.bunifuFlatButton6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -2417,7 +2406,7 @@
             // ButtonElimarAlmacen
             // 
             this.ButtonElimarAlmacen.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.ButtonElimarAlmacen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.ButtonElimarAlmacen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
             resources.ApplyResources(this.ButtonElimarAlmacen, "ButtonElimarAlmacen");
             this.ButtonElimarAlmacen.BorderRadius = 0;
             this.ButtonElimarAlmacen.ButtonText = "Eliminar";
@@ -2436,8 +2425,8 @@
             this.ButtonElimarAlmacen.IconZoom = 90D;
             this.ButtonElimarAlmacen.IsTab = false;
             this.ButtonElimarAlmacen.Name = "ButtonElimarAlmacen";
-            this.ButtonElimarAlmacen.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.ButtonElimarAlmacen.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.ButtonElimarAlmacen.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
+            this.ButtonElimarAlmacen.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.ButtonElimarAlmacen.OnHoverTextColor = System.Drawing.Color.White;
             this.ButtonElimarAlmacen.selected = false;
             this.ButtonElimarAlmacen.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -2448,7 +2437,7 @@
             // bunifuFlatButton8
             // 
             this.bunifuFlatButton8.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.bunifuFlatButton8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
             resources.ApplyResources(this.bunifuFlatButton8, "bunifuFlatButton8");
             this.bunifuFlatButton8.BorderRadius = 0;
             this.bunifuFlatButton8.ButtonText = "Agregar";
@@ -2467,8 +2456,8 @@
             this.bunifuFlatButton8.IconZoom = 90D;
             this.bunifuFlatButton8.IsTab = false;
             this.bunifuFlatButton8.Name = "bunifuFlatButton8";
-            this.bunifuFlatButton8.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton8.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.bunifuFlatButton8.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
+            this.bunifuFlatButton8.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.bunifuFlatButton8.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton8.selected = false;
             this.bunifuFlatButton8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -2479,7 +2468,7 @@
             // bunifuFlatButton9
             // 
             this.bunifuFlatButton9.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.bunifuFlatButton9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
             resources.ApplyResources(this.bunifuFlatButton9, "bunifuFlatButton9");
             this.bunifuFlatButton9.BorderRadius = 0;
             this.bunifuFlatButton9.ButtonText = "Cargar";
@@ -2498,8 +2487,8 @@
             this.bunifuFlatButton9.IconZoom = 90D;
             this.bunifuFlatButton9.IsTab = false;
             this.bunifuFlatButton9.Name = "bunifuFlatButton9";
-            this.bunifuFlatButton9.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton9.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.bunifuFlatButton9.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
+            this.bunifuFlatButton9.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.bunifuFlatButton9.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton9.selected = false;
             this.bunifuFlatButton9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -2638,7 +2627,7 @@
             // buttonGenerarReporte
             // 
             this.buttonGenerarReporte.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.buttonGenerarReporte.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.buttonGenerarReporte.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
             resources.ApplyResources(this.buttonGenerarReporte, "buttonGenerarReporte");
             this.buttonGenerarReporte.BorderRadius = 0;
             this.buttonGenerarReporte.ButtonText = "Generar reporte";
@@ -2657,8 +2646,8 @@
             this.buttonGenerarReporte.IconZoom = 90D;
             this.buttonGenerarReporte.IsTab = false;
             this.buttonGenerarReporte.Name = "buttonGenerarReporte";
-            this.buttonGenerarReporte.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.buttonGenerarReporte.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.buttonGenerarReporte.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
+            this.buttonGenerarReporte.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.buttonGenerarReporte.OnHoverTextColor = System.Drawing.Color.White;
             this.buttonGenerarReporte.selected = false;
             this.buttonGenerarReporte.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -2855,7 +2844,7 @@
             // bunifuFlatButton20
             // 
             this.bunifuFlatButton20.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.bunifuFlatButton20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
             resources.ApplyResources(this.bunifuFlatButton20, "bunifuFlatButton20");
             this.bunifuFlatButton20.BorderRadius = 0;
             this.bunifuFlatButton20.ButtonText = "Generar reporte";
@@ -2874,8 +2863,8 @@
             this.bunifuFlatButton20.IconZoom = 90D;
             this.bunifuFlatButton20.IsTab = false;
             this.bunifuFlatButton20.Name = "bunifuFlatButton20";
-            this.bunifuFlatButton20.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton20.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.bunifuFlatButton20.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
+            this.bunifuFlatButton20.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.bunifuFlatButton20.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton20.selected = false;
             this.bunifuFlatButton20.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -3324,7 +3313,7 @@
             // bunifuFlatButton23
             // 
             this.bunifuFlatButton23.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.bunifuFlatButton23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
             resources.ApplyResources(this.bunifuFlatButton23, "bunifuFlatButton23");
             this.bunifuFlatButton23.BorderRadius = 0;
             this.bunifuFlatButton23.ButtonText = "Modificar";
@@ -3343,8 +3332,8 @@
             this.bunifuFlatButton23.IconZoom = 90D;
             this.bunifuFlatButton23.IsTab = false;
             this.bunifuFlatButton23.Name = "bunifuFlatButton23";
-            this.bunifuFlatButton23.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton23.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.bunifuFlatButton23.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
+            this.bunifuFlatButton23.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.bunifuFlatButton23.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton23.selected = false;
             this.bunifuFlatButton23.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -3378,7 +3367,7 @@
             // bunifuFlatButton12
             // 
             this.bunifuFlatButton12.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.bunifuFlatButton12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
             resources.ApplyResources(this.bunifuFlatButton12, "bunifuFlatButton12");
             this.bunifuFlatButton12.BorderRadius = 0;
             this.bunifuFlatButton12.ButtonText = "Eliminar";
@@ -3397,8 +3386,8 @@
             this.bunifuFlatButton12.IconZoom = 90D;
             this.bunifuFlatButton12.IsTab = false;
             this.bunifuFlatButton12.Name = "bunifuFlatButton12";
-            this.bunifuFlatButton12.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton12.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.bunifuFlatButton12.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
+            this.bunifuFlatButton12.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.bunifuFlatButton12.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton12.selected = false;
             this.bunifuFlatButton12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -3409,7 +3398,7 @@
             // bunifuFlatButton21
             // 
             this.bunifuFlatButton21.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.bunifuFlatButton21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
             resources.ApplyResources(this.bunifuFlatButton21, "bunifuFlatButton21");
             this.bunifuFlatButton21.BorderRadius = 0;
             this.bunifuFlatButton21.ButtonText = "Agregar";
@@ -3428,8 +3417,8 @@
             this.bunifuFlatButton21.IconZoom = 90D;
             this.bunifuFlatButton21.IsTab = false;
             this.bunifuFlatButton21.Name = "bunifuFlatButton21";
-            this.bunifuFlatButton21.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton21.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.bunifuFlatButton21.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
+            this.bunifuFlatButton21.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.bunifuFlatButton21.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton21.selected = false;
             this.bunifuFlatButton21.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -3440,7 +3429,7 @@
             // bunifuFlatButton22
             // 
             this.bunifuFlatButton22.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.bunifuFlatButton22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
             resources.ApplyResources(this.bunifuFlatButton22, "bunifuFlatButton22");
             this.bunifuFlatButton22.BorderRadius = 0;
             this.bunifuFlatButton22.ButtonText = "Cargar";
@@ -3459,8 +3448,8 @@
             this.bunifuFlatButton22.IconZoom = 90D;
             this.bunifuFlatButton22.IsTab = false;
             this.bunifuFlatButton22.Name = "bunifuFlatButton22";
-            this.bunifuFlatButton22.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton22.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.bunifuFlatButton22.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
+            this.bunifuFlatButton22.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.bunifuFlatButton22.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton22.selected = false;
             this.bunifuFlatButton22.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -3538,7 +3527,7 @@
             // bunifuFlatButton24
             // 
             this.bunifuFlatButton24.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.bunifuFlatButton24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
             resources.ApplyResources(this.bunifuFlatButton24, "bunifuFlatButton24");
             this.bunifuFlatButton24.BorderRadius = 0;
             this.bunifuFlatButton24.ButtonText = "Modificar";
@@ -3557,8 +3546,8 @@
             this.bunifuFlatButton24.IconZoom = 90D;
             this.bunifuFlatButton24.IsTab = false;
             this.bunifuFlatButton24.Name = "bunifuFlatButton24";
-            this.bunifuFlatButton24.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton24.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.bunifuFlatButton24.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
+            this.bunifuFlatButton24.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.bunifuFlatButton24.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton24.selected = false;
             this.bunifuFlatButton24.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -3587,7 +3576,7 @@
             // bunifuFlatButton25
             // 
             this.bunifuFlatButton25.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.bunifuFlatButton25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
             resources.ApplyResources(this.bunifuFlatButton25, "bunifuFlatButton25");
             this.bunifuFlatButton25.BorderRadius = 0;
             this.bunifuFlatButton25.ButtonText = "Eliminar";
@@ -3606,8 +3595,8 @@
             this.bunifuFlatButton25.IconZoom = 90D;
             this.bunifuFlatButton25.IsTab = false;
             this.bunifuFlatButton25.Name = "bunifuFlatButton25";
-            this.bunifuFlatButton25.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton25.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.bunifuFlatButton25.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
+            this.bunifuFlatButton25.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.bunifuFlatButton25.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton25.selected = false;
             this.bunifuFlatButton25.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -3618,7 +3607,7 @@
             // bunifuFlatButton26
             // 
             this.bunifuFlatButton26.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.bunifuFlatButton26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
             resources.ApplyResources(this.bunifuFlatButton26, "bunifuFlatButton26");
             this.bunifuFlatButton26.BorderRadius = 0;
             this.bunifuFlatButton26.ButtonText = "Agregar";
@@ -3637,8 +3626,8 @@
             this.bunifuFlatButton26.IconZoom = 90D;
             this.bunifuFlatButton26.IsTab = false;
             this.bunifuFlatButton26.Name = "bunifuFlatButton26";
-            this.bunifuFlatButton26.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton26.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.bunifuFlatButton26.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
+            this.bunifuFlatButton26.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.bunifuFlatButton26.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton26.selected = false;
             this.bunifuFlatButton26.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -3649,7 +3638,7 @@
             // bunifuFlatButton27
             // 
             this.bunifuFlatButton27.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton27.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.bunifuFlatButton27.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
             resources.ApplyResources(this.bunifuFlatButton27, "bunifuFlatButton27");
             this.bunifuFlatButton27.BorderRadius = 0;
             this.bunifuFlatButton27.ButtonText = "Cargar";
@@ -3668,8 +3657,8 @@
             this.bunifuFlatButton27.IconZoom = 90D;
             this.bunifuFlatButton27.IsTab = false;
             this.bunifuFlatButton27.Name = "bunifuFlatButton27";
-            this.bunifuFlatButton27.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton27.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.bunifuFlatButton27.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
+            this.bunifuFlatButton27.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.bunifuFlatButton27.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton27.selected = false;
             this.bunifuFlatButton27.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -3784,7 +3773,7 @@
             // bunifuFlatButton28
             // 
             this.bunifuFlatButton28.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton28.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.bunifuFlatButton28.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
             resources.ApplyResources(this.bunifuFlatButton28, "bunifuFlatButton28");
             this.bunifuFlatButton28.BorderRadius = 0;
             this.bunifuFlatButton28.ButtonText = "Modificar";
@@ -3803,8 +3792,8 @@
             this.bunifuFlatButton28.IconZoom = 90D;
             this.bunifuFlatButton28.IsTab = false;
             this.bunifuFlatButton28.Name = "bunifuFlatButton28";
-            this.bunifuFlatButton28.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton28.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.bunifuFlatButton28.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
+            this.bunifuFlatButton28.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.bunifuFlatButton28.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton28.selected = false;
             this.bunifuFlatButton28.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -3838,7 +3827,7 @@
             // bunifuFlatButton29
             // 
             this.bunifuFlatButton29.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.bunifuFlatButton29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
             resources.ApplyResources(this.bunifuFlatButton29, "bunifuFlatButton29");
             this.bunifuFlatButton29.BorderRadius = 0;
             this.bunifuFlatButton29.ButtonText = "Eliminar";
@@ -3857,8 +3846,8 @@
             this.bunifuFlatButton29.IconZoom = 90D;
             this.bunifuFlatButton29.IsTab = false;
             this.bunifuFlatButton29.Name = "bunifuFlatButton29";
-            this.bunifuFlatButton29.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton29.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.bunifuFlatButton29.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
+            this.bunifuFlatButton29.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.bunifuFlatButton29.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton29.selected = false;
             this.bunifuFlatButton29.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -3869,7 +3858,7 @@
             // bunifuFlatButton30
             // 
             this.bunifuFlatButton30.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton30.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.bunifuFlatButton30.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
             resources.ApplyResources(this.bunifuFlatButton30, "bunifuFlatButton30");
             this.bunifuFlatButton30.BorderRadius = 0;
             this.bunifuFlatButton30.ButtonText = "Agregar";
@@ -3888,8 +3877,8 @@
             this.bunifuFlatButton30.IconZoom = 90D;
             this.bunifuFlatButton30.IsTab = false;
             this.bunifuFlatButton30.Name = "bunifuFlatButton30";
-            this.bunifuFlatButton30.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton30.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.bunifuFlatButton30.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
+            this.bunifuFlatButton30.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.bunifuFlatButton30.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton30.selected = false;
             this.bunifuFlatButton30.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -3900,7 +3889,7 @@
             // bunifuFlatButton31
             // 
             this.bunifuFlatButton31.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton31.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.bunifuFlatButton31.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
             resources.ApplyResources(this.bunifuFlatButton31, "bunifuFlatButton31");
             this.bunifuFlatButton31.BorderRadius = 0;
             this.bunifuFlatButton31.ButtonText = "Cargar";
@@ -3919,8 +3908,8 @@
             this.bunifuFlatButton31.IconZoom = 90D;
             this.bunifuFlatButton31.IsTab = false;
             this.bunifuFlatButton31.Name = "bunifuFlatButton31";
-            this.bunifuFlatButton31.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton31.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.bunifuFlatButton31.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
+            this.bunifuFlatButton31.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.bunifuFlatButton31.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton31.selected = false;
             this.bunifuFlatButton31.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -4004,7 +3993,7 @@
             // bunifuFlatButton32
             // 
             this.bunifuFlatButton32.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton32.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.bunifuFlatButton32.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
             resources.ApplyResources(this.bunifuFlatButton32, "bunifuFlatButton32");
             this.bunifuFlatButton32.BorderRadius = 0;
             this.bunifuFlatButton32.ButtonText = "Modificar";
@@ -4023,8 +4012,8 @@
             this.bunifuFlatButton32.IconZoom = 90D;
             this.bunifuFlatButton32.IsTab = false;
             this.bunifuFlatButton32.Name = "bunifuFlatButton32";
-            this.bunifuFlatButton32.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton32.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.bunifuFlatButton32.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
+            this.bunifuFlatButton32.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.bunifuFlatButton32.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton32.selected = false;
             this.bunifuFlatButton32.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -4050,7 +4039,7 @@
             // bunifuFlatButton33
             // 
             this.bunifuFlatButton33.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton33.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.bunifuFlatButton33.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
             resources.ApplyResources(this.bunifuFlatButton33, "bunifuFlatButton33");
             this.bunifuFlatButton33.BorderRadius = 0;
             this.bunifuFlatButton33.ButtonText = "Eliminar";
@@ -4069,8 +4058,8 @@
             this.bunifuFlatButton33.IconZoom = 90D;
             this.bunifuFlatButton33.IsTab = false;
             this.bunifuFlatButton33.Name = "bunifuFlatButton33";
-            this.bunifuFlatButton33.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton33.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.bunifuFlatButton33.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
+            this.bunifuFlatButton33.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.bunifuFlatButton33.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton33.selected = false;
             this.bunifuFlatButton33.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -4081,7 +4070,7 @@
             // bunifuFlatButton34
             // 
             this.bunifuFlatButton34.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton34.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.bunifuFlatButton34.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
             resources.ApplyResources(this.bunifuFlatButton34, "bunifuFlatButton34");
             this.bunifuFlatButton34.BorderRadius = 0;
             this.bunifuFlatButton34.ButtonText = "Agregar";
@@ -4100,8 +4089,8 @@
             this.bunifuFlatButton34.IconZoom = 90D;
             this.bunifuFlatButton34.IsTab = false;
             this.bunifuFlatButton34.Name = "bunifuFlatButton34";
-            this.bunifuFlatButton34.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton34.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.bunifuFlatButton34.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
+            this.bunifuFlatButton34.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.bunifuFlatButton34.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton34.selected = false;
             this.bunifuFlatButton34.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -4112,7 +4101,7 @@
             // bunifuFlatButton35
             // 
             this.bunifuFlatButton35.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton35.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.bunifuFlatButton35.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
             resources.ApplyResources(this.bunifuFlatButton35, "bunifuFlatButton35");
             this.bunifuFlatButton35.BorderRadius = 0;
             this.bunifuFlatButton35.ButtonText = "Cargar";
@@ -4131,8 +4120,8 @@
             this.bunifuFlatButton35.IconZoom = 90D;
             this.bunifuFlatButton35.IsTab = false;
             this.bunifuFlatButton35.Name = "bunifuFlatButton35";
-            this.bunifuFlatButton35.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton35.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.bunifuFlatButton35.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
+            this.bunifuFlatButton35.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.bunifuFlatButton35.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton35.selected = false;
             this.bunifuFlatButton35.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -4206,10 +4195,10 @@
             this.bunifuGradientPanel1.Controls.Add(this.labelAlmacen);
             this.bunifuGradientPanel1.Controls.Add(this.buniCerrar);
             this.bunifuGradientPanel1.Controls.Add(this.buniMaxMin);
-            this.bunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(47)))), ((int)(((byte)(130)))));
-            this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(11)))), ((int)(((byte)(43)))));
-            this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(11)))), ((int)(((byte)(43)))));
-            this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(47)))), ((int)(((byte)(130)))));
+            this.bunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
+            this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.DarkCyan;
+            this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.LightSeaGreen;
+            this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
             this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
             this.bunifuGradientPanel1.Quality = 10;
             this.bunifuGradientPanel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.bunifuGradientPanel1_MouseDown);
@@ -4230,7 +4219,7 @@
             // 
             resources.ApplyResources(this.labelAlmacen, "labelAlmacen");
             this.labelAlmacen.BackColor = System.Drawing.Color.Transparent;
-            this.labelAlmacen.ForeColor = System.Drawing.Color.DarkGray;
+            this.labelAlmacen.ForeColor = System.Drawing.Color.White;
             this.labelAlmacen.Name = "labelAlmacen";
             // 
             // buniCerrar
@@ -4253,6 +4242,21 @@
             this.buniMaxMin.Zoom = 10;
             this.buniMaxMin.Click += new System.EventHandler(this.bunifuImageButton1_Click);
             // 
+            // bunifuElipse1
+            // 
+            this.bunifuElipse1.ElipseRadius = 20;
+            this.bunifuElipse1.TargetControl = this;
+            // 
+            // bunifuElipse2
+            // 
+            this.bunifuElipse2.ElipseRadius = 25;
+            this.bunifuElipse2.TargetControl = this.buniBtnLogin;
+            // 
+            // panel2
+            // 
+            resources.ApplyResources(this.panel2, "panel2");
+            this.panel2.Name = "panel2";
+            // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
@@ -4266,10 +4270,8 @@
             this.TopMost = true;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tab1Inicio.ResumeLayout(false);
-            this.bunifuGradientPanel3.ResumeLayout(false);
-            this.bunifuGradientPanel2.ResumeLayout(false);
-            this.bunifuGradientPanel2.PerformLayout();
-            this.panel2.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tab1Productos.ResumeLayout(false);
             this.tabControl3.ResumeLayout(false);
@@ -4371,9 +4373,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label labelVendedor;
         private System.Windows.Forms.ComboBox comboBoxCiudad;
-        private Bunifu.Framework.UI.BunifuFlatButton buniBtnLogin;
-        private Bunifu.Framework.UI.BunifuTextbox buniTextUsuario;
-        private Bunifu.Framework.UI.BunifuTextbox buniTextPass;
         private System.Windows.Forms.TabPage tab1Productos;
         private Bunifu.Framework.UI.BunifuCustomDataGrid DataGridProductos;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton2;
@@ -4446,8 +4445,6 @@
         private System.Windows.Forms.TabControl tabControl3;
         private System.Windows.Forms.TabPage tabPage8;
         private System.Windows.Forms.TabPage tabPage9;
-        private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel3;
-        private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TabPage tabPage7;
@@ -4507,7 +4504,6 @@
         private System.Windows.Forms.Label labelReporteLocalGastos;
         private System.Windows.Forms.Label labelEfectivoLocal;
         private System.Windows.Forms.Label labelVentasCreditoLocal;
-        private System.Windows.Forms.Panel panel2;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel10;
         private Bunifu.Framework.UI.BunifuTextbox bunifuTextbox1;
         private Bunifu.Framework.UI.BunifuTextbox bunifuTextbox2;
@@ -4635,6 +4631,13 @@
         private System.Windows.Forms.TabControl tabControl8;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.Panel panel3;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox buniTextPass;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox buniTextUsuario;
+        private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
+        private Bunifu.Framework.UI.BunifuElipse bunifuElipse2;
+        private Bunifu.Framework.UI.BunifuFlatButton buniBtnLogin;
+        private System.Windows.Forms.Panel panel2;
     }
 }
 
