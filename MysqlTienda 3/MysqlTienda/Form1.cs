@@ -556,7 +556,7 @@ namespace MysqlTienda
                     cargarCiudadesEntradas();
                     cargarGastoDescipcion();
                     cargarCategoriaEntrada();
-
+                    label15.Visible = true;
                     buscarFactura();
                     //buscarFactura(0, "SELECT * FROM easyerp.detalle_facturacov order by factura_movimiento_nf where id = LAST_INSERT_ID");
                     iniciarTablaVentas("");
@@ -3073,7 +3073,25 @@ namespace MysqlTienda
 
         }
 
-   
+        private void buniTextUsuario_OnValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buniTextUsuario_MouseDown(object sender, MouseEventArgs e)
+        {
+            buniTextUsuario.Text = "";
+        }
+
+        private void label15_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buniTextPass_MouseDown(object sender, MouseEventArgs e)
+        {
+            buniTextPass.Text = "";
+        }
     }
 
     }
