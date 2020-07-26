@@ -1,6 +1,0 @@
-c:\users\juand\documents\visual studio 2015\Projects\LISTA\LISTA\bin\Debug\LISTA.exe.config
-c:\users\juand\documents\visual studio 2015\Projects\LISTA\LISTA\bin\Debug\LISTA.exe
-c:\users\juand\documents\visual studio 2015\Projects\LISTA\LISTA\bin\Debug\LISTA.pdb
-c:\users\juand\documents\visual studio 2015\Projects\LISTA\LISTA\obj\Debug\LISTA.csprojResolveAssemblyReference.cache
-c:\users\juand\documents\visual studio 2015\Projects\LISTA\LISTA\obj\Debug\LISTA.exe
-c:\users\juand\documents\visual studio 2015\Projects\LISTA\LISTA\obj\Debug\LISTA.pdb
