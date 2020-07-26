@@ -117,7 +117,56 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="&gt;&gt;panel2.Name" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel2.Parent" xml:space="preserve">
+    <value>tab1Inicio</value>
+  </data>
+  <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;panel3.Name" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;panel3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel3.Parent" xml:space="preserve">
+    <value>tab1Inicio</value>
+  </data>
+  <data name="&gt;&gt;panel3.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="tab1Inicio.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 29</value>
+  </data>
+  <data name="tab1Inicio.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1612, 849</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="tab1Inicio.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="tab1Inicio.Text" xml:space="preserve">
+    <value>Inicio</value>
+  </data>
+  <data name="&gt;&gt;tab1Inicio.Name" xml:space="preserve">
+    <value>tab1Inicio</value>
+  </data>
+  <data name="&gt;&gt;tab1Inicio.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tab1Inicio.Parent" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="&gt;&gt;tab1Inicio.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="panel2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAABaAAAAQ4CAIAAABwgOwFAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
@@ -39946,7 +39995,6 @@
   <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
     <value>954, 846</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="panel2.TabIndex" type="System.Int32, mscorlib">
     <value>93</value>
   </data>
@@ -39961,6 +40009,147 @@
   </data>
   <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="&gt;&gt;bunifuImageButton2.Name" xml:space="preserve">
+    <value>bunifuImageButton2</value>
+  </data>
+  <data name="&gt;&gt;bunifuImageButton2.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuImageButton, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bunifuImageButton2.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;bunifuImageButton2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;label15.Name" xml:space="preserve">
+    <value>label15</value>
+  </data>
+  <data name="&gt;&gt;label15.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label15.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;label15.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;buniTextPass.Name" xml:space="preserve">
+    <value>buniTextPass</value>
+  </data>
+  <data name="&gt;&gt;buniTextPass.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuMaterialTextbox, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;buniTextPass.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;buniTextPass.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;buniTextUsuario.Name" xml:space="preserve">
+    <value>buniTextUsuario</value>
+  </data>
+  <data name="&gt;&gt;buniTextUsuario.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuMaterialTextbox, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;buniTextUsuario.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;buniTextUsuario.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;labelCedula.Name" xml:space="preserve">
+    <value>labelCedula</value>
+  </data>
+  <data name="&gt;&gt;labelCedula.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelCedula.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;labelCedula.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;labelVendedor.Name" xml:space="preserve">
+    <value>labelVendedor</value>
+  </data>
+  <data name="&gt;&gt;labelVendedor.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelVendedor.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;labelVendedor.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
+    <value>pictureBox1</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;comboBoxCiudad.Name" xml:space="preserve">
+    <value>comboBoxCiudad</value>
+  </data>
+  <data name="&gt;&gt;comboBoxCiudad.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBoxCiudad.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;comboBoxCiudad.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;label7.Name" xml:space="preserve">
+    <value>label7</value>
+  </data>
+  <data name="&gt;&gt;label7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label7.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="panel3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>947, 0</value>
+  </data>
+  <data name="panel3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>667, 846</value>
+  </data>
+  <data name="panel3.TabIndex" type="System.Int32, mscorlib">
+    <value>92</value>
+  </data>
+  <data name="&gt;&gt;panel3.Name" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;panel3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel3.Parent" xml:space="preserve">
+    <value>tab1Inicio</value>
+  </data>
+  <data name="&gt;&gt;panel3.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="bunifuImageButton2.Location" type="System.Drawing.Point, System.Drawing">
     <value>252, 584</value>
@@ -40262,51 +40451,6 @@
   <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
     <value>9</value>
   </data>
-  <data name="panel3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>947, 0</value>
-  </data>
-  <data name="panel3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>667, 846</value>
-  </data>
-  <data name="panel3.TabIndex" type="System.Int32, mscorlib">
-    <value>92</value>
-  </data>
-  <data name="&gt;&gt;panel3.Name" xml:space="preserve">
-    <value>panel3</value>
-  </data>
-  <data name="&gt;&gt;panel3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel3.Parent" xml:space="preserve">
-    <value>tab1Inicio</value>
-  </data>
-  <data name="&gt;&gt;panel3.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="tab1Inicio.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 29</value>
-  </data>
-  <data name="tab1Inicio.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1612, 849</value>
-  </data>
-  <data name="tab1Inicio.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="tab1Inicio.Text" xml:space="preserve">
-    <value>Inicio</value>
-  </data>
-  <data name="&gt;&gt;tab1Inicio.Name" xml:space="preserve">
-    <value>tab1Inicio</value>
-  </data>
-  <data name="&gt;&gt;tab1Inicio.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tab1Inicio.Parent" xml:space="preserve">
-    <value>tabControl1</value>
-  </data>
-  <data name="&gt;&gt;tab1Inicio.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="labelProductoId.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -40314,7 +40458,7 @@
     <value>NoControl</value>
   </data>
   <data name="labelProductoId.Location" type="System.Drawing.Point, System.Drawing">
-    <value>21, 739</value>
+    <value>120, 734</value>
   </data>
   <data name="labelProductoId.Size" type="System.Drawing.Size, System.Drawing">
     <value>22, 20</value>
@@ -40377,13 +40521,13 @@
     <value>21, 335</value>
   </data>
   <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
-    <value>47, 20</value>
+    <value>50, 20</value>
   </data>
   <data name="label13.TabIndex" type="System.Int32, mscorlib">
     <value>121</value>
   </data>
   <data name="label13.Text" xml:space="preserve">
-    <value>costo</value>
+    <value>Costo</value>
   </data>
   <data name="&gt;&gt;label13.Name" xml:space="preserve">
     <value>label13</value>
@@ -40533,7 +40677,7 @@
     <value>116</value>
   </data>
   <data name="label8.Text" xml:space="preserve">
-    <value>Codigo</value>
+    <value>Código</value>
   </data>
   <data name="&gt;&gt;label8.Name" xml:space="preserve">
     <value>label8</value>
@@ -41376,7 +41520,7 @@
     <value>NoControl</value>
   </data>
   <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 676</value>
+    <value>17, 680</value>
   </data>
   <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
     <value>66, 20</value>
@@ -41474,7 +41618,7 @@
     <value>20</value>
   </data>
   <data name="comboBoxTamanoProducto.Location" type="System.Drawing.Point, System.Drawing">
-    <value>18, 696</value>
+    <value>18, 703</value>
   </data>
   <data name="comboBoxTamanoProducto.Size" type="System.Drawing.Size, System.Drawing">
     <value>230, 28</value>
@@ -41540,7 +41684,7 @@
     <value>108</value>
   </data>
   <data name="label5.Text" xml:space="preserve">
-    <value>Nombre del almacen</value>
+    <value>Nombre del almacén</value>
   </data>
   <data name="&gt;&gt;label5.Name" xml:space="preserve">
     <value>label5</value>
@@ -41739,6 +41883,450 @@
   </data>
   <data name="&gt;&gt;tabPage8.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="&gt;&gt;ButtonCargarDepartamento.Name" xml:space="preserve">
+    <value>ButtonCargarDepartamento</value>
+  </data>
+  <data name="&gt;&gt;ButtonCargarDepartamento.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuFlatButton, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;ButtonCargarDepartamento.Parent" xml:space="preserve">
+    <value>tabPage9</value>
+  </data>
+  <data name="&gt;&gt;ButtonCargarDepartamento.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;bunifuCustomLabel6.Name" xml:space="preserve">
+    <value>bunifuCustomLabel6</value>
+  </data>
+  <data name="&gt;&gt;bunifuCustomLabel6.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuCustomLabel, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bunifuCustomLabel6.Parent" xml:space="preserve">
+    <value>tabPage9</value>
+  </data>
+  <data name="&gt;&gt;bunifuCustomLabel6.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;bunifuCustomLabel4.Name" xml:space="preserve">
+    <value>bunifuCustomLabel4</value>
+  </data>
+  <data name="&gt;&gt;bunifuCustomLabel4.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuCustomLabel, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bunifuCustomLabel4.Parent" xml:space="preserve">
+    <value>tabPage9</value>
+  </data>
+  <data name="&gt;&gt;bunifuCustomLabel4.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;bunifuFlatButton7.Name" xml:space="preserve">
+    <value>bunifuFlatButton7</value>
+  </data>
+  <data name="&gt;&gt;bunifuFlatButton7.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuFlatButton, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bunifuFlatButton7.Parent" xml:space="preserve">
+    <value>tabPage9</value>
+  </data>
+  <data name="&gt;&gt;bunifuFlatButton7.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;bunifuFlatButton10.Name" xml:space="preserve">
+    <value>bunifuFlatButton10</value>
+  </data>
+  <data name="&gt;&gt;bunifuFlatButton10.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuFlatButton, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bunifuFlatButton10.Parent" xml:space="preserve">
+    <value>tabPage9</value>
+  </data>
+  <data name="&gt;&gt;bunifuFlatButton10.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;bunifuFlatButton11.Name" xml:space="preserve">
+    <value>bunifuFlatButton11</value>
+  </data>
+  <data name="&gt;&gt;bunifuFlatButton11.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuFlatButton, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bunifuFlatButton11.Parent" xml:space="preserve">
+    <value>tabPage9</value>
+  </data>
+  <data name="&gt;&gt;bunifuFlatButton11.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;DataGridDepartamento.Name" xml:space="preserve">
+    <value>DataGridDepartamento</value>
+  </data>
+  <data name="&gt;&gt;DataGridDepartamento.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuCustomDataGrid, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;DataGridDepartamento.Parent" xml:space="preserve">
+    <value>tabPage9</value>
+  </data>
+  <data name="&gt;&gt;DataGridDepartamento.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;TextboxDescripcionDepartamento.Name" xml:space="preserve">
+    <value>TextboxDescripcionDepartamento</value>
+  </data>
+  <data name="&gt;&gt;TextboxDescripcionDepartamento.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuTextbox, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;TextboxDescripcionDepartamento.Parent" xml:space="preserve">
+    <value>tabPage9</value>
+  </data>
+  <data name="&gt;&gt;TextboxDescripcionDepartamento.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;TextboxDepartamentoNombre.Name" xml:space="preserve">
+    <value>TextboxDepartamentoNombre</value>
+  </data>
+  <data name="&gt;&gt;TextboxDepartamentoNombre.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuTextbox, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;TextboxDepartamentoNombre.Parent" xml:space="preserve">
+    <value>tabPage9</value>
+  </data>
+  <data name="&gt;&gt;TextboxDepartamentoNombre.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="tabPage9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 29</value>
+  </data>
+  <data name="tabPage9.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tabPage9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1579, 795</value>
+  </data>
+  <data name="tabPage9.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tabPage9.Text" xml:space="preserve">
+    <value>Departamento</value>
+  </data>
+  <data name="&gt;&gt;tabPage9.Name" xml:space="preserve">
+    <value>tabPage9</value>
+  </data>
+  <data name="&gt;&gt;tabPage9.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage9.Parent" xml:space="preserve">
+    <value>tabControl3</value>
+  </data>
+  <data name="&gt;&gt;tabPage9.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;TextboxDescripcionTamano.Name" xml:space="preserve">
+    <value>TextboxDescripcionTamano</value>
+  </data>
+  <data name="&gt;&gt;TextboxDescripcionTamano.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuTextbox, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;TextboxDescripcionTamano.Parent" xml:space="preserve">
+    <value>tabPage12</value>
+  </data>
+  <data name="&gt;&gt;TextboxDescripcionTamano.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;TextboxTamañoNombre.Name" xml:space="preserve">
+    <value>TextboxTamañoNombre</value>
+  </data>
+  <data name="&gt;&gt;TextboxTamañoNombre.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuTextbox, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;TextboxTamañoNombre.Parent" xml:space="preserve">
+    <value>tabPage12</value>
+  </data>
+  <data name="&gt;&gt;TextboxTamañoNombre.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;bunifuCustomLabel7.Name" xml:space="preserve">
+    <value>bunifuCustomLabel7</value>
+  </data>
+  <data name="&gt;&gt;bunifuCustomLabel7.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuCustomLabel, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bunifuCustomLabel7.Parent" xml:space="preserve">
+    <value>tabPage12</value>
+  </data>
+  <data name="&gt;&gt;bunifuCustomLabel7.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;bunifuCustomLabel8.Name" xml:space="preserve">
+    <value>bunifuCustomLabel8</value>
+  </data>
+  <data name="&gt;&gt;bunifuCustomLabel8.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuCustomLabel, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bunifuCustomLabel8.Parent" xml:space="preserve">
+    <value>tabPage12</value>
+  </data>
+  <data name="&gt;&gt;bunifuCustomLabel8.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;bunifuFlatButton13.Name" xml:space="preserve">
+    <value>bunifuFlatButton13</value>
+  </data>
+  <data name="&gt;&gt;bunifuFlatButton13.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuFlatButton, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bunifuFlatButton13.Parent" xml:space="preserve">
+    <value>tabPage12</value>
+  </data>
+  <data name="&gt;&gt;bunifuFlatButton13.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;bunifuFlatButton14.Name" xml:space="preserve">
+    <value>bunifuFlatButton14</value>
+  </data>
+  <data name="&gt;&gt;bunifuFlatButton14.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuFlatButton, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bunifuFlatButton14.Parent" xml:space="preserve">
+    <value>tabPage12</value>
+  </data>
+  <data name="&gt;&gt;bunifuFlatButton14.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;bunifuFlatButton15.Name" xml:space="preserve">
+    <value>bunifuFlatButton15</value>
+  </data>
+  <data name="&gt;&gt;bunifuFlatButton15.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuFlatButton, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bunifuFlatButton15.Parent" xml:space="preserve">
+    <value>tabPage12</value>
+  </data>
+  <data name="&gt;&gt;bunifuFlatButton15.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;ButtonCargarTamano.Name" xml:space="preserve">
+    <value>ButtonCargarTamano</value>
+  </data>
+  <data name="&gt;&gt;ButtonCargarTamano.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuFlatButton, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;ButtonCargarTamano.Parent" xml:space="preserve">
+    <value>tabPage12</value>
+  </data>
+  <data name="&gt;&gt;ButtonCargarTamano.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;DataGridTamano.Name" xml:space="preserve">
+    <value>DataGridTamano</value>
+  </data>
+  <data name="&gt;&gt;DataGridTamano.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuCustomDataGrid, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;DataGridTamano.Parent" xml:space="preserve">
+    <value>tabPage12</value>
+  </data>
+  <data name="&gt;&gt;DataGridTamano.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="tabPage12.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 29</value>
+  </data>
+  <data name="tabPage12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1579, 795</value>
+  </data>
+  <data name="tabPage12.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="tabPage12.Text" xml:space="preserve">
+    <value>Tamaño</value>
+  </data>
+  <data name="&gt;&gt;tabPage12.Name" xml:space="preserve">
+    <value>tabPage12</value>
+  </data>
+  <data name="&gt;&gt;tabPage12.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage12.Parent" xml:space="preserve">
+    <value>tabControl3</value>
+  </data>
+  <data name="&gt;&gt;tabPage12.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;bunifuCustomLabel10.Name" xml:space="preserve">
+    <value>bunifuCustomLabel10</value>
+  </data>
+  <data name="&gt;&gt;bunifuCustomLabel10.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuCustomLabel, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bunifuCustomLabel10.Parent" xml:space="preserve">
+    <value>tabPage13</value>
+  </data>
+  <data name="&gt;&gt;bunifuCustomLabel10.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;bunifuTextbox1.Name" xml:space="preserve">
+    <value>bunifuTextbox1</value>
+  </data>
+  <data name="&gt;&gt;bunifuTextbox1.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuTextbox, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bunifuTextbox1.Parent" xml:space="preserve">
+    <value>tabPage13</value>
+  </data>
+  <data name="&gt;&gt;bunifuTextbox1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;bunifuTextbox2.Name" xml:space="preserve">
+    <value>bunifuTextbox2</value>
+  </data>
+  <data name="&gt;&gt;bunifuTextbox2.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuTextbox, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bunifuTextbox2.Parent" xml:space="preserve">
+    <value>tabPage13</value>
+  </data>
+  <data name="&gt;&gt;bunifuTextbox2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;bunifuCustomLabel9.Name" xml:space="preserve">
+    <value>bunifuCustomLabel9</value>
+  </data>
+  <data name="&gt;&gt;bunifuCustomLabel9.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuCustomLabel, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bunifuCustomLabel9.Parent" xml:space="preserve">
+    <value>tabPage13</value>
+  </data>
+  <data name="&gt;&gt;bunifuCustomLabel9.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;bunifuFlatButton16.Name" xml:space="preserve">
+    <value>bunifuFlatButton16</value>
+  </data>
+  <data name="&gt;&gt;bunifuFlatButton16.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuFlatButton, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bunifuFlatButton16.Parent" xml:space="preserve">
+    <value>tabPage13</value>
+  </data>
+  <data name="&gt;&gt;bunifuFlatButton16.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;bunifuFlatButton17.Name" xml:space="preserve">
+    <value>bunifuFlatButton17</value>
+  </data>
+  <data name="&gt;&gt;bunifuFlatButton17.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuFlatButton, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bunifuFlatButton17.Parent" xml:space="preserve">
+    <value>tabPage13</value>
+  </data>
+  <data name="&gt;&gt;bunifuFlatButton17.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;bunifuFlatButton18.Name" xml:space="preserve">
+    <value>bunifuFlatButton18</value>
+  </data>
+  <data name="&gt;&gt;bunifuFlatButton18.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuFlatButton, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bunifuFlatButton18.Parent" xml:space="preserve">
+    <value>tabPage13</value>
+  </data>
+  <data name="&gt;&gt;bunifuFlatButton18.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;bunifuFlatButton19.Name" xml:space="preserve">
+    <value>bunifuFlatButton19</value>
+  </data>
+  <data name="&gt;&gt;bunifuFlatButton19.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuFlatButton, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bunifuFlatButton19.Parent" xml:space="preserve">
+    <value>tabPage13</value>
+  </data>
+  <data name="&gt;&gt;bunifuFlatButton19.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;bunifuCustomDataGrid3.Name" xml:space="preserve">
+    <value>bunifuCustomDataGrid3</value>
+  </data>
+  <data name="&gt;&gt;bunifuCustomDataGrid3.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuCustomDataGrid, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bunifuCustomDataGrid3.Parent" xml:space="preserve">
+    <value>tabPage13</value>
+  </data>
+  <data name="&gt;&gt;bunifuCustomDataGrid3.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="tabPage13.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 29</value>
+  </data>
+  <data name="tabPage13.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1579, 795</value>
+  </data>
+  <data name="tabPage13.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="tabPage13.Text" xml:space="preserve">
+    <value>Fecha de inventario</value>
+  </data>
+  <data name="&gt;&gt;tabPage13.Name" xml:space="preserve">
+    <value>tabPage13</value>
+  </data>
+  <data name="&gt;&gt;tabPage13.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage13.Parent" xml:space="preserve">
+    <value>tabControl3</value>
+  </data>
+  <data name="&gt;&gt;tabPage13.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="tabControl3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 0</value>
+  </data>
+  <data name="tabControl3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1587, 828</value>
+  </data>
+  <data name="tabControl3.TabIndex" type="System.Int32, mscorlib">
+    <value>116</value>
+  </data>
+  <data name="&gt;&gt;tabControl3.Name" xml:space="preserve">
+    <value>tabControl3</value>
+  </data>
+  <data name="&gt;&gt;tabControl3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabControl3.Parent" xml:space="preserve">
+    <value>tab1Productos</value>
+  </data>
+  <data name="&gt;&gt;tabControl3.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tab1Productos.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 29</value>
+  </data>
+  <data name="tab1Productos.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1612, 849</value>
+  </data>
+  <data name="tab1Productos.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="tab1Productos.Text" xml:space="preserve">
+    <value>Productos</value>
+  </data>
+  <data name="&gt;&gt;tab1Productos.Name" xml:space="preserve">
+    <value>tab1Productos</value>
+  </data>
+  <data name="&gt;&gt;tab1Productos.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tab1Productos.Parent" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="&gt;&gt;tab1Productos.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="ButtonCargarDepartamento.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>None</value>
@@ -42092,33 +42680,6 @@
   <data name="&gt;&gt;TextboxDepartamentoNombre.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
-  <data name="tabPage9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 29</value>
-  </data>
-  <data name="tabPage9.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="tabPage9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1579, 795</value>
-  </data>
-  <data name="tabPage9.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="tabPage9.Text" xml:space="preserve">
-    <value>departamento</value>
-  </data>
-  <data name="&gt;&gt;tabPage9.Name" xml:space="preserve">
-    <value>tabPage9</value>
-  </data>
-  <data name="&gt;&gt;tabPage9.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPage9.Parent" xml:space="preserve">
-    <value>tabControl3</value>
-  </data>
-  <data name="&gt;&gt;tabPage9.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <data name="TextboxDescripcionTamano.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAwAAAAB/CAYAAABYHaUHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
@@ -42470,30 +43031,6 @@
   </data>
   <data name="&gt;&gt;DataGridTamano.ZOrder" xml:space="preserve">
     <value>8</value>
-  </data>
-  <data name="tabPage12.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 29</value>
-  </data>
-  <data name="tabPage12.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1579, 795</value>
-  </data>
-  <data name="tabPage12.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="tabPage12.Text" xml:space="preserve">
-    <value>tamaño</value>
-  </data>
-  <data name="&gt;&gt;tabPage12.Name" xml:space="preserve">
-    <value>tabPage12</value>
-  </data>
-  <data name="&gt;&gt;tabPage12.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPage12.Parent" xml:space="preserve">
-    <value>tabControl3</value>
-  </data>
-  <data name="&gt;&gt;tabPage12.ZOrder" xml:space="preserve">
-    <value>2</value>
   </data>
   <data name="bunifuCustomLabel10.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -42847,74 +43384,293 @@
   <data name="&gt;&gt;bunifuCustomDataGrid3.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
-  <data name="tabPage13.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 29</value>
+  <data name="&gt;&gt;tabControl2.Name" xml:space="preserve">
+    <value>tabControl2</value>
   </data>
-  <data name="tabPage13.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1579, 795</value>
-  </data>
-  <data name="tabPage13.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="tabPage13.Text" xml:space="preserve">
-    <value>fecha de inventario</value>
-  </data>
-  <data name="&gt;&gt;tabPage13.Name" xml:space="preserve">
-    <value>tabPage13</value>
-  </data>
-  <data name="&gt;&gt;tabPage13.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPage13.Parent" xml:space="preserve">
-    <value>tabControl3</value>
-  </data>
-  <data name="&gt;&gt;tabPage13.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="tabControl3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 0</value>
-  </data>
-  <data name="tabControl3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1587, 828</value>
-  </data>
-  <data name="tabControl3.TabIndex" type="System.Int32, mscorlib">
-    <value>116</value>
-  </data>
-  <data name="&gt;&gt;tabControl3.Name" xml:space="preserve">
-    <value>tabControl3</value>
-  </data>
-  <data name="&gt;&gt;tabControl3.Type" xml:space="preserve">
+  <data name="&gt;&gt;tabControl2.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;tabControl3.Parent" xml:space="preserve">
-    <value>tab1Productos</value>
+  <data name="&gt;&gt;tabControl2.Parent" xml:space="preserve">
+    <value>tab1Usuarios</value>
   </data>
-  <data name="&gt;&gt;tabControl3.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;tabControl2.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="tab1Productos.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="tab1Usuarios.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 29</value>
   </data>
-  <data name="tab1Productos.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="tab1Usuarios.Size" type="System.Drawing.Size, System.Drawing">
     <value>1612, 849</value>
   </data>
-  <data name="tab1Productos.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
+  <data name="tab1Usuarios.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
   </data>
-  <data name="tab1Productos.Text" xml:space="preserve">
-    <value>Productos</value>
+  <data name="tab1Usuarios.Text" xml:space="preserve">
+    <value>Usuario</value>
   </data>
-  <data name="&gt;&gt;tab1Productos.Name" xml:space="preserve">
-    <value>tab1Productos</value>
+  <data name="&gt;&gt;tab1Usuarios.Name" xml:space="preserve">
+    <value>tab1Usuarios</value>
   </data>
-  <data name="&gt;&gt;tab1Productos.Type" xml:space="preserve">
+  <data name="&gt;&gt;tab1Usuarios.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;tab1Productos.Parent" xml:space="preserve">
+  <data name="&gt;&gt;tab1Usuarios.Parent" xml:space="preserve">
     <value>tabControl1</value>
   </data>
-  <data name="&gt;&gt;tab1Productos.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;tab1Usuarios.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;tabPage6.Name" xml:space="preserve">
+    <value>tabPage6</value>
+  </data>
+  <data name="&gt;&gt;tabPage6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage6.Parent" xml:space="preserve">
+    <value>tabControl2</value>
+  </data>
+  <data name="&gt;&gt;tabPage6.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tabPage7.Name" xml:space="preserve">
+    <value>tabPage7</value>
+  </data>
+  <data name="&gt;&gt;tabPage7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage7.Parent" xml:space="preserve">
+    <value>tabControl2</value>
+  </data>
+  <data name="&gt;&gt;tabPage7.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tabControl2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="tabControl2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1604, 825</value>
+  </data>
+  <data name="tabControl2.TabIndex" type="System.Int32, mscorlib">
+    <value>111</value>
+  </data>
+  <data name="&gt;&gt;tabControl2.Name" xml:space="preserve">
+    <value>tabControl2</value>
+  </data>
+  <data name="&gt;&gt;tabControl2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabControl2.Parent" xml:space="preserve">
+    <value>tab1Usuarios</value>
+  </data>
+  <data name="&gt;&gt;tabControl2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;bunifuCustomDataGrid2.Name" xml:space="preserve">
+    <value>bunifuCustomDataGrid2</value>
+  </data>
+  <data name="&gt;&gt;bunifuCustomDataGrid2.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuCustomDataGrid, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bunifuCustomDataGrid2.Parent" xml:space="preserve">
+    <value>tabPage6</value>
+  </data>
+  <data name="&gt;&gt;bunifuCustomDataGrid2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;LabelUCedula.Name" xml:space="preserve">
+    <value>LabelUCedula</value>
+  </data>
+  <data name="&gt;&gt;LabelUCedula.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuCustomLabel, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;LabelUCedula.Parent" xml:space="preserve">
+    <value>tabPage6</value>
+  </data>
+  <data name="&gt;&gt;LabelUCedula.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;ButtonUsuarioCargar.Name" xml:space="preserve">
+    <value>ButtonUsuarioCargar</value>
+  </data>
+  <data name="&gt;&gt;ButtonUsuarioCargar.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuFlatButton, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;ButtonUsuarioCargar.Parent" xml:space="preserve">
+    <value>tabPage6</value>
+  </data>
+  <data name="&gt;&gt;ButtonUsuarioCargar.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;TextboxUsuario.Name" xml:space="preserve">
+    <value>TextboxUsuario</value>
+  </data>
+  <data name="&gt;&gt;TextboxUsuario.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuTextbox, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;TextboxUsuario.Parent" xml:space="preserve">
+    <value>tabPage6</value>
+  </data>
+  <data name="&gt;&gt;TextboxUsuario.ZOrder" xml:space="preserve">
     <value>3</value>
+  </data>
+  <data name="&gt;&gt;ButtonUsuarioModificar.Name" xml:space="preserve">
+    <value>ButtonUsuarioModificar</value>
+  </data>
+  <data name="&gt;&gt;ButtonUsuarioModificar.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuFlatButton, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;ButtonUsuarioModificar.Parent" xml:space="preserve">
+    <value>tabPage6</value>
+  </data>
+  <data name="&gt;&gt;ButtonUsuarioModificar.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;ButtonUsuarioEliminar.Name" xml:space="preserve">
+    <value>ButtonUsuarioEliminar</value>
+  </data>
+  <data name="&gt;&gt;ButtonUsuarioEliminar.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuFlatButton, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;ButtonUsuarioEliminar.Parent" xml:space="preserve">
+    <value>tabPage6</value>
+  </data>
+  <data name="&gt;&gt;ButtonUsuarioEliminar.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;LabelUNombre.Name" xml:space="preserve">
+    <value>LabelUNombre</value>
+  </data>
+  <data name="&gt;&gt;LabelUNombre.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuCustomLabel, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;LabelUNombre.Parent" xml:space="preserve">
+    <value>tabPage6</value>
+  </data>
+  <data name="&gt;&gt;LabelUNombre.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;ButtonUsuarioAgregar.Name" xml:space="preserve">
+    <value>ButtonUsuarioAgregar</value>
+  </data>
+  <data name="&gt;&gt;ButtonUsuarioAgregar.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuFlatButton, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;ButtonUsuarioAgregar.Parent" xml:space="preserve">
+    <value>tabPage6</value>
+  </data>
+  <data name="&gt;&gt;ButtonUsuarioAgregar.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;TextboxContrasena.Name" xml:space="preserve">
+    <value>TextboxContrasena</value>
+  </data>
+  <data name="&gt;&gt;TextboxContrasena.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuTextbox, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;TextboxContrasena.Parent" xml:space="preserve">
+    <value>tabPage6</value>
+  </data>
+  <data name="&gt;&gt;TextboxContrasena.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;LabelUCorreo.Name" xml:space="preserve">
+    <value>LabelUCorreo</value>
+  </data>
+  <data name="&gt;&gt;LabelUCorreo.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuCustomLabel, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;LabelUCorreo.Parent" xml:space="preserve">
+    <value>tabPage6</value>
+  </data>
+  <data name="&gt;&gt;LabelUCorreo.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;TextboxCorreo.Name" xml:space="preserve">
+    <value>TextboxCorreo</value>
+  </data>
+  <data name="&gt;&gt;TextboxCorreo.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuTextbox, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;TextboxCorreo.Parent" xml:space="preserve">
+    <value>tabPage6</value>
+  </data>
+  <data name="&gt;&gt;TextboxCorreo.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;LabelUContrasena.Name" xml:space="preserve">
+    <value>LabelUContrasena</value>
+  </data>
+  <data name="&gt;&gt;LabelUContrasena.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuCustomLabel, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;LabelUContrasena.Parent" xml:space="preserve">
+    <value>tabPage6</value>
+  </data>
+  <data name="&gt;&gt;LabelUContrasena.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;TextboxNombre.Name" xml:space="preserve">
+    <value>TextboxNombre</value>
+  </data>
+  <data name="&gt;&gt;TextboxNombre.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuTextbox, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;TextboxNombre.Parent" xml:space="preserve">
+    <value>tabPage6</value>
+  </data>
+  <data name="&gt;&gt;TextboxNombre.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;LabelUUsuario.Name" xml:space="preserve">
+    <value>LabelUUsuario</value>
+  </data>
+  <data name="&gt;&gt;LabelUUsuario.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuCustomLabel, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;LabelUUsuario.Parent" xml:space="preserve">
+    <value>tabPage6</value>
+  </data>
+  <data name="&gt;&gt;LabelUUsuario.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;TextboxCedula.Name" xml:space="preserve">
+    <value>TextboxCedula</value>
+  </data>
+  <data name="&gt;&gt;TextboxCedula.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuTextbox, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;TextboxCedula.Parent" xml:space="preserve">
+    <value>tabPage6</value>
+  </data>
+  <data name="&gt;&gt;TextboxCedula.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="tabPage6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 29</value>
+  </data>
+  <data name="tabPage6.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tabPage6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1596, 792</value>
+  </data>
+  <data name="tabPage6.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="tabPage6.Text" xml:space="preserve">
+    <value>Usuario</value>
+  </data>
+  <data name="&gt;&gt;tabPage6.Name" xml:space="preserve">
+    <value>tabPage6</value>
+  </data>
+  <data name="&gt;&gt;tabPage6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage6.Parent" xml:space="preserve">
+    <value>tabControl2</value>
+  </data>
+  <data name="&gt;&gt;tabPage6.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="bunifuCustomDataGrid2.Location" type="System.Drawing.Point, System.Drawing">
     <value>396, 39</value>
@@ -43871,32 +44627,128 @@
   <data name="&gt;&gt;TextboxCedula.ZOrder" xml:space="preserve">
     <value>14</value>
   </data>
-  <data name="tabPage6.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="&gt;&gt;comboBoxCedulaPermiAlmace.Name" xml:space="preserve">
+    <value>comboBoxCedulaPermiAlmace</value>
+  </data>
+  <data name="&gt;&gt;comboBoxCedulaPermiAlmace.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBoxCedulaPermiAlmace.Parent" xml:space="preserve">
+    <value>tabPage7</value>
+  </data>
+  <data name="&gt;&gt;comboBoxCedulaPermiAlmace.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;comboBoxUsuPerAlm.Name" xml:space="preserve">
+    <value>comboBoxUsuPerAlm</value>
+  </data>
+  <data name="&gt;&gt;comboBoxUsuPerAlm.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBoxUsuPerAlm.Parent" xml:space="preserve">
+    <value>tabPage7</value>
+  </data>
+  <data name="&gt;&gt;comboBoxUsuPerAlm.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;ButtonEliminarPeAl.Name" xml:space="preserve">
+    <value>ButtonEliminarPeAl</value>
+  </data>
+  <data name="&gt;&gt;ButtonEliminarPeAl.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuFlatButton, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;ButtonEliminarPeAl.Parent" xml:space="preserve">
+    <value>tabPage7</value>
+  </data>
+  <data name="&gt;&gt;ButtonEliminarPeAl.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;ButtonAgregarPeAl.Name" xml:space="preserve">
+    <value>ButtonAgregarPeAl</value>
+  </data>
+  <data name="&gt;&gt;ButtonAgregarPeAl.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuFlatButton, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;ButtonAgregarPeAl.Parent" xml:space="preserve">
+    <value>tabPage7</value>
+  </data>
+  <data name="&gt;&gt;ButtonAgregarPeAl.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;ButtonCargarPeAl.Name" xml:space="preserve">
+    <value>ButtonCargarPeAl</value>
+  </data>
+  <data name="&gt;&gt;ButtonCargarPeAl.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuFlatButton, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;ButtonCargarPeAl.Parent" xml:space="preserve">
+    <value>tabPage7</value>
+  </data>
+  <data name="&gt;&gt;ButtonCargarPeAl.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;DataGridPermisosPorAlmacen.Name" xml:space="preserve">
+    <value>DataGridPermisosPorAlmacen</value>
+  </data>
+  <data name="&gt;&gt;DataGridPermisosPorAlmacen.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuCustomDataGrid, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;DataGridPermisosPorAlmacen.Parent" xml:space="preserve">
+    <value>tabPage7</value>
+  </data>
+  <data name="&gt;&gt;DataGridPermisosPorAlmacen.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;bunifuCustomLabel1.Name" xml:space="preserve">
+    <value>bunifuCustomLabel1</value>
+  </data>
+  <data name="&gt;&gt;bunifuCustomLabel1.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuCustomLabel, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bunifuCustomLabel1.Parent" xml:space="preserve">
+    <value>tabPage7</value>
+  </data>
+  <data name="&gt;&gt;bunifuCustomLabel1.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;bunifuCustomLabel5.Name" xml:space="preserve">
+    <value>bunifuCustomLabel5</value>
+  </data>
+  <data name="&gt;&gt;bunifuCustomLabel5.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuCustomLabel, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bunifuCustomLabel5.Parent" xml:space="preserve">
+    <value>tabPage7</value>
+  </data>
+  <data name="&gt;&gt;bunifuCustomLabel5.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="tabPage7.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 29</value>
   </data>
-  <data name="tabPage6.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="tabPage7.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 3, 3, 3</value>
   </data>
-  <data name="tabPage6.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="tabPage7.Size" type="System.Drawing.Size, System.Drawing">
     <value>1596, 792</value>
   </data>
-  <data name="tabPage6.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="tabPage7.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
   </data>
-  <data name="tabPage6.Text" xml:space="preserve">
-    <value>usuario</value>
+  <data name="tabPage7.Text" xml:space="preserve">
+    <value>Permisos por almacen</value>
   </data>
-  <data name="&gt;&gt;tabPage6.Name" xml:space="preserve">
-    <value>tabPage6</value>
+  <data name="&gt;&gt;tabPage7.Name" xml:space="preserve">
+    <value>tabPage7</value>
   </data>
-  <data name="&gt;&gt;tabPage6.Type" xml:space="preserve">
+  <data name="&gt;&gt;tabPage7.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;tabPage6.Parent" xml:space="preserve">
+  <data name="&gt;&gt;tabPage7.Parent" xml:space="preserve">
     <value>tabControl2</value>
   </data>
-  <data name="&gt;&gt;tabPage6.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;tabPage7.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="comboBoxCedulaPermiAlmace.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt</value>
@@ -44106,13 +44958,13 @@
     <value>2, 72</value>
   </data>
   <data name="bunifuCustomLabel5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 20</value>
+    <value>78, 20</value>
   </data>
   <data name="bunifuCustomLabel5.TabIndex" type="System.Int32, mscorlib">
     <value>120</value>
   </data>
   <data name="bunifuCustomLabel5.Text" xml:space="preserve">
-    <value>almacen</value>
+    <value>Almacén</value>
   </data>
   <data name="&gt;&gt;bunifuCustomLabel5.Name" xml:space="preserve">
     <value>bunifuCustomLabel5</value>
@@ -44126,77 +44978,452 @@
   <data name="&gt;&gt;bunifuCustomLabel5.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
-  <data name="tabPage7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 29</value>
+  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
+    <value>panel1</value>
   </data>
-  <data name="tabPage7.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
+  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="tabPage7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1596, 792</value>
+  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
+    <value>tab1Ventas</value>
   </data>
-  <data name="tabPage7.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="tabPage7.Text" xml:space="preserve">
-    <value>permisos por almacen</value>
-  </data>
-  <data name="&gt;&gt;tabPage7.Name" xml:space="preserve">
-    <value>tabPage7</value>
-  </data>
-  <data name="&gt;&gt;tabPage7.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPage7.Parent" xml:space="preserve">
-    <value>tabControl2</value>
-  </data>
-  <data name="&gt;&gt;tabPage7.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="tabControl2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="tabControl2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1604, 825</value>
-  </data>
-  <data name="tabControl2.TabIndex" type="System.Int32, mscorlib">
-    <value>111</value>
-  </data>
-  <data name="&gt;&gt;tabControl2.Name" xml:space="preserve">
-    <value>tabControl2</value>
-  </data>
-  <data name="&gt;&gt;tabControl2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabControl2.Parent" xml:space="preserve">
-    <value>tab1Usuarios</value>
-  </data>
-  <data name="&gt;&gt;tabControl2.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="tab1Usuarios.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="tab1Ventas.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="tab1Ventas.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 29</value>
   </data>
-  <data name="tab1Usuarios.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="tab1Ventas.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tab1Ventas.Size" type="System.Drawing.Size, System.Drawing">
     <value>1612, 849</value>
   </data>
-  <data name="tab1Usuarios.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+  <data name="tab1Ventas.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
-  <data name="tab1Usuarios.Text" xml:space="preserve">
-    <value>Usuario</value>
+  <data name="tab1Ventas.Text" xml:space="preserve">
+    <value>Ventas</value>
   </data>
-  <data name="&gt;&gt;tab1Usuarios.Name" xml:space="preserve">
-    <value>tab1Usuarios</value>
+  <data name="&gt;&gt;tab1Ventas.Name" xml:space="preserve">
+    <value>tab1Ventas</value>
   </data>
-  <data name="&gt;&gt;tab1Usuarios.Type" xml:space="preserve">
+  <data name="&gt;&gt;tab1Ventas.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;tab1Usuarios.Parent" xml:space="preserve">
+  <data name="&gt;&gt;tab1Ventas.Parent" xml:space="preserve">
     <value>tabControl1</value>
   </data>
-  <data name="&gt;&gt;tab1Usuarios.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;tab1Ventas.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;bunifuFlatButton36.Name" xml:space="preserve">
+    <value>bunifuFlatButton36</value>
+  </data>
+  <data name="&gt;&gt;bunifuFlatButton36.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuFlatButton, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bunifuFlatButton36.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;bunifuFlatButton36.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;labelUtilidad.Name" xml:space="preserve">
+    <value>labelUtilidad</value>
+  </data>
+  <data name="&gt;&gt;labelUtilidad.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelUtilidad.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;labelUtilidad.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;labelCostoTotalizado.Name" xml:space="preserve">
+    <value>labelCostoTotalizado</value>
+  </data>
+  <data name="&gt;&gt;labelCostoTotalizado.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelCostoTotalizado.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;labelCostoTotalizado.ZOrder" xml:space="preserve">
     <value>2</value>
+  </data>
+  <data name="&gt;&gt;textBoxCostoTotal.Name" xml:space="preserve">
+    <value>textBoxCostoTotal</value>
+  </data>
+  <data name="&gt;&gt;textBoxCostoTotal.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxCostoTotal.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;textBoxCostoTotal.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;labelDetal.Name" xml:space="preserve">
+    <value>labelDetal</value>
+  </data>
+  <data name="&gt;&gt;labelDetal.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelDetal.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;labelDetal.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;labelMayor.Name" xml:space="preserve">
+    <value>labelMayor</value>
+  </data>
+  <data name="&gt;&gt;labelMayor.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelMayor.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;labelMayor.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;labelCostoTotal.Name" xml:space="preserve">
+    <value>labelCostoTotal</value>
+  </data>
+  <data name="&gt;&gt;labelCostoTotal.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelCostoTotal.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;labelCostoTotal.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;labelCosto.Name" xml:space="preserve">
+    <value>labelCosto</value>
+  </data>
+  <data name="&gt;&gt;labelCosto.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelCosto.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;labelCosto.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;textInsertarCodigo.Name" xml:space="preserve">
+    <value>textInsertarCodigo</value>
+  </data>
+  <data name="&gt;&gt;textInsertarCodigo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textInsertarCodigo.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;textInsertarCodigo.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;labelInsertarCodigo.Name" xml:space="preserve">
+    <value>labelInsertarCodigo</value>
+  </data>
+  <data name="&gt;&gt;labelInsertarCodigo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelInsertarCodigo.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;labelInsertarCodigo.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;bunifuFlatButton1.Name" xml:space="preserve">
+    <value>bunifuFlatButton1</value>
+  </data>
+  <data name="&gt;&gt;bunifuFlatButton1.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuFlatButton, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bunifuFlatButton1.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;bunifuFlatButton1.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;bunifuRestar1.Name" xml:space="preserve">
+    <value>bunifuRestar1</value>
+  </data>
+  <data name="&gt;&gt;bunifuRestar1.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuFlatButton, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bunifuRestar1.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;bunifuRestar1.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;buniActualizar.Name" xml:space="preserve">
+    <value>buniActualizar</value>
+  </data>
+  <data name="&gt;&gt;buniActualizar.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuFlatButton, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;buniActualizar.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;buniActualizar.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;labelCodigo.Name" xml:space="preserve">
+    <value>labelCodigo</value>
+  </data>
+  <data name="&gt;&gt;labelCodigo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelCodigo.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;labelCodigo.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;textSumaTotal.Name" xml:space="preserve">
+    <value>textSumaTotal</value>
+  </data>
+  <data name="&gt;&gt;textSumaTotal.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textSumaTotal.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;textSumaTotal.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;buniBnFinalizar.Name" xml:space="preserve">
+    <value>buniBnFinalizar</value>
+  </data>
+  <data name="&gt;&gt;buniBnFinalizar.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuTileButton, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;buniBnFinalizar.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;buniBnFinalizar.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;textCodigo.Name" xml:space="preserve">
+    <value>textCodigo</value>
+  </data>
+  <data name="&gt;&gt;textCodigo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textCodigo.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;textCodigo.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;DataGridVentas.Name" xml:space="preserve">
+    <value>DataGridVentas</value>
+  </data>
+  <data name="&gt;&gt;DataGridVentas.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuCustomDataGrid, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;DataGridVentas.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;DataGridVentas.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;textReferencia.Name" xml:space="preserve">
+    <value>textReferencia</value>
+  </data>
+  <data name="&gt;&gt;textReferencia.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textReferencia.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;textReferencia.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;textFactura.Name" xml:space="preserve">
+    <value>textFactura</value>
+  </data>
+  <data name="&gt;&gt;textFactura.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textFactura.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;textFactura.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;textTamano.Name" xml:space="preserve">
+    <value>textTamano</value>
+  </data>
+  <data name="&gt;&gt;textTamano.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textTamano.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;textTamano.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;labelFactura.Name" xml:space="preserve">
+    <value>labelFactura</value>
+  </data>
+  <data name="&gt;&gt;labelFactura.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelFactura.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;labelFactura.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;textProducto.Name" xml:space="preserve">
+    <value>textProducto</value>
+  </data>
+  <data name="&gt;&gt;textProducto.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textProducto.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;textProducto.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;textCantidad.Name" xml:space="preserve">
+    <value>textCantidad</value>
+  </data>
+  <data name="&gt;&gt;textCantidad.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textCantidad.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;textCantidad.ZOrder" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;textPrecio.Name" xml:space="preserve">
+    <value>textPrecio</value>
+  </data>
+  <data name="&gt;&gt;textPrecio.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textPrecio.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;textPrecio.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;labelReferencia.Name" xml:space="preserve">
+    <value>labelReferencia</value>
+  </data>
+  <data name="&gt;&gt;labelReferencia.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelReferencia.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;labelReferencia.ZOrder" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;labelCantidad.Name" xml:space="preserve">
+    <value>labelCantidad</value>
+  </data>
+  <data name="&gt;&gt;labelCantidad.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelCantidad.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;labelCantidad.ZOrder" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="&gt;&gt;labelProducto.Name" xml:space="preserve">
+    <value>labelProducto</value>
+  </data>
+  <data name="&gt;&gt;labelProducto.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelProducto.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;labelProducto.ZOrder" xml:space="preserve">
+    <value>27</value>
+  </data>
+  <data name="&gt;&gt;labelTamaño.Name" xml:space="preserve">
+    <value>labelTamaño</value>
+  </data>
+  <data name="&gt;&gt;labelTamaño.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelTamaño.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;labelTamaño.ZOrder" xml:space="preserve">
+    <value>28</value>
+  </data>
+  <data name="&gt;&gt;labelPrecio.Name" xml:space="preserve">
+    <value>labelPrecio</value>
+  </data>
+  <data name="&gt;&gt;labelPrecio.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelPrecio.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;labelPrecio.ZOrder" xml:space="preserve">
+    <value>29</value>
+  </data>
+  <data name="&gt;&gt;textTotal.Name" xml:space="preserve">
+    <value>textTotal</value>
+  </data>
+  <data name="&gt;&gt;textTotal.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textTotal.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;textTotal.ZOrder" xml:space="preserve">
+    <value>30</value>
+  </data>
+  <data name="&gt;&gt;labelTotal.Name" xml:space="preserve">
+    <value>labelTotal</value>
+  </data>
+  <data name="&gt;&gt;labelTotal.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelTotal.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;labelTotal.ZOrder" xml:space="preserve">
+    <value>31</value>
+  </data>
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 9</value>
+  </data>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1584, 827</value>
+  </data>
+  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
+    <value>89</value>
+  </data>
+  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
+    <value>tab1Ventas</value>
+  </data>
+  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="bunifuFlatButton36.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -44517,7 +45744,7 @@
     <value>Microsoft Sans Serif, 17.9999981pt, style=Bold, Italic</value>
   </data>
   <data name="textInsertarCodigo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 777</value>
+    <value>23, 777</value>
   </data>
   <data name="textInsertarCodigo.Size" type="System.Drawing.Size, System.Drawing">
     <value>153, 35</value>
@@ -44556,7 +45783,7 @@
     <value>58</value>
   </data>
   <data name="labelInsertarCodigo.Text" xml:space="preserve">
-    <value>Insertar Codigo</value>
+    <value>Insertar Código</value>
   </data>
   <data name="&gt;&gt;labelInsertarCodigo.Name" xml:space="preserve">
     <value>labelInsertarCodigo</value>
@@ -44871,13 +46098,13 @@
     <value>31, 15</value>
   </data>
   <data name="labelCodigo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>62, 20</value>
+    <value>65, 20</value>
   </data>
   <data name="labelCodigo.TabIndex" type="System.Int32, mscorlib">
     <value>87</value>
   </data>
   <data name="labelCodigo.Text" xml:space="preserve">
-    <value>codigo</value>
+    <value>Código</value>
   </data>
   <data name="&gt;&gt;labelCodigo.Name" xml:space="preserve">
     <value>labelCodigo</value>
@@ -45182,16 +46409,16 @@
     <value>NoControl</value>
   </data>
   <data name="labelReferencia.Location" type="System.Drawing.Point, System.Drawing">
-    <value>116, 15</value>
+    <value>126, 15</value>
   </data>
   <data name="labelReferencia.Size" type="System.Drawing.Size, System.Drawing">
-    <value>90, 20</value>
+    <value>97, 20</value>
   </data>
   <data name="labelReferencia.TabIndex" type="System.Int32, mscorlib">
     <value>59</value>
   </data>
   <data name="labelReferencia.Text" xml:space="preserve">
-    <value>referencia</value>
+    <value>Referencia</value>
   </data>
   <data name="&gt;&gt;labelReferencia.Name" xml:space="preserve">
     <value>labelReferencia</value>
@@ -45215,16 +46442,16 @@
     <value>NoControl</value>
   </data>
   <data name="labelCantidad.Location" type="System.Drawing.Point, System.Drawing">
-    <value>453, 19</value>
+    <value>453, 15</value>
   </data>
   <data name="labelCantidad.Size" type="System.Drawing.Size, System.Drawing">
-    <value>78, 20</value>
+    <value>81, 20</value>
   </data>
   <data name="labelCantidad.TabIndex" type="System.Int32, mscorlib">
     <value>60</value>
   </data>
   <data name="labelCantidad.Text" xml:space="preserve">
-    <value>cantidad</value>
+    <value>Cantidad</value>
   </data>
   <data name="&gt;&gt;labelCantidad.Name" xml:space="preserve">
     <value>labelCantidad</value>
@@ -45248,16 +46475,16 @@
     <value>NoControl</value>
   </data>
   <data name="labelProducto.Location" type="System.Drawing.Point, System.Drawing">
-    <value>236, 19</value>
+    <value>238, 15</value>
   </data>
   <data name="labelProducto.Size" type="System.Drawing.Size, System.Drawing">
-    <value>80, 20</value>
+    <value>81, 20</value>
   </data>
   <data name="labelProducto.TabIndex" type="System.Int32, mscorlib">
     <value>61</value>
   </data>
   <data name="labelProducto.Text" xml:space="preserve">
-    <value>producto</value>
+    <value>Producto</value>
   </data>
   <data name="&gt;&gt;labelProducto.Name" xml:space="preserve">
     <value>labelProducto</value>
@@ -45281,16 +46508,16 @@
     <value>NoControl</value>
   </data>
   <data name="labelTamaño.Location" type="System.Drawing.Point, System.Drawing">
-    <value>349, 19</value>
+    <value>346, 15</value>
   </data>
   <data name="labelTamaño.Size" type="System.Drawing.Size, System.Drawing">
-    <value>69, 20</value>
+    <value>73, 20</value>
   </data>
   <data name="labelTamaño.TabIndex" type="System.Int32, mscorlib">
     <value>62</value>
   </data>
   <data name="labelTamaño.Text" xml:space="preserve">
-    <value>tamaño</value>
+    <value>Tamaño</value>
   </data>
   <data name="&gt;&gt;labelTamaño.Name" xml:space="preserve">
     <value>labelTamaño</value>
@@ -45314,16 +46541,16 @@
     <value>NoControl</value>
   </data>
   <data name="labelPrecio.Location" type="System.Drawing.Point, System.Drawing">
-    <value>564, 19</value>
+    <value>570, 15</value>
   </data>
   <data name="labelPrecio.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 20</value>
+    <value>59, 20</value>
   </data>
   <data name="labelPrecio.TabIndex" type="System.Int32, mscorlib">
     <value>63</value>
   </data>
   <data name="labelPrecio.Text" xml:space="preserve">
-    <value>precio</value>
+    <value>Precio</value>
   </data>
   <data name="&gt;&gt;labelPrecio.Name" xml:space="preserve">
     <value>labelPrecio</value>
@@ -45368,16 +46595,16 @@
     <value>NoControl</value>
   </data>
   <data name="labelTotal.Location" type="System.Drawing.Point, System.Drawing">
-    <value>676, 19</value>
+    <value>676, 15</value>
   </data>
   <data name="labelTotal.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 20</value>
+    <value>49, 20</value>
   </data>
   <data name="labelTotal.TabIndex" type="System.Int32, mscorlib">
     <value>70</value>
   </data>
   <data name="labelTotal.Text" xml:space="preserve">
-    <value>total</value>
+    <value>Total</value>
   </data>
   <data name="&gt;&gt;labelTotal.Name" xml:space="preserve">
     <value>labelTotal</value>
@@ -45390,57 +46617,6 @@
   </data>
   <data name="&gt;&gt;labelTotal.ZOrder" xml:space="preserve">
     <value>31</value>
-  </data>
-  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 9</value>
-  </data>
-  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1584, 827</value>
-  </data>
-  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
-    <value>89</value>
-  </data>
-  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
-    <value>tab1Ventas</value>
-  </data>
-  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="tab1Ventas.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt</value>
-  </data>
-  <data name="tab1Ventas.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 29</value>
-  </data>
-  <data name="tab1Ventas.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="tab1Ventas.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1612, 849</value>
-  </data>
-  <data name="tab1Ventas.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="tab1Ventas.Text" xml:space="preserve">
-    <value>Ventas</value>
-  </data>
-  <data name="&gt;&gt;tab1Ventas.Name" xml:space="preserve">
-    <value>tab1Ventas</value>
-  </data>
-  <data name="&gt;&gt;tab1Ventas.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tab1Ventas.Parent" xml:space="preserve">
-    <value>tabControl1</value>
-  </data>
-  <data name="&gt;&gt;tab1Ventas.ZOrder" xml:space="preserve">
-    <value>1</value>
   </data>
   <data name="TextboxNombreAlmacen.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -45526,13 +46702,13 @@
     <value>12, 17</value>
   </data>
   <data name="bunifuCustomLabel3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>69, 20</value>
+    <value>71, 20</value>
   </data>
   <data name="bunifuCustomLabel3.TabIndex" type="System.Int32, mscorlib">
     <value>147</value>
   </data>
   <data name="bunifuCustomLabel3.Text" xml:space="preserve">
-    <value>nombre</value>
+    <value>Nombre</value>
   </data>
   <data name="&gt;&gt;bunifuCustomLabel3.Name" xml:space="preserve">
     <value>bunifuCustomLabel3</value>
@@ -45700,16 +46876,16 @@
     <value>NoControl</value>
   </data>
   <data name="LabelDescripcion.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 90</value>
+    <value>13, 98</value>
   </data>
   <data name="LabelDescripcion.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 20</value>
+    <value>103, 20</value>
   </data>
   <data name="LabelDescripcion.TabIndex" type="System.Int32, mscorlib">
     <value>138</value>
   </data>
   <data name="LabelDescripcion.Text" xml:space="preserve">
-    <value>descripcion</value>
+    <value>Descripción</value>
   </data>
   <data name="&gt;&gt;LabelDescripcion.Name" xml:space="preserve">
     <value>LabelDescripcion</value>
@@ -46113,13 +47289,13 @@
     <value>3, 111</value>
   </data>
   <data name="labelReporte1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>275, 24</value>
+    <value>281, 24</value>
   </data>
   <data name="labelReporte1.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
   <data name="labelReporte1.Text" xml:space="preserve">
-    <value>las ventas del día de hoy fueron</value>
+    <value>Las ventas del día de hoy fueron</value>
   </data>
   <data name="&gt;&gt;labelReporte1.Name" xml:space="preserve">
     <value>labelReporte1</value>
@@ -46176,7 +47352,7 @@
     <value>2</value>
   </data>
   <data name="labelVentasCreditoLocal.Text" xml:space="preserve">
-    <value>Ventas por tarjeta de credito</value>
+    <value>Ventas por tarjeta de crédito</value>
   </data>
   <data name="&gt;&gt;labelVentasCreditoLocal.Name" xml:space="preserve">
     <value>labelVentasCreditoLocal</value>
@@ -46316,18 +47492,6 @@
   <data name="&gt;&gt;tabPage26.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="DataGridReporteProducto.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="DataGridReporteProducto.RowHeadersWidth" type="System.Int32, mscorlib">
-    <value>51</value>
-  </data>
-  <data name="DataGridReporteProducto.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1223, 620</value>
-  </data>
-  <data name="DataGridReporteProducto.TabIndex" type="System.Int32, mscorlib">
-    <value>141</value>
-  </data>
   <data name="&gt;&gt;DataGridReporteProducto.Name" xml:space="preserve">
     <value>DataGridReporteProducto</value>
   </data>
@@ -46367,18 +47531,6 @@
   <data name="&gt;&gt;tabPage2.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="DataGridReporteDepartamento.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="DataGridReporteDepartamento.RowHeadersWidth" type="System.Int32, mscorlib">
-    <value>51</value>
-  </data>
-  <data name="DataGridReporteDepartamento.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1223, 620</value>
-  </data>
-  <data name="DataGridReporteDepartamento.TabIndex" type="System.Int32, mscorlib">
-    <value>142</value>
-  </data>
   <data name="&gt;&gt;DataGridReporteDepartamento.Name" xml:space="preserve">
     <value>DataGridReporteDepartamento</value>
   </data>
@@ -46417,18 +47569,6 @@
   </data>
   <data name="&gt;&gt;tabPage10.ZOrder" xml:space="preserve">
     <value>2</value>
-  </data>
-  <data name="DataGridReporteVentaCajeros.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="DataGridReporteVentaCajeros.RowHeadersWidth" type="System.Int32, mscorlib">
-    <value>51</value>
-  </data>
-  <data name="DataGridReporteVentaCajeros.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1226, 623</value>
-  </data>
-  <data name="DataGridReporteVentaCajeros.TabIndex" type="System.Int32, mscorlib">
-    <value>143</value>
   </data>
   <data name="&gt;&gt;DataGridReporteVentaCajeros.Name" xml:space="preserve">
     <value>DataGridReporteVentaCajeros</value>
@@ -46716,13 +47856,13 @@
     <value>3, 103</value>
   </data>
   <data name="labelReporte2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>415, 24</value>
+    <value>421, 24</value>
   </data>
   <data name="labelReporte2.TabIndex" type="System.Int32, mscorlib">
     <value>143</value>
   </data>
   <data name="labelReporte2.Text" xml:space="preserve">
-    <value>las ventas de todos los locales día de hoy fueron</value>
+    <value>Las ventas de todos los locales día de hoy fueron</value>
   </data>
   <data name="&gt;&gt;labelReporte2.Name" xml:space="preserve">
     <value>labelReporte2</value>
@@ -46779,7 +47919,7 @@
     <value>144</value>
   </data>
   <data name="labelReporteCredito2.Text" xml:space="preserve">
-    <value>Ventas por tarjeta de credito</value>
+    <value>Ventas por tarjeta de crédito</value>
   </data>
   <data name="&gt;&gt;labelReporteCredito2.Name" xml:space="preserve">
     <value>labelReporteCredito2</value>
@@ -46919,18 +48059,6 @@
   <data name="&gt;&gt;tabPage25.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="DataGridReporteProducto2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="DataGridReporteProducto2.RowHeadersWidth" type="System.Int32, mscorlib">
-    <value>51</value>
-  </data>
-  <data name="DataGridReporteProducto2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1223, 620</value>
-  </data>
-  <data name="DataGridReporteProducto2.TabIndex" type="System.Int32, mscorlib">
-    <value>141</value>
-  </data>
   <data name="&gt;&gt;DataGridReporteProducto2.Name" xml:space="preserve">
     <value>DataGridReporteProducto2</value>
   </data>
@@ -46969,18 +48097,6 @@
   </data>
   <data name="&gt;&gt;tabPage17.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="DataGridReporteDepartamento2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="DataGridReporteDepartamento2.RowHeadersWidth" type="System.Int32, mscorlib">
-    <value>51</value>
-  </data>
-  <data name="DataGridReporteDepartamento2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1226, 623</value>
-  </data>
-  <data name="DataGridReporteDepartamento2.TabIndex" type="System.Int32, mscorlib">
-    <value>142</value>
   </data>
   <data name="&gt;&gt;DataGridReporteDepartamento2.Name" xml:space="preserve">
     <value>DataGridReporteDepartamento2</value>
@@ -47021,18 +48137,6 @@
   <data name="&gt;&gt;tabPage18.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="DataGridReporteVentasAlmacen2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="DataGridReporteVentasAlmacen2.RowHeadersWidth" type="System.Int32, mscorlib">
-    <value>51</value>
-  </data>
-  <data name="DataGridReporteVentasAlmacen2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1226, 623</value>
-  </data>
-  <data name="DataGridReporteVentasAlmacen2.TabIndex" type="System.Int32, mscorlib">
-    <value>143</value>
-  </data>
   <data name="&gt;&gt;DataGridReporteVentasAlmacen2.Name" xml:space="preserve">
     <value>DataGridReporteVentasAlmacen2</value>
   </data>
@@ -47068,18 +48172,6 @@
   </data>
   <data name="&gt;&gt;tabPage19.ZOrder" xml:space="preserve">
     <value>3</value>
-  </data>
-  <data name="DataGridReporteProductosAlmacen2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="DataGridReporteProductosAlmacen2.RowHeadersWidth" type="System.Int32, mscorlib">
-    <value>51</value>
-  </data>
-  <data name="DataGridReporteProductosAlmacen2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1229, 623</value>
-  </data>
-  <data name="DataGridReporteProductosAlmacen2.TabIndex" type="System.Int32, mscorlib">
-    <value>143</value>
   </data>
   <data name="&gt;&gt;DataGridReporteProductosAlmacen2.Name" xml:space="preserve">
     <value>DataGridReporteProductosAlmacen2</value>
@@ -47117,18 +48209,6 @@
   <data name="&gt;&gt;tabPage20.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="DataGridReporteDepartamentoAlmacen2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="DataGridReporteDepartamentoAlmacen2.RowHeadersWidth" type="System.Int32, mscorlib">
-    <value>51</value>
-  </data>
-  <data name="DataGridReporteDepartamentoAlmacen2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1226, 626</value>
-  </data>
-  <data name="DataGridReporteDepartamentoAlmacen2.TabIndex" type="System.Int32, mscorlib">
-    <value>144</value>
-  </data>
   <data name="&gt;&gt;DataGridReporteDepartamentoAlmacen2.Name" xml:space="preserve">
     <value>DataGridReporteDepartamentoAlmacen2</value>
   </data>
@@ -47164,18 +48244,6 @@
   </data>
   <data name="&gt;&gt;tabPage23.ZOrder" xml:space="preserve">
     <value>5</value>
-  </data>
-  <data name="DataGridReporteVentaCajeros2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="DataGridReporteVentaCajeros2.RowHeadersWidth" type="System.Int32, mscorlib">
-    <value>51</value>
-  </data>
-  <data name="DataGridReporteVentaCajeros2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1229, 623</value>
-  </data>
-  <data name="DataGridReporteVentaCajeros2.TabIndex" type="System.Int32, mscorlib">
-    <value>144</value>
   </data>
   <data name="&gt;&gt;DataGridReporteVentaCajeros2.Name" xml:space="preserve">
     <value>DataGridReporteVentaCajeros2</value>
@@ -47213,96 +48281,6 @@
   <data name="&gt;&gt;tabPage21.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
-  <data name="chartVentasPorDiaReporte.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 6</value>
-  </data>
-  <data name="chartVentasPorDiaReporte.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
-    <value>No</value>
-  </data>
-  <data name="chartVentasPorDiaReporte.Size" type="System.Drawing.Size, System.Drawing">
-    <value>997, 599</value>
-  </data>
-  <data name="chartVentasPorDiaReporte.TabIndex" type="System.Int32, mscorlib">
-    <value>162</value>
-  </data>
-  <data name="chartVentasPorDiaReporte.Text" xml:space="preserve">
-    <value>chartVentasPorDiaReporte</value>
-  </data>
-  <data name="&gt;&gt;chartVentasPorDiaReporte.Name" xml:space="preserve">
-    <value>chartVentasPorDiaReporte</value>
-  </data>
-  <data name="&gt;&gt;chartVentasPorDiaReporte.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataVisualization.Charting.Chart, System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</value>
-  </data>
-  <data name="&gt;&gt;chartVentasPorDiaReporte.Parent" xml:space="preserve">
-    <value>tabPage1</value>
-  </data>
-  <data name="&gt;&gt;chartVentasPorDiaReporte.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="tabPage1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 27</value>
-  </data>
-  <data name="tabPage1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="tabPage1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1009, 611</value>
-  </data>
-  <data name="tabPage1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="tabPage1.Text" xml:space="preserve">
-    <value>Ventas por dia</value>
-  </data>
-  <data name="&gt;&gt;tabPage1.Name" xml:space="preserve">
-    <value>tabPage1</value>
-  </data>
-  <data name="&gt;&gt;tabPage1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPage1.Parent" xml:space="preserve">
-    <value>tabControl8</value>
-  </data>
-  <data name="&gt;&gt;tabPage1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="tabPage3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 27</value>
-  </data>
-  <data name="tabPage3.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="tabPage3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1009, 611</value>
-  </data>
-  <data name="tabPage3.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="tabPage3.Text" xml:space="preserve">
-    <value>tabPage3</value>
-  </data>
-  <data name="&gt;&gt;tabPage3.Name" xml:space="preserve">
-    <value>tabPage3</value>
-  </data>
-  <data name="&gt;&gt;tabPage3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPage3.Parent" xml:space="preserve">
-    <value>tabControl8</value>
-  </data>
-  <data name="&gt;&gt;tabPage3.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="tabControl8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>21, 18</value>
-  </data>
-  <data name="tabControl8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1017, 642</value>
-  </data>
-  <data name="tabControl8.TabIndex" type="System.Int32, mscorlib">
-    <value>163</value>
-  </data>
   <data name="&gt;&gt;tabControl8.Name" xml:space="preserve">
     <value>tabControl8</value>
   </data>
@@ -47339,18 +48317,6 @@
   <data name="&gt;&gt;tabPage24.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
-  <data name="DataGridReporteVentaDiaR2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>765, 3</value>
-  </data>
-  <data name="DataGridReporteVentaDiaR2.RowHeadersWidth" type="System.Int32, mscorlib">
-    <value>51</value>
-  </data>
-  <data name="DataGridReporteVentaDiaR2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>758, 682</value>
-  </data>
-  <data name="DataGridReporteVentaDiaR2.TabIndex" type="System.Int32, mscorlib">
-    <value>146</value>
-  </data>
   <data name="&gt;&gt;DataGridReporteVentaDiaR2.Name" xml:space="preserve">
     <value>DataGridReporteVentaDiaR2</value>
   </data>
@@ -47362,18 +48328,6 @@
   </data>
   <data name="&gt;&gt;DataGridReporteVentaDiaR2.ZOrder" xml:space="preserve">
     <value>0</value>
-  </data>
-  <data name="DataGridReporteVentaDia2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 3</value>
-  </data>
-  <data name="DataGridReporteVentaDia2.RowHeadersWidth" type="System.Int32, mscorlib">
-    <value>51</value>
-  </data>
-  <data name="DataGridReporteVentaDia2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>752, 682</value>
-  </data>
-  <data name="DataGridReporteVentaDia2.TabIndex" type="System.Int32, mscorlib">
-    <value>145</value>
   </data>
   <data name="&gt;&gt;DataGridReporteVentaDia2.Name" xml:space="preserve">
     <value>DataGridReporteVentaDia2</value>
@@ -47553,13 +48507,13 @@
     <value>2, 255</value>
   </data>
   <data name="bunifuCustomLabel17.Size" type="System.Drawing.Size, System.Drawing">
-    <value>84, 20</value>
+    <value>87, 20</value>
   </data>
   <data name="bunifuCustomLabel17.TabIndex" type="System.Int32, mscorlib">
     <value>158</value>
   </data>
   <data name="bunifuCustomLabel17.Text" xml:space="preserve">
-    <value>categoría</value>
+    <value>Categoría</value>
   </data>
   <data name="&gt;&gt;bunifuCustomLabel17.Name" xml:space="preserve">
     <value>bunifuCustomLabel17</value>
@@ -47621,7 +48575,7 @@
 </value>
   </data>
   <data name="TextboxGastosDescripcion.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 140</value>
+    <value>6, 155</value>
   </data>
   <data name="TextboxGastosDescripcion.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
@@ -47654,16 +48608,16 @@
     <value>NoControl</value>
   </data>
   <data name="bunifuCustomLabel16.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 116</value>
+    <value>6, 131</value>
   </data>
   <data name="bunifuCustomLabel16.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 20</value>
+    <value>103, 20</value>
   </data>
   <data name="bunifuCustomLabel16.TabIndex" type="System.Int32, mscorlib">
     <value>156</value>
   </data>
   <data name="bunifuCustomLabel16.Text" xml:space="preserve">
-    <value>descripcion</value>
+    <value>Descripción</value>
   </data>
   <data name="&gt;&gt;bunifuCustomLabel16.Name" xml:space="preserve">
     <value>bunifuCustomLabel16</value>
@@ -47687,16 +48641,16 @@
     <value>NoControl</value>
   </data>
   <data name="LabelFechaGastos.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 96</value>
+    <value>6, 96</value>
   </data>
   <data name="LabelFechaGastos.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 20</value>
+    <value>59, 20</value>
   </data>
   <data name="LabelFechaGastos.TabIndex" type="System.Int32, mscorlib">
     <value>155</value>
   </data>
   <data name="LabelFechaGastos.Text" xml:space="preserve">
-    <value>fecha</value>
+    <value>Fecha</value>
   </data>
   <data name="&gt;&gt;LabelFechaGastos.Name" xml:space="preserve">
     <value>LabelFechaGastos</value>
@@ -47855,13 +48809,13 @@
     <value>4, 26</value>
   </data>
   <data name="LabelTotalGastos.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 20</value>
+    <value>49, 20</value>
   </data>
   <data name="LabelTotalGastos.TabIndex" type="System.Int32, mscorlib">
     <value>151</value>
   </data>
   <data name="LabelTotalGastos.Text" xml:space="preserve">
-    <value>total</value>
+    <value>Total</value>
   </data>
   <data name="&gt;&gt;LabelTotalGastos.Name" xml:space="preserve">
     <value>LabelTotalGastos</value>
@@ -48026,13 +48980,13 @@
     <value>2, 201</value>
   </data>
   <data name="bunifuCustomLabel12.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 20</value>
+    <value>78, 20</value>
   </data>
   <data name="bunifuCustomLabel12.TabIndex" type="System.Int32, mscorlib">
     <value>133</value>
   </data>
   <data name="bunifuCustomLabel12.Text" xml:space="preserve">
-    <value>almacen</value>
+    <value>Almacén</value>
   </data>
   <data name="&gt;&gt;bunifuCustomLabel12.Name" xml:space="preserve">
     <value>bunifuCustomLabel12</value>
@@ -48059,7 +49013,7 @@
     <value>0</value>
   </data>
   <data name="gasto.Text" xml:space="preserve">
-    <value>gasto</value>
+    <value>Gasto</value>
   </data>
   <data name="&gt;&gt;gasto.Name" xml:space="preserve">
     <value>gasto</value>
@@ -48438,7 +49392,7 @@
     <value>1</value>
   </data>
   <data name="tabPage31.Text" xml:space="preserve">
-    <value>tipo de gasto</value>
+    <value>Tipo de gasto</value>
   </data>
   <data name="&gt;&gt;tabPage31.Name" xml:space="preserve">
     <value>tabPage31</value>
@@ -49048,7 +50002,7 @@
     <value>2</value>
   </data>
   <data name="tabPage30.Text" xml:space="preserve">
-    <value>entrada</value>
+    <value>Entrada</value>
   </data>
   <data name="&gt;&gt;tabPage30.Name" xml:space="preserve">
     <value>tabPage30</value>
@@ -49445,7 +50399,7 @@
     <value>3</value>
   </data>
   <data name="tabPage32.Text" xml:space="preserve">
-    <value>tipo de entrada</value>
+    <value>Tipo de entrada</value>
   </data>
   <data name="&gt;&gt;tabPage32.Name" xml:space="preserve">
     <value>tabPage32</value>
@@ -49531,30 +50485,411 @@
   <data name="&gt;&gt;tabControl1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="DataGridReporteProducto.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="DataGridReporteProducto.RowHeadersWidth" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
+  <data name="DataGridReporteProducto.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1223, 620</value>
+  </data>
+  <data name="DataGridReporteProducto.TabIndex" type="System.Int32, mscorlib">
+    <value>141</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporteProducto.Name" xml:space="preserve">
+    <value>DataGridReporteProducto</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporteProducto.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuCustomDataGrid, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporteProducto.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporteProducto.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="DataGridReporteDepartamento.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="DataGridReporteDepartamento.RowHeadersWidth" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
+  <data name="DataGridReporteDepartamento.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1223, 620</value>
+  </data>
+  <data name="DataGridReporteDepartamento.TabIndex" type="System.Int32, mscorlib">
+    <value>142</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporteDepartamento.Name" xml:space="preserve">
+    <value>DataGridReporteDepartamento</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporteDepartamento.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuCustomDataGrid, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporteDepartamento.Parent" xml:space="preserve">
+    <value>tabPage10</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporteDepartamento.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="DataGridReporteVentaCajeros.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="DataGridReporteVentaCajeros.RowHeadersWidth" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
+  <data name="DataGridReporteVentaCajeros.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1226, 623</value>
+  </data>
+  <data name="DataGridReporteVentaCajeros.TabIndex" type="System.Int32, mscorlib">
+    <value>143</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporteVentaCajeros.Name" xml:space="preserve">
+    <value>DataGridReporteVentaCajeros</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporteVentaCajeros.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuCustomDataGrid, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporteVentaCajeros.Parent" xml:space="preserve">
+    <value>tabPage22</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporteVentaCajeros.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="DataGridReporteProducto2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="DataGridReporteProducto2.RowHeadersWidth" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
+  <data name="DataGridReporteProducto2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1223, 620</value>
+  </data>
+  <data name="DataGridReporteProducto2.TabIndex" type="System.Int32, mscorlib">
+    <value>141</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporteProducto2.Name" xml:space="preserve">
+    <value>DataGridReporteProducto2</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporteProducto2.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuCustomDataGrid, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporteProducto2.Parent" xml:space="preserve">
+    <value>tabPage17</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporteProducto2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="DataGridReporteDepartamento2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="DataGridReporteDepartamento2.RowHeadersWidth" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
+  <data name="DataGridReporteDepartamento2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1226, 623</value>
+  </data>
+  <data name="DataGridReporteDepartamento2.TabIndex" type="System.Int32, mscorlib">
+    <value>142</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporteDepartamento2.Name" xml:space="preserve">
+    <value>DataGridReporteDepartamento2</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporteDepartamento2.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuCustomDataGrid, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporteDepartamento2.Parent" xml:space="preserve">
+    <value>tabPage18</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporteDepartamento2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="DataGridReporteVentasAlmacen2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="DataGridReporteVentasAlmacen2.RowHeadersWidth" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
+  <data name="DataGridReporteVentasAlmacen2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1226, 623</value>
+  </data>
+  <data name="DataGridReporteVentasAlmacen2.TabIndex" type="System.Int32, mscorlib">
+    <value>143</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporteVentasAlmacen2.Name" xml:space="preserve">
+    <value>DataGridReporteVentasAlmacen2</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporteVentasAlmacen2.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuCustomDataGrid, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporteVentasAlmacen2.Parent" xml:space="preserve">
+    <value>tabPage19</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporteVentasAlmacen2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="DataGridReporteProductosAlmacen2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="DataGridReporteProductosAlmacen2.RowHeadersWidth" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
+  <data name="DataGridReporteProductosAlmacen2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1229, 623</value>
+  </data>
+  <data name="DataGridReporteProductosAlmacen2.TabIndex" type="System.Int32, mscorlib">
+    <value>143</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporteProductosAlmacen2.Name" xml:space="preserve">
+    <value>DataGridReporteProductosAlmacen2</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporteProductosAlmacen2.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuCustomDataGrid, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporteProductosAlmacen2.Parent" xml:space="preserve">
+    <value>tabPage20</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporteProductosAlmacen2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="DataGridReporteDepartamentoAlmacen2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="DataGridReporteDepartamentoAlmacen2.RowHeadersWidth" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
+  <data name="DataGridReporteDepartamentoAlmacen2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1226, 626</value>
+  </data>
+  <data name="DataGridReporteDepartamentoAlmacen2.TabIndex" type="System.Int32, mscorlib">
+    <value>144</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporteDepartamentoAlmacen2.Name" xml:space="preserve">
+    <value>DataGridReporteDepartamentoAlmacen2</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporteDepartamentoAlmacen2.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuCustomDataGrid, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporteDepartamentoAlmacen2.Parent" xml:space="preserve">
+    <value>tabPage23</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporteDepartamentoAlmacen2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="DataGridReporteVentaCajeros2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="DataGridReporteVentaCajeros2.RowHeadersWidth" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
+  <data name="DataGridReporteVentaCajeros2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1229, 623</value>
+  </data>
+  <data name="DataGridReporteVentaCajeros2.TabIndex" type="System.Int32, mscorlib">
+    <value>144</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporteVentaCajeros2.Name" xml:space="preserve">
+    <value>DataGridReporteVentaCajeros2</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporteVentaCajeros2.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuCustomDataGrid, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporteVentaCajeros2.Parent" xml:space="preserve">
+    <value>tabPage21</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporteVentaCajeros2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tabPage1.Name" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;tabPage1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage1.Parent" xml:space="preserve">
+    <value>tabControl8</value>
+  </data>
+  <data name="&gt;&gt;tabPage1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tabPage3.Name" xml:space="preserve">
+    <value>tabPage3</value>
+  </data>
+  <data name="&gt;&gt;tabPage3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage3.Parent" xml:space="preserve">
+    <value>tabControl8</value>
+  </data>
+  <data name="&gt;&gt;tabPage3.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tabControl8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>21, 18</value>
+  </data>
+  <data name="tabControl8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1017, 642</value>
+  </data>
+  <data name="tabControl8.TabIndex" type="System.Int32, mscorlib">
+    <value>163</value>
+  </data>
+  <data name="&gt;&gt;tabControl8.Name" xml:space="preserve">
+    <value>tabControl8</value>
+  </data>
+  <data name="&gt;&gt;tabControl8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabControl8.Parent" xml:space="preserve">
+    <value>tabPage24</value>
+  </data>
+  <data name="&gt;&gt;tabControl8.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;chartVentasPorDiaReporte.Name" xml:space="preserve">
+    <value>chartVentasPorDiaReporte</value>
+  </data>
+  <data name="&gt;&gt;chartVentasPorDiaReporte.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataVisualization.Charting.Chart, System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</value>
+  </data>
+  <data name="&gt;&gt;chartVentasPorDiaReporte.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;chartVentasPorDiaReporte.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tabPage1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 27</value>
+  </data>
+  <data name="tabPage1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tabPage1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1009, 611</value>
+  </data>
+  <data name="tabPage1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="tabPage1.Text" xml:space="preserve">
+    <value>Ventas por dia</value>
+  </data>
+  <data name="&gt;&gt;tabPage1.Name" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;tabPage1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage1.Parent" xml:space="preserve">
+    <value>tabControl8</value>
+  </data>
+  <data name="&gt;&gt;tabPage1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="chartVentasPorDiaReporte.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 6</value>
+  </data>
+  <data name="chartVentasPorDiaReporte.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="chartVentasPorDiaReporte.Size" type="System.Drawing.Size, System.Drawing">
+    <value>997, 599</value>
+  </data>
+  <data name="chartVentasPorDiaReporte.TabIndex" type="System.Int32, mscorlib">
+    <value>162</value>
+  </data>
+  <data name="chartVentasPorDiaReporte.Text" xml:space="preserve">
+    <value>chartVentasPorDiaReporte</value>
+  </data>
+  <data name="&gt;&gt;chartVentasPorDiaReporte.Name" xml:space="preserve">
+    <value>chartVentasPorDiaReporte</value>
+  </data>
+  <data name="&gt;&gt;chartVentasPorDiaReporte.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataVisualization.Charting.Chart, System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</value>
+  </data>
+  <data name="&gt;&gt;chartVentasPorDiaReporte.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;chartVentasPorDiaReporte.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tabPage3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 27</value>
+  </data>
+  <data name="tabPage3.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tabPage3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1009, 611</value>
+  </data>
+  <data name="tabPage3.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tabPage3.Text" xml:space="preserve">
+    <value>tabPage3</value>
+  </data>
+  <data name="&gt;&gt;tabPage3.Name" xml:space="preserve">
+    <value>tabPage3</value>
+  </data>
+  <data name="&gt;&gt;tabPage3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage3.Parent" xml:space="preserve">
+    <value>tabControl8</value>
+  </data>
+  <data name="&gt;&gt;tabPage3.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="DataGridReporteVentaDiaR2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>765, 3</value>
+  </data>
+  <data name="DataGridReporteVentaDiaR2.RowHeadersWidth" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
+  <data name="DataGridReporteVentaDiaR2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>758, 682</value>
+  </data>
+  <data name="DataGridReporteVentaDiaR2.TabIndex" type="System.Int32, mscorlib">
+    <value>146</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporteVentaDiaR2.Name" xml:space="preserve">
+    <value>DataGridReporteVentaDiaR2</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporteVentaDiaR2.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuCustomDataGrid, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporteVentaDiaR2.Parent" xml:space="preserve">
+    <value>tabPage27</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporteVentaDiaR2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="DataGridReporteVentaDia2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 3</value>
+  </data>
+  <data name="DataGridReporteVentaDia2.RowHeadersWidth" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
+  <data name="DataGridReporteVentaDia2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>752, 682</value>
+  </data>
+  <data name="DataGridReporteVentaDia2.TabIndex" type="System.Int32, mscorlib">
+    <value>145</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporteVentaDia2.Name" xml:space="preserve">
+    <value>DataGridReporteVentaDia2</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporteVentaDia2.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuCustomDataGrid, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporteVentaDia2.Parent" xml:space="preserve">
+    <value>tabPage27</value>
+  </data>
+  <data name="&gt;&gt;DataGridReporteVentaDia2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
-  <data name="buscarToolStripMenuItem.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
-    <value>F9</value>
-  </data>
-  <data name="buscarToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>146, 22</value>
-  </data>
-  <data name="buscarToolStripMenuItem.Text" xml:space="preserve">
-    <value>buscar</value>
-  </data>
-  <data name="buscarfacturaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>146, 22</value>
-  </data>
-  <data name="buscarfacturaToolStripMenuItem.Text" xml:space="preserve">
-    <value>buscarfactura</value>
-  </data>
-  <data name="macro1ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>62, 20</value>
-  </data>
-  <data name="macro1ToolStripMenuItem.Text" xml:space="preserve">
-    <value>macro 1</value>
-  </data>
   <data name="menuStrip1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
@@ -49582,6 +50917,27 @@
   <data name="&gt;&gt;menuStrip1.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <data name="macro1ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 20</value>
+  </data>
+  <data name="macro1ToolStripMenuItem.Text" xml:space="preserve">
+    <value>macro 1</value>
+  </data>
+  <data name="buscarToolStripMenuItem.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>F9</value>
+  </data>
+  <data name="buscarToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>146, 22</value>
+  </data>
+  <data name="buscarToolStripMenuItem.Text" xml:space="preserve">
+    <value>buscar</value>
+  </data>
+  <data name="buscarfacturaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>146, 22</value>
+  </data>
+  <data name="buscarfacturaToolStripMenuItem.Text" xml:space="preserve">
+    <value>buscarfactura</value>
+  </data>
   <metadata name="notifyIcon1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>132, 17</value>
   </metadata>
@@ -49605,6 +50961,93 @@
   </data>
   <data name="bunifuGradientPanel1.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
+  </data>
+  <data name="&gt;&gt;pictureBox2.Name" xml:space="preserve">
+    <value>pictureBox2</value>
+  </data>
+  <data name="&gt;&gt;pictureBox2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBox2.Parent" xml:space="preserve">
+    <value>bunifuGradientPanel1</value>
+  </data>
+  <data name="&gt;&gt;pictureBox2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;bunifuImageButton1.Name" xml:space="preserve">
+    <value>bunifuImageButton1</value>
+  </data>
+  <data name="&gt;&gt;bunifuImageButton1.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuImageButton, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bunifuImageButton1.Parent" xml:space="preserve">
+    <value>bunifuGradientPanel1</value>
+  </data>
+  <data name="&gt;&gt;bunifuImageButton1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;labelAlmacen.Name" xml:space="preserve">
+    <value>labelAlmacen</value>
+  </data>
+  <data name="&gt;&gt;labelAlmacen.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelAlmacen.Parent" xml:space="preserve">
+    <value>bunifuGradientPanel1</value>
+  </data>
+  <data name="&gt;&gt;labelAlmacen.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;buniCerrar.Name" xml:space="preserve">
+    <value>buniCerrar</value>
+  </data>
+  <data name="&gt;&gt;buniCerrar.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuImageButton, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;buniCerrar.Parent" xml:space="preserve">
+    <value>bunifuGradientPanel1</value>
+  </data>
+  <data name="&gt;&gt;buniCerrar.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;buniMaxMin.Name" xml:space="preserve">
+    <value>buniMaxMin</value>
+  </data>
+  <data name="&gt;&gt;buniMaxMin.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuImageButton, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;buniMaxMin.Parent" xml:space="preserve">
+    <value>bunifuGradientPanel1</value>
+  </data>
+  <data name="&gt;&gt;buniMaxMin.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="bunifuGradientPanel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="bunifuGradientPanel1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Extrabold, 8.249999pt, style=Bold, Italic</value>
+  </data>
+  <data name="bunifuGradientPanel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="bunifuGradientPanel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1586, 33</value>
+  </data>
+  <data name="bunifuGradientPanel1.TabIndex" type="System.Int32, mscorlib">
+    <value>75</value>
+  </data>
+  <data name="&gt;&gt;bunifuGradientPanel1.Name" xml:space="preserve">
+    <value>bunifuGradientPanel1</value>
+  </data>
+  <data name="&gt;&gt;bunifuGradientPanel1.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuGradientPanel, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bunifuGradientPanel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;bunifuGradientPanel1.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="pictureBox2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -50011,33 +51454,6 @@
   <data name="&gt;&gt;buniMaxMin.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="bunifuGradientPanel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="bunifuGradientPanel1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Extrabold, 8.249999pt, style=Bold, Italic</value>
-  </data>
-  <data name="bunifuGradientPanel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="bunifuGradientPanel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1586, 33</value>
-  </data>
-  <data name="bunifuGradientPanel1.TabIndex" type="System.Int32, mscorlib">
-    <value>75</value>
-  </data>
-  <data name="&gt;&gt;bunifuGradientPanel1.Name" xml:space="preserve">
-    <value>bunifuGradientPanel1</value>
-  </data>
-  <data name="&gt;&gt;bunifuGradientPanel1.Type" xml:space="preserve">
-    <value>Bunifu.Framework.UI.BunifuGradientPanel, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;bunifuGradientPanel1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;bunifuGradientPanel1.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <metadata name="bunifuElipse1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>245, 17</value>
   </metadata>
@@ -50052,9 +51468,6 @@
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>1586, 923</value>
-  </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>rrrrrrrrrrttttttttttttttttt</value>
