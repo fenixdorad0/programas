@@ -526,7 +526,7 @@ namespace MysqlTienda
 
         public void buniBtnLogin_Click_1(object sender, EventArgs e)
         {
-            logearse();
+            
 
         }
 
@@ -3091,6 +3091,11 @@ namespace MysqlTienda
         private void buniTextPass_MouseDown(object sender, MouseEventArgs e)
         {
             buniTextPass.Text = "";
+        }
+
+        private void bunifuImageButton2_Click_1(object sender, EventArgs e)
+        {
+            logearse();
         }
     }
 
