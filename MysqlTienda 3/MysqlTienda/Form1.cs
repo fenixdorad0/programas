@@ -97,7 +97,7 @@ namespace MysqlTienda
         }
         public void Form1_Load(object sender, EventArgs e)
         {
-            buniMaxMin.Enabled = false;
+            ///buniMaxMin.Enabled = false;
             //this.Size = new Size(240, 637);
             textInsertarCodigo.Enabled = false;
         }
@@ -465,9 +465,9 @@ namespace MysqlTienda
 
 
             }
-            catch (Exception error)
+            catch 
             {
-
+                
             }
 
 
@@ -491,7 +491,7 @@ namespace MysqlTienda
 
 
             }
-            catch (Exception error)
+            catch 
             {
 
             }
@@ -513,7 +513,7 @@ namespace MysqlTienda
 
 
             }
-            catch (Exception error)
+            catch 
             {
 
             }
@@ -549,7 +549,7 @@ namespace MysqlTienda
                     labelAlmacen.Text = buniTextUsuario.Text;
                     //this.Size = new Size(1339, 637);
                     textInsertarCodigo.Enabled = true;
-                    buniMaxMin.Enabled = true;
+                    //buniMaxMin.Enabled = true;
                     cerrarConeccion();
                     cargarCiudades();
                     cargarCiudadesGastos();
@@ -2053,7 +2053,7 @@ namespace MysqlTienda
 
 
                 }
-                catch (Exception error)
+                catch 
                 {
                     //MessageBox.Show(Convert.ToString(error));
                 }
@@ -2609,9 +2609,9 @@ namespace MysqlTienda
             try
             {
                 LabelIdGastos.Text = DataGridGastos.CurrentRow.Cells[0].Value.ToString();
-                TextboxGatosTotal.text = DataGridGastos.CurrentRow.Cells[1].Value.ToString();
+                TextboxGatosTotal.Text = DataGridGastos.CurrentRow.Cells[1].Value.ToString();
                 LabelFechaGastos.Text = DataGridGastos.CurrentRow.Cells[2].Value.ToString();
-                TextboxGastosDescripcion.text = DataGridGastos.CurrentRow.Cells[3].Value.ToString();
+                TextboxGastosDescripcion.Text = DataGridGastos.CurrentRow.Cells[3].Value.ToString();
 
                 comboBoxGastoAlmacen.Text = DataGridGastos.CurrentRow.Cells[5].Value.ToString();
                 comboBoxGastoCatagoria.Text = DataGridGastos.CurrentRow.Cells[6].Value.ToString();
@@ -2645,7 +2645,7 @@ namespace MysqlTienda
                 cerrarConeccion();
                 if (gastoEntrada == "gasto")
                 {
-                    insertarCodigo = "INSERT INTO easyerp.gastoentrada (`id`, `total`, `fecha`, `descripcion`, `usuario_cc`, `almacen_nombre`, `gastoOentrada`, `categoria`) VALUES (NULL, '" + TextboxGatosTotal.text + "', '" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "', '" + TextboxGastosDescripcion.text + "', '" + labelCedula.Text + "', '" + comboBoxGastoAlmacen.Text + "', '" + gastoEntrada + "', '" + comboBoxGastoCatagoria.Text + "');";
+                    insertarCodigo = "INSERT INTO easyerp.gastoentrada (`id`, `total`, `fecha`, `descripcion`, `usuario_cc`, `almacen_nombre`, `gastoOentrada`, `categoria`) VALUES (NULL, '" + TextboxGatosTotal.Text + "', '" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "', '" + TextboxGastosDescripcion.Text + "', '" + labelCedula.Text + "', '" + comboBoxGastoAlmacen.Text + "', '" + gastoEntrada + "', '" + comboBoxGastoCatagoria.Text + "');";
                 }
                 else
                 {
@@ -2766,7 +2766,7 @@ namespace MysqlTienda
                 string insertarCodigo = "";
                 if (entradaGasto == "gasto")
                 {
-                    insertarCodigo = "UPDATE easyerp.gastoentrada SET `total` = '" + TextboxGatosTotal.text + "', `descripcion` = '" + TextboxGastosDescripcion.text + "', `almacen_nombre` = '" + comboBoxGastoAlmacen.Text + "', `categoria` = '" + comboBoxGastoCatagoria.Text + "' WHERE `gastoentrada`.`id` = " + LabelIdGastos.Text + "";
+                    insertarCodigo = "UPDATE easyerp.gastoentrada SET `total` = '" + TextboxGatosTotal.Text + "', `descripcion` = '" + TextboxGastosDescripcion.Text + "', `almacen_nombre` = '" + comboBoxGastoAlmacen.Text + "', `categoria` = '" + comboBoxGastoCatagoria.Text + "' WHERE `gastoentrada`.`id` = " + LabelIdGastos.Text + "";
                 }
                 else
                 {

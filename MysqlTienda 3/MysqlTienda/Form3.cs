@@ -16,7 +16,7 @@ namespace MysqlTienda
     public partial class Form3 : Form
     {
         MySqlConnection conectar = new MySqlConnection("datasource=localhost;port=3306;username=root;password=;SslMode=none");
-        MySqlCommand command;
+        //MySqlCommand command;
         public Form3()
         {
             InitializeComponent();

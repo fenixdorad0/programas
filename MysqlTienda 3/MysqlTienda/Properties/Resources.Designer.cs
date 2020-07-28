@@ -63,6 +63,16 @@ namespace MysqlTienda.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _029_yen_4 {
+            get {
+                object obj = ResourceManager.GetObject("029-yen-4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap botton {
             get {
                 object obj = ResourceManager.GetObject("botton", resourceCulture);
@@ -96,6 +106,36 @@ namespace MysqlTienda.Properties {
         internal static System.Drawing.Bitmap Logo_tendidos_del_Tolima {
             get {
                 object obj = ResourceManager.GetObject("Logo tendidos del Tolima", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap minimizar_4 {
+            get {
+                object obj = ResourceManager.GetObject("minimizar 4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap minimizar_5 {
+            get {
+                object obj = ResourceManager.GetObject("minimizar 5", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap minimizar3 {
+            get {
+                object obj = ResourceManager.GetObject("minimizar3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
