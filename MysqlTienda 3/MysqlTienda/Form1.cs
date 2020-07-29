@@ -2535,7 +2535,7 @@ namespace MysqlTienda
 
         private void bunifuFlatButton22_Click(object sender, EventArgs e)
         {
-            cargarTablaGastos("gasto");
+          
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
@@ -2634,7 +2634,7 @@ namespace MysqlTienda
 
         private void bunifuFlatButton21_Click_1(object sender, EventArgs e)
         {
-            agregar("gasto");
+            
         }
 
         private void agregar(string gastoEntrada)
@@ -2717,7 +2717,7 @@ namespace MysqlTienda
 
         private void bunifuFlatButton12_Click_4(object sender, EventArgs e)
         {
-            eliminarEntradaGasto("gasto");
+           
         }
 
         private void eliminarEntradaGasto(String entradaGasto)
@@ -2755,7 +2755,7 @@ namespace MysqlTienda
 
         private void bunifuFlatButton23_Click(object sender, EventArgs e)
         {
-            modificarEntradaGasto("gasto");
+            
         }
 
         private void modificarEntradaGasto(string entradaGasto)
@@ -3096,6 +3096,26 @@ namespace MysqlTienda
         private void bunifuImageButton2_Click_1(object sender, EventArgs e)
         {
             logearse();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void bunifuImageButton5_Click(object sender, EventArgs e)
+        {
+            cargarTablaGastos("gasto");
+        }
+
+        private void bunifuImageButton6_Click(object sender, EventArgs e)
+        {
+            agregar("gasto");
+        }
+
+        private void bunifuImageButton8_Click(object sender, EventArgs e)
+        {
+            modificarEntradaGasto("gasto");
         }
     }
 
