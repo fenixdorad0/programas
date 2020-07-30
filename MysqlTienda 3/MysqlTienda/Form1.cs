@@ -2606,15 +2606,28 @@ namespace MysqlTienda
 
         private void DataGridGastos_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            idGasto();
+        }
+
+        private void idGasto()
+        {
             try
             {
-                LabelIdGastos.Text = DataGridGastos.CurrentRow.Cells[0].Value.ToString();
-                TextboxGatosTotal.Text = DataGridGastos.CurrentRow.Cells[1].Value.ToString();
-                LabelFechaGastos.Text = DataGridGastos.CurrentRow.Cells[2].Value.ToString();
-                TextboxGastosDescripcion.Text = DataGridGastos.CurrentRow.Cells[3].Value.ToString();
+                if (DataGridGastos.Rows.Count == 0 || DataGridGastos.Rows.Count == 1)
+                {
 
-                comboBoxGastoAlmacen.Text = DataGridGastos.CurrentRow.Cells[5].Value.ToString();
-                comboBoxGastoCatagoria.Text = DataGridGastos.CurrentRow.Cells[6].Value.ToString();
+                }
+                else
+                {
+                    LabelIdGastos.Text = DataGridGastos.CurrentRow.Cells[0].Value.ToString();
+                    TextboxGatosTotal.Text = DataGridGastos.CurrentRow.Cells[1].Value.ToString();
+                    LabelFechaGastos.Text = DataGridGastos.CurrentRow.Cells[2].Value.ToString();
+                    TextboxGastosDescripcion.Text = DataGridGastos.CurrentRow.Cells[3].Value.ToString();
+
+                    comboBoxGastoAlmacen.Text = DataGridGastos.CurrentRow.Cells[5].Value.ToString();
+                    comboBoxGastoCatagoria.Text = DataGridGastos.CurrentRow.Cells[6].Value.ToString();
+                }
+                
             }
             catch (Exception error)
             {
@@ -3116,6 +3129,21 @@ namespace MysqlTienda
         private void bunifuImageButton8_Click(object sender, EventArgs e)
         {
             modificarEntradaGasto("gasto");
+        }
+
+        private void bunifuImageButton7_Click(object sender, EventArgs e)
+        {
+            eliminarEntradaGasto("gasto");
+        }
+
+        private void DataGridGastos_KeyDown(object sender, KeyEventArgs e)
+        {
+            idGasto();
+        }
+
+        private void DataGridGastos_KeyUp(object sender, KeyEventArgs e)
+        {
+            idGasto();
         }
     }
 
