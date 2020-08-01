@@ -1109,6 +1109,7 @@ namespace MysqlTienda
                 buscarFactura();
                 iniciarTablaVentas("");
                 sumaTotal();
+
             }
 
 
@@ -3144,6 +3145,11 @@ namespace MysqlTienda
         private void DataGridGastos_KeyUp(object sender, KeyEventArgs e)
         {
             idGasto();
+        }
+
+        private void bunifuSeparator4_Load(object sender, EventArgs e)
+        {
+
         }
     }
 
