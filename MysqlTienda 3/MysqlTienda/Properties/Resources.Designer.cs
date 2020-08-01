@@ -123,9 +123,29 @@ namespace MysqlTienda.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap CURD1 {
+            get {
+                object obj = ResourceManager.GetObject("CURD1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ELIMINAR {
             get {
                 object obj = ResourceManager.GetObject("ELIMINAR", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap FINALIZAR {
+            get {
+                object obj = ResourceManager.GetObject("FINALIZAR", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

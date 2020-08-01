@@ -44201,176 +44201,170 @@
   <data name="&gt;&gt;tab1Usuarios.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="bunifuFlatButton36.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
+  <data name="textCodigo.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Averta Demo PE Cutted Demo, 14.249999pt</value>
   </data>
-  <data name="bunifuFlatButton36.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
+  <data name="textCodigo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>112, 142</value>
   </data>
-  <data name="bunifuFlatButton36.Iconimage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        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
-        Vu+NkQAAAABJRU5ErkJggg==
-</value>
+  <data name="textCodigo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 25</value>
   </data>
-  <data name="bunifuFlatButton36.Location" type="System.Drawing.Point, System.Drawing">
-    <value>232, 754</value>
+  <data name="textCodigo.TabIndex" type="System.Int32, mscorlib">
+    <value>86</value>
   </data>
-  <data name="bunifuFlatButton36.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+  <data name="textCodigo.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
   </data>
-  <data name="bunifuFlatButton36.Size" type="System.Drawing.Size, System.Drawing">
-    <value>167, 62</value>
+  <data name="&gt;&gt;textCodigo.Name" xml:space="preserve">
+    <value>textCodigo</value>
   </data>
-  <data name="bunifuFlatButton36.TabIndex" type="System.Int32, mscorlib">
-    <value>97</value>
+  <data name="&gt;&gt;textCodigo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="bunifuFlatButton36.Text" xml:space="preserve">
-    <value>pruebas</value>
+  <data name="&gt;&gt;textCodigo.Parent" xml:space="preserve">
+    <value>panel12</value>
   </data>
-  <data name="&gt;&gt;bunifuFlatButton36.Name" xml:space="preserve">
-    <value>bunifuFlatButton36</value>
-  </data>
-  <data name="&gt;&gt;bunifuFlatButton36.Type" xml:space="preserve">
-    <value>Bunifu.Framework.UI.BunifuFlatButton, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;bunifuFlatButton36.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;bunifuFlatButton36.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;textCodigo.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="labelUtilidad.AutoSize" type="System.Boolean, mscorlib">
+  <data name="labelTotal.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="labelUtilidad.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="labelTotal.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Averta Demo PE Cutted Demo, 15.749999pt, style=Bold</value>
+  </data>
+  <data name="labelTotal.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="labelUtilidad.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1393, 663</value>
+  <data name="labelTotal.Location" type="System.Drawing.Point, System.Drawing">
+    <value>846, 104</value>
   </data>
-  <data name="labelUtilidad.Size" type="System.Drawing.Size, System.Drawing">
-    <value>85, 13</value>
+  <data name="labelTotal.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 28</value>
   </data>
-  <data name="labelUtilidad.TabIndex" type="System.Int32, mscorlib">
-    <value>96</value>
+  <data name="labelTotal.TabIndex" type="System.Int32, mscorlib">
+    <value>70</value>
   </data>
-  <data name="labelUtilidad.Text" xml:space="preserve">
-    <value>costo Totalizado</value>
+  <data name="labelTotal.Text" xml:space="preserve">
+    <value>Total</value>
   </data>
-  <data name="labelUtilidad.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
+  <data name="&gt;&gt;labelTotal.Name" xml:space="preserve">
+    <value>labelTotal</value>
   </data>
-  <data name="&gt;&gt;labelUtilidad.Name" xml:space="preserve">
-    <value>labelUtilidad</value>
-  </data>
-  <data name="&gt;&gt;labelUtilidad.Type" xml:space="preserve">
+  <data name="&gt;&gt;labelTotal.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;labelUtilidad.Parent" xml:space="preserve">
-    <value>panel1</value>
+  <data name="&gt;&gt;labelTotal.Parent" xml:space="preserve">
+    <value>panel12</value>
   </data>
-  <data name="&gt;&gt;labelUtilidad.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;labelTotal.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="labelCostoTotalizado.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="textTotal.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Averta Demo PE Cutted Demo, 14.249999pt</value>
   </data>
-  <data name="labelCostoTotalizado.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="textTotal.Location" type="System.Drawing.Point, System.Drawing">
+    <value>827, 142</value>
   </data>
-  <data name="labelCostoTotalizado.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1034, 789</value>
+  <data name="textTotal.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 25</value>
   </data>
-  <data name="labelCostoTotalizado.Size" type="System.Drawing.Size, System.Drawing">
-    <value>85, 13</value>
+  <data name="textTotal.TabIndex" type="System.Int32, mscorlib">
+    <value>69</value>
   </data>
-  <data name="labelCostoTotalizado.TabIndex" type="System.Int32, mscorlib">
-    <value>95</value>
+  <data name="textTotal.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
   </data>
-  <data name="labelCostoTotalizado.Text" xml:space="preserve">
-    <value>costo Totalizado</value>
+  <data name="&gt;&gt;textTotal.Name" xml:space="preserve">
+    <value>textTotal</value>
   </data>
-  <data name="labelCostoTotalizado.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
+  <data name="&gt;&gt;textTotal.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;labelCostoTotalizado.Name" xml:space="preserve">
-    <value>labelCostoTotalizado</value>
+  <data name="&gt;&gt;textTotal.Parent" xml:space="preserve">
+    <value>panel12</value>
   </data>
-  <data name="&gt;&gt;labelCostoTotalizado.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelCostoTotalizado.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;labelCostoTotalizado.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;textTotal.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <data name="labelPrecio.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelPrecio.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Averta Demo PE Cutted Demo, 15.749999pt, style=Bold</value>
+  </data>
+  <data name="labelPrecio.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelPrecio.Location" type="System.Drawing.Point, System.Drawing">
+    <value>717, 104</value>
+  </data>
+  <data name="labelPrecio.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 28</value>
+  </data>
+  <data name="labelPrecio.TabIndex" type="System.Int32, mscorlib">
+    <value>63</value>
+  </data>
+  <data name="labelPrecio.Text" xml:space="preserve">
+    <value>Precio</value>
+  </data>
+  <data name="&gt;&gt;labelPrecio.Name" xml:space="preserve">
+    <value>labelPrecio</value>
+  </data>
+  <data name="&gt;&gt;labelPrecio.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelPrecio.Parent" xml:space="preserve">
+    <value>panel12</value>
+  </data>
+  <data name="&gt;&gt;labelPrecio.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="labelTamaño.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelTamaño.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Averta Demo PE Cutted Demo, 15.749999pt, style=Bold</value>
+  </data>
+  <data name="labelTamaño.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelTamaño.Location" type="System.Drawing.Point, System.Drawing">
+    <value>470, 104</value>
+  </data>
+  <data name="labelTamaño.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 28</value>
+  </data>
+  <data name="labelTamaño.TabIndex" type="System.Int32, mscorlib">
+    <value>62</value>
+  </data>
+  <data name="labelTamaño.Text" xml:space="preserve">
+    <value>Tamaño</value>
+  </data>
+  <data name="&gt;&gt;labelTamaño.Name" xml:space="preserve">
+    <value>labelTamaño</value>
+  </data>
+  <data name="&gt;&gt;labelTamaño.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelTamaño.Parent" xml:space="preserve">
+    <value>panel12</value>
+  </data>
+  <data name="&gt;&gt;labelTamaño.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
   <data name="textBoxCostoTotal.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1019, 45</value>
+    <value>931, 760</value>
   </data>
   <data name="textBoxCostoTotal.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 20</value>
   </data>
   <data name="textBoxCostoTotal.TabIndex" type="System.Int32, mscorlib">
     <value>94</value>
+  </data>
+  <data name="textBoxCostoTotal.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="&gt;&gt;textBoxCostoTotal.Name" xml:space="preserve">
     <value>textBoxCostoTotal</value>
@@ -44379,10 +44373,43 @@
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;textBoxCostoTotal.Parent" xml:space="preserve">
-    <value>panel1</value>
+    <value>panel12</value>
   </data>
   <data name="&gt;&gt;textBoxCostoTotal.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>5</value>
+  </data>
+  <data name="labelProducto.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelProducto.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Averta Demo PE Cutted Demo, 15.749999pt, style=Bold</value>
+  </data>
+  <data name="labelProducto.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelProducto.Location" type="System.Drawing.Point, System.Drawing">
+    <value>353, 104</value>
+  </data>
+  <data name="labelProducto.Size" type="System.Drawing.Size, System.Drawing">
+    <value>104, 28</value>
+  </data>
+  <data name="labelProducto.TabIndex" type="System.Int32, mscorlib">
+    <value>61</value>
+  </data>
+  <data name="labelProducto.Text" xml:space="preserve">
+    <value>Producto</value>
+  </data>
+  <data name="&gt;&gt;labelProducto.Name" xml:space="preserve">
+    <value>labelProducto</value>
+  </data>
+  <data name="&gt;&gt;labelProducto.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelProducto.Parent" xml:space="preserve">
+    <value>panel12</value>
+  </data>
+  <data name="&gt;&gt;labelProducto.ZOrder" xml:space="preserve">
+    <value>6</value>
   </data>
   <data name="labelDetal.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -44391,7 +44418,7 @@
     <value>NoControl</value>
   </data>
   <data name="labelDetal.Location" type="System.Drawing.Point, System.Drawing">
-    <value>915, 52</value>
+    <value>946, 744</value>
   </data>
   <data name="labelDetal.Size" type="System.Drawing.Size, System.Drawing">
     <value>80, 13</value>
@@ -44412,10 +44439,10 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;labelDetal.Parent" xml:space="preserve">
-    <value>panel1</value>
+    <value>panel12</value>
   </data>
   <data name="&gt;&gt;labelDetal.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>7</value>
   </data>
   <data name="labelMayor.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -44424,7 +44451,7 @@
     <value>NoControl</value>
   </data>
   <data name="labelMayor.Location" type="System.Drawing.Point, System.Drawing">
-    <value>915, 28</value>
+    <value>946, 720</value>
   </data>
   <data name="labelMayor.Size" type="System.Drawing.Size, System.Drawing">
     <value>85, 13</value>
@@ -44445,10 +44472,43 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;labelMayor.Parent" xml:space="preserve">
-    <value>panel1</value>
+    <value>panel12</value>
   </data>
   <data name="&gt;&gt;labelMayor.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>8</value>
+  </data>
+  <data name="labelCantidad.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelCantidad.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Averta Demo PE Cutted Demo, 15.749999pt, style=Bold</value>
+  </data>
+  <data name="labelCantidad.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelCantidad.Location" type="System.Drawing.Point, System.Drawing">
+    <value>587, 104</value>
+  </data>
+  <data name="labelCantidad.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 28</value>
+  </data>
+  <data name="labelCantidad.TabIndex" type="System.Int32, mscorlib">
+    <value>60</value>
+  </data>
+  <data name="labelCantidad.Text" xml:space="preserve">
+    <value>Cantidad</value>
+  </data>
+  <data name="&gt;&gt;labelCantidad.Name" xml:space="preserve">
+    <value>labelCantidad</value>
+  </data>
+  <data name="&gt;&gt;labelCantidad.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelCantidad.Parent" xml:space="preserve">
+    <value>panel12</value>
+  </data>
+  <data name="&gt;&gt;labelCantidad.ZOrder" xml:space="preserve">
+    <value>9</value>
   </data>
   <data name="labelCostoTotal.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -44457,7 +44517,7 @@
     <value>NoControl</value>
   </data>
   <data name="labelCostoTotal.Location" type="System.Drawing.Point, System.Drawing">
-    <value>829, 43</value>
+    <value>860, 735</value>
   </data>
   <data name="labelCostoTotal.Size" type="System.Drawing.Size, System.Drawing">
     <value>58, 13</value>
@@ -44478,10 +44538,43 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;labelCostoTotal.Parent" xml:space="preserve">
-    <value>panel1</value>
+    <value>panel12</value>
   </data>
   <data name="&gt;&gt;labelCostoTotal.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>10</value>
+  </data>
+  <data name="labelReferencia.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelReferencia.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Averta Demo PE Cutted Demo, 15.749999pt, style=Bold</value>
+  </data>
+  <data name="labelReferencia.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelReferencia.Location" type="System.Drawing.Point, System.Drawing">
+    <value>225, 104</value>
+  </data>
+  <data name="labelReferencia.Size" type="System.Drawing.Size, System.Drawing">
+    <value>122, 28</value>
+  </data>
+  <data name="labelReferencia.TabIndex" type="System.Int32, mscorlib">
+    <value>59</value>
+  </data>
+  <data name="labelReferencia.Text" xml:space="preserve">
+    <value>Referencia</value>
+  </data>
+  <data name="&gt;&gt;labelReferencia.Name" xml:space="preserve">
+    <value>labelReferencia</value>
+  </data>
+  <data name="&gt;&gt;labelReferencia.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelReferencia.Parent" xml:space="preserve">
+    <value>panel12</value>
+  </data>
+  <data name="&gt;&gt;labelReferencia.ZOrder" xml:space="preserve">
+    <value>11</value>
   </data>
   <data name="labelCosto.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -44490,7 +44583,7 @@
     <value>NoControl</value>
   </data>
   <data name="labelCosto.Location" type="System.Drawing.Point, System.Drawing">
-    <value>780, 43</value>
+    <value>811, 735</value>
   </data>
   <data name="labelCosto.Size" type="System.Drawing.Size, System.Drawing">
     <value>34, 13</value>
@@ -44511,67 +44604,118 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;labelCosto.Parent" xml:space="preserve">
-    <value>panel1</value>
+    <value>panel12</value>
   </data>
   <data name="&gt;&gt;labelCosto.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>12</value>
   </data>
-  <data name="textInsertarCodigo.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 17.9999981pt, style=Bold, Italic</value>
+  <data name="textPrecio.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Averta Demo PE Cutted Demo, 14.249999pt</value>
   </data>
-  <data name="textInsertarCodigo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>23, 777</value>
+  <data name="textPrecio.Location" type="System.Drawing.Point, System.Drawing">
+    <value>710, 142</value>
   </data>
-  <data name="textInsertarCodigo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>153, 35</value>
+  <data name="textPrecio.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 25</value>
   </data>
-  <data name="textInsertarCodigo.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+  <data name="textPrecio.TabIndex" type="System.Int32, mscorlib">
+    <value>57</value>
   </data>
-  <data name="&gt;&gt;textInsertarCodigo.Name" xml:space="preserve">
-    <value>textInsertarCodigo</value>
+  <data name="textPrecio.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
   </data>
-  <data name="&gt;&gt;textInsertarCodigo.Type" xml:space="preserve">
+  <data name="&gt;&gt;textPrecio.Name" xml:space="preserve">
+    <value>textPrecio</value>
+  </data>
+  <data name="&gt;&gt;textPrecio.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;textInsertarCodigo.Parent" xml:space="preserve">
-    <value>panel1</value>
+  <data name="&gt;&gt;textPrecio.Parent" xml:space="preserve">
+    <value>panel12</value>
   </data>
-  <data name="&gt;&gt;textInsertarCodigo.ZOrder" xml:space="preserve">
-    <value>8</value>
+  <data name="&gt;&gt;textPrecio.ZOrder" xml:space="preserve">
+    <value>13</value>
   </data>
-  <data name="labelInsertarCodigo.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="textCantidad.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Averta Demo PE Cutted Demo, 14.249999pt</value>
   </data>
-  <data name="labelInsertarCodigo.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
+  <data name="textCantidad.Location" type="System.Drawing.Point, System.Drawing">
+    <value>592, 142</value>
   </data>
-  <data name="labelInsertarCodigo.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="textCantidad.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 25</value>
   </data>
-  <data name="labelInsertarCodigo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>35, 750</value>
+  <data name="textCantidad.TabIndex" type="System.Int32, mscorlib">
+    <value>56</value>
   </data>
-  <data name="labelInsertarCodigo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>123, 24</value>
+  <data name="textCantidad.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
   </data>
-  <data name="labelInsertarCodigo.TabIndex" type="System.Int32, mscorlib">
-    <value>58</value>
+  <data name="&gt;&gt;textCantidad.Name" xml:space="preserve">
+    <value>textCantidad</value>
   </data>
-  <data name="labelInsertarCodigo.Text" xml:space="preserve">
-    <value>Insertar Código</value>
+  <data name="&gt;&gt;textCantidad.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;labelInsertarCodigo.Name" xml:space="preserve">
-    <value>labelInsertarCodigo</value>
+  <data name="&gt;&gt;textCantidad.Parent" xml:space="preserve">
+    <value>panel12</value>
   </data>
-  <data name="&gt;&gt;labelInsertarCodigo.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;textCantidad.ZOrder" xml:space="preserve">
+    <value>14</value>
   </data>
-  <data name="&gt;&gt;labelInsertarCodigo.Parent" xml:space="preserve">
-    <value>panel1</value>
+  <data name="textProducto.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Averta Demo PE Cutted Demo, 14.249999pt</value>
   </data>
-  <data name="&gt;&gt;labelInsertarCodigo.ZOrder" xml:space="preserve">
-    <value>9</value>
+  <data name="textProducto.Location" type="System.Drawing.Point, System.Drawing">
+    <value>355, 142</value>
+  </data>
+  <data name="textProducto.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 25</value>
+  </data>
+  <data name="textProducto.TabIndex" type="System.Int32, mscorlib">
+    <value>55</value>
+  </data>
+  <data name="textProducto.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="&gt;&gt;textProducto.Name" xml:space="preserve">
+    <value>textProducto</value>
+  </data>
+  <data name="&gt;&gt;textProducto.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textProducto.Parent" xml:space="preserve">
+    <value>panel12</value>
+  </data>
+  <data name="&gt;&gt;textProducto.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="textSumaTotal.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Extrabold, 26.2499981pt, style=Bold, Italic</value>
+  </data>
+  <data name="textSumaTotal.Location" type="System.Drawing.Point, System.Drawing">
+    <value>438, 712</value>
+  </data>
+  <data name="textSumaTotal.Size" type="System.Drawing.Size, System.Drawing">
+    <value>206, 46</value>
+  </data>
+  <data name="textSumaTotal.TabIndex" type="System.Int32, mscorlib">
+    <value>74</value>
+  </data>
+  <data name="textSumaTotal.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="&gt;&gt;textSumaTotal.Name" xml:space="preserve">
+    <value>textSumaTotal</value>
+  </data>
+  <data name="&gt;&gt;textSumaTotal.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textSumaTotal.Parent" xml:space="preserve">
+    <value>panel12</value>
+  </data>
+  <data name="&gt;&gt;textSumaTotal.ZOrder" xml:space="preserve">
+    <value>16</value>
   </data>
   <data name="bunifuFlatButton1.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -44643,7 +44787,7 @@
 </value>
   </data>
   <data name="bunifuFlatButton1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1396, 162</value>
+    <value>358, 618</value>
   </data>
   <data name="bunifuFlatButton1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
@@ -44654,9 +44798,6 @@
   <data name="bunifuFlatButton1.TabIndex" type="System.Int32, mscorlib">
     <value>89</value>
   </data>
-  <data name="bunifuFlatButton1.Text" xml:space="preserve">
-    <value>Eliminar</value>
-  </data>
   <data name="&gt;&gt;bunifuFlatButton1.Name" xml:space="preserve">
     <value>bunifuFlatButton1</value>
   </data>
@@ -44664,10 +44805,37 @@
     <value>Bunifu.Framework.UI.BunifuFlatButton, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;bunifuFlatButton1.Parent" xml:space="preserve">
-    <value>panel1</value>
+    <value>panel12</value>
   </data>
   <data name="&gt;&gt;bunifuFlatButton1.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>17</value>
+  </data>
+  <data name="textTamano.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Averta Demo PE Cutted Demo, 14.249999pt</value>
+  </data>
+  <data name="textTamano.Location" type="System.Drawing.Point, System.Drawing">
+    <value>475, 142</value>
+  </data>
+  <data name="textTamano.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 25</value>
+  </data>
+  <data name="textTamano.TabIndex" type="System.Int32, mscorlib">
+    <value>54</value>
+  </data>
+  <data name="textTamano.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="&gt;&gt;textTamano.Name" xml:space="preserve">
+    <value>textTamano</value>
+  </data>
+  <data name="&gt;&gt;textTamano.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textTamano.Parent" xml:space="preserve">
+    <value>panel12</value>
+  </data>
+  <data name="&gt;&gt;textTamano.ZOrder" xml:space="preserve">
+    <value>18</value>
   </data>
   <data name="bunifuRestar1.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -44739,7 +44907,7 @@
 </value>
   </data>
   <data name="bunifuRestar1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1396, 232</value>
+    <value>570, 618</value>
   </data>
   <data name="bunifuRestar1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
@@ -44750,9 +44918,6 @@
   <data name="bunifuRestar1.TabIndex" type="System.Int32, mscorlib">
     <value>88</value>
   </data>
-  <data name="bunifuRestar1.Text" xml:space="preserve">
-    <value>Restar 1 producto</value>
-  </data>
   <data name="&gt;&gt;bunifuRestar1.Name" xml:space="preserve">
     <value>bunifuRestar1</value>
   </data>
@@ -44760,10 +44925,37 @@
     <value>Bunifu.Framework.UI.BunifuFlatButton, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;bunifuRestar1.Parent" xml:space="preserve">
-    <value>panel1</value>
+    <value>panel12</value>
   </data>
   <data name="&gt;&gt;bunifuRestar1.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>19</value>
+  </data>
+  <data name="textReferencia.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Averta Demo PE Cutted Demo, 14.249999pt</value>
+  </data>
+  <data name="textReferencia.Location" type="System.Drawing.Point, System.Drawing">
+    <value>238, 142</value>
+  </data>
+  <data name="textReferencia.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 25</value>
+  </data>
+  <data name="textReferencia.TabIndex" type="System.Int32, mscorlib">
+    <value>53</value>
+  </data>
+  <data name="textReferencia.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="&gt;&gt;textReferencia.Name" xml:space="preserve">
+    <value>textReferencia</value>
+  </data>
+  <data name="&gt;&gt;textReferencia.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textReferencia.Parent" xml:space="preserve">
+    <value>panel12</value>
+  </data>
+  <data name="&gt;&gt;textReferencia.ZOrder" xml:space="preserve">
+    <value>20</value>
   </data>
   <data name="buniActualizar.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -44835,7 +45027,7 @@
 </value>
   </data>
   <data name="buniActualizar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1396, 93</value>
+    <value>127, 618</value>
   </data>
   <data name="buniActualizar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
@@ -44846,9 +45038,6 @@
   <data name="buniActualizar.TabIndex" type="System.Int32, mscorlib">
     <value>83</value>
   </data>
-  <data name="buniActualizar.Text" xml:space="preserve">
-    <value>Modificar dato</value>
-  </data>
   <data name="&gt;&gt;buniActualizar.Name" xml:space="preserve">
     <value>buniActualizar</value>
   </data>
@@ -44856,25 +45045,25 @@
     <value>Bunifu.Framework.UI.BunifuFlatButton, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;buniActualizar.Parent" xml:space="preserve">
-    <value>panel1</value>
+    <value>panel12</value>
   </data>
   <data name="&gt;&gt;buniActualizar.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>21</value>
   </data>
   <data name="labelCodigo.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="labelCodigo.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
+    <value>Averta Demo PE Cutted Demo, 15.749999pt, style=Bold</value>
   </data>
   <data name="labelCodigo.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="labelCodigo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>31, 15</value>
+    <value>122, 104</value>
   </data>
   <data name="labelCodigo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 20</value>
+    <value>86, 28</value>
   </data>
   <data name="labelCodigo.TabIndex" type="System.Int32, mscorlib">
     <value>87</value>
@@ -44889,111 +45078,19 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;labelCodigo.Parent" xml:space="preserve">
-    <value>panel1</value>
+    <value>panel12</value>
   </data>
   <data name="&gt;&gt;labelCodigo.ZOrder" xml:space="preserve">
-    <value>13</value>
-  </data>
-  <data name="textSumaTotal.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 26.25pt</value>
-  </data>
-  <data name="textSumaTotal.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1163, 765</value>
-  </data>
-  <data name="textSumaTotal.Size" type="System.Drawing.Size, System.Drawing">
-    <value>206, 47</value>
-  </data>
-  <data name="textSumaTotal.TabIndex" type="System.Int32, mscorlib">
-    <value>74</value>
-  </data>
-  <data name="&gt;&gt;textSumaTotal.Name" xml:space="preserve">
-    <value>textSumaTotal</value>
-  </data>
-  <data name="&gt;&gt;textSumaTotal.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textSumaTotal.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;textSumaTotal.ZOrder" xml:space="preserve">
-    <value>14</value>
-  </data>
-  <data name="buniBnFinalizar.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 15.75pt</value>
-  </data>
-  <data name="buniBnFinalizar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAA1NJREFUaEPt
-        mUtrE1EUxyO6sK0idWXdtFTNJI1U0VVWiSsRFKStbix+Afuw2Idr0Q+hteJKi6ViXdjWFooQJI/6KFil
-        iLhS1DalKn2lxeM5N6c6ydxkHslkGpg//Mhl7j3n/JPcmbl3xuPKlStXQhD1nYSYvxfivmFI+GbwM4mf
-        i4J0m45hn9ID0/4THOasYDawBxL+LjT2AQFTJPzvkasw01jF6UonmArvEsXjvgWNMfPMQ1zpoJyc3l5B
-        vCHA00FmpgCUNxANNHAZe4TGm7HYirZ40VhGmrhccYUn6GVMvqkqZhdYQ2nlssURmj+PiTeyCtkJ1TrH
-        5QsTxAPHMdmqKnmpWIWY9xjbsCZxtaGTS16gFLyCR56dbMe80HynJGlpSfivsB1zgun6fZhgSZOw9CQh
-        ouxlW8bFNypZQgdQOtiWMQF4dmDgnDaRY8yyNWOCqNIoSeIsZu7SYsUoS6JicSIAd3uCcP1iSNDfHYQf
-        YwHpWDVW43BKd7E9fUHMNyRNwpCJFyMPYfn3L5gYegDtZ08J+lrCsDjZII0hrMalUQbZnr4w4J02wX/o
-        F1xbXQHS2sryPyPEQG9QGkNYjRPgApLt6QsDkpoEKrqbwjA5PAgbqVTGL0n0toSkMYTVOGae7ekLB69n
-        BWdARtTF1fQ05/8CshgiXxyzzvb0hYNTWcEZ3LkWlJog8k0Fq3HMGtvTFw7OO4W+PTsqTrxsE30XQnlP
-        RqtxjIkpZGDHtXU5pGlBf/8Atg2YsByHvGZ7+tK7jDqDmcvotloHMQlfG9vTV9kvJUgY9FaTxDmMz/8t
-        lfVymgRTdbsx+Ks2WW6ed1XBaFsFbEQUTV8q4hV9Ezgmu0+HL+SFbZmT2S1l7Ga1MPn5/kFN36d7NaIv
-        fmu/pi8vVreUJLOb+u+Pa4XJ8Y5KYXjzpVdA7TE8NtZeAcmnddLYHBS2qSfB9OFDmOhnVuKczN0+AKNo
-        lL5IBnjsY3+NNCYHS5Dw1rONwmT2wdbCk1qI3qiG8c5KAbUXRmqlY3NQvAdbW8Kp1MqJZQWLCS4klUtc
-        trjCv/QMFjA8nSywhMuY01zOHmEBLxay4SZHj9f9R7iMvSrrFxxqle0rJpmkL/nSZv+I9nZ8yefKlSun
-        5fH8BbQ+Hf8mOcRxAAAAAElFTkSuQmCC
-</value>
-  </data>
-  <data name="buniBnFinalizar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1394, 344</value>
-  </data>
-  <data name="buniBnFinalizar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>6, 6, 6, 6</value>
-  </data>
-  <data name="buniBnFinalizar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>167, 157</value>
-  </data>
-  <data name="buniBnFinalizar.TabIndex" type="System.Int32, mscorlib">
-    <value>79</value>
-  </data>
-  <data name="&gt;&gt;buniBnFinalizar.Name" xml:space="preserve">
-    <value>buniBnFinalizar</value>
-  </data>
-  <data name="&gt;&gt;buniBnFinalizar.Type" xml:space="preserve">
-    <value>Bunifu.Framework.UI.BunifuTileButton, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;buniBnFinalizar.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;buniBnFinalizar.ZOrder" xml:space="preserve">
-    <value>15</value>
-  </data>
-  <data name="textCodigo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 40</value>
-  </data>
-  <data name="textCodigo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 20</value>
-  </data>
-  <data name="textCodigo.TabIndex" type="System.Int32, mscorlib">
-    <value>86</value>
-  </data>
-  <data name="&gt;&gt;textCodigo.Name" xml:space="preserve">
-    <value>textCodigo</value>
-  </data>
-  <data name="&gt;&gt;textCodigo.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textCodigo.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;textCodigo.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>22</value>
   </data>
   <data name="DataGridVentas.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 76</value>
+    <value>103, 183</value>
   </data>
   <data name="DataGridVentas.RowHeadersWidth" type="System.Int32, mscorlib">
     <value>51</value>
   </data>
   <data name="DataGridVentas.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1358, 671</value>
+    <value>880, 413</value>
   </data>
   <data name="DataGridVentas.TabIndex" type="System.Int32, mscorlib">
     <value>80</value>
@@ -45005,40 +45102,292 @@
     <value>Bunifu.Framework.UI.BunifuCustomDataGrid, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;DataGridVentas.Parent" xml:space="preserve">
-    <value>panel1</value>
+    <value>panel12</value>
   </data>
   <data name="&gt;&gt;DataGridVentas.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>23</value>
   </data>
-  <data name="textReferencia.Location" type="System.Drawing.Point, System.Drawing">
-    <value>123, 40</value>
+  <data name="buniBnFinalizar.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
   </data>
-  <data name="textReferencia.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 20</value>
+  <data name="buniBnFinalizar.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 15.75pt</value>
   </data>
-  <data name="textReferencia.TabIndex" type="System.Int32, mscorlib">
-    <value>53</value>
+  <data name="buniBnFinalizar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>787, 618</value>
   </data>
-  <data name="&gt;&gt;textReferencia.Name" xml:space="preserve">
-    <value>textReferencia</value>
+  <data name="buniBnFinalizar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
   </data>
-  <data name="&gt;&gt;textReferencia.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="buniBnFinalizar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>167, 62</value>
   </data>
-  <data name="&gt;&gt;textReferencia.Parent" xml:space="preserve">
+  <data name="buniBnFinalizar.TabIndex" type="System.Int32, mscorlib">
+    <value>79</value>
+  </data>
+  <data name="&gt;&gt;buniBnFinalizar.Name" xml:space="preserve">
+    <value>buniBnFinalizar</value>
+  </data>
+  <data name="&gt;&gt;buniBnFinalizar.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuTileButton, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;buniBnFinalizar.Parent" xml:space="preserve">
+    <value>panel12</value>
+  </data>
+  <data name="&gt;&gt;buniBnFinalizar.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="panel12.Location" type="System.Drawing.Point, System.Drawing">
+    <value>496, 7</value>
+  </data>
+  <data name="panel12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1068, 837</value>
+  </data>
+  <data name="panel12.TabIndex" type="System.Int32, mscorlib">
+    <value>98</value>
+  </data>
+  <data name="&gt;&gt;panel12.Name" xml:space="preserve">
+    <value>panel12</value>
+  </data>
+  <data name="&gt;&gt;panel12.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel12.Parent" xml:space="preserve">
     <value>panel1</value>
   </data>
-  <data name="&gt;&gt;textReferencia.ZOrder" xml:space="preserve">
-    <value>18</value>
+  <data name="&gt;&gt;panel12.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="bunifuFlatButton36.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="bunifuFlatButton36.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
+  </data>
+  <data name="bunifuFlatButton36.Iconimage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        Vu+NkQAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="bunifuFlatButton36.Location" type="System.Drawing.Point, System.Drawing">
+    <value>166, 725</value>
+  </data>
+  <data name="bunifuFlatButton36.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="bunifuFlatButton36.Size" type="System.Drawing.Size, System.Drawing">
+    <value>167, 62</value>
+  </data>
+  <data name="bunifuFlatButton36.TabIndex" type="System.Int32, mscorlib">
+    <value>97</value>
+  </data>
+  <data name="bunifuFlatButton36.Text" xml:space="preserve">
+    <value>pruebas</value>
+  </data>
+  <data name="bunifuFlatButton36.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;bunifuFlatButton36.Name" xml:space="preserve">
+    <value>bunifuFlatButton36</value>
+  </data>
+  <data name="&gt;&gt;bunifuFlatButton36.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuFlatButton, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bunifuFlatButton36.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;bunifuFlatButton36.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="labelUtilidad.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelUtilidad.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelUtilidad.Location" type="System.Drawing.Point, System.Drawing">
+    <value>150, 813</value>
+  </data>
+  <data name="labelUtilidad.Size" type="System.Drawing.Size, System.Drawing">
+    <value>85, 13</value>
+  </data>
+  <data name="labelUtilidad.TabIndex" type="System.Int32, mscorlib">
+    <value>96</value>
+  </data>
+  <data name="labelUtilidad.Text" xml:space="preserve">
+    <value>costo Totalizado</value>
+  </data>
+  <data name="labelUtilidad.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;labelUtilidad.Name" xml:space="preserve">
+    <value>labelUtilidad</value>
+  </data>
+  <data name="&gt;&gt;labelUtilidad.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelUtilidad.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;labelUtilidad.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="labelCostoTotalizado.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelCostoTotalizado.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelCostoTotalizado.Location" type="System.Drawing.Point, System.Drawing">
+    <value>290, 810</value>
+  </data>
+  <data name="labelCostoTotalizado.Size" type="System.Drawing.Size, System.Drawing">
+    <value>85, 13</value>
+  </data>
+  <data name="labelCostoTotalizado.TabIndex" type="System.Int32, mscorlib">
+    <value>95</value>
+  </data>
+  <data name="labelCostoTotalizado.Text" xml:space="preserve">
+    <value>costo Totalizado</value>
+  </data>
+  <data name="labelCostoTotalizado.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;labelCostoTotalizado.Name" xml:space="preserve">
+    <value>labelCostoTotalizado</value>
+  </data>
+  <data name="&gt;&gt;labelCostoTotalizado.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelCostoTotalizado.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;labelCostoTotalizado.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="textInsertarCodigo.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 17.9999981pt, style=Bold, Italic</value>
+  </data>
+  <data name="textInsertarCodigo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>166, 532</value>
+  </data>
+  <data name="textInsertarCodigo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>153, 35</value>
+  </data>
+  <data name="textInsertarCodigo.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;textInsertarCodigo.Name" xml:space="preserve">
+    <value>textInsertarCodigo</value>
+  </data>
+  <data name="&gt;&gt;textInsertarCodigo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textInsertarCodigo.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;textInsertarCodigo.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="labelInsertarCodigo.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelInsertarCodigo.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Extrabold, 11.999999pt, style=Bold, Italic</value>
+  </data>
+  <data name="labelInsertarCodigo.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelInsertarCodigo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>187, 505</value>
+  </data>
+  <data name="labelInsertarCodigo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 27</value>
+  </data>
+  <data name="labelInsertarCodigo.TabIndex" type="System.Int32, mscorlib">
+    <value>58</value>
+  </data>
+  <data name="labelInsertarCodigo.Text" xml:space="preserve">
+    <value>Insertar Código</value>
+  </data>
+  <data name="&gt;&gt;labelInsertarCodigo.Name" xml:space="preserve">
+    <value>labelInsertarCodigo</value>
+  </data>
+  <data name="&gt;&gt;labelInsertarCodigo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelInsertarCodigo.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;labelInsertarCodigo.ZOrder" xml:space="preserve">
+    <value>5</value>
   </data>
   <data name="textFactura.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 26.25pt</value>
+    <value>Microsoft Sans Serif, 48pt</value>
   </data>
   <data name="textFactura.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1396, 39</value>
+    <value>153, 220</value>
   </data>
   <data name="textFactura.Size" type="System.Drawing.Size, System.Drawing">
-    <value>167, 47</value>
+    <value>167, 73</value>
   </data>
   <data name="textFactura.TabIndex" type="System.Int32, mscorlib">
     <value>72</value>
@@ -45056,49 +45405,28 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;textFactura.ZOrder" xml:space="preserve">
-    <value>19</value>
-  </data>
-  <data name="textTamano.Location" type="System.Drawing.Point, System.Drawing">
-    <value>338, 40</value>
-  </data>
-  <data name="textTamano.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 20</value>
-  </data>
-  <data name="textTamano.TabIndex" type="System.Int32, mscorlib">
-    <value>54</value>
-  </data>
-  <data name="&gt;&gt;textTamano.Name" xml:space="preserve">
-    <value>textTamano</value>
-  </data>
-  <data name="&gt;&gt;textTamano.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textTamano.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;textTamano.ZOrder" xml:space="preserve">
-    <value>20</value>
+    <value>6</value>
   </data>
   <data name="labelFactura.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="labelFactura.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 15.75pt, style=Bold</value>
+    <value>Extrabold, 72pt, style=Bold, Italic</value>
   </data>
   <data name="labelFactura.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="labelFactura.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1438, 11</value>
+    <value>50, 59</value>
   </data>
   <data name="labelFactura.Size" type="System.Drawing.Size, System.Drawing">
-    <value>85, 25</value>
+    <value>371, 126</value>
   </data>
   <data name="labelFactura.TabIndex" type="System.Int32, mscorlib">
     <value>71</value>
   </data>
   <data name="labelFactura.Text" xml:space="preserve">
-    <value>factura</value>
+    <value>Factura</value>
   </data>
   <data name="&gt;&gt;labelFactura.Name" xml:space="preserve">
     <value>labelFactura</value>
@@ -45110,289 +45438,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;labelFactura.ZOrder" xml:space="preserve">
-    <value>21</value>
-  </data>
-  <data name="textProducto.Location" type="System.Drawing.Point, System.Drawing">
-    <value>232, 40</value>
-  </data>
-  <data name="textProducto.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 20</value>
-  </data>
-  <data name="textProducto.TabIndex" type="System.Int32, mscorlib">
-    <value>55</value>
-  </data>
-  <data name="&gt;&gt;textProducto.Name" xml:space="preserve">
-    <value>textProducto</value>
-  </data>
-  <data name="&gt;&gt;textProducto.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textProducto.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;textProducto.ZOrder" xml:space="preserve">
-    <value>22</value>
-  </data>
-  <data name="textCantidad.Location" type="System.Drawing.Point, System.Drawing">
-    <value>444, 40</value>
-  </data>
-  <data name="textCantidad.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 20</value>
-  </data>
-  <data name="textCantidad.TabIndex" type="System.Int32, mscorlib">
-    <value>56</value>
-  </data>
-  <data name="&gt;&gt;textCantidad.Name" xml:space="preserve">
-    <value>textCantidad</value>
-  </data>
-  <data name="&gt;&gt;textCantidad.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textCantidad.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;textCantidad.ZOrder" xml:space="preserve">
-    <value>23</value>
-  </data>
-  <data name="textPrecio.Location" type="System.Drawing.Point, System.Drawing">
-    <value>550, 40</value>
-  </data>
-  <data name="textPrecio.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 20</value>
-  </data>
-  <data name="textPrecio.TabIndex" type="System.Int32, mscorlib">
-    <value>57</value>
-  </data>
-  <data name="&gt;&gt;textPrecio.Name" xml:space="preserve">
-    <value>textPrecio</value>
-  </data>
-  <data name="&gt;&gt;textPrecio.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textPrecio.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;textPrecio.ZOrder" xml:space="preserve">
-    <value>24</value>
-  </data>
-  <data name="labelReferencia.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="labelReferencia.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
-  </data>
-  <data name="labelReferencia.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="labelReferencia.Location" type="System.Drawing.Point, System.Drawing">
-    <value>126, 15</value>
-  </data>
-  <data name="labelReferencia.Size" type="System.Drawing.Size, System.Drawing">
-    <value>97, 20</value>
-  </data>
-  <data name="labelReferencia.TabIndex" type="System.Int32, mscorlib">
-    <value>59</value>
-  </data>
-  <data name="labelReferencia.Text" xml:space="preserve">
-    <value>Referencia</value>
-  </data>
-  <data name="&gt;&gt;labelReferencia.Name" xml:space="preserve">
-    <value>labelReferencia</value>
-  </data>
-  <data name="&gt;&gt;labelReferencia.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelReferencia.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;labelReferencia.ZOrder" xml:space="preserve">
-    <value>25</value>
-  </data>
-  <data name="labelCantidad.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="labelCantidad.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
-  </data>
-  <data name="labelCantidad.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="labelCantidad.Location" type="System.Drawing.Point, System.Drawing">
-    <value>453, 15</value>
-  </data>
-  <data name="labelCantidad.Size" type="System.Drawing.Size, System.Drawing">
-    <value>81, 20</value>
-  </data>
-  <data name="labelCantidad.TabIndex" type="System.Int32, mscorlib">
-    <value>60</value>
-  </data>
-  <data name="labelCantidad.Text" xml:space="preserve">
-    <value>Cantidad</value>
-  </data>
-  <data name="&gt;&gt;labelCantidad.Name" xml:space="preserve">
-    <value>labelCantidad</value>
-  </data>
-  <data name="&gt;&gt;labelCantidad.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelCantidad.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;labelCantidad.ZOrder" xml:space="preserve">
-    <value>26</value>
-  </data>
-  <data name="labelProducto.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="labelProducto.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
-  </data>
-  <data name="labelProducto.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="labelProducto.Location" type="System.Drawing.Point, System.Drawing">
-    <value>238, 15</value>
-  </data>
-  <data name="labelProducto.Size" type="System.Drawing.Size, System.Drawing">
-    <value>81, 20</value>
-  </data>
-  <data name="labelProducto.TabIndex" type="System.Int32, mscorlib">
-    <value>61</value>
-  </data>
-  <data name="labelProducto.Text" xml:space="preserve">
-    <value>Producto</value>
-  </data>
-  <data name="&gt;&gt;labelProducto.Name" xml:space="preserve">
-    <value>labelProducto</value>
-  </data>
-  <data name="&gt;&gt;labelProducto.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelProducto.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;labelProducto.ZOrder" xml:space="preserve">
-    <value>27</value>
-  </data>
-  <data name="labelTamaño.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="labelTamaño.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
-  </data>
-  <data name="labelTamaño.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="labelTamaño.Location" type="System.Drawing.Point, System.Drawing">
-    <value>346, 15</value>
-  </data>
-  <data name="labelTamaño.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 20</value>
-  </data>
-  <data name="labelTamaño.TabIndex" type="System.Int32, mscorlib">
-    <value>62</value>
-  </data>
-  <data name="labelTamaño.Text" xml:space="preserve">
-    <value>Tamaño</value>
-  </data>
-  <data name="&gt;&gt;labelTamaño.Name" xml:space="preserve">
-    <value>labelTamaño</value>
-  </data>
-  <data name="&gt;&gt;labelTamaño.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelTamaño.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;labelTamaño.ZOrder" xml:space="preserve">
-    <value>28</value>
-  </data>
-  <data name="labelPrecio.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="labelPrecio.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
-  </data>
-  <data name="labelPrecio.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="labelPrecio.Location" type="System.Drawing.Point, System.Drawing">
-    <value>570, 15</value>
-  </data>
-  <data name="labelPrecio.Size" type="System.Drawing.Size, System.Drawing">
-    <value>59, 20</value>
-  </data>
-  <data name="labelPrecio.TabIndex" type="System.Int32, mscorlib">
-    <value>63</value>
-  </data>
-  <data name="labelPrecio.Text" xml:space="preserve">
-    <value>Precio</value>
-  </data>
-  <data name="&gt;&gt;labelPrecio.Name" xml:space="preserve">
-    <value>labelPrecio</value>
-  </data>
-  <data name="&gt;&gt;labelPrecio.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelPrecio.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;labelPrecio.ZOrder" xml:space="preserve">
-    <value>29</value>
-  </data>
-  <data name="textTotal.Location" type="System.Drawing.Point, System.Drawing">
-    <value>656, 40</value>
-  </data>
-  <data name="textTotal.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 20</value>
-  </data>
-  <data name="textTotal.TabIndex" type="System.Int32, mscorlib">
-    <value>69</value>
-  </data>
-  <data name="&gt;&gt;textTotal.Name" xml:space="preserve">
-    <value>textTotal</value>
-  </data>
-  <data name="&gt;&gt;textTotal.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textTotal.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;textTotal.ZOrder" xml:space="preserve">
-    <value>30</value>
-  </data>
-  <data name="labelTotal.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="labelTotal.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
-  </data>
-  <data name="labelTotal.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="labelTotal.Location" type="System.Drawing.Point, System.Drawing">
-    <value>676, 15</value>
-  </data>
-  <data name="labelTotal.Size" type="System.Drawing.Size, System.Drawing">
-    <value>49, 20</value>
-  </data>
-  <data name="labelTotal.TabIndex" type="System.Int32, mscorlib">
-    <value>70</value>
-  </data>
-  <data name="labelTotal.Text" xml:space="preserve">
-    <value>Total</value>
-  </data>
-  <data name="&gt;&gt;labelTotal.Name" xml:space="preserve">
-    <value>labelTotal</value>
-  </data>
-  <data name="&gt;&gt;labelTotal.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelTotal.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;labelTotal.ZOrder" xml:space="preserve">
-    <value>31</value>
+    <value>7</value>
   </data>
   <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 9</value>
@@ -49843,16 +49889,16 @@
     <value>True</value>
   </data>
   <data name="labelAlmacen.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
+    <value>Averta Demo PE Cutted Demo, 11.999999pt, style=Bold, Italic</value>
   </data>
   <data name="labelAlmacen.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="labelAlmacen.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 9</value>
+    <value>12, 6</value>
   </data>
   <data name="labelAlmacen.Size" type="System.Drawing.Size, System.Drawing">
-    <value>66, 16</value>
+    <value>76, 21</value>
   </data>
   <data name="labelAlmacen.TabIndex" type="System.Int32, mscorlib">
     <value>91</value>

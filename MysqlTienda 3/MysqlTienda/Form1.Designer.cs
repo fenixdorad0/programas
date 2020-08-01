@@ -368,6 +368,7 @@
             this.buniCerrar = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.panel12 = new System.Windows.Forms.Panel();
             this.tab1Inicio.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).BeginInit();
@@ -459,6 +460,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.buniCerrar)).BeginInit();
+            this.panel12.SuspendLayout();
             this.SuspendLayout();
             // 
             // tab1Inicio
@@ -1989,38 +1991,14 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.panel12);
             this.panel1.Controls.Add(this.bunifuFlatButton36);
             this.panel1.Controls.Add(this.labelUtilidad);
             this.panel1.Controls.Add(this.labelCostoTotalizado);
-            this.panel1.Controls.Add(this.textBoxCostoTotal);
-            this.panel1.Controls.Add(this.labelDetal);
-            this.panel1.Controls.Add(this.labelMayor);
-            this.panel1.Controls.Add(this.labelCostoTotal);
-            this.panel1.Controls.Add(this.labelCosto);
             this.panel1.Controls.Add(this.textInsertarCodigo);
             this.panel1.Controls.Add(this.labelInsertarCodigo);
-            this.panel1.Controls.Add(this.bunifuFlatButton1);
-            this.panel1.Controls.Add(this.bunifuRestar1);
-            this.panel1.Controls.Add(this.buniActualizar);
-            this.panel1.Controls.Add(this.labelCodigo);
-            this.panel1.Controls.Add(this.textSumaTotal);
-            this.panel1.Controls.Add(this.buniBnFinalizar);
-            this.panel1.Controls.Add(this.textCodigo);
-            this.panel1.Controls.Add(this.DataGridVentas);
-            this.panel1.Controls.Add(this.textReferencia);
             this.panel1.Controls.Add(this.textFactura);
-            this.panel1.Controls.Add(this.textTamano);
             this.panel1.Controls.Add(this.labelFactura);
-            this.panel1.Controls.Add(this.textProducto);
-            this.panel1.Controls.Add(this.textCantidad);
-            this.panel1.Controls.Add(this.textPrecio);
-            this.panel1.Controls.Add(this.labelReferencia);
-            this.panel1.Controls.Add(this.labelCantidad);
-            this.panel1.Controls.Add(this.labelProducto);
-            this.panel1.Controls.Add(this.labelTamaño);
-            this.panel1.Controls.Add(this.labelPrecio);
-            this.panel1.Controls.Add(this.textTotal);
-            this.panel1.Controls.Add(this.labelTotal);
             resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
             // 
@@ -2110,9 +2088,10 @@
             // 
             this.bunifuFlatButton1.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
             this.bunifuFlatButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
+            this.bunifuFlatButton1.BackgroundImage = global::MysqlTienda.Properties.Resources.ELIMINAR;
             resources.ApplyResources(this.bunifuFlatButton1, "bunifuFlatButton1");
             this.bunifuFlatButton1.BorderRadius = 0;
-            this.bunifuFlatButton1.ButtonText = "Eliminar";
+            this.bunifuFlatButton1.ButtonText = "";
             this.bunifuFlatButton1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bunifuFlatButton1.DisabledColor = System.Drawing.Color.Gray;
             this.bunifuFlatButton1.Iconcolor = System.Drawing.Color.Transparent;
@@ -2141,9 +2120,10 @@
             // 
             this.bunifuRestar1.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
             this.bunifuRestar1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
+            this.bunifuRestar1.BackgroundImage = global::MysqlTienda.Properties.Resources.CURD1;
             resources.ApplyResources(this.bunifuRestar1, "bunifuRestar1");
             this.bunifuRestar1.BorderRadius = 0;
-            this.bunifuRestar1.ButtonText = "Restar 1 producto";
+            this.bunifuRestar1.ButtonText = "";
             this.bunifuRestar1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bunifuRestar1.DisabledColor = System.Drawing.Color.Gray;
             this.bunifuRestar1.Iconcolor = System.Drawing.Color.Transparent;
@@ -2172,9 +2152,10 @@
             // 
             this.buniActualizar.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
             this.buniActualizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
+            this.buniActualizar.BackgroundImage = global::MysqlTienda.Properties.Resources.CURD;
             resources.ApplyResources(this.buniActualizar, "buniActualizar");
             this.buniActualizar.BorderRadius = 0;
-            this.buniActualizar.ButtonText = "Modificar dato";
+            this.buniActualizar.ButtonText = "";
             this.buniActualizar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buniActualizar.DisabledColor = System.Drawing.Color.Gray;
             this.buniActualizar.Iconcolor = System.Drawing.Color.Transparent;
@@ -2202,35 +2183,41 @@
             // labelCodigo
             // 
             resources.ApplyResources(this.labelCodigo, "labelCodigo");
-            this.labelCodigo.BackColor = System.Drawing.Color.White;
-            this.labelCodigo.ForeColor = System.Drawing.Color.Black;
+            this.labelCodigo.BackColor = System.Drawing.Color.Transparent;
+            this.labelCodigo.ForeColor = System.Drawing.Color.White;
             this.labelCodigo.Name = "labelCodigo";
             // 
             // textSumaTotal
             // 
+            this.textSumaTotal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(165)))), ((int)(((byte)(207)))));
+            this.textSumaTotal.BorderStyle = System.Windows.Forms.BorderStyle.None;
             resources.ApplyResources(this.textSumaTotal, "textSumaTotal");
+            this.textSumaTotal.ForeColor = System.Drawing.Color.White;
             this.textSumaTotal.Name = "textSumaTotal";
             this.textSumaTotal.ReadOnly = true;
             this.textSumaTotal.TabStop = false;
             // 
             // buniBnFinalizar
             // 
-            this.buniBnFinalizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
-            this.buniBnFinalizar.color = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
-            this.buniBnFinalizar.colorActive = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.buniBnFinalizar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buniBnFinalizar.BackColor = System.Drawing.Color.Transparent;
+            this.buniBnFinalizar.BackgroundImage = global::MysqlTienda.Properties.Resources.FINALIZAR;
             resources.ApplyResources(this.buniBnFinalizar, "buniBnFinalizar");
+            this.buniBnFinalizar.color = System.Drawing.Color.Transparent;
+            this.buniBnFinalizar.colorActive = System.Drawing.Color.Transparent;
+            this.buniBnFinalizar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buniBnFinalizar.ForeColor = System.Drawing.Color.White;
-            this.buniBnFinalizar.Image = ((System.Drawing.Image)(resources.GetObject("buniBnFinalizar.Image")));
+            this.buniBnFinalizar.Image = null;
             this.buniBnFinalizar.ImagePosition = 20;
             this.buniBnFinalizar.ImageZoom = 50;
             this.buniBnFinalizar.LabelPosition = 41;
-            this.buniBnFinalizar.LabelText = "Finalizar";
+            this.buniBnFinalizar.LabelText = "";
             this.buniBnFinalizar.Name = "buniBnFinalizar";
             this.buniBnFinalizar.Click += new System.EventHandler(this.finalizar_Click_1);
             // 
             // textCodigo
             // 
+            this.textCodigo.BackColor = System.Drawing.Color.White;
+            this.textCodigo.BorderStyle = System.Windows.Forms.BorderStyle.None;
             resources.ApplyResources(this.textCodigo, "textCodigo");
             this.textCodigo.Name = "textCodigo";
             this.textCodigo.ReadOnly = true;
@@ -2266,19 +2253,26 @@
             // 
             // textReferencia
             // 
+            this.textReferencia.BackColor = System.Drawing.Color.White;
+            this.textReferencia.BorderStyle = System.Windows.Forms.BorderStyle.None;
             resources.ApplyResources(this.textReferencia, "textReferencia");
             this.textReferencia.Name = "textReferencia";
             this.textReferencia.ReadOnly = true;
             // 
             // textFactura
             // 
+            this.textFactura.BackColor = System.Drawing.Color.White;
+            this.textFactura.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textFactura.Cursor = System.Windows.Forms.Cursors.Arrow;
             resources.ApplyResources(this.textFactura, "textFactura");
+            this.textFactura.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(165)))), ((int)(((byte)(207)))));
             this.textFactura.Name = "textFactura";
             this.textFactura.ReadOnly = true;
             // 
             // textTamano
             // 
+            this.textTamano.BackColor = System.Drawing.Color.White;
+            this.textTamano.BorderStyle = System.Windows.Forms.BorderStyle.None;
             resources.ApplyResources(this.textTamano, "textTamano");
             this.textTamano.Name = "textTamano";
             this.textTamano.ReadOnly = true;
@@ -2291,58 +2285,66 @@
             // 
             // textProducto
             // 
+            this.textProducto.BackColor = System.Drawing.Color.White;
+            this.textProducto.BorderStyle = System.Windows.Forms.BorderStyle.None;
             resources.ApplyResources(this.textProducto, "textProducto");
             this.textProducto.Name = "textProducto";
             this.textProducto.ReadOnly = true;
             // 
             // textCantidad
             // 
+            this.textCantidad.BackColor = System.Drawing.Color.White;
+            this.textCantidad.BorderStyle = System.Windows.Forms.BorderStyle.None;
             resources.ApplyResources(this.textCantidad, "textCantidad");
             this.textCantidad.Name = "textCantidad";
             this.textCantidad.ReadOnly = true;
             // 
             // textPrecio
             // 
+            this.textPrecio.BackColor = System.Drawing.Color.White;
+            this.textPrecio.BorderStyle = System.Windows.Forms.BorderStyle.None;
             resources.ApplyResources(this.textPrecio, "textPrecio");
             this.textPrecio.Name = "textPrecio";
             // 
             // labelReferencia
             // 
             resources.ApplyResources(this.labelReferencia, "labelReferencia");
-            this.labelReferencia.BackColor = System.Drawing.Color.White;
-            this.labelReferencia.ForeColor = System.Drawing.Color.Black;
+            this.labelReferencia.BackColor = System.Drawing.Color.Transparent;
+            this.labelReferencia.ForeColor = System.Drawing.Color.White;
             this.labelReferencia.Name = "labelReferencia";
             // 
             // labelCantidad
             // 
             resources.ApplyResources(this.labelCantidad, "labelCantidad");
-            this.labelCantidad.BackColor = System.Drawing.Color.White;
-            this.labelCantidad.ForeColor = System.Drawing.Color.Black;
+            this.labelCantidad.BackColor = System.Drawing.Color.Transparent;
+            this.labelCantidad.ForeColor = System.Drawing.Color.White;
             this.labelCantidad.Name = "labelCantidad";
             // 
             // labelProducto
             // 
             resources.ApplyResources(this.labelProducto, "labelProducto");
-            this.labelProducto.BackColor = System.Drawing.Color.White;
-            this.labelProducto.ForeColor = System.Drawing.Color.Black;
+            this.labelProducto.BackColor = System.Drawing.Color.Transparent;
+            this.labelProducto.ForeColor = System.Drawing.Color.White;
             this.labelProducto.Name = "labelProducto";
             // 
             // labelTamaño
             // 
             resources.ApplyResources(this.labelTamaño, "labelTamaño");
-            this.labelTamaño.BackColor = System.Drawing.Color.White;
-            this.labelTamaño.ForeColor = System.Drawing.Color.Black;
+            this.labelTamaño.BackColor = System.Drawing.Color.Transparent;
+            this.labelTamaño.ForeColor = System.Drawing.Color.White;
             this.labelTamaño.Name = "labelTamaño";
             // 
             // labelPrecio
             // 
             resources.ApplyResources(this.labelPrecio, "labelPrecio");
-            this.labelPrecio.BackColor = System.Drawing.Color.White;
-            this.labelPrecio.ForeColor = System.Drawing.Color.Black;
+            this.labelPrecio.BackColor = System.Drawing.Color.Transparent;
+            this.labelPrecio.ForeColor = System.Drawing.Color.White;
             this.labelPrecio.Name = "labelPrecio";
             // 
             // textTotal
             // 
+            this.textTotal.BackColor = System.Drawing.Color.White;
+            this.textTotal.BorderStyle = System.Windows.Forms.BorderStyle.None;
             resources.ApplyResources(this.textTotal, "textTotal");
             this.textTotal.Name = "textTotal";
             this.textTotal.ReadOnly = true;
@@ -2350,8 +2352,8 @@
             // labelTotal
             // 
             resources.ApplyResources(this.labelTotal, "labelTotal");
-            this.labelTotal.BackColor = System.Drawing.Color.White;
-            this.labelTotal.ForeColor = System.Drawing.Color.Black;
+            this.labelTotal.BackColor = System.Drawing.Color.Transparent;
+            this.labelTotal.ForeColor = System.Drawing.Color.White;
             this.labelTotal.Name = "labelTotal";
             // 
             // tabControl1
@@ -4311,6 +4313,37 @@
             this.bunifuElipse2.ElipseRadius = 25;
             this.bunifuElipse2.TargetControl = this;
             // 
+            // panel12
+            // 
+            this.panel12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(165)))), ((int)(((byte)(207)))));
+            this.panel12.Controls.Add(this.textCodigo);
+            this.panel12.Controls.Add(this.labelTotal);
+            this.panel12.Controls.Add(this.textTotal);
+            this.panel12.Controls.Add(this.labelPrecio);
+            this.panel12.Controls.Add(this.labelTamaño);
+            this.panel12.Controls.Add(this.textBoxCostoTotal);
+            this.panel12.Controls.Add(this.labelProducto);
+            this.panel12.Controls.Add(this.labelDetal);
+            this.panel12.Controls.Add(this.labelMayor);
+            this.panel12.Controls.Add(this.labelCantidad);
+            this.panel12.Controls.Add(this.labelCostoTotal);
+            this.panel12.Controls.Add(this.labelReferencia);
+            this.panel12.Controls.Add(this.labelCosto);
+            this.panel12.Controls.Add(this.textPrecio);
+            this.panel12.Controls.Add(this.textCantidad);
+            this.panel12.Controls.Add(this.textProducto);
+            this.panel12.Controls.Add(this.textSumaTotal);
+            this.panel12.Controls.Add(this.bunifuFlatButton1);
+            this.panel12.Controls.Add(this.textTamano);
+            this.panel12.Controls.Add(this.bunifuRestar1);
+            this.panel12.Controls.Add(this.textReferencia);
+            this.panel12.Controls.Add(this.buniActualizar);
+            this.panel12.Controls.Add(this.labelCodigo);
+            this.panel12.Controls.Add(this.DataGridVentas);
+            this.panel12.Controls.Add(this.buniBnFinalizar);
+            resources.ApplyResources(this.panel12, "panel12");
+            this.panel12.Name = "panel12";
+            // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
@@ -4431,6 +4464,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.buniCerrar)).EndInit();
+            this.panel12.ResumeLayout(false);
+            this.panel12.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -4723,6 +4758,7 @@
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton11;
         private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.Panel panel10;
+        private System.Windows.Forms.Panel panel12;
     }
 }
 
