@@ -1035,8 +1035,12 @@ namespace MysqlTienda
             {
                 try
                 {
-                    double precio = Convert.ToDouble(textTotal.Text) / Convert.ToDouble(textCantidad.Text);
-                    string insertarCodigo = "UPDATE easyerp.detalle_facturacov SET precio =" + textPrecio.Text + ", total =precio*cantidad, costoTotal=costo*cantidad  WHERE `detalle_facturacov`.`factura` =" + textFactura.Text + " AND `detalle_facturacov`.`codigo` = " + textCodigo.Text + " and almacen='" + comboBoxCiudad.Text + "'";
+                    double total = Convert.ToDouble(textCantidad.Text) * Convert.ToDouble(textPrecio.Text);
+
+                    MessageBox.Show(Convert.ToString(total));
+                    //string insertarCodigo = "UPDATE easyerp.detalle_facturacov SET precio =" + textPrecio.Text + ", total =precio*cantidad, costoTotal=costo*cantidad  WHERE `detalle_facturacov`.`factura` =" + textFactura.Text + " AND `detalle_facturacov`.`codigo` = " + textCodigo.Text + " and almacen='" + comboBoxCiudad.Text + "'";
+                    string insertarCodigo = "UPDATE easyerp.detalle_facturacov SET cantidad="+textCantidad.Text+", precio =" + textPrecio.Text + ", total ="+total+", costoTotal=costo*cantidad  WHERE `detalle_facturacov`.`factura` =" + textFactura.Text + " AND `detalle_facturacov`.`codigo` = " + textCodigo.Text + " and almacen='" + comboBoxCiudad.Text + "'";
+
                     conectar.Open();
                     MySqlCommand command = new MySqlCommand(insertarCodigo, conectar);
 
@@ -1109,8 +1113,9 @@ namespace MysqlTienda
                 buscarFactura();
                 iniciarTablaVentas("");
                 sumaTotal();
-
+                
             }
+            MessageBox.Show("Login exitoso se encuentra en " + comboBoxCiudad.Text);
 
 
         }
@@ -3151,6 +3156,8 @@ namespace MysqlTienda
         {
 
         }
+
+       
     }
 
     }
