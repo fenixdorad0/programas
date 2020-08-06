@@ -22,6 +22,8 @@ namespace MysqlTienda
         public int yainicio = 0;
         public String fechaHoy = DateTime.Now.ToString("yyyy-MM-dd");
         public string respuestaFormulario = "algo";
+
+        public double sumatotal=0;
         public Form1()
         {
 
@@ -38,6 +40,8 @@ namespace MysqlTienda
             comboBoxGastoAlmacen.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxGastoCatagoria.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxAlmacenEntrada.DropDownStyle = ComboBoxStyle.DropDownList;
+          
+            
         }
 
         public void abrirConeccion()
@@ -218,7 +222,7 @@ namespace MysqlTienda
                 conectar.Open();
                 textSumaTotal.Text = Convert.ToString(cmd.ExecuteScalar());
                 conectar.Close();
-
+                convertirDecimales();
                 MySqlCommand cmd2 = new MySqlCommand();
                 //cmd.CommandText = "select sum(cantidad) from tienda.ventas where factura=" + textFactura.Text;
                 cmd2.CommandText = "select sum(costoTotal) from easyerp.detalle_facturacov where factura=" + textFactura.Text + " and almacen='" + comboBoxCiudad.Text + "'";
@@ -297,7 +301,7 @@ namespace MysqlTienda
                         break;
                 }
 
-
+                convertirDecimales();
 
 
 
@@ -341,6 +345,7 @@ namespace MysqlTienda
             textSumaTotal.Text = "";
             buscarFactura();
             iniciarTablaVentas("");
+            convertirDecimales();
         }
 
         public void finalizarFactura()
@@ -372,13 +377,16 @@ namespace MysqlTienda
                         + "venta" + "','" //tipo de factura o movimiento
                         + labelCedula.Text + "','" //cedula del vendedor
                         + comboBoxCiudad.Text + "')"; //almacen               
+                    convertirDecimales();
                     conectar.Open();
                     MySqlCommand command2 = new MySqlCommand(insertarCodigo2, conectar);
+
 
                     if (command2.ExecuteNonQuery() == 1)
                     {
 
                         //MessageBox.Show("factura guardada ");
+
                     }
                     else
                     {
@@ -484,7 +492,7 @@ namespace MysqlTienda
                 MySqlCommand command = new MySqlCommand(insertarCodigo, conectar);
                 if (command.ExecuteNonQuery() == 1)
                 {
-                    MessageBox.Show("aumente el inventario");
+                    //MessageBox.Show("aumente el inventario");
                 }
                 else { }
                 cerrarConeccion();
@@ -506,7 +514,7 @@ namespace MysqlTienda
                 MySqlCommand command = new MySqlCommand(insertarCodigo, conectar);
                 if (command.ExecuteNonQuery() == 1)
                 {
-                    MessageBox.Show("aumente el inventario");
+                    MessageBox.Show("Producto eliminado de la factura");
                 }
                 else { }
                 cerrarConeccion();
@@ -917,11 +925,11 @@ namespace MysqlTienda
             try
             {
                 //Cargando los datos cuando doy clic en datagridview                           
-                TextboxCedula.text = bunifuCustomDataGrid2.CurrentRow.Cells[0].Value.ToString();
-                TextboxUsuario.text = bunifuCustomDataGrid2.CurrentRow.Cells[1].Value.ToString();
-                TextboxContrasena.text = bunifuCustomDataGrid2.CurrentRow.Cells[2].Value.ToString();
-                TextboxCorreo.text = bunifuCustomDataGrid2.CurrentRow.Cells[3].Value.ToString();
-                TextboxNombre.text = bunifuCustomDataGrid2.CurrentRow.Cells[4].Value.ToString();
+                TextboxCedula.Text = bunifuCustomDataGridUsuarios.CurrentRow.Cells[0].Value.ToString();
+                TextboxUsuario.Text = bunifuCustomDataGridUsuarios.CurrentRow.Cells[1].Value.ToString();
+                TextboxContrasena.Text = bunifuCustomDataGridUsuarios.CurrentRow.Cells[2].Value.ToString();
+                TextboxCorreo.Text = bunifuCustomDataGridUsuarios.CurrentRow.Cells[3].Value.ToString();
+                TextboxNombre.Text = bunifuCustomDataGridUsuarios.CurrentRow.Cells[4].Value.ToString();
             }
             catch (Exception error)
             {
@@ -1037,7 +1045,7 @@ namespace MysqlTienda
                 {
                     double total = Convert.ToDouble(textCantidad.Text) * Convert.ToDouble(textPrecio.Text);
 
-                    MessageBox.Show(Convert.ToString(total));
+                    //MessageBox.Show(Convert.ToString(total));
                     //string insertarCodigo = "UPDATE easyerp.detalle_facturacov SET precio =" + textPrecio.Text + ", total =precio*cantidad, costoTotal=costo*cantidad  WHERE `detalle_facturacov`.`factura` =" + textFactura.Text + " AND `detalle_facturacov`.`codigo` = " + textCodigo.Text + " and almacen='" + comboBoxCiudad.Text + "'";
                     string insertarCodigo = "UPDATE easyerp.detalle_facturacov SET cantidad="+textCantidad.Text+", precio =" + textPrecio.Text + ", total ="+total+", costoTotal=costo*cantidad  WHERE `detalle_facturacov`.`factura` =" + textFactura.Text + " AND `detalle_facturacov`.`codigo` = " + textCodigo.Text + " and almacen='" + comboBoxCiudad.Text + "'";
 
@@ -1115,28 +1123,36 @@ namespace MysqlTienda
                 sumaTotal();
                 
             }
-            MessageBox.Show("Login exitoso se encuentra en " + comboBoxCiudad.Text);
+            MessageBox.Show("Actualmente se encuentra en " + comboBoxCiudad.Text);
 
 
         }
         public void bunifuFlatButton1_Click(object sender, EventArgs e)
         {
+            agregarUsuario();
+
+        }
+
+        private void agregarUsuario()
+        {
             try
             {
+               
                 cargarPermisosPorAlmacen();
                 bool todoEstaBien = comprobarDatosUsuario();
-                if (todoEstaBien == true) {
+                if (todoEstaBien == true)
+                {
                     cerrarConeccion();
                     string insertarCodigo = "INSERT INTO easyerp.usuario (`cc`, `id`, `contrasena`, `correo`, `nombre`) VALUES (" +
                         "'" +
-                        TextboxCedula.text + "', '" +
-                        TextboxUsuario.text + "', '" +
-                        TextboxContrasena.text + "', '" +
-                        TextboxCorreo.text + "', '" +
-                        TextboxNombre.text + "')";
+                        TextboxCedula.Text + "', '" +
+                        TextboxUsuario.Text + "', '" +
+                        TextboxContrasena.Text + "', '" +
+                        TextboxCorreo.Text + "', '" +
+                        TextboxNombre.Text + "')";
                     conectar.Open();
                     MySqlCommand command = new MySqlCommand(insertarCodigo, conectar);
-                    if (command.ExecuteNonQuery() == 1) {     /* essageBox.Show("encontre la factura"); */ } else { /* MessageBox.Show("no encontre la factura"); */}
+                    if (command.ExecuteNonQuery() == 1) {    /*  MessageBox.Show( "encontre la factura"); */ } else {/*  MessageBox.Show(   "no encontre la factura"); */ }
                     cerrarConeccion();
                     iniciarTablaUsuarios();
                 }
@@ -1157,35 +1173,32 @@ namespace MysqlTienda
                 }
 
             }
-
-
-
         }
 
         public bool comprobarDatosUsuario()
         {
             //con el @ se quita el problema de salida desconocida
-            bool verificarEmail = bien_escrito(TextboxCorreo.text, "\\w+([-+.']\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*");
+            bool verificarEmail = bien_escrito(TextboxCorreo.Text, "\\w+([-+.']\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*");
             if (verificarEmail == true) { LabelUCorreo.Text = "correo"; } else { LabelUCorreo.Text = "correo (verifique que este bien escrito)"; };
 
-            bool verificarNombre = bien_escrito(TextboxNombre.text, "[a-zA-ZñÑ\\s]{2,50}");
+            bool verificarNombre = bien_escrito(TextboxNombre.Text, "[a-zA-ZñÑ\\s]{2,50}");
             if (verificarNombre == true) { LabelUNombre.Text = "nombre"; } else { LabelUNombre.Text = "nombre (verifique que este bien escrito)"; };
 
-            bool verificarCedula = bien_escrito(TextboxCedula.text, @"[0-9]{1,30}(\.[0-9]{0,2})?$");
+            bool verificarCedula = bien_escrito(TextboxCedula.Text, @"[0-9]{1,30}(\.[0-9]{0,2})?$");
             if (verificarCedula == true) { LabelUCedula.Text = "cédula"; } else { LabelUCedula.Text = "cédula(verifique que este bien escrito)"; };
 
             if (verificarCedula == true && verificarNombre == true && verificarEmail == true)
             {
-                ButtonUsuarioAgregar.Enabled = true;
-                ButtonUsuarioEliminar.Enabled = true;
-                ButtonUsuarioModificar.Enabled = true;
+                ButtonUsuarioAgregar.Visible = true;
+                ButtonUsuarioEliminar.Visible = true;
+                ButtonUsuarioModificar.Visible = true;
                 return true;
             }
             else
             {
-                ButtonUsuarioAgregar.Enabled = false;
-                ButtonUsuarioEliminar.Enabled = false;
-                ButtonUsuarioModificar.Enabled = false;
+                ButtonUsuarioAgregar.Visible = false;
+                ButtonUsuarioEliminar.Visible = false;
+                ButtonUsuarioModificar.Visible = false;
                 return false;
             }
         }
@@ -1242,7 +1255,7 @@ namespace MysqlTienda
                 DataTable table = new DataTable();
                 MySqlDataAdapter adpter = new MySqlDataAdapter(selectQuery, conectar);
                 adpter.Fill(table);
-                bunifuCustomDataGrid2.DataSource = table;
+                bunifuCustomDataGridUsuarios.DataSource = table;
                 cerrarConeccion();
             }
             catch (Exception error)
@@ -1327,7 +1340,7 @@ namespace MysqlTienda
         public void ButtonUsuarioEliminar_Click(object sender, EventArgs e)
         {
 
-            DialogResult result = MessageBox.Show("¿Seguro que desea eliminar a este usuario?: '" + TextboxUsuario.text + "'?", "Eliminar usuario: '" + TextboxNombre.text + "'", MessageBoxButtons.YesNoCancel);
+            DialogResult result = MessageBox.Show("¿Seguro que desea eliminar a este usuario?: '" + TextboxUsuario.Text + "'?", "Eliminar usuario: '" + TextboxNombre.Text + "'", MessageBoxButtons.YesNoCancel);
 
             if (result == DialogResult.Yes)
             {
@@ -1335,7 +1348,7 @@ namespace MysqlTienda
                 {
                     cargarPermisosPorAlmacen();
                     cerrarConeccion();
-                    string insertarCodigo = "DELETE FROM easyerp.usuario WHERE cc =" + TextboxCedula.text;
+                    string insertarCodigo = "DELETE FROM easyerp.usuario WHERE cc =" + TextboxCedula.Text;
                     conectar.Open();
                     MySqlCommand command = new MySqlCommand(insertarCodigo, conectar);
 
@@ -1377,7 +1390,7 @@ namespace MysqlTienda
             {
                 cargarPermisosPorAlmacen();
                 cerrarConeccion();
-                string insertarCodigo = "UPDATE easyerp.usuario SET `cc` = '" + TextboxCedula.text + "', `id` = '" + TextboxUsuario.text + "', `contrasena` = '" + TextboxContrasena.text + "', `correo` = '" + TextboxCorreo.text + "', `nombre` = '" + TextboxNombre.text + "' WHERE `usuario`.`cc` = '" + TextboxCedula.text + "'";
+                string insertarCodigo = "UPDATE easyerp.usuario SET `cc` = '" + TextboxCedula.Text + "', `id` = '" + TextboxUsuario.Text + "', `contrasena` = '" + TextboxContrasena.Text + "', `correo` = '" + TextboxCorreo.Text + "', `nombre` = '" + TextboxNombre.Text + "' WHERE `usuario`.`cc` = '" + TextboxCedula.Text + "'";
                 conectar.Open();
                 MySqlCommand command = new MySqlCommand(insertarCodigo, conectar);
 
@@ -1983,6 +1996,7 @@ namespace MysqlTienda
         {
             string fechaA = dateTimePickerReporteA.Value.Date.ToString("yyyy-MM-dd");
             string fechaB = dateTimePickerReporteB.Value.Date.ToString("yyyy-MM-dd");
+            labelReportesLocalProducto.Text = "Local de " + labelAlmacen.Text+ " reporte de ventas organizadas por productos";
 
             if (dateTimePickerReporteA.Value.Date <= dateTimePickerReporteB.Value.Date)
             {
@@ -1997,7 +2011,7 @@ namespace MysqlTienda
                     cmd10.CommandType = System.Data.CommandType.Text;
                     cmd10.Connection = conectar;
                     conectar.Open();
-                    labelVentasCreditoLocal.Text = "las ventas del día de hoy por credito fueron:" + (Convert.ToDouble(cmd10.ExecuteScalar())).ToString("C");
+                    labelVentasCreditoLocal.Text = "Las ventas por crédito fueron:" + (Convert.ToDouble(cmd10.ExecuteScalar())).ToString("C");
                     double credito = Convert.ToDouble(cmd10.ExecuteScalar());
                     conectar.Close();
 
@@ -2007,7 +2021,7 @@ namespace MysqlTienda
                     cmd11.CommandType = System.Data.CommandType.Text;
                     cmd11.Connection = conectar;
                     conectar.Open();
-                    labelEfectivoLocal.Text = "las ventas del día de hoy por efectivo fueron:" + (Convert.ToDouble(cmd11.ExecuteScalar())).ToString("C");
+                    labelEfectivoLocal.Text = "Las ventas por efectivo fueron:" + (Convert.ToDouble(cmd11.ExecuteScalar())).ToString("C");
                     double efectivo = Convert.ToDouble(cmd11.ExecuteScalar());
                     conectar.Close();
 
@@ -2018,7 +2032,7 @@ namespace MysqlTienda
                     cmd.CommandType = System.Data.CommandType.Text;
                     cmd.Connection = conectar;
                     conectar.Open();
-                    labelReporte1.Text = "las ventas del día de hoy fueron:" + (Convert.ToDouble(cmd.ExecuteScalar())).ToString("C");
+                    labelReporte1.Text = "las ventas fueron:" + (Convert.ToDouble(cmd.ExecuteScalar())).ToString("C");
                     double ventas = Convert.ToDouble(cmd.ExecuteScalar());
                     conectar.Close();
 
@@ -2034,7 +2048,7 @@ namespace MysqlTienda
 
                     double ganancia = ventas - costo;
 
-                    labelReporteGanancias.Text = "Las ganancias fueron: " + (ganancia).ToString("C") + " El costo es de :" + costo.ToString("C") + " Que representan una utilidad de: " + Convert.ToString(Math.Round(((ganancia / costo)) * 100, 2)) + "%";
+                    labelReporteGanancias.Text = "Las ganancias fueron: " + (ganancia).ToString("C") + System.Environment.NewLine + "El costo es de :" + costo.ToString("C") + System.Environment.NewLine + "Que representan una utilidad de: " + Convert.ToString(Math.Round(((ganancia / costo)) * 100, 2)) + "%";
 
                     cerrarConeccion();
                     MySqlCommand cmd3 = new MySqlCommand();
@@ -2053,7 +2067,7 @@ namespace MysqlTienda
                     cmd4.Connection = conectar;
                     conectar.Open();
                     double entrada = Convert.ToDouble(cmd4.ExecuteScalar());
-                    labelReporteLocalEntradas.Text = "El total de las entradas de dinero fueron: " + entrada.ToString("C");
+                    labelReporteLocalEntradas.Text = "El total de las entradas fueron: " + entrada.ToString("C");
                     conectar.Close();
 
 
@@ -2136,15 +2150,18 @@ namespace MysqlTienda
         {
             try
             {
-                DataGridReporteProducto.Columns[5].DefaultCellStyle.Format = "#,#";
-                DataGridReporteProducto.Columns[6].DefaultCellStyle.Format = "#,#";
-                DataGridReporteProducto.Columns[7].DefaultCellStyle.Format = "#,#";
-                DataGridReporteDepartamento.Columns[2].DefaultCellStyle.Format = "#,#";
-                DataGridReporteDepartamento.Columns[3].DefaultCellStyle.Format = "#,#";
-                DataGridReporteDepartamento.Columns[4].DefaultCellStyle.Format = "#,#";
-                DataGridReporteVentaCajeros.Columns[2].DefaultCellStyle.Format = "#,#";
-                DataGridReporteVentaCajeros.Columns[3].DefaultCellStyle.Format = "#,#";
-                DataGridReporteVentaCajeros.Columns[4].DefaultCellStyle.Format = "#,#";
+                DataGridReporteProducto.Columns[5].DefaultCellStyle.Format = "$#,#";
+                DataGridReporteProducto.Columns[6].DefaultCellStyle.Format = "$#,#";
+                DataGridReporteProducto.Columns[7].DefaultCellStyle.Format = "$#,#";
+                DataGridReporteProducto.Columns[8].DefaultCellStyle.Format = "#.##%";
+                DataGridReporteDepartamento.Columns[2].DefaultCellStyle.Format = "$#,#";
+                DataGridReporteDepartamento.Columns[3].DefaultCellStyle.Format = "$#,#";
+                DataGridReporteDepartamento.Columns[4].DefaultCellStyle.Format = "$#,#";
+                DataGridReporteDepartamento.Columns[5].DefaultCellStyle.Format = "#.##%";
+                DataGridReporteVentaCajeros.Columns[2].DefaultCellStyle.Format = "$#,#";
+                DataGridReporteVentaCajeros.Columns[3].DefaultCellStyle.Format = "$#,#";
+                DataGridReporteVentaCajeros.Columns[4].DefaultCellStyle.Format = "$#,#";
+                DataGridReporteVentaCajeros.Columns[5].DefaultCellStyle.Format = "#.##%";
             }
             catch { }
 
@@ -2184,7 +2201,7 @@ namespace MysqlTienda
                     cmd10.CommandType = System.Data.CommandType.Text;
                     cmd10.Connection = conectar;
                     conectar.Open();
-                    labelReporteCredito2.Text = "las ventas del día de hoy por credito fueron:" + (Convert.ToDouble(cmd10.ExecuteScalar())).ToString("C");
+                    labelReporteCredito2.Text = "Las ventas por crédito fueron:" + (Convert.ToDouble(cmd10.ExecuteScalar())).ToString("C");
                     double credito = Convert.ToDouble(cmd10.ExecuteScalar());
                     conectar.Close();
 
@@ -2194,7 +2211,7 @@ namespace MysqlTienda
                     cmd11.CommandType = System.Data.CommandType.Text;
                     cmd11.Connection = conectar;
                     conectar.Open();
-                    labelReporteEfectivo2.Text = "las ventas del día de hoy por efectivo fueron:" + (Convert.ToDouble(cmd11.ExecuteScalar())).ToString("C");
+                    labelReporteEfectivo2.Text = "Las ventas por efectivo fueron:" + (Convert.ToDouble(cmd11.ExecuteScalar())).ToString("C");
                     double efectivo = Convert.ToDouble(cmd11.ExecuteScalar());
                     conectar.Close();
                     //
@@ -2204,7 +2221,7 @@ namespace MysqlTienda
                     cmd.CommandType = System.Data.CommandType.Text;
                     cmd.Connection = conectar;
                     conectar.Open();
-                    labelReporte2.Text = "las ventas de todos los locales día de hoy fueron " + (Convert.ToDouble(cmd.ExecuteScalar())).ToString("C");
+                    labelReporte2.Text = "Las ventas de todos los locales fueron " + (Convert.ToDouble(cmd.ExecuteScalar())).ToString("C");
                     double ventas = Convert.ToDouble(cmd.ExecuteScalar());
                     conectar.Close();
 
@@ -2219,7 +2236,7 @@ namespace MysqlTienda
                     conectar.Close();
                     double ganancia = ventas - costo;
 
-                    labelReporteGanancias2.Text = "Las ganancias de todos los locales fueron:" + (ganancia).ToString("C") + " El costo fue de :" + (costo).ToString("C") + " Que representan una utilidad de: " + Convert.ToString(Math.Round((((ganancia) / costo)) * 100, 2)) + "%";
+                    labelReporteGanancias2.Text = "Las ganancias de todos los locales fueron:" + (ganancia).ToString("C") +System.Environment.NewLine + "El costo fue de :" + (costo).ToString("C") + System.Environment.NewLine + "Que representan una utilidad de: " + Convert.ToString(Math.Round((((ganancia) / costo)) * 100, 2)) + "%";
 
                     cerrarConeccion();
                     MySqlCommand cmd3 = new MySqlCommand();
@@ -2460,35 +2477,44 @@ namespace MysqlTienda
         {
             try
             {
-                DataGridReporteProducto2.Columns[5].DefaultCellStyle.Format = "#,#";
-                DataGridReporteProducto2.Columns[6].DefaultCellStyle.Format = "#,#";
-                DataGridReporteDepartamento2.Columns[2].DefaultCellStyle.Format = "#,#";
-                DataGridReporteDepartamento2.Columns[3].DefaultCellStyle.Format = "#,#";
-                DataGridReporteDepartamento2.Columns[4].DefaultCellStyle.Format = "#,#";
-                DataGridReporteVentasAlmacen2.Columns[1].DefaultCellStyle.Format = "#,#";
-                DataGridReporteVentasAlmacen2.Columns[2].DefaultCellStyle.Format = "#,#";
-                DataGridReporteVentasAlmacen2.Columns[3].DefaultCellStyle.Format = "#,#";
-                DataGridReporteProductosAlmacen2.Columns[7].DefaultCellStyle.Format = "#,#";
+                DataGridReporteProducto2.Columns[5].DefaultCellStyle.Format = "$ #,#";
+                DataGridReporteProducto2.Columns[6].DefaultCellStyle.Format = "$ #,#";
+                DataGridReporteProducto2.Columns[7].DefaultCellStyle.Format = "$ #,#";
+                DataGridReporteProducto2.Columns[8].DefaultCellStyle.Format = "#.##%";
+                DataGridReporteDepartamento2.Columns[2].DefaultCellStyle.Format = "$ #,#";
+                DataGridReporteDepartamento2.Columns[3].DefaultCellStyle.Format = "$ #,#";
+                DataGridReporteDepartamento2.Columns[4].DefaultCellStyle.Format = "$ #,#";
+                DataGridReporteDepartamento2.Columns[5].DefaultCellStyle.Format = "#.##%";
+                DataGridReporteVentasAlmacen2.Columns[1].DefaultCellStyle.Format = "$ #,#";
+                DataGridReporteVentasAlmacen2.Columns[2].DefaultCellStyle.Format = "$ #,#";
+                DataGridReporteVentasAlmacen2.Columns[3].DefaultCellStyle.Format = "$ #,#";
+                DataGridReporteVentasAlmacen2.Columns[4].DefaultCellStyle.Format = "#.##%";                
                 DataGridReporteProductosAlmacen2.Columns[4].DefaultCellStyle.Format = "#,#";
                 DataGridReporteProductosAlmacen2.Columns[5].DefaultCellStyle.Format = "#,#";
-                DataGridReporteProductosAlmacen2.Columns[6].DefaultCellStyle.Format = "#,#";
-                DataGridReporteDepartamentoAlmacen2.Columns[3].DefaultCellStyle.Format = "#,#";
-                DataGridReporteDepartamentoAlmacen2.Columns[4].DefaultCellStyle.Format = "#,#";
-                DataGridReporteDepartamentoAlmacen2.Columns[5].DefaultCellStyle.Format = "#,#";
-                DataGridReporteVentaCajeros2.Columns[2].DefaultCellStyle.Format = "#,#";
-                DataGridReporteVentaCajeros2.Columns[3].DefaultCellStyle.Format = "#,#";
-                DataGridReporteVentaCajeros2.Columns[4].DefaultCellStyle.Format = "#,#";
-                DataGridReporteVentaDia2.Columns[1].DefaultCellStyle.Format = "#,#";
-                DataGridReporteVentaDia2.Columns[2].DefaultCellStyle.Format = "#,#";
-                DataGridReporteVentaDia2.Columns[3].DefaultCellStyle.Format = "#,#";
-                DataGridReporteVentaDia2.Columns[4].DefaultCellStyle.Format = "#,#";
-                DataGridReporteVentaDiaR2.Columns[1].DefaultCellStyle.Format = "#,#";
-                DataGridReporteVentaDiaR2.Columns[2].DefaultCellStyle.Format = "#,#";
-                DataGridReporteVentaDiaR2.Columns[3].DefaultCellStyle.Format = "#,#";
+                DataGridReporteProductosAlmacen2.Columns[6].DefaultCellStyle.Format = "$ #,#";
+                DataGridReporteProductosAlmacen2.Columns[7].DefaultCellStyle.Format = "$ #,#";
+                DataGridReporteProductosAlmacen2.Columns[8].DefaultCellStyle.Format = "#.##%";
+                DataGridReporteDepartamentoAlmacen2.Columns[3].DefaultCellStyle.Format = "$ #,#";
+                DataGridReporteDepartamentoAlmacen2.Columns[4].DefaultCellStyle.Format = "$ #,#";
+                DataGridReporteDepartamentoAlmacen2.Columns[5].DefaultCellStyle.Format = "$ #,#";
+                DataGridReporteDepartamentoAlmacen2.Columns[6].DefaultCellStyle.Format = "#.##%";
+                DataGridReporteVentaCajeros2.Columns[2].DefaultCellStyle.Format = "$ #,#";
+                DataGridReporteVentaCajeros2.Columns[3].DefaultCellStyle.Format = "$ #,#";
+                DataGridReporteVentaCajeros2.Columns[4].DefaultCellStyle.Format = "$ #,#";
+                DataGridReporteVentaCajeros2.Columns[5].DefaultCellStyle.Format = "#.##%";
+                DataGridReporteVentaDia2.Columns[1].DefaultCellStyle.Format = "$ #,#";
+                DataGridReporteVentaDia2.Columns[2].DefaultCellStyle.Format = "$ #,#";
+                DataGridReporteVentaDia2.Columns[3].DefaultCellStyle.Format = "$ #,#";
+                DataGridReporteVentaDia2.Columns[4].DefaultCellStyle.Format = "$ #,#";
+                DataGridReporteVentaDia2.Columns[5].DefaultCellStyle.Format = "#.##%";
+                DataGridReporteVentaDiaR2.Columns[1].DefaultCellStyle.Format = "$ #,#";
+                DataGridReporteVentaDiaR2.Columns[2].DefaultCellStyle.Format = "$ #,#";
+                DataGridReporteVentaDiaR2.Columns[3].DefaultCellStyle.Format = "$ #,#";
+                DataGridReporteVentaDiaR2.Columns[4].DefaultCellStyle.Format = "#.##%";
             }
-            catch
+            catch(Exception errro)
             {
-
+                MessageBox.Show(Convert.ToString(errro));
             }
 
         }
@@ -3157,7 +3183,99 @@ namespace MysqlTienda
 
         }
 
-       
+        public void convertirDecimales()
+        {
+            try
+            {
+                double valor = Convert.ToDouble(textSumaTotal.Text);
+                textSumaTotalC.Text = "TOTAL = " + "$" + Convert.ToString(valor.ToString("0,0"));
+            }
+            catch
+            {
+
+            }
+            
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                for (int i = 0; i < DataGridVentas.Columns.Count - 1; i++)
+                {
+                    DataGridVentas.Columns[i].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+                }
+                DataGridVentas.Columns[DataGridVentas.Columns.Count - 1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+
+                for (int i = 0; i < DataGridVentas.Columns.Count; i++)
+                {
+                    int colw = DataGridVentas.Columns[i].Width;
+                    DataGridVentas.Columns[i].AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+                    DataGridVentas.Columns[i].Width = colw;
+                }
+
+                for (int i = 0; i < bunifuCustomDataGridUsuarios.Columns.Count - 1; i++)
+                {
+                    bunifuCustomDataGridUsuarios.Columns[i].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+                }
+                bunifuCustomDataGridUsuarios.Columns[bunifuCustomDataGridUsuarios.Columns.Count - 1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+
+                for (int i = 0; i < bunifuCustomDataGridUsuarios.Columns.Count; i++)
+                {
+                    int colw = bunifuCustomDataGridUsuarios.Columns[i].Width;
+                    bunifuCustomDataGridUsuarios.Columns[i].AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+                    bunifuCustomDataGridUsuarios.Columns[i].Width = colw;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(Convert.ToString(ex));
+            }
+            //DataGridVentas.AutoResizeColumns(DataGridViewAutoSizeColumnsMode.Fill);
+            
+
+            
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuMaterialTextbox1_OnValueChanged(object sender, EventArgs e)
+        {
+            //tex cedula
+
+            comprobarDatosUsuario();
+        }
+
+        private void comboBoxCedulaPermiAlmace_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click_2(object sender, EventArgs e)
+        {
+            MessageBox.Show(TextboxCedula.Text); agregarUsuario();
+        }
+
+        private void TextboxCorreo_OnValueChanged(object sender, EventArgs e)
+        {
+
+            comprobarDatosUsuario();
+        }
+
+        private void TextboxNombre_OnValueChanged(object sender, EventArgs e)
+        {
+
+            comprobarDatosUsuario();
+        }
+
+        private void tabPage26_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 
     }
