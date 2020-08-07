@@ -559,11 +559,7 @@ namespace MysqlTienda
                     textInsertarCodigo.Enabled = true;
                     //buniMaxMin.Enabled = true;
                     cerrarConeccion();
-                    cargarCiudades();
-                    cargarCiudadesGastos();
-                    cargarCiudadesEntradas();
-                    cargarGastoDescipcion();
-                    cargarCategoriaEntrada();
+                    cargarDatagridviews();
                     label15.Visible = true;
                     buscarFactura();
                     //buscarFactura(0, "SELECT * FROM easyerp.detalle_facturacov order by factura_movimiento_nf where id = LAST_INSERT_ID");
@@ -584,6 +580,16 @@ namespace MysqlTienda
                 MessageBox.Show(ex.Message + "o no hay conección con el servidor");
             }
             yainicio = 1;
+        }
+
+        private void cargarDatagridviews()
+        {
+            cargarPermisosUsuario();
+            cargarCiudades();
+            cargarCiudadesGastos();
+            cargarCiudadesEntradas();
+            cargarGastoDescipcion();
+            cargarCategoriaEntrada();
         }
 
         private void colocarFormatoDecimalDataGrids()
@@ -930,6 +936,7 @@ namespace MysqlTienda
                 TextboxContrasena.Text = bunifuCustomDataGridUsuarios.CurrentRow.Cells[2].Value.ToString();
                 TextboxCorreo.Text = bunifuCustomDataGridUsuarios.CurrentRow.Cells[3].Value.ToString();
                 TextboxNombre.Text = bunifuCustomDataGridUsuarios.CurrentRow.Cells[4].Value.ToString();
+                comboBoxUsuarioPermisos.Text= bunifuCustomDataGridUsuarios.CurrentRow.Cells[5].Value.ToString();
             }
             catch (Exception error)
             {
@@ -3275,6 +3282,31 @@ namespace MysqlTienda
         private void tabPage26_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void buttonPermisosUsuario_Click(object sender, EventArgs e)
+        {
+            cargarPermisosUsuario();
+        }
+
+        private void cargarPermisosUsuario()
+        {
+            try
+            {
+                cargarPermisosPorAlmacen();
+                cerrarConeccion();
+                //string selectQuery = "select * FROM easyerp.detalle_facturacov where factura_movimiento_nf="+textFactura.Text;
+                string selectQuery = "SELECT * FROM easyerp.permisosusuarios";
+                DataTable table = new DataTable();
+                MySqlDataAdapter adpter = new MySqlDataAdapter(selectQuery, conectar);
+                adpter.Fill(table);
+                bunifuCustomDataGridPermisosUsuario.DataSource = table;
+                cerrarConeccion();
+            }
+            catch (Exception error)
+            {
+                MessageBox.Show(error.Message + "Error cuando se inicia la permisos de usuario");
+            }
         }
     }
 
