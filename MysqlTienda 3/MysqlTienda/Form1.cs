@@ -22,11 +22,10 @@ namespace MysqlTienda
         public int yainicio = 0;
         public String fechaHoy = DateTime.Now.ToString("yyyy-MM-dd");
         public string respuestaFormulario = "algo";
-
+        
         public double sumatotal=0;
         public Form1()
         {
-
             InitializeComponent();
             comboBoxCiudad.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxIvaProducto.DropDownStyle = ComboBoxStyle.DropDownList;
@@ -3287,8 +3286,56 @@ namespace MysqlTienda
         private void buttonPermisosUsuario_Click(object sender, EventArgs e)
         {
             cargarPermisosUsuario();
+            cargarNombresPermisosUsuario();
         }
 
+        private void cargarNombresPermisosUsuario()
+        {
+            //labelPermisosUsuario0
+            //comboBoxPermisosUsuario0
+            //bunifuCustomDataGridPermisosUsuario
+            List<Label> lst = new List<Label>();
+            lst.Add(labelPermisosUsuario0);
+            lst.Add(labelPermisosUsuario1);
+            lst.Add(labelPermisosUsuario2);
+            lst.Add(labelPermisosUsuario3);
+            lst.Add(labelPermisosUsuario4);
+            lst.Add(labelPermisosUsuario5);
+            lst.Add(labelPermisosUsuario6);
+            lst.Add(labelPermisosUsuario7);
+            lst.Add(labelPermisosUsuario8);
+            lst.Add(labelPermisosUsuario9);
+            lst.Add(labelPermisosUsuario10);
+            lst.Add(labelPermisosUsuario11);
+            lst.Add(labelPermisosUsuario12);
+            lst.Add(labelPermisosUsuario13);
+            lst.Add(labelPermisosUsuario14);
+            lst.Add(labelPermisosUsuario15);
+            lst.Add(labelPermisosUsuario16);
+            lst.Add(labelPermisosUsuario17);
+            lst.Add(labelPermisosUsuario18);
+            lst.Add(labelPermisosUsuario19);
+            lst.Add(labelPermisosUsuario20);
+            lst.Add(labelPermisosUsuario21);
+            lst.Add(labelPermisosUsuario22);
+            lst.Add(labelPermisosUsuario23);
+            lst.Add(labelPermisosUsuario24);
+            lst.Add(labelPermisosUsuario25);
+            lst.Add(labelPermisosUsuario26);
+            int cont=0;
+            foreach (Label lbl in lst)
+            {
+               
+
+                    lbl.Text = bunifuCustomDataGridPermisosUsuario.Columns[cont].HeaderText;
+                cont++;
+               
+
+                //lbl.Text = column.HeaderText;
+            }
+
+           
+        }
         private void cargarPermisosUsuario()
         {
             try
@@ -3296,7 +3343,8 @@ namespace MysqlTienda
                 cargarPermisosPorAlmacen();
                 cerrarConeccion();
                 //string selectQuery = "select * FROM easyerp.detalle_facturacov where factura_movimiento_nf="+textFactura.Text;
-                string selectQuery = "SELECT * FROM easyerp.permisosusuarios";
+                string selectQuery = "SELECT  usuario as 'Usuario',mVentas as 'Modulo de ventas',mUsuario as 'Modulo de usuarios',mUsuarioPermisosAlmacen as 'Permisos por almacen',mUsuarioPermisosUsuario as 'Permisos por usuario',mProductos as 'Productos',mProductosDepartamento as 'Productos por departamento',mProductosTamano as 'Productos por tamaño',mProductosFecha as 'Fecha de inventario',mAlmacen as 'Almacen',mReporteLocalGeneral as 'Reportes general local',mReporteLocalProducto as 'Reporte local por producto',mReporteLocalDepartamento as 'Rreporte local por departamento',mReporteLocalCajeros as 'Reporte local por cajeros',mReporteGeneral as 'Reporte general',mReporteGeneralProducto as 'Reporte general por producto',mReporteGeneralDepartamento as 'Reporte general por departamento',mReporteGeneralVentas as 'Reporte general  ventas',mReporteGeneralproductosAlmacen as 'Reporte general de productos por almacen',mReporteGeneralVentasDepartamentoAlmacen as 'Reporte general de ventas por departamento en cada almacen',mReporteGeneralVentasCajerosAlmacen as 'Reporte general ventas cajeros por almacen',mReporteGeneralGraficas as 'Reporte general por graficas',mReporteRegistroVentas as 'Reporte registros de ventas',mESentrada as 'Entradas',mEStipoEntrada as 'Tipo de entradas',mESsalida as 'Salidas',mEStipoSalida as 'Tipo de salida' FROM easyerp.permisosusuarios";
+
                 DataTable table = new DataTable();
                 MySqlDataAdapter adpter = new MySqlDataAdapter(selectQuery, conectar);
                 adpter.Fill(table);
@@ -3306,6 +3354,84 @@ namespace MysqlTienda
             catch (Exception error)
             {
                 MessageBox.Show(error.Message + "Error cuando se inicia la permisos de usuario");
+            }
+        }
+
+        private void toolTip1_Popup(object sender, PopupEventArgs e)
+        {
+
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void comboBoxPermisosUsuario0_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuCustomDataGridPermisosUsuario_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void bunifuCustomDataGridPermisosUsuario_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            colocandoPermisosDatagridview();
+        }
+
+        private void colocandoPermisosDatagridview()
+        {
+            try
+            {
+                //labelPermisosUsuario0
+                //comboBoxPermisosUsuario0
+                //bunifuCustomDataGridPermisosUsuario
+                List<ComboBox> lst = new List<ComboBox>();                
+                lst.Add(comboBoxPermisosUsuario1);
+                lst.Add(comboBoxPermisosUsuario2);
+                lst.Add(comboBoxPermisosUsuario3);
+                lst.Add(comboBoxPermisosUsuario4);
+                lst.Add(comboBoxPermisosUsuario5);
+                lst.Add(comboBoxPermisosUsuario6);
+                lst.Add(comboBoxPermisosUsuario7);
+                lst.Add(comboBoxPermisosUsuario8);
+                lst.Add(comboBoxPermisosUsuario9);
+                lst.Add(comboBoxPermisosUsuario10);
+                lst.Add(comboBoxPermisosUsuario11);
+                lst.Add(comboBoxPermisosUsuario12);
+                lst.Add(comboBoxPermisosUsuario13);
+                lst.Add(comboBoxPermisosUsuario14);
+                lst.Add(comboBoxPermisosUsuario15);
+                lst.Add(comboBoxPermisosUsuario16);
+                lst.Add(comboBoxPermisosUsuario17);
+                lst.Add(comboBoxPermisosUsuario18);
+                lst.Add(comboBoxPermisosUsuario19);
+                lst.Add(comboBoxPermisosUsuario20);
+                lst.Add(comboBoxPermisosUsuario21);
+                lst.Add(comboBoxPermisosUsuario22);
+                lst.Add(comboBoxPermisosUsuario23);
+                lst.Add(comboBoxPermisosUsuario24);
+                lst.Add(comboBoxPermisosUsuario25);
+                lst.Add(comboBoxPermisosUsuario26);
+                /*
+                foreach (DataGridViewColumn column in bunifuCustomDataGridPermisosUsuario.Columns)
+                {
+                    if (column.HeaderText == "customer_id") { column.HeaderText = "my_title" };
+                }
+                */
+
+                comboBoxUsuPerAlm.Text = DataGridPermisosPorAlmacen.CurrentRow.Cells[0].Value.ToString();
+                comboBoxCedulaPermiAlmace.Text = DataGridPermisosPorAlmacen.CurrentRow.Cells[1].Value.ToString();
+
+            }
+            catch
+            {
+                /*
+                MessageBox.Show(Convert.ToString(error));
+                */
             }
         }
     }

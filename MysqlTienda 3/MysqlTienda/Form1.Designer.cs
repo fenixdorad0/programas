@@ -176,6 +176,8 @@
             this.tab1Usuarios = new System.Windows.Forms.TabPage();
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.labelUsuarioPermisos = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.comboBoxUsuarioPermisos = new System.Windows.Forms.ComboBox();
             this.TextboxNombre = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.TextboxCorreo = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.TextboxContrasena = new Bunifu.Framework.UI.BunifuMaterialTextbox();
@@ -204,16 +206,6 @@
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel5 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.permisosUsuario = new System.Windows.Forms.TabPage();
-            this.bunifuMaterialTextbox1 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.bunifuMaterialTextbox2 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.bunifuMaterialTextbox3 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.bunifuMaterialTextbox4 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.bunifuMaterialTextbox5 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.bunifuCustomLabel14 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuCustomLabel15 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuCustomLabel22 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuCustomLabel23 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuCustomLabel24 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.panel33 = new System.Windows.Forms.Panel();
             this.bunifuCustomDataGridPermisosUsuario = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.buttonPermisosUsuario = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -420,8 +412,61 @@
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuElipse3 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.comboBoxUsuarioPermisos = new System.Windows.Forms.ComboBox();
-            this.labelUsuarioPermisos = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.labelPermisosUsuario0 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.labelPermisosUsuario1 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.comboBoxPermisosUsuario1 = new System.Windows.Forms.ComboBox();
+            this.labelPermisosUsuario2 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.comboBoxPermisosUsuario2 = new System.Windows.Forms.ComboBox();
+            this.labelPermisosUsuario3 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.comboBoxPermisosUsuario3 = new System.Windows.Forms.ComboBox();
+            this.labelPermisosUsuario4 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.comboBoxPermisosUsuario4 = new System.Windows.Forms.ComboBox();
+            this.labelPermisosUsuario5 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.comboBoxPermisosUsuario5 = new System.Windows.Forms.ComboBox();
+            this.labelPermisosUsuario6 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.comboBoxPermisosUsuario6 = new System.Windows.Forms.ComboBox();
+            this.labelPermisosUsuario7 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.comboBoxPermisosUsuario7 = new System.Windows.Forms.ComboBox();
+            this.labelPermisosUsuario21 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.comboBoxPermisosUsuario21 = new System.Windows.Forms.ComboBox();
+            this.labelPermisosUsuario20 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.comboBoxPermisosUsuario20 = new System.Windows.Forms.ComboBox();
+            this.labelPermisosUsuario19 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.comboBoxPermisosUsuario19 = new System.Windows.Forms.ComboBox();
+            this.labelPermisosUsuario18 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.comboBoxPermisosUsuario18 = new System.Windows.Forms.ComboBox();
+            this.labelPermisosUsuario17 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.comboBoxPermisosUsuario17 = new System.Windows.Forms.ComboBox();
+            this.labelPermisosUsuario16 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.comboBoxPermisosUsuario16 = new System.Windows.Forms.ComboBox();
+            this.labelPermisosUsuario15 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.comboBoxPermisosUsuario15 = new System.Windows.Forms.ComboBox();
+            this.labelPermisosUsuario14 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.comboBoxPermisosUsuario14 = new System.Windows.Forms.ComboBox();
+            this.labelPermisosUsuario11 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.comboBoxPermisosUsuario11 = new System.Windows.Forms.ComboBox();
+            this.labelPermisosUsuario10 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.comboBoxPermisosUsuario10 = new System.Windows.Forms.ComboBox();
+            this.labelPermisosUsuario9 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.comboBoxPermisosUsuario9 = new System.Windows.Forms.ComboBox();
+            this.labelPermisosUsuario8 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.comboBoxPermisosUsuario8 = new System.Windows.Forms.ComboBox();
+            this.labelPermisosUsuario25 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.comboBoxPermisosUsuario25 = new System.Windows.Forms.ComboBox();
+            this.labelPermisosUsuario24 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.comboBoxPermisosUsuario24 = new System.Windows.Forms.ComboBox();
+            this.labelPermisosUsuario23 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.comboBoxPermisosUsuario23 = new System.Windows.Forms.ComboBox();
+            this.labelPermisosUsuario22 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.comboBoxPermisosUsuario22 = new System.Windows.Forms.ComboBox();
+            this.labelPermisosUsuario12 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.comboBoxPermisosUsuario12 = new System.Windows.Forms.ComboBox();
+            this.labelPermisosUsuario26 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.comboBoxPermisosUsuario26 = new System.Windows.Forms.ComboBox();
+            this.labelPermisosUsuario13 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.comboBoxPermisosUsuario13 = new System.Windows.Forms.ComboBox();
+            this.performanceCounter1 = new System.Diagnostics.PerformanceCounter();
+            this.bunifuMaterialTextbox1 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.tab1Inicio.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).BeginInit();
@@ -541,6 +586,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.buniCerrar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.performanceCounter1)).BeginInit();
             this.SuspendLayout();
             // 
             // tab1Inicio
@@ -571,6 +617,7 @@
             this.panel3.Controls.Add(this.label7);
             resources.ApplyResources(this.panel3, "panel3");
             this.panel3.Name = "panel3";
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // bunifuImageButton2
             // 
@@ -1759,6 +1806,19 @@
             resources.ApplyResources(this.tabPage6, "tabPage6");
             this.tabPage6.Name = "tabPage6";
             // 
+            // labelUsuarioPermisos
+            // 
+            resources.ApplyResources(this.labelUsuarioPermisos, "labelUsuarioPermisos");
+            this.labelUsuarioPermisos.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.labelUsuarioPermisos.Name = "labelUsuarioPermisos";
+            // 
+            // comboBoxUsuarioPermisos
+            // 
+            this.comboBoxUsuarioPermisos.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            resources.ApplyResources(this.comboBoxUsuarioPermisos, "comboBoxUsuarioPermisos");
+            this.comboBoxUsuarioPermisos.FormattingEnabled = true;
+            this.comboBoxUsuarioPermisos.Name = "comboBoxUsuarioPermisos";
+            // 
             // TextboxNombre
             // 
             this.TextboxNombre.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -2219,129 +2279,68 @@
             // permisosUsuario
             // 
             this.permisosUsuario.BackColor = System.Drawing.Color.White;
-            this.permisosUsuario.Controls.Add(this.bunifuMaterialTextbox1);
-            this.permisosUsuario.Controls.Add(this.bunifuMaterialTextbox2);
-            this.permisosUsuario.Controls.Add(this.bunifuMaterialTextbox3);
-            this.permisosUsuario.Controls.Add(this.bunifuMaterialTextbox4);
-            this.permisosUsuario.Controls.Add(this.bunifuMaterialTextbox5);
-            this.permisosUsuario.Controls.Add(this.bunifuCustomLabel14);
-            this.permisosUsuario.Controls.Add(this.bunifuCustomLabel15);
-            this.permisosUsuario.Controls.Add(this.bunifuCustomLabel22);
-            this.permisosUsuario.Controls.Add(this.bunifuCustomLabel23);
-            this.permisosUsuario.Controls.Add(this.bunifuCustomLabel24);
             this.permisosUsuario.Controls.Add(this.panel33);
             resources.ApplyResources(this.permisosUsuario, "permisosUsuario");
             this.permisosUsuario.Name = "permisosUsuario";
-            // 
-            // bunifuMaterialTextbox1
-            // 
-            this.bunifuMaterialTextbox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            resources.ApplyResources(this.bunifuMaterialTextbox1, "bunifuMaterialTextbox1");
-            this.bunifuMaterialTextbox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMaterialTextbox1.HintForeColor = System.Drawing.Color.Empty;
-            this.bunifuMaterialTextbox1.HintText = "";
-            this.bunifuMaterialTextbox1.isPassword = false;
-            this.bunifuMaterialTextbox1.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.bunifuMaterialTextbox1.LineIdleColor = System.Drawing.SystemColors.GrayText;
-            this.bunifuMaterialTextbox1.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.bunifuMaterialTextbox1.LineThickness = 5;
-            this.bunifuMaterialTextbox1.Name = "bunifuMaterialTextbox1";
-            this.bunifuMaterialTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // bunifuMaterialTextbox2
-            // 
-            this.bunifuMaterialTextbox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            resources.ApplyResources(this.bunifuMaterialTextbox2, "bunifuMaterialTextbox2");
-            this.bunifuMaterialTextbox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMaterialTextbox2.HintForeColor = System.Drawing.Color.Empty;
-            this.bunifuMaterialTextbox2.HintText = "";
-            this.bunifuMaterialTextbox2.isPassword = false;
-            this.bunifuMaterialTextbox2.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.bunifuMaterialTextbox2.LineIdleColor = System.Drawing.SystemColors.GrayText;
-            this.bunifuMaterialTextbox2.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.bunifuMaterialTextbox2.LineThickness = 5;
-            this.bunifuMaterialTextbox2.Name = "bunifuMaterialTextbox2";
-            this.bunifuMaterialTextbox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // bunifuMaterialTextbox3
-            // 
-            this.bunifuMaterialTextbox3.Cursor = System.Windows.Forms.Cursors.IBeam;
-            resources.ApplyResources(this.bunifuMaterialTextbox3, "bunifuMaterialTextbox3");
-            this.bunifuMaterialTextbox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMaterialTextbox3.HintForeColor = System.Drawing.Color.Empty;
-            this.bunifuMaterialTextbox3.HintText = "";
-            this.bunifuMaterialTextbox3.isPassword = false;
-            this.bunifuMaterialTextbox3.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.bunifuMaterialTextbox3.LineIdleColor = System.Drawing.SystemColors.GrayText;
-            this.bunifuMaterialTextbox3.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.bunifuMaterialTextbox3.LineThickness = 5;
-            this.bunifuMaterialTextbox3.Name = "bunifuMaterialTextbox3";
-            this.bunifuMaterialTextbox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // bunifuMaterialTextbox4
-            // 
-            this.bunifuMaterialTextbox4.Cursor = System.Windows.Forms.Cursors.IBeam;
-            resources.ApplyResources(this.bunifuMaterialTextbox4, "bunifuMaterialTextbox4");
-            this.bunifuMaterialTextbox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMaterialTextbox4.HintForeColor = System.Drawing.Color.Empty;
-            this.bunifuMaterialTextbox4.HintText = "";
-            this.bunifuMaterialTextbox4.isPassword = false;
-            this.bunifuMaterialTextbox4.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.bunifuMaterialTextbox4.LineIdleColor = System.Drawing.SystemColors.GrayText;
-            this.bunifuMaterialTextbox4.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.bunifuMaterialTextbox4.LineThickness = 5;
-            this.bunifuMaterialTextbox4.Name = "bunifuMaterialTextbox4";
-            this.bunifuMaterialTextbox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // bunifuMaterialTextbox5
-            // 
-            this.bunifuMaterialTextbox5.Cursor = System.Windows.Forms.Cursors.IBeam;
-            resources.ApplyResources(this.bunifuMaterialTextbox5, "bunifuMaterialTextbox5");
-            this.bunifuMaterialTextbox5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMaterialTextbox5.HintForeColor = System.Drawing.Color.Empty;
-            this.bunifuMaterialTextbox5.HintText = "";
-            this.bunifuMaterialTextbox5.isPassword = false;
-            this.bunifuMaterialTextbox5.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.bunifuMaterialTextbox5.LineIdleColor = System.Drawing.SystemColors.GrayText;
-            this.bunifuMaterialTextbox5.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.bunifuMaterialTextbox5.LineThickness = 5;
-            this.bunifuMaterialTextbox5.Name = "bunifuMaterialTextbox5";
-            this.bunifuMaterialTextbox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // bunifuCustomLabel14
-            // 
-            resources.ApplyResources(this.bunifuCustomLabel14, "bunifuCustomLabel14");
-            this.bunifuCustomLabel14.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.bunifuCustomLabel14.Name = "bunifuCustomLabel14";
-            // 
-            // bunifuCustomLabel15
-            // 
-            resources.ApplyResources(this.bunifuCustomLabel15, "bunifuCustomLabel15");
-            this.bunifuCustomLabel15.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.bunifuCustomLabel15.Name = "bunifuCustomLabel15";
-            // 
-            // bunifuCustomLabel22
-            // 
-            resources.ApplyResources(this.bunifuCustomLabel22, "bunifuCustomLabel22");
-            this.bunifuCustomLabel22.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.bunifuCustomLabel22.Name = "bunifuCustomLabel22";
-            // 
-            // bunifuCustomLabel23
-            // 
-            resources.ApplyResources(this.bunifuCustomLabel23, "bunifuCustomLabel23");
-            this.bunifuCustomLabel23.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.bunifuCustomLabel23.Name = "bunifuCustomLabel23";
-            // 
-            // bunifuCustomLabel24
-            // 
-            resources.ApplyResources(this.bunifuCustomLabel24, "bunifuCustomLabel24");
-            this.bunifuCustomLabel24.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.bunifuCustomLabel24.Name = "bunifuCustomLabel24";
             // 
             // panel33
             // 
             this.panel33.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(165)))), ((int)(((byte)(207)))));
             resources.ApplyResources(this.panel33, "panel33");
+            this.panel33.Controls.Add(this.bunifuMaterialTextbox1);
+            this.panel33.Controls.Add(this.labelPermisosUsuario13);
+            this.panel33.Controls.Add(this.comboBoxPermisosUsuario13);
+            this.panel33.Controls.Add(this.labelPermisosUsuario26);
+            this.panel33.Controls.Add(this.comboBoxPermisosUsuario26);
+            this.panel33.Controls.Add(this.labelPermisosUsuario12);
+            this.panel33.Controls.Add(this.comboBoxPermisosUsuario12);
+            this.panel33.Controls.Add(this.labelPermisosUsuario25);
+            this.panel33.Controls.Add(this.comboBoxPermisosUsuario25);
+            this.panel33.Controls.Add(this.labelPermisosUsuario24);
+            this.panel33.Controls.Add(this.comboBoxPermisosUsuario24);
+            this.panel33.Controls.Add(this.labelPermisosUsuario23);
+            this.panel33.Controls.Add(this.comboBoxPermisosUsuario23);
+            this.panel33.Controls.Add(this.labelPermisosUsuario22);
+            this.panel33.Controls.Add(this.comboBoxPermisosUsuario22);
+            this.panel33.Controls.Add(this.labelPermisosUsuario11);
+            this.panel33.Controls.Add(this.comboBoxPermisosUsuario11);
+            this.panel33.Controls.Add(this.labelPermisosUsuario10);
+            this.panel33.Controls.Add(this.comboBoxPermisosUsuario10);
+            this.panel33.Controls.Add(this.labelPermisosUsuario9);
+            this.panel33.Controls.Add(this.comboBoxPermisosUsuario9);
+            this.panel33.Controls.Add(this.labelPermisosUsuario8);
+            this.panel33.Controls.Add(this.comboBoxPermisosUsuario8);
+            this.panel33.Controls.Add(this.labelPermisosUsuario21);
+            this.panel33.Controls.Add(this.comboBoxPermisosUsuario21);
+            this.panel33.Controls.Add(this.labelPermisosUsuario20);
+            this.panel33.Controls.Add(this.comboBoxPermisosUsuario20);
+            this.panel33.Controls.Add(this.labelPermisosUsuario19);
+            this.panel33.Controls.Add(this.comboBoxPermisosUsuario19);
+            this.panel33.Controls.Add(this.labelPermisosUsuario18);
+            this.panel33.Controls.Add(this.comboBoxPermisosUsuario18);
+            this.panel33.Controls.Add(this.labelPermisosUsuario17);
+            this.panel33.Controls.Add(this.comboBoxPermisosUsuario17);
+            this.panel33.Controls.Add(this.labelPermisosUsuario16);
+            this.panel33.Controls.Add(this.comboBoxPermisosUsuario16);
+            this.panel33.Controls.Add(this.labelPermisosUsuario15);
+            this.panel33.Controls.Add(this.comboBoxPermisosUsuario15);
+            this.panel33.Controls.Add(this.labelPermisosUsuario14);
+            this.panel33.Controls.Add(this.comboBoxPermisosUsuario14);
+            this.panel33.Controls.Add(this.labelPermisosUsuario7);
+            this.panel33.Controls.Add(this.comboBoxPermisosUsuario7);
+            this.panel33.Controls.Add(this.labelPermisosUsuario6);
+            this.panel33.Controls.Add(this.comboBoxPermisosUsuario6);
+            this.panel33.Controls.Add(this.labelPermisosUsuario5);
+            this.panel33.Controls.Add(this.comboBoxPermisosUsuario5);
+            this.panel33.Controls.Add(this.labelPermisosUsuario4);
+            this.panel33.Controls.Add(this.comboBoxPermisosUsuario4);
+            this.panel33.Controls.Add(this.labelPermisosUsuario3);
+            this.panel33.Controls.Add(this.comboBoxPermisosUsuario3);
+            this.panel33.Controls.Add(this.labelPermisosUsuario2);
+            this.panel33.Controls.Add(this.comboBoxPermisosUsuario2);
+            this.panel33.Controls.Add(this.labelPermisosUsuario1);
+            this.panel33.Controls.Add(this.comboBoxPermisosUsuario1);
+            this.panel33.Controls.Add(this.labelPermisosUsuario0);
             this.panel33.Controls.Add(this.bunifuCustomDataGridPermisosUsuario);
             this.panel33.Controls.Add(this.buttonPermisosUsuario);
             this.panel33.Controls.Add(this.bunifuFlatButton21);
@@ -2374,6 +2373,8 @@
             this.bunifuCustomDataGridPermisosUsuario.Name = "bunifuCustomDataGridPermisosUsuario";
             this.bunifuCustomDataGridPermisosUsuario.ReadOnly = true;
             this.bunifuCustomDataGridPermisosUsuario.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.bunifuCustomDataGridPermisosUsuario.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.bunifuCustomDataGridPermisosUsuario_CellClick);
+            this.bunifuCustomDataGridPermisosUsuario.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.bunifuCustomDataGridPermisosUsuario_CellContentClick);
             // 
             // buttonPermisosUsuario
             // 
@@ -4989,18 +4990,377 @@
             this.bunifuElipse3.ElipseRadius = 5;
             this.bunifuElipse3.TargetControl = this.bunifuImageButton2;
             // 
-            // comboBoxUsuarioPermisos
+            // labelPermisosUsuario0
             // 
-            this.comboBoxUsuarioPermisos.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            resources.ApplyResources(this.comboBoxUsuarioPermisos, "comboBoxUsuarioPermisos");
-            this.comboBoxUsuarioPermisos.FormattingEnabled = true;
-            this.comboBoxUsuarioPermisos.Name = "comboBoxUsuarioPermisos";
+            resources.ApplyResources(this.labelPermisosUsuario0, "labelPermisosUsuario0");
+            this.labelPermisosUsuario0.ForeColor = System.Drawing.Color.White;
+            this.labelPermisosUsuario0.Name = "labelPermisosUsuario0";
             // 
-            // labelUsuarioPermisos
+            // labelPermisosUsuario1
             // 
-            resources.ApplyResources(this.labelUsuarioPermisos, "labelUsuarioPermisos");
-            this.labelUsuarioPermisos.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.labelUsuarioPermisos.Name = "labelUsuarioPermisos";
+            resources.ApplyResources(this.labelPermisosUsuario1, "labelPermisosUsuario1");
+            this.labelPermisosUsuario1.ForeColor = System.Drawing.Color.White;
+            this.labelPermisosUsuario1.Name = "labelPermisosUsuario1";
+            // 
+            // comboBoxPermisosUsuario1
+            // 
+            this.comboBoxPermisosUsuario1.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            resources.ApplyResources(this.comboBoxPermisosUsuario1, "comboBoxPermisosUsuario1");
+            this.comboBoxPermisosUsuario1.FormattingEnabled = true;
+            this.comboBoxPermisosUsuario1.Items.AddRange(new object[] {
+            resources.GetString("comboBoxPermisosUsuario1.Items"),
+            resources.GetString("comboBoxPermisosUsuario1.Items1"),
+            resources.GetString("comboBoxPermisosUsuario1.Items2"),
+            resources.GetString("comboBoxPermisosUsuario1.Items3"),
+            resources.GetString("comboBoxPermisosUsuario1.Items4")});
+            this.comboBoxPermisosUsuario1.Name = "comboBoxPermisosUsuario1";
+            // 
+            // labelPermisosUsuario2
+            // 
+            resources.ApplyResources(this.labelPermisosUsuario2, "labelPermisosUsuario2");
+            this.labelPermisosUsuario2.ForeColor = System.Drawing.Color.White;
+            this.labelPermisosUsuario2.Name = "labelPermisosUsuario2";
+            // 
+            // comboBoxPermisosUsuario2
+            // 
+            this.comboBoxPermisosUsuario2.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            resources.ApplyResources(this.comboBoxPermisosUsuario2, "comboBoxPermisosUsuario2");
+            this.comboBoxPermisosUsuario2.FormattingEnabled = true;
+            this.comboBoxPermisosUsuario2.Items.AddRange(new object[] {
+            resources.GetString("comboBoxPermisosUsuario2.Items"),
+            resources.GetString("comboBoxPermisosUsuario2.Items1"),
+            resources.GetString("comboBoxPermisosUsuario2.Items2"),
+            resources.GetString("comboBoxPermisosUsuario2.Items3")});
+            this.comboBoxPermisosUsuario2.Name = "comboBoxPermisosUsuario2";
+            // 
+            // labelPermisosUsuario3
+            // 
+            resources.ApplyResources(this.labelPermisosUsuario3, "labelPermisosUsuario3");
+            this.labelPermisosUsuario3.ForeColor = System.Drawing.Color.White;
+            this.labelPermisosUsuario3.Name = "labelPermisosUsuario3";
+            // 
+            // comboBoxPermisosUsuario3
+            // 
+            this.comboBoxPermisosUsuario3.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            resources.ApplyResources(this.comboBoxPermisosUsuario3, "comboBoxPermisosUsuario3");
+            this.comboBoxPermisosUsuario3.FormattingEnabled = true;
+            this.comboBoxPermisosUsuario3.Name = "comboBoxPermisosUsuario3";
+            // 
+            // labelPermisosUsuario4
+            // 
+            resources.ApplyResources(this.labelPermisosUsuario4, "labelPermisosUsuario4");
+            this.labelPermisosUsuario4.ForeColor = System.Drawing.Color.White;
+            this.labelPermisosUsuario4.Name = "labelPermisosUsuario4";
+            // 
+            // comboBoxPermisosUsuario4
+            // 
+            this.comboBoxPermisosUsuario4.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            resources.ApplyResources(this.comboBoxPermisosUsuario4, "comboBoxPermisosUsuario4");
+            this.comboBoxPermisosUsuario4.FormattingEnabled = true;
+            this.comboBoxPermisosUsuario4.Name = "comboBoxPermisosUsuario4";
+            // 
+            // labelPermisosUsuario5
+            // 
+            resources.ApplyResources(this.labelPermisosUsuario5, "labelPermisosUsuario5");
+            this.labelPermisosUsuario5.ForeColor = System.Drawing.Color.White;
+            this.labelPermisosUsuario5.Name = "labelPermisosUsuario5";
+            // 
+            // comboBoxPermisosUsuario5
+            // 
+            this.comboBoxPermisosUsuario5.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            resources.ApplyResources(this.comboBoxPermisosUsuario5, "comboBoxPermisosUsuario5");
+            this.comboBoxPermisosUsuario5.FormattingEnabled = true;
+            this.comboBoxPermisosUsuario5.Items.AddRange(new object[] {
+            resources.GetString("comboBoxPermisosUsuario5.Items")});
+            this.comboBoxPermisosUsuario5.Name = "comboBoxPermisosUsuario5";
+            // 
+            // labelPermisosUsuario6
+            // 
+            resources.ApplyResources(this.labelPermisosUsuario6, "labelPermisosUsuario6");
+            this.labelPermisosUsuario6.ForeColor = System.Drawing.Color.White;
+            this.labelPermisosUsuario6.Name = "labelPermisosUsuario6";
+            // 
+            // comboBoxPermisosUsuario6
+            // 
+            this.comboBoxPermisosUsuario6.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            resources.ApplyResources(this.comboBoxPermisosUsuario6, "comboBoxPermisosUsuario6");
+            this.comboBoxPermisosUsuario6.FormattingEnabled = true;
+            this.comboBoxPermisosUsuario6.Name = "comboBoxPermisosUsuario6";
+            // 
+            // labelPermisosUsuario7
+            // 
+            resources.ApplyResources(this.labelPermisosUsuario7, "labelPermisosUsuario7");
+            this.labelPermisosUsuario7.ForeColor = System.Drawing.Color.White;
+            this.labelPermisosUsuario7.Name = "labelPermisosUsuario7";
+            // 
+            // comboBoxPermisosUsuario7
+            // 
+            this.comboBoxPermisosUsuario7.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            resources.ApplyResources(this.comboBoxPermisosUsuario7, "comboBoxPermisosUsuario7");
+            this.comboBoxPermisosUsuario7.FormattingEnabled = true;
+            this.comboBoxPermisosUsuario7.Name = "comboBoxPermisosUsuario7";
+            // 
+            // labelPermisosUsuario21
+            // 
+            resources.ApplyResources(this.labelPermisosUsuario21, "labelPermisosUsuario21");
+            this.labelPermisosUsuario21.ForeColor = System.Drawing.Color.White;
+            this.labelPermisosUsuario21.Name = "labelPermisosUsuario21";
+            // 
+            // comboBoxPermisosUsuario21
+            // 
+            this.comboBoxPermisosUsuario21.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            resources.ApplyResources(this.comboBoxPermisosUsuario21, "comboBoxPermisosUsuario21");
+            this.comboBoxPermisosUsuario21.FormattingEnabled = true;
+            this.comboBoxPermisosUsuario21.Name = "comboBoxPermisosUsuario21";
+            // 
+            // labelPermisosUsuario20
+            // 
+            resources.ApplyResources(this.labelPermisosUsuario20, "labelPermisosUsuario20");
+            this.labelPermisosUsuario20.ForeColor = System.Drawing.Color.White;
+            this.labelPermisosUsuario20.Name = "labelPermisosUsuario20";
+            // 
+            // comboBoxPermisosUsuario20
+            // 
+            this.comboBoxPermisosUsuario20.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            resources.ApplyResources(this.comboBoxPermisosUsuario20, "comboBoxPermisosUsuario20");
+            this.comboBoxPermisosUsuario20.FormattingEnabled = true;
+            this.comboBoxPermisosUsuario20.Name = "comboBoxPermisosUsuario20";
+            // 
+            // labelPermisosUsuario19
+            // 
+            resources.ApplyResources(this.labelPermisosUsuario19, "labelPermisosUsuario19");
+            this.labelPermisosUsuario19.ForeColor = System.Drawing.Color.White;
+            this.labelPermisosUsuario19.Name = "labelPermisosUsuario19";
+            // 
+            // comboBoxPermisosUsuario19
+            // 
+            this.comboBoxPermisosUsuario19.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            resources.ApplyResources(this.comboBoxPermisosUsuario19, "comboBoxPermisosUsuario19");
+            this.comboBoxPermisosUsuario19.FormattingEnabled = true;
+            this.comboBoxPermisosUsuario19.Name = "comboBoxPermisosUsuario19";
+            // 
+            // labelPermisosUsuario18
+            // 
+            resources.ApplyResources(this.labelPermisosUsuario18, "labelPermisosUsuario18");
+            this.labelPermisosUsuario18.ForeColor = System.Drawing.Color.White;
+            this.labelPermisosUsuario18.Name = "labelPermisosUsuario18";
+            // 
+            // comboBoxPermisosUsuario18
+            // 
+            this.comboBoxPermisosUsuario18.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            resources.ApplyResources(this.comboBoxPermisosUsuario18, "comboBoxPermisosUsuario18");
+            this.comboBoxPermisosUsuario18.FormattingEnabled = true;
+            this.comboBoxPermisosUsuario18.Name = "comboBoxPermisosUsuario18";
+            // 
+            // labelPermisosUsuario17
+            // 
+            resources.ApplyResources(this.labelPermisosUsuario17, "labelPermisosUsuario17");
+            this.labelPermisosUsuario17.ForeColor = System.Drawing.Color.White;
+            this.labelPermisosUsuario17.Name = "labelPermisosUsuario17";
+            // 
+            // comboBoxPermisosUsuario17
+            // 
+            this.comboBoxPermisosUsuario17.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            resources.ApplyResources(this.comboBoxPermisosUsuario17, "comboBoxPermisosUsuario17");
+            this.comboBoxPermisosUsuario17.FormattingEnabled = true;
+            this.comboBoxPermisosUsuario17.Name = "comboBoxPermisosUsuario17";
+            // 
+            // labelPermisosUsuario16
+            // 
+            resources.ApplyResources(this.labelPermisosUsuario16, "labelPermisosUsuario16");
+            this.labelPermisosUsuario16.ForeColor = System.Drawing.Color.White;
+            this.labelPermisosUsuario16.Name = "labelPermisosUsuario16";
+            // 
+            // comboBoxPermisosUsuario16
+            // 
+            this.comboBoxPermisosUsuario16.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            resources.ApplyResources(this.comboBoxPermisosUsuario16, "comboBoxPermisosUsuario16");
+            this.comboBoxPermisosUsuario16.FormattingEnabled = true;
+            this.comboBoxPermisosUsuario16.Name = "comboBoxPermisosUsuario16";
+            // 
+            // labelPermisosUsuario15
+            // 
+            resources.ApplyResources(this.labelPermisosUsuario15, "labelPermisosUsuario15");
+            this.labelPermisosUsuario15.ForeColor = System.Drawing.Color.White;
+            this.labelPermisosUsuario15.Name = "labelPermisosUsuario15";
+            // 
+            // comboBoxPermisosUsuario15
+            // 
+            this.comboBoxPermisosUsuario15.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            resources.ApplyResources(this.comboBoxPermisosUsuario15, "comboBoxPermisosUsuario15");
+            this.comboBoxPermisosUsuario15.FormattingEnabled = true;
+            this.comboBoxPermisosUsuario15.Name = "comboBoxPermisosUsuario15";
+            // 
+            // labelPermisosUsuario14
+            // 
+            resources.ApplyResources(this.labelPermisosUsuario14, "labelPermisosUsuario14");
+            this.labelPermisosUsuario14.ForeColor = System.Drawing.Color.White;
+            this.labelPermisosUsuario14.Name = "labelPermisosUsuario14";
+            // 
+            // comboBoxPermisosUsuario14
+            // 
+            this.comboBoxPermisosUsuario14.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            resources.ApplyResources(this.comboBoxPermisosUsuario14, "comboBoxPermisosUsuario14");
+            this.comboBoxPermisosUsuario14.FormattingEnabled = true;
+            this.comboBoxPermisosUsuario14.Name = "comboBoxPermisosUsuario14";
+            // 
+            // labelPermisosUsuario11
+            // 
+            resources.ApplyResources(this.labelPermisosUsuario11, "labelPermisosUsuario11");
+            this.labelPermisosUsuario11.ForeColor = System.Drawing.Color.White;
+            this.labelPermisosUsuario11.Name = "labelPermisosUsuario11";
+            // 
+            // comboBoxPermisosUsuario11
+            // 
+            this.comboBoxPermisosUsuario11.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            resources.ApplyResources(this.comboBoxPermisosUsuario11, "comboBoxPermisosUsuario11");
+            this.comboBoxPermisosUsuario11.FormattingEnabled = true;
+            this.comboBoxPermisosUsuario11.Name = "comboBoxPermisosUsuario11";
+            // 
+            // labelPermisosUsuario10
+            // 
+            resources.ApplyResources(this.labelPermisosUsuario10, "labelPermisosUsuario10");
+            this.labelPermisosUsuario10.ForeColor = System.Drawing.Color.White;
+            this.labelPermisosUsuario10.Name = "labelPermisosUsuario10";
+            // 
+            // comboBoxPermisosUsuario10
+            // 
+            this.comboBoxPermisosUsuario10.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            resources.ApplyResources(this.comboBoxPermisosUsuario10, "comboBoxPermisosUsuario10");
+            this.comboBoxPermisosUsuario10.FormattingEnabled = true;
+            this.comboBoxPermisosUsuario10.Name = "comboBoxPermisosUsuario10";
+            // 
+            // labelPermisosUsuario9
+            // 
+            resources.ApplyResources(this.labelPermisosUsuario9, "labelPermisosUsuario9");
+            this.labelPermisosUsuario9.ForeColor = System.Drawing.Color.White;
+            this.labelPermisosUsuario9.Name = "labelPermisosUsuario9";
+            // 
+            // comboBoxPermisosUsuario9
+            // 
+            this.comboBoxPermisosUsuario9.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            resources.ApplyResources(this.comboBoxPermisosUsuario9, "comboBoxPermisosUsuario9");
+            this.comboBoxPermisosUsuario9.FormattingEnabled = true;
+            this.comboBoxPermisosUsuario9.Name = "comboBoxPermisosUsuario9";
+            // 
+            // labelPermisosUsuario8
+            // 
+            resources.ApplyResources(this.labelPermisosUsuario8, "labelPermisosUsuario8");
+            this.labelPermisosUsuario8.ForeColor = System.Drawing.Color.White;
+            this.labelPermisosUsuario8.Name = "labelPermisosUsuario8";
+            // 
+            // comboBoxPermisosUsuario8
+            // 
+            this.comboBoxPermisosUsuario8.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            resources.ApplyResources(this.comboBoxPermisosUsuario8, "comboBoxPermisosUsuario8");
+            this.comboBoxPermisosUsuario8.FormattingEnabled = true;
+            this.comboBoxPermisosUsuario8.Name = "comboBoxPermisosUsuario8";
+            // 
+            // labelPermisosUsuario25
+            // 
+            resources.ApplyResources(this.labelPermisosUsuario25, "labelPermisosUsuario25");
+            this.labelPermisosUsuario25.ForeColor = System.Drawing.Color.White;
+            this.labelPermisosUsuario25.Name = "labelPermisosUsuario25";
+            // 
+            // comboBoxPermisosUsuario25
+            // 
+            this.comboBoxPermisosUsuario25.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            resources.ApplyResources(this.comboBoxPermisosUsuario25, "comboBoxPermisosUsuario25");
+            this.comboBoxPermisosUsuario25.FormattingEnabled = true;
+            this.comboBoxPermisosUsuario25.Name = "comboBoxPermisosUsuario25";
+            // 
+            // labelPermisosUsuario24
+            // 
+            resources.ApplyResources(this.labelPermisosUsuario24, "labelPermisosUsuario24");
+            this.labelPermisosUsuario24.ForeColor = System.Drawing.Color.White;
+            this.labelPermisosUsuario24.Name = "labelPermisosUsuario24";
+            // 
+            // comboBoxPermisosUsuario24
+            // 
+            this.comboBoxPermisosUsuario24.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            resources.ApplyResources(this.comboBoxPermisosUsuario24, "comboBoxPermisosUsuario24");
+            this.comboBoxPermisosUsuario24.FormattingEnabled = true;
+            this.comboBoxPermisosUsuario24.Name = "comboBoxPermisosUsuario24";
+            // 
+            // labelPermisosUsuario23
+            // 
+            resources.ApplyResources(this.labelPermisosUsuario23, "labelPermisosUsuario23");
+            this.labelPermisosUsuario23.ForeColor = System.Drawing.Color.White;
+            this.labelPermisosUsuario23.Name = "labelPermisosUsuario23";
+            // 
+            // comboBoxPermisosUsuario23
+            // 
+            this.comboBoxPermisosUsuario23.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            resources.ApplyResources(this.comboBoxPermisosUsuario23, "comboBoxPermisosUsuario23");
+            this.comboBoxPermisosUsuario23.FormattingEnabled = true;
+            this.comboBoxPermisosUsuario23.Name = "comboBoxPermisosUsuario23";
+            // 
+            // labelPermisosUsuario22
+            // 
+            resources.ApplyResources(this.labelPermisosUsuario22, "labelPermisosUsuario22");
+            this.labelPermisosUsuario22.ForeColor = System.Drawing.Color.White;
+            this.labelPermisosUsuario22.Name = "labelPermisosUsuario22";
+            // 
+            // comboBoxPermisosUsuario22
+            // 
+            this.comboBoxPermisosUsuario22.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            resources.ApplyResources(this.comboBoxPermisosUsuario22, "comboBoxPermisosUsuario22");
+            this.comboBoxPermisosUsuario22.FormattingEnabled = true;
+            this.comboBoxPermisosUsuario22.Name = "comboBoxPermisosUsuario22";
+            // 
+            // labelPermisosUsuario12
+            // 
+            resources.ApplyResources(this.labelPermisosUsuario12, "labelPermisosUsuario12");
+            this.labelPermisosUsuario12.ForeColor = System.Drawing.Color.White;
+            this.labelPermisosUsuario12.Name = "labelPermisosUsuario12";
+            // 
+            // comboBoxPermisosUsuario12
+            // 
+            this.comboBoxPermisosUsuario12.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            resources.ApplyResources(this.comboBoxPermisosUsuario12, "comboBoxPermisosUsuario12");
+            this.comboBoxPermisosUsuario12.FormattingEnabled = true;
+            this.comboBoxPermisosUsuario12.Name = "comboBoxPermisosUsuario12";
+            // 
+            // labelPermisosUsuario26
+            // 
+            resources.ApplyResources(this.labelPermisosUsuario26, "labelPermisosUsuario26");
+            this.labelPermisosUsuario26.ForeColor = System.Drawing.Color.White;
+            this.labelPermisosUsuario26.Name = "labelPermisosUsuario26";
+            // 
+            // comboBoxPermisosUsuario26
+            // 
+            this.comboBoxPermisosUsuario26.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            resources.ApplyResources(this.comboBoxPermisosUsuario26, "comboBoxPermisosUsuario26");
+            this.comboBoxPermisosUsuario26.FormattingEnabled = true;
+            this.comboBoxPermisosUsuario26.Name = "comboBoxPermisosUsuario26";
+            // 
+            // labelPermisosUsuario13
+            // 
+            resources.ApplyResources(this.labelPermisosUsuario13, "labelPermisosUsuario13");
+            this.labelPermisosUsuario13.ForeColor = System.Drawing.Color.White;
+            this.labelPermisosUsuario13.Name = "labelPermisosUsuario13";
+            // 
+            // comboBoxPermisosUsuario13
+            // 
+            this.comboBoxPermisosUsuario13.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            resources.ApplyResources(this.comboBoxPermisosUsuario13, "comboBoxPermisosUsuario13");
+            this.comboBoxPermisosUsuario13.FormattingEnabled = true;
+            this.comboBoxPermisosUsuario13.Name = "comboBoxPermisosUsuario13";
+            // 
+            // bunifuMaterialTextbox1
+            // 
+            this.bunifuMaterialTextbox1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            resources.ApplyResources(this.bunifuMaterialTextbox1, "bunifuMaterialTextbox1");
+            this.bunifuMaterialTextbox1.ForeColor = System.Drawing.Color.White;
+            this.bunifuMaterialTextbox1.HintForeColor = System.Drawing.Color.Empty;
+            this.bunifuMaterialTextbox1.HintText = "";
+            this.bunifuMaterialTextbox1.isPassword = false;
+            this.bunifuMaterialTextbox1.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.bunifuMaterialTextbox1.LineIdleColor = System.Drawing.Color.White;
+            this.bunifuMaterialTextbox1.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.bunifuMaterialTextbox1.LineThickness = 3;
+            this.bunifuMaterialTextbox1.Name = "bunifuMaterialTextbox1";
+            this.bunifuMaterialTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // Form1
             // 
@@ -5056,8 +5416,8 @@
             this.panel13.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.DataGridPermisosPorAlmacen)).EndInit();
             this.permisosUsuario.ResumeLayout(false);
-            this.permisosUsuario.PerformLayout();
             this.panel33.ResumeLayout(false);
+            this.panel33.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGridPermisosUsuario)).EndInit();
             this.tab1Ventas.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
@@ -5154,6 +5514,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.buniCerrar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.performanceCounter1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -5477,16 +5838,6 @@
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse3;
         private System.Windows.Forms.Label labelReportesLocalProducto;
         private System.Windows.Forms.TabPage permisosUsuario;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox1;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox2;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox3;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox4;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox5;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel14;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel15;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel22;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel23;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel24;
         private System.Windows.Forms.Panel panel33;
         private Bunifu.Framework.UI.BunifuCustomDataGrid bunifuCustomDataGridPermisosUsuario;
         private Bunifu.Framework.UI.BunifuFlatButton buttonPermisosUsuario;
@@ -5497,6 +5848,61 @@
         private System.Windows.Forms.Panel panel36;
         private Bunifu.Framework.UI.BunifuCustomLabel labelUsuarioPermisos;
         private System.Windows.Forms.ComboBox comboBoxUsuarioPermisos;
+        private Bunifu.Framework.UI.BunifuCustomLabel labelPermisosUsuario13;
+        private System.Windows.Forms.ComboBox comboBoxPermisosUsuario13;
+        private Bunifu.Framework.UI.BunifuCustomLabel labelPermisosUsuario26;
+        private System.Windows.Forms.ComboBox comboBoxPermisosUsuario26;
+        private Bunifu.Framework.UI.BunifuCustomLabel labelPermisosUsuario12;
+        private System.Windows.Forms.ComboBox comboBoxPermisosUsuario12;
+        private Bunifu.Framework.UI.BunifuCustomLabel labelPermisosUsuario25;
+        private System.Windows.Forms.ComboBox comboBoxPermisosUsuario25;
+        private Bunifu.Framework.UI.BunifuCustomLabel labelPermisosUsuario24;
+        private System.Windows.Forms.ComboBox comboBoxPermisosUsuario24;
+        private Bunifu.Framework.UI.BunifuCustomLabel labelPermisosUsuario23;
+        private System.Windows.Forms.ComboBox comboBoxPermisosUsuario23;
+        private Bunifu.Framework.UI.BunifuCustomLabel labelPermisosUsuario22;
+        private System.Windows.Forms.ComboBox comboBoxPermisosUsuario22;
+        private Bunifu.Framework.UI.BunifuCustomLabel labelPermisosUsuario11;
+        private System.Windows.Forms.ComboBox comboBoxPermisosUsuario11;
+        private Bunifu.Framework.UI.BunifuCustomLabel labelPermisosUsuario10;
+        private System.Windows.Forms.ComboBox comboBoxPermisosUsuario10;
+        private Bunifu.Framework.UI.BunifuCustomLabel labelPermisosUsuario9;
+        private System.Windows.Forms.ComboBox comboBoxPermisosUsuario9;
+        private Bunifu.Framework.UI.BunifuCustomLabel labelPermisosUsuario8;
+        private System.Windows.Forms.ComboBox comboBoxPermisosUsuario8;
+        private Bunifu.Framework.UI.BunifuCustomLabel labelPermisosUsuario21;
+        private System.Windows.Forms.ComboBox comboBoxPermisosUsuario21;
+        private Bunifu.Framework.UI.BunifuCustomLabel labelPermisosUsuario20;
+        private System.Windows.Forms.ComboBox comboBoxPermisosUsuario20;
+        private Bunifu.Framework.UI.BunifuCustomLabel labelPermisosUsuario19;
+        private System.Windows.Forms.ComboBox comboBoxPermisosUsuario19;
+        private Bunifu.Framework.UI.BunifuCustomLabel labelPermisosUsuario18;
+        private System.Windows.Forms.ComboBox comboBoxPermisosUsuario18;
+        private Bunifu.Framework.UI.BunifuCustomLabel labelPermisosUsuario17;
+        private System.Windows.Forms.ComboBox comboBoxPermisosUsuario17;
+        private Bunifu.Framework.UI.BunifuCustomLabel labelPermisosUsuario16;
+        private System.Windows.Forms.ComboBox comboBoxPermisosUsuario16;
+        private Bunifu.Framework.UI.BunifuCustomLabel labelPermisosUsuario15;
+        private System.Windows.Forms.ComboBox comboBoxPermisosUsuario15;
+        private Bunifu.Framework.UI.BunifuCustomLabel labelPermisosUsuario14;
+        private System.Windows.Forms.ComboBox comboBoxPermisosUsuario14;
+        private Bunifu.Framework.UI.BunifuCustomLabel labelPermisosUsuario7;
+        private System.Windows.Forms.ComboBox comboBoxPermisosUsuario7;
+        private Bunifu.Framework.UI.BunifuCustomLabel labelPermisosUsuario6;
+        private System.Windows.Forms.ComboBox comboBoxPermisosUsuario6;
+        private Bunifu.Framework.UI.BunifuCustomLabel labelPermisosUsuario5;
+        private System.Windows.Forms.ComboBox comboBoxPermisosUsuario5;
+        private Bunifu.Framework.UI.BunifuCustomLabel labelPermisosUsuario4;
+        private System.Windows.Forms.ComboBox comboBoxPermisosUsuario4;
+        private Bunifu.Framework.UI.BunifuCustomLabel labelPermisosUsuario3;
+        private System.Windows.Forms.ComboBox comboBoxPermisosUsuario3;
+        private Bunifu.Framework.UI.BunifuCustomLabel labelPermisosUsuario2;
+        private System.Windows.Forms.ComboBox comboBoxPermisosUsuario2;
+        private Bunifu.Framework.UI.BunifuCustomLabel labelPermisosUsuario1;
+        private System.Windows.Forms.ComboBox comboBoxPermisosUsuario1;
+        private Bunifu.Framework.UI.BunifuCustomLabel labelPermisosUsuario0;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox1;
+        private System.Diagnostics.PerformanceCounter performanceCounter1;
     }
 }
 
