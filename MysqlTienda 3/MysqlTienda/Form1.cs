@@ -40,8 +40,10 @@ namespace MysqlTienda
             comboBoxGastoAlmacen.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxGastoCatagoria.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxAlmacenEntrada.DropDownStyle = ComboBoxStyle.DropDownList;
-          
-            
+            comboBoxUsuarioPermisos.DropDownStyle = ComboBoxStyle.DropDownList;
+
+
+
         }
 
         public void abrirConeccion()
@@ -584,6 +586,7 @@ namespace MysqlTienda
 
         private void cargarDatagridviews()
         {
+            cargarcomboBoxUsuarioPermisos();
             cargarPermisosUsuario();
             cargarCiudades();
             cargarCiudadesGastos();
@@ -636,6 +639,31 @@ namespace MysqlTienda
                         comboBoxCedulaPermiAlmace.ValueMember = "cc";
                         comboBoxCedulaPermiAlmace.DisplayMember = "cc";
                         comboBoxCedulaPermiAlmace.DataSource = dt;
+                    }
+                }
+            }
+            catch (Exception error)
+            {
+                MessageBox.Show(Convert.ToString(error));
+            }
+        }
+        public void cargarcomboBoxUsuarioPermisos()
+        {
+            try
+            {
+                //carga las ciudades en un combo box importantisimo
+                using (MySqlConnection c = new MySqlConnection("datasource=localhost;port=3306;username=root;password=;SslMode=none"))
+                {
+                    c.Open();
+                   
+                    var sql = "SELECT usuario FROM easyerp.permisosusuarios";
+                    using (MySqlCommand cmd = new MySqlCommand(sql, c))
+                    {
+                        var dt = new DataTable();
+                        dt.Load(cmd.ExecuteReader());
+                        comboBoxUsuarioPermisos.ValueMember = "usuario";
+                        comboBoxUsuarioPermisos.DisplayMember = "usuario";
+                        comboBoxUsuarioPermisos.DataSource = dt;
                     }
                 }
             }
@@ -1150,13 +1178,14 @@ namespace MysqlTienda
                 if (todoEstaBien == true)
                 {
                     cerrarConeccion();
-                    string insertarCodigo = "INSERT INTO easyerp.usuario (`cc`, `id`, `contrasena`, `correo`, `nombre`) VALUES (" +
+                    string insertarCodigo = "INSERT INTO easyerp.usuario (`cc`, `id`, `contrasena`, `correo`, `nombre`, `permisos`) VALUES (" +
                         "'" +
                         TextboxCedula.Text + "', '" +
                         TextboxUsuario.Text + "', '" +
                         TextboxContrasena.Text + "', '" +
                         TextboxCorreo.Text + "', '" +
-                        TextboxNombre.Text + "')";
+                        TextboxNombre.Text + "', '" +
+                        comboBoxUsuarioPermisos.Text + "')";
                     conectar.Open();
                     MySqlCommand command = new MySqlCommand(insertarCodigo, conectar);
                     if (command.ExecuteNonQuery() == 1) {    /*  MessageBox.Show( "encontre la factura"); */ } else {/*  MessageBox.Show(   "no encontre la factura"); */ }
@@ -1397,7 +1426,7 @@ namespace MysqlTienda
             {
                 cargarPermisosPorAlmacen();
                 cerrarConeccion();
-                string insertarCodigo = "UPDATE easyerp.usuario SET `cc` = '" + TextboxCedula.Text + "', `id` = '" + TextboxUsuario.Text + "', `contrasena` = '" + TextboxContrasena.Text + "', `correo` = '" + TextboxCorreo.Text + "', `nombre` = '" + TextboxNombre.Text + "' WHERE `usuario`.`cc` = '" + TextboxCedula.Text + "'";
+                string insertarCodigo = "UPDATE easyerp.usuario SET `cc` = '" + TextboxCedula.Text + "', `id` = '" + TextboxUsuario.Text + "', `contrasena` = '" + TextboxContrasena.Text + "', `correo` = '" + TextboxCorreo.Text + "', `nombre` = '" + TextboxNombre.Text + "', `permisos` = '" + comboBoxUsuarioPermisos.Text + "' WHERE `usuario`.`cc` = '" + TextboxCedula.Text + "'";
                 conectar.Open();
                 MySqlCommand command = new MySqlCommand(insertarCodigo, conectar);
 
@@ -3312,10 +3341,69 @@ namespace MysqlTienda
 
         private void buttonPermisosUsuario_Click_1(object sender, EventArgs e)
         {
-            cargarPermisosUsuario();
+           
+            cargarPermisosUsuario();            
             cargarNombresPermisosUsuario();
+            cargarDatagridviews();
         }
+        private void agregarPermisosUsuario()
+        {
+            try
+            {
 
+                
+                    cerrarConeccion();
+                //INSERT INTO easyerp.usuario_almacen (`almacen_fabrica_nombre`, `cc`) VALUES ('"
+                string insertarCodigo = "INSERT INTO easyerp.permisosusuarios (`usuario`, `descripcion`, `mVentas`, `mUsuario`, `mUsuarioPermisosAlmacen`, `mUsuarioPermisosUsuario`, `mProductos`, `mProductosDepartamento`, `mProductosTamano`, `mProductosFecha`, `mAlmacen`, `mReporteLocalGeneral`, `mReporteLocalProducto`, `mReporteLocalDepartamento`, `mReporteLocalCajeros`, `mReporteGeneral`, `mReporteGeneralProducto`, `mReporteGeneralDepartamento`, `mReporteGeneralVentas`, `mReporteGeneralproductosAlmacen`, `mReporteGeneralVentasDepartamentoAlmacen`, `mReporteGeneralVentasCajerosAlmacen`, `mReporteGeneralGraficas`, `mReporteRegistroVentas`, `mESentrada`, `mEStipoEntrada`, `mESsalida`, `mEStipoSalida`) VALUES ('" +
+                        //[value-1],[value-2],[value-3],[value-4],[value-5],[value-6],[value-7],[value-8],[value-9],[value-10],[value-11],[value-12],[value-13],[value-14],[value-15],[value-16],[value-17],[value-18],[value-19],[value-20],[value-21],[value-22],[value-23],[value-24],[value-25],[value-26],[value-27],[value-28])" +
+                        bunifuMaterialTextbox1.Text + "', '" +
+                        "CAmpo de descipcion" + "', '" +
+                        comboBoxPermisosUsuario1.Text + "', '" +
+                        comboBoxPermisosUsuario2.Text + "', '" +
+                        comboBoxPermisosUsuario3.Text + "', '" +
+                        comboBoxPermisosUsuario4.Text + "', '" +
+                        comboBoxPermisosUsuario5.Text + "', '" +
+                        comboBoxPermisosUsuario6.Text + "', '" +
+                        comboBoxPermisosUsuario7.Text + "', '" +
+                        comboBoxPermisosUsuario8.Text + "', '" +
+                        comboBoxPermisosUsuario9.Text + "', '" +     
+                        comboBoxPermisosUsuario10.Text + "', '" +
+                        comboBoxPermisosUsuario11.Text + "', '" +
+                        comboBoxPermisosUsuario12.Text + "', '" +
+                        comboBoxPermisosUsuario13.Text + "', '" +
+                        comboBoxPermisosUsuario14.Text + "', '" +
+                        comboBoxPermisosUsuario15.Text + "', '" +
+                        comboBoxPermisosUsuario16.Text + "', '" +
+                        comboBoxPermisosUsuario17.Text + "', '" +
+                        comboBoxPermisosUsuario18.Text + "', '" +
+                        comboBoxPermisosUsuario19.Text + "', '" +
+                        comboBoxPermisosUsuario20.Text + "', '" +
+                        comboBoxPermisosUsuario21.Text + "', '" +
+                        comboBoxPermisosUsuario22.Text + "', '" +
+                        comboBoxPermisosUsuario23.Text + "', '" +
+                        comboBoxPermisosUsuario24.Text + "', '" +
+                        comboBoxPermisosUsuario25.Text + "', '" +                      
+                        comboBoxPermisosUsuario26.Text + "')";
+                    conectar.Open();
+                    MySqlCommand command = new MySqlCommand(insertarCodigo, conectar);
+                    if (command.ExecuteNonQuery() == 1) {    /*  MessageBox.Show( "encontre la factura"); */ } else {/*  MessageBox.Show(   "no encontre la factura"); */ }
+                    cerrarConeccion();
+                    
+               
+
+            }
+            catch (Exception error)
+            {
+                String mensaje = Convert.ToString(error.Message);
+                int valor = mensaje.LastIndexOf("Duplicate");
+                if (valor >= 0) { MessageBox.Show("Ya existe un rol con este nomvre"); }
+                else
+                {
+                    MessageBox.Show(error.Message + "permisos por usuario extendido ");
+                }
+
+            }
+        }
         private void cargarNombresPermisosUsuario()
         {
             //labelPermisosUsuario0
@@ -3364,6 +3452,139 @@ namespace MysqlTienda
 
         }
 
+        private void panel33_Paint(object sender, PaintEventArgs e)
+        {
+            cargarcomboBoxUsuarioPermisos();
+        }
+
+        private void bunifuFlatButton22_Click_1(object sender, EventArgs e)
+        {
+            eliminarPermisos();
+            cargarcomboBoxUsuarioPermisos();
+            cargarcomboBoxUsuarioPermisos();
+
+        }
+
+        public void eliminarPermisos()
+        {
+            try
+            {
+
+                string insertarCodigo = "DELETE FROM easyerp.permisosusuarios WHERE usuario='" + bunifuMaterialTextbox1.Text + "'";
+                conectar.Open();
+                MySqlCommand command = new MySqlCommand(insertarCodigo, conectar);
+                if (command.ExecuteNonQuery() == 1)
+                {
+                    cargarDatagridviews();
+                    MessageBox.Show("Eliminado");
+                }
+                else
+                {
+                    cerrarConeccion();
+
+                }
+                cargarPermisosPorUsuario();
+
+            }
+            catch (Exception error)
+            {
+                cerrarConeccion();
+                MessageBox.Show(error.Message + "Elimando permisos de usario extendido");
+            }
+            cargarComboboxes();
+            textInsertarCodigo.Text = "";
+            conectar.Close();
+        }
+        private void bunifuFlatButton12_Click_5(object sender, EventArgs e)
+        {
+            cargarcomboBoxUsuarioPermisos();
+        }
+
+        private void modificarPermisosExtendidos()
+        {
+            try
+            {
+                cargarPermisosPorAlmacen();
+                cerrarConeccion();
+                string insertarCodigo = "UPDATE easyerp.permisosusuarios SET `cc` = '" + TextboxCedula.Text + "', `id` = '" + TextboxUsuario.Text + "', `contrasena` = '" + TextboxContrasena.Text + "', `correo` = '" + TextboxCorreo.Text + "', `nombre` = '" + TextboxNombre.Text + "', `permisos` = '" + comboBoxUsuarioPermisos.Text + "' WHERE `usuario`.`cc` = '" + TextboxCedula.Text + "'";
+                conectar.Open();
+                MySqlCommand command = new MySqlCommand(insertarCodigo, conectar);
+
+                if (command.ExecuteNonQuery() == 1)
+                {
+                    iniciarTablaUsuarios();
+                }
+                else { }
+                cerrarConeccion();
+            }
+            catch (Exception error)
+            {
+                cerrarConeccion();
+                MessageBox.Show(Convert.ToString(error));
+            }
+        }
+
+        private void bunifuCustomDataGridPermisosUsuario_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            colocandoPermisosDatagridview();
+        }
+
+        private void colocandoPermisosDatagridview()
+        {
+            try
+            {
+                //labelPermisosUsuario0
+                //comboBoxPermisosUsuario0
+                //bunifuCustomDataGridPermisosUsuario     
+                bunifuMaterialTextbox1.Text = bunifuCustomDataGridPermisosUsuario.CurrentRow.Cells[0].Value.ToString();
+                comboBoxPermisosUsuario1.Text = bunifuCustomDataGridPermisosUsuario.CurrentRow.Cells[1].Value.ToString();
+                comboBoxPermisosUsuario2.Text = bunifuCustomDataGridPermisosUsuario.CurrentRow.Cells[2].Value.ToString();
+                comboBoxPermisosUsuario3.Text = bunifuCustomDataGridPermisosUsuario.CurrentRow.Cells[3].Value.ToString();
+                comboBoxPermisosUsuario4.Text = bunifuCustomDataGridPermisosUsuario.CurrentRow.Cells[4].Value.ToString();
+                comboBoxPermisosUsuario5.Text = bunifuCustomDataGridPermisosUsuario.CurrentRow.Cells[5].Value.ToString();
+                comboBoxPermisosUsuario6.Text = bunifuCustomDataGridPermisosUsuario.CurrentRow.Cells[6].Value.ToString();
+                comboBoxPermisosUsuario7.Text = bunifuCustomDataGridPermisosUsuario.CurrentRow.Cells[7].Value.ToString();
+                comboBoxPermisosUsuario8.Text = bunifuCustomDataGridPermisosUsuario.CurrentRow.Cells[8].Value.ToString();
+                comboBoxPermisosUsuario9.Text = bunifuCustomDataGridPermisosUsuario.CurrentRow.Cells[9].Value.ToString();
+                comboBoxPermisosUsuario10.Text = bunifuCustomDataGridPermisosUsuario.CurrentRow.Cells[10].Value.ToString();
+                comboBoxPermisosUsuario11.Text = bunifuCustomDataGridPermisosUsuario.CurrentRow.Cells[11].Value.ToString();
+                comboBoxPermisosUsuario12.Text = bunifuCustomDataGridPermisosUsuario.CurrentRow.Cells[12].Value.ToString();
+                comboBoxPermisosUsuario13.Text = bunifuCustomDataGridPermisosUsuario.CurrentRow.Cells[13].Value.ToString();
+                comboBoxPermisosUsuario14.Text = bunifuCustomDataGridPermisosUsuario.CurrentRow.Cells[14].Value.ToString();
+                comboBoxPermisosUsuario15.Text = bunifuCustomDataGridPermisosUsuario.CurrentRow.Cells[15].Value.ToString();
+                comboBoxPermisosUsuario16.Text = bunifuCustomDataGridPermisosUsuario.CurrentRow.Cells[16].Value.ToString();
+                comboBoxPermisosUsuario17.Text = bunifuCustomDataGridPermisosUsuario.CurrentRow.Cells[17].Value.ToString();
+                comboBoxPermisosUsuario18.Text = bunifuCustomDataGridPermisosUsuario.CurrentRow.Cells[18].Value.ToString();
+                comboBoxPermisosUsuario19.Text = bunifuCustomDataGridPermisosUsuario.CurrentRow.Cells[19].Value.ToString();
+                comboBoxPermisosUsuario20.Text = bunifuCustomDataGridPermisosUsuario.CurrentRow.Cells[20].Value.ToString();
+                comboBoxPermisosUsuario21.Text = bunifuCustomDataGridPermisosUsuario.CurrentRow.Cells[21].Value.ToString();
+                comboBoxPermisosUsuario22.Text = bunifuCustomDataGridPermisosUsuario.CurrentRow.Cells[22].Value.ToString();
+                comboBoxPermisosUsuario23.Text = bunifuCustomDataGridPermisosUsuario.CurrentRow.Cells[23].Value.ToString();
+                comboBoxPermisosUsuario24.Text = bunifuCustomDataGridPermisosUsuario.CurrentRow.Cells[24].Value.ToString();
+                comboBoxPermisosUsuario25.Text = bunifuCustomDataGridPermisosUsuario.CurrentRow.Cells[25].Value.ToString();
+                comboBoxPermisosUsuario26.Text = bunifuCustomDataGridPermisosUsuario.CurrentRow.Cells[26].Value.ToString();
+          
+
+
+            }
+            catch
+            {
+                /*
+                MessageBox.Show(Convert.ToString(error));
+                */
+            }
+        }
+
+        private void bunifuCustomDataGridPermisosUsuario_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            colocandoPermisosDatagridview();
+        }
+
+        private void bunifuFlatButton21_Click_2(object sender, EventArgs e)
+        {
+            agregarPermisosUsuario();
+            cargarPermisosUsuario();
+        }
     }
 
     }
