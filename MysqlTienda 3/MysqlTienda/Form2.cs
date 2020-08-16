@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Text.RegularExpressions;
 using MySql.Data.MySqlClient;
 using MysqlTienda;
+using MySqlX.XDevAPI.Common;
 
 namespace MysqlTienda
 {
@@ -19,9 +20,12 @@ namespace MysqlTienda
         MySqlConnection conectar = new MySqlConnection("datasource=localhost;port=3306;username=root;password=;SslMode=none");
         MySqlCommand command;
         public bool datafono = true, efectivo =true, credito=true, qr=true, apartado = true;
+        
+
         public string factura = "";
         public string ciudad = "";
-       
+        public double total = 0;
+
         public void abrirConeccion()
         {
             try
@@ -81,7 +85,7 @@ namespace MysqlTienda
 
 
 
-        public double total=0;
+       
 
         //private Form1 formulario1;
         public Form2(/*Form1 formulario2*/)
@@ -89,7 +93,10 @@ namespace MysqlTienda
             InitializeComponent();
             //formulario1 = formulario2;
             this.TopMost = true;
-            
+            TextboxEfectivo.Text = "0";
+            TextboxDatafono.Text = "0";
+            TextboxCredito.Text = "0";
+
         }
         public Form2(string texto, string factura1, string ciudad1)
         {
@@ -184,6 +191,7 @@ namespace MysqlTienda
             //double valorDatafonozz
             datafono = verificarTexto(TextboxDatafono.Text);
             if (datafono == false) { TextboxDatafono.Text = "0"; };
+            if (Convert.ToDouble(TextboxDatafono.Text) > total){TextboxDatafono.Text = "0";}
             sumarTotal();
 
         }
@@ -207,6 +215,10 @@ namespace MysqlTienda
         {
             credito = verificarTexto(TextboxCredito.Text);
             if (credito == false) { TextboxCredito.Text = "0"; };
+            if (Convert.ToDouble(TextboxCredito.Text) > total)
+            {
+                TextboxCredito.Text = "0";
+            }
             sumarTotal();
         }
 
@@ -228,6 +240,11 @@ namespace MysqlTienda
             }
             else
             { TextboxApartado.Text = "0"; };
+
+            if (Convert.ToDouble(TextboxApartado.Text) > total)
+            {
+                TextboxApartado.Text = "0";
+            }
             sumarTotal();
         }
 
@@ -239,24 +256,30 @@ namespace MysqlTienda
 
         private void bunifuFlatButton2_Click_1(object sender, EventArgs e)
         {
-            
+            double resultadoEfectivo = Convert.ToDouble(TextboxEfectivo.Text) - ((Convert.ToDouble(TextboxPago.Text) - total));
+
             try
             {
+                
+
                 if (datafono == true && efectivo == true && credito == true && qr == true && apartado == true)
                 {
                     //Form1 formulario1 = new Form1();
+
+                   
 
                     if (labelPago.Text == "cotizacion")
                     {
                         //
                         MessageBox.Show("cotización realizada");
                         insertarDatos("DELETE FROM easyerp.factura_movimiento WHERE nf='"+factura+"' and almacen_nombre='"+ciudad+"'");
+                        insertarDatos("DELETE FROM easyerp.detalle_facturacov WHERE factura='" + factura + "' and almacen='" + ciudad + "'");
                         //formulario1.respuestaFormulario = "cotizacion";
                     }
                     else
                     {
                         //DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")
-                        insertarDatos("INSERT INTO easyerp.metodo_pago_detallado (`ID`, `nf`, `efectivo`, `datafono`, `credito`, `apartado`, `cotizacion`, `ciudad`, `total`, `fecha`) VALUES (NULL, '" + factura + "', '" + TextboxEfectivo.Text + "', '" + TextboxDatafono.Text + "', '" + TextboxCredito.Text + "', '" + TextboxApartado.Text + "', 'true', '" + ciudad + "', '" + TextboxPago.Text + "', '" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "')");
+                        insertarDatos("INSERT INTO easyerp.metodo_pago_detallado (`ID`, `nf`, `efectivo`, `datafono`, `credito`, `apartado`, `cotizacion`, `ciudad`, `total`, `vueltas`, `pagoCon`, `fecha`) VALUES (NULL, '" + factura + "', '" + Convert.ToString(resultadoEfectivo) + "', '" + TextboxDatafono.Text + "', '" + TextboxCredito.Text + "', '" + TextboxApartado.Text + "', 'true', '" + ciudad + "', '" + Convert.ToString(total) + "', '" + (Convert.ToString(Convert.ToDouble(TextboxPago.Text) - total)) + "', '" + TextboxPago.Text + "', '" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "')");
 
                         //formulario1.respuestaFormulario = "venta";
 
@@ -290,8 +313,15 @@ namespace MysqlTienda
 
         private void button1_Click(object sender, EventArgs e)
         {
+            
+      
+            /*
             MessageBox.Show(ciudad+ "  "+ Convert.ToString(factura));
             insertarDatos("DELETE FROM easyerp.factura_movimiento WHERE nf='" + factura + "' and almacen_nombre='" + ciudad + "'");
+            */
+
+            MessageBox.Show(Convert.ToString(total)+" devueltas"+ Convert.ToString(Convert.ToDouble(TextboxPago.Text) - total));
+
         }
 
         public void insertarDatos(String insertarCodigo)
