@@ -296,8 +296,9 @@ namespace MysqlTienda
                 {
                     case DialogResult.Yes:
                         facturaVendida();
-                        formulario2.ShowDialog();
                         finalizarCerrarFactura();
+                        formulario2.ShowDialog();
+                      
                         break;
                     case DialogResult.No:
                         break;
