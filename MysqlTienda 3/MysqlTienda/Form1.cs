@@ -941,9 +941,11 @@ namespace MysqlTienda
 
             try
             {
-                comboBoxUsuPerAlm.Text = DataGridPermisosPorAlmacen.CurrentRow.Cells[0].Value.ToString();
+                /*
+                Bunifu.Framework.UI.BunifuCustomDataGrid dataGridPermisosPorAlmacen = DataGridPermisosPorAlmacen;
+                comboBoxUsuPerAlm.Text = dataGridPermisosPorAlmacen.CurrentRow.Cells[0].Value.ToString();
                 comboBoxCedulaPermiAlmace.Text = DataGridPermisosPorAlmacen.CurrentRow.Cells[1].Value.ToString();
-
+                */
             }
             catch
             {
@@ -1618,64 +1620,13 @@ namespace MysqlTienda
 
         public void bunifuFlatButton8_Click(object sender, EventArgs e)
         {
-            try
-            {
-                cerrarConeccion();
-                string insertarCodigo = "INSERT INTO easyerp.almacen_fabrica (`nombre`, `descripcion`, `tipo_almacen_nombre`) VALUES " +
-                    "(" +
-                    "'" + TextboxNombreAlmacen.text + "', " +
-                    "'" + TextboxDescripcionAlmacen.text + "', " +
-                    "'" + comboBoxTipoAlmacen.Text + "')" +
-                    ";";
-                conectar.Open();
-                MySqlCommand command = new MySqlCommand(insertarCodigo, conectar);
-                if (command.ExecuteNonQuery() == 1)
-                {
-                    cargarTablaAlmacenes();
-                    cargarCiudadesGastos();
-                }
-                else
-                {
-                }
-                cargarPermisosPorAlmacen();
-                cargarCiudadesPermisosAlamacen();
-                cerrarConeccion();
-            }
-            catch (Exception error)
-            {
-                cerrarConeccion();
-                MessageBox.Show(error.Message + "insertando datos almacen");
-            }
+            
 
         }
 
         public void ButtonEliminarAlmacen(object sender, EventArgs e)
         {
-            try
-            {
-                cerrarConeccion();
-                string insertarCodigo = "DELETE FROM easyerp.almacen_fabrica WHERE nombre ='" + TextboxNombreAlmacen.text + "' and descripcion ='" + TextboxDescripcionAlmacen.text + "' and tipo_almacen_nombre='" + comboBoxTipoAlmacen.Text + "'";
-                conectar.Open();
-                MySqlCommand command = new MySqlCommand(insertarCodigo, conectar);
-                if (command.ExecuteNonQuery() == 1)
-                {
-                    MessageBox.Show("eliminado con exito");
-                }
-                else
-                {
-                }
-                cargarPermisosPorAlmacen();
-                cargarCiudadesPermisosAlamacen();
-                cargarTablaAlmacenes();
-                cargarCiudadesGastos();
-                cerrarConeccion();
-
-            }
-            catch (Exception error)
-            {
-                cerrarConeccion();
-                MessageBox.Show(error.Message + "insertando datos almacen");
-            }
+           
         }
 
         public void DataGridAlmacen_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -1700,9 +1651,7 @@ namespace MysqlTienda
 
         public void bunifuFlatButton6_Click_1(object sender, EventArgs e)
         {
-            cargarPermisosPorAlmacen();
-            cargarCiudadesPermisosAlamacen();
-            cargarCiudadesGastos();
+     
         }
 
         public void DataGridPermisosPorAlmacen_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -3585,6 +3534,84 @@ namespace MysqlTienda
         {
             agregarPermisosUsuario();
             cargarPermisosUsuario();
+        }
+
+        private void tabPage27_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuFlatButton23_Click_1(object sender, EventArgs e)
+        {
+            cargarTablaAlmacenes();
+        }
+
+        private void bunifuFlatButton39_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                cerrarConeccion();
+                string insertarCodigo = "INSERT INTO easyerp.almacen_fabrica (`nombre`, `descripcion`, `tipo_almacen_nombre`) VALUES " +
+                    "(" +
+                    "'" + TextboxNombreAlmacen.text + "', " +
+                    "'" + TextboxDescripcionAlmacen.text + "', " +
+                    "'" + comboBoxTipoAlmacen.Text + "')" +
+                    ";";
+                conectar.Open();
+                MySqlCommand command = new MySqlCommand(insertarCodigo, conectar);
+                if (command.ExecuteNonQuery() == 1)
+                {
+                    cargarTablaAlmacenes();
+                    cargarCiudadesGastos();
+                }
+                else
+                {
+                }
+                cargarPermisosPorAlmacen();
+                cargarCiudadesPermisosAlamacen();
+                cerrarConeccion();
+            }
+            catch (Exception error)
+            {
+                cerrarConeccion();
+                MessageBox.Show(error.Message + "insertando datos almacen");
+            }
+        }
+
+        private void bunifuFlatButton38_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                cerrarConeccion();
+                string insertarCodigo = "DELETE FROM easyerp.almacen_fabrica WHERE nombre ='" + TextboxNombreAlmacen.text + "' and descripcion ='" + TextboxDescripcionAlmacen.text + "' and tipo_almacen_nombre='" + comboBoxTipoAlmacen.Text + "'";
+                conectar.Open();
+                MySqlCommand command = new MySqlCommand(insertarCodigo, conectar);
+                if (command.ExecuteNonQuery() == 1)
+                {
+                    MessageBox.Show("eliminado con exito");
+                }
+                else
+                {
+                }
+                cargarPermisosPorAlmacen();
+                cargarCiudadesPermisosAlamacen();
+                cargarTablaAlmacenes();
+                cargarCiudadesGastos();
+                cerrarConeccion();
+
+            }
+            catch (Exception error)
+            {
+                cerrarConeccion();
+                MessageBox.Show(error.Message + "insertando datos almacen");
+            }
+        }
+
+        private void bunifuFlatButton37_Click(object sender, EventArgs e)
+        {
+            cargarPermisosPorAlmacen();
+            cargarCiudadesPermisosAlamacen();
+            cargarCiudadesGastos();
         }
     }
 

@@ -311,18 +311,7 @@ namespace MysqlTienda
             
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            
-      
-            /*
-            MessageBox.Show(ciudad+ "  "+ Convert.ToString(factura));
-            insertarDatos("DELETE FROM easyerp.factura_movimiento WHERE nf='" + factura + "' and almacen_nombre='" + ciudad + "'");
-            */
-
-            MessageBox.Show(Convert.ToString(total)+" devueltas"+ Convert.ToString(Convert.ToDouble(TextboxPago.Text) - total));
-
-        }
+       
 
         public void insertarDatos(String insertarCodigo)
         {
