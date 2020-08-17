@@ -601,6 +601,7 @@ namespace MysqlTienda
             cargarDepartamentosCombobox();
 
             cargarCLientesProvedores();
+            cargarTablaAlmacenes();
         }
 
         public void cargarPermisosPorAlmacen()
@@ -2934,8 +2935,8 @@ namespace MysqlTienda
                 TextboxTotalEntrada.text = DataGridEntrada.CurrentRow.Cells[1].Value.ToString();
                 LabelFechaEntrada2.Text = DataGridEntrada.CurrentRow.Cells[2].Value.ToString();
                 TextboxDescipcionEntrada.text = DataGridEntrada.CurrentRow.Cells[3].Value.ToString();
-                comboBoxAlmacenEntrada.Text = DataGridGastos.CurrentRow.Cells[5].Value.ToString();
-                comboBoxCategoriaEntrada.Text = DataGridGastos.CurrentRow.Cells[6].Value.ToString();
+                //comboBoxAlmacenEntrada.Text = DataGridGastos.CurrentRow.Cells[5].Value.ToString();
+                //comboBoxCategoriaEntrada.Text = DataGridGastos.CurrentRow.Cells[6].Value.ToString();
             }
             catch
             {
@@ -3275,6 +3276,7 @@ namespace MysqlTienda
             cargarNombresPermisosUsuario();
             cargarDatagridviews();
         }
+
         private void agregarPermisosUsuario()
         {
             try
@@ -3325,10 +3327,10 @@ namespace MysqlTienda
             {
                 String mensaje = Convert.ToString(error.Message);
                 int valor = mensaje.LastIndexOf("Duplicate");
-                if (valor >= 0) { MessageBox.Show("Ya existe un rol con este nomvre"); }
+                if (valor >= 0) { MessageBox.Show("Ya existe un rol con este nombre"); }
                 else
                 {
-                    MessageBox.Show(error.Message + "permisos por usuario extendido ");
+                    MessageBox.Show(error.Message + "Permisos por usuario extendido ");
                 }
 
             }
@@ -3608,6 +3610,31 @@ namespace MysqlTienda
                 MySqlDataAdapter adpter = new MySqlDataAdapter(selectQuery, conectar);
                 adpter.Fill(table);
                 DataGridClientesProvedores.DataSource = table;
+                cerrarConeccion();
+            }
+            catch (Exception error)
+            {
+                MessageBox.Show(error.Message + "Cargando la tabla de clientes o provedores");
+            }
+        }
+
+        private void button2_Click_3(object sender, EventArgs e)
+        {
+            //DataGridPruebas
+            //SELECT * FROM `factura_movimiento`
+            
+        }
+
+        private void bunifuFlatButton43_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                cerrarConeccion();
+                string selectQuery = "SELECT * FROM easyerp.factura_movimiento";
+                DataTable table = new DataTable();
+                MySqlDataAdapter adpter = new MySqlDataAdapter(selectQuery, conectar);
+                adpter.Fill(table);
+                DataGridPruebas.DataSource = table;
                 cerrarConeccion();
             }
             catch (Exception error)
