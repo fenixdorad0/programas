@@ -22,7 +22,7 @@ namespace MysqlTienda
         public int yainicio = 0;
         public String fechaHoy = DateTime.Now.ToString("yyyy-MM-dd");
         public string respuestaFormulario = "algo";
-
+        // No se que write
         public double sumatotal=0;
         public Form1()
         {
