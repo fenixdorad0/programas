@@ -274,30 +274,7 @@ namespace MysqlTienda
 
         public void finalizar_Click_1(object sender, EventArgs e)
         {
-            if (textSumaTotal.Text == "")
-            {
-
-            }
-            else
-            {
-
-                DialogResult result = MessageBox.Show("Lo que esta realizando es una venta", "Salir", MessageBoxButtons.YesNo);
-                Form2 formulario2 = new Form2(textSumaTotal.Text, Convert.ToString(textFactura.Text), comboBoxCiudad.Text);
-                //formulario2.Visible = true;               
-
-                switch (result)
-                {
-                    case DialogResult.Yes:
-                        facturaVendida();
-                        finalizarCerrarFactura();
-                        formulario2.ShowDialog();
-                      
-                        break;
-                    case DialogResult.No:
-                        break;
-                }
-                convertirDecimales();
-            }
+           
 
         }
 
@@ -522,7 +499,7 @@ namespace MysqlTienda
         {
             try
             {
-                labelInsertarCodigo.Visible = true;
+                //labelInsertarCodigo.Visible = true;
                 textInsertarCodigo.Visible = true;
                 MySqlDataReader mdr;
                 string select = "SELECT* FROM easyerp.usuario WHERE `usuario`.`id` ='" + buniTextUsuario.Text + "' and contrasena ='" + buniTextPass.Text + "'";
@@ -978,66 +955,7 @@ namespace MysqlTienda
 
         public void bunifuEliminar_Click(object sender, EventArgs e)
         {
-            try
-            {
-
-                if (Convert.ToInt32(textCantidad.Text) > 1)
-                {
-                    double precio = Convert.ToDouble(textTotal.Text) / Convert.ToDouble(textCantidad.Text);
-                    string insertarCodigo = "UPDATE easyerp.detalle_facturacov SET cantidad = cantidad-1, total =precio*cantidad, costoTotal =costo*cantidad  WHERE `detalle_facturacov`.`factura` =" + textFactura.Text + " AND `detalle_facturacov`.`codigo` = " + textCodigo.Text + " and almacen='" + comboBoxCiudad.Text + "'";
-                    conectar.Open();
-                    MySqlCommand command = new MySqlCommand(insertarCodigo, conectar);
-                    if (command.ExecuteNonQuery() == 1)
-                    {
-                        aumentarInventario1();
-                        iniciarTablaVentas("");
-                        limpitarTextosVentas();
-
-                    }
-                    else { }
-
-                }
-                else if (Convert.ToInt32(textCantidad.Text) <= 1)
-                {
-                    double precio = Convert.ToDouble(textTotal.Text) / Convert.ToDouble(textCantidad.Text);
-                    string insertarCodigo = "DELETE FROM easyerp.detalle_facturacov WHERE `detalle_facturacov`.`factura` =" + textFactura.Text + " AND `detalle_facturacov`.`codigo` = " + textCodigo.Text + " and almacen='" + comboBoxCiudad.Text + "'";
-                    conectar.Open();
-                    MySqlCommand command = new MySqlCommand(insertarCodigo, conectar);
-
-                    if (command.ExecuteNonQuery() == 1)
-                    {
-                        aumentarInventario1();
-                        iniciarTablaVentas("");
-                        limpitarTextosVentas();
-                    }
-                    else { }
-                }
-                else { }
-                sumaTotal();
-                iniciarTablaVentas("");
-            }
-            catch (Exception error)
-            {
-                String mensaje = Convert.ToString(error.Message);
-                int valor = mensaje.LastIndexOf("La cadena");
-                if (valor >= 0) { }
-                else
-                {
-                    MessageBox.Show(error.Message + "update o restando");
-                }
-                cerrarConeccion();
-
-            }
-
-
-
-
-            /* codigo para acceder a todos los controles al mismo tiempo sera util en un fútoro proximo
-            foreach (Control ctrl in panel1.Controls)
-            {
-                ctrl.Enabled = false;
-            }
-            */
+           
         }
 
         public void limpitarTextosVentas()
@@ -1055,36 +973,7 @@ namespace MysqlTienda
         public void buniActualizar_Click(object sender, EventArgs e)
         {
 
-            if (textCodigo.Text == "")
-            { }
-            else
-            {
-                try
-                {
-                    double total = Convert.ToDouble(textCantidad.Text) * Convert.ToDouble(textPrecio.Text);
-
-                    //MessageBox.Show(Convert.ToString(total));
-                    //string insertarCodigo = "UPDATE easyerp.detalle_facturacov SET precio =" + textPrecio.Text + ", total =precio*cantidad, costoTotal=costo*cantidad  WHERE `detalle_facturacov`.`factura` =" + textFactura.Text + " AND `detalle_facturacov`.`codigo` = " + textCodigo.Text + " and almacen='" + comboBoxCiudad.Text + "'";
-                    string insertarCodigo = "UPDATE easyerp.detalle_facturacov SET cantidad="+textCantidad.Text+", precio =" + textPrecio.Text + ", total ="+total+", costoTotal=costo*cantidad  WHERE `detalle_facturacov`.`factura` =" + textFactura.Text + " AND `detalle_facturacov`.`codigo` = " + textCodigo.Text + " and almacen='" + comboBoxCiudad.Text + "'";
-
-                    conectar.Open();
-                    MySqlCommand command = new MySqlCommand(insertarCodigo, conectar);
-
-                    if (command.ExecuteNonQuery() == 1)
-                    {
-                        iniciarTablaVentas("");
-                        limpitarTextosVentas();
-
-                    }
-                    else { }
-                    sumaTotal();
-                }
-                catch (Exception error)
-                {
-                    MessageBox.Show(Convert.ToString(error));
-                }
-
-            }
+            
 
         }
 
@@ -1313,37 +1202,7 @@ namespace MysqlTienda
 
         public void bunifuFlatButton1_Click_1(object sender, EventArgs e)
         {
-            try
-            {
-                cerrarConeccion();
-                double precio = Convert.ToDouble(textTotal.Text) / Convert.ToDouble(textCantidad.Text);
-                string insertarCodigo = "DELETE FROM easyerp.detalle_facturacov WHERE `detalle_facturacov`.`factura` =" + textFactura.Text + " AND `detalle_facturacov`.`codigo` = " + textCodigo.Text + " and almacen='" + comboBoxCiudad.Text + "'";
-                conectar.Open();
-                MySqlCommand command = new MySqlCommand(insertarCodigo, conectar);
-                if (command.ExecuteNonQuery() == 1)
-                {
-                    aumentarInventarioTodo();
-                    iniciarTablaVentas("");
-                }
-                else { }
-                cerrarConeccion();
-            }
-            catch (Exception error)
-            {
-                String mensaje = Convert.ToString(error.Message);
-                int valor = mensaje.LastIndexOf("La cadena");
-                if (valor >= 0)
-                {
-
-                }
-                else
-                {
-                    MessageBox.Show(error.Message + " Error al eliminar en los de talles de la factura");
-                }
-                cerrarConeccion();
-
-            }
-            sumaTotal();
+            
         }
 
         public void bunifuCustomDataGrid2_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
@@ -2051,7 +1910,10 @@ namespace MysqlTienda
                 {
 
                     cerrarConeccion();
-                    string selectQuery = "SELECT codigo,referencia,producto,tamano, sum(cantidad) as 'cantidad vendida' ,sum(total) as 'total vendido',sum(costoTotal) as 'costo Total',(sum(total) - sum(costoTotal)) as 'ganancia',(((sum(total) - sum(costoTotal))/sum(costoTotal))) as 'ganancia porcentual' from easyerp.detalle_facturacov WHERE vendido='si' and almacen = '" + comboBoxCiudad.Text + "' and fecha BETWEEN '" + fechaA + " 00:00:00' AND '" + fechaB + " 23:59:59' GROUP by codigo ";
+                    //parametro vendido
+                    //string selectQuery = "SELECT codigo,referencia,producto,tamano, sum(cantidad) as 'cantidad vendida' ,sum(total) as 'total vendido',sum(costoTotal) as 'costo Total',(sum(total) - sum(costoTotal)) as 'ganancia',(((sum(total) - sum(costoTotal))/sum(costoTotal))) as 'ganancia porcentual' from easyerp.detalle_facturacov WHERE vendido='si' and almacen = '" + comboBoxCiudad.Text + "' and fecha BETWEEN '" + fechaA + " 00:00:00' AND '" + fechaB + " 23:59:59' GROUP by codigo ";
+                    string selectQuery = "SELECT codigo,referencia,producto,tamano, sum(cantidad) as 'cantidad vendida' ,sum(total) as 'total vendido',sum(costoTotal) as 'costo Total',(sum(total) - sum(costoTotal)) as 'ganancia',(((sum(total) - sum(costoTotal))/sum(costoTotal))) as 'ganancia porcentual' from easyerp.detalle_facturacov WHERE almacen = '" + comboBoxCiudad.Text + "' and fecha BETWEEN '" + fechaA + " 00:00:00' AND '" + fechaB + " 23:59:59' GROUP by codigo ";
+
                     DataTable table = new DataTable();
                     MySqlDataAdapter adpter = new MySqlDataAdapter(selectQuery, conectar);
                     adpter.Fill(table);
@@ -2060,15 +1922,17 @@ namespace MysqlTienda
                 }
                 catch (Exception error)
                 {
-                    MessageBox.Show(error.Message + "datrigreportes");
+                    MessageBox.Show(error.Message + "datrigreportes 1");
                 }
 
                 try
                 {
                     cerrarConeccion();
-
-                    string selectQuery = "SELECT producto, sum(cantidad) as 'cantidad vendida' ,sum(total) as 'total vendido',sum(costoTotal) as 'costoTotal',(sum(total) - sum(costoTotal)) as 'ganancia',(((sum(total) - sum(costoTotal))/sum(costoTotal))) as 'ganancia porcentual' from easyerp.detalle_facturacov WHERE vendido='si' and almacen = '" + comboBoxCiudad.Text + "' and fecha BETWEEN '" + fechaA + " 00:00:00' AND '" + fechaB + " 23:59:59' GROUP by producto ";
+                    //parametro vendido
+                    //string selectQuery = "SELECT producto, sum(cantidad) as 'cantidad vendida' ,sum(total) as 'total vendido',sum(costoTotal) as 'costoTotal',(sum(total) - sum(costoTotal)) as 'ganancia',(((sum(total) - sum(costoTotal))/sum(costoTotal))) as 'ganancia porcentual' from easyerp.detalle_facturacov WHERE vendido='si' and almacen = '" + comboBoxCiudad.Text + "' and fecha BETWEEN '" + fechaA + " 00:00:00' AND '" + fechaB + " 23:59:59' GROUP by producto ";
                     //string selectQuery = "SELECT codigo,referencia,producto,tamano, sum(cantidad) as 'cantidad vendida' ,(sum(total) - sum(costoTotal)) as 'ganancia',(1-(sum(costoTotal) / sum(total))) as 'ganancia porcentual' from easyerp.detalle_facturacov WHERE fecha BETWEEN '" + fechaHoy + " 00:00:00' AND '" + fechaHoy + " 23:59:59' GROUP by producto";
+                    string selectQuery = "SELECT producto, sum(cantidad) as 'cantidad vendida' ,sum(total) as 'total vendido',sum(costoTotal) as 'costoTotal',(sum(total) - sum(costoTotal)) as 'ganancia',(((sum(total) - sum(costoTotal))/sum(costoTotal))) as 'ganancia porcentual' from easyerp.detalle_facturacov WHERE almacen = '" + comboBoxCiudad.Text + "' and fecha BETWEEN '" + fechaA + " 00:00:00' AND '" + fechaB + " 23:59:59' GROUP by producto ";
+
                     DataTable table = new DataTable();
                     MySqlDataAdapter adpter = new MySqlDataAdapter(selectQuery, conectar);
                     adpter.Fill(table);
@@ -2077,7 +1941,7 @@ namespace MysqlTienda
                 }
                 catch (Exception error)
                 {
-                    MessageBox.Show(error.Message + "datrigreportes");
+                    MessageBox.Show(error.Message + "datrigreportes 2");
                 }
 
                 ///venta por cajero
@@ -2095,7 +1959,7 @@ namespace MysqlTienda
                 }
                 catch (Exception error)
                 {
-                    MessageBox.Show(error.Message + "datrigreportes");
+                    MessageBox.Show(error.Message + "datrigreportes 3");
                 }
 
                 dataGridsFormatoLocal();
@@ -2233,7 +2097,7 @@ namespace MysqlTienda
                 try
                 {
                     cerrarConeccion();
-                    string selectQuery = "SELECT codigo,referencia,producto,tamano, sum(cantidad) as 'cantidad vendida' ,sum(total) as 'ventas totales',sum(costoTotal) as 'costo Total',(sum(total) - sum(costoTotal)) as 'ganancia',(((sum(total) - sum(costoTotal))/sum(costoTotal))) as 'ganancia porcentual' from easyerp.detalle_facturacov WHERE vendido='si' and fecha BETWEEN '" + fechaA + " 00:00:00' AND '" + fechaB + " 23:59:59' GROUP by codigo ";
+                    string selectQuery = "SELECT codigo,referencia,producto,tamano, sum(cantidad) as 'cantidad vendida' ,sum(total) as 'ventas totales',sum(costoTotal) as 'costo Total',(sum(total) - sum(costoTotal)) as 'ganancia',(((sum(total) - sum(costoTotal))/sum(costoTotal))) as 'ganancia porcentual' from easyerp.detalle_facturacov WHERE fecha BETWEEN '" + fechaA + " 00:00:00' AND '" + fechaB + " 23:59:59' GROUP by codigo ";
                     DataTable table = new DataTable();
                     MySqlDataAdapter adpter = new MySqlDataAdapter(selectQuery, conectar);
                     adpter.Fill(table);
@@ -2242,13 +2106,13 @@ namespace MysqlTienda
                 }
                 catch (Exception error)
                 {
-                    MessageBox.Show(error.Message + "datrigreportes");
+                    MessageBox.Show(error.Message + "datrigreportes 4");
                 }
 
                 try
                 {
                     cerrarConeccion();
-                    string selectQuery = "SELECT producto as 'departamento', sum(cantidad) as 'cantidad vendida' ,sum(total) as 'venta total',sum(costoTotal) as 'costo Total',(sum(total) - sum(costoTotal)) as 'ganancia',(((sum(total) - sum(costoTotal))/sum(costoTotal))) as 'ganancia porcentual' from easyerp.detalle_facturacov WHERE vendido='si' and fecha BETWEEN '" + fechaA + " 00:00:00' AND '" + fechaB + " 23:59:59' GROUP by producto";
+                    string selectQuery = "SELECT producto as 'departamento', sum(cantidad) as 'cantidad vendida' ,sum(total) as 'venta total',sum(costoTotal) as 'costo Total',(sum(total) - sum(costoTotal)) as 'ganancia',(((sum(total) - sum(costoTotal))/sum(costoTotal))) as 'ganancia porcentual' from easyerp.detalle_facturacov WHERE fecha BETWEEN '" + fechaA + " 00:00:00' AND '" + fechaB + " 23:59:59' GROUP by producto";
                     //string selectQuery = "SELECT codigo,referencia,producto,tamano, sum(cantidad) as 'cantidad vendida' ,(total - costoTotal) as 'ganancia',(1-(costoTotal / total)) as 'ganancia porcentual' from easyerp.detalle_facturacov WHERE fecha BETWEEN '" + fechaHoy + " 00:00:00' AND '" + fechaHoy + " 23:59:59' GROUP by producto ";
                     DataTable table = new DataTable();
                     MySqlDataAdapter adpter = new MySqlDataAdapter(selectQuery, conectar);
@@ -2258,13 +2122,13 @@ namespace MysqlTienda
                 }
                 catch (Exception error)
                 {
-                    MessageBox.Show(error.Message + "datrigreportes");
+                    MessageBox.Show(error.Message + "datrigreportes 5");
                 }
 
                 try
                 {
                     cerrarConeccion();
-                    string selectQuery = "SELECT almacen,sum(total) as 'ventas totales',sum(costoTotal) as 'costo Total',(sum(total) - sum(costoTotal)) as 'ganancia',(((sum(total) - sum(costoTotal))/sum(costoTotal))) as 'ganancia porcentual' from easyerp.detalle_facturacov WHERE vendido='si' and fecha BETWEEN '" + fechaA + " 00:00:00' AND '" + fechaB + " 23:59:59' GROUP by almacen ORDER BY `detalle_facturacov`.`almacen` ASC";
+                    string selectQuery = "SELECT almacen,sum(total) as 'ventas totales',sum(costoTotal) as 'costo Total',(sum(total) - sum(costoTotal)) as 'ganancia',(((sum(total) - sum(costoTotal))/sum(costoTotal))) as 'ganancia porcentual' from easyerp.detalle_facturacov WHERE fecha BETWEEN '" + fechaA + " 00:00:00' AND '" + fechaB + " 23:59:59' GROUP by almacen ORDER BY `detalle_facturacov`.`almacen` ASC";
                     //string selectQuery = "SELECT codigo,referencia,producto,tamano, sum(cantidad) as 'cantidad vendida' ,(total - costoTotal) as 'ganancia',(1-(costoTotal / total)) as 'ganancia porcentual' from easyerp.detalle_facturacov WHERE fecha BETWEEN '" + fechaHoy + " 00:00:00' AND '" + fechaHoy + " 23:59:59' GROUP by producto ";
                     DataTable table = new DataTable();
                     MySqlDataAdapter adpter = new MySqlDataAdapter(selectQuery, conectar);
@@ -2280,7 +2144,7 @@ namespace MysqlTienda
                 try
                 {
                     cerrarConeccion();
-                    string selectQuery = "SELECT almacen,codigo,referencia,producto,tamano, sum(cantidad) as 'cantidad vendida' ,sum(costoTotal) as 'costo Total',(sum(total) - sum(costoTotal)) as 'ganancia',(((sum(total) - sum(costoTotal))/sum(costoTotal))) as 'ganancia porcentual' from easyerp.detalle_facturacov WHERE vendido='si' and fecha BETWEEN '" + fechaA + " 00:00:00' AND '" + fechaB + " 23:59:59' GROUP by codigo, almacen ORDER BY `detalle_facturacov`.`almacen` ASC";
+                    string selectQuery = "SELECT almacen,codigo,referencia,producto,tamano, sum(cantidad) as 'cantidad vendida' ,sum(costoTotal) as 'costo Total',(sum(total) - sum(costoTotal)) as 'ganancia',(((sum(total) - sum(costoTotal))/sum(costoTotal))) as 'ganancia porcentual' from easyerp.detalle_facturacov WHERE fecha BETWEEN '" + fechaA + " 00:00:00' AND '" + fechaB + " 23:59:59' GROUP by codigo, almacen ORDER BY `detalle_facturacov`.`almacen` ASC";
                     //string selectQuery = "SELECT codigo,referencia,producto,tamano, sum(cantidad) as 'cantidad vendida' ,(total - costoTotal) as 'ganancia',(1-(costoTotal / total)) as 'ganancia porcentual' from easyerp.detalle_facturacov WHERE fecha BETWEEN '" + fechaHoy + " 00:00:00' AND '" + fechaHoy + " 23:59:59' GROUP by producto ";
                     DataTable table = new DataTable();
                     MySqlDataAdapter adpter = new MySqlDataAdapter(selectQuery, conectar);
@@ -2306,7 +2170,7 @@ namespace MysqlTienda
                 }
                 catch (Exception error)
                 {
-                    MessageBox.Show(error.Message + "datrigreportes");
+                    MessageBox.Show(error.Message + "datrigreportes 6");
                 }
 
                 //venta por departamento de cada almacen
@@ -2314,7 +2178,7 @@ namespace MysqlTienda
                 {
                     cerrarConeccion();
                     //string selectQuery = "SELECT producto, sum(cantidad) as 'cantidad vendida' ,sum(total) as 'total vendido',(sum(total) - sum(costoTotal)) as 'ganancia',(1-(sum(costoTotal) / sum(total))) as 'ganancia porcentual' from easyerp.detalle_facturacov WHERE almacen_nombre = '" + comboBox1.Text + "' and fecha BETWEEN '" + fechaHoy + " 00:00:00' AND '" + fechaHoy + " 23:59:59' GROUP by producto ";
-                    string selectQuery = "SELECT almacen,producto as 'departamento', sum(cantidad) as 'cantidad vendida' ,sum(total) as 'venta total',(sum(total) - sum(costoTotal)) as 'ganancia',sum(costoTotal) as 'costo total',((sum(total)-sum(costoTotal)) /(sum(costoTotal))) as 'ganancia porcentual' from easyerp.detalle_facturacov WHERE vendido='si' and fecha BETWEEN '" + fechaA + " 00:00:00' AND '" + fechaB + " 23:59:59' GROUP by producto,almacen ORDER BY almacen DESC, `cantidad vendida` DESC";
+                    string selectQuery = "SELECT almacen,producto as 'departamento', sum(cantidad) as 'cantidad vendida' ,sum(total) as 'venta total',(sum(total) - sum(costoTotal)) as 'ganancia',sum(costoTotal) as 'costo total',((sum(total)-sum(costoTotal)) /(sum(costoTotal))) as 'ganancia porcentual' from easyerp.detalle_facturacov WHERE fecha BETWEEN '" + fechaA + " 00:00:00' AND '" + fechaB + " 23:59:59' GROUP by producto,almacen ORDER BY almacen DESC, `cantidad vendida` DESC";
                     DataTable table = new DataTable();
                     MySqlDataAdapter adpter = new MySqlDataAdapter(selectQuery, conectar);
                     adpter.Fill(table);
@@ -3154,7 +3018,7 @@ namespace MysqlTienda
             try
             {
                 double valor = Convert.ToDouble(textSumaTotal.Text);
-                textSumaTotalC.Text = "TOTAL = " + "$" + Convert.ToString(valor.ToString("0,0"));
+                label21.Text = "TOTAL = " + "$" + Convert.ToString(valor.ToString("0,0"));
             }
             catch
             {
@@ -3630,18 +3494,185 @@ namespace MysqlTienda
             try
             {
                 cerrarConeccion();
-                string selectQuery = "SELECT * FROM easyerp.factura_movimiento";
-                DataTable table = new DataTable();
-                MySqlDataAdapter adpter = new MySqlDataAdapter(selectQuery, conectar);
-                adpter.Fill(table);
-                DataGridPruebas.DataSource = table;
+                double precio = Convert.ToDouble(textTotal.Text) / Convert.ToDouble(textCantidad.Text);
+                string insertarCodigo = "DELETE FROM easyerp.detalle_facturacov WHERE `detalle_facturacov`.`factura` =" + textFactura.Text + " AND `detalle_facturacov`.`codigo` = " + textCodigo.Text + " and almacen='" + comboBoxCiudad.Text + "'";
+                conectar.Open();
+                MySqlCommand command = new MySqlCommand(insertarCodigo, conectar);
+                if (command.ExecuteNonQuery() == 1)
+                {
+                    aumentarInventarioTodo();
+                    iniciarTablaVentas("");
+                }
+                else { }
                 cerrarConeccion();
             }
             catch (Exception error)
             {
-                MessageBox.Show(error.Message + "Cargando la tabla de clientes o provedores");
+                String mensaje = Convert.ToString(error.Message);
+                int valor = mensaje.LastIndexOf("La cadena");
+                if (valor >= 0)
+                {
+
+                }
+                else
+                {
+                    MessageBox.Show(error.Message + " Error al eliminar en los de talles de la factura");
+                }
+                cerrarConeccion();
+
+            }
+            sumaTotal();
+
+        }
+
+        private void bunifuFlatButton41_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+                if (Convert.ToInt32(textCantidad.Text) > 1)
+                {
+                    double precio = Convert.ToDouble(textTotal.Text) / Convert.ToDouble(textCantidad.Text);
+                    string insertarCodigo = "UPDATE easyerp.detalle_facturacov SET cantidad = cantidad-1, total =precio*cantidad, costoTotal =costo*cantidad  WHERE `detalle_facturacov`.`factura` =" + textFactura.Text + " AND `detalle_facturacov`.`codigo` = " + textCodigo.Text + " and almacen='" + comboBoxCiudad.Text + "'";
+                    conectar.Open();
+                    MySqlCommand command = new MySqlCommand(insertarCodigo, conectar);
+                    if (command.ExecuteNonQuery() == 1)
+                    {
+                        aumentarInventario1();
+                        iniciarTablaVentas("");
+                        limpitarTextosVentas();
+
+                    }
+                    else { }
+
+                }
+                else if (Convert.ToInt32(textCantidad.Text) <= 1)
+                {
+                    double precio = Convert.ToDouble(textTotal.Text) / Convert.ToDouble(textCantidad.Text);
+                    string insertarCodigo = "DELETE FROM easyerp.detalle_facturacov WHERE `detalle_facturacov`.`factura` =" + textFactura.Text + " AND `detalle_facturacov`.`codigo` = " + textCodigo.Text + " and almacen='" + comboBoxCiudad.Text + "'";
+                    conectar.Open();
+                    MySqlCommand command = new MySqlCommand(insertarCodigo, conectar);
+
+                    if (command.ExecuteNonQuery() == 1)
+                    {
+                        aumentarInventario1();
+                        iniciarTablaVentas("");
+                        limpitarTextosVentas();
+                    }
+                    else { }
+                }
+                else { }
+                sumaTotal();
+                iniciarTablaVentas("");
+            }
+            catch (Exception error)
+            {
+                String mensaje = Convert.ToString(error.Message);
+                int valor = mensaje.LastIndexOf("La cadena");
+                if (valor >= 0) { }
+                else
+                {
+                    MessageBox.Show(error.Message + "update o restando");
+                }
+                cerrarConeccion();
+
             }
 
+
+
+
+            /* codigo para acceder a todos los controles al mismo tiempo sera util en un fútoro proximo
+            foreach (Control ctrl in panel1.Controls)
+            {
+                ctrl.Enabled = false;
+            }
+            */
+        }
+
+        private void buttonModificarVentas_Click(object sender, EventArgs e)
+        {
+            if (textCodigo.Text == "")
+            { }
+            else
+            {
+                try
+                {
+                    double total = Convert.ToDouble(textCantidad.Text) * Convert.ToDouble(textPrecio.Text);
+
+                    //MessageBox.Show(Convert.ToString(total));
+                    //string insertarCodigo = "UPDATE easyerp.detalle_facturacov SET precio =" + textPrecio.Text + ", total =precio*cantidad, costoTotal=costo*cantidad  WHERE `detalle_facturacov`.`factura` =" + textFactura.Text + " AND `detalle_facturacov`.`codigo` = " + textCodigo.Text + " and almacen='" + comboBoxCiudad.Text + "'";
+                    string insertarCodigo = "UPDATE easyerp.detalle_facturacov SET cantidad=" + textCantidad.Text + ", precio =" + textPrecio.Text + ", total =" + total + ", costoTotal=costo*cantidad  WHERE `detalle_facturacov`.`factura` =" + textFactura.Text + " AND `detalle_facturacov`.`codigo` = " + textCodigo.Text + " and almacen='" + comboBoxCiudad.Text + "'";
+
+                    conectar.Open();
+                    MySqlCommand command = new MySqlCommand(insertarCodigo, conectar);
+
+                    if (command.ExecuteNonQuery() == 1)
+                    {
+                        iniciarTablaVentas("");
+                        limpitarTextosVentas();
+
+                    }
+                    else { }
+                    sumaTotal();
+                }
+                catch (Exception error)
+                {
+                    MessageBox.Show(Convert.ToString(error));
+                }
+
+            }
+        }
+
+        private void butttonFinalizarVentas_Click(object sender, EventArgs e)
+        {
+            if (textSumaTotal.Text == ""){}
+            else
+            {
+                facturaVendida();
+                Form2 formulario2 = new Form2(textSumaTotal.Text, Convert.ToString(textFactura.Text), comboBoxCiudad.Text);
+                //formulario2.Visible = true;   
+                
+                finalizarCerrarFactura();
+                formulario2.ShowDialog();
+              
+                convertirDecimales();
+
+                /*
+                DialogResult result = MessageBox.Show("Lo que esta realizando es una venta", "Salir", MessageBoxButtons.YesNo);
+              switch (result)
+              {
+                  case DialogResult.Yes:
+
+
+                      break;
+                  case DialogResult.No:
+                      break;
+              }
+
+              */
+            }
+        }
+
+        private void DataGridVentas_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            cargarDatosTablaVentajas();
+        }
+
+        private void DataGridVentas_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            cargarDatosTablaVentajas();
+        }
+
+     
+
+        private void textInsertarCodigo_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textInsertarCodigo_TextChanged_1(object sender, EventArgs e)
+        {
+            codigoCambia();
         }
 
         /*
