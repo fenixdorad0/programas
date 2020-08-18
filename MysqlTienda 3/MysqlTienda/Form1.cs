@@ -3641,6 +3641,7 @@ namespace MysqlTienda
             {
                 MessageBox.Show(error.Message + "Cargando la tabla de clientes o provedores");
             }
+
         }
 
         /*
