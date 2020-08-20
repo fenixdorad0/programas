@@ -541,6 +541,7 @@
             this.Controls.Add(this.bunifuGradientPanel1);
             this.Name = "Form2";
             this.Text = "metodo de pago";
+            this.Load += new System.EventHandler(this.Form2_Load);
             this.bunifuGradientPanel1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
