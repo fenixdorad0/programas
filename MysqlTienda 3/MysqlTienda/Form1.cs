@@ -141,12 +141,7 @@ namespace MysqlTienda
                 conectar.Open();
                 MySqlCommand command = new MySqlCommand(insertarCodigo, conectar);
 
-                if (command.ExecuteNonQuery() == 1)
-                {
-                    //labelCantidad.Text = Convert.ToString(Convert.ToInt32(labelCantidad.Text) + 1);
-
-                    iniciarTablaVentas("");
-                }
+                if (command.ExecuteNonQuery() == 1){}
                 else
                 {
                     cerrarConeccion();
@@ -171,28 +166,26 @@ namespace MysqlTienda
                     MySqlCommand command2 = new MySqlCommand(insertarCodigo2, conectar);
                     if (command2.ExecuteNonQuery() == 1)
                     {
-                        iniciarTablaVentas("");
-                        textInsertarCodigo.Text = "";
-                        //MessageBox.Show("Dato insertado");
-                        cerrarConeccion();
+                                       
                     }
                     else
                     {
                         MessageBox.Show("Dato NO insertado");
-                        cerrarConeccion();
-                    }
+                       
+                    }                   
+                    
 
-                    cerrarConeccion();
-                    iniciarTablaVentas("");
                 }
+                cerrarConeccion();
+                iniciarTablaVentas("");
+                textInsertarCodigo.Text = "";
             }
             catch (Exception error)
             {
                 cerrarConeccion();
                 MessageBox.Show(error.Message + "update o sumando!");
             }
-            textInsertarCodigo.Text = "";
-            conectar.Close();
+          
         }
         public void limpiarTextbox()
         {
@@ -365,12 +358,12 @@ namespace MysqlTienda
             this.Close();
         }
 
-        string id = "";
+        string id,codigo,referencia,producto,tamano,cantidad,precio,total,costo,mayor,detal,costoTotal = "0";
+
+        
         public void codigoCambia()
         {
-            sumaTotal();
-            bool prueba = false;
-
+            
             try
             {
                 cerrarConeccion();
@@ -394,13 +387,13 @@ namespace MysqlTienda
                     labelDetal.Text = mdr.GetString("precioDetal");
                     textBoxCostoTotal.Text = mdr.GetString("costo");
                     labelCostoTotal.Text = Convert.ToString(Convert.ToDecimal(labelCosto.Text) * Convert.ToDecimal(textCantidad.Text));
-                    prueba = true;
+                    insertarCodigo();
                     restarInventario();
+                    sumaTotal();
                 }
                 else
                 {
-                    //MessageBox.Show("no encontrado");
-                    prueba = false;
+                                       
                 }
                 cerrarConeccion();
             }
@@ -409,10 +402,7 @@ namespace MysqlTienda
                 cerrarConeccion();
             }
 
-            if (prueba == true)
-            {
-                insertarCodigo();
-            }
+           
         }
         public void restarInventario()
         {
@@ -511,21 +501,19 @@ namespace MysqlTienda
                 if (mdr.Read())
                 {
                     labelCedula.Text = mdr.GetString("cc");
-                    labelVendedor.Text = mdr.GetString("nombre");
-                    MessageBox.Show("Login exitoso");
-                    labelAlmacen.Text = buniTextUsuario.Text;
-                    //this.Size = new Size(1339, 637);
-                    textInsertarCodigo.Enabled = true;
-                    //buniMaxMin.Enabled = true;
+                    labelVendedor.Text = mdr.GetString("nombre");                    
+                    labelAlmacen.Text = buniTextUsuario.Text;                   
+                    textInsertarCodigo.Enabled = true;                  
                     cerrarConeccion();
-                    cargarDatagridviews();
+                    cargarCiudades();
+                    //cargarDatagridviews();
                     label15.Visible = true;
-                    buscarFactura();
-                    //buscarFactura(0, "SELECT * FROM wkimfbdc_easyerp2.detalle_facturacov order by factura_movimiento_nf where id = LAST_INSERT_ID");
+                    buscarFactura();                   
                     iniciarTablaVentas("");
                     sumaTotal();
-                    cargarComboboxes();
+                    //cargarComboboxes();
                     colocarFormatoDecimalDataGrids();
+                    MessageBox.Show("Login exitoso");
 
                 }
                 else
@@ -3460,6 +3448,12 @@ namespace MysqlTienda
             cargarPermisosPorAlmacen();
             cargarCiudadesPermisosAlamacen();
             cargarCiudadesGastos();
+        }
+
+        private void button2_Click_4(object sender, EventArgs e)
+        {
+            login Formulariologin = new login();           
+            Formulariologin.Show();
         }
 
         private void bunifuFlatButton9_Click_1(object sender, EventArgs e)

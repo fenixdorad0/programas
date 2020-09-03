@@ -78,3 +78,4 @@ C:\informacion\Programas\MysqlTienda 3\MysqlTienda\obj\Debug\MysqlTienda.Form2.r
 C:\informacion\Programas\MysqlTienda 3\MysqlTienda\obj\Debug\MysqlTienda.Form3.resources
 C:\informacion\Programas\MysqlTienda 3\MysqlTienda\obj\Debug\MysqlTienda.Form4.resources
 C:\informacion\Programas\MysqlTienda 3\MysqlTienda\obj\Debug\MysqlTienda.csproj.CoreCompileInputs.cache
+C:\informacion\Programas\MysqlTienda 3\MysqlTienda\obj\Debug\MysqlTienda.login.resources
