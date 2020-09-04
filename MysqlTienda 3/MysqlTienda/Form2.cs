@@ -17,7 +17,7 @@ namespace MysqlTienda
     public partial class Form2 : Form
     {
       
-         MySqlConnection conectar = new MySqlConnection("datasource=50.31.174.57;port=3306;username=wkimfbdc_fenix0160;password=n053454p0.54p0;SslMode=none");
+         MySqlConnection conectar = new MySqlConnection("datasource = localhost; port=3306;username=root;password=;SslMode=none");
         MySqlCommand command;
         public bool datafono = true, efectivo =true, credito=true, qr=true, apartado = true;
         
@@ -272,14 +272,14 @@ namespace MysqlTienda
                     {
                         //
                         MessageBox.Show("cotización realizada");
-                        insertarDatos("DELETE FROM wkimfbdc_easyerp2.factura_movimiento WHERE nf='"+factura+"' and almacen_nombre='"+ciudad+"'");
-                        insertarDatos("DELETE FROM wkimfbdc_easyerp2.detalle_facturacov WHERE factura='" + factura + "' and almacen='" + ciudad + "'");
+                        insertarDatos("DELETE FROM easyerp.factura_movimiento WHERE nf='"+factura+"' and almacen_nombre='"+ciudad+"'");
+                        insertarDatos("DELETE FROM easyerp.detalle_facturacov WHERE factura='" + factura + "' and almacen='" + ciudad + "'");
                         //formulario1.respuestaFormulario = "cotizacion";
                     }
                     else
                     {
                         //DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")
-                        insertarDatos("INSERT INTO wkimfbdc_easyerp2.metodo_pago_detallado (`ID`, `nf`, `efectivo`, `datafono`, `credito`, `apartado`, `cotizacion`, `ciudad`, `total`, `vueltas`, `pagoCon`, `fecha`) VALUES (NULL, '" + factura + "', '" + Convert.ToString(resultadoEfectivo) + "', '" + TextboxDatafono.Text + "', '" + TextboxCredito.Text + "', '" + TextboxApartado.Text + "', 'true', '" + ciudad + "', '" + Convert.ToString(total) + "', '" + (Convert.ToString(Convert.ToDouble(TextboxPago.Text) - total)) + "', '" + TextboxPago.Text + "', '" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "')");
+                        insertarDatos("INSERT INTO easyerp.metodo_pago_detallado (`ID`, `nf`, `efectivo`, `datafono`, `credito`, `apartado`, `cotizacion`, `ciudad`, `total`, `vueltas`, `pagoCon`, `fecha`) VALUES (NULL, '" + factura + "', '" + Convert.ToString(resultadoEfectivo) + "', '" + TextboxDatafono.Text + "', '" + TextboxCredito.Text + "', '" + TextboxApartado.Text + "', 'true', '" + ciudad + "', '" + Convert.ToString(total) + "', '" + (Convert.ToString(Convert.ToDouble(TextboxPago.Text) - total)) + "', '" + TextboxPago.Text + "', '" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "')");
 
                         //formulario1.respuestaFormulario = "venta";
 
