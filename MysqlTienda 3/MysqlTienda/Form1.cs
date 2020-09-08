@@ -14,9 +14,10 @@ using MySql.Data.MySqlClient;
 
 namespace MysqlTienda
 {
-
+   
     public partial class Form1 : Form
     {
+        String a = "datasource=localhost;port=3306;username=root;password=;SslMode=none";
         MySqlConnection conectar = new MySqlConnection("datasource=localhost;port=3306;username=root;password=;SslMode=none");
 
         MySqlCommand command;
@@ -100,6 +101,7 @@ namespace MysqlTienda
             {
                 cerrarConeccion();
             }
+
 
         }
         public void Form1_Load(object sender, EventArgs e)
@@ -590,7 +592,7 @@ namespace MysqlTienda
             {
                 
                 //carga las ciudades en un combo box importantisimo
-                using (MySqlConnection c = new MySqlConnection("datasource=localhost;port=3306;username=root;password=;SslMode=none"))
+                using (MySqlConnection c = new MySqlConnection(a))
                 {
                     c.Open();
                     var sql = "SELECT cc FROM easyerp.usuario";
@@ -614,7 +616,7 @@ namespace MysqlTienda
             try
             {
                 //carga las ciudades en un combo box importantisimo
-                using (MySqlConnection c = new MySqlConnection("datasource=localhost;port=3306;username=root;password=;SslMode=none"))
+                using (MySqlConnection c = new MySqlConnection(a))
                 {
                     c.Open();
                    
@@ -639,7 +641,7 @@ namespace MysqlTienda
             try
             {
                 //carga las ciudades en un combo box importantisimo
-                using (MySqlConnection c = new MySqlConnection("datasource=localhost;port=3306;username=root;password=;SslMode=none"))
+                using (MySqlConnection c = new MySqlConnection(a))
                 {
                     c.Open();
                     var sql = "SELECT nombre FROM easyerp.departamento";
@@ -663,7 +665,7 @@ namespace MysqlTienda
             try
             {
                 //carga las ciudades en un combo box importantisimo
-                using (MySqlConnection c = new MySqlConnection("datasource=localhost;port=3306;username=root;password=;SslMode=none"))
+                using (MySqlConnection c = new MySqlConnection(a))
                 {
                     c.Open();
                     var sql = "SELECT nombre FROM easyerp.tamano";
@@ -687,7 +689,7 @@ namespace MysqlTienda
             try
             {
                 //carga las ciudades en un combo box importantisimo
-                using (MySqlConnection c = new MySqlConnection("datasource=localhost;port=3306;username=root;password=;SslMode=none"))
+                using (MySqlConnection c = new MySqlConnection(a))
                 {
                     c.Open();
                     var sql = "SELECT nombre FROM easyerp.almacen_fabrica";
@@ -711,7 +713,7 @@ namespace MysqlTienda
         {
             try
             {
-                using (MySqlConnection c = new MySqlConnection("datasource=localhost;port=3306;username=root;password=;SslMode=none"))
+                using (MySqlConnection c = new MySqlConnection(a))
                 {
                     c.Open();
                     var sql = "SELECT cc, almacen_fabrica_nombre FROM easyerp.usuario_almacen where cc=" + labelCedula.Text + "";
@@ -737,7 +739,7 @@ namespace MysqlTienda
         {
             try
             {
-                using (MySqlConnection c = new MySqlConnection("datasource=localhost;port=3306;username=root;password=;SslMode=none"))
+                using (MySqlConnection c = new MySqlConnection(a))
                 {
                     c.Open();
                     var sql = "SELECT cc, almacen_fabrica_nombre FROM easyerp.usuario_almacen where cc=" + labelCedula.Text + "";
@@ -763,7 +765,7 @@ namespace MysqlTienda
         {
             try
             {
-                using (MySqlConnection c = new MySqlConnection("datasource=localhost;port=3306;username=root;password=;SslMode=none"))
+                using (MySqlConnection c = new MySqlConnection(a))
                 {
                     c.Open();
                     var sql = "SELECT nombre,descripcion,entradaOgasto FROM easyerp.tipo_gasto_entrada WHERE entradaOgasto = 'gasto'";
@@ -789,7 +791,7 @@ namespace MysqlTienda
         {
             try
             {
-                using (MySqlConnection c = new MySqlConnection("datasource=localhost;port=3306;username=root;password=;SslMode=none"))
+                using (MySqlConnection c = new MySqlConnection(a))
                 {
                     c.Open();
                     var sql = "SELECT nombre,descripcion,entradaOgasto FROM easyerp.tipo_gasto_entrada WHERE entradaOgasto = 'entrada'";
@@ -815,7 +817,7 @@ namespace MysqlTienda
         {
             try
             {
-                using (MySqlConnection c = new MySqlConnection("datasource=localhost;port=3306;username=root;password=;SslMode=none"))
+                using (MySqlConnection c = new MySqlConnection(a))
                 {
                     c.Open();
                     var sql = "SELECT cc, almacen_fabrica_nombre FROM easyerp.usuario_almacen where cc=" + labelCedula.Text + "";
@@ -841,7 +843,7 @@ namespace MysqlTienda
         {
             try
             {
-                using (MySqlConnection c = new MySqlConnection("datasource=localhost;port=3306;username=root;password=;SslMode=none"))
+                using (MySqlConnection c = new MySqlConnection(a))
                 {
                     c.Open();
                     var sql = "SELECT cc, almacen_fabrica_nombre FROM easyerp.usuario_almacen where cc=" + labelCedula.Text + "";
@@ -869,7 +871,7 @@ namespace MysqlTienda
             try
             {
                 //carga las ciudades en un combo box importantisimo
-                using (MySqlConnection c = new MySqlConnection("datasource=localhost;port=3306;username=root;password=;SslMode=none"))
+                using (MySqlConnection c = new MySqlConnection(a))
                 {
                     c.Open();
                     var sql = "SELECT nombre FROM easyerp.almacen_fabrica";
@@ -1034,7 +1036,7 @@ namespace MysqlTienda
                 sumaTotal();
                 
             }
-            MessageBox.Show("Actualmente se encuentra en " + comboBoxCiudad.Text);
+           
 
 
         }
@@ -3675,6 +3677,11 @@ namespace MysqlTienda
         private void textInsertarCodigo_TextChanged_1(object sender, EventArgs e)
         {
             codigoCambia();
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
 
         /*
