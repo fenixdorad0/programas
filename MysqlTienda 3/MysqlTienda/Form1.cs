@@ -3684,6 +3684,11 @@ namespace MysqlTienda
 
         }
 
+        private void bunifuCustomDataGrid1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
         /*
 
         */
