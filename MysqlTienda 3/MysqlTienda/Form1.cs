@@ -904,17 +904,17 @@ namespace MysqlTienda
 
             try
             {
-                /*
-                Bunifu.Framework.UI.BunifuCustomDataGrid dataGridPermisosPorAlmacen = DataGridPermisosPorAlmacen;
-                comboBoxUsuPerAlm.Text = dataGridPermisosPorAlmacen.CurrentRow.Cells[0].Value.ToString();
+                
+               
+                comboBoxUsuPerAlm.Text = DataGridPermisosPorAlmacen.CurrentRow.Cells[0].Value.ToString();
                 comboBoxCedulaPermiAlmace.Text = DataGridPermisosPorAlmacen.CurrentRow.Cells[1].Value.ToString();
-                */
+                
             }
             catch
             {
-                /*
-                MessageBox.Show(Convert.ToString(error));
-                */
+                
+         
+                
             }
 
         }
@@ -1476,17 +1476,7 @@ namespace MysqlTienda
 
         public void DataGridAlmacen_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            try
-            {
-                TextboxNombreAlmacen.text = DataGridAlmacen.CurrentRow.Cells[0].Value.ToString();
-                TextboxDescripcionAlmacen.text = DataGridAlmacen.CurrentRow.Cells[1].Value.ToString();
-                comboBoxTipoAlmacen.Text = DataGridAlmacen.CurrentRow.Cells[2].Value.ToString();
-
-            }
-            catch (Exception error)
-            {
-                MessageBox.Show("El error es :" + Convert.ToString(error) + "el error se encuentra cargando los datos");
-            }
+           
         }
 
         public void DataGridAlmacen_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -1644,16 +1634,7 @@ namespace MysqlTienda
 
         public void DataGridDepartamento_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            try
-            {
-                TextboxDepartamentoNombre.text = DataGridDepartamento.CurrentRow.Cells[0].Value.ToString();
-                TextboxDescripcionDepartamento.text = DataGridDepartamento.CurrentRow.Cells[1].Value.ToString();
-
-            }
-            catch (Exception error)
-            {
-                MessageBox.Show("El error es :" + Convert.ToString(error) + "el error se encuentra cargando los datos");
-            }
+            
         }
 
         public void bunifuFlatButton14_Click(object sender, EventArgs e)
@@ -1665,16 +1646,7 @@ namespace MysqlTienda
 
         public void DataGridTamano_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            try
-            {
-                TextboxTamañoNombre.text = DataGridTamano.CurrentRow.Cells[0].Value.ToString();
-                TextboxDescripcionTamano.text = DataGridTamano.CurrentRow.Cells[1].Value.ToString();
-
-            }
-            catch (Exception error)
-            {
-                MessageBox.Show("El error es :" + Convert.ToString(error) + "el error se encuentra cargando los datos");
-            }
+           
         }
 
         public void bunifuFlatButton7_Click(object sender, EventArgs e)
@@ -1710,10 +1682,7 @@ namespace MysqlTienda
             cargarComboboxes();
         }
 
-        public void DataGridProductos_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            CargarProductosconClick();
-        }
+      
 
         public void DataGridProductos_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -2474,7 +2443,7 @@ namespace MysqlTienda
 
         private void DataGridGastos_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            idGasto();
+            
         }
 
         private void idGasto()
@@ -2708,6 +2677,7 @@ namespace MysqlTienda
                 else
                 {
                 }
+
                 cerrarConeccion();
             }
             catch
@@ -2724,17 +2694,7 @@ namespace MysqlTienda
 
         private void DataGridTipoGasto_CellClick_1(object sender, DataGridViewCellEventArgs e)
         {
-            try
-            {
-                TextboxTipoGastoNombre.Text = "asdasdas";
-                LabelTipoGastoNombre.Text = DataGridTipoGasto.CurrentRow.Cells[0].Value.ToString();
-                TextboxTipoGastoDescripcion.text = DataGridTipoGasto.CurrentRow.Cells[1].Value.ToString();
-
-            }
-            catch (Exception error)
-            {
-                MessageBox.Show("El error es :" + Convert.ToString(error) + "el error se encuentra cargando los datos tipo de gastos");
-            }
+          
         }
 
         private void DataGridTipoGasto_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -2799,19 +2759,7 @@ namespace MysqlTienda
 
         private void DataGridEntrada_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            try
-            {
-                LabelIdEntrada2.Text = DataGridEntrada.CurrentRow.Cells[0].Value.ToString();
-                TextboxTotalEntrada.text = DataGridEntrada.CurrentRow.Cells[1].Value.ToString();
-                LabelFechaEntrada2.Text = DataGridEntrada.CurrentRow.Cells[2].Value.ToString();
-                TextboxDescipcionEntrada.text = DataGridEntrada.CurrentRow.Cells[3].Value.ToString();
-                //comboBoxAlmacenEntrada.Text = DataGridGastos.CurrentRow.Cells[5].Value.ToString();
-                //comboBoxCategoriaEntrada.Text = DataGridGastos.CurrentRow.Cells[6].Value.ToString();
-            }
-            catch
-            {
-
-            }
+           
 
         }
 
@@ -2861,16 +2809,7 @@ namespace MysqlTienda
 
         private void DataGridTipoEntrada_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            try
-            {
-                LabelNombreTipoEntrada.Text = DataGridTipoEntrada.CurrentRow.Cells[0].Value.ToString();
-                TextboxDescripcionTipoEntrada.text = DataGridTipoEntrada.CurrentRow.Cells[1].Value.ToString();
-
-            }
-            catch (Exception error)
-            {
-                MessageBox.Show("El error es :" + Convert.ToString(error) + "el error se encuentra cargando los datos tipo de gastos");
-            }
+            
         }
 
         private void buscarProducto(string palabraClave, string detalMayor)
@@ -3687,6 +3626,151 @@ namespace MysqlTienda
         private void bunifuCustomDataGrid1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void bunifuFlatButton6_Click_2(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DataGridPermisosPorAlmacen_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            
+        }
+
+        private void DataGridPermisosPorAlmacen_CellClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+            cargaTablaPermisosPorAlmacen();
+        }
+
+        private void DataGridProductos_CellClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+            CargarProductosconClick();
+        }
+
+        private void bunifuCustomDataGridUsuarios_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            cargarDatosTablaUsuario();
+        }
+
+        private void DataGridDepartamento_CellClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+            cargarTableDepartamentoClickDataGridView();
+        }
+
+        private void cargarTableDepartamentoClickDataGridView()
+        {
+            try
+            {
+                TextboxDepartamentoNombre.text = DataGridDepartamento.CurrentRow.Cells[0].Value.ToString();
+                TextboxDescripcionDepartamento.text = DataGridDepartamento.CurrentRow.Cells[1].Value.ToString();
+
+            }
+            catch (Exception error)
+            {
+                MessageBox.Show("El error es :" + Convert.ToString(error) + "el error se encuentra cargando los datos");
+            }
+        }
+
+        private void DataGridTamano_CellClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
+                TextboxTamañoNombre.text = DataGridTamano.CurrentRow.Cells[0].Value.ToString();
+                TextboxDescripcionTamano.text = DataGridTamano.CurrentRow.Cells[1].Value.ToString();
+
+            }
+            catch (Exception error)
+            {
+                MessageBox.Show("El error es :" + Convert.ToString(error) + "el error se encuentra cargando los datos");
+            }
+        }
+
+        private void DataGridAlmacen_CellClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
+                TextboxNombreAlmacen.text = DataGridAlmacen.CurrentRow.Cells[0].Value.ToString();
+                TextboxDescripcionAlmacen.text = DataGridAlmacen.CurrentRow.Cells[1].Value.ToString();
+                comboBoxTipoAlmacen.Text = DataGridAlmacen.CurrentRow.Cells[2].Value.ToString();
+
+            }
+            catch (Exception error)
+            {
+                MessageBox.Show("El error es :" + Convert.ToString(error) + "el error se encuentra cargando los datos");
+            }
+        }
+
+        private void DataGridEntrada_CellClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
+                LabelIdEntrada2.Text = DataGridEntrada.CurrentRow.Cells[0].Value.ToString();
+                TextboxTotalEntrada.text = DataGridEntrada.CurrentRow.Cells[1].Value.ToString();
+                LabelFechaEntrada2.Text = DataGridEntrada.CurrentRow.Cells[2].Value.ToString();
+                TextboxDescipcionEntrada.text = DataGridEntrada.CurrentRow.Cells[3].Value.ToString();
+                //comboBoxAlmacenEntrada.Text = DataGridGastos.CurrentRow.Cells[5].Value.ToString();
+                //comboBoxCategoriaEntrada.Text = DataGridGastos.CurrentRow.Cells[6].Value.ToString();
+            }
+            catch
+            {
+
+            }
+        }
+
+        private void DataGridTipoEntrada_CellClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
+                LabelNombreTipoEntrada.Text = DataGridTipoEntrada.CurrentRow.Cells[0].Value.ToString();
+                TextboxDescripcionTipoEntrada.text = DataGridTipoEntrada.CurrentRow.Cells[1].Value.ToString();
+
+            }
+            catch (Exception error)
+            {
+                MessageBox.Show("El error es :" + Convert.ToString(error) + "el error se encuentra cargando los datos tipo de gastos");
+            }
+        }
+
+        private void DataGridGastos_CellClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+            idGasto();
+        }
+
+        private void DataGridTipoGasto_CellClick_2(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
+                TextboxTipoGastoNombre.Text = "asdasdas";
+                LabelTipoGastoNombre.Text = DataGridTipoGasto.CurrentRow.Cells[0].Value.ToString();
+                TextboxTipoGastoDescripcion.text = DataGridTipoGasto.CurrentRow.Cells[1].Value.ToString();
+
+            }
+            catch (Exception error)
+            {
+                MessageBox.Show("El error es :" + Convert.ToString(error) + "el error se encuentra cargando los datos tipo de gastos");
+            }
+        }
+
+        private void DataGridClientesProvedores_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
+                
+                clienteCedulaText.Text = DataGridClientesProvedores.CurrentRow.Cells[0].Value.ToString();
+                clienteCorreoText.Text = DataGridClientesProvedores.CurrentRow.Cells[1].Value.ToString();
+                clienteCelularText.Text = DataGridClientesProvedores.CurrentRow.Cells[2].Value.ToString();
+                clienteNombreText.Text = DataGridClientesProvedores.CurrentRow.Cells[3].Value.ToString();
+                clienteGeneroText.Text = DataGridClientesProvedores.CurrentRow.Cells[4].Value.ToString();
+                clienteEdadText.Text = DataGridClientesProvedores.CurrentRow.Cells[5].Value.ToString();
+                clienteTipoPersonaCombobox.Text = DataGridClientesProvedores.CurrentRow.Cells[6].Value.ToString();
+                cientePuntosText.Text = DataGridClientesProvedores.CurrentRow.Cells[7].Value.ToString();
+                cienteMayoristaCombobox.Text = DataGridClientesProvedores.CurrentRow.Cells[8].Value.ToString();
+            }
+            catch
+            {
+
+            }
         }
 
         /*
