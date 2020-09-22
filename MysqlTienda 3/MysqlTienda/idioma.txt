@@ -1,0 +1,29 @@
+//main page
+|labelAccount| = account
+|buniTextUser|= user
+|buniTextPass|= password
+|forgetPassword|= forget your Password?
+//sells
+
+|labelInvoice1| = invoice
+|labelInvoiceNumber| = Invoice Number
+|labelDateInvoice| = labelDateInvoice
+|labelInvoiceFrom1| = invoice from:
+|TextboxCustomerName| = CUSTOMER NAME
+|labelMessageEnd| = thanks for your bussines
+|labelCode| = code
+|labelReference| = reference
+|labelProduct| = labelProduct 
+|labelSize| = size
+|labelQuantity| = Quantity
+|labelPrice| = price
+|textTotal| = total
+|labelEnterprise| = alteza
+|labelInvoiceFrom| = Invoice From:
+|txt_celphone| = cellphone
+|labelTotalSells| = $
+|buttonDeleteContentInvoice| = Delete
+|buttonSubstractProduct| = -1 product
+|buttonModifySell| = Modify
+|butttonFinalizarVentas| = Finalizar
+|butttonFinishSells| = finish

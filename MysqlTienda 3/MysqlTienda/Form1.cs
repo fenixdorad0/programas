@@ -108,18 +108,18 @@ namespace MysqlTienda
         {
             ///buniMaxMin.Enabled = false;
             //this.Size = new Size(240, 637);
-            textInsertarCodigo.Enabled = false;
+            textInsertCode.Enabled = false;
         }
         public void iniciarTablaVentas(string baseDatos)
         {
             try
             {
                 cerrarConeccion();
-                string selectQuery = "select codigo,referencia,producto,tamano, cantidad, precio,total FROM easyerp.detalle_facturacov where factura =" + textFactura.Text + " and almacen='" + comboBoxCiudad.Text + "'";
+                string selectQuery = "select codigo,referencia,producto,tamano, cantidad, precio,total FROM easyerp.detalle_facturacov where factura =" + textInvoiceNumber.Text + " and almacen='" + comboBoxCiudad.Text + "'";
                 DataTable table = new DataTable();
                 MySqlDataAdapter adpter = new MySqlDataAdapter(selectQuery, conectar);
                 adpter.Fill(table);
-                DataGridVentas.DataSource = table;
+                labelMessageEnd.DataSource = table;
                 cerrarConeccion();
             }
             catch (Exception error)
@@ -139,8 +139,8 @@ namespace MysqlTienda
             try
             {
                 cerrarConeccion();
-                double precio = Convert.ToDouble(textTotal.Text) / Convert.ToDouble(textCantidad.Text);
-                string insertarCodigo = "UPDATE easyerp.detalle_facturacov SET cantidad = cantidad+1, total =precio*cantidad, costoTotal=costo*cantidad  WHERE `detalle_facturacov`.`factura` =" + textFactura.Text + " AND `detalle_facturacov`.`codigo` = " + textCodigo.Text + " and almacen='" + comboBoxCiudad.Text + "'";
+                double precio = Convert.ToDouble(textTotal.Text) / Convert.ToDouble(textQuantity.Text);
+                string insertarCodigo = "UPDATE easyerp.detalle_facturacov SET cantidad = cantidad+1, total =precio*cantidad, costoTotal=costo*cantidad  WHERE `detalle_facturacov`.`factura` =" + textInvoiceNumber.Text + " AND `detalle_facturacov`.`codigo` = " + textCode.Text + " and almacen='" + comboBoxCiudad.Text + "'";
                 conectar.Open();
                 MySqlCommand command = new MySqlCommand(insertarCodigo, conectar);
 
@@ -154,14 +154,14 @@ namespace MysqlTienda
                 {
                     cerrarConeccion();
                     string insertarCodigo2 = "INSERT INTO easyerp.detalle_facturacov(`factura`,`fecha`, `almacen`, `codigo`, `referencia`, `producto`, `tamano`, `cantidad`, `precio`,`costo`, `iva`, `SubtotalSinIva`, `SubtotalConIva`, `total`, `costoTotal`, `id`) VALUES ('"
-                    + textFactura.Text + "', '" //factura
+                    + textInvoiceNumber.Text + "', '" //factura
                     + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "', '"
                     + comboBoxCiudad.Text + "', '" //almacen falta por arreglar
-                    + textInsertarCodigo.Text + "', '" //codigo 
-                    + textReferencia.Text + "','"
-                    + textProducto.Text + "','" //                    
-                    + textTamano.Text + "','"
-                    + textCantidad.Text + "','"
+                    + textInsertCode.Text + "', '" //codigo 
+                    + textReference.Text + "','"
+                    + textProduct.Text + "','" //                    
+                    + textSize.Text + "','"
+                    + textQuantity.Text + "','"
                     + textPrecio.Text + "','"
                     + textBoxCostoTotal.Text + "','"
                     + "0" + "','" //iva
@@ -175,7 +175,7 @@ namespace MysqlTienda
                     if (command2.ExecuteNonQuery() == 1)
                     {
                         iniciarTablaVentas("");
-                        textInsertarCodigo.Text = "";
+                        textInsertCode.Text = "";
                         //MessageBox.Show("Dato insertado");
                         cerrarConeccion();
                     }
@@ -194,18 +194,18 @@ namespace MysqlTienda
                 cerrarConeccion();
                 MessageBox.Show(error.Message + "update o sumando!");
             }
-            textInsertarCodigo.Text = "";
+            textInsertCode.Text = "";
             conectar.Close();
         }
         public void limpiarTextbox()
         {
-            textInsertarCodigo.Text = null;
-            textReferencia.Text = null;
-            textProducto.Text = null;
-            textCantidad.Text = null;
+            textInsertCode.Text = null;
+            textReference.Text = null;
+            textProduct.Text = null;
+            textQuantity.Text = null;
             textPrecio.Text = null;
             textTotal.Text = null;
-            textTamano.Text = null;
+            textSize.Text = null;
         }
 
         public void modificar_Click(object sender, EventArgs e)
@@ -219,7 +219,7 @@ namespace MysqlTienda
             try
             {
                 MySqlCommand cmd = new MySqlCommand();      
-                cmd.CommandText = "select sum(total) from easyerp.detalle_facturacov where factura=" + textFactura.Text + " and almacen='" + comboBoxCiudad.Text + "'";
+                cmd.CommandText = "select sum(total) from easyerp.detalle_facturacov where factura=" + textInvoiceNumber.Text + " and almacen='" + comboBoxCiudad.Text + "'";
                 cmd.CommandType = System.Data.CommandType.Text;
                 cmd.Connection = conectar;
                 conectar.Open();
@@ -227,7 +227,7 @@ namespace MysqlTienda
                 conectar.Close();
                 convertirDecimales();
                 MySqlCommand cmd2 = new MySqlCommand();
-                cmd2.CommandText = "select sum(costoTotal) from easyerp.detalle_facturacov where factura=" + textFactura.Text + " and almacen='" + comboBoxCiudad.Text + "'";
+                cmd2.CommandText = "select sum(costoTotal) from easyerp.detalle_facturacov where factura=" + textInvoiceNumber.Text + " and almacen='" + comboBoxCiudad.Text + "'";
                 cmd2.CommandType = System.Data.CommandType.Text;
                 cmd2.Connection = conectar;
                 conectar.Open();
@@ -252,7 +252,7 @@ namespace MysqlTienda
                 mdr = command.ExecuteReader();
                 if (mdr.Read())
                 {
-                    textFactura.Text = Convert.ToString(Convert.ToInt16(mdr.GetString("nf")) + numero);
+                    textInvoiceNumber.Text = Convert.ToString(Convert.ToInt16(mdr.GetString("nf")) + numero);
                 }
                 else
                 {
@@ -266,7 +266,7 @@ namespace MysqlTienda
                 int valor = mensaje.LastIndexOf("valor Null");
                 if (valor >= 0)
                 {
-                    textFactura.Text = "1";
+                    textInvoiceNumber.Text = "1";
                 }
                 else
                 {
@@ -288,7 +288,7 @@ namespace MysqlTienda
             try
             {
                 cerrarConeccion();
-                string insertarCodigo = "UPDATE easyerp.detalle_facturacov SET vendido='si' WHERE `detalle_facturacov`.`factura` ='" + textFactura.Text + "' and almacen='" + comboBoxCiudad.Text + "'";
+                string insertarCodigo = "UPDATE easyerp.detalle_facturacov SET vendido='si' WHERE `detalle_facturacov`.`factura` ='" + textInvoiceNumber.Text + "' and almacen='" + comboBoxCiudad.Text + "'";
                 conectar.Open();
                 MySqlCommand command = new MySqlCommand(insertarCodigo, conectar);
                 //if (command.ExecuteNonQuery() == 1){}else{}
@@ -305,7 +305,7 @@ namespace MysqlTienda
         public void finalizarCerrarFactura()
         {
             finalizarFactura();
-            textInsertarCodigo.Text = "";
+            textInsertCode.Text = "";
             iniciarTablaVentas("");
             textSumaTotal.Text = "";
             buscarFactura();
@@ -318,7 +318,7 @@ namespace MysqlTienda
             try
             {
 
-                string insertarCodigo = "UPDATE easyerp.factura_movimiento SET deuda = deuda WHERE nf =" + textFactura.Text + " and almacen_nombre='" + comboBoxCiudad.Text + "'";
+                string insertarCodigo = "UPDATE easyerp.factura_movimiento SET deuda = deuda WHERE nf =" + textInvoiceNumber.Text + " and almacen_nombre='" + comboBoxCiudad.Text + "'";
                 conectar.Open();
                 MySqlCommand command = new MySqlCommand(insertarCodigo, conectar);
                 if (command.ExecuteNonQuery() == 1){/*  MessageBox.Show("Dato actualiza suma"); */}
@@ -328,7 +328,7 @@ namespace MysqlTienda
                     //MessageBox.Show(DateTime.Now.ToString("yyyy-MM-dd"));
                     //MessageBox.Show("se ejecuto el ingresodel producto");
                     string insertarCodigo2 = "INSERT INTO easyerp.factura_movimiento(`nf`, `fecha`, `total`,`costo`, `deuda`, `cliente_provedor_cc`, `pago_dividido_id`, `tipo_factura_nombre`, `usuario_cc`, `almacen_nombre`) VALUES ('"
-                        + textFactura.Text + "', '" //factura
+                        + textInvoiceNumber.Text + "', '" //factura
                         + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "', '" //fecha
                         + textSumaTotal.Text + "', '" //total    
                         + labelCostoTotalizado.Text + "','" // costo
@@ -336,7 +336,7 @@ namespace MysqlTienda
                         + "1" + "','" // CC cliente o del provedor
                         + "1" + "','"  // tipo de pago efecturado
                         + "venta" + "','" //tipo de factura o movimiento
-                        + labelCedula.Text + "','" //cedula del vendedor
+                        + labeCard.Text + "','" //cedula del vendedor
                         + comboBoxCiudad.Text + "')"; //almacen               
                     convertirDecimales();
                     conectar.Open();
@@ -378,25 +378,25 @@ namespace MysqlTienda
             {
                 cerrarConeccion();
                 MySqlDataReader mdr;
-                string select = "SELECT * FROM easyerp.producto where codigo =" + int.Parse(textInsertarCodigo.Text) + " and almacen_fabrica_nombre='" + comboBoxCiudad.Text + "'";
+                string select = "SELECT * FROM easyerp.producto where codigo =" + int.Parse(textInsertCode.Text) + " and almacen_fabrica_nombre='" + comboBoxCiudad.Text + "'";
                 command = new MySqlCommand(select, conectar);
                 abrirConeccion();
                 mdr = command.ExecuteReader();
                 if (mdr.Read())
                 {
                     id = mdr.GetString("id");
-                    textCodigo.Text = mdr.GetString("codigo");
-                    textReferencia.Text = mdr.GetString("referencia");
-                    textProducto.Text = mdr.GetString("nombre");
-                    textTamano.Text = mdr.GetString("tamano_nombre");
-                    textCantidad.Text = "1";
+                    textCode.Text = mdr.GetString("codigo");
+                    textReference.Text = mdr.GetString("referencia");
+                    textProduct.Text = mdr.GetString("nombre");
+                    textSize.Text = mdr.GetString("tamano_nombre");
+                    textQuantity.Text = "1";
                     textPrecio.Text = mdr.GetString("precioDetal");
-                    textTotal.Text = Convert.ToString(Convert.ToDecimal(textPrecio.Text) * Convert.ToDecimal(textCantidad.Text));
+                    textTotal.Text = Convert.ToString(Convert.ToDecimal(textPrecio.Text) * Convert.ToDecimal(textQuantity.Text));
                     labelCosto.Text = mdr.GetString("costo");
                     labelMayor.Text = mdr.GetString("percioMayor");
                     labelDetal.Text = mdr.GetString("precioDetal");
                     textBoxCostoTotal.Text = mdr.GetString("costo");
-                    labelCostoTotal.Text = Convert.ToString(Convert.ToDecimal(labelCosto.Text) * Convert.ToDecimal(textCantidad.Text));
+                    labelCostoTotal.Text = Convert.ToString(Convert.ToDecimal(labelCosto.Text) * Convert.ToDecimal(textQuantity.Text));
                     prueba = true;
                     restarInventario();
                 }
@@ -423,7 +423,7 @@ namespace MysqlTienda
             try
             {
                 cerrarConeccion();
-                string insertarCodigo = "UPDATE easyerp.producto SET cantidad = cantidad-1 WHERE `producto`.`codigo` =" + textCodigo.Text + " and almacen_fabrica_nombre='" + comboBoxCiudad.Text + "'";
+                string insertarCodigo = "UPDATE easyerp.producto SET cantidad = cantidad-1 WHERE `producto`.`codigo` =" + textCode.Text + " and almacen_fabrica_nombre='" + comboBoxCiudad.Text + "'";
                 conectar.Open();
                 MySqlCommand command = new MySqlCommand(insertarCodigo, conectar);
                 if (command.ExecuteNonQuery() == 1)
@@ -449,7 +449,7 @@ namespace MysqlTienda
             try
             {
                 cerrarConeccion();
-                string insertarCodigo = "UPDATE easyerp.producto SET cantidad = cantidad+1 WHERE `producto`.`codigo` =" + textCodigo.Text + " and almacen_fabrica_nombre='" + comboBoxCiudad.Text + "'";
+                string insertarCodigo = "UPDATE easyerp.producto SET cantidad = cantidad+1 WHERE `producto`.`codigo` =" + textCode.Text + " and almacen_fabrica_nombre='" + comboBoxCiudad.Text + "'";
                 conectar.Open();
                 MySqlCommand command = new MySqlCommand(insertarCodigo, conectar);
                 if (command.ExecuteNonQuery() == 1)
@@ -471,7 +471,7 @@ namespace MysqlTienda
             try
             {
                 cerrarConeccion();
-                string insertarCodigo = "UPDATE easyerp.producto SET cantidad = cantidad+" + textCantidad.Text + " WHERE `producto`.`codigo` =" + textCodigo.Text + " and almacen_fabrica_nombre='" + comboBoxCiudad.Text + "'";
+                string insertarCodigo = "UPDATE easyerp.producto SET cantidad = cantidad+" + textQuantity.Text + " WHERE `producto`.`codigo` =" + textCode.Text + " and almacen_fabrica_nombre='" + comboBoxCiudad.Text + "'";
                 conectar.Open();
                 MySqlCommand command = new MySqlCommand(insertarCodigo, conectar);
                 if (command.ExecuteNonQuery() == 1)
@@ -505,20 +505,20 @@ namespace MysqlTienda
             try
             {
                 //labelInsertarCodigo.Visible = true;
-                textInsertarCodigo.Visible = true;
+                textInsertCode.Visible = true;
                 MySqlDataReader mdr;
-                string select = "SELECT* FROM easyerp.usuario WHERE `usuario`.`id` ='" + buniTextUsuario.Text + "' and contrasena ='" + buniTextPass.Text + "'";
+                string select = "SELECT* FROM easyerp.usuario WHERE `usuario`.`id` ='" + buniTextUser.Text + "' and contrasena ='" + buniTextPass.Text + "'";
                 command = new MySqlCommand(select, conectar);
                 abrirConeccion();
                 mdr = command.ExecuteReader();
                 if (mdr.Read())
                 {
-                    labelCedula.Text = mdr.GetString("cc");
-                    labelVendedor.Text = mdr.GetString("nombre");
+                    labeCard.Text = mdr.GetString("cc");
+                    labelSeller.Text = mdr.GetString("nombre");
                     MessageBox.Show("Login exitoso");
-                    labelAlmacen.Text = buniTextUsuario.Text;
+                    labelAlmacen.Text = buniTextUser.Text;
                     //this.Size = new Size(1339, 637);
-                    textInsertarCodigo.Enabled = true;
+                    textInsertCode.Enabled = true;
                     //buniMaxMin.Enabled = true;
                     cerrarConeccion();
                     cargarDatagridviews();
@@ -559,8 +559,8 @@ namespace MysqlTienda
         {
             try
             {
-                DataGridVentas.Columns[5].DefaultCellStyle.Format = "#,#";
-                DataGridVentas.Columns[6].DefaultCellStyle.Format = "#,#";
+                labelMessageEnd.Columns[5].DefaultCellStyle.Format = "#,#";
+                labelMessageEnd.Columns[6].DefaultCellStyle.Format = "#,#";
                 DataGridProductos.Columns[4].DefaultCellStyle.Format = "#,#";
                 DataGridProductos.Columns[5].DefaultCellStyle.Format = "#,#";
                 DataGridProductos.Columns[6].DefaultCellStyle.Format = "#,#";
@@ -716,7 +716,7 @@ namespace MysqlTienda
                 using (MySqlConnection c = new MySqlConnection(a))
                 {
                     c.Open();
-                    var sql = "SELECT cc, almacen_fabrica_nombre FROM easyerp.usuario_almacen where cc=" + labelCedula.Text + "";
+                    var sql = "SELECT cc, almacen_fabrica_nombre FROM easyerp.usuario_almacen where cc=" + labeCard.Text + "";
                     using (MySqlCommand cmd = new MySqlCommand(sql, c))
                     {
                         var dt = new DataTable();
@@ -742,7 +742,7 @@ namespace MysqlTienda
                 using (MySqlConnection c = new MySqlConnection(a))
                 {
                     c.Open();
-                    var sql = "SELECT cc, almacen_fabrica_nombre FROM easyerp.usuario_almacen where cc=" + labelCedula.Text + "";
+                    var sql = "SELECT cc, almacen_fabrica_nombre FROM easyerp.usuario_almacen where cc=" + labeCard.Text + "";
                     using (MySqlCommand cmd = new MySqlCommand(sql, c))
                     {
                         var dt = new DataTable();
@@ -820,7 +820,7 @@ namespace MysqlTienda
                 using (MySqlConnection c = new MySqlConnection(a))
                 {
                     c.Open();
-                    var sql = "SELECT cc, almacen_fabrica_nombre FROM easyerp.usuario_almacen where cc=" + labelCedula.Text + "";
+                    var sql = "SELECT cc, almacen_fabrica_nombre FROM easyerp.usuario_almacen where cc=" + labeCard.Text + "";
                     using (MySqlCommand cmd = new MySqlCommand(sql, c))
                     {
                         var dt = new DataTable();
@@ -846,7 +846,7 @@ namespace MysqlTienda
                 using (MySqlConnection c = new MySqlConnection(a))
                 {
                     c.Open();
-                    var sql = "SELECT cc, almacen_fabrica_nombre FROM easyerp.usuario_almacen where cc=" + labelCedula.Text + "";
+                    var sql = "SELECT cc, almacen_fabrica_nombre FROM easyerp.usuario_almacen where cc=" + labeCard.Text + "";
                     using (MySqlCommand cmd = new MySqlCommand(sql, c))
                     {
                         var dt = new DataTable();
@@ -944,13 +944,13 @@ namespace MysqlTienda
 
             try
             {
-                textCodigo.Text = textProducto.Text = DataGridVentas.CurrentRow.Cells[0].Value.ToString();
-                textReferencia.Text = DataGridVentas.CurrentRow.Cells[1].Value.ToString();
-                textProducto.Text = DataGridVentas.CurrentRow.Cells[2].Value.ToString();
-                textTamano.Text = DataGridVentas.CurrentRow.Cells[3].Value.ToString();
-                textCantidad.Text = DataGridVentas.CurrentRow.Cells[4].Value.ToString();
-                textPrecio.Text = DataGridVentas.CurrentRow.Cells[5].Value.ToString();
-                textTotal.Text = DataGridVentas.CurrentRow.Cells[6].Value.ToString();
+                textCode.Text = textProduct.Text = labelMessageEnd.CurrentRow.Cells[0].Value.ToString();
+                textReference.Text = labelMessageEnd.CurrentRow.Cells[1].Value.ToString();
+                textProduct.Text = labelMessageEnd.CurrentRow.Cells[2].Value.ToString();
+                textSize.Text = labelMessageEnd.CurrentRow.Cells[3].Value.ToString();
+                textQuantity.Text = labelMessageEnd.CurrentRow.Cells[4].Value.ToString();
+                textPrecio.Text = labelMessageEnd.CurrentRow.Cells[5].Value.ToString();
+                textTotal.Text = labelMessageEnd.CurrentRow.Cells[6].Value.ToString();
             }
             catch (Exception error)
             {
@@ -967,11 +967,11 @@ namespace MysqlTienda
         public void limpitarTextosVentas()
         {
 
-            textCodigo.Text = "";
-            textReferencia.Text = "";
-            textProducto.Text = "";
-            textTamano.Text = "";
-            textCantidad.Text = "";
+            textCode.Text = "";
+            textReference.Text = "";
+            textProduct.Text = "";
+            textSize.Text = "";
+            textQuantity.Text = "";
             textPrecio.Text = "";
             textTotal.Text = "";
         }
@@ -1339,7 +1339,7 @@ namespace MysqlTienda
                 cerrarConeccion();
                 MessageBox.Show(error.Message + " Error agregando permisos de usario por almacen");
             }
-            textInsertarCodigo.Text = "";
+            textInsertCode.Text = "";
             conectar.Close();
 
 
@@ -1459,7 +1459,7 @@ namespace MysqlTienda
                 MessageBox.Show(error.Message + "agregando permisos de usario por almacen");
             }
             cargarComboboxes();
-            textInsertarCodigo.Text = "";
+            textInsertCode.Text = "";
             conectar.Close();
         }
 
@@ -2495,11 +2495,11 @@ namespace MysqlTienda
                 cerrarConeccion();
                 if (gastoEntrada == "gasto")
                 {
-                    insertarCodigo = "INSERT INTO easyerp.gastoentrada (`id`, `total`, `fecha`, `descripcion`, `usuario_cc`, `almacen_nombre`, `gastoOentrada`, `categoria`) VALUES (NULL, '" + TextboxGatosTotal.Text + "', '" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "', '" + TextboxGastosDescripcion.Text + "', '" + labelCedula.Text + "', '" + comboBoxGastoAlmacen.Text + "', '" + gastoEntrada + "', '" + comboBoxGastoCatagoria.Text + "');";
+                    insertarCodigo = "INSERT INTO easyerp.gastoentrada (`id`, `total`, `fecha`, `descripcion`, `usuario_cc`, `almacen_nombre`, `gastoOentrada`, `categoria`) VALUES (NULL, '" + TextboxGatosTotal.Text + "', '" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "', '" + TextboxGastosDescripcion.Text + "', '" + labeCard.Text + "', '" + comboBoxGastoAlmacen.Text + "', '" + gastoEntrada + "', '" + comboBoxGastoCatagoria.Text + "');";
                 }
                 else
                 {
-                    insertarCodigo = "INSERT INTO easyerp.gastoentrada (`id`, `total`, `fecha`, `descripcion`, `usuario_cc`, `almacen_nombre`, `gastoOentrada`, `categoria`) VALUES (NULL, '" + TextboxTotalEntrada.text + "', '" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "', '" + TextboxDescipcionEntrada.text + "', '" + labelCedula.Text + "', '" + comboBoxAlmacenEntrada.Text + "', '" + gastoEntrada + "', '" + comboBoxCategoriaEntrada.Text + "');";
+                    insertarCodigo = "INSERT INTO easyerp.gastoentrada (`id`, `total`, `fecha`, `descripcion`, `usuario_cc`, `almacen_nombre`, `gastoOentrada`, `categoria`) VALUES (NULL, '" + TextboxTotalEntrada.text + "', '" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "', '" + TextboxDescipcionEntrada.text + "', '" + labeCard.Text + "', '" + comboBoxAlmacenEntrada.Text + "', '" + gastoEntrada + "', '" + comboBoxCategoriaEntrada.Text + "');";
                 }
 
                 conectar.Open();
@@ -2830,7 +2830,7 @@ namespace MysqlTienda
 
                     string precioMayor = mdr.GetString("percioMayor");
 
-                    string costo = Convert.ToString(Convert.ToDecimal(labelCosto.Text) * Convert.ToDecimal(textCantidad.Text));
+                    string costo = Convert.ToString(Convert.ToDecimal(labelCosto.Text) * Convert.ToDecimal(textQuantity.Text));
 
 
                 }
@@ -2856,10 +2856,10 @@ namespace MysqlTienda
             try
             {
 
-                for (int cont = 0; cont < DataGridVentas.RowCount - 1; cont++)
+                for (int cont = 0; cont < labelMessageEnd.RowCount - 1; cont++)
                 {
-                    codigoProducto = DataGridVentas.Rows[cont].Cells[0].Value.ToString();
-                    cantidadProducto = DataGridVentas.Rows[cont].Cells[4].Value.ToString();
+                    codigoProducto = labelMessageEnd.Rows[cont].Cells[0].Value.ToString();
+                    cantidadProducto = labelMessageEnd.Rows[cont].Cells[4].Value.ToString();
                     MessageBox.Show(codigoProducto + "la cntidad es" + cantidadProducto);
                     buscarProducto(codigoProducto, bandera);
                 }
@@ -2900,7 +2900,7 @@ namespace MysqlTienda
 
         private void buniTextUsuario_MouseDown(object sender, MouseEventArgs e)
         {
-            buniTextUsuario.Text = "";
+            buniTextUser.Text = "";
         }
 
         private void label15_Click(object sender, EventArgs e)
@@ -2963,7 +2963,7 @@ namespace MysqlTienda
             try
             {
                 double valor = Convert.ToDouble(textSumaTotal.Text);
-                label21.Text = "TOTAL = " + "$" + Convert.ToString(valor.ToString("0,0"));
+                labelTotalSells.Text = "TOTAL = " + "$" + Convert.ToString(valor.ToString("0,0"));
             }
             catch
             {
@@ -2977,17 +2977,17 @@ namespace MysqlTienda
         {
             try
             {
-                for (int i = 0; i < DataGridVentas.Columns.Count - 1; i++)
+                for (int i = 0; i < labelMessageEnd.Columns.Count - 1; i++)
                 {
-                    DataGridVentas.Columns[i].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+                    labelMessageEnd.Columns[i].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
                 }
-                DataGridVentas.Columns[DataGridVentas.Columns.Count - 1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+                labelMessageEnd.Columns[labelMessageEnd.Columns.Count - 1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
 
-                for (int i = 0; i < DataGridVentas.Columns.Count; i++)
+                for (int i = 0; i < labelMessageEnd.Columns.Count; i++)
                 {
-                    int colw = DataGridVentas.Columns[i].Width;
-                    DataGridVentas.Columns[i].AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
-                    DataGridVentas.Columns[i].Width = colw;
+                    int colw = labelMessageEnd.Columns[i].Width;
+                    labelMessageEnd.Columns[i].AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+                    labelMessageEnd.Columns[i].Width = colw;
                 }
 
                 for (int i = 0; i < bunifuCustomDataGridUsuarios.Columns.Count - 1; i++)
@@ -3230,7 +3230,7 @@ namespace MysqlTienda
                 MessageBox.Show(error.Message + "Elimando permisos de usario extendido");
             }
             cargarComboboxes();
-            textInsertarCodigo.Text = "";
+            textInsertCode.Text = "";
             conectar.Close();
         }
         private void bunifuFlatButton12_Click_5(object sender, EventArgs e)
@@ -3437,8 +3437,8 @@ namespace MysqlTienda
             try
             {
                 cerrarConeccion();
-                double precio = Convert.ToDouble(textTotal.Text) / Convert.ToDouble(textCantidad.Text);
-                string insertarCodigo = "DELETE FROM easyerp.detalle_facturacov WHERE `detalle_facturacov`.`factura` =" + textFactura.Text + " AND `detalle_facturacov`.`codigo` = " + textCodigo.Text + " and almacen='" + comboBoxCiudad.Text + "'";
+                double precio = Convert.ToDouble(textTotal.Text) / Convert.ToDouble(textQuantity.Text);
+                string insertarCodigo = "DELETE FROM easyerp.detalle_facturacov WHERE `detalle_facturacov`.`factura` =" + textInvoiceNumber.Text + " AND `detalle_facturacov`.`codigo` = " + textCode.Text + " and almacen='" + comboBoxCiudad.Text + "'";
                 conectar.Open();
                 MySqlCommand command = new MySqlCommand(insertarCodigo, conectar);
                 if (command.ExecuteNonQuery() == 1)
@@ -3473,10 +3473,10 @@ namespace MysqlTienda
             try
             {
 
-                if (Convert.ToInt32(textCantidad.Text) > 1)
+                if (Convert.ToInt32(textQuantity.Text) > 1)
                 {
-                    double precio = Convert.ToDouble(textTotal.Text) / Convert.ToDouble(textCantidad.Text);
-                    string insertarCodigo = "UPDATE easyerp.detalle_facturacov SET cantidad = cantidad-1, total =precio*cantidad, costoTotal =costo*cantidad  WHERE `detalle_facturacov`.`factura` =" + textFactura.Text + " AND `detalle_facturacov`.`codigo` = " + textCodigo.Text + " and almacen='" + comboBoxCiudad.Text + "'";
+                    double precio = Convert.ToDouble(textTotal.Text) / Convert.ToDouble(textQuantity.Text);
+                    string insertarCodigo = "UPDATE easyerp.detalle_facturacov SET cantidad = cantidad-1, total =precio*cantidad, costoTotal =costo*cantidad  WHERE `detalle_facturacov`.`factura` =" + textInvoiceNumber.Text + " AND `detalle_facturacov`.`codigo` = " + textCode.Text + " and almacen='" + comboBoxCiudad.Text + "'";
                     conectar.Open();
                     MySqlCommand command = new MySqlCommand(insertarCodigo, conectar);
                     if (command.ExecuteNonQuery() == 1)
@@ -3489,10 +3489,10 @@ namespace MysqlTienda
                     else { }
 
                 }
-                else if (Convert.ToInt32(textCantidad.Text) <= 1)
+                else if (Convert.ToInt32(textQuantity.Text) <= 1)
                 {
-                    double precio = Convert.ToDouble(textTotal.Text) / Convert.ToDouble(textCantidad.Text);
-                    string insertarCodigo = "DELETE FROM easyerp.detalle_facturacov WHERE `detalle_facturacov`.`factura` =" + textFactura.Text + " AND `detalle_facturacov`.`codigo` = " + textCodigo.Text + " and almacen='" + comboBoxCiudad.Text + "'";
+                    double precio = Convert.ToDouble(textTotal.Text) / Convert.ToDouble(textQuantity.Text);
+                    string insertarCodigo = "DELETE FROM easyerp.detalle_facturacov WHERE `detalle_facturacov`.`factura` =" + textInvoiceNumber.Text + " AND `detalle_facturacov`.`codigo` = " + textCode.Text + " and almacen='" + comboBoxCiudad.Text + "'";
                     conectar.Open();
                     MySqlCommand command = new MySqlCommand(insertarCodigo, conectar);
 
@@ -3534,17 +3534,17 @@ namespace MysqlTienda
 
         private void buttonModificarVentas_Click(object sender, EventArgs e)
         {
-            if (textCodigo.Text == "")
+            if (textCode.Text == "")
             { }
             else
             {
                 try
                 {
-                    double total = Convert.ToDouble(textCantidad.Text) * Convert.ToDouble(textPrecio.Text);
+                    double total = Convert.ToDouble(textQuantity.Text) * Convert.ToDouble(textPrecio.Text);
 
                     //MessageBox.Show(Convert.ToString(total));
                     //string insertarCodigo = "UPDATE easyerp.detalle_facturacov SET precio =" + textPrecio.Text + ", total =precio*cantidad, costoTotal=costo*cantidad  WHERE `detalle_facturacov`.`factura` =" + textFactura.Text + " AND `detalle_facturacov`.`codigo` = " + textCodigo.Text + " and almacen='" + comboBoxCiudad.Text + "'";
-                    string insertarCodigo = "UPDATE easyerp.detalle_facturacov SET cantidad=" + textCantidad.Text + ", precio =" + textPrecio.Text + ", total =" + total + ", costoTotal=costo*cantidad  WHERE `detalle_facturacov`.`factura` =" + textFactura.Text + " AND `detalle_facturacov`.`codigo` = " + textCodigo.Text + " and almacen='" + comboBoxCiudad.Text + "'";
+                    string insertarCodigo = "UPDATE easyerp.detalle_facturacov SET cantidad=" + textQuantity.Text + ", precio =" + textPrecio.Text + ", total =" + total + ", costoTotal=costo*cantidad  WHERE `detalle_facturacov`.`factura` =" + textInvoiceNumber.Text + " AND `detalle_facturacov`.`codigo` = " + textCode.Text + " and almacen='" + comboBoxCiudad.Text + "'";
 
                     conectar.Open();
                     MySqlCommand command = new MySqlCommand(insertarCodigo, conectar);
@@ -3572,7 +3572,7 @@ namespace MysqlTienda
             else
             {
                 facturaVendida();
-                Form2 formulario2 = new Form2(textSumaTotal.Text, Convert.ToString(textFactura.Text), comboBoxCiudad.Text);
+                Form2 formulario2 = new Form2(textSumaTotal.Text, Convert.ToString(textInvoiceNumber.Text), comboBoxCiudad.Text);
                 //formulario2.Visible = true;   
                 
                 finalizarCerrarFactura();

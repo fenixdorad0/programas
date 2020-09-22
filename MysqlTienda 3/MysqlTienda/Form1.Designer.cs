@@ -136,19 +136,19 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle98 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle99 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle100 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.tab1Inicio = new System.Windows.Forms.TabPage();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.bunifuImageButton2 = new Bunifu.Framework.UI.BunifuImageButton();
+            this.tabMainPage = new System.Windows.Forms.TabPage();
+            this.panelImageLogin = new System.Windows.Forms.Panel();
+            this.panelLogin = new System.Windows.Forms.Panel();
+            this.ButtonVerify = new Bunifu.Framework.UI.BunifuImageButton();
             this.label15 = new System.Windows.Forms.Label();
             this.buniTextPass = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.buniTextUsuario = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.labelCedula = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.labelVendedor = new System.Windows.Forms.Label();
+            this.buniTextUser = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.labeCard = new System.Windows.Forms.Label();
+            this.forgetPassword = new System.Windows.Forms.Label();
+            this.labelSeller = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.comboBoxCiudad = new System.Windows.Forms.ComboBox();
-            this.label7 = new System.Windows.Forms.Label();
+            this.labelAccount = new System.Windows.Forms.Label();
             this.tab1Productos = new System.Windows.Forms.TabPage();
             this.tabControl3 = new System.Windows.Forms.TabControl();
             this.tabPage8 = new System.Windows.Forms.TabPage();
@@ -237,9 +237,9 @@
             this.panel14 = new System.Windows.Forms.Panel();
             this.bunifuCustomDataGridUsuarios = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.ButtonUsuarioAgregar = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.ButtonUsuarioEliminar = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.ButtonUsuarioCargar = new Bunifu.Framework.UI.BunifuFlatButton();
             this.ButtonUsuarioModificar = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.ButtonUsuarioCargar = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.ButtonUsuarioEliminar = new Bunifu.Framework.UI.BunifuFlatButton();
             this.LabelUCedula = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.LabelUNombre = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.LabelUCorreo = new Bunifu.Framework.UI.BunifuCustomLabel();
@@ -333,45 +333,45 @@
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.Ventas = new System.Windows.Forms.TabPage();
+            this.panelSellBackground = new System.Windows.Forms.TabPage();
             this.bunifuCustomLabel32 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.panel45 = new System.Windows.Forms.Panel();
-            this.textInsertarCodigo = new System.Windows.Forms.TextBox();
-            this.butttonFinalizarVentas = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.buttonRestarProducto = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.buttonEliminarVentas = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.buttonModificarVentas = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.textInsertCode = new System.Windows.Forms.TextBox();
+            this.butttonFinishSells = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.buttonSubstractProduct = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.buttonDeleteContentInvoice = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.buttonModifySell = new Bunifu.Framework.UI.BunifuFlatButton();
             this.panel43 = new System.Windows.Forms.Panel();
-            this.label21 = new System.Windows.Forms.Label();
-            this.panel42 = new System.Windows.Forms.Panel();
-            this.DataGridVentas = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            this.panel40 = new System.Windows.Forms.Panel();
-            this.textCodigo = new System.Windows.Forms.TextBox();
+            this.labelTotalSells = new System.Windows.Forms.Label();
+            this.panelSellMiddle = new System.Windows.Forms.Panel();
+            this.labelMessageEnd = new Bunifu.Framework.UI.BunifuCustomDataGrid();
+            this.panelSellsTop = new System.Windows.Forms.Panel();
+            this.textCode = new System.Windows.Forms.TextBox();
             this.labelTotal = new System.Windows.Forms.Label();
             this.textTotal = new System.Windows.Forms.TextBox();
-            this.labelPrecio = new System.Windows.Forms.Label();
-            this.labelTamaño = new System.Windows.Forms.Label();
-            this.labelProducto = new System.Windows.Forms.Label();
-            this.labelCantidad = new System.Windows.Forms.Label();
-            this.labelReferencia = new System.Windows.Forms.Label();
+            this.labelPrice = new System.Windows.Forms.Label();
+            this.labelSize = new System.Windows.Forms.Label();
+            this.labelProduct = new System.Windows.Forms.Label();
+            this.labelQuantity = new System.Windows.Forms.Label();
+            this.labelReference = new System.Windows.Forms.Label();
             this.textPrecio = new System.Windows.Forms.TextBox();
-            this.textCantidad = new System.Windows.Forms.TextBox();
-            this.textProducto = new System.Windows.Forms.TextBox();
-            this.textTamano = new System.Windows.Forms.TextBox();
-            this.textReferencia = new System.Windows.Forms.TextBox();
-            this.labelCodigo = new System.Windows.Forms.Label();
+            this.textQuantity = new System.Windows.Forms.TextBox();
+            this.textProduct = new System.Windows.Forms.TextBox();
+            this.textSize = new System.Windows.Forms.TextBox();
+            this.textReference = new System.Windows.Forms.TextBox();
+            this.labelCode = new System.Windows.Forms.Label();
             this.panel44 = new System.Windows.Forms.Panel();
-            this.bunifuCustomLabel30 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.labelEnterprise = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.txt_celphone = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.bunifuMaterialTextbox10 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.bunifuCustomLabel31 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuMaterialTextbox9 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.bunifuCustomLabel28 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.textFactura = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.bunifuCustomLabel29 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.textboxSupplierName = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.labelInvoiceFrom = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.TextboxCustomerName = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.labelInvoiceFrom1 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.labelDateNowInvoice = new System.Windows.Forms.Label();
+            this.labelDateInvoice = new System.Windows.Forms.Label();
+            this.textInvoiceNumber = new System.Windows.Forms.Label();
+            this.labelInvoiceNumber = new System.Windows.Forms.Label();
+            this.labelInvoice1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.panel41 = new System.Windows.Forms.Panel();
             this.tab1Almacen = new System.Windows.Forms.TabPage();
             this.panel19 = new System.Windows.Forms.Panel();
@@ -530,6 +530,8 @@
             this.labelCosto = new System.Windows.Forms.Label();
             this.clientes = new System.Windows.Forms.TabPage();
             this.panel39 = new System.Windows.Forms.Panel();
+            this.clienteGeneroText = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.GeneroCLientes = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.cienteMayoristaCombobox = new System.Windows.Forms.ComboBox();
             this.cientePuntosText = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.bunifuCustomLabel26 = new Bunifu.Framework.UI.BunifuCustomLabel();
@@ -566,11 +568,9 @@
             this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuElipse3 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.clienteGeneroText = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.GeneroCLientes = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.tab1Inicio.SuspendLayout();
-            this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).BeginInit();
+            this.tabMainPage.SuspendLayout();
+            this.panelLogin.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ButtonVerify)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tab1Productos.SuspendLayout();
             this.tabControl3.SuspendLayout();
@@ -607,11 +607,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGridPermisosUsuario)).BeginInit();
             this.tabPage5.SuspendLayout();
             this.tabControl1.SuspendLayout();
-            this.Ventas.SuspendLayout();
+            this.panelSellBackground.SuspendLayout();
             this.panel45.SuspendLayout();
             this.panel43.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DataGridVentas)).BeginInit();
-            this.panel40.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.labelMessageEnd)).BeginInit();
+            this.panelSellsTop.SuspendLayout();
             this.panel44.SuspendLayout();
             this.tab1Almacen.SuspendLayout();
             this.panel19.SuspendLayout();
@@ -696,45 +696,44 @@
             ((System.ComponentModel.ISupportInitialize)(this.buniCerrar)).BeginInit();
             this.SuspendLayout();
             // 
-            // tab1Inicio
+            // tabMainPage
             // 
-            this.tab1Inicio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
-            resources.ApplyResources(this.tab1Inicio, "tab1Inicio");
-            this.tab1Inicio.Controls.Add(this.panel2);
-            this.tab1Inicio.Controls.Add(this.panel3);
-            this.tab1Inicio.Name = "tab1Inicio";
+            this.tabMainPage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
+            resources.ApplyResources(this.tabMainPage, "tabMainPage");
+            this.tabMainPage.Controls.Add(this.panelImageLogin);
+            this.tabMainPage.Controls.Add(this.panelLogin);
+            this.tabMainPage.Name = "tabMainPage";
             // 
-            // panel2
+            // panelImageLogin
             // 
-            resources.ApplyResources(this.panel2, "panel2");
-            this.panel2.Name = "panel2";
+            resources.ApplyResources(this.panelImageLogin, "panelImageLogin");
+            this.panelImageLogin.Name = "panelImageLogin";
             // 
-            // panel3
+            // panelLogin
             // 
-            this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Controls.Add(this.bunifuImageButton2);
-            this.panel3.Controls.Add(this.label15);
-            this.panel3.Controls.Add(this.buniTextPass);
-            this.panel3.Controls.Add(this.buniTextUsuario);
-            this.panel3.Controls.Add(this.labelCedula);
-            this.panel3.Controls.Add(this.label1);
-            this.panel3.Controls.Add(this.labelVendedor);
-            this.panel3.Controls.Add(this.pictureBox1);
-            this.panel3.Controls.Add(this.comboBoxCiudad);
-            this.panel3.Controls.Add(this.label7);
-            resources.ApplyResources(this.panel3, "panel3");
-            this.panel3.Name = "panel3";
+            this.panelLogin.BackColor = System.Drawing.Color.White;
+            this.panelLogin.Controls.Add(this.ButtonVerify);
+            this.panelLogin.Controls.Add(this.label15);
+            this.panelLogin.Controls.Add(this.buniTextPass);
+            this.panelLogin.Controls.Add(this.buniTextUser);
+            this.panelLogin.Controls.Add(this.labeCard);
+            this.panelLogin.Controls.Add(this.forgetPassword);
+            this.panelLogin.Controls.Add(this.labelSeller);
+            this.panelLogin.Controls.Add(this.pictureBox1);
+            this.panelLogin.Controls.Add(this.comboBoxCiudad);
+            this.panelLogin.Controls.Add(this.labelAccount);
+            resources.ApplyResources(this.panelLogin, "panelLogin");
+            this.panelLogin.Name = "panelLogin";
             // 
-            // bunifuImageButton2
+            // ButtonVerify
             // 
-            this.bunifuImageButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
-            this.bunifuImageButton2.Image = global::MysqlTienda.Properties.Resources.botton;
-            this.bunifuImageButton2.ImageActive = null;
-            resources.ApplyResources(this.bunifuImageButton2, "bunifuImageButton2");
-            this.bunifuImageButton2.Name = "bunifuImageButton2";
-            this.bunifuImageButton2.TabStop = false;
-            this.bunifuImageButton2.Zoom = 10;
-            this.bunifuImageButton2.Click += new System.EventHandler(this.bunifuImageButton2_Click_1);
+            this.ButtonVerify.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
+            this.ButtonVerify.ImageActive = null;
+            resources.ApplyResources(this.ButtonVerify, "ButtonVerify");
+            this.ButtonVerify.Name = "ButtonVerify";
+            this.ButtonVerify.TabStop = false;
+            this.ButtonVerify.Zoom = 10;
+            this.ButtonVerify.Click += new System.EventHandler(this.bunifuImageButton2_Click_1);
             // 
             // label15
             // 
@@ -760,39 +759,39 @@
             this.buniTextPass.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.buniTextPass.MouseDown += new System.Windows.Forms.MouseEventHandler(this.buniTextPass_MouseDown);
             // 
-            // buniTextUsuario
+            // buniTextUser
             // 
-            this.buniTextUsuario.Cursor = System.Windows.Forms.Cursors.IBeam;
-            resources.ApplyResources(this.buniTextUsuario, "buniTextUsuario");
-            this.buniTextUsuario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.buniTextUsuario.HintForeColor = System.Drawing.Color.Empty;
-            this.buniTextUsuario.HintText = "";
-            this.buniTextUsuario.isPassword = false;
-            this.buniTextUsuario.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.buniTextUsuario.LineIdleColor = System.Drawing.Color.Gray;
-            this.buniTextUsuario.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.buniTextUsuario.LineThickness = 3;
-            this.buniTextUsuario.Name = "buniTextUsuario";
-            this.buniTextUsuario.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.buniTextUsuario.OnValueChanged += new System.EventHandler(this.buniTextUsuario_OnValueChanged);
-            this.buniTextUsuario.MouseDown += new System.Windows.Forms.MouseEventHandler(this.buniTextUsuario_MouseDown);
+            this.buniTextUser.Cursor = System.Windows.Forms.Cursors.IBeam;
+            resources.ApplyResources(this.buniTextUser, "buniTextUser");
+            this.buniTextUser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.buniTextUser.HintForeColor = System.Drawing.Color.Empty;
+            this.buniTextUser.HintText = "";
+            this.buniTextUser.isPassword = false;
+            this.buniTextUser.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.buniTextUser.LineIdleColor = System.Drawing.Color.Gray;
+            this.buniTextUser.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.buniTextUser.LineThickness = 3;
+            this.buniTextUser.Name = "buniTextUser";
+            this.buniTextUser.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.buniTextUser.OnValueChanged += new System.EventHandler(this.buniTextUsuario_OnValueChanged);
+            this.buniTextUser.MouseDown += new System.Windows.Forms.MouseEventHandler(this.buniTextUsuario_MouseDown);
             // 
-            // labelCedula
+            // labeCard
             // 
-            resources.ApplyResources(this.labelCedula, "labelCedula");
-            this.labelCedula.Name = "labelCedula";
+            resources.ApplyResources(this.labeCard, "labeCard");
+            this.labeCard.Name = "labeCard";
             // 
-            // label1
+            // forgetPassword
             // 
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Name = "label1";
+            resources.ApplyResources(this.forgetPassword, "forgetPassword");
+            this.forgetPassword.BackColor = System.Drawing.Color.Transparent;
+            this.forgetPassword.ForeColor = System.Drawing.Color.Black;
+            this.forgetPassword.Name = "forgetPassword";
             // 
-            // labelVendedor
+            // labelSeller
             // 
-            resources.ApplyResources(this.labelVendedor, "labelVendedor");
-            this.labelVendedor.Name = "labelVendedor";
+            resources.ApplyResources(this.labelSeller, "labelSeller");
+            this.labelSeller.Name = "labelSeller";
             // 
             // pictureBox1
             // 
@@ -809,12 +808,12 @@
             this.comboBoxCiudad.Name = "comboBoxCiudad";
             this.comboBoxCiudad.TextChanged += new System.EventHandler(this.comboBox1_TextChanged);
             // 
-            // label7
+            // labelAccount
             // 
-            resources.ApplyResources(this.label7, "label7");
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Name = "label7";
+            resources.ApplyResources(this.labelAccount, "labelAccount");
+            this.labelAccount.BackColor = System.Drawing.Color.Transparent;
+            this.labelAccount.ForeColor = System.Drawing.Color.Black;
+            this.labelAccount.Name = "labelAccount";
             // 
             // tab1Productos
             // 
@@ -2187,37 +2186,37 @@
             this.ButtonUsuarioAgregar.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ButtonUsuarioAgregar.Click += new System.EventHandler(this.bunifuFlatButton1_Click);
             // 
-            // ButtonUsuarioEliminar
+            // ButtonUsuarioModificar
             // 
-            this.ButtonUsuarioEliminar.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.ButtonUsuarioEliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
-            this.ButtonUsuarioEliminar.BackgroundImage = global::MysqlTienda.Properties.Resources.ELIMINAR;
-            resources.ApplyResources(this.ButtonUsuarioEliminar, "ButtonUsuarioEliminar");
-            this.ButtonUsuarioEliminar.BorderRadius = 0;
-            this.ButtonUsuarioEliminar.ButtonText = "";
-            this.ButtonUsuarioEliminar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ButtonUsuarioEliminar.DisabledColor = System.Drawing.Color.Gray;
-            this.ButtonUsuarioEliminar.Iconcolor = System.Drawing.Color.Transparent;
-            this.ButtonUsuarioEliminar.Iconimage = ((System.Drawing.Image)(resources.GetObject("ButtonUsuarioEliminar.Iconimage")));
-            this.ButtonUsuarioEliminar.Iconimage_right = null;
-            this.ButtonUsuarioEliminar.Iconimage_right_Selected = null;
-            this.ButtonUsuarioEliminar.Iconimage_Selected = null;
-            this.ButtonUsuarioEliminar.IconMarginLeft = 0;
-            this.ButtonUsuarioEliminar.IconMarginRight = 0;
-            this.ButtonUsuarioEliminar.IconRightVisible = false;
-            this.ButtonUsuarioEliminar.IconRightZoom = 0D;
-            this.ButtonUsuarioEliminar.IconVisible = false;
-            this.ButtonUsuarioEliminar.IconZoom = 90D;
-            this.ButtonUsuarioEliminar.IsTab = false;
-            this.ButtonUsuarioEliminar.Name = "ButtonUsuarioEliminar";
-            this.ButtonUsuarioEliminar.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
-            this.ButtonUsuarioEliminar.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.ButtonUsuarioEliminar.OnHoverTextColor = System.Drawing.Color.White;
-            this.ButtonUsuarioEliminar.selected = false;
-            this.ButtonUsuarioEliminar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ButtonUsuarioEliminar.Textcolor = System.Drawing.Color.White;
-            this.ButtonUsuarioEliminar.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ButtonUsuarioEliminar.Click += new System.EventHandler(this.ButtonUsuarioEliminar_Click);
+            this.ButtonUsuarioModificar.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.ButtonUsuarioModificar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
+            this.ButtonUsuarioModificar.BackgroundImage = global::MysqlTienda.Properties.Resources.CURD;
+            resources.ApplyResources(this.ButtonUsuarioModificar, "ButtonUsuarioModificar");
+            this.ButtonUsuarioModificar.BorderRadius = 0;
+            this.ButtonUsuarioModificar.ButtonText = "";
+            this.ButtonUsuarioModificar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ButtonUsuarioModificar.DisabledColor = System.Drawing.Color.Gray;
+            this.ButtonUsuarioModificar.Iconcolor = System.Drawing.Color.Transparent;
+            this.ButtonUsuarioModificar.Iconimage = ((System.Drawing.Image)(resources.GetObject("ButtonUsuarioModificar.Iconimage")));
+            this.ButtonUsuarioModificar.Iconimage_right = null;
+            this.ButtonUsuarioModificar.Iconimage_right_Selected = null;
+            this.ButtonUsuarioModificar.Iconimage_Selected = null;
+            this.ButtonUsuarioModificar.IconMarginLeft = 0;
+            this.ButtonUsuarioModificar.IconMarginRight = 0;
+            this.ButtonUsuarioModificar.IconRightVisible = false;
+            this.ButtonUsuarioModificar.IconRightZoom = 0D;
+            this.ButtonUsuarioModificar.IconVisible = false;
+            this.ButtonUsuarioModificar.IconZoom = 90D;
+            this.ButtonUsuarioModificar.IsTab = false;
+            this.ButtonUsuarioModificar.Name = "ButtonUsuarioModificar";
+            this.ButtonUsuarioModificar.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
+            this.ButtonUsuarioModificar.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.ButtonUsuarioModificar.OnHoverTextColor = System.Drawing.Color.White;
+            this.ButtonUsuarioModificar.selected = false;
+            this.ButtonUsuarioModificar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ButtonUsuarioModificar.Textcolor = System.Drawing.Color.White;
+            this.ButtonUsuarioModificar.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonUsuarioModificar.Click += new System.EventHandler(this.ButtonUsuarioModificar_Click);
             // 
             // ButtonUsuarioCargar
             // 
@@ -2251,37 +2250,37 @@
             this.ButtonUsuarioCargar.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ButtonUsuarioCargar.Click += new System.EventHandler(this.ButtonUsuarioCargar_Click);
             // 
-            // ButtonUsuarioModificar
+            // ButtonUsuarioEliminar
             // 
-            this.ButtonUsuarioModificar.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.ButtonUsuarioModificar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
-            this.ButtonUsuarioModificar.BackgroundImage = global::MysqlTienda.Properties.Resources.CURD;
-            resources.ApplyResources(this.ButtonUsuarioModificar, "ButtonUsuarioModificar");
-            this.ButtonUsuarioModificar.BorderRadius = 0;
-            this.ButtonUsuarioModificar.ButtonText = "";
-            this.ButtonUsuarioModificar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ButtonUsuarioModificar.DisabledColor = System.Drawing.Color.Gray;
-            this.ButtonUsuarioModificar.Iconcolor = System.Drawing.Color.Transparent;
-            this.ButtonUsuarioModificar.Iconimage = ((System.Drawing.Image)(resources.GetObject("ButtonUsuarioModificar.Iconimage")));
-            this.ButtonUsuarioModificar.Iconimage_right = null;
-            this.ButtonUsuarioModificar.Iconimage_right_Selected = null;
-            this.ButtonUsuarioModificar.Iconimage_Selected = null;
-            this.ButtonUsuarioModificar.IconMarginLeft = 0;
-            this.ButtonUsuarioModificar.IconMarginRight = 0;
-            this.ButtonUsuarioModificar.IconRightVisible = false;
-            this.ButtonUsuarioModificar.IconRightZoom = 0D;
-            this.ButtonUsuarioModificar.IconVisible = false;
-            this.ButtonUsuarioModificar.IconZoom = 90D;
-            this.ButtonUsuarioModificar.IsTab = false;
-            this.ButtonUsuarioModificar.Name = "ButtonUsuarioModificar";
-            this.ButtonUsuarioModificar.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
-            this.ButtonUsuarioModificar.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.ButtonUsuarioModificar.OnHoverTextColor = System.Drawing.Color.White;
-            this.ButtonUsuarioModificar.selected = false;
-            this.ButtonUsuarioModificar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ButtonUsuarioModificar.Textcolor = System.Drawing.Color.White;
-            this.ButtonUsuarioModificar.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ButtonUsuarioModificar.Click += new System.EventHandler(this.ButtonUsuarioModificar_Click);
+            this.ButtonUsuarioEliminar.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.ButtonUsuarioEliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
+            this.ButtonUsuarioEliminar.BackgroundImage = global::MysqlTienda.Properties.Resources.ELIMINAR;
+            resources.ApplyResources(this.ButtonUsuarioEliminar, "ButtonUsuarioEliminar");
+            this.ButtonUsuarioEliminar.BorderRadius = 0;
+            this.ButtonUsuarioEliminar.ButtonText = "";
+            this.ButtonUsuarioEliminar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ButtonUsuarioEliminar.DisabledColor = System.Drawing.Color.Gray;
+            this.ButtonUsuarioEliminar.Iconcolor = System.Drawing.Color.Transparent;
+            this.ButtonUsuarioEliminar.Iconimage = ((System.Drawing.Image)(resources.GetObject("ButtonUsuarioEliminar.Iconimage")));
+            this.ButtonUsuarioEliminar.Iconimage_right = null;
+            this.ButtonUsuarioEliminar.Iconimage_right_Selected = null;
+            this.ButtonUsuarioEliminar.Iconimage_Selected = null;
+            this.ButtonUsuarioEliminar.IconMarginLeft = 0;
+            this.ButtonUsuarioEliminar.IconMarginRight = 0;
+            this.ButtonUsuarioEliminar.IconRightVisible = false;
+            this.ButtonUsuarioEliminar.IconRightZoom = 0D;
+            this.ButtonUsuarioEliminar.IconVisible = false;
+            this.ButtonUsuarioEliminar.IconZoom = 90D;
+            this.ButtonUsuarioEliminar.IsTab = false;
+            this.ButtonUsuarioEliminar.Name = "ButtonUsuarioEliminar";
+            this.ButtonUsuarioEliminar.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
+            this.ButtonUsuarioEliminar.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.ButtonUsuarioEliminar.OnHoverTextColor = System.Drawing.Color.White;
+            this.ButtonUsuarioEliminar.selected = false;
+            this.ButtonUsuarioEliminar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ButtonUsuarioEliminar.Textcolor = System.Drawing.Color.White;
+            this.ButtonUsuarioEliminar.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonUsuarioEliminar.Click += new System.EventHandler(this.ButtonUsuarioEliminar_Click);
             // 
             // LabelUCedula
             // 
@@ -3381,31 +3380,31 @@
             // 
             // tabControl1
             // 
-            this.tabControl1.Controls.Add(this.tab1Inicio);
-            this.tabControl1.Controls.Add(this.Ventas);
+            this.tabControl1.Controls.Add(this.tabMainPage);
+            this.tabControl1.Controls.Add(this.panelSellBackground);
             this.tabControl1.Controls.Add(this.tab1Usuarios);
             this.tabControl1.Controls.Add(this.tab1Productos);
             this.tabControl1.Controls.Add(this.tab1Almacen);
             this.tabControl1.Controls.Add(this.tab1Reportes);
             this.tabControl1.Controls.Add(this.tab1EntradasSalidas);
-            this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Controls.Add(this.clientes);
+            this.tabControl1.Controls.Add(this.tabPage4);
             resources.ApplyResources(this.tabControl1, "tabControl1");
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             // 
-            // Ventas
+            // panelSellBackground
             // 
-            this.Ventas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(239)))), ((int)(((byte)(250)))));
-            this.Ventas.Controls.Add(this.bunifuCustomLabel32);
-            this.Ventas.Controls.Add(this.panel45);
-            this.Ventas.Controls.Add(this.panel43);
-            this.Ventas.Controls.Add(this.panel42);
-            this.Ventas.Controls.Add(this.DataGridVentas);
-            this.Ventas.Controls.Add(this.panel40);
-            this.Ventas.Controls.Add(this.panel41);
-            resources.ApplyResources(this.Ventas, "Ventas");
-            this.Ventas.Name = "Ventas";
+            this.panelSellBackground.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(239)))), ((int)(((byte)(250)))));
+            this.panelSellBackground.Controls.Add(this.bunifuCustomLabel32);
+            this.panelSellBackground.Controls.Add(this.panel45);
+            this.panelSellBackground.Controls.Add(this.panel43);
+            this.panelSellBackground.Controls.Add(this.panelSellMiddle);
+            this.panelSellBackground.Controls.Add(this.labelMessageEnd);
+            this.panelSellBackground.Controls.Add(this.panelSellsTop);
+            this.panelSellBackground.Controls.Add(this.panel41);
+            resources.ApplyResources(this.panelSellBackground, "panelSellBackground");
+            this.panelSellBackground.Name = "panelSellBackground";
             // 
             // bunifuCustomLabel32
             // 
@@ -3417,176 +3416,176 @@
             // 
             this.panel45.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.panel45, "panel45");
-            this.panel45.Controls.Add(this.textInsertarCodigo);
-            this.panel45.Controls.Add(this.butttonFinalizarVentas);
-            this.panel45.Controls.Add(this.buttonRestarProducto);
-            this.panel45.Controls.Add(this.buttonEliminarVentas);
-            this.panel45.Controls.Add(this.buttonModificarVentas);
+            this.panel45.Controls.Add(this.textInsertCode);
+            this.panel45.Controls.Add(this.butttonFinishSells);
+            this.panel45.Controls.Add(this.buttonSubstractProduct);
+            this.panel45.Controls.Add(this.buttonDeleteContentInvoice);
+            this.panel45.Controls.Add(this.buttonModifySell);
             this.panel45.Name = "panel45";
             // 
-            // textInsertarCodigo
+            // textInsertCode
             // 
-            this.textInsertarCodigo.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            resources.ApplyResources(this.textInsertarCodigo, "textInsertarCodigo");
-            this.textInsertarCodigo.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.textInsertarCodigo.Name = "textInsertarCodigo";
-            this.textInsertarCodigo.TextChanged += new System.EventHandler(this.textInsertarCodigo_TextChanged_1);
+            this.textInsertCode.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            resources.ApplyResources(this.textInsertCode, "textInsertCode");
+            this.textInsertCode.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.textInsertCode.Name = "textInsertCode";
+            this.textInsertCode.TextChanged += new System.EventHandler(this.textInsertarCodigo_TextChanged_1);
             // 
-            // butttonFinalizarVentas
+            // butttonFinishSells
             // 
-            this.butttonFinalizarVentas.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(142)))), ((int)(((byte)(123)))));
-            this.butttonFinalizarVentas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(123)))), ((int)(((byte)(142)))));
-            resources.ApplyResources(this.butttonFinalizarVentas, "butttonFinalizarVentas");
-            this.butttonFinalizarVentas.BorderRadius = 0;
-            this.butttonFinalizarVentas.ButtonText = "Finalizar";
-            this.butttonFinalizarVentas.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.butttonFinalizarVentas.DisabledColor = System.Drawing.Color.Gray;
-            this.butttonFinalizarVentas.Iconcolor = System.Drawing.Color.Transparent;
-            this.butttonFinalizarVentas.Iconimage = ((System.Drawing.Image)(resources.GetObject("butttonFinalizarVentas.Iconimage")));
-            this.butttonFinalizarVentas.Iconimage_right = null;
-            this.butttonFinalizarVentas.Iconimage_right_Selected = null;
-            this.butttonFinalizarVentas.Iconimage_Selected = null;
-            this.butttonFinalizarVentas.IconMarginLeft = 0;
-            this.butttonFinalizarVentas.IconMarginRight = 0;
-            this.butttonFinalizarVentas.IconRightVisible = false;
-            this.butttonFinalizarVentas.IconRightZoom = 0D;
-            this.butttonFinalizarVentas.IconVisible = false;
-            this.butttonFinalizarVentas.IconZoom = 90D;
-            this.butttonFinalizarVentas.IsTab = false;
-            this.butttonFinalizarVentas.Name = "butttonFinalizarVentas";
-            this.butttonFinalizarVentas.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(123)))), ((int)(((byte)(142)))));
-            this.butttonFinalizarVentas.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(217)))), ((int)(((byte)(211)))));
-            this.butttonFinalizarVentas.OnHoverTextColor = System.Drawing.Color.White;
-            this.butttonFinalizarVentas.selected = false;
-            this.butttonFinalizarVentas.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.butttonFinalizarVentas.Textcolor = System.Drawing.Color.White;
-            this.butttonFinalizarVentas.TextFont = new System.Drawing.Font("Averta Demo PE Cutted Demo", 21.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.butttonFinalizarVentas.Click += new System.EventHandler(this.butttonFinalizarVentas_Click);
+            this.butttonFinishSells.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(142)))), ((int)(((byte)(123)))));
+            this.butttonFinishSells.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(123)))), ((int)(((byte)(142)))));
+            resources.ApplyResources(this.butttonFinishSells, "butttonFinishSells");
+            this.butttonFinishSells.BorderRadius = 0;
+            this.butttonFinishSells.ButtonText = "Finish";
+            this.butttonFinishSells.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.butttonFinishSells.DisabledColor = System.Drawing.Color.Gray;
+            this.butttonFinishSells.Iconcolor = System.Drawing.Color.Transparent;
+            this.butttonFinishSells.Iconimage = ((System.Drawing.Image)(resources.GetObject("butttonFinishSells.Iconimage")));
+            this.butttonFinishSells.Iconimage_right = null;
+            this.butttonFinishSells.Iconimage_right_Selected = null;
+            this.butttonFinishSells.Iconimage_Selected = null;
+            this.butttonFinishSells.IconMarginLeft = 0;
+            this.butttonFinishSells.IconMarginRight = 0;
+            this.butttonFinishSells.IconRightVisible = false;
+            this.butttonFinishSells.IconRightZoom = 0D;
+            this.butttonFinishSells.IconVisible = false;
+            this.butttonFinishSells.IconZoom = 90D;
+            this.butttonFinishSells.IsTab = false;
+            this.butttonFinishSells.Name = "butttonFinishSells";
+            this.butttonFinishSells.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(123)))), ((int)(((byte)(142)))));
+            this.butttonFinishSells.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(217)))), ((int)(((byte)(211)))));
+            this.butttonFinishSells.OnHoverTextColor = System.Drawing.Color.White;
+            this.butttonFinishSells.selected = false;
+            this.butttonFinishSells.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.butttonFinishSells.Textcolor = System.Drawing.Color.White;
+            this.butttonFinishSells.TextFont = new System.Drawing.Font("Averta Demo PE Cutted Demo", 21.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.butttonFinishSells.Click += new System.EventHandler(this.butttonFinalizarVentas_Click);
             // 
-            // buttonRestarProducto
+            // buttonSubstractProduct
             // 
-            this.buttonRestarProducto.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(142)))), ((int)(((byte)(123)))));
-            this.buttonRestarProducto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(123)))), ((int)(((byte)(142)))));
-            resources.ApplyResources(this.buttonRestarProducto, "buttonRestarProducto");
-            this.buttonRestarProducto.BorderRadius = 0;
-            this.buttonRestarProducto.ButtonText = "-1 producto";
-            this.buttonRestarProducto.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonRestarProducto.DisabledColor = System.Drawing.Color.Gray;
-            this.buttonRestarProducto.Iconcolor = System.Drawing.Color.Transparent;
-            this.buttonRestarProducto.Iconimage = ((System.Drawing.Image)(resources.GetObject("buttonRestarProducto.Iconimage")));
-            this.buttonRestarProducto.Iconimage_right = null;
-            this.buttonRestarProducto.Iconimage_right_Selected = null;
-            this.buttonRestarProducto.Iconimage_Selected = null;
-            this.buttonRestarProducto.IconMarginLeft = 0;
-            this.buttonRestarProducto.IconMarginRight = 0;
-            this.buttonRestarProducto.IconRightVisible = false;
-            this.buttonRestarProducto.IconRightZoom = 0D;
-            this.buttonRestarProducto.IconVisible = false;
-            this.buttonRestarProducto.IconZoom = 90D;
-            this.buttonRestarProducto.IsTab = false;
-            this.buttonRestarProducto.Name = "buttonRestarProducto";
-            this.buttonRestarProducto.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(123)))), ((int)(((byte)(142)))));
-            this.buttonRestarProducto.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(217)))), ((int)(((byte)(211)))));
-            this.buttonRestarProducto.OnHoverTextColor = System.Drawing.Color.White;
-            this.buttonRestarProducto.selected = false;
-            this.buttonRestarProducto.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.buttonRestarProducto.Textcolor = System.Drawing.Color.White;
-            this.buttonRestarProducto.TextFont = new System.Drawing.Font("Averta Demo PE Cutted Demo", 21.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonRestarProducto.Click += new System.EventHandler(this.bunifuFlatButton41_Click);
+            this.buttonSubstractProduct.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(142)))), ((int)(((byte)(123)))));
+            this.buttonSubstractProduct.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(123)))), ((int)(((byte)(142)))));
+            resources.ApplyResources(this.buttonSubstractProduct, "buttonSubstractProduct");
+            this.buttonSubstractProduct.BorderRadius = 0;
+            this.buttonSubstractProduct.ButtonText = "-1 product";
+            this.buttonSubstractProduct.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonSubstractProduct.DisabledColor = System.Drawing.Color.Gray;
+            this.buttonSubstractProduct.Iconcolor = System.Drawing.Color.Transparent;
+            this.buttonSubstractProduct.Iconimage = ((System.Drawing.Image)(resources.GetObject("buttonSubstractProduct.Iconimage")));
+            this.buttonSubstractProduct.Iconimage_right = null;
+            this.buttonSubstractProduct.Iconimage_right_Selected = null;
+            this.buttonSubstractProduct.Iconimage_Selected = null;
+            this.buttonSubstractProduct.IconMarginLeft = 0;
+            this.buttonSubstractProduct.IconMarginRight = 0;
+            this.buttonSubstractProduct.IconRightVisible = false;
+            this.buttonSubstractProduct.IconRightZoom = 0D;
+            this.buttonSubstractProduct.IconVisible = false;
+            this.buttonSubstractProduct.IconZoom = 90D;
+            this.buttonSubstractProduct.IsTab = false;
+            this.buttonSubstractProduct.Name = "buttonSubstractProduct";
+            this.buttonSubstractProduct.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(123)))), ((int)(((byte)(142)))));
+            this.buttonSubstractProduct.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(217)))), ((int)(((byte)(211)))));
+            this.buttonSubstractProduct.OnHoverTextColor = System.Drawing.Color.White;
+            this.buttonSubstractProduct.selected = false;
+            this.buttonSubstractProduct.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.buttonSubstractProduct.Textcolor = System.Drawing.Color.White;
+            this.buttonSubstractProduct.TextFont = new System.Drawing.Font("Averta Demo PE Cutted Demo", 21.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonSubstractProduct.Click += new System.EventHandler(this.bunifuFlatButton41_Click);
             // 
-            // buttonEliminarVentas
+            // buttonDeleteContentInvoice
             // 
-            this.buttonEliminarVentas.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(142)))), ((int)(((byte)(123)))));
-            this.buttonEliminarVentas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(123)))), ((int)(((byte)(142)))));
-            resources.ApplyResources(this.buttonEliminarVentas, "buttonEliminarVentas");
-            this.buttonEliminarVentas.BorderRadius = 0;
-            this.buttonEliminarVentas.ButtonText = "Eliminar";
-            this.buttonEliminarVentas.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonEliminarVentas.DisabledColor = System.Drawing.Color.Gray;
-            this.buttonEliminarVentas.Iconcolor = System.Drawing.Color.Transparent;
-            this.buttonEliminarVentas.Iconimage = ((System.Drawing.Image)(resources.GetObject("buttonEliminarVentas.Iconimage")));
-            this.buttonEliminarVentas.Iconimage_right = null;
-            this.buttonEliminarVentas.Iconimage_right_Selected = null;
-            this.buttonEliminarVentas.Iconimage_Selected = null;
-            this.buttonEliminarVentas.IconMarginLeft = 0;
-            this.buttonEliminarVentas.IconMarginRight = 0;
-            this.buttonEliminarVentas.IconRightVisible = false;
-            this.buttonEliminarVentas.IconRightZoom = 0D;
-            this.buttonEliminarVentas.IconVisible = false;
-            this.buttonEliminarVentas.IconZoom = 90D;
-            this.buttonEliminarVentas.IsTab = false;
-            this.buttonEliminarVentas.Name = "buttonEliminarVentas";
-            this.buttonEliminarVentas.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(123)))), ((int)(((byte)(142)))));
-            this.buttonEliminarVentas.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(217)))), ((int)(((byte)(211)))));
-            this.buttonEliminarVentas.OnHoverTextColor = System.Drawing.Color.White;
-            this.buttonEliminarVentas.selected = false;
-            this.buttonEliminarVentas.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.buttonEliminarVentas.Textcolor = System.Drawing.Color.White;
-            this.buttonEliminarVentas.TextFont = new System.Drawing.Font("Averta Demo PE Cutted Demo", 21.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonEliminarVentas.Click += new System.EventHandler(this.bunifuFlatButton43_Click);
+            this.buttonDeleteContentInvoice.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(142)))), ((int)(((byte)(123)))));
+            this.buttonDeleteContentInvoice.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(123)))), ((int)(((byte)(142)))));
+            resources.ApplyResources(this.buttonDeleteContentInvoice, "buttonDeleteContentInvoice");
+            this.buttonDeleteContentInvoice.BorderRadius = 0;
+            this.buttonDeleteContentInvoice.ButtonText = "Delete";
+            this.buttonDeleteContentInvoice.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonDeleteContentInvoice.DisabledColor = System.Drawing.Color.Gray;
+            this.buttonDeleteContentInvoice.Iconcolor = System.Drawing.Color.Transparent;
+            this.buttonDeleteContentInvoice.Iconimage = ((System.Drawing.Image)(resources.GetObject("buttonDeleteContentInvoice.Iconimage")));
+            this.buttonDeleteContentInvoice.Iconimage_right = null;
+            this.buttonDeleteContentInvoice.Iconimage_right_Selected = null;
+            this.buttonDeleteContentInvoice.Iconimage_Selected = null;
+            this.buttonDeleteContentInvoice.IconMarginLeft = 0;
+            this.buttonDeleteContentInvoice.IconMarginRight = 0;
+            this.buttonDeleteContentInvoice.IconRightVisible = false;
+            this.buttonDeleteContentInvoice.IconRightZoom = 0D;
+            this.buttonDeleteContentInvoice.IconVisible = false;
+            this.buttonDeleteContentInvoice.IconZoom = 90D;
+            this.buttonDeleteContentInvoice.IsTab = false;
+            this.buttonDeleteContentInvoice.Name = "buttonDeleteContentInvoice";
+            this.buttonDeleteContentInvoice.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(123)))), ((int)(((byte)(142)))));
+            this.buttonDeleteContentInvoice.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(217)))), ((int)(((byte)(211)))));
+            this.buttonDeleteContentInvoice.OnHoverTextColor = System.Drawing.Color.White;
+            this.buttonDeleteContentInvoice.selected = false;
+            this.buttonDeleteContentInvoice.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.buttonDeleteContentInvoice.Textcolor = System.Drawing.Color.White;
+            this.buttonDeleteContentInvoice.TextFont = new System.Drawing.Font("Averta Demo PE Cutted Demo", 21.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonDeleteContentInvoice.Click += new System.EventHandler(this.bunifuFlatButton43_Click);
             // 
-            // buttonModificarVentas
+            // buttonModifySell
             // 
-            this.buttonModificarVentas.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(142)))), ((int)(((byte)(123)))));
-            this.buttonModificarVentas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(123)))), ((int)(((byte)(142)))));
-            resources.ApplyResources(this.buttonModificarVentas, "buttonModificarVentas");
-            this.buttonModificarVentas.BorderRadius = 0;
-            this.buttonModificarVentas.ButtonText = "Modificar";
-            this.buttonModificarVentas.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonModificarVentas.DisabledColor = System.Drawing.Color.Gray;
-            this.buttonModificarVentas.Iconcolor = System.Drawing.Color.Transparent;
-            this.buttonModificarVentas.Iconimage = ((System.Drawing.Image)(resources.GetObject("buttonModificarVentas.Iconimage")));
-            this.buttonModificarVentas.Iconimage_right = null;
-            this.buttonModificarVentas.Iconimage_right_Selected = null;
-            this.buttonModificarVentas.Iconimage_Selected = null;
-            this.buttonModificarVentas.IconMarginLeft = 0;
-            this.buttonModificarVentas.IconMarginRight = 0;
-            this.buttonModificarVentas.IconRightVisible = false;
-            this.buttonModificarVentas.IconRightZoom = 0D;
-            this.buttonModificarVentas.IconVisible = false;
-            this.buttonModificarVentas.IconZoom = 90D;
-            this.buttonModificarVentas.IsTab = false;
-            this.buttonModificarVentas.Name = "buttonModificarVentas";
-            this.buttonModificarVentas.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(123)))), ((int)(((byte)(142)))));
-            this.buttonModificarVentas.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(217)))), ((int)(((byte)(211)))));
-            this.buttonModificarVentas.OnHoverTextColor = System.Drawing.Color.White;
-            this.buttonModificarVentas.selected = false;
-            this.buttonModificarVentas.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.buttonModificarVentas.Textcolor = System.Drawing.Color.White;
-            this.buttonModificarVentas.TextFont = new System.Drawing.Font("Averta Demo PE Cutted Demo", 21.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonModificarVentas.Click += new System.EventHandler(this.buttonModificarVentas_Click);
+            this.buttonModifySell.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(142)))), ((int)(((byte)(123)))));
+            this.buttonModifySell.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(123)))), ((int)(((byte)(142)))));
+            resources.ApplyResources(this.buttonModifySell, "buttonModifySell");
+            this.buttonModifySell.BorderRadius = 0;
+            this.buttonModifySell.ButtonText = "Modify";
+            this.buttonModifySell.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonModifySell.DisabledColor = System.Drawing.Color.Gray;
+            this.buttonModifySell.Iconcolor = System.Drawing.Color.Transparent;
+            this.buttonModifySell.Iconimage = ((System.Drawing.Image)(resources.GetObject("buttonModifySell.Iconimage")));
+            this.buttonModifySell.Iconimage_right = null;
+            this.buttonModifySell.Iconimage_right_Selected = null;
+            this.buttonModifySell.Iconimage_Selected = null;
+            this.buttonModifySell.IconMarginLeft = 0;
+            this.buttonModifySell.IconMarginRight = 0;
+            this.buttonModifySell.IconRightVisible = false;
+            this.buttonModifySell.IconRightZoom = 0D;
+            this.buttonModifySell.IconVisible = false;
+            this.buttonModifySell.IconZoom = 90D;
+            this.buttonModifySell.IsTab = false;
+            this.buttonModifySell.Name = "buttonModifySell";
+            this.buttonModifySell.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(123)))), ((int)(((byte)(142)))));
+            this.buttonModifySell.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(217)))), ((int)(((byte)(211)))));
+            this.buttonModifySell.OnHoverTextColor = System.Drawing.Color.White;
+            this.buttonModifySell.selected = false;
+            this.buttonModifySell.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.buttonModifySell.Textcolor = System.Drawing.Color.White;
+            this.buttonModifySell.TextFont = new System.Drawing.Font("Averta Demo PE Cutted Demo", 21.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonModifySell.Click += new System.EventHandler(this.buttonModificarVentas_Click);
             // 
             // panel43
             // 
             resources.ApplyResources(this.panel43, "panel43");
             this.panel43.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(94)))), ((int)(((byte)(133)))));
-            this.panel43.Controls.Add(this.label21);
+            this.panel43.Controls.Add(this.labelTotalSells);
             this.panel43.Name = "panel43";
             // 
-            // label21
+            // labelTotalSells
             // 
-            resources.ApplyResources(this.label21, "label21");
-            this.label21.ForeColor = System.Drawing.Color.White;
-            this.label21.Name = "label21";
+            resources.ApplyResources(this.labelTotalSells, "labelTotalSells");
+            this.labelTotalSells.ForeColor = System.Drawing.Color.White;
+            this.labelTotalSells.Name = "labelTotalSells";
             // 
-            // panel42
+            // panelSellMiddle
             // 
-            resources.ApplyResources(this.panel42, "panel42");
-            this.panel42.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(46)))), ((int)(((byte)(63)))));
-            this.panel42.Name = "panel42";
+            resources.ApplyResources(this.panelSellMiddle, "panelSellMiddle");
+            this.panelSellMiddle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(46)))), ((int)(((byte)(63)))));
+            this.panelSellMiddle.Name = "panelSellMiddle";
             // 
-            // DataGridVentas
+            // labelMessageEnd
             // 
-            this.DataGridVentas.AllowUserToAddRows = false;
-            this.DataGridVentas.AllowUserToDeleteRows = false;
+            this.labelMessageEnd.AllowUserToAddRows = false;
+            this.labelMessageEnd.AllowUserToDeleteRows = false;
             dataGridViewCellStyle29.BackColor = System.Drawing.Color.White;
-            this.DataGridVentas.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle29;
-            resources.ApplyResources(this.DataGridVentas, "DataGridVentas");
-            this.DataGridVentas.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.DataGridVentas.BackgroundColor = System.Drawing.Color.White;
-            this.DataGridVentas.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.DataGridVentas.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            this.DataGridVentas.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.labelMessageEnd.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle29;
+            resources.ApplyResources(this.labelMessageEnd, "labelMessageEnd");
+            this.labelMessageEnd.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.labelMessageEnd.BackgroundColor = System.Drawing.Color.White;
+            this.labelMessageEnd.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.labelMessageEnd.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.labelMessageEnd.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle30.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle30.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(94)))), ((int)(((byte)(133)))));
             dataGridViewCellStyle30.Font = new System.Drawing.Font("Averta Demo PE Cutted Demo", 11.25F);
@@ -3594,7 +3593,7 @@
             dataGridViewCellStyle30.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(94)))), ((int)(((byte)(133)))));
             dataGridViewCellStyle30.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle30.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DataGridVentas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle30;
+            this.labelMessageEnd.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle30;
             dataGridViewCellStyle31.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle31.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(94)))), ((int)(((byte)(133)))));
             dataGridViewCellStyle31.Font = new System.Drawing.Font("Averta Demo PE Cutted Demo", 11.25F);
@@ -3602,15 +3601,15 @@
             dataGridViewCellStyle31.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(241)))), ((int)(((byte)(243)))));
             dataGridViewCellStyle31.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             dataGridViewCellStyle31.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DataGridVentas.DefaultCellStyle = dataGridViewCellStyle31;
-            this.DataGridVentas.DoubleBuffered = true;
-            this.DataGridVentas.EnableHeadersVisualStyles = false;
-            this.DataGridVentas.GridColor = System.Drawing.Color.WhiteSmoke;
-            this.DataGridVentas.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(94)))), ((int)(((byte)(133)))));
-            this.DataGridVentas.HeaderForeColor = System.Drawing.Color.WhiteSmoke;
-            this.DataGridVentas.Name = "DataGridVentas";
-            this.DataGridVentas.ReadOnly = true;
-            this.DataGridVentas.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.labelMessageEnd.DefaultCellStyle = dataGridViewCellStyle31;
+            this.labelMessageEnd.DoubleBuffered = true;
+            this.labelMessageEnd.EnableHeadersVisualStyles = false;
+            this.labelMessageEnd.GridColor = System.Drawing.Color.WhiteSmoke;
+            this.labelMessageEnd.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(94)))), ((int)(((byte)(133)))));
+            this.labelMessageEnd.HeaderForeColor = System.Drawing.Color.WhiteSmoke;
+            this.labelMessageEnd.Name = "labelMessageEnd";
+            this.labelMessageEnd.ReadOnly = true;
+            this.labelMessageEnd.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle32.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle32.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle32.Font = new System.Drawing.Font("Averta Demo PE Cutted Demo", 11.25F);
@@ -3618,53 +3617,53 @@
             dataGridViewCellStyle32.SelectionBackColor = System.Drawing.Color.White;
             dataGridViewCellStyle32.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle32.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DataGridVentas.RowHeadersDefaultCellStyle = dataGridViewCellStyle32;
-            this.DataGridVentas.RowHeadersVisible = false;
-            this.DataGridVentas.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.White;
-            this.DataGridVentas.RowTemplate.DividerHeight = 1;
-            this.DataGridVentas.RowTemplate.Height = 40;
-            this.DataGridVentas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DataGridVentas.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridVentas_CellClick);
-            this.DataGridVentas.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridVentas_CellContentClick);
+            this.labelMessageEnd.RowHeadersDefaultCellStyle = dataGridViewCellStyle32;
+            this.labelMessageEnd.RowHeadersVisible = false;
+            this.labelMessageEnd.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.White;
+            this.labelMessageEnd.RowTemplate.DividerHeight = 1;
+            this.labelMessageEnd.RowTemplate.Height = 40;
+            this.labelMessageEnd.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.labelMessageEnd.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridVentas_CellClick);
+            this.labelMessageEnd.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridVentas_CellContentClick);
             // 
-            // panel40
+            // panelSellsTop
             // 
-            resources.ApplyResources(this.panel40, "panel40");
-            this.panel40.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(46)))), ((int)(((byte)(63)))));
-            this.panel40.Controls.Add(this.textCodigo);
-            this.panel40.Controls.Add(this.labelTotal);
-            this.panel40.Controls.Add(this.textTotal);
-            this.panel40.Controls.Add(this.labelPrecio);
-            this.panel40.Controls.Add(this.labelTamaño);
-            this.panel40.Controls.Add(this.labelProducto);
-            this.panel40.Controls.Add(this.labelCantidad);
-            this.panel40.Controls.Add(this.labelReferencia);
-            this.panel40.Controls.Add(this.textPrecio);
-            this.panel40.Controls.Add(this.textCantidad);
-            this.panel40.Controls.Add(this.textProducto);
-            this.panel40.Controls.Add(this.textTamano);
-            this.panel40.Controls.Add(this.textReferencia);
-            this.panel40.Controls.Add(this.labelCodigo);
-            this.panel40.Controls.Add(this.panel44);
-            this.panel40.Controls.Add(this.txt_celphone);
-            this.panel40.Controls.Add(this.bunifuMaterialTextbox10);
-            this.panel40.Controls.Add(this.bunifuCustomLabel31);
-            this.panel40.Controls.Add(this.bunifuMaterialTextbox9);
-            this.panel40.Controls.Add(this.bunifuCustomLabel28);
-            this.panel40.Controls.Add(this.label16);
-            this.panel40.Controls.Add(this.label18);
-            this.panel40.Controls.Add(this.textFactura);
-            this.panel40.Controls.Add(this.label19);
-            this.panel40.Controls.Add(this.bunifuCustomLabel29);
-            this.panel40.Name = "panel40";
+            resources.ApplyResources(this.panelSellsTop, "panelSellsTop");
+            this.panelSellsTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(46)))), ((int)(((byte)(63)))));
+            this.panelSellsTop.Controls.Add(this.textCode);
+            this.panelSellsTop.Controls.Add(this.labelTotal);
+            this.panelSellsTop.Controls.Add(this.textTotal);
+            this.panelSellsTop.Controls.Add(this.labelPrice);
+            this.panelSellsTop.Controls.Add(this.labelSize);
+            this.panelSellsTop.Controls.Add(this.labelProduct);
+            this.panelSellsTop.Controls.Add(this.labelQuantity);
+            this.panelSellsTop.Controls.Add(this.labelReference);
+            this.panelSellsTop.Controls.Add(this.textPrecio);
+            this.panelSellsTop.Controls.Add(this.textQuantity);
+            this.panelSellsTop.Controls.Add(this.textProduct);
+            this.panelSellsTop.Controls.Add(this.textSize);
+            this.panelSellsTop.Controls.Add(this.textReference);
+            this.panelSellsTop.Controls.Add(this.labelCode);
+            this.panelSellsTop.Controls.Add(this.panel44);
+            this.panelSellsTop.Controls.Add(this.txt_celphone);
+            this.panelSellsTop.Controls.Add(this.textboxSupplierName);
+            this.panelSellsTop.Controls.Add(this.labelInvoiceFrom);
+            this.panelSellsTop.Controls.Add(this.TextboxCustomerName);
+            this.panelSellsTop.Controls.Add(this.labelInvoiceFrom1);
+            this.panelSellsTop.Controls.Add(this.labelDateNowInvoice);
+            this.panelSellsTop.Controls.Add(this.labelDateInvoice);
+            this.panelSellsTop.Controls.Add(this.textInvoiceNumber);
+            this.panelSellsTop.Controls.Add(this.labelInvoiceNumber);
+            this.panelSellsTop.Controls.Add(this.labelInvoice1);
+            this.panelSellsTop.Name = "panelSellsTop";
             // 
-            // textCodigo
+            // textCode
             // 
-            this.textCodigo.BackColor = System.Drawing.Color.White;
-            this.textCodigo.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            resources.ApplyResources(this.textCodigo, "textCodigo");
-            this.textCodigo.Name = "textCodigo";
-            this.textCodigo.ReadOnly = true;
+            this.textCode.BackColor = System.Drawing.Color.White;
+            this.textCode.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            resources.ApplyResources(this.textCode, "textCode");
+            this.textCode.Name = "textCode";
+            this.textCode.ReadOnly = true;
             // 
             // labelTotal
             // 
@@ -3681,40 +3680,40 @@
             this.textTotal.Name = "textTotal";
             this.textTotal.ReadOnly = true;
             // 
-            // labelPrecio
+            // labelPrice
             // 
-            resources.ApplyResources(this.labelPrecio, "labelPrecio");
-            this.labelPrecio.BackColor = System.Drawing.Color.Transparent;
-            this.labelPrecio.ForeColor = System.Drawing.Color.White;
-            this.labelPrecio.Name = "labelPrecio";
+            resources.ApplyResources(this.labelPrice, "labelPrice");
+            this.labelPrice.BackColor = System.Drawing.Color.Transparent;
+            this.labelPrice.ForeColor = System.Drawing.Color.White;
+            this.labelPrice.Name = "labelPrice";
             // 
-            // labelTamaño
+            // labelSize
             // 
-            resources.ApplyResources(this.labelTamaño, "labelTamaño");
-            this.labelTamaño.BackColor = System.Drawing.Color.Transparent;
-            this.labelTamaño.ForeColor = System.Drawing.Color.White;
-            this.labelTamaño.Name = "labelTamaño";
+            resources.ApplyResources(this.labelSize, "labelSize");
+            this.labelSize.BackColor = System.Drawing.Color.Transparent;
+            this.labelSize.ForeColor = System.Drawing.Color.White;
+            this.labelSize.Name = "labelSize";
             // 
-            // labelProducto
+            // labelProduct
             // 
-            resources.ApplyResources(this.labelProducto, "labelProducto");
-            this.labelProducto.BackColor = System.Drawing.Color.Transparent;
-            this.labelProducto.ForeColor = System.Drawing.Color.White;
-            this.labelProducto.Name = "labelProducto";
+            resources.ApplyResources(this.labelProduct, "labelProduct");
+            this.labelProduct.BackColor = System.Drawing.Color.Transparent;
+            this.labelProduct.ForeColor = System.Drawing.Color.White;
+            this.labelProduct.Name = "labelProduct";
             // 
-            // labelCantidad
+            // labelQuantity
             // 
-            resources.ApplyResources(this.labelCantidad, "labelCantidad");
-            this.labelCantidad.BackColor = System.Drawing.Color.Transparent;
-            this.labelCantidad.ForeColor = System.Drawing.Color.White;
-            this.labelCantidad.Name = "labelCantidad";
+            resources.ApplyResources(this.labelQuantity, "labelQuantity");
+            this.labelQuantity.BackColor = System.Drawing.Color.Transparent;
+            this.labelQuantity.ForeColor = System.Drawing.Color.White;
+            this.labelQuantity.Name = "labelQuantity";
             // 
-            // labelReferencia
+            // labelReference
             // 
-            resources.ApplyResources(this.labelReferencia, "labelReferencia");
-            this.labelReferencia.BackColor = System.Drawing.Color.Transparent;
-            this.labelReferencia.ForeColor = System.Drawing.Color.White;
-            this.labelReferencia.Name = "labelReferencia";
+            resources.ApplyResources(this.labelReference, "labelReference");
+            this.labelReference.BackColor = System.Drawing.Color.Transparent;
+            this.labelReference.ForeColor = System.Drawing.Color.White;
+            this.labelReference.Name = "labelReference";
             // 
             // textPrecio
             // 
@@ -3723,56 +3722,56 @@
             resources.ApplyResources(this.textPrecio, "textPrecio");
             this.textPrecio.Name = "textPrecio";
             // 
-            // textCantidad
+            // textQuantity
             // 
-            this.textCantidad.BackColor = System.Drawing.Color.White;
-            this.textCantidad.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            resources.ApplyResources(this.textCantidad, "textCantidad");
-            this.textCantidad.Name = "textCantidad";
+            this.textQuantity.BackColor = System.Drawing.Color.White;
+            this.textQuantity.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            resources.ApplyResources(this.textQuantity, "textQuantity");
+            this.textQuantity.Name = "textQuantity";
             // 
-            // textProducto
+            // textProduct
             // 
-            this.textProducto.BackColor = System.Drawing.Color.White;
-            this.textProducto.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            resources.ApplyResources(this.textProducto, "textProducto");
-            this.textProducto.Name = "textProducto";
-            this.textProducto.ReadOnly = true;
+            this.textProduct.BackColor = System.Drawing.Color.White;
+            this.textProduct.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            resources.ApplyResources(this.textProduct, "textProduct");
+            this.textProduct.Name = "textProduct";
+            this.textProduct.ReadOnly = true;
             // 
-            // textTamano
+            // textSize
             // 
-            this.textTamano.BackColor = System.Drawing.Color.White;
-            this.textTamano.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            resources.ApplyResources(this.textTamano, "textTamano");
-            this.textTamano.Name = "textTamano";
-            this.textTamano.ReadOnly = true;
+            this.textSize.BackColor = System.Drawing.Color.White;
+            this.textSize.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            resources.ApplyResources(this.textSize, "textSize");
+            this.textSize.Name = "textSize";
+            this.textSize.ReadOnly = true;
             // 
-            // textReferencia
+            // textReference
             // 
-            this.textReferencia.BackColor = System.Drawing.Color.White;
-            this.textReferencia.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            resources.ApplyResources(this.textReferencia, "textReferencia");
-            this.textReferencia.Name = "textReferencia";
-            this.textReferencia.ReadOnly = true;
+            this.textReference.BackColor = System.Drawing.Color.White;
+            this.textReference.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            resources.ApplyResources(this.textReference, "textReference");
+            this.textReference.Name = "textReference";
+            this.textReference.ReadOnly = true;
             // 
-            // labelCodigo
+            // labelCode
             // 
-            resources.ApplyResources(this.labelCodigo, "labelCodigo");
-            this.labelCodigo.BackColor = System.Drawing.Color.Transparent;
-            this.labelCodigo.ForeColor = System.Drawing.Color.White;
-            this.labelCodigo.Name = "labelCodigo";
+            resources.ApplyResources(this.labelCode, "labelCode");
+            this.labelCode.BackColor = System.Drawing.Color.Transparent;
+            this.labelCode.ForeColor = System.Drawing.Color.White;
+            this.labelCode.Name = "labelCode";
             // 
             // panel44
             // 
             resources.ApplyResources(this.panel44, "panel44");
-            this.panel44.Controls.Add(this.bunifuCustomLabel30);
+            this.panel44.Controls.Add(this.labelEnterprise);
             this.panel44.Name = "panel44";
             // 
-            // bunifuCustomLabel30
+            // labelEnterprise
             // 
-            resources.ApplyResources(this.bunifuCustomLabel30, "bunifuCustomLabel30");
-            this.bunifuCustomLabel30.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuCustomLabel30.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(239)))), ((int)(((byte)(250)))));
-            this.bunifuCustomLabel30.Name = "bunifuCustomLabel30";
+            resources.ApplyResources(this.labelEnterprise, "labelEnterprise");
+            this.labelEnterprise.BackColor = System.Drawing.Color.Transparent;
+            this.labelEnterprise.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(239)))), ((int)(((byte)(250)))));
+            this.labelEnterprise.Name = "labelEnterprise";
             // 
             // txt_celphone
             // 
@@ -3789,77 +3788,77 @@
             this.txt_celphone.Name = "txt_celphone";
             this.txt_celphone.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // bunifuMaterialTextbox10
+            // textboxSupplierName
             // 
-            resources.ApplyResources(this.bunifuMaterialTextbox10, "bunifuMaterialTextbox10");
-            this.bunifuMaterialTextbox10.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox10.ForeColor = System.Drawing.Color.White;
-            this.bunifuMaterialTextbox10.HintForeColor = System.Drawing.Color.Empty;
-            this.bunifuMaterialTextbox10.HintText = "";
-            this.bunifuMaterialTextbox10.isPassword = false;
-            this.bunifuMaterialTextbox10.LineFocusedColor = System.Drawing.Color.White;
-            this.bunifuMaterialTextbox10.LineIdleColor = System.Drawing.Color.Transparent;
-            this.bunifuMaterialTextbox10.LineMouseHoverColor = System.Drawing.Color.White;
-            this.bunifuMaterialTextbox10.LineThickness = 1;
-            this.bunifuMaterialTextbox10.Name = "bunifuMaterialTextbox10";
-            this.bunifuMaterialTextbox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            resources.ApplyResources(this.textboxSupplierName, "textboxSupplierName");
+            this.textboxSupplierName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.textboxSupplierName.ForeColor = System.Drawing.Color.White;
+            this.textboxSupplierName.HintForeColor = System.Drawing.Color.Empty;
+            this.textboxSupplierName.HintText = "";
+            this.textboxSupplierName.isPassword = false;
+            this.textboxSupplierName.LineFocusedColor = System.Drawing.Color.White;
+            this.textboxSupplierName.LineIdleColor = System.Drawing.Color.Transparent;
+            this.textboxSupplierName.LineMouseHoverColor = System.Drawing.Color.White;
+            this.textboxSupplierName.LineThickness = 1;
+            this.textboxSupplierName.Name = "textboxSupplierName";
+            this.textboxSupplierName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // bunifuCustomLabel31
+            // labelInvoiceFrom
             // 
-            resources.ApplyResources(this.bunifuCustomLabel31, "bunifuCustomLabel31");
-            this.bunifuCustomLabel31.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(142)))), ((int)(((byte)(150)))));
-            this.bunifuCustomLabel31.Name = "bunifuCustomLabel31";
+            resources.ApplyResources(this.labelInvoiceFrom, "labelInvoiceFrom");
+            this.labelInvoiceFrom.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(142)))), ((int)(((byte)(150)))));
+            this.labelInvoiceFrom.Name = "labelInvoiceFrom";
             // 
-            // bunifuMaterialTextbox9
+            // TextboxCustomerName
             // 
-            this.bunifuMaterialTextbox9.Cursor = System.Windows.Forms.Cursors.IBeam;
-            resources.ApplyResources(this.bunifuMaterialTextbox9, "bunifuMaterialTextbox9");
-            this.bunifuMaterialTextbox9.ForeColor = System.Drawing.Color.White;
-            this.bunifuMaterialTextbox9.HintForeColor = System.Drawing.Color.Empty;
-            this.bunifuMaterialTextbox9.HintText = "";
-            this.bunifuMaterialTextbox9.isPassword = false;
-            this.bunifuMaterialTextbox9.LineFocusedColor = System.Drawing.Color.White;
-            this.bunifuMaterialTextbox9.LineIdleColor = System.Drawing.Color.Transparent;
-            this.bunifuMaterialTextbox9.LineMouseHoverColor = System.Drawing.Color.White;
-            this.bunifuMaterialTextbox9.LineThickness = 1;
-            this.bunifuMaterialTextbox9.Name = "bunifuMaterialTextbox9";
-            this.bunifuMaterialTextbox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.TextboxCustomerName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            resources.ApplyResources(this.TextboxCustomerName, "TextboxCustomerName");
+            this.TextboxCustomerName.ForeColor = System.Drawing.Color.White;
+            this.TextboxCustomerName.HintForeColor = System.Drawing.Color.Empty;
+            this.TextboxCustomerName.HintText = "";
+            this.TextboxCustomerName.isPassword = false;
+            this.TextboxCustomerName.LineFocusedColor = System.Drawing.Color.White;
+            this.TextboxCustomerName.LineIdleColor = System.Drawing.Color.Transparent;
+            this.TextboxCustomerName.LineMouseHoverColor = System.Drawing.Color.White;
+            this.TextboxCustomerName.LineThickness = 1;
+            this.TextboxCustomerName.Name = "TextboxCustomerName";
+            this.TextboxCustomerName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // bunifuCustomLabel28
+            // labelInvoiceFrom1
             // 
-            resources.ApplyResources(this.bunifuCustomLabel28, "bunifuCustomLabel28");
-            this.bunifuCustomLabel28.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(142)))), ((int)(((byte)(150)))));
-            this.bunifuCustomLabel28.Name = "bunifuCustomLabel28";
+            resources.ApplyResources(this.labelInvoiceFrom1, "labelInvoiceFrom1");
+            this.labelInvoiceFrom1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(142)))), ((int)(((byte)(150)))));
+            this.labelInvoiceFrom1.Name = "labelInvoiceFrom1";
             // 
-            // label16
+            // labelDateNowInvoice
             // 
-            resources.ApplyResources(this.label16, "label16");
-            this.label16.ForeColor = System.Drawing.Color.White;
-            this.label16.Name = "label16";
+            resources.ApplyResources(this.labelDateNowInvoice, "labelDateNowInvoice");
+            this.labelDateNowInvoice.ForeColor = System.Drawing.Color.White;
+            this.labelDateNowInvoice.Name = "labelDateNowInvoice";
             // 
-            // label18
+            // labelDateInvoice
             // 
-            resources.ApplyResources(this.label18, "label18");
-            this.label18.ForeColor = System.Drawing.Color.White;
-            this.label18.Name = "label18";
+            resources.ApplyResources(this.labelDateInvoice, "labelDateInvoice");
+            this.labelDateInvoice.ForeColor = System.Drawing.Color.White;
+            this.labelDateInvoice.Name = "labelDateInvoice";
             // 
-            // textFactura
+            // textInvoiceNumber
             // 
-            resources.ApplyResources(this.textFactura, "textFactura");
-            this.textFactura.ForeColor = System.Drawing.Color.White;
-            this.textFactura.Name = "textFactura";
+            resources.ApplyResources(this.textInvoiceNumber, "textInvoiceNumber");
+            this.textInvoiceNumber.ForeColor = System.Drawing.Color.White;
+            this.textInvoiceNumber.Name = "textInvoiceNumber";
             // 
-            // label19
+            // labelInvoiceNumber
             // 
-            resources.ApplyResources(this.label19, "label19");
-            this.label19.ForeColor = System.Drawing.Color.White;
-            this.label19.Name = "label19";
+            resources.ApplyResources(this.labelInvoiceNumber, "labelInvoiceNumber");
+            this.labelInvoiceNumber.ForeColor = System.Drawing.Color.White;
+            this.labelInvoiceNumber.Name = "labelInvoiceNumber";
             // 
-            // bunifuCustomLabel29
+            // labelInvoice1
             // 
-            resources.ApplyResources(this.bunifuCustomLabel29, "bunifuCustomLabel29");
-            this.bunifuCustomLabel29.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(142)))), ((int)(((byte)(150)))));
-            this.bunifuCustomLabel29.Name = "bunifuCustomLabel29";
+            resources.ApplyResources(this.labelInvoice1, "labelInvoice1");
+            this.labelInvoice1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(142)))), ((int)(((byte)(150)))));
+            this.labelInvoice1.Name = "labelInvoice1";
             // 
             // panel41
             // 
@@ -6266,6 +6265,27 @@
             resources.ApplyResources(this.panel39, "panel39");
             this.panel39.Name = "panel39";
             // 
+            // clienteGeneroText
+            // 
+            this.clienteGeneroText.Cursor = System.Windows.Forms.Cursors.IBeam;
+            resources.ApplyResources(this.clienteGeneroText, "clienteGeneroText");
+            this.clienteGeneroText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.clienteGeneroText.HintForeColor = System.Drawing.Color.Empty;
+            this.clienteGeneroText.HintText = "";
+            this.clienteGeneroText.isPassword = false;
+            this.clienteGeneroText.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.clienteGeneroText.LineIdleColor = System.Drawing.SystemColors.GrayText;
+            this.clienteGeneroText.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.clienteGeneroText.LineThickness = 6;
+            this.clienteGeneroText.Name = "clienteGeneroText";
+            this.clienteGeneroText.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // GeneroCLientes
+            // 
+            resources.ApplyResources(this.GeneroCLientes, "GeneroCLientes");
+            this.GeneroCLientes.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.GeneroCLientes.Name = "GeneroCLientes";
+            // 
             // cienteMayoristaCombobox
             // 
             this.cienteMayoristaCombobox.BackColor = System.Drawing.SystemColors.InactiveBorder;
@@ -6707,33 +6727,12 @@
             // bunifuElipse3
             // 
             this.bunifuElipse3.ElipseRadius = 5;
-            this.bunifuElipse3.TargetControl = this.bunifuImageButton2;
+            this.bunifuElipse3.TargetControl = this.ButtonVerify;
             // 
             // contextMenuStrip1
             // 
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             resources.ApplyResources(this.contextMenuStrip1, "contextMenuStrip1");
-            // 
-            // clienteGeneroText
-            // 
-            this.clienteGeneroText.Cursor = System.Windows.Forms.Cursors.IBeam;
-            resources.ApplyResources(this.clienteGeneroText, "clienteGeneroText");
-            this.clienteGeneroText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.clienteGeneroText.HintForeColor = System.Drawing.Color.Empty;
-            this.clienteGeneroText.HintText = "";
-            this.clienteGeneroText.isPassword = false;
-            this.clienteGeneroText.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.clienteGeneroText.LineIdleColor = System.Drawing.SystemColors.GrayText;
-            this.clienteGeneroText.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.clienteGeneroText.LineThickness = 6;
-            this.clienteGeneroText.Name = "clienteGeneroText";
-            this.clienteGeneroText.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // GeneroCLientes
-            // 
-            resources.ApplyResources(this.GeneroCLientes, "GeneroCLientes");
-            this.GeneroCLientes.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.GeneroCLientes.Name = "GeneroCLientes";
             // 
             // Form1
             // 
@@ -6747,10 +6746,10 @@
             this.Name = "Form1";
             this.TopMost = true;
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.tab1Inicio.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).EndInit();
+            this.tabMainPage.ResumeLayout(false);
+            this.panelLogin.ResumeLayout(false);
+            this.panelLogin.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ButtonVerify)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tab1Productos.ResumeLayout(false);
             this.tabControl3.ResumeLayout(false);
@@ -6795,15 +6794,15 @@
             this.tabPage5.ResumeLayout(false);
             this.tabPage5.PerformLayout();
             this.tabControl1.ResumeLayout(false);
-            this.Ventas.ResumeLayout(false);
-            this.Ventas.PerformLayout();
+            this.panelSellBackground.ResumeLayout(false);
+            this.panelSellBackground.PerformLayout();
             this.panel45.ResumeLayout(false);
             this.panel45.PerformLayout();
             this.panel43.ResumeLayout(false);
             this.panel43.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DataGridVentas)).EndInit();
-            this.panel40.ResumeLayout(false);
-            this.panel40.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.labelMessageEnd)).EndInit();
+            this.panelSellsTop.ResumeLayout(false);
+            this.panelSellsTop.PerformLayout();
             this.panel44.ResumeLayout(false);
             this.panel44.PerformLayout();
             this.tab1Almacen.ResumeLayout(false);
@@ -6907,10 +6906,10 @@
         #endregion
         private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel1;
         private Bunifu.Framework.UI.BunifuImageButton buniCerrar;
-        private System.Windows.Forms.TabPage tab1Inicio;
-        private System.Windows.Forms.Label labelCedula;
+        private System.Windows.Forms.TabPage tabMainPage;
+        private System.Windows.Forms.Label labeCard;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label labelVendedor;
+        private System.Windows.Forms.Label labelSeller;
         private System.Windows.Forms.ComboBox comboBoxCiudad;
         private System.Windows.Forms.TabPage tab1Productos;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton2;
@@ -6951,8 +6950,8 @@
         private System.Windows.Forms.TabControl tabControl3;
         private System.Windows.Forms.TabPage tabPage8;
         private System.Windows.Forms.TabPage tabPage9;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label forgetPassword;
+        private System.Windows.Forms.Label labelAccount;
         private System.Windows.Forms.TabPage tabPage7;
         private Bunifu.Framework.UI.BunifuFlatButton ButtonCargarPeAl;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
@@ -7073,14 +7072,14 @@
         private Bunifu.Framework.UI.BunifuCustomLabel LabelNombreTipoEntrada;
         private System.Windows.Forms.Label labelReporteLocalEntradas;
         private Bunifu.Framework.UI.BunifuTextbox TextboxNombreAlmacen;
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panelLogin;
         private Bunifu.Framework.UI.BunifuMaterialTextbox buniTextPass;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox buniTextUsuario;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox buniTextUser;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse2;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panelImageLogin;
         private System.Windows.Forms.Label label15;
-        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton2;
+        private Bunifu.Framework.UI.BunifuImageButton ButtonVerify;
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton3;
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton4;
         private System.Windows.Forms.TextBox TextboxGatosTotal;
@@ -7254,46 +7253,46 @@
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton8;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton9;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton40;
-        private System.Windows.Forms.TabPage Ventas;
-        private System.Windows.Forms.Panel panel42;
-        private System.Windows.Forms.Panel panel40;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox9;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel28;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label textFactura;
-        private System.Windows.Forms.Label label19;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel29;
+        private System.Windows.Forms.TabPage panelSellBackground;
+        private System.Windows.Forms.Panel panelSellMiddle;
+        private System.Windows.Forms.Panel panelSellsTop;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox TextboxCustomerName;
+        private Bunifu.Framework.UI.BunifuCustomLabel labelInvoiceFrom1;
+        private System.Windows.Forms.Label labelDateNowInvoice;
+        private System.Windows.Forms.Label labelDateInvoice;
+        private System.Windows.Forms.Label textInvoiceNumber;
+        private System.Windows.Forms.Label labelInvoiceNumber;
+        private Bunifu.Framework.UI.BunifuCustomLabel labelInvoice1;
         private System.Windows.Forms.Panel panel41;
-        private Bunifu.Framework.UI.BunifuFlatButton butttonFinalizarVentas;
-        private Bunifu.Framework.UI.BunifuFlatButton buttonModificarVentas;
-        private Bunifu.Framework.UI.BunifuFlatButton buttonRestarProducto;
-        private Bunifu.Framework.UI.BunifuFlatButton buttonEliminarVentas;
+        private Bunifu.Framework.UI.BunifuFlatButton butttonFinishSells;
+        private Bunifu.Framework.UI.BunifuFlatButton buttonModifySell;
+        private Bunifu.Framework.UI.BunifuFlatButton buttonSubstractProduct;
+        private Bunifu.Framework.UI.BunifuFlatButton buttonDeleteContentInvoice;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel32;
         private System.Windows.Forms.Panel panel45;
         private System.Windows.Forms.Panel panel43;
-        private System.Windows.Forms.Label label21;
-        private Bunifu.Framework.UI.BunifuCustomDataGrid DataGridVentas;
-        private System.Windows.Forms.TextBox textCodigo;
+        private System.Windows.Forms.Label labelTotalSells;
+        private Bunifu.Framework.UI.BunifuCustomDataGrid labelMessageEnd;
+        private System.Windows.Forms.TextBox textCode;
         private System.Windows.Forms.Label labelTotal;
         private System.Windows.Forms.TextBox textTotal;
-        private System.Windows.Forms.Label labelPrecio;
-        private System.Windows.Forms.Label labelTamaño;
-        private System.Windows.Forms.Label labelProducto;
-        private System.Windows.Forms.Label labelCantidad;
-        private System.Windows.Forms.Label labelReferencia;
+        private System.Windows.Forms.Label labelPrice;
+        private System.Windows.Forms.Label labelSize;
+        private System.Windows.Forms.Label labelProduct;
+        private System.Windows.Forms.Label labelQuantity;
+        private System.Windows.Forms.Label labelReference;
         private System.Windows.Forms.TextBox textPrecio;
-        private System.Windows.Forms.TextBox textCantidad;
-        private System.Windows.Forms.TextBox textProducto;
-        private System.Windows.Forms.TextBox textTamano;
-        private System.Windows.Forms.TextBox textReferencia;
-        private System.Windows.Forms.Label labelCodigo;
+        private System.Windows.Forms.TextBox textQuantity;
+        private System.Windows.Forms.TextBox textProduct;
+        private System.Windows.Forms.TextBox textSize;
+        private System.Windows.Forms.TextBox textReference;
+        private System.Windows.Forms.Label labelCode;
         private System.Windows.Forms.Panel panel44;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel30;
+        private Bunifu.Framework.UI.BunifuCustomLabel labelEnterprise;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txt_celphone;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox10;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel31;
-        public System.Windows.Forms.TextBox textInsertarCodigo;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox textboxSupplierName;
+        private Bunifu.Framework.UI.BunifuCustomLabel labelInvoiceFrom;
+        public System.Windows.Forms.TextBox textInsertCode;
         private Bunifu.Framework.UI.BunifuCustomDataGrid bunifuCustomDataGridUsuarios;
         private System.Windows.Forms.TabPage tabPage5;
         private Bunifu.Framework.UI.BunifuCustomDataGrid DataGridPermisosPorAlmacen;
