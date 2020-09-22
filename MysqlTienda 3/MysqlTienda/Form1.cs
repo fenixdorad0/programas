@@ -3752,6 +3752,9 @@ namespace MysqlTienda
             }
         }
 
+        //I could not understand the language at all. =(, could you make in english i can do the translate
+        //Ok, let me have a look again.
+
         private void DataGridClientesProvedores_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             try
