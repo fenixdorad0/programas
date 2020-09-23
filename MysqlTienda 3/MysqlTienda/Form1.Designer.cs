@@ -235,11 +235,7 @@
             this.TextboxUsuario = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.TextboxCard = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.paneSoftwareRight = new System.Windows.Forms.Panel();
-            this.bunifuCustomDataGridUsuarios = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            this.ButtonUsuarioAgregar = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.ButtonUsuarioModificar = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.ButtonUsuarioCargar = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.ButtonUsuarioEliminar = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.DataGridUser = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.LabelUCard = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.LabelUName = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.LabelUMail = new Bunifu.Framework.UI.BunifuCustomLabel();
@@ -568,6 +564,10 @@
             this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuElipse3 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.buttonLoadUser = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.buttonAddUser = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.buttonDeletUser = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.buttonModifyUser = new Bunifu.Framework.UI.BunifuFlatButton();
             this.tabMainPage.SuspendLayout();
             this.panelLogin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ButtonVerify)).BeginInit();
@@ -598,7 +598,7 @@
             this.tabControl2.SuspendLayout();
             this.tabPage6.SuspendLayout();
             this.paneSoftwareRight.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGridUsuarios)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DataGridUser)).BeginInit();
             this.tabPage7.SuspendLayout();
             this.panel13.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridPermisosPorAlmacen)).BeginInit();
@@ -2095,26 +2095,26 @@
             // paneSoftwareRight
             // 
             this.paneSoftwareRight.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(46)))), ((int)(((byte)(63)))));
-            this.paneSoftwareRight.Controls.Add(this.bunifuCustomDataGridUsuarios);
-            this.paneSoftwareRight.Controls.Add(this.ButtonUsuarioAgregar);
-            this.paneSoftwareRight.Controls.Add(this.ButtonUsuarioModificar);
-            this.paneSoftwareRight.Controls.Add(this.ButtonUsuarioCargar);
-            this.paneSoftwareRight.Controls.Add(this.ButtonUsuarioEliminar);
+            this.paneSoftwareRight.Controls.Add(this.buttonModifyUser);
+            this.paneSoftwareRight.Controls.Add(this.buttonDeletUser);
+            this.paneSoftwareRight.Controls.Add(this.buttonAddUser);
+            this.paneSoftwareRight.Controls.Add(this.buttonLoadUser);
+            this.paneSoftwareRight.Controls.Add(this.DataGridUser);
             resources.ApplyResources(this.paneSoftwareRight, "paneSoftwareRight");
             this.paneSoftwareRight.Name = "paneSoftwareRight";
             // 
-            // bunifuCustomDataGridUsuarios
+            // DataGridUser
             // 
-            this.bunifuCustomDataGridUsuarios.AllowUserToAddRows = false;
-            this.bunifuCustomDataGridUsuarios.AllowUserToDeleteRows = false;
+            this.DataGridUser.AllowUserToAddRows = false;
+            this.DataGridUser.AllowUserToDeleteRows = false;
             dataGridViewCellStyle17.BackColor = System.Drawing.Color.White;
-            this.bunifuCustomDataGridUsuarios.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle17;
-            resources.ApplyResources(this.bunifuCustomDataGridUsuarios, "bunifuCustomDataGridUsuarios");
-            this.bunifuCustomDataGridUsuarios.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.bunifuCustomDataGridUsuarios.BackgroundColor = System.Drawing.Color.White;
-            this.bunifuCustomDataGridUsuarios.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.bunifuCustomDataGridUsuarios.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            this.bunifuCustomDataGridUsuarios.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.DataGridUser.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle17;
+            resources.ApplyResources(this.DataGridUser, "DataGridUser");
+            this.DataGridUser.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.DataGridUser.BackgroundColor = System.Drawing.Color.White;
+            this.DataGridUser.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.DataGridUser.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.DataGridUser.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(94)))), ((int)(((byte)(133)))));
             dataGridViewCellStyle18.Font = new System.Drawing.Font("Averta Demo PE Cutted Demo", 11.25F);
@@ -2122,7 +2122,7 @@
             dataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(94)))), ((int)(((byte)(133)))));
             dataGridViewCellStyle18.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.bunifuCustomDataGridUsuarios.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle18;
+            this.DataGridUser.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle18;
             dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(94)))), ((int)(((byte)(133)))));
             dataGridViewCellStyle19.Font = new System.Drawing.Font("Averta Demo PE Cutted Demo", 11.25F);
@@ -2130,15 +2130,15 @@
             dataGridViewCellStyle19.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(241)))), ((int)(((byte)(243)))));
             dataGridViewCellStyle19.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             dataGridViewCellStyle19.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.bunifuCustomDataGridUsuarios.DefaultCellStyle = dataGridViewCellStyle19;
-            this.bunifuCustomDataGridUsuarios.DoubleBuffered = true;
-            this.bunifuCustomDataGridUsuarios.EnableHeadersVisualStyles = false;
-            this.bunifuCustomDataGridUsuarios.GridColor = System.Drawing.Color.WhiteSmoke;
-            this.bunifuCustomDataGridUsuarios.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(94)))), ((int)(((byte)(133)))));
-            this.bunifuCustomDataGridUsuarios.HeaderForeColor = System.Drawing.Color.WhiteSmoke;
-            this.bunifuCustomDataGridUsuarios.Name = "bunifuCustomDataGridUsuarios";
-            this.bunifuCustomDataGridUsuarios.ReadOnly = true;
-            this.bunifuCustomDataGridUsuarios.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.DataGridUser.DefaultCellStyle = dataGridViewCellStyle19;
+            this.DataGridUser.DoubleBuffered = true;
+            this.DataGridUser.EnableHeadersVisualStyles = false;
+            this.DataGridUser.GridColor = System.Drawing.Color.WhiteSmoke;
+            this.DataGridUser.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(94)))), ((int)(((byte)(133)))));
+            this.DataGridUser.HeaderForeColor = System.Drawing.Color.WhiteSmoke;
+            this.DataGridUser.Name = "DataGridUser";
+            this.DataGridUser.ReadOnly = true;
+            this.DataGridUser.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle20.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle20.Font = new System.Drawing.Font("Averta Demo PE Cutted Demo", 11.25F);
@@ -2146,141 +2146,13 @@
             dataGridViewCellStyle20.SelectionBackColor = System.Drawing.Color.White;
             dataGridViewCellStyle20.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.bunifuCustomDataGridUsuarios.RowHeadersDefaultCellStyle = dataGridViewCellStyle20;
-            this.bunifuCustomDataGridUsuarios.RowHeadersVisible = false;
-            this.bunifuCustomDataGridUsuarios.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.White;
-            this.bunifuCustomDataGridUsuarios.RowTemplate.DividerHeight = 1;
-            this.bunifuCustomDataGridUsuarios.RowTemplate.Height = 40;
-            this.bunifuCustomDataGridUsuarios.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.bunifuCustomDataGridUsuarios.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.bunifuCustomDataGridUsuarios_CellClick);
-            // 
-            // ButtonUsuarioAgregar
-            // 
-            this.ButtonUsuarioAgregar.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.ButtonUsuarioAgregar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
-            this.ButtonUsuarioAgregar.BackgroundImage = global::MysqlTienda.Properties.Resources.AGREGAR;
-            resources.ApplyResources(this.ButtonUsuarioAgregar, "ButtonUsuarioAgregar");
-            this.ButtonUsuarioAgregar.BorderRadius = 0;
-            this.ButtonUsuarioAgregar.ButtonText = "";
-            this.ButtonUsuarioAgregar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ButtonUsuarioAgregar.DisabledColor = System.Drawing.Color.Gray;
-            this.ButtonUsuarioAgregar.Iconcolor = System.Drawing.Color.Transparent;
-            this.ButtonUsuarioAgregar.Iconimage = ((System.Drawing.Image)(resources.GetObject("ButtonUsuarioAgregar.Iconimage")));
-            this.ButtonUsuarioAgregar.Iconimage_right = null;
-            this.ButtonUsuarioAgregar.Iconimage_right_Selected = null;
-            this.ButtonUsuarioAgregar.Iconimage_Selected = null;
-            this.ButtonUsuarioAgregar.IconMarginLeft = 0;
-            this.ButtonUsuarioAgregar.IconMarginRight = 0;
-            this.ButtonUsuarioAgregar.IconRightVisible = false;
-            this.ButtonUsuarioAgregar.IconRightZoom = 0D;
-            this.ButtonUsuarioAgregar.IconVisible = false;
-            this.ButtonUsuarioAgregar.IconZoom = 90D;
-            this.ButtonUsuarioAgregar.IsTab = false;
-            this.ButtonUsuarioAgregar.Name = "ButtonUsuarioAgregar";
-            this.ButtonUsuarioAgregar.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
-            this.ButtonUsuarioAgregar.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.ButtonUsuarioAgregar.OnHoverTextColor = System.Drawing.Color.White;
-            this.ButtonUsuarioAgregar.selected = false;
-            this.ButtonUsuarioAgregar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ButtonUsuarioAgregar.Textcolor = System.Drawing.Color.White;
-            this.ButtonUsuarioAgregar.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ButtonUsuarioAgregar.Click += new System.EventHandler(this.bunifuFlatButton1_Click);
-            // 
-            // ButtonUsuarioModificar
-            // 
-            this.ButtonUsuarioModificar.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.ButtonUsuarioModificar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
-            this.ButtonUsuarioModificar.BackgroundImage = global::MysqlTienda.Properties.Resources.CURD;
-            resources.ApplyResources(this.ButtonUsuarioModificar, "ButtonUsuarioModificar");
-            this.ButtonUsuarioModificar.BorderRadius = 0;
-            this.ButtonUsuarioModificar.ButtonText = "";
-            this.ButtonUsuarioModificar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ButtonUsuarioModificar.DisabledColor = System.Drawing.Color.Gray;
-            this.ButtonUsuarioModificar.Iconcolor = System.Drawing.Color.Transparent;
-            this.ButtonUsuarioModificar.Iconimage = ((System.Drawing.Image)(resources.GetObject("ButtonUsuarioModificar.Iconimage")));
-            this.ButtonUsuarioModificar.Iconimage_right = null;
-            this.ButtonUsuarioModificar.Iconimage_right_Selected = null;
-            this.ButtonUsuarioModificar.Iconimage_Selected = null;
-            this.ButtonUsuarioModificar.IconMarginLeft = 0;
-            this.ButtonUsuarioModificar.IconMarginRight = 0;
-            this.ButtonUsuarioModificar.IconRightVisible = false;
-            this.ButtonUsuarioModificar.IconRightZoom = 0D;
-            this.ButtonUsuarioModificar.IconVisible = false;
-            this.ButtonUsuarioModificar.IconZoom = 90D;
-            this.ButtonUsuarioModificar.IsTab = false;
-            this.ButtonUsuarioModificar.Name = "ButtonUsuarioModificar";
-            this.ButtonUsuarioModificar.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
-            this.ButtonUsuarioModificar.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.ButtonUsuarioModificar.OnHoverTextColor = System.Drawing.Color.White;
-            this.ButtonUsuarioModificar.selected = false;
-            this.ButtonUsuarioModificar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ButtonUsuarioModificar.Textcolor = System.Drawing.Color.White;
-            this.ButtonUsuarioModificar.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ButtonUsuarioModificar.Click += new System.EventHandler(this.ButtonUsuarioModificar_Click);
-            // 
-            // ButtonUsuarioCargar
-            // 
-            this.ButtonUsuarioCargar.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.ButtonUsuarioCargar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
-            this.ButtonUsuarioCargar.BackgroundImage = global::MysqlTienda.Properties.Resources.CARGAR;
-            resources.ApplyResources(this.ButtonUsuarioCargar, "ButtonUsuarioCargar");
-            this.ButtonUsuarioCargar.BorderRadius = 0;
-            this.ButtonUsuarioCargar.ButtonText = "";
-            this.ButtonUsuarioCargar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ButtonUsuarioCargar.DisabledColor = System.Drawing.Color.Gray;
-            this.ButtonUsuarioCargar.Iconcolor = System.Drawing.Color.Transparent;
-            this.ButtonUsuarioCargar.Iconimage = ((System.Drawing.Image)(resources.GetObject("ButtonUsuarioCargar.Iconimage")));
-            this.ButtonUsuarioCargar.Iconimage_right = null;
-            this.ButtonUsuarioCargar.Iconimage_right_Selected = null;
-            this.ButtonUsuarioCargar.Iconimage_Selected = null;
-            this.ButtonUsuarioCargar.IconMarginLeft = 0;
-            this.ButtonUsuarioCargar.IconMarginRight = 0;
-            this.ButtonUsuarioCargar.IconRightVisible = false;
-            this.ButtonUsuarioCargar.IconRightZoom = 0D;
-            this.ButtonUsuarioCargar.IconVisible = false;
-            this.ButtonUsuarioCargar.IconZoom = 90D;
-            this.ButtonUsuarioCargar.IsTab = false;
-            this.ButtonUsuarioCargar.Name = "ButtonUsuarioCargar";
-            this.ButtonUsuarioCargar.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
-            this.ButtonUsuarioCargar.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.ButtonUsuarioCargar.OnHoverTextColor = System.Drawing.Color.White;
-            this.ButtonUsuarioCargar.selected = false;
-            this.ButtonUsuarioCargar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ButtonUsuarioCargar.Textcolor = System.Drawing.Color.White;
-            this.ButtonUsuarioCargar.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ButtonUsuarioCargar.Click += new System.EventHandler(this.ButtonUsuarioCargar_Click);
-            // 
-            // ButtonUsuarioEliminar
-            // 
-            this.ButtonUsuarioEliminar.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.ButtonUsuarioEliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
-            this.ButtonUsuarioEliminar.BackgroundImage = global::MysqlTienda.Properties.Resources.ELIMINAR;
-            resources.ApplyResources(this.ButtonUsuarioEliminar, "ButtonUsuarioEliminar");
-            this.ButtonUsuarioEliminar.BorderRadius = 0;
-            this.ButtonUsuarioEliminar.ButtonText = "";
-            this.ButtonUsuarioEliminar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ButtonUsuarioEliminar.DisabledColor = System.Drawing.Color.Gray;
-            this.ButtonUsuarioEliminar.Iconcolor = System.Drawing.Color.Transparent;
-            this.ButtonUsuarioEliminar.Iconimage = ((System.Drawing.Image)(resources.GetObject("ButtonUsuarioEliminar.Iconimage")));
-            this.ButtonUsuarioEliminar.Iconimage_right = null;
-            this.ButtonUsuarioEliminar.Iconimage_right_Selected = null;
-            this.ButtonUsuarioEliminar.Iconimage_Selected = null;
-            this.ButtonUsuarioEliminar.IconMarginLeft = 0;
-            this.ButtonUsuarioEliminar.IconMarginRight = 0;
-            this.ButtonUsuarioEliminar.IconRightVisible = false;
-            this.ButtonUsuarioEliminar.IconRightZoom = 0D;
-            this.ButtonUsuarioEliminar.IconVisible = false;
-            this.ButtonUsuarioEliminar.IconZoom = 90D;
-            this.ButtonUsuarioEliminar.IsTab = false;
-            this.ButtonUsuarioEliminar.Name = "ButtonUsuarioEliminar";
-            this.ButtonUsuarioEliminar.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
-            this.ButtonUsuarioEliminar.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.ButtonUsuarioEliminar.OnHoverTextColor = System.Drawing.Color.White;
-            this.ButtonUsuarioEliminar.selected = false;
-            this.ButtonUsuarioEliminar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ButtonUsuarioEliminar.Textcolor = System.Drawing.Color.White;
-            this.ButtonUsuarioEliminar.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ButtonUsuarioEliminar.Click += new System.EventHandler(this.ButtonUsuarioEliminar_Click);
+            this.DataGridUser.RowHeadersDefaultCellStyle = dataGridViewCellStyle20;
+            this.DataGridUser.RowHeadersVisible = false;
+            this.DataGridUser.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.White;
+            this.DataGridUser.RowTemplate.DividerHeight = 1;
+            this.DataGridUser.RowTemplate.Height = 40;
+            this.DataGridUser.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.DataGridUser.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.bunifuCustomDataGridUsuarios_CellClick);
             // 
             // LabelUCard
             // 
@@ -6734,6 +6606,130 @@
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             resources.ApplyResources(this.contextMenuStrip1, "contextMenuStrip1");
             // 
+            // buttonLoadUser
+            // 
+            this.buttonLoadUser.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(142)))), ((int)(((byte)(123)))));
+            this.buttonLoadUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(123)))), ((int)(((byte)(142)))));
+            resources.ApplyResources(this.buttonLoadUser, "buttonLoadUser");
+            this.buttonLoadUser.BorderRadius = 0;
+            this.buttonLoadUser.ButtonText = "Load";
+            this.buttonLoadUser.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonLoadUser.DisabledColor = System.Drawing.Color.Gray;
+            this.buttonLoadUser.Iconcolor = System.Drawing.Color.Transparent;
+            this.buttonLoadUser.Iconimage = ((System.Drawing.Image)(resources.GetObject("buttonLoadUser.Iconimage")));
+            this.buttonLoadUser.Iconimage_right = null;
+            this.buttonLoadUser.Iconimage_right_Selected = null;
+            this.buttonLoadUser.Iconimage_Selected = null;
+            this.buttonLoadUser.IconMarginLeft = 0;
+            this.buttonLoadUser.IconMarginRight = 0;
+            this.buttonLoadUser.IconRightVisible = false;
+            this.buttonLoadUser.IconRightZoom = 0D;
+            this.buttonLoadUser.IconVisible = false;
+            this.buttonLoadUser.IconZoom = 90D;
+            this.buttonLoadUser.IsTab = false;
+            this.buttonLoadUser.Name = "buttonLoadUser";
+            this.buttonLoadUser.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(123)))), ((int)(((byte)(142)))));
+            this.buttonLoadUser.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(217)))), ((int)(((byte)(211)))));
+            this.buttonLoadUser.OnHoverTextColor = System.Drawing.Color.White;
+            this.buttonLoadUser.selected = false;
+            this.buttonLoadUser.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.buttonLoadUser.Textcolor = System.Drawing.Color.White;
+            this.buttonLoadUser.TextFont = new System.Drawing.Font("Averta Demo PE Cutted Demo", 21.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonLoadUser.Click += new System.EventHandler(this.bunifuFlatButton1_Click_2);
+            // 
+            // buttonAddUser
+            // 
+            this.buttonAddUser.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(142)))), ((int)(((byte)(123)))));
+            this.buttonAddUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(123)))), ((int)(((byte)(142)))));
+            resources.ApplyResources(this.buttonAddUser, "buttonAddUser");
+            this.buttonAddUser.BorderRadius = 0;
+            this.buttonAddUser.ButtonText = "Add";
+            this.buttonAddUser.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonAddUser.DisabledColor = System.Drawing.Color.Gray;
+            this.buttonAddUser.Iconcolor = System.Drawing.Color.Transparent;
+            this.buttonAddUser.Iconimage = ((System.Drawing.Image)(resources.GetObject("buttonAddUser.Iconimage")));
+            this.buttonAddUser.Iconimage_right = null;
+            this.buttonAddUser.Iconimage_right_Selected = null;
+            this.buttonAddUser.Iconimage_Selected = null;
+            this.buttonAddUser.IconMarginLeft = 0;
+            this.buttonAddUser.IconMarginRight = 0;
+            this.buttonAddUser.IconRightVisible = false;
+            this.buttonAddUser.IconRightZoom = 0D;
+            this.buttonAddUser.IconVisible = false;
+            this.buttonAddUser.IconZoom = 90D;
+            this.buttonAddUser.IsTab = false;
+            this.buttonAddUser.Name = "buttonAddUser";
+            this.buttonAddUser.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(123)))), ((int)(((byte)(142)))));
+            this.buttonAddUser.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(217)))), ((int)(((byte)(211)))));
+            this.buttonAddUser.OnHoverTextColor = System.Drawing.Color.White;
+            this.buttonAddUser.selected = false;
+            this.buttonAddUser.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.buttonAddUser.Textcolor = System.Drawing.Color.White;
+            this.buttonAddUser.TextFont = new System.Drawing.Font("Averta Demo PE Cutted Demo", 21.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonAddUser.Click += new System.EventHandler(this.bunifuFlatButton41_Click_1);
+            // 
+            // buttonDeletUser
+            // 
+            this.buttonDeletUser.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(142)))), ((int)(((byte)(123)))));
+            this.buttonDeletUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(123)))), ((int)(((byte)(142)))));
+            resources.ApplyResources(this.buttonDeletUser, "buttonDeletUser");
+            this.buttonDeletUser.BorderRadius = 0;
+            this.buttonDeletUser.ButtonText = "Delet";
+            this.buttonDeletUser.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonDeletUser.DisabledColor = System.Drawing.Color.Gray;
+            this.buttonDeletUser.Iconcolor = System.Drawing.Color.Transparent;
+            this.buttonDeletUser.Iconimage = ((System.Drawing.Image)(resources.GetObject("buttonDeletUser.Iconimage")));
+            this.buttonDeletUser.Iconimage_right = null;
+            this.buttonDeletUser.Iconimage_right_Selected = null;
+            this.buttonDeletUser.Iconimage_Selected = null;
+            this.buttonDeletUser.IconMarginLeft = 0;
+            this.buttonDeletUser.IconMarginRight = 0;
+            this.buttonDeletUser.IconRightVisible = false;
+            this.buttonDeletUser.IconRightZoom = 0D;
+            this.buttonDeletUser.IconVisible = false;
+            this.buttonDeletUser.IconZoom = 90D;
+            this.buttonDeletUser.IsTab = false;
+            this.buttonDeletUser.Name = "buttonDeletUser";
+            this.buttonDeletUser.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(123)))), ((int)(((byte)(142)))));
+            this.buttonDeletUser.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(217)))), ((int)(((byte)(211)))));
+            this.buttonDeletUser.OnHoverTextColor = System.Drawing.Color.White;
+            this.buttonDeletUser.selected = false;
+            this.buttonDeletUser.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.buttonDeletUser.Textcolor = System.Drawing.Color.White;
+            this.buttonDeletUser.TextFont = new System.Drawing.Font("Averta Demo PE Cutted Demo", 21.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonDeletUser.Click += new System.EventHandler(this.bunifuFlatButton42_Click);
+            // 
+            // buttonModifyUser
+            // 
+            this.buttonModifyUser.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(142)))), ((int)(((byte)(123)))));
+            this.buttonModifyUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(123)))), ((int)(((byte)(142)))));
+            resources.ApplyResources(this.buttonModifyUser, "buttonModifyUser");
+            this.buttonModifyUser.BorderRadius = 0;
+            this.buttonModifyUser.ButtonText = "Modify";
+            this.buttonModifyUser.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonModifyUser.DisabledColor = System.Drawing.Color.Gray;
+            this.buttonModifyUser.Iconcolor = System.Drawing.Color.Transparent;
+            this.buttonModifyUser.Iconimage = ((System.Drawing.Image)(resources.GetObject("buttonModifyUser.Iconimage")));
+            this.buttonModifyUser.Iconimage_right = null;
+            this.buttonModifyUser.Iconimage_right_Selected = null;
+            this.buttonModifyUser.Iconimage_Selected = null;
+            this.buttonModifyUser.IconMarginLeft = 0;
+            this.buttonModifyUser.IconMarginRight = 0;
+            this.buttonModifyUser.IconRightVisible = false;
+            this.buttonModifyUser.IconRightZoom = 0D;
+            this.buttonModifyUser.IconVisible = false;
+            this.buttonModifyUser.IconZoom = 90D;
+            this.buttonModifyUser.IsTab = false;
+            this.buttonModifyUser.Name = "buttonModifyUser";
+            this.buttonModifyUser.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(123)))), ((int)(((byte)(142)))));
+            this.buttonModifyUser.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(217)))), ((int)(((byte)(211)))));
+            this.buttonModifyUser.OnHoverTextColor = System.Drawing.Color.White;
+            this.buttonModifyUser.selected = false;
+            this.buttonModifyUser.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.buttonModifyUser.Textcolor = System.Drawing.Color.White;
+            this.buttonModifyUser.TextFont = new System.Drawing.Font("Averta Demo PE Cutted Demo", 21.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonModifyUser.Click += new System.EventHandler(this.bunifuFlatButton43_Click_1);
+            // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
@@ -6782,7 +6778,7 @@
             this.tabPage6.ResumeLayout(false);
             this.tabPage6.PerformLayout();
             this.paneSoftwareRight.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGridUsuarios)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DataGridUser)).EndInit();
             this.tabPage7.ResumeLayout(false);
             this.tabPage7.PerformLayout();
             this.panel13.ResumeLayout(false);
@@ -6937,11 +6933,7 @@
         private System.Windows.Forms.TabControl tabControl2;
         private System.Windows.Forms.TabPage tabPage6;
         private Bunifu.Framework.UI.BunifuCustomLabel LabelUCard;
-        private Bunifu.Framework.UI.BunifuFlatButton ButtonUsuarioCargar;
-        private Bunifu.Framework.UI.BunifuFlatButton ButtonUsuarioModificar;
-        private Bunifu.Framework.UI.BunifuFlatButton ButtonUsuarioEliminar;
         private Bunifu.Framework.UI.BunifuCustomLabel LabelUName;
-        private Bunifu.Framework.UI.BunifuFlatButton ButtonUsuarioAgregar;
         private Bunifu.Framework.UI.BunifuCustomLabel LabelUMail;
         private Bunifu.Framework.UI.BunifuCustomLabel LabelUPass;
         private Bunifu.Framework.UI.BunifuCustomLabel LabelUUsers;
@@ -7293,7 +7285,7 @@
         private Bunifu.Framework.UI.BunifuMaterialTextbox textboxSupplierName;
         private Bunifu.Framework.UI.BunifuCustomLabel labelInvoiceFrom;
         public System.Windows.Forms.TextBox textInsertCode;
-        private Bunifu.Framework.UI.BunifuCustomDataGrid bunifuCustomDataGridUsuarios;
+        private Bunifu.Framework.UI.BunifuCustomDataGrid DataGridUser;
         private System.Windows.Forms.TabPage tabPage5;
         private Bunifu.Framework.UI.BunifuCustomDataGrid DataGridPermisosPorAlmacen;
         private Bunifu.Framework.UI.BunifuCustomDataGrid bunifuCustomDataGridPermisosUsuario;
@@ -7336,6 +7328,10 @@
         private System.Windows.Forms.ComboBox cienteMayoristaCombobox;
         private Bunifu.Framework.UI.BunifuMaterialTextbox clienteGeneroText;
         private Bunifu.Framework.UI.BunifuCustomLabel GeneroCLientes;
+        private Bunifu.Framework.UI.BunifuFlatButton buttonModifyUser;
+        private Bunifu.Framework.UI.BunifuFlatButton buttonDeletUser;
+        private Bunifu.Framework.UI.BunifuFlatButton buttonAddUser;
+        private Bunifu.Framework.UI.BunifuFlatButton buttonLoadUser;
     }
 }
 

@@ -925,12 +925,12 @@ namespace MysqlTienda
             try
             {
                 //Cargando los datos cuando doy clic en datagridview                           
-                TextboxCard.Text = bunifuCustomDataGridUsuarios.CurrentRow.Cells[0].Value.ToString();
-                TextboxUsuario.Text = bunifuCustomDataGridUsuarios.CurrentRow.Cells[1].Value.ToString();
-                TextboxContrasena.Text = bunifuCustomDataGridUsuarios.CurrentRow.Cells[2].Value.ToString();
-                TextboxCorreo.Text = bunifuCustomDataGridUsuarios.CurrentRow.Cells[3].Value.ToString();
-                TextboxNombre.Text = bunifuCustomDataGridUsuarios.CurrentRow.Cells[4].Value.ToString();
-                comboBoxUsuarioPermisos.Text= bunifuCustomDataGridUsuarios.CurrentRow.Cells[5].Value.ToString();
+                TextboxCard.Text = DataGridUser.CurrentRow.Cells[0].Value.ToString();
+                TextboxUsuario.Text = DataGridUser.CurrentRow.Cells[1].Value.ToString();
+                TextboxContrasena.Text = DataGridUser.CurrentRow.Cells[2].Value.ToString();
+                TextboxCorreo.Text = DataGridUser.CurrentRow.Cells[3].Value.ToString();
+                TextboxNombre.Text = DataGridUser.CurrentRow.Cells[4].Value.ToString();
+                comboBoxUsuarioPermisos.Text= DataGridUser.CurrentRow.Cells[5].Value.ToString();
             }
             catch (Exception error)
             {
@@ -1042,7 +1042,7 @@ namespace MysqlTienda
         }
         public void bunifuFlatButton1_Click(object sender, EventArgs e)
         {
-            agregarUsuario();
+           
 
         }
 
@@ -1103,16 +1103,18 @@ namespace MysqlTienda
 
             if (verificarCedula == true && verificarNombre == true && verificarEmail == true)
             {
-                ButtonUsuarioAgregar.Visible = true;
-                ButtonUsuarioEliminar.Visible = true;
-                ButtonUsuarioModificar.Visible = true;
+               
+                buttonAddUser.Visible = true;
+                buttonDeletUser.Visible = true;
+                buttonModifyUser.Visible = true;
+               
                 return true;
             }
             else
             {
-                ButtonUsuarioAgregar.Visible = false;
-                ButtonUsuarioEliminar.Visible = false;
-                ButtonUsuarioModificar.Visible = false;
+                buttonAddUser.Visible = false;
+                buttonDeletUser.Visible = false;
+                buttonModifyUser.Visible = false;
                 return false;
             }
         }
@@ -1155,7 +1157,7 @@ namespace MysqlTienda
 
         public void ButtonUsuarioCargar_Click(object sender, EventArgs e)
         {
-            iniciarTablaUsuarios();
+            
         }
 
         public void iniciarTablaUsuarios()
@@ -1169,7 +1171,7 @@ namespace MysqlTienda
                 DataTable table = new DataTable();
                 MySqlDataAdapter adpter = new MySqlDataAdapter(selectQuery, conectar);
                 adpter.Fill(table);
-                bunifuCustomDataGridUsuarios.DataSource = table;
+                DataGridUser.DataSource = table;
                 cerrarConeccion();
             }
             catch (Exception error)
@@ -1224,72 +1226,13 @@ namespace MysqlTienda
         public void ButtonUsuarioEliminar_Click(object sender, EventArgs e)
         {
 
-            DialogResult result = MessageBox.Show("¿Seguro que desea eliminar a este usuario?: '" + TextboxUsuario.Text + "'?", "Eliminar usuario: '" + TextboxNombre.Text + "'", MessageBoxButtons.YesNoCancel);
-
-            if (result == DialogResult.Yes)
-            {
-                try
-                {
-                    cargarPermisosPorAlmacen();
-                    cerrarConeccion();
-                    string insertarCodigo = "DELETE FROM easyerp.usuario WHERE cc =" + TextboxCard.Text;
-                    conectar.Open();
-                    MySqlCommand command = new MySqlCommand(insertarCodigo, conectar);
-
-                    if (command.ExecuteNonQuery() == 1)
-                    {
-                        iniciarTablaUsuarios();
-
-                    }
-                    else { }
-                    cerrarConeccion();
-
-                }
-                catch (Exception error)
-                {
-                    String mensaje = Convert.ToString(error.Message);
-                    int valor = mensaje.LastIndexOf("La cadena");
-                    if (valor >= 0)
-                    { }
-                    else
-                    {
-                        MessageBox.Show(error.Message + "en eliminando");
-                    }
-                    cerrarConeccion();
-
-                }
-            }
-            else if (result == DialogResult.No)
-            {
-            }
-            else if (result == DialogResult.Cancel)
-            {
-            }
+            
 
         }
 
         public void ButtonUsuarioModificar_Click(object sender, EventArgs e)
         {
-            try
-            {
-                cargarPermisosPorAlmacen();
-                cerrarConeccion();
-                string insertarCodigo = "UPDATE easyerp.usuario SET `cc` = '" + TextboxCard.Text + "', `id` = '" + TextboxUsuario.Text + "', `contrasena` = '" + TextboxContrasena.Text + "', `correo` = '" + TextboxCorreo.Text + "', `nombre` = '" + TextboxNombre.Text + "', `permisos` = '" + comboBoxUsuarioPermisos.Text + "' WHERE `usuario`.`cc` = '" + TextboxCard.Text + "'";
-                conectar.Open();
-                MySqlCommand command = new MySqlCommand(insertarCodigo, conectar);
-
-                if (command.ExecuteNonQuery() == 1)
-                {
-                    iniciarTablaUsuarios();
-                }
-                else { }
-                cerrarConeccion();
-            }
-            catch (Exception error)
-            {
-                cerrarConeccion();
-                MessageBox.Show(Convert.ToString(error));
-            }
+           
         }
 
         public void bunifuFlatButton6_Click(object sender, EventArgs e)
@@ -2990,17 +2933,17 @@ namespace MysqlTienda
                     labelMessageEnd.Columns[i].Width = colw;
                 }
 
-                for (int i = 0; i < bunifuCustomDataGridUsuarios.Columns.Count - 1; i++)
+                for (int i = 0; i < DataGridUser.Columns.Count - 1; i++)
                 {
-                    bunifuCustomDataGridUsuarios.Columns[i].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+                    DataGridUser.Columns[i].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
                 }
-                bunifuCustomDataGridUsuarios.Columns[bunifuCustomDataGridUsuarios.Columns.Count - 1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+                DataGridUser.Columns[DataGridUser.Columns.Count - 1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
 
-                for (int i = 0; i < bunifuCustomDataGridUsuarios.Columns.Count; i++)
+                for (int i = 0; i < DataGridUser.Columns.Count; i++)
                 {
-                    int colw = bunifuCustomDataGridUsuarios.Columns[i].Width;
-                    bunifuCustomDataGridUsuarios.Columns[i].AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
-                    bunifuCustomDataGridUsuarios.Columns[i].Width = colw;
+                    int colw = DataGridUser.Columns[i].Width;
+                    DataGridUser.Columns[i].AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+                    DataGridUser.Columns[i].Width = colw;
                 }
             }
             catch (Exception ex)
@@ -3773,6 +3716,85 @@ namespace MysqlTienda
             catch
             {
 
+            }
+        }
+
+        private void bunifuFlatButton1_Click_2(object sender, EventArgs e)
+        {
+            iniciarTablaUsuarios();
+        }
+
+        private void bunifuFlatButton41_Click_1(object sender, EventArgs e)
+        {
+            agregarUsuario();
+        }
+
+        private void bunifuFlatButton42_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("¿Seguro que desea eliminar a este usuario?: '" + TextboxUsuario.Text + "'?", "Eliminar usuario: '" + TextboxNombre.Text + "'", MessageBoxButtons.YesNoCancel);
+
+            if (result == DialogResult.Yes)
+            {
+                try
+                {
+                    cargarPermisosPorAlmacen();
+                    cerrarConeccion();
+                    string insertarCodigo = "DELETE FROM easyerp.usuario WHERE cc =" + TextboxCard.Text;
+                    conectar.Open();
+                    MySqlCommand command = new MySqlCommand(insertarCodigo, conectar);
+
+                    if (command.ExecuteNonQuery() == 1)
+                    {
+                        iniciarTablaUsuarios();
+
+                    }
+                    else { }
+                    cerrarConeccion();
+
+                }
+                catch (Exception error)
+                {
+                    String mensaje = Convert.ToString(error.Message);
+                    int valor = mensaje.LastIndexOf("La cadena");
+                    if (valor >= 0)
+                    { }
+                    else
+                    {
+                        MessageBox.Show(error.Message + "en eliminando");
+                    }
+                    cerrarConeccion();
+
+                }
+            }
+            else if (result == DialogResult.No)
+            {
+            }
+            else if (result == DialogResult.Cancel)
+            {
+            }
+        }
+
+        private void bunifuFlatButton43_Click_1(object sender, EventArgs e)
+        {
+            try
+            {
+                cargarPermisosPorAlmacen();
+                cerrarConeccion();
+                string insertarCodigo = "UPDATE easyerp.usuario SET `cc` = '" + TextboxCard.Text + "', `id` = '" + TextboxUsuario.Text + "', `contrasena` = '" + TextboxContrasena.Text + "', `correo` = '" + TextboxCorreo.Text + "', `nombre` = '" + TextboxNombre.Text + "', `permisos` = '" + comboBoxUsuarioPermisos.Text + "' WHERE `usuario`.`cc` = '" + TextboxCard.Text + "'";
+                conectar.Open();
+                MySqlCommand command = new MySqlCommand(insertarCodigo, conectar);
+
+                if (command.ExecuteNonQuery() == 1)
+                {
+                    iniciarTablaUsuarios();
+                }
+                else { }
+                cerrarConeccion();
+            }
+            catch (Exception error)
+            {
+                cerrarConeccion();
+                MessageBox.Show(Convert.ToString(error));
             }
         }
 
