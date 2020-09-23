@@ -925,7 +925,7 @@ namespace MysqlTienda
             try
             {
                 //Cargando los datos cuando doy clic en datagridview                           
-                TextboxCedula.Text = bunifuCustomDataGridUsuarios.CurrentRow.Cells[0].Value.ToString();
+                TextboxCard.Text = bunifuCustomDataGridUsuarios.CurrentRow.Cells[0].Value.ToString();
                 TextboxUsuario.Text = bunifuCustomDataGridUsuarios.CurrentRow.Cells[1].Value.ToString();
                 TextboxContrasena.Text = bunifuCustomDataGridUsuarios.CurrentRow.Cells[2].Value.ToString();
                 TextboxCorreo.Text = bunifuCustomDataGridUsuarios.CurrentRow.Cells[3].Value.ToString();
@@ -1058,7 +1058,7 @@ namespace MysqlTienda
                     cerrarConeccion();
                     string insertarCodigo = "INSERT INTO easyerp.usuario (`cc`, `id`, `contrasena`, `correo`, `nombre`, `permisos`) VALUES (" +
                         "'" +
-                        TextboxCedula.Text + "', '" +
+                        TextboxCard.Text + "', '" +
                         TextboxUsuario.Text + "', '" +
                         TextboxContrasena.Text + "', '" +
                         TextboxCorreo.Text + "', '" +
@@ -1093,13 +1093,13 @@ namespace MysqlTienda
         {
             //con el @ se quita el problema de salida desconocida
             bool verificarEmail = bien_escrito(TextboxCorreo.Text, "\\w+([-+.']\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*");
-            if (verificarEmail == true) { LabelUCorreo.Text = "correo"; } else { LabelUCorreo.Text = "correo (verifique que este bien escrito)"; };
+            if (verificarEmail == true) { LabelUMail.Text = "correo"; } else { LabelUMail.Text = "correo (verifique que este bien escrito)"; };
 
             bool verificarNombre = bien_escrito(TextboxNombre.Text, "[a-zA-ZñÑ\\s]{2,50}");
-            if (verificarNombre == true) { LabelUNombre.Text = "nombre"; } else { LabelUNombre.Text = "nombre (verifique que este bien escrito)"; };
+            if (verificarNombre == true) { LabelUName.Text = "nombre"; } else { LabelUName.Text = "nombre (verifique que este bien escrito)"; };
 
-            bool verificarCedula = bien_escrito(TextboxCedula.Text, @"[0-9]{1,30}(\.[0-9]{0,2})?$");
-            if (verificarCedula == true) { LabelUCedula.Text = "cédula"; } else { LabelUCedula.Text = "cédula(verifique que este bien escrito)"; };
+            bool verificarCedula = bien_escrito(TextboxCard.Text, @"[0-9]{1,30}(\.[0-9]{0,2})?$");
+            if (verificarCedula == true) { LabelUCard.Text = "cédula"; } else { LabelUCard.Text = "cédula(verifique que este bien escrito)"; };
 
             if (verificarCedula == true && verificarNombre == true && verificarEmail == true)
             {
@@ -1232,7 +1232,7 @@ namespace MysqlTienda
                 {
                     cargarPermisosPorAlmacen();
                     cerrarConeccion();
-                    string insertarCodigo = "DELETE FROM easyerp.usuario WHERE cc =" + TextboxCedula.Text;
+                    string insertarCodigo = "DELETE FROM easyerp.usuario WHERE cc =" + TextboxCard.Text;
                     conectar.Open();
                     MySqlCommand command = new MySqlCommand(insertarCodigo, conectar);
 
@@ -1274,7 +1274,7 @@ namespace MysqlTienda
             {
                 cargarPermisosPorAlmacen();
                 cerrarConeccion();
-                string insertarCodigo = "UPDATE easyerp.usuario SET `cc` = '" + TextboxCedula.Text + "', `id` = '" + TextboxUsuario.Text + "', `contrasena` = '" + TextboxContrasena.Text + "', `correo` = '" + TextboxCorreo.Text + "', `nombre` = '" + TextboxNombre.Text + "', `permisos` = '" + comboBoxUsuarioPermisos.Text + "' WHERE `usuario`.`cc` = '" + TextboxCedula.Text + "'";
+                string insertarCodigo = "UPDATE easyerp.usuario SET `cc` = '" + TextboxCard.Text + "', `id` = '" + TextboxUsuario.Text + "', `contrasena` = '" + TextboxContrasena.Text + "', `correo` = '" + TextboxCorreo.Text + "', `nombre` = '" + TextboxNombre.Text + "', `permisos` = '" + comboBoxUsuarioPermisos.Text + "' WHERE `usuario`.`cc` = '" + TextboxCard.Text + "'";
                 conectar.Open();
                 MySqlCommand command = new MySqlCommand(insertarCodigo, conectar);
 
@@ -3032,7 +3032,7 @@ namespace MysqlTienda
 
         private void button2_Click_2(object sender, EventArgs e)
         {
-            MessageBox.Show(TextboxCedula.Text); agregarUsuario();
+            MessageBox.Show(TextboxCard.Text); agregarUsuario();
         }
 
         private void TextboxCorreo_OnValueChanged(object sender, EventArgs e)
@@ -3244,7 +3244,7 @@ namespace MysqlTienda
             {
                 cargarPermisosPorAlmacen();
                 cerrarConeccion();
-                string insertarCodigo = "UPDATE easyerp.permisosusuarios SET `cc` = '" + TextboxCedula.Text + "', `id` = '" + TextboxUsuario.Text + "', `contrasena` = '" + TextboxContrasena.Text + "', `correo` = '" + TextboxCorreo.Text + "', `nombre` = '" + TextboxNombre.Text + "', `permisos` = '" + comboBoxUsuarioPermisos.Text + "' WHERE `usuario`.`cc` = '" + TextboxCedula.Text + "'";
+                string insertarCodigo = "UPDATE easyerp.permisosusuarios SET `cc` = '" + TextboxCard.Text + "', `id` = '" + TextboxUsuario.Text + "', `contrasena` = '" + TextboxContrasena.Text + "', `correo` = '" + TextboxCorreo.Text + "', `nombre` = '" + TextboxNombre.Text + "', `permisos` = '" + comboBoxUsuarioPermisos.Text + "' WHERE `usuario`.`cc` = '" + TextboxCard.Text + "'";
                 conectar.Open();
                 MySqlCommand command = new MySqlCommand(insertarCodigo, conectar);
 

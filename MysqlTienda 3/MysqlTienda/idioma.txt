@@ -27,3 +27,10 @@
 |buttonModifySell| = Modify
 |butttonFinalizarVentas| = Finalizar
 |butttonFinishSells| = finish
+// Users
+|LabelUCard|= card
+|LabelUUsers|= Name of user
+|LabelUPass|= Password
+|LabelUMail|=Mail
+|LabelUName|=Name
+|labelUsersPermits|=Permits

@@ -227,24 +227,24 @@
             this.tab1Usuarios = new System.Windows.Forms.TabPage();
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.tabPage6 = new System.Windows.Forms.TabPage();
-            this.labelUsuarioPermisos = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.labelUsersPermits = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.comboBoxUsuarioPermisos = new System.Windows.Forms.ComboBox();
             this.TextboxNombre = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.TextboxCorreo = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.TextboxContrasena = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.TextboxUsuario = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.TextboxCedula = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.panel14 = new System.Windows.Forms.Panel();
+            this.TextboxCard = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.paneSoftwareRight = new System.Windows.Forms.Panel();
             this.bunifuCustomDataGridUsuarios = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.ButtonUsuarioAgregar = new Bunifu.Framework.UI.BunifuFlatButton();
             this.ButtonUsuarioModificar = new Bunifu.Framework.UI.BunifuFlatButton();
             this.ButtonUsuarioCargar = new Bunifu.Framework.UI.BunifuFlatButton();
             this.ButtonUsuarioEliminar = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.LabelUCedula = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.LabelUNombre = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.LabelUCorreo = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.LabelUContrasena = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.LabelUUsuario = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.LabelUCard = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.LabelUName = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.LabelUMail = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.LabelUPass = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.LabelUUsers = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.tabPage7 = new System.Windows.Forms.TabPage();
             this.label17 = new System.Windows.Forms.Label();
             this.panel13 = new System.Windows.Forms.Panel();
@@ -518,16 +518,6 @@
             this.LabelTipoGastoDescripcion = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.TextboxTipoGastoNombre = new Bunifu.Framework.UI.BunifuTextbox();
             this.LabelTipoGastoNombre = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.textSumaTotal = new System.Windows.Forms.TextBox();
-            this.bunifuFlatButton36 = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.labelUtilidad = new System.Windows.Forms.Label();
-            this.labelCostoTotalizado = new System.Windows.Forms.Label();
-            this.textBoxCostoTotal = new System.Windows.Forms.TextBox();
-            this.labelDetal = new System.Windows.Forms.Label();
-            this.labelMayor = new System.Windows.Forms.Label();
-            this.labelCostoTotal = new System.Windows.Forms.Label();
-            this.labelCosto = new System.Windows.Forms.Label();
             this.clientes = new System.Windows.Forms.TabPage();
             this.panel39 = new System.Windows.Forms.Panel();
             this.clienteGeneroText = new Bunifu.Framework.UI.BunifuMaterialTextbox();
@@ -554,6 +544,16 @@
             this.bunifuFlatButton8 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuFlatButton9 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuFlatButton40 = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.textSumaTotal = new System.Windows.Forms.TextBox();
+            this.bunifuFlatButton36 = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.labelUtilidad = new System.Windows.Forms.Label();
+            this.labelCostoTotalizado = new System.Windows.Forms.Label();
+            this.textBoxCostoTotal = new System.Windows.Forms.TextBox();
+            this.labelDetal = new System.Windows.Forms.Label();
+            this.labelMayor = new System.Windows.Forms.Label();
+            this.labelCostoTotal = new System.Windows.Forms.Label();
+            this.labelCosto = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.macro1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.buscarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -597,7 +597,7 @@
             this.tab1Usuarios.SuspendLayout();
             this.tabControl2.SuspendLayout();
             this.tabPage6.SuspendLayout();
-            this.panel14.SuspendLayout();
+            this.paneSoftwareRight.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGridUsuarios)).BeginInit();
             this.tabPage7.SuspendLayout();
             this.panel13.SuspendLayout();
@@ -684,11 +684,11 @@
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridTipoGasto)).BeginInit();
             this.panel7.SuspendLayout();
-            this.tabPage4.SuspendLayout();
             this.clientes.SuspendLayout();
             this.panel39.SuspendLayout();
             this.panel38.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridClientesProvedores)).BeginInit();
+            this.tabPage4.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.bunifuGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton3)).BeginInit();
@@ -728,8 +728,8 @@
             // ButtonVerify
             // 
             this.ButtonVerify.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
-            this.ButtonVerify.ImageActive = null;
             resources.ApplyResources(this.ButtonVerify, "ButtonVerify");
+            this.ButtonVerify.ImageActive = null;
             this.ButtonVerify.Name = "ButtonVerify";
             this.ButtonVerify.TabStop = false;
             this.ButtonVerify.Zoom = 10;
@@ -1985,27 +1985,27 @@
             // tabPage6
             // 
             this.tabPage6.BackColor = System.Drawing.Color.White;
-            this.tabPage6.Controls.Add(this.labelUsuarioPermisos);
+            this.tabPage6.Controls.Add(this.labelUsersPermits);
             this.tabPage6.Controls.Add(this.comboBoxUsuarioPermisos);
             this.tabPage6.Controls.Add(this.TextboxNombre);
             this.tabPage6.Controls.Add(this.TextboxCorreo);
             this.tabPage6.Controls.Add(this.TextboxContrasena);
             this.tabPage6.Controls.Add(this.TextboxUsuario);
-            this.tabPage6.Controls.Add(this.TextboxCedula);
-            this.tabPage6.Controls.Add(this.panel14);
-            this.tabPage6.Controls.Add(this.LabelUCedula);
-            this.tabPage6.Controls.Add(this.LabelUNombre);
-            this.tabPage6.Controls.Add(this.LabelUCorreo);
-            this.tabPage6.Controls.Add(this.LabelUContrasena);
-            this.tabPage6.Controls.Add(this.LabelUUsuario);
+            this.tabPage6.Controls.Add(this.TextboxCard);
+            this.tabPage6.Controls.Add(this.paneSoftwareRight);
+            this.tabPage6.Controls.Add(this.LabelUCard);
+            this.tabPage6.Controls.Add(this.LabelUName);
+            this.tabPage6.Controls.Add(this.LabelUMail);
+            this.tabPage6.Controls.Add(this.LabelUPass);
+            this.tabPage6.Controls.Add(this.LabelUUsers);
             resources.ApplyResources(this.tabPage6, "tabPage6");
             this.tabPage6.Name = "tabPage6";
             // 
-            // labelUsuarioPermisos
+            // labelUsersPermits
             // 
-            resources.ApplyResources(this.labelUsuarioPermisos, "labelUsuarioPermisos");
-            this.labelUsuarioPermisos.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.labelUsuarioPermisos.Name = "labelUsuarioPermisos";
+            resources.ApplyResources(this.labelUsersPermits, "labelUsersPermits");
+            this.labelUsersPermits.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.labelUsersPermits.Name = "labelUsersPermits";
             // 
             // comboBoxUsuarioPermisos
             // 
@@ -2076,32 +2076,32 @@
             this.TextboxUsuario.Name = "TextboxUsuario";
             this.TextboxUsuario.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // TextboxCedula
+            // TextboxCard
             // 
-            this.TextboxCedula.Cursor = System.Windows.Forms.Cursors.IBeam;
-            resources.ApplyResources(this.TextboxCedula, "TextboxCedula");
-            this.TextboxCedula.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.TextboxCedula.HintForeColor = System.Drawing.Color.Empty;
-            this.TextboxCedula.HintText = "";
-            this.TextboxCedula.isPassword = false;
-            this.TextboxCedula.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.TextboxCedula.LineIdleColor = System.Drawing.SystemColors.GrayText;
-            this.TextboxCedula.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.TextboxCedula.LineThickness = 4;
-            this.TextboxCedula.Name = "TextboxCedula";
-            this.TextboxCedula.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.TextboxCedula.OnValueChanged += new System.EventHandler(this.bunifuMaterialTextbox1_OnValueChanged);
+            this.TextboxCard.Cursor = System.Windows.Forms.Cursors.IBeam;
+            resources.ApplyResources(this.TextboxCard, "TextboxCard");
+            this.TextboxCard.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.TextboxCard.HintForeColor = System.Drawing.Color.Empty;
+            this.TextboxCard.HintText = "";
+            this.TextboxCard.isPassword = false;
+            this.TextboxCard.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.TextboxCard.LineIdleColor = System.Drawing.SystemColors.GrayText;
+            this.TextboxCard.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.TextboxCard.LineThickness = 4;
+            this.TextboxCard.Name = "TextboxCard";
+            this.TextboxCard.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.TextboxCard.OnValueChanged += new System.EventHandler(this.bunifuMaterialTextbox1_OnValueChanged);
             // 
-            // panel14
+            // paneSoftwareRight
             // 
-            this.panel14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(46)))), ((int)(((byte)(63)))));
-            this.panel14.Controls.Add(this.bunifuCustomDataGridUsuarios);
-            this.panel14.Controls.Add(this.ButtonUsuarioAgregar);
-            this.panel14.Controls.Add(this.ButtonUsuarioModificar);
-            this.panel14.Controls.Add(this.ButtonUsuarioCargar);
-            this.panel14.Controls.Add(this.ButtonUsuarioEliminar);
-            resources.ApplyResources(this.panel14, "panel14");
-            this.panel14.Name = "panel14";
+            this.paneSoftwareRight.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(46)))), ((int)(((byte)(63)))));
+            this.paneSoftwareRight.Controls.Add(this.bunifuCustomDataGridUsuarios);
+            this.paneSoftwareRight.Controls.Add(this.ButtonUsuarioAgregar);
+            this.paneSoftwareRight.Controls.Add(this.ButtonUsuarioModificar);
+            this.paneSoftwareRight.Controls.Add(this.ButtonUsuarioCargar);
+            this.paneSoftwareRight.Controls.Add(this.ButtonUsuarioEliminar);
+            resources.ApplyResources(this.paneSoftwareRight, "paneSoftwareRight");
+            this.paneSoftwareRight.Name = "paneSoftwareRight";
             // 
             // bunifuCustomDataGridUsuarios
             // 
@@ -2282,35 +2282,35 @@
             this.ButtonUsuarioEliminar.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ButtonUsuarioEliminar.Click += new System.EventHandler(this.ButtonUsuarioEliminar_Click);
             // 
-            // LabelUCedula
+            // LabelUCard
             // 
-            resources.ApplyResources(this.LabelUCedula, "LabelUCedula");
-            this.LabelUCedula.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.LabelUCedula.Name = "LabelUCedula";
+            resources.ApplyResources(this.LabelUCard, "LabelUCard");
+            this.LabelUCard.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.LabelUCard.Name = "LabelUCard";
             // 
-            // LabelUNombre
+            // LabelUName
             // 
-            resources.ApplyResources(this.LabelUNombre, "LabelUNombre");
-            this.LabelUNombre.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.LabelUNombre.Name = "LabelUNombre";
+            resources.ApplyResources(this.LabelUName, "LabelUName");
+            this.LabelUName.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.LabelUName.Name = "LabelUName";
             // 
-            // LabelUCorreo
+            // LabelUMail
             // 
-            resources.ApplyResources(this.LabelUCorreo, "LabelUCorreo");
-            this.LabelUCorreo.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.LabelUCorreo.Name = "LabelUCorreo";
+            resources.ApplyResources(this.LabelUMail, "LabelUMail");
+            this.LabelUMail.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.LabelUMail.Name = "LabelUMail";
             // 
-            // LabelUContrasena
+            // LabelUPass
             // 
-            resources.ApplyResources(this.LabelUContrasena, "LabelUContrasena");
-            this.LabelUContrasena.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.LabelUContrasena.Name = "LabelUContrasena";
+            resources.ApplyResources(this.LabelUPass, "LabelUPass");
+            this.LabelUPass.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.LabelUPass.Name = "LabelUPass";
             // 
-            // LabelUUsuario
+            // LabelUUsers
             // 
-            resources.ApplyResources(this.LabelUUsuario, "LabelUUsuario");
-            this.LabelUUsuario.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.LabelUUsuario.Name = "LabelUUsuario";
+            resources.ApplyResources(this.LabelUUsers, "LabelUUsers");
+            this.LabelUUsers.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.LabelUUsers.Name = "LabelUUsers";
             // 
             // tabPage7
             // 
@@ -6142,97 +6142,6 @@
             this.LabelTipoGastoNombre.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.LabelTipoGastoNombre.Name = "LabelTipoGastoNombre";
             // 
-            // tabPage4
-            // 
-            this.tabPage4.Controls.Add(this.textSumaTotal);
-            this.tabPage4.Controls.Add(this.bunifuFlatButton36);
-            this.tabPage4.Controls.Add(this.labelUtilidad);
-            this.tabPage4.Controls.Add(this.labelCostoTotalizado);
-            this.tabPage4.Controls.Add(this.textBoxCostoTotal);
-            this.tabPage4.Controls.Add(this.labelDetal);
-            this.tabPage4.Controls.Add(this.labelMayor);
-            this.tabPage4.Controls.Add(this.labelCostoTotal);
-            this.tabPage4.Controls.Add(this.labelCosto);
-            resources.ApplyResources(this.tabPage4, "tabPage4");
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.UseVisualStyleBackColor = true;
-            // 
-            // textSumaTotal
-            // 
-            this.textSumaTotal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(165)))), ((int)(((byte)(207)))));
-            this.textSumaTotal.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            resources.ApplyResources(this.textSumaTotal, "textSumaTotal");
-            this.textSumaTotal.ForeColor = System.Drawing.Color.White;
-            this.textSumaTotal.Name = "textSumaTotal";
-            this.textSumaTotal.ReadOnly = true;
-            this.textSumaTotal.TabStop = false;
-            // 
-            // bunifuFlatButton36
-            // 
-            this.bunifuFlatButton36.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton36.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
-            resources.ApplyResources(this.bunifuFlatButton36, "bunifuFlatButton36");
-            this.bunifuFlatButton36.BorderRadius = 0;
-            this.bunifuFlatButton36.ButtonText = "pruebas";
-            this.bunifuFlatButton36.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuFlatButton36.DisabledColor = System.Drawing.Color.Gray;
-            this.bunifuFlatButton36.Iconcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton36.Iconimage = ((System.Drawing.Image)(resources.GetObject("bunifuFlatButton36.Iconimage")));
-            this.bunifuFlatButton36.Iconimage_right = null;
-            this.bunifuFlatButton36.Iconimage_right_Selected = null;
-            this.bunifuFlatButton36.Iconimage_Selected = null;
-            this.bunifuFlatButton36.IconMarginLeft = 0;
-            this.bunifuFlatButton36.IconMarginRight = 0;
-            this.bunifuFlatButton36.IconRightVisible = false;
-            this.bunifuFlatButton36.IconRightZoom = 0D;
-            this.bunifuFlatButton36.IconVisible = false;
-            this.bunifuFlatButton36.IconZoom = 90D;
-            this.bunifuFlatButton36.IsTab = false;
-            this.bunifuFlatButton36.Name = "bunifuFlatButton36";
-            this.bunifuFlatButton36.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
-            this.bunifuFlatButton36.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.bunifuFlatButton36.OnHoverTextColor = System.Drawing.Color.White;
-            this.bunifuFlatButton36.selected = false;
-            this.bunifuFlatButton36.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bunifuFlatButton36.Textcolor = System.Drawing.Color.White;
-            this.bunifuFlatButton36.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            // 
-            // labelUtilidad
-            // 
-            resources.ApplyResources(this.labelUtilidad, "labelUtilidad");
-            this.labelUtilidad.Name = "labelUtilidad";
-            // 
-            // labelCostoTotalizado
-            // 
-            resources.ApplyResources(this.labelCostoTotalizado, "labelCostoTotalizado");
-            this.labelCostoTotalizado.Name = "labelCostoTotalizado";
-            // 
-            // textBoxCostoTotal
-            // 
-            resources.ApplyResources(this.textBoxCostoTotal, "textBoxCostoTotal");
-            this.textBoxCostoTotal.Name = "textBoxCostoTotal";
-            this.textBoxCostoTotal.ReadOnly = true;
-            // 
-            // labelDetal
-            // 
-            resources.ApplyResources(this.labelDetal, "labelDetal");
-            this.labelDetal.Name = "labelDetal";
-            // 
-            // labelMayor
-            // 
-            resources.ApplyResources(this.labelMayor, "labelMayor");
-            this.labelMayor.Name = "labelMayor";
-            // 
-            // labelCostoTotal
-            // 
-            resources.ApplyResources(this.labelCostoTotal, "labelCostoTotal");
-            this.labelCostoTotal.Name = "labelCostoTotal";
-            // 
-            // labelCosto
-            // 
-            resources.ApplyResources(this.labelCosto, "labelCosto");
-            this.labelCosto.Name = "labelCosto";
-            // 
             // clientes
             // 
             this.clientes.Controls.Add(this.panel39);
@@ -6629,6 +6538,97 @@
             this.bunifuFlatButton40.Textcolor = System.Drawing.Color.White;
             this.bunifuFlatButton40.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
+            // tabPage4
+            // 
+            this.tabPage4.Controls.Add(this.textSumaTotal);
+            this.tabPage4.Controls.Add(this.bunifuFlatButton36);
+            this.tabPage4.Controls.Add(this.labelUtilidad);
+            this.tabPage4.Controls.Add(this.labelCostoTotalizado);
+            this.tabPage4.Controls.Add(this.textBoxCostoTotal);
+            this.tabPage4.Controls.Add(this.labelDetal);
+            this.tabPage4.Controls.Add(this.labelMayor);
+            this.tabPage4.Controls.Add(this.labelCostoTotal);
+            this.tabPage4.Controls.Add(this.labelCosto);
+            resources.ApplyResources(this.tabPage4, "tabPage4");
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // textSumaTotal
+            // 
+            this.textSumaTotal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(165)))), ((int)(((byte)(207)))));
+            this.textSumaTotal.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            resources.ApplyResources(this.textSumaTotal, "textSumaTotal");
+            this.textSumaTotal.ForeColor = System.Drawing.Color.White;
+            this.textSumaTotal.Name = "textSumaTotal";
+            this.textSumaTotal.ReadOnly = true;
+            this.textSumaTotal.TabStop = false;
+            // 
+            // bunifuFlatButton36
+            // 
+            this.bunifuFlatButton36.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.bunifuFlatButton36.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
+            resources.ApplyResources(this.bunifuFlatButton36, "bunifuFlatButton36");
+            this.bunifuFlatButton36.BorderRadius = 0;
+            this.bunifuFlatButton36.ButtonText = "pruebas";
+            this.bunifuFlatButton36.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuFlatButton36.DisabledColor = System.Drawing.Color.Gray;
+            this.bunifuFlatButton36.Iconcolor = System.Drawing.Color.Transparent;
+            this.bunifuFlatButton36.Iconimage = ((System.Drawing.Image)(resources.GetObject("bunifuFlatButton36.Iconimage")));
+            this.bunifuFlatButton36.Iconimage_right = null;
+            this.bunifuFlatButton36.Iconimage_right_Selected = null;
+            this.bunifuFlatButton36.Iconimage_Selected = null;
+            this.bunifuFlatButton36.IconMarginLeft = 0;
+            this.bunifuFlatButton36.IconMarginRight = 0;
+            this.bunifuFlatButton36.IconRightVisible = false;
+            this.bunifuFlatButton36.IconRightZoom = 0D;
+            this.bunifuFlatButton36.IconVisible = false;
+            this.bunifuFlatButton36.IconZoom = 90D;
+            this.bunifuFlatButton36.IsTab = false;
+            this.bunifuFlatButton36.Name = "bunifuFlatButton36";
+            this.bunifuFlatButton36.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
+            this.bunifuFlatButton36.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.bunifuFlatButton36.OnHoverTextColor = System.Drawing.Color.White;
+            this.bunifuFlatButton36.selected = false;
+            this.bunifuFlatButton36.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bunifuFlatButton36.Textcolor = System.Drawing.Color.White;
+            this.bunifuFlatButton36.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
+            // labelUtilidad
+            // 
+            resources.ApplyResources(this.labelUtilidad, "labelUtilidad");
+            this.labelUtilidad.Name = "labelUtilidad";
+            // 
+            // labelCostoTotalizado
+            // 
+            resources.ApplyResources(this.labelCostoTotalizado, "labelCostoTotalizado");
+            this.labelCostoTotalizado.Name = "labelCostoTotalizado";
+            // 
+            // textBoxCostoTotal
+            // 
+            resources.ApplyResources(this.textBoxCostoTotal, "textBoxCostoTotal");
+            this.textBoxCostoTotal.Name = "textBoxCostoTotal";
+            this.textBoxCostoTotal.ReadOnly = true;
+            // 
+            // labelDetal
+            // 
+            resources.ApplyResources(this.labelDetal, "labelDetal");
+            this.labelDetal.Name = "labelDetal";
+            // 
+            // labelMayor
+            // 
+            resources.ApplyResources(this.labelMayor, "labelMayor");
+            this.labelMayor.Name = "labelMayor";
+            // 
+            // labelCostoTotal
+            // 
+            resources.ApplyResources(this.labelCostoTotal, "labelCostoTotal");
+            this.labelCostoTotal.Name = "labelCostoTotal";
+            // 
+            // labelCosto
+            // 
+            resources.ApplyResources(this.labelCosto, "labelCosto");
+            this.labelCosto.Name = "labelCosto";
+            // 
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -6781,7 +6781,7 @@
             this.tabControl2.ResumeLayout(false);
             this.tabPage6.ResumeLayout(false);
             this.tabPage6.PerformLayout();
-            this.panel14.ResumeLayout(false);
+            this.paneSoftwareRight.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGridUsuarios)).EndInit();
             this.tabPage7.ResumeLayout(false);
             this.tabPage7.PerformLayout();
@@ -6884,13 +6884,13 @@
             this.panel6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.DataGridTipoGasto)).EndInit();
             this.panel7.ResumeLayout(false);
-            this.tabPage4.ResumeLayout(false);
-            this.tabPage4.PerformLayout();
             this.clientes.ResumeLayout(false);
             this.panel39.ResumeLayout(false);
             this.panel39.PerformLayout();
             this.panel38.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.DataGridClientesProvedores)).EndInit();
+            this.tabPage4.ResumeLayout(false);
+            this.tabPage4.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.bunifuGradientPanel1.ResumeLayout(false);
@@ -6936,15 +6936,15 @@
         private System.Windows.Forms.TabPage tab1Usuarios;
         private System.Windows.Forms.TabControl tabControl2;
         private System.Windows.Forms.TabPage tabPage6;
-        private Bunifu.Framework.UI.BunifuCustomLabel LabelUCedula;
+        private Bunifu.Framework.UI.BunifuCustomLabel LabelUCard;
         private Bunifu.Framework.UI.BunifuFlatButton ButtonUsuarioCargar;
         private Bunifu.Framework.UI.BunifuFlatButton ButtonUsuarioModificar;
         private Bunifu.Framework.UI.BunifuFlatButton ButtonUsuarioEliminar;
-        private Bunifu.Framework.UI.BunifuCustomLabel LabelUNombre;
+        private Bunifu.Framework.UI.BunifuCustomLabel LabelUName;
         private Bunifu.Framework.UI.BunifuFlatButton ButtonUsuarioAgregar;
-        private Bunifu.Framework.UI.BunifuCustomLabel LabelUCorreo;
-        private Bunifu.Framework.UI.BunifuCustomLabel LabelUContrasena;
-        private Bunifu.Framework.UI.BunifuCustomLabel LabelUUsuario;
+        private Bunifu.Framework.UI.BunifuCustomLabel LabelUMail;
+        private Bunifu.Framework.UI.BunifuCustomLabel LabelUPass;
+        private Bunifu.Framework.UI.BunifuCustomLabel LabelUUsers;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.Label labelAlmacen;
         private System.Windows.Forms.TabControl tabControl3;
@@ -7114,7 +7114,7 @@
         private System.Windows.Forms.Panel panel16;
         private System.Windows.Forms.Panel panel17;
         private System.Windows.Forms.Panel panel18;
-        private System.Windows.Forms.Panel panel14;
+        private System.Windows.Forms.Panel paneSoftwareRight;
         private System.Windows.Forms.Panel panel13;
         private System.Windows.Forms.Panel panel19;
         private System.Windows.Forms.Panel panel20;
@@ -7129,7 +7129,7 @@
         private System.Windows.Forms.Panel panel32;
         private System.Windows.Forms.Label label17;
         public System.Windows.Forms.TextBox textSumaTotal;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox TextboxCedula;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox TextboxCard;
         private Bunifu.Framework.UI.BunifuMaterialTextbox TextboxUsuario;
         private Bunifu.Framework.UI.BunifuMaterialTextbox TextboxNombre;
         private Bunifu.Framework.UI.BunifuMaterialTextbox TextboxCorreo;
@@ -7137,7 +7137,7 @@
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse3;
         private System.Windows.Forms.Label labelReportesLocalProducto;
         private System.Windows.Forms.TabPage permisosUsuario;
-        private Bunifu.Framework.UI.BunifuCustomLabel labelUsuarioPermisos;
+        private Bunifu.Framework.UI.BunifuCustomLabel labelUsersPermits;
         private System.Windows.Forms.ComboBox comboBoxUsuarioPermisos;
         private System.Windows.Forms.Panel panel33;
         private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox1;
