@@ -1,3 +1,14 @@
+//tabinicio//
+tabControl1.TabPages[0].Text = "Main page";
+tabControl1.TabPages[1].Text = "Wenas";
+tabControl1.TabPages[2].Text = "Wenas";
+tabControl1.TabPages[3].Text = "Wenas";
+tabControl1.TabPages[4].Text = "Wenas";
+tabControl1.TabPages[5].Text = "Wenas";
+tabControl1.TabPages[6].Text = "Wenas";
+tabControl1.TabPages[7].Text = "Wenas";
+tabControl1.TabPages[8].Text = "Wenas";
+
 //main page
 |labelAccount| = "account"
 |buniTextUser|= "user"
@@ -38,3 +49,25 @@
 |buttonAddUser| = "Add"
 |buttonDeletUser| = "Delete"
 |buttonModifyUser| ="Modify"
+
+//user permis per store
+|buttonLoadUserPermitsStore|="Load"
+|buttonAddUserPermitsStore|="add"
+|buttonDeleteUserPermitsStore|= "delete"
+|labelUserPermitsPerStoreCard| = "card"
+|labelPermitsPerStoreStore| ="store"
+
+//products
+////products
+|labelCodeProducts|= "products"
+|labelNameProductos| ="Name"
+|labelReferenceProducts| = "Reference"
+|labelPricereailProducts| = "Price for retail"
+|labelWhosalePrice| = "whosale price"
+|labelCostProducts| = "Cost"
+|labelQuantityProducts| = "Quantity"
+|labelTaxesProducts| = "taxes"
+|labelDateInventoryProducts| = "date of inventory"
+|labelDeparmentProducts| = "deparment"
+|labelNameStoreProducts| = "name of store|
+|labelSizeProducts| = "size"

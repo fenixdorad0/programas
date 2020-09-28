@@ -906,8 +906,8 @@ namespace MysqlTienda
             {
                 
                
-                comboBoxUsuPerAlm.Text = DataGridPermisosPorAlmacen.CurrentRow.Cells[0].Value.ToString();
-                comboBoxCedulaPermiAlmace.Text = DataGridPermisosPorAlmacen.CurrentRow.Cells[1].Value.ToString();
+                comboBoxUsuPerAlm.Text = DataGridPermitsPerStore.CurrentRow.Cells[0].Value.ToString();
+                comboBoxCedulaPermiAlmace.Text = DataGridPermitsPerStore.CurrentRow.Cells[1].Value.ToString();
                 
             }
             catch
@@ -1189,7 +1189,7 @@ namespace MysqlTienda
                 DataTable table = new DataTable();
                 MySqlDataAdapter adpter = new MySqlDataAdapter(selectQuery, conectar);
                 adpter.Fill(table);
-                DataGridPermisosPorAlmacen.DataSource = table;
+                DataGridPermitsPerStore.DataSource = table;
                 cerrarConeccion();
             }
             catch (Exception error)
@@ -1242,49 +1242,7 @@ namespace MysqlTienda
 
         public void ButtonAgregarPeAl_Click(object sender, EventArgs e)
         {
-            //INSERT INTO `usuario_almacen` (`almacen_fabrica_nombre`, `cc`) VALUES ('girardot', '1069178680');
-
-            try
-            {
-                string insertarCodigo = "UPDATE easyerp.usuario_almacen SET `almacen_fabrica_nombre`=almacen_fabrica_nombre WHERE almacen_fabrica_nombre='" + comboBoxUsuPerAlm.Text + "' and cc = '" + comboBoxCedulaPermiAlmace.Text + "'";
-                conectar.Open();
-                MySqlCommand command = new MySqlCommand(insertarCodigo, conectar);
-
-                if (command.ExecuteNonQuery() == 1)
-                {
-                    MessageBox.Show("Ya existe este registro");
-                }
-                else
-                {
-                    cerrarConeccion();
-                    string insertarCodigo2 = "INSERT INTO easyerp.usuario_almacen (`almacen_fabrica_nombre`, `cc`) VALUES ('" + comboBoxUsuPerAlm.Text + "', '" + comboBoxCedulaPermiAlmace.Text + "')";
-                    conectar.Open();
-                    MySqlCommand command2 = new MySqlCommand(insertarCodigo2, conectar);
-                    if (command2.ExecuteNonQuery() == 1)
-                    {
-                        cargarPermisosPorAlmacen();
-                        //MessageBox.Show("Dato insertado");
-                        cerrarConeccion();
-                    }
-                    else
-                    {
-                        MessageBox.Show("Dato NO insertado");
-                        cerrarConeccion();
-                    }
-                    cerrarConeccion();
-                    cargarPermisosPorUsuario();
-                    cargarComboboxes();
-                }
-
-            }
-            catch (Exception error)
-            {
-                cerrarConeccion();
-                MessageBox.Show(error.Message + " Error agregando permisos de usario por almacen");
-            }
-            textInsertCode.Text = "";
-            conectar.Close();
-
+           
 
         }
 
@@ -1295,7 +1253,7 @@ namespace MysqlTienda
 
         public void ButtonCargarPeAl_Click_1(object sender, EventArgs e)
         {
-            cargarPermisosPorUsuario();
+            
         }
 
         public void funciona()
@@ -1313,7 +1271,7 @@ namespace MysqlTienda
                 DataTable table = new DataTable();
                 MySqlDataAdapter adpter = new MySqlDataAdapter(selectQuery, conectar);
                 adpter.Fill(table);
-                DataGridPermisosPorAlmacen.DataSource = table;
+                DataGridPermitsPerStore.DataSource = table;
                 cerrarConeccion();
             }
             catch (Exception error)
@@ -1378,32 +1336,7 @@ namespace MysqlTienda
 
         public void ButtonEliminarPeAl_Click(object sender, EventArgs e)
         {
-            try
-            {
-
-                string insertarCodigo = "DELETE FROM easyerp.usuario_almacen WHERE almacen_fabrica_nombre='" + comboBoxUsuPerAlm.Text + "' and cc='" + comboBoxCedulaPermiAlmace.Text + "'";
-                conectar.Open();
-                MySqlCommand command = new MySqlCommand(insertarCodigo, conectar);
-                if (command.ExecuteNonQuery() == 1)
-                {
-                    MessageBox.Show("Eliminado");
-                }
-                else
-                {
-                    cerrarConeccion();
-
-                }
-                cargarPermisosPorUsuario();
-
-            }
-            catch (Exception error)
-            {
-                cerrarConeccion();
-                MessageBox.Show(error.Message + "agregando permisos de usario por almacen");
-            }
-            cargarComboboxes();
-            textInsertCode.Text = "";
-            conectar.Close();
+            
         }
 
         public void bunifuFlatButton8_Click(object sender, EventArgs e)
@@ -3796,6 +3729,102 @@ namespace MysqlTienda
                 cerrarConeccion();
                 MessageBox.Show(Convert.ToString(error));
             }
+        }
+
+        private void buttonLoadUserPermitsStore_Click(object sender, EventArgs e)
+        {
+            cargarPermisosPorUsuario();
+        }
+
+        private void buttonAddUserPermitsStore_Click(object sender, EventArgs e)
+        {
+            //INSERT INTO `usuario_almacen` (`almacen_fabrica_nombre`, `cc`) VALUES ('girardot', '1069178680');
+
+            try
+            {
+                string insertarCodigo = "UPDATE easyerp.usuario_almacen SET `almacen_fabrica_nombre`=almacen_fabrica_nombre WHERE almacen_fabrica_nombre='" + comboBoxUsuPerAlm.Text + "' and cc = '" + comboBoxCedulaPermiAlmace.Text + "'";
+                conectar.Open();
+                MySqlCommand command = new MySqlCommand(insertarCodigo, conectar);
+
+                if (command.ExecuteNonQuery() == 1)
+                {
+                    MessageBox.Show("Ya existe este registro");
+                }
+                else
+                {
+                    cerrarConeccion();
+                    string insertarCodigo2 = "INSERT INTO easyerp.usuario_almacen (`almacen_fabrica_nombre`, `cc`) VALUES ('" + comboBoxUsuPerAlm.Text + "', '" + comboBoxCedulaPermiAlmace.Text + "')";
+                    conectar.Open();
+                    MySqlCommand command2 = new MySqlCommand(insertarCodigo2, conectar);
+                    if (command2.ExecuteNonQuery() == 1)
+                    {
+                        cargarPermisosPorAlmacen();
+                        //MessageBox.Show("Dato insertado");
+                        cerrarConeccion();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Dato NO insertado");
+                        cerrarConeccion();
+                    }
+                    cerrarConeccion();
+                    cargarPermisosPorUsuario();
+                    cargarComboboxes();
+                }
+
+            }
+            catch (Exception error)
+            {
+                cerrarConeccion();
+                MessageBox.Show(error.Message + " Error agregando permisos de usario por almacen");
+            }
+            textInsertCode.Text = "";
+            conectar.Close();
+
+        }
+
+        private void buttonDeleteUserPermitsStore_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+                string insertarCodigo = "DELETE FROM easyerp.usuario_almacen WHERE almacen_fabrica_nombre='" + comboBoxUsuPerAlm.Text + "' and cc='" + comboBoxCedulaPermiAlmace.Text + "'";
+                conectar.Open();
+                MySqlCommand command = new MySqlCommand(insertarCodigo, conectar);
+                if (command.ExecuteNonQuery() == 1)
+                {
+                    MessageBox.Show("Eliminado");
+                }
+                else
+                {
+                    cerrarConeccion();
+
+                }
+                cargarPermisosPorUsuario();
+
+            }
+            catch (Exception error)
+            {
+                cerrarConeccion();
+                MessageBox.Show(error.Message + "agregando permisos de usario por almacen");
+            }
+            cargarComboboxes();
+            textInsertCode.Text = "";
+            conectar.Close();
+        }
+
+        private void button2_Click_4(object sender, EventArgs e)
+        {
+            tabControl1.TabPages[0].Text = "Main page";
+            tabControl1.TabPages[1].Text = "Wenas";
+            tabControl1.TabPages[2].Text = "Wenas";
+            tabControl1.TabPages[3].Text = "Wenas";
+            tabControl1.TabPages[4].Text = "Wenas";
+            tabControl1.TabPages[5].Text = "Wenas";
+            tabControl1.TabPages[6].Text = "Wenas";
+            tabControl1.TabPages[7].Text = "Wenas";
+            tabControl1.TabPages[8].Text = "Wenas";
+
         }
 
         /*
