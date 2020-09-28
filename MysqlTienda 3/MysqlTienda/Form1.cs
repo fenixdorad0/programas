@@ -31,10 +31,10 @@ namespace MysqlTienda
 
             InitializeComponent();
             comboBoxCiudad.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBoxIvaProducto.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBoxDepartamentoProducto.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBoxAlmacenProducto.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBoxTamanoProducto.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBoxTaxesProduct2.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBoxDepartamentProduct2.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBoxStoreProduct2.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBoxSizeProduct2.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxCedulaPermiAlmace.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxUsuPerAlm.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxTipoAlmacen.DropDownStyle = ComboBoxStyle.DropDownList;
@@ -649,9 +649,9 @@ namespace MysqlTienda
                     {
                         var dt = new DataTable();
                         dt.Load(cmd.ExecuteReader());
-                        comboBoxDepartamentoProducto.ValueMember = "nombre";
-                        comboBoxDepartamentoProducto.DisplayMember = "nombre";
-                        comboBoxDepartamentoProducto.DataSource = dt;
+                        comboBoxDepartamentProduct2.ValueMember = "nombre";
+                        comboBoxDepartamentProduct2.DisplayMember = "nombre";
+                        comboBoxDepartamentProduct2.DataSource = dt;
                     }
                 }
             }
@@ -673,9 +673,9 @@ namespace MysqlTienda
                     {
                         var dt = new DataTable();
                         dt.Load(cmd.ExecuteReader());
-                        comboBoxTamanoProducto.ValueMember = "nombre";
-                        comboBoxTamanoProducto.DisplayMember = "nombre";
-                        comboBoxTamanoProducto.DataSource = dt;
+                        comboBoxSizeProduct2.ValueMember = "nombre";
+                        comboBoxSizeProduct2.DisplayMember = "nombre";
+                        comboBoxSizeProduct2.DataSource = dt;
                     }
                 }
             }
@@ -697,9 +697,9 @@ namespace MysqlTienda
                     {
                         var dt = new DataTable();
                         dt.Load(cmd.ExecuteReader());
-                        comboBoxAlmacenProducto.ValueMember = "nombre";
-                        comboBoxAlmacenProducto.DisplayMember = "nombre";
-                        comboBoxAlmacenProducto.DataSource = dt;
+                        comboBoxStoreProduct2.ValueMember = "nombre";
+                        comboBoxStoreProduct2.DisplayMember = "nombre";
+                        comboBoxStoreProduct2.DataSource = dt;
                     }
                 }
             }
@@ -1288,7 +1288,7 @@ namespace MysqlTienda
 
         public void bunifuFlatButton2_Click(object sender, EventArgs e)
         {
-            cargarProductosTabla();
+            
         }
 
         public void cargarProductosTabla()
@@ -1570,18 +1570,18 @@ namespace MysqlTienda
             try
             {
                 labelProductoId.Text = DataGridProductos.CurrentRow.Cells[0].Value.ToString();
-                TextboxCodigoProducto.text = DataGridProductos.CurrentRow.Cells[1].Value.ToString();
-                TextboxNombreProducto.text = DataGridProductos.CurrentRow.Cells[2].Value.ToString();
-                TextboxReferenciaProducto.text = DataGridProductos.CurrentRow.Cells[3].Value.ToString();
-                TextboxDetalProducto.text = DataGridProductos.CurrentRow.Cells[4].Value.ToString();
-                TextboxMayorProducto.text = DataGridProductos.CurrentRow.Cells[5].Value.ToString();
-                TextboxCostoProducto.text = DataGridProductos.CurrentRow.Cells[6].Value.ToString();
-                TextboxCantidadProducto.text = DataGridProductos.CurrentRow.Cells[7].Value.ToString();
-                comboBoxIvaProducto.Text = DataGridProductos.CurrentRow.Cells[8].Value.ToString();
-                comboBoxFechaProducto.Text = DataGridProductos.CurrentRow.Cells[9].Value.ToString();
-                comboBoxDepartamentoProducto.Text = DataGridProductos.CurrentRow.Cells[10].Value.ToString();
-                comboBoxAlmacenProducto.Text = DataGridProductos.CurrentRow.Cells[11].Value.ToString();
-                comboBoxTamanoProducto.Text = DataGridProductos.CurrentRow.Cells[12].Value.ToString();
+                TextboxCodeProduct2.text = DataGridProductos.CurrentRow.Cells[1].Value.ToString();
+                TextboxNameProduct2.text = DataGridProductos.CurrentRow.Cells[2].Value.ToString();
+                TextboxReferenceProduct2.text = DataGridProductos.CurrentRow.Cells[3].Value.ToString();
+                TextboxRetailProduct2.text = DataGridProductos.CurrentRow.Cells[4].Value.ToString();
+                TextboxWhosaleProduct2.text = DataGridProductos.CurrentRow.Cells[5].Value.ToString();
+                TextboxCostsProduct2.text = DataGridProductos.CurrentRow.Cells[6].Value.ToString();
+                TextboxQuantityProduct.text = DataGridProductos.CurrentRow.Cells[7].Value.ToString();
+                comboBoxTaxesProduct2.Text = DataGridProductos.CurrentRow.Cells[8].Value.ToString();
+                comboBoxDateProduct2.Text = DataGridProductos.CurrentRow.Cells[9].Value.ToString();
+                comboBoxDepartamentProduct2.Text = DataGridProductos.CurrentRow.Cells[10].Value.ToString();
+                comboBoxStoreProduct2.Text = DataGridProductos.CurrentRow.Cells[11].Value.ToString();
+                comboBoxSizeProduct2.Text = DataGridProductos.CurrentRow.Cells[12].Value.ToString();
 
             }
             catch (Exception error)
@@ -1592,40 +1592,7 @@ namespace MysqlTienda
 
         public void bunifuFlatButton5_Click(object sender, EventArgs e)
         {
-            try
-            {
-                cerrarConeccion();
-                string insertarCodigo = "UPDATE easyerp.producto SET codigo = codigo WHERE codigo ='" + TextboxCodigoProducto.text + "' AND almacen_fabrica_nombre ='" + comboBoxAlmacenProducto.Text + "'";
-                conectar.Open();
-                MySqlCommand command = new MySqlCommand(insertarCodigo, conectar);
-                if (command.ExecuteNonQuery() == 1)
-                {
-                    MessageBox.Show("ya existe un registro en esta ciudad");
-                }
-                else
-                {
-                    insertarDatos("INSERT INTO easyerp.producto (`codigo`, `nombre`, `referencia`, `precioDetal`, `percioMayor`, `costo`, `cantidad`, `tieneIva`, `inventario_fecha`, `departamento_nombre`, `almacen_fabrica_nombre`, `tamano_nombre`) VALUES(" +
-                   "'" + TextboxCodigoProducto.text + "','"
-                   + TextboxNombreProducto.text + "','"
-                   + TextboxReferenciaProducto.text + "','"
-                   + TextboxDetalProducto.text + "','"
-                   + TextboxMayorProducto.text + "','"
-                   + TextboxCostoProducto.text + "','"
-                   + TextboxCantidadProducto.text + "','"
-                   + comboBoxIvaProducto.Text + "','"
-                   + comboBoxFechaProducto.Value.ToString("yyyy-MM-dd") + "','"
-                   + comboBoxDepartamentoProducto.Text + "','"
-                   + comboBoxAlmacenProducto.Text + "','"
-                   + comboBoxTamanoProducto.Text + "')");
-                }
-                cerrarConeccion();
-                cargarProductosTabla();
-
-            }
-            catch (Exception error)
-            {
-                MessageBox.Show(Convert.ToString(error));
-            }
+          
 
 
 
@@ -1633,14 +1600,12 @@ namespace MysqlTienda
 
         public void bunifuFlatButton4_Click(object sender, EventArgs e)
         {
-            eliminarDatos("DELETE from easyerp.producto WHERE ID ='" + labelProductoId.Text + "'");
-            cargarProductosTabla();
+            
         }
 
         public void bunifuFlatButton3_Click(object sender, EventArgs e)
         {
-            modificarDatos("UPDATE easyerp.producto SET `codigo`='" + TextboxCodigoProducto.text + "',`nombre`='" + TextboxNombreProducto.text + "',`referencia`='" + TextboxReferenciaProducto.text + "',`precioDetal`='" + TextboxDetalProducto.text + "',`percioMayor`='" + TextboxMayorProducto.text + "',`costo`='" + TextboxCostoProducto.text + "',`cantidad`='" + TextboxCantidadProducto.text + "',`tieneIva`='" + comboBoxIvaProducto.Text + "',`inventario_fecha`='" + comboBoxFechaProducto.Value.ToString("yyyy-MM-dd") + "',`departamento_nombre`='" + comboBoxDepartamentoProducto.Text + "',`almacen_fabrica_nombre`='" + comboBoxAlmacenProducto.Text + "',`tamano_nombre`='" + comboBoxTamanoProducto.Text + "' WHERE almacen_fabrica_nombre='" + comboBoxAlmacenProducto.Text + "' and codigo = '" + TextboxCodigoProducto.text + "'");
-            cargarProductosTabla();
+            
         }
 
         public void modificarDatos(string insertarCodigo)
@@ -3825,6 +3790,66 @@ namespace MysqlTienda
             tabControl1.TabPages[7].Text = "Wenas";
             tabControl1.TabPages[8].Text = "Wenas";
 
+        }
+
+        private void buttonProducts2Load_Click(object sender, EventArgs e)
+        {
+            cargarProductosTabla();
+        }
+
+        private void panel25_Paint(object sender, PaintEventArgs e)
+        {
+           
+        }
+
+        private void buttonProducts2Delete_Click(object sender, EventArgs e)
+        {
+            eliminarDatos("DELETE from easyerp.producto WHERE ID ='" + labelProductoId.Text + "'");
+            cargarProductosTabla();
+        }
+
+        private void buttonProducts2Modify_Click(object sender, EventArgs e)
+        {
+            modificarDatos("UPDATE easyerp.producto SET `codigo`='" + TextboxCodeProduct2.text + "',`nombre`='" + TextboxNameProduct2.text + "',`referencia`='" + TextboxReferenceProduct2.text + "',`precioDetal`='" + TextboxRetailProduct2.text + "',`percioMayor`='" + TextboxWhosaleProduct2.text + "',`costo`='" + TextboxCostsProduct2.text + "',`cantidad`='" + TextboxQuantityProduct.text + "',`tieneIva`='" + comboBoxTaxesProduct2.Text + "',`inventario_fecha`='" + comboBoxDateProduct2.Value.ToString("yyyy-MM-dd") + "',`departamento_nombre`='" + comboBoxDepartamentProduct2.Text + "',`almacen_fabrica_nombre`='" + comboBoxStoreProduct2.Text + "',`tamano_nombre`='" + comboBoxSizeProduct2.Text + "' WHERE almacen_fabrica_nombre='" + comboBoxStoreProduct2.Text + "' and codigo = '" + TextboxCodeProduct2.text + "'");
+            cargarProductosTabla();
+        }
+
+        private void buttonProducts2Add_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                cerrarConeccion();
+                string insertarCodigo = "UPDATE easyerp.producto SET codigo = codigo WHERE codigo ='" + TextboxCodeProduct2.text + "' AND almacen_fabrica_nombre ='" + comboBoxStoreProduct2.Text + "'";
+                conectar.Open();
+                MySqlCommand command = new MySqlCommand(insertarCodigo, conectar);
+                if (command.ExecuteNonQuery() == 1)
+                {
+                    MessageBox.Show("ya existe un registro en esta ciudad");
+                }
+                else
+                {
+                    insertarDatos("INSERT INTO easyerp.producto (`codigo`, `nombre`, `referencia`, `precioDetal`, `percioMayor`, `costo`, `cantidad`, `tieneIva`, `inventario_fecha`, `departamento_nombre`, `almacen_fabrica_nombre`, `tamano_nombre`) VALUES(" +
+                   "'" + TextboxCodeProduct2.text + "','"
+                   + TextboxNameProduct2.text + "','"
+                   + TextboxReferenceProduct2.text + "','"
+                   + TextboxRetailProduct2.text + "','"
+                   + TextboxWhosaleProduct2.text + "','"
+                   + TextboxCostsProduct2.text + "','"
+                   + TextboxQuantityProduct.text + "','"
+                   + comboBoxTaxesProduct2.Text + "','"
+                   + comboBoxDateProduct2.Value.ToString("yyyy-MM-dd") + "','"
+                   + comboBoxDepartamentProduct2.Text + "','"
+                   + comboBoxStoreProduct2.Text + "','"
+                   + comboBoxSizeProduct2.Text + "')");
+                }
+                cerrarConeccion();
+                cargarProductosTabla();
+
+            }
+            catch (Exception error)
+            {
+                MessageBox.Show(Convert.ToString(error));
+            }
         }
 
         /*

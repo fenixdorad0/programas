@@ -1,12 +1,12 @@
 //tabinicio//
 tabControl1.TabPages[0].Text = "Main page";
-tabControl1.TabPages[1].Text = "Wenas";
-tabControl1.TabPages[2].Text = "Wenas";
-tabControl1.TabPages[3].Text = "Wenas";
-tabControl1.TabPages[4].Text = "Wenas";
-tabControl1.TabPages[5].Text = "Wenas";
-tabControl1.TabPages[6].Text = "Wenas";
-tabControl1.TabPages[7].Text = "Wenas";
+tabControl1.TabPages[1].Text = "Sells";
+tabControl1.TabPages[2].Text = "Users";
+tabControl1.TabPages[3].Text = "Products";
+tabControl1.TabPages[4].Text = "Store";
+tabControl1.TabPages[5].Text = "Reports";
+tabControl1.TabPages[6].Text = "Inputs or outputs";
+tabControl1.TabPages[7].Text = "Customers";
 tabControl1.TabPages[8].Text = "Wenas";
 
 //main page
@@ -71,3 +71,14 @@ tabControl1.TabPages[8].Text = "Wenas";
 |labelDeparmentProducts| = "deparment"
 |labelNameStoreProducts| = "name of store|
 |labelSizeProducts| = "size"
+|buttonProducts2Load| ="load"
+|buttonProducts2Add|="add"
+|buttonProducts2Delete| ="delete"
+|buttonProducts2Modify| = "Modify"
+|TextboxCodeProduct2|= "code"
+|TextboxNameProduct2|= "name"   
+|TextboxReferenceProduct2| = "reference"
+|TextboxRetailProduct2| = "retail price"
+|TextboxWhosaleProduct2| = "whosale price"
+|TextboxCostsProduct2| ="cost"
+|TextboxQuantityProduct| = "quantity"
