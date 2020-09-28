@@ -1389,7 +1389,7 @@ namespace MysqlTienda
 
         public void ButtonCargarDepartamento_Click(object sender, EventArgs e)
         {
-            CargarDepartamentosTabla();
+           
         }
 
         public void CargarDepartamentosTabla()
@@ -1436,9 +1436,7 @@ namespace MysqlTienda
 
         public void cargarDepartamenosTabla_click(object sender, EventArgs e)
         {
-            insertarDatos("INSERT INTO easyerp.departamento (`nombre`, `descripcion`) VALUES ('" + TextboxDepartamentoNombre.text + "','" + TextboxDescripcionDepartamento.text + "')");
-            CargarDepartamentosTabla();
-            cargarComboboxes();
+         
         }
 
         public void insertarDatos(String insertarCodigo)
@@ -1473,39 +1471,29 @@ namespace MysqlTienda
 
         public void bunifuFlatButton10_Click(object sender, EventArgs e)
         {
-            eliminarDatos("DELETE FROM easyerp.departamento WHERE nombre='" + TextboxDepartamentoNombre.text + "'");
-            CargarDepartamentosTabla();
-            cargarComboboxes();
+           
         }
 
         public void eliminarDatos(String insertarCodigo)
         {
-            cerrarConeccion();
-            DialogResult result = MessageBox.Show("¿Seguro que desea eliminar esto'?", "Eliminar:'", MessageBoxButtons.YesNoCancel);
-            if (result == DialogResult.Yes)
-            {
-                try
+            try
+            {              
+                conectar.Open();
+                MySqlCommand command = new MySqlCommand(insertarCodigo, conectar);
+                if (command.ExecuteNonQuery() == 1)
                 {
-                    conectar.Open();
-                    MySqlCommand command = new MySqlCommand(insertarCodigo, conectar);
-                    if (command.ExecuteNonQuery() == 1) { } else { }
-                    cerrarConeccion();
+                   
                 }
-                catch (Exception error)
+                else
                 {
-                    String mensaje = Convert.ToString(error.Message);
-                    int valor = mensaje.LastIndexOf("La cadena");
-                    if (valor >= 0)
-                    { }
-                    else
-                    {
-                        MessageBox.Show(error.Message + "en eliminando");
-                    }
-                    cerrarConeccion();
-
                 }
+                cerrarConeccion();
             }
-
+            catch (Exception error)
+            {
+                cerrarConeccion();
+                
+            }
         }
 
         public void DataGridDepartamento_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -1528,9 +1516,7 @@ namespace MysqlTienda
         public void bunifuFlatButton7_Click(object sender, EventArgs e)
         {
 
-            actualizarDatos("UPDATE easyerp.departamento SET `descripcion`= '" + TextboxDescripcionDepartamento.text + "' WHERE nombre = '" + TextboxDepartamentoNombre.text + "'");
-            CargarDepartamentosTabla();
-            cargarComboboxes();
+     
 
         }
 
@@ -3503,8 +3489,8 @@ namespace MysqlTienda
         {
             try
             {
-                TextboxDepartamentoNombre.text = DataGridDepartamento.CurrentRow.Cells[0].Value.ToString();
-                TextboxDescripcionDepartamento.text = DataGridDepartamento.CurrentRow.Cells[1].Value.ToString();
+                TextboxDeparmentName.text = DataGridDepartamento.CurrentRow.Cells[0].Value.ToString();
+                TextboxDescriptionDeparment.text = DataGridDepartamento.CurrentRow.Cells[1].Value.ToString();
 
             }
             catch (Exception error)
@@ -3850,6 +3836,62 @@ namespace MysqlTienda
             {
                 MessageBox.Show(Convert.ToString(error));
             }
+        }
+
+        private void buttonProductosDepLoad_Click(object sender, EventArgs e)
+        {
+            CargarDepartamentosTabla();
+        }
+
+        private void buttonProductosDepAdd_Click(object sender, EventArgs e)
+        {
+            insertarDatos("INSERT INTO easyerp.departamento (`nombre`, `descripcion`) VALUES ('" + TextboxDeparmentName.text + "','" + TextboxDescriptionDeparment.text + "')");
+            CargarDepartamentosTabla();
+            cargarComboboxes();
+        }
+
+        private void buttonProductosDepDelete_Click(object sender, EventArgs e)
+        {
+            cerrarConeccion();
+            DialogResult result = MessageBox.Show("¿Seguro que desea eliminar esto'?", "Eliminar:'", MessageBoxButtons.YesNoCancel);
+            if (result == DialogResult.Yes)
+            {
+                try
+                {
+                    MessageBox.Show("falta corregir ");
+                    eliminarDatos("DELETE FROM easyerp.departamento WHERE nombre='" + TextboxDeparmentName.text + "'");
+                    CargarDepartamentosTabla();
+                    cargarComboboxes();
+                    /*
+                    conectar.Open();
+                    MySqlCommand command = new MySqlCommand(insertarCodigo, conectar);
+                    if (command.ExecuteNonQuery() == 1) { } else { }
+                    cerrarConeccion();
+                    */
+                }
+                catch (Exception error)
+                {
+                    /*
+                    String mensaje = Convert.ToString(error.Message);
+                    int valor = mensaje.LastIndexOf("La cadena");
+                    if (valor >= 0)
+                    { }
+                    else
+                    {
+                        MessageBox.Show(error.Message + "en eliminando");
+                    }
+                    cerrarConeccion();
+                    */
+
+                }
+            }
+        }
+
+        private void buttonProductosDepModify_Click(object sender, EventArgs e)
+        {
+            actualizarDatos("UPDATE easyerp.departamento SET `descripcion`= '" + TextboxDescriptionDeparment.text + "' WHERE nombre = '" + TextboxDeparmentName.text + "'");
+            CargarDepartamentosTabla();
+            cargarComboboxes();
         }
 
         /*

@@ -82,3 +82,10 @@ tabControl1.TabPages[8].Text = "Wenas";
 |TextboxWhosaleProduct2| = "whosale price"
 |TextboxCostsProduct2| ="cost"
 |TextboxQuantityProduct| = "quantity"
+
+//deparment
+
+|labelProductsoDepName| ="name"
+|labelProductsoDepDescription| = "description"
+|TextboxDeparmentName| ="name"
+|TextboxDescriptionDeparment| = "deparment"
