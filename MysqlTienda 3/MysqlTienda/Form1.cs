@@ -1412,8 +1412,7 @@ namespace MysqlTienda
 
         public void cargarTamano_Click(object sender, EventArgs e)
         {
-            cargarTablaTamano();
-            cargarComboboxes();
+         
         }
 
         public void cargarTablaTamano()
@@ -1464,9 +1463,7 @@ namespace MysqlTienda
 
         public void bunifuFlatButton15_Click(object sender, EventArgs e)
         {
-            insertarDatos("INSERT INTO easyerp.tamano (`nombre`, `descripcion`) VALUES ('" + TextboxTamañoNombre.text + "','" + TextboxDescripcionTamano.text + "')");
-            cargarTablaTamano();
-            cargarComboboxes();
+           
         }
 
         public void bunifuFlatButton10_Click(object sender, EventArgs e)
@@ -1503,9 +1500,7 @@ namespace MysqlTienda
 
         public void bunifuFlatButton14_Click(object sender, EventArgs e)
         {
-            eliminarDatos("DELETE FROM easyerp.tamano WHERE nombre='" + TextboxTamañoNombre.text + "'");
-            cargarTablaTamano();
-            cargarComboboxes();
+         
         }
 
         public void DataGridTamano_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -1539,9 +1534,7 @@ namespace MysqlTienda
        
         public void bunifuFlatButton13_Click(object sender, EventArgs e)
         {
-            actualizarDatos("UPDATE easyerp.tamano SET `descripcion`= '" + TextboxDescripcionTamano.text + "' WHERE nombre = '" + TextboxTamañoNombre.text + "'");
-            cargarTablaTamano();
-            cargarComboboxes();
+          
         }
 
       
@@ -3891,6 +3884,33 @@ namespace MysqlTienda
         {
             actualizarDatos("UPDATE easyerp.departamento SET `descripcion`= '" + TextboxDescriptionDeparment.text + "' WHERE nombre = '" + TextboxDeparmentName.text + "'");
             CargarDepartamentosTabla();
+            cargarComboboxes();
+        }
+
+        private void bunifuFlatButton3_Click_1(object sender, EventArgs e)
+        {
+            cargarTablaTamano();
+            cargarComboboxes();
+        }
+
+        private void bunifuFlatButton4_Click_1(object sender, EventArgs e)
+        {
+            insertarDatos("INSERT INTO easyerp.tamano (`nombre`, `descripcion`) VALUES ('" + TextboxTamañoNombre.text + "','" + TextboxDescripcionTamano.text + "')");
+            cargarTablaTamano();
+            cargarComboboxes();
+        }
+
+        private void bunifuFlatButton2_Click_1(object sender, EventArgs e)
+        {
+            eliminarDatos("DELETE FROM easyerp.tamano WHERE nombre='" + TextboxTamañoNombre.text + "'");
+            cargarTablaTamano();
+            cargarComboboxes();
+        }
+
+        private void bunifuFlatButton1_Click_3(object sender, EventArgs e)
+        {
+            actualizarDatos("UPDATE easyerp.tamano SET `descripcion`= '" + TextboxDescripcionTamano.text + "' WHERE nombre = '" + TextboxTamañoNombre.text + "'");
+            cargarTablaTamano();
             cargarComboboxes();
         }
 

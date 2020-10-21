@@ -89,3 +89,10 @@ tabControl1.TabPages[8].Text = "Wenas";
 |labelProductsoDepDescription| = "description"
 |TextboxDeparmentName| ="name"
 |TextboxDescriptionDeparment| = "deparment"
+
+
+//size
+
+|buttonProuducts2Size| ="size"
+
+|labelProductSizeName|="name"
