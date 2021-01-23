@@ -37,7 +37,7 @@ namespace MysqlTienda
             comboBoxSizeProduct2.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxCedulaPermiAlmace.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxUsuPerAlm.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBoxTipoAlmacen.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBoxTypeStore.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxCategoriaEntrada.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxGastoAlmacen.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxGastoCatagoria.DropDownStyle = ComboBoxStyle.DropDownList;
@@ -721,9 +721,9 @@ namespace MysqlTienda
                     {
                         var dt = new DataTable();
                         dt.Load(cmd.ExecuteReader());
-                        comboBoxTipoAlmacen.ValueMember = "cc";
-                        comboBoxTipoAlmacen.DisplayMember = "almacen_fabrica_nombre";
-                        comboBoxTipoAlmacen.DataSource = dt;
+                        comboBoxTypeStore.ValueMember = "cc";
+                        comboBoxTypeStore.DisplayMember = "almacen_fabrica_nombre";
+                        comboBoxTypeStore.DataSource = dt;
                     }
                 }
             }
@@ -1621,7 +1621,7 @@ namespace MysqlTienda
             if (dateTimePickerReporteA.Value.Date <= dateTimePickerReporteB.Value.Date)
             {
 
-                labelErrorReporte.Visible = false;
+                labelErrorReport.Visible = false;
 
                 try
                 {
@@ -1631,7 +1631,7 @@ namespace MysqlTienda
                     cmd10.CommandType = System.Data.CommandType.Text;
                     cmd10.Connection = conectar;
                     conectar.Open();
-                    labelVentasCreditoLocal.Text = "Las ventas por crédito fueron:" + (Convert.ToDouble(cmd10.ExecuteScalar())).ToString("C");
+                    labelSellsCreditStore.Text = "Las ventas por crédito fueron:" + (Convert.ToDouble(cmd10.ExecuteScalar())).ToString("C");
                     double credito = Convert.ToDouble(cmd10.ExecuteScalar());
                     conectar.Close();
 
@@ -1652,7 +1652,7 @@ namespace MysqlTienda
                     cmd.CommandType = System.Data.CommandType.Text;
                     cmd.Connection = conectar;
                     conectar.Open();
-                    labelReporte1.Text = "las ventas fueron:" + (Convert.ToDouble(cmd.ExecuteScalar())).ToString("C");
+                    labelReport1.Text = "las ventas fueron:" + (Convert.ToDouble(cmd.ExecuteScalar())).ToString("C");
                     double ventas = Convert.ToDouble(cmd.ExecuteScalar());
                     conectar.Close();
 
@@ -1668,7 +1668,7 @@ namespace MysqlTienda
 
                     double ganancia = ventas - costo;
 
-                    labelReporteGanancias.Text = "Las ganancias fueron: " + (ganancia).ToString("C") + System.Environment.NewLine + "El costo es de :" + costo.ToString("C") + System.Environment.NewLine + "Que representan una utilidad de: " + Convert.ToString(Math.Round(((ganancia / costo)) * 100, 2)) + "%";
+                    labelReportEarnings.Text = "Las ganancias fueron: " + (ganancia).ToString("C") + System.Environment.NewLine + "El costo es de :" + costo.ToString("C") + System.Environment.NewLine + "Que representan una utilidad de: " + Convert.ToString(Math.Round(((ganancia / costo)) * 100, 2)) + "%";
 
                     cerrarConeccion();
                     MySqlCommand cmd3 = new MySqlCommand();
@@ -1762,8 +1762,8 @@ namespace MysqlTienda
             else
             {
 
-                labelErrorReporte.Text = "Verifique que las fechas esten en el orden correcto";
-                labelErrorReporte.Visible = true;
+                labelErrorReport.Text = "Verifique que las fechas esten en el orden correcto";
+                labelErrorReport.Visible = true;
 
             }
 
@@ -3163,7 +3163,7 @@ namespace MysqlTienda
                     "(" +
                     "'" + TextboxNombreAlmacen.text + "', " +
                     "'" + TextboxDescripcionAlmacen.text + "', " +
-                    "'" + comboBoxTipoAlmacen.Text + "')" +
+                    "'" + comboBoxTypeStore.Text + "')" +
                     ";";
                 conectar.Open();
                 MySqlCommand command = new MySqlCommand(insertarCodigo, conectar);
@@ -3191,7 +3191,7 @@ namespace MysqlTienda
             try
             {
                 cerrarConeccion();
-                string insertarCodigo = "DELETE FROM easyerp.almacen_fabrica WHERE nombre ='" + TextboxNombreAlmacen.text + "' and descripcion ='" + TextboxDescripcionAlmacen.text + "' and tipo_almacen_nombre='" + comboBoxTipoAlmacen.Text + "'";
+                string insertarCodigo = "DELETE FROM easyerp.almacen_fabrica WHERE nombre ='" + TextboxNombreAlmacen.text + "' and descripcion ='" + TextboxDescripcionAlmacen.text + "' and tipo_almacen_nombre='" + comboBoxTypeStore.Text + "'";
                 conectar.Open();
                 MySqlCommand command = new MySqlCommand(insertarCodigo, conectar);
                 if (command.ExecuteNonQuery() == 1)
@@ -3512,7 +3512,7 @@ namespace MysqlTienda
             {
                 TextboxNombreAlmacen.text = DataGridAlmacen.CurrentRow.Cells[0].Value.ToString();
                 TextboxDescripcionAlmacen.text = DataGridAlmacen.CurrentRow.Cells[1].Value.ToString();
-                comboBoxTipoAlmacen.Text = DataGridAlmacen.CurrentRow.Cells[2].Value.ToString();
+                comboBoxTypeStore.Text = DataGridAlmacen.CurrentRow.Cells[2].Value.ToString();
 
             }
             catch (Exception error)
@@ -3912,6 +3912,26 @@ namespace MysqlTienda
             actualizarDatos("UPDATE easyerp.tamano SET `descripcion`= '" + TextboxDescripcionTamano.text + "' WHERE nombre = '" + TextboxTamañoNombre.text + "'");
             cargarTablaTamano();
             cargarComboboxes();
+        }
+
+        private void productsInventoryLoad_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuFlatButton19_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuFlatButton18_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void productsInventoryAdd_Click(object sender, EventArgs e)
+        {
+
         }
 
         /*

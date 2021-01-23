@@ -78,3 +78,24 @@ C:\informacion\Programas\MysqlTienda 3\MysqlTienda\obj\Debug\MysqlTienda.Form2.r
 C:\informacion\Programas\MysqlTienda 3\MysqlTienda\obj\Debug\MysqlTienda.Form3.resources
 C:\informacion\Programas\MysqlTienda 3\MysqlTienda\obj\Debug\MysqlTienda.Form4.resources
 C:\informacion\Programas\MysqlTienda 3\MysqlTienda\obj\Debug\MysqlTienda.csproj.CoreCompileInputs.cache
+C:\alteza\alteza nube\informacion\Programas\MysqlTienda 3\MysqlTienda\bin\Debug\MysqlTienda.exe.config
+C:\alteza\alteza nube\informacion\Programas\MysqlTienda 3\MysqlTienda\bin\Debug\MysqlTienda.exe
+C:\alteza\alteza nube\informacion\Programas\MysqlTienda 3\MysqlTienda\bin\Debug\MysqlTienda.pdb
+C:\alteza\alteza nube\informacion\Programas\MysqlTienda 3\MysqlTienda\bin\Debug\aa\MysqlTienda.resources.dll
+C:\alteza\alteza nube\informacion\Programas\MysqlTienda 3\MysqlTienda\bin\Debug\es-419\MysqlTienda.resources.dll
+C:\alteza\alteza nube\informacion\Programas\MysqlTienda 3\MysqlTienda\obj\Debug\MysqlTienda.csprojAssemblyReference.cache
+C:\alteza\alteza nube\informacion\Programas\MysqlTienda 3\MysqlTienda\obj\Debug\MysqlTienda.exe.config
+C:\alteza\alteza nube\informacion\Programas\MysqlTienda 3\MysqlTienda\obj\Debug\MysqlTienda.Form1.resources
+C:\alteza\alteza nube\informacion\Programas\MysqlTienda 3\MysqlTienda\obj\Debug\MysqlTienda.Form2.resources
+C:\alteza\alteza nube\informacion\Programas\MysqlTienda 3\MysqlTienda\obj\Debug\MysqlTienda.Form3.resources
+C:\alteza\alteza nube\informacion\Programas\MysqlTienda 3\MysqlTienda\obj\Debug\MysqlTienda.Form4.resources
+C:\alteza\alteza nube\informacion\Programas\MysqlTienda 3\MysqlTienda\obj\Debug\MysqlTienda.Properties.Resources.resources
+C:\alteza\alteza nube\informacion\Programas\MysqlTienda 3\MysqlTienda\obj\Debug\MysqlTienda.Form1.aa.resources
+C:\alteza\alteza nube\informacion\Programas\MysqlTienda 3\MysqlTienda\obj\Debug\MysqlTienda.Form1.es-419.resources
+C:\alteza\alteza nube\informacion\Programas\MysqlTienda 3\MysqlTienda\obj\Debug\MysqlTienda.csproj.GenerateResource.cache
+C:\alteza\alteza nube\informacion\Programas\MysqlTienda 3\MysqlTienda\obj\Debug\MysqlTienda.csproj.CoreCompileInputs.cache
+C:\alteza\alteza nube\informacion\Programas\MysqlTienda 3\MysqlTienda\obj\Debug\aa\MysqlTienda.resources.dll
+C:\alteza\alteza nube\informacion\Programas\MysqlTienda 3\MysqlTienda\obj\Debug\es-419\MysqlTienda.resources.dll
+C:\alteza\alteza nube\informacion\Programas\MysqlTienda 3\MysqlTienda\obj\Debug\MysqlTienda.csproj.CopyComplete
+C:\alteza\alteza nube\informacion\Programas\MysqlTienda 3\MysqlTienda\obj\Debug\MysqlTienda.exe
+C:\alteza\alteza nube\informacion\Programas\MysqlTienda 3\MysqlTienda\obj\Debug\MysqlTienda.pdb
